@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gc2027ii-v1.72-pwa';
+const CACHE_NAME = 'gc2027ii-v1.72.1-pwa';
 const APP_SHELL = [
   './',
   './index.html',
@@ -31,7 +31,6 @@ self.addEventListener('fetch', event => {
 
   const url = new URL(req.url);
 
-  // App navigation: prefer fresh HTML, fall back to cached index offline.
   if (req.mode === 'navigate') {
     event.respondWith(
       fetch(req)
@@ -45,7 +44,6 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Same-origin PWA assets: cache first, then network.
   if (url.origin === self.location.origin) {
     event.respondWith(
       caches.match(req).then(cached => {
