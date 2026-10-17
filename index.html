@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Global Challenge 2027 II Support v1.72 Mobile PWA</title>
+<title>Global Challenge 2027 II Support v1.72.1 Mobile PWA</title>
 <style>
 :root{--bg:#f4f6f8;--panel:#fff;--line:#d8dee8;--text:#18202b;--muted:#667085;--accent:#2563eb;--accent2:#dbeafe;--danger:#b42318;--warn:#fff4cc;--ok:#eaf7ee;--chip:#f8fafc;--violet:#7c3aed}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}button,select{font:inherit}button{cursor:pointer}
@@ -1652,6 +1652,104 @@ body.mode45 .damage-follow-rail{
   .fixed45-actions,.fixed45-switches{grid-template-columns:1fr 1fr!important}
   .fixed45-actions button,.fixed45-switches button{font-size:10px!important}
 }
+
+/* v1.72.1 mobile 45-second compact hotfix */
+@media(max-width:700px){
+  body.mode45 .fixed45-panel{
+    position:sticky!important;
+    top:env(safe-area-inset-top)!important;
+    max-height:42dvh!important;
+    overflow-y:auto!important;
+    overflow-x:hidden!important;
+    overscroll-behavior:contain!important;
+    padding:6px!important;
+    margin-bottom:6px!important;
+  }
+
+  body.mode45 .fixed45-head{
+    position:sticky;
+    top:0;
+    z-index:2;
+    background:#fffdf7;
+    margin:-2px -2px 4px!important;
+    padding:2px 2px 4px!important;
+  }
+  body.mode45 .fixed45-head button{
+    min-height:34px!important;
+    padding:3px 6px!important;
+    font-size:10px!important;
+  }
+
+  body.mode45 .fixed45-mon{
+    font-size:13px!important;
+    margin:2px 0 4px!important;
+  }
+  body.mode45 .fixed45-body{gap:4px!important}
+  body.mode45 .fixed45-section{gap:3px!important}
+
+  body.mode45 .fixed45-hp{
+    grid-template-columns:repeat(6,minmax(0,1fr))!important;
+    gap:3px!important;
+  }
+  body.mode45 .fixed45-hp button{
+    min-height:36px!important;
+    padding:2px!important;
+    font-size:10px!important;
+  }
+
+  body.mode45 .fixed45-actions,
+  body.mode45 .fixed45-switches{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:4px!important;
+  }
+  body.mode45 .fixed45-actions button,
+  body.mode45 .fixed45-switches button{
+    min-height:38px!important;
+    padding:4px 5px!important;
+    font-size:10px!important;
+  }
+
+  body.mode45 .fixed45-extra-move select,
+  body.mode45 .fixed45-extra-move button{
+    min-height:38px!important;
+    height:38px!important;
+  }
+
+  body.mode45 .fixed45-status{
+    min-height:12px!important;
+    font-size:9px!important;
+  }
+
+  body.mode45 .fixed45-smallbar{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    gap:4px!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    padding:4px 0 1px!important;
+    margin-top:3px!important;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  body.mode45 .fixed45-smallbar::-webkit-scrollbar{display:none}
+  body.mode45 .fixed45-smallbar button{
+    flex:0 0 auto!important;
+    min-height:32px!important;
+    padding:3px 7px!important;
+    font-size:9px!important;
+  }
+
+  body.mode45 #aiDock{margin-top:0!important}
+  body.mode45 #aiDock > h2{display:none!important}
+  body.mode45 #aiDock .primary-decision-box{padding:6px 7px!important}
+}
+
+@media(max-width:380px){
+  body.mode45 .fixed45-panel{max-height:40dvh!important}
+  body.mode45 .fixed45-hp{
+    grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  }
+}
 </style>
 <link rel="manifest" href="./manifest.webmanifest">
 <meta name="theme-color" content="#0f172a">
@@ -1662,7 +1760,7 @@ body.mode45 .damage-follow-rail{
 <link rel="apple-touch-icon" href="./icon-192.png">
 </head>
 <body>
-<header class="topbar"><div><h1>Global Challenge 2027 II Support <span class="tiny">v1.72 スマホPWA</span></h1></div><div class="top-actions"><button id="saveBtn">試合を保存</button><button id="newMatchBtn">新しい対戦</button></div></header>
+<header class="topbar"><div><h1>Global Challenge 2027 II Support <span class="tiny">v1.72.1 スマホ45秒コンパクト</span></h1></div><div class="top-actions"><button id="saveBtn">試合を保存</button><button id="newMatchBtn">新しい対戦</button></div></header>
 <main>
 <section class="panel">
 <h2>1. 対戦準備</h2>
