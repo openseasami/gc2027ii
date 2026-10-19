@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'gc2027ii-' + encodeURIComponent(self.registration.scope) + '-';
-const CACHE = CACHE_PREFIX + 'v1.86.1';
+const CACHE = CACHE_PREFIX + 'v1.89.0';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)));

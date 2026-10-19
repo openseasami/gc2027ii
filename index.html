@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Global Challenge 2027 II Support v1.86.1</title>
+<title>Global Challenge 2027 II Support v1.89.0</title>
 <style>
 :root{--bg:#f4f6f8;--panel:#fff;--line:#d8dee8;--text:#18202b;--muted:#667085;--accent:#2563eb;--accent2:#dbeafe;--danger:#b42318;--warn:#fff4cc;--ok:#eaf7ee;--chip:#f8fafc;--violet:#7c3aed}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}button,select{font:inherit}button{cursor:pointer}
@@ -1924,6 +1924,7 @@ body.mode45 .damage-follow-rail{
 .match-review label{display:block;font-size:12px;margin-top:12px}
 .match-review textarea{display:block;width:100%;font:inherit;font-size:16px;padding:8px;border:1px solid var(--line);border-radius:7px;margin:5px 0}
 .match-review button{min-height:40px;border:1px solid var(--line);border-radius:7px;background:#fff;padding:6px 10px}
+.tactical-targets,.perish-controls{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0}.tactical-targets .row-title{flex-basis:100%}.perish-controls b{color:#b91c1c}.perish-controls button{min-height:36px}.tactical-targets button{white-space:normal;overflow-wrap:anywhere;min-height:44px}
 </style>
 <link rel="manifest" href="./manifest.webmanifest">
 <meta name="theme-color" content="#0f172a">
@@ -2130,7 +2131,7 @@ body.mode45 .damage-follow-rail{
 <article class="poke-card">
 <div class="card-head"><div><h3 class="poke-name"></h3><span class="speed-badge"></span></div><span class="tiny statusText">通常</span></div>
 <div class="row"><div class="row-title">HP</div><div class="chips hpChips"><button class="chip hpchip" data-hp="100">100</button><button class="chip hpchip" data-hp="90">90</button><button class="chip hpchip" data-hp="80">80</button><button class="chip hpchip" data-hp="70">70</button><button class="chip hpchip" data-hp="60">60</button><button class="chip hpchip" data-hp="50">50</button><button class="chip hpchip" data-hp="40">40</button><button class="chip hpchip" data-hp="30">30</button><button class="chip hpchip" data-hp="20">20</button><button class="chip hpchip" data-hp="10">10</button><button class="chip hpchip danger" data-hp="0">KO</button></div></div>
-<div class="row move-row"><div class="row-title">技候補（採用率上位・確認後に修正）</div><div class="select-grid"><select class="moveSelect"></select><select class="moveSelect"></select><select class="moveSelect"></select><select class="moveSelect"></select></div></div>
+<div class="row move-row"><div class="row-title">技候補（推定）</div><div class="select-grid"><select class="moveSelect"></select><select class="moveSelect"></select><select class="moveSelect"></select><select class="moveSelect"></select></div></div>
 <div class="row"><div class="row-title">持ち物</div><select class="itemSelect select-wide"></select></div>
 <div class="row speed-row">
 <div class="row-title">速度比較</div>
@@ -2182,9 +2183,29 @@ const MOCK_PROFILES={
 };
 
 const TOP6=['ゴリランダー','オオニューラ','ガオガエン','ボーマンダ','ドドゲザン','イエッサン♀'];
-const POKEMON=['ゴリランダー','オオニューラ','ガオガエン','ボーマンダ','ドドゲザン','イエッサン♀','グソクムシャ','イダイトウ','ガブリアス','リキキリン','アマージョ','サーフゴー','ペリッパー','エルフーン','リザードン','ブリジュラス','ミロカロス','ライチュウ','メガライチュウX','メガライチュウY','ニンフィア','ニョロトノ','ウインディ(ヒスイ)','バンギラス','オーロンゲ','サーナイト','ヤバソチャ','ラグラージ','メガラグラージ','メガサーナイト','メガボーマンダ','メガリザードンY','その他'];
-const BASE_SPEED={'ゴリランダー':85,'オオニューラ':120,'ガオガエン':60,'ボーマンダ':100,'ドドゲザン':50,'イエッサン♀':85,'グソクムシャ':40,'イダイトウ':78,'ガブリアス':102,'リキキリン':60,'アマージョ':72,'サーフゴー':84,'ペリッパー':65,'エルフーン':116,'リザードン':100,'ブリジュラス':85,'ミロカロス':81,'ライチュウ':110,'メガライチュウX':110,'メガライチュウY':130,'ニンフィア':60,'ニョロトノ':70,'ウインディ(ヒスイ)':90,'バンギラス':61,'オーロンゲ':60,'サーナイト':80,'ヤバソチャ':70,'ラグラージ':60,'メガラグラージ':70,'メガサーナイト':100,'メガボーマンダ':120,'メガリザードンY':100,'その他':80};
+const POKEMON=["ゴリランダー", "オオニューラ", "ガオガエン", "ボーマンダ", "ドドゲザン", "イエッサン♀", "グソクムシャ", "イダイトウ", "ガブリアス", "リキキリン", "アマージョ", "サーフゴー", "ペリッパー", "エルフーン", "リザードン", "ブリジュラス", "ミロカロス", "ライチュウ", "メガライチュウX", "メガライチュウY", "ニンフィア", "ニョロトノ", "ウインディ(ヒスイ)", "バンギラス", "オーロンゲ", "サーナイト", "ヤバソチャ", "ラグラージ", "メガラグラージ", "メガサーナイト", "メガボーマンダ", "メガリザードンY", "メガガブリアスZ", "フラエッテ(えいえんのはな)", "メガフラエッテ", "クエスパトラ", "メガグソクムシャ", "ゲンガー", "メガゲンガー", "ジャラランガ", "ウルガモス", "その他"];
+const BASE_SPEED={
+"メガガブリアスZ":151,
+"フラエッテ(えいえんのはな)":92,
+"メガフラエッテ":102,
+"クエスパトラ":105,
+"メガグソクムシャ":40,
+"ゲンガー":110,
+"メガゲンガー":130,
+"ジャラランガ":85,
+"ウルガモス":100,
+'ゴリランダー':85,'オオニューラ':120,'ガオガエン':60,'ボーマンダ':100,'ドドゲザン':50,'イエッサン♀':85,'グソクムシャ':40,'イダイトウ':78,'ガブリアス':102,'リキキリン':60,'アマージョ':72,'サーフゴー':84,'ペリッパー':65,'エルフーン':116,'リザードン':100,'ブリジュラス':85,'ミロカロス':81,'ライチュウ':110,'メガライチュウX':110,'メガライチュウY':130,'ニンフィア':60,'ニョロトノ':70,'ウインディ(ヒスイ)':90,'バンギラス':61,'オーロンゲ':60,'サーナイト':80,'ヤバソチャ':70,'ラグラージ':60,'メガラグラージ':70,'メガサーナイト':100,'メガボーマンダ':120,'メガリザードンY':100,'その他':80};
 const ROLE={
+"メガガブリアスZ":["attacker"],
+"フラエッテ(えいえんのはな)":["attacker"],
+"メガフラエッテ":["attacker"],
+"クエスパトラ":["attacker","support"],
+"メガグソクムシャ":["attacker"],
+"ゲンガー":["attacker","support"],
+"メガゲンガー":["attacker","support"],
+"ジャラランガ":["attacker","support"],
+"ウルガモス":["attacker","support"],
+
 'ゴリランダー':['fakeout','priority','pivot'],'オオニューラ':['fakeout','fast','attacker'],'ガオガエン':['fakeout','pivot','intimidate'],'ボーマンダ':['attacker','speedcontrol'],'ドドゲザン':['attacker'],'イエッサン♀':['redirect','tr'],'グソクムシャ':['priority','attacker'],'イダイトウ':['attacker','rain'],'ガブリアス':['attacker'],'リキキリン':['tr','support'],'アマージョ':['attacker','support'],'サーフゴー':['attacker'],'ペリッパー':['rainsetter','tailwind'],'エルフーン':['tailwind','support'],'リザードン':['attacker'],'ブリジュラス':['attacker','rain'],'ミロカロス':['support'],'ライチュウ':['fakeout','support'],'メガライチュウX':['attacker','support'],'メガライチュウY':['fast','attacker'],'ニンフィア':['attacker'],'ニョロトノ':['rainsetter','support'],'ウインディ(ヒスイ)':['attacker'],'バンギラス':['weather','attacker'],'オーロンゲ':['support'],'サーナイト':['tr','attacker'],'ヤバソチャ':['support','tr'],'ラグラージ':['attacker'],'メガラグラージ':['attacker','swiftswim'],'メガサーナイト':['tr','attacker'],'メガボーマンダ':['fast','attacker'],'メガリザードンY':['weather','attacker']};
 const USAGE_WEIGHT={'ゴリランダー':10,'オオニューラ':9.5,'ガオガエン':9,'ボーマンダ':8.5,'ドドゲザン':8,'イエッサン♀':8,'グソクムシャ':7.6,'イダイトウ':7.4,'ガブリアス':7.2,'リキキリン':7,'アマージョ':6.9,'サーフゴー':6.8,'ペリッパー':6.7,'エルフーン':6.4,'リザードン':6.2,'ブリジュラス':6.1};
 
@@ -2192,6 +2213,12 @@ const USAGE_WEIGHT={'ゴリランダー':10,'オオニューラ':9.5,'ガオガ�
 // Sources used for v1.40 tuning: Pikalytics current Reg M-C usage/core data,
 // Pokémon Zone tournament core data, DexTeam high-ladder teammate cores.
 const META_ARCHETYPES=[
+{"id":"dual-weather","label":"リザードン＋雨始動＋ブリジュラス","type":"両天候","groups":[["リザードン","メガリザードンY"],["ペリッパー","ニョロトノ"],["ブリジュラス"]],"partners":["ガブリアス","オーロンゲ"],"leads":[["ペリッパー","ブリジュラス"],["オーロンゲ","リザードン"]],"plan":"天候の上書きを警戒。ガブリアスはスカーフ型も候補","weight":4.8},
+{"id":"raichuy-balance","label":"メガライチュウY＋ねこだましサイクル","type":"高速特殊","groups":[["メガライチュウY","ライチュウ"],["ガオガエン","ゴリランダー"]],"partners":["サーフゴー","ウインディ(ヒスイ)"],"leads":[["メガライチュウY","ゴリランダー"],["メガライチュウY","ガオガエン"]],"plan":"でんじほう・きあいだまを警戒。先制技や速度操作で先に動く","weight":4.8},
+{"id":"garchompz-balance","label":"メガガブリアスZ＋展開補助","type":"高速特殊","groups":[["メガガブリアスZ","ガブリアス"],["ガオガエン","ゴリランダー","ウルガモス","オオニューラ"]],"partners":["サーフゴー","ウインディ(ヒスイ)"],"leads":[["メガガブリアスZ","ゴリランダー"],["メガガブリアスZ","ウルガモス"]],"plan":"単体技をまもる・このゆびで受け、フェアリー打点を残す","weight":4.8},
+{"id":"floette-calm","label":"フラエッテ＋ねこだましサイクル","type":"めいそう展開","groups":[["メガフラエッテ","フラエッテ(えいえんのはな)"],["ガオガエン","ゴリランダー","オオニューラ"]],"partners":["ドドゲザン"],"leads":[["メガフラエッテ","ガオガエン"],["メガフラエッテ","ゴリランダー"]],"plan":"ねこだまし＋めいそうを警戒。鋼・毒打点を温存し、積む前に集中する","weight":4.8},
+{"id":"perish-gengar","label":"ゲンガー＋サイクル補助","type":"ほろび候補","groups":[["ゲンガー","メガゲンガー"],["ガオガエン","ゴリランダー","ニョロトノ","ジャラランガ"]],"partners":["ブリジュラス"],"leads":[["メガゲンガー","ガオガエン"],["メガゲンガー","ゴリランダー"]],"plan":"ほろびのうたと交代サイクルを警戒。交代技・ゴーストを活かす","weight":4.8},
+{"id":"espathra-raichux","label":"クエスパトラ＋メガライチュウX","type":"かそく・バトン候補","groups":[["クエスパトラ"],["メガライチュウX","ライチュウ"]],"partners":["ブリジュラス","ニョロトノ"],"leads":[["クエスパトラ","メガライチュウX"]],"plan":"めいそう・バトンとルミナコリジョン＋ライジングボルトの両方を警戒","weight":4.8},
   {
     id:'rilla-sneas-mence',label:'ゴリランダー＋オオニューラ＋ボーマンダ',type:'高速バランス',weight:5.8,
     groups:[['ゴリランダー'],['オオニューラ'],['メガボーマンダ','ボーマンダ']],
@@ -2215,7 +2242,7 @@ const META_ARCHETYPES=[
   },
   {
     id:'rain-arch-goli',label:'ペリッパー＋ブリジュラス＋グソクムシャ',type:'雨攻勢',weight:6.0,
-    groups:[['ペリッパー'],['ブリジュラス'],['グソクムシャ']],
+    groups:[['ペリッパー','ニョロトノ'],['ブリジュラス'],['グソクムシャ','メガグソクムシャ']],
     partners:['ラグラージ','メガラグラージ','オーロンゲ','ガブリアス'],
     leads:[['ペリッパー','ブリジュラス'],['ペリッパー','グソクムシャ'],['ブリジュラス','グソクムシャ']],
     plan:'雨＋全体/高火力技で先に削り、耐久と先制圧力で押し切る'
@@ -2228,11 +2255,11 @@ const META_ARCHETYPES=[
     plan:'雨を即展開し、ブリジュラスの圧力とラグラージ系の速度・火力を両立する'
   },
   {
-    id:'indeedee-garde',label:'イエッサン♀＋サーナイト',type:'サイコ/TR',weight:4.8,
+    id:'indeedee-garde',label:'イエッサン♀＋サーナイト',type:'サイコ展開',weight:4.8,
     groups:[['イエッサン♀'],['メガサーナイト','サーナイト']],
     partners:['オオニューラ','ドドゲザン','リキキリン','ヤバソチャ'],
     leads:[['イエッサン♀','メガサーナイト'],['イエッサン♀','サーナイト']],
-    plan:'このゆび・サイコフィールドで展開を守り、TRまたは高打点を通す'
+    plan:'高速ワイドフォースと耐久・TR型の両方を警戒。フィールドの上書きが有効'
   },
   {
     id:'raichu-ghold-rilla',label:'ライチュウ＋サーフゴー＋ゴリランダー',type:'機動力バランス',weight:4.6,
@@ -2243,7 +2270,7 @@ const META_ARCHETYPES=[
   },
   {
     id:'farigiraf-goli',label:'リキキリン＋グソクムシャ',type:'優先度封じ・中速圧力',weight:3.8,
-    groups:[['リキキリン'],['グソクムシャ']],
+    groups:[['リキキリン'],['グソクムシャ','メガグソクムシャ']],
     partners:['ドドゲザン','サーフゴー','ガオガエン','ペリッパー'],
     leads:[['リキキリン','グソクムシャ']],
     plan:'優先度技を止めながら、中低速の高火力を安全に通す'
@@ -2546,6 +2573,31 @@ function metaArchetypeMatches(team){
     return {...a,hits,coreSize,full,partnerHits,score};
   }).filter(x=>x.hits>=2).sort((a,b)=>b.score-a.score);
 }
+// Video 9_5fvQ82hes and the supplied slides: qualitative hypotheses, not usage rates.
+function opponentCandidateOrder(name,team,kind='moves'){
+  const pool=[...((kind==='items'?ITEM_MAP:MOVE_MAP)[name]||[])];
+  const ids=new Set(metaArchetypeMatches(team).filter(a=>a.full).map(a=>a.id));
+  let preferred=[];
+  if(kind==='items'){
+    if(name==='ガブリアス'&&ids.has('dual-weather'))preferred=['こだわりスカーフ'];
+    if(name==='オオニューラ'&&ids.has('indeedee-garde'))preferred=['サイコシード'];
+    else if(name==='オオニューラ'&&(team||[]).includes('ゴリランダー'))preferred=['グラスシード'];
+  }else{
+    if(['リザードン','メガリザードンY'].includes(name)&&ids.has('dual-weather'))preferred=['ねっぷう','ウェザーボール','まもる','ぼうふう'];
+    if(['サーナイト','メガサーナイト'].includes(name)&&ids.has('indeedee-garde'))preferred=['ハイパーボイス','ワイドフォース','まもる','マジカルフレイム'];
+    if(name==='ブリジュラス'&&ids.has('rain-arch-goli'))preferred=['エレクトロビーム','まもる','りゅうのはどう','バークアウト'];
+    if(name==='オオニューラ'&&ids.has('indeedee-garde'))preferred=['インファイト','フェイタルクロー','まもる','ねこだまし'];
+  }
+  return [...new Set([...preferred.filter(x=>pool.includes(x)),...pool])];
+}
+function renderMetaHypotheses(team){
+  const matches=metaArchetypeMatches(team);
+  if(!matches.length)return '';
+  const shown=matches.slice(0,3);
+  return '<div class="meta-archetype-box"><div class="meta-archetype-title">構築候補</div>'+shown.map((a,i)=>
+    '<div class="'+(i?'meta-archetype-sub':'meta-archetype-main')+'">'+a.type+'：'+a.label+(a.full?'':'（一部一致）')+'</div>'+(i?'':'<div class="meta-archetype-sub">'+a.plan+'</div>')).join('')+'</div>';
+}
+
 function bestMetaArchetype(team){return metaArchetypeMatches(team)[0]||null}
 function metaQuartetBonus(names,currentTeam=[]){
   const q=(names||[]).filter(Boolean);
@@ -2585,8 +2637,18 @@ function metaLeadLabel(a,b,currentTeam=[]){
   return '';
 }
 
-const MOVE_MAP={"ゴリランダー":["ねこだまし","グラススライダー","ウッドハンマー","１０まんばりき","とんぼがえり","まもる","はたきおとす","ばかぢから","ドラムアタック","じだんだ"],"オオニューラ":["インファイト","フェイタルクロー","まもる","ねこだまし","いわなだれ","コーチング","じごくづき","がんせきふうじ","つるぎのまい","アクロバット","どくづき","フェイント","ダストシュート","ファストガード"],"ガオガエン":["ねこだまし","すてゼリフ","フレアドライブ","じごくづき","ＤＤラリアット","まもる","てだすけ","バークアウト","インファイト","ちょうはつ","おにび"],"メガボーマンダ":["まもる","ハイパーボイス","おいかぜ","りゅうせいぐん","すてみタックル","かえんほうしゃ","りゅうのはどう","ねっぷう","ドラゴンクロー","りゅうのまい","はねやすめ","だいもんじ"],"ボーマンダ":["おいかぜ","まもる","りゅうせいぐん","ドラゴンクロー","ダブルウイング","ねっぷう","かえんほうしゃ","エアスラッシュ","いわなだれ","ワイドブレイカー","サイコファング","ハイパーボイス","ハイドロポンプ","すてみタックル","りゅうのはどう","じしん","ぼうふう","かみくだく","りゅうのまい","アイアンヘッド","がんせきふうじ","そらをとぶ","つばめがえし"],"ドドゲザン":["ドゲザン","ふいうち","アイアンヘッド","まもる","けたぐり","つるぎのまい"],"イエッサン♀":["このゆびとまれ","トリックルーム","てだすけ","サイコキネシス","まもる","だいちのはどう","ふういん","マジカルシャイン","いやしのはどう","マジカルフレイム","スキルスワップ","いやしのねがい","サイコショック","ひかりのかべ","みわくのボイス"],"グソクムシャ":["まもる","アイアンヘッド","いわなだれ","きゅうけつ","アクアジェット","つるぎのまい","とんぼがえり","であいがしら","ふいうち"],"イダイトウ":["おはかまいり","ウェーブタックル","アクアジェット","まもる","クイックターン","アクアブレイク","もろはのずつき","サイコファング"],"ガブリアス":["ドラゴンクロー","いわなだれ","まもる","じだんだ","じしん","がんせきふうじ","どくづき","つるぎのまい","アイアンヘッド","だいちのちから","ほのおのキバ","げきりん","りゅうせいぐん","スケイルショット"],"リキキリン":["トリックルーム","まもる","サイコキネシス","てだすけ","１０まんボルト","ワイドフォース","ツインビーム","ハイパーボイス","ふういん","わるだくみ","くさむすび","サイコノイズ","ほえる","あまごい","サイドチェンジ","イカサマ","にほんばれ","サイコファング","マジカルシャイン"],"アマージョ":["トロピカルキック","パワーウィップ","とんぼがえり","まもる","てだすけ","ちょうはつ","けたぐり","じゃれつく","とびひざげり"],"サーフゴー":["ゴールドラッシュ","シャドーボール","まもる","わるだくみ","パワージェム","１０まんボルト","トリック"],"ペリッパー":["ぼうふう","ウェザーボール","おいかぜ","ワイドガード","まもる","だくりゅう","れいとうビーム","こごえるかぜ","とんぼがえり","てだすけ","みずびたし"],"エルフーン":["おいかぜ","ムーンフォース","アンコール","まもる","にほんばれ","あまえる","ちょうはつ","ひかりのかべ","うそなき","てだすけ","トリックルーム","マジカルシャイン","エナジーボール","がむしゃら","グラスフィールド","ふくろだたき"],"ブリジュラス":["エレクトロビーム","まもる","ラスターカノン","りゅうのはどう","りゅうせいぐん","はどうだん","バークアウト"],"ミロカロス":["まもる","ねっとう","れいとうビーム","こごえるかぜ","だくりゅう","とぐろをまく","さいみんじゅつ","じこさいせい","いのちのしずく","くろいきり","ドラゴンテール","てだすけ","ハイドロポンプ","ふぶき"],"ニンフィア":["ハイパーボイス","はかいこうせん","でんこうせっか","みきり","まもる","あくび","マジカルフレイム","めいそう","ムーンフォース","てだすけ","シャドーボール","りんしょう"],"ウインディ(ヒスイ)":["フレアドライブ","まもる","もろはのずつき","しんそく","いわなだれ","インファイト","ワイルドボルト"],"オーロンゲ":["リフレクター","ひかりのかべ","すてゼリフ","ソウルクラッシュ","イカサマ","ねこだまし","じごくづき","うそなき","ふいうち","ちょうはつ","こわいかお"],"ライチュウ":["ねこだまし","アンコール","まもる","ほっぺすりすり","ボルトチェンジ","１０まんボルト","かみなり","きあいだま"],"メガライチュウX":["ねこだまし","アンコール","まもる","ほっぺすりすり","ボルトチェンジ","１０まんボルト","かみなり","きあいだま"],"メガライチュウY":["ねこだまし","アンコール","まもる","ほっぺすりすり","ボルトチェンジ","１０まんボルト","かみなり","きあいだま"],"リザードン":["ねっぷう", "ぼうふう", "まもる", "おいかぜ", "かえんほうしゃ", "エアスラッシュ", "ソーラービーム", "だいもんじ"],"ニョロトノ":["ねっとう", "こごえるかぜ", "まもる", "てだすけ", "れいとうビーム", "だくりゅう", "ほろびのうた", "さいみんじゅつ", "あまごい"],"バンギラス":["いわなだれ", "かみくだく", "まもる", "けたぐり", "じだんだ", "ちょうはつ", "りゅうのまい", "れいとうパンチ"],"サーナイト":["ハイパーボイス", "サイコキネシス", "トリックルーム", "まもる", "マジカルシャイン", "ムーンフォース", "てだすけ", "ふういん"],"ヤバソチャ":["シャカシャカほう", "いかりのこな", "トリックルーム", "まもる", "ギガドレイン", "シャドーボール", "いのちのしずく", "ちからをすいとる"],"ラグラージ":["じしん", "たきのぼり", "ワイドガード", "まもる", "１０まんばりき", "れいとうパンチ", "いわなだれ", "アクアブレイク"],"メガラグラージ":["じしん", "たきのぼり", "ワイドガード", "まもる", "１０まんばりき", "れいとうパンチ", "いわなだれ", "アクアブレイク"],"メガサーナイト":["ハイパーボイス", "サイコキネシス", "トリックルーム", "まもる", "マジカルシャイン", "ムーンフォース", "てだすけ", "ふういん"],"メガリザードンY":["ねっぷう", "ぼうふう", "まもる", "おいかぜ", "かえんほうしゃ", "エアスラッシュ", "ソーラービーム", "だいもんじ"],"その他":["まもる"]};
+const MOVE_MAP={"ゴリランダー":["ねこだまし","グラススライダー","ウッドハンマー","１０まんばりき","とんぼがえり","まもる","はたきおとす","ばかぢから","ドラムアタック","じだんだ"],"オオニューラ":["インファイト","フェイタルクロー","まもる","ねこだまし","いわなだれ","コーチング","じごくづき","がんせきふうじ","つるぎのまい","アクロバット","どくづき","フェイント","ダストシュート","ファストガード"],"ガオガエン":["ねこだまし","すてゼリフ","フレアドライブ","じごくづき","ＤＤラリアット","まもる","てだすけ","バークアウト","インファイト","ちょうはつ","おにび"],"メガボーマンダ":["まもる","ハイパーボイス","おいかぜ","りゅうせいぐん","すてみタックル","かえんほうしゃ","りゅうのはどう","ねっぷう","ドラゴンクロー","りゅうのまい","はねやすめ","だいもんじ"],"ボーマンダ":["おいかぜ","まもる","りゅうせいぐん","ドラゴンクロー","ダブルウイング","ねっぷう","かえんほうしゃ","エアスラッシュ","いわなだれ","ワイドブレイカー","サイコファング","ハイパーボイス","ハイドロポンプ","すてみタックル","りゅうのはどう","じしん","ぼうふう","かみくだく","りゅうのまい","アイアンヘッド","がんせきふうじ","そらをとぶ","つばめがえし"],"ドドゲザン":["ドゲザン","ふいうち","アイアンヘッド","まもる","けたぐり","つるぎのまい"],"イエッサン♀":["このゆびとまれ","トリックルーム","てだすけ","サイコキネシス","まもる","だいちのはどう","ふういん","マジカルシャイン","いやしのはどう","マジカルフレイム","スキルスワップ","いやしのねがい","サイコショック","ひかりのかべ","みわくのボイス"],"グソクムシャ":["まもる","アイアンヘッド","いわなだれ","きゅうけつ","アクアジェット","つるぎのまい","とんぼがえり","であいがしら","ふいうち"],"イダイトウ":["おはかまいり","ウェーブタックル","アクアジェット","まもる","クイックターン","アクアブレイク","もろはのずつき","サイコファング"],"ガブリアス":["ドラゴンクロー","いわなだれ","まもる","じだんだ","じしん","がんせきふうじ","どくづき","つるぎのまい","アイアンヘッド","だいちのちから","ほのおのキバ","げきりん","りゅうせいぐん","スケイルショット","パワージェム","りゅうのはどう","かえんほうしゃ"],"リキキリン":["トリックルーム","まもる","サイコキネシス","てだすけ","１０まんボルト","ワイドフォース","ツインビーム","ハイパーボイス","ふういん","わるだくみ","くさむすび","サイコノイズ","ほえる","あまごい","サイドチェンジ","イカサマ","にほんばれ","サイコファング","マジカルシャイン"],"アマージョ":["トロピカルキック","パワーウィップ","とんぼがえり","まもる","てだすけ","ちょうはつ","けたぐり","じゃれつく","とびひざげり"],"サーフゴー":["ゴールドラッシュ","シャドーボール","まもる","わるだくみ","パワージェム","１０まんボルト","トリック"],"ペリッパー":["ぼうふう","ウェザーボール","おいかぜ","ワイドガード","まもる","だくりゅう","れいとうビーム","こごえるかぜ","とんぼがえり","てだすけ","みずびたし"],"エルフーン":["おいかぜ","ムーンフォース","アンコール","まもる","にほんばれ","あまえる","ちょうはつ","ひかりのかべ","うそなき","てだすけ","トリックルーム","マジカルシャイン","エナジーボール","がむしゃら","グラスフィールド","ふくろだたき"],"ブリジュラス":["エレクトロビーム","まもる","ラスターカノン","りゅうのはどう","りゅうせいぐん","はどうだん","バークアウト"],"ミロカロス":["まもる","ねっとう","れいとうビーム","こごえるかぜ","だくりゅう","とぐろをまく","さいみんじゅつ","じこさいせい","いのちのしずく","くろいきり","ドラゴンテール","てだすけ","ハイドロポンプ","ふぶき"],"ニンフィア":["ハイパーボイス","はかいこうせん","でんこうせっか","みきり","まもる","あくび","マジカルフレイム","めいそう","ムーンフォース","てだすけ","シャドーボール","りんしょう"],"ウインディ(ヒスイ)":["フレアドライブ","まもる","もろはのずつき","しんそく","いわなだれ","インファイト","ワイルドボルト"],"オーロンゲ":["リフレクター","ひかりのかべ","すてゼリフ","ソウルクラッシュ","イカサマ","ねこだまし","じごくづき","うそなき","ふいうち","ちょうはつ","こわいかお"],"ライチュウ":["ねこだまし","アンコール","まもる","ほっぺすりすり","ボルトチェンジ","１０まんボルト","かみなり","きあいだま","でんじほう","ライジングボルト","リフレクター","ひかりのかべ"],"メガライチュウX":["ねこだまし","ライジングボルト","アンコール","まもる","リフレクター","ひかりのかべ","１０まんボルト"],"メガライチュウY":["でんじほう","きあいだま","ねこだまし","まもる","アンコール","ほっぺすりすり","ボルトチェンジ","１０まんボルト","かみなり"],"リザードン":["ねっぷう","ぼうふう","まもる","おいかぜ","かえんほうしゃ","エアスラッシュ","ソーラービーム","だいもんじ","ウェザーボール","げんしのちから"],"ニョロトノ":["ねっとう","こごえるかぜ","まもる","てだすけ","れいとうビーム","だくりゅう","ほろびのうた","さいみんじゅつ","あまごい","じこあんじ"],"バンギラス":["いわなだれ","かみくだく","まもる","けたぐり","じだんだ","ちょうはつ","りゅうのまい","れいとうパンチ"],"サーナイト":["ハイパーボイス","サイコキネシス","トリックルーム","まもる","マジカルシャイン","ムーンフォース","てだすけ","ふういん","ワイドフォース","マジカルフレイム","めいそう","１０まんボルト"],"ヤバソチャ":["シャカシャカほう","いかりのこな","トリックルーム","まもる","ギガドレイン","シャドーボール","いのちのしずく","ちからをすいとる"],"ラグラージ":["じしん","たきのぼり","ワイドガード","まもる","１０まんばりき","れいとうパンチ","いわなだれ","アクアブレイク"],"メガラグラージ":["じしん","たきのぼり","ワイドガード","まもる","１０まんばりき","れいとうパンチ","いわなだれ","アクアブレイク"],"メガサーナイト":["ハイパーボイス","ワイドフォース","まもる","マジカルフレイム","めいそう","トリックルーム","ムーンフォース","ふういん","１０まんボルト"],"メガリザードンY":["ねっぷう","ウェザーボール","まもる","ぼうふう","げんしのちから","ソーラービーム","かえんほうしゃ","おいかぜ"],"その他":["まもる"],"メガガブリアスZ":["りゅうせいぐん","パワージェム","まもる","だいちのちから","りゅうのはどう","かえんほうしゃ"],"フラエッテ(えいえんのはな)":["ムーンフォース","マジカルシャイン","めいそう","まもる"],"メガフラエッテ":["ムーンフォース","マジカルシャイン","めいそう","まもる"],"クエスパトラ":["ルミナコリジョン","めいそう","まもる","バトンタッチ"],"メガグソクムシャ":["アイアンヘッド","きゅうけつ","まもる","アクアジェット","であいがしら","いわなだれ","つるぎのまい"],"ゲンガー":["シャドーボール","ヘドロばくだん","ほろびのうた","まもる"],"メガゲンガー":["シャドーボール","ヘドロばくだん","ほろびのうた","まもる"],"ジャラランガ":["スケイルノイズ","ソウルビート","まもる","はどうだん"],"ウルガモス":["かえんほうしゃ","いかりのこな","まもる","むしのさざめき","ちょうのまい"]};
 const SPRITE_SLUG={
+"メガガブリアスZ":"garchomp-megaz",
+"フラエッテ(えいえんのはな)":"floette-eternal",
+"メガフラエッテ":"floette-mega",
+"クエスパトラ":"espathra",
+"メガグソクムシャ":"golisopod-mega",
+"ゲンガー":"gengar",
+"メガゲンガー":"gengar-mega",
+"ジャラランガ":"kommoo",
+"ウルガモス":"volcarona",
+
 'ゴリランダー':'rillaboom','オオニューラ':'sneasler','ガオガエン':'incineroar',
 'ボーマンダ':'salamence','メガボーマンダ':'salamence-mega','ドドゲザン':'kingambit',
 'イエッサン♀':'indeedee-f','グソクムシャ':'golisopod','イダイトウ':'basculegion',
@@ -2600,6 +2662,16 @@ const SPRITE_SLUG={
 };
 
 const SPRITE_DEX={
+"メガガブリアスZ":445,
+"フラエッテ(えいえんのはな)":670,
+"メガフラエッテ":670,
+"クエスパトラ":956,
+"メガグソクムシャ":768,
+"ゲンガー":94,
+"メガゲンガー":94,
+"ジャラランガ":784,
+"ウルガモス":637,
+
 'ゴリランダー':812,'オオニューラ':903,'ガオガエン':727,
 'ボーマンダ':373,'メガボーマンダ':373,'ドドゲザン':983,
 'イエッサン♀':876,'グソクムシャ':768,'イダイトウ':902,
@@ -2689,6 +2761,421 @@ function opponentBenchEntries(){
   return (state.oppTeam||[]).map((name,idx)=>({name,idx,d:state.opp[idx]||{hp:100}}))
     .filter(x=>selected.has(x.idx))
     .filter(x=>!state.oppActive.includes(x.idx)&&(x.d.hp??100)>0);
+}
+
+// v1.88: observed tactical state. Predictions never write these counters or ranks.
+// Shared rank effects. Copying ranks (Baton/Psych Up) is not a boost event.
+const SELF_SETUP_BOOSTS=Object.freeze({
+ 'つるぎのまい':{atkStage:2},'わるだくみ':{spaStage:2},
+ 'りゅうのまい':{atkStage:1,speStage:1},'めいそう':{spaStage:1,spdStage:1},
+ 'ちょうのまい':{spaStage:1,spdStage:1,speStage:1},
+ 'とぐろをまく':{atkStage:1,defStage:1,accStage:1},
+ 'ソウルビート':{atkStage:1,defStage:1,spaStage:1,spdStage:1,speStage:1}
+});
+function applyBattleBoost(side,idx,boosts){
+ const d=state[side]?.[idx];if(!d)return {};
+ const gained={};
+ for(const k of BATTLE_STAGE_KEYS){
+  if(!boosts[k])continue;
+  const before=d[k]||0;d[k]=clampStage(before+boosts[k]);
+  if(d[k]>before)gained[k]=d[k]-before;
+ }
+ // No recursion: gains copied by Opportunist cannot trigger another Opportunist.
+ const other=side==='my'?'opp':'my';
+ if(Object.keys(gained).length)for(const ti of state[other+'Active']||[]){
+  const t=state[other]?.[ti],name=state[other+'Team']?.[ti];
+  if(!t||t.pendingPostTurnEntry||(t.hp??100)<=0||!confirmedAbilityIs(other,ti,name,'びんじょう'))continue;
+  for(const [k,n] of Object.entries(gained))t[k]=clampStage((t[k]||0)+n);
+ }
+ return gained;
+}
+function clangorousSoulCost(side,idx){
+ const name=state[side+'Team']?.[idx],d=state[side]?.[idx];
+ const stats=BATTLE_DATA[effectiveBattleName(side,idx,name)];
+ if(!stats||!d)return null;
+ // Opponent HP investment is unknown: retain the existing bulk assumption.
+ const maxHp=side==='my'?calcRealHP(stats.hp,Number(savedMyProfiles[idx]?.hp)||0):calcRealHP(stats.hp,defenderSpreadForBulk(d.bulk||'neutral').hp||0);
+ const full=Number.isFinite(maxHp)&&maxHp>0?maxHp:calcRealHP(stats.hp,0);
+ const current=Math.ceil(full*Math.max(0,Math.min(100,d.hp??100))/100),cost=Math.floor(full*.33);
+ return {fullHp:full,currentHp:current,cost,canUse:full>1&&current>full*.33&&Object.keys(SELF_SETUP_BOOSTS['ソウルビート']).some(k=>(d[k]||0)<6)};
+}
+function withTacticalProjection(callback){
+ const before={...state},memo=REFRESH_MEMO;
+ const ids=['weather','terrain','weatherTurns','terrainTurns','trTurns','myTailwind','oppTailwind'];
+ const fields=ids.map(id=>[id,$(id)?.value]);
+ try{
+  Object.assign(state,JSON.parse(JSON.stringify(state)));REFRESH_MEMO=null;
+  return callback();
+ }finally{
+  for(const k of Object.keys(state))delete state[k];Object.assign(state,before);
+  for(const [id,value] of fields)if($(id))$(id).value=value;
+  REFRESH_MEMO=memo;
+ }
+}
+function tacticalDamageRow(side,actor,move,target){
+ if(!DAMAGE_MOVES[move]?.power)return null;
+ const a={actor:actor.name,move,kind:'attack',target:target.name};
+ const r=side==='my'?damageInsightVsTarget(a,target):opponentDamageEstimateAgainstMy(a,target);
+ if(!r)return null;
+ const full=r.fullHp,rolls=r.rolls||[];
+ if(!full||!rolls.length)return null;
+ const accuracy=effectiveMoveAccuracy(move,side,actor.idx,side==='my'?'opp':'my',target.idx).accuracy;
+ const avg=side==='my'?r.damageDistribution.reduce((n,x)=>n+x.damage*x.weight,0):r.avg;
+ return {fullHp:full,currentHp:Math.max(1,Math.ceil(full*(target.d.hp??100)/100)),rolls,min:Math.min(...rolls),max:Math.max(...rolls),avg,accuracy,koChance:side==='my'?r.koChance:r.koChance*accuracy};
+}
+function tacticalBoardPressure(){
+ let value=0;
+ for(const side of ['my','opp'])for(const actor of leadData(side)){
+  let best=0;
+  const moves=side==='my'?myMovesFor(actor.idx):(actor.d.moves||MOVE_MAP[actor.name]||[]);
+  for(const move of moves)for(const target of leadData(side==='my'?'opp':'my')){
+   const row=tacticalDamageRow(side,actor,move,target);if(!row)continue;
+   const as=fieldSpeed(actor.name,side,actor.idx),ts=fieldSpeed(target.name,side==='my'?'opp':'my',target.idx);
+   const first=Number($('trTurns')?.value)>0?as<ts:as>ts;
+   best=Math.max(best,Math.min(1.5,row.avg/row.fullHp)*row.accuracy*(first?1.2:1));
+  }
+  value+=(side==='my'?1:-1)*best;
+ }
+ return value;
+}
+function hasTacticalProjection(actions,pair){
+ return [...(actions||[]),pair?.a,pair?.b].some(a=>a&&(SELF_SETUP_BOOSTS[a.move]||['バトンタッチ','じこあんじ'].includes(a.move)));
+}
+function projectTacticalTurn(actions,pair){
+ return withTacticalProjection(()=>{
+  const initialPressure=tacticalBoardPressure(),trace=[],notes=[],guards=new Map(),flinched=new Set(),taunted=new Set();
+  const startSlots={my:[...state.myActive],opp:[...state.oppActive]};
+  const ordered=[],queue=[];let selfCostValue=0;
+  for(const side of ['my','opp'])for(const a of side==='my'?(actions||[]):[pair?.a,pair?.b].filter(Boolean)){
+   const ev=simulatedActionEvent(a,side);if(!ev)continue;
+   const targetSide=a.targetSide||(side==='my'?'opp':'my');
+   const ti=state[targetSide+'Team'].indexOf(a.target);
+   queue.push({...ev,targetSide,targetSlot:startSlots[targetSide].indexOf(ti)});
+  }
+  // Ordinary switches are simultaneous entrants; reset every entrant before abilities.
+  const normal=queue.filter(e=>e.action.kind==='switch'),entrants=[];
+  for(const ev of normal){
+   const side=ev.side,to=state[side+'Team'].indexOf(ev.action.switchTo),slot=state[side+'Active'].indexOf(ev.idx);
+   queue.splice(queue.indexOf(ev),1);ordered.push(ev);
+   if(slot<0||to<0||state[side+'Active'].includes(to)||!isAliveEntry(side,to)||switchRestriction(side,ev.idx).blocked)continue;
+   resetEntryStages(side,ev.idx,ev.actor);state[side+'Active'][slot]=to;
+   entrants.push({side,idx:to,name:ev.action.switchTo});
+   trace.push({type:'switch',side,actor:ev.actor,to:ev.action.switchTo});
+  }
+  if(entrants.length)resolveEntryEvents(entrants);
+  while(queue.length){
+   queue.forEach(e=>{e.speed=fieldSpeed(e.actor,e.side,e.idx)||0;});
+   const sorted=sortTurnSimulationEvents(queue),ev=sorted[0];queue.splice(queue.indexOf(ev),1);ordered.push(ev);
+   if(sorted[1]&&ev.priority===sorted[1].priority&&ev.speed===sorted[1].speed)notes.push('同速順は仮定');
+   const side=ev.side,other=side==='my'?'opp':'my',a=ev.action,d=state[side][ev.idx];
+   if(!state[side+'Active'].includes(ev.idx)||(d.hp??100)<=0||a.failed||flinched.has(side+':'+ev.idx))continue;
+   if(taunted.has(side+':'+ev.idx)&&isStatusMoveForPriority(a.move))continue;
+   if(a.kind==='switch'||a.move==='バトンタッチ'){
+    const to=state[side+'Team'].indexOf(a.switchTo),slot=state[side+'Active'].indexOf(ev.idx);
+    if(to<0||state[side+'Active'].includes(to)||!isAliveEntry(side,to)||switchRestriction(side,ev.idx,a.kind==='switch'?'':a.move).blocked)continue;
+    const baton=a.move==='バトンタッチ'?copyBatonState(d):null;
+    resetEntryStages(side,ev.idx,a.actor);state[side+'Active'][slot]=to;
+    resolveEntryEvents([{side,idx:to,name:a.switchTo,batonState:baton}]);
+    trace.push({type:'switch',side,actor:a.actor,to:a.switchTo,ranks:copyBatonState(state[side][to])});continue;
+   }
+   if(a.move==='ちょうはつ'){
+    const ti=state[other+'Active'][ev.targetSlot],target=state[other]?.[ti];
+    if(target&&!pranksterTargetBlockReason(a,side)&&!guards.has(other+':'+ti)&&!['どんかん','アロマベール','マジックミラー'].includes(abilityOf(other,ti,state[other+'Team'][ti]))&&heldItemFor(other,ti)!=='メンタルハーブ'){
+     taunted.add(other+':'+ti);notes.push('ちょうはつ成功を仮定');
+    }
+    continue;
+   }
+   if(PROTECT_MOVES.has(a.move)){guards.set(side+':'+ev.idx,{move:a.move,probability:protectChainSuccessProbability(d,a.move)});continue;}
+   if(['ワイドガード','ファストガード'].includes(a.move)){guards.set(side+':team',{move:a.move,probability:1});continue;}
+   if(SELF_SETUP_BOOSTS[a.move]){
+    if(a.move==='ソウルビート'){
+     const cost=clangorousSoulCost(side,ev.idx);if(!cost?.canUse){notes.push(a.actor+'：ソウルビート不成立');continue;}
+     d.hp=100*(cost.currentHp-cost.cost)/cost.fullHp;selfCostValue+=(side==='my'?-1:1)*cost.cost/cost.fullHp;
+    }
+    applyBattleBoost(side,ev.idx,SELF_SETUP_BOOSTS[a.move]);
+    trace.push({type:'setup',side,actor:a.actor,ranks:copyBatonState(d),hp:d.hp});continue;
+   }
+   if(a.move==='じこあんじ'){
+    applyRecordedPsychUp(side,ev.idx,{targetSide:ev.targetSide,targetSlot:ev.targetSlot});continue;
+   }
+   if(!DAMAGE_MOVES[a.move]?.power){
+    // Only deterministic field effects already supported by the recording engine.
+    if(['おいかぜ','トリックルーム','あまごい','にほんばれ','リフレクター','ひかりのかべ','くろいきり'].includes(a.move))applyObservedMoveEffects(side,ev.idx,a.actor,a.move);
+    continue;
+   }
+   const targets=DAMAGE_MOVES[a.move].spread?leadData(other):[leadData(other).find(t=>t.idx===state[other+'Active'][ev.targetSlot])].filter(Boolean);
+   for(const target of targets){
+    if(movePriorityForActor(a.move,a.kind,side,ev.idx,a.actor)>0&&priorityBlockedAgainst(target,other))continue;
+    if(a.move==='ねこだまし'&&!fakeOutAvailable({name:a.actor,idx:ev.idx,d}))continue;
+    const guard=guards.get(other+':'+target.idx),teamGuard=guards.get(other+':team');
+    if(teamGuard&&((teamGuard.move==='ワイドガード'&&DAMAGE_MOVES[a.move].spread)||(teamGuard.move==='ファストガード'&&movePriorityForActor(a.move,a.kind,side,ev.idx,a.actor)>0))&&!guardMoveResolution(a.move,teamGuard.move).ok)continue;
+    const open=guard&&!guardMoveResolution(a.move,guard.move).ok?1-guard.probability:1;
+    if(open<=0)continue;
+    const row=tacticalDamageRow(side,{name:a.actor,idx:ev.idx,d},a.move,target);if(!row)continue;row.accuracy*=open;row.koChance*=open;
+    // Expected damage is a scenario, never an observed HP update or guaranteed KO.
+    let loss=Math.min(target.d.hp??100,row.avg/row.fullHp*100*row.accuracy);
+    if(row.koChance===0&&loss>=(target.d.hp??100))loss=Math.max(0,(target.d.hp??100)-100/row.fullHp);
+    if(a.move==='ねこだまし'&&loss>0&&!['せいしんりょく','りんぷん'].includes(abilityOf(other,target.idx,target.name))){flinched.add(other+':'+target.idx);notes.push('ねこだまし成功を仮定');}
+    target.d.hp=Math.max(0,(target.d.hp??100)-loss);
+    trace.push({type:'attack',side,actor:a.actor,target:target.name,move:a.move,targetIdx:target.idx,...row,lossPct:loss,remainingHp:target.d.hp});
+   }
+  }
+  applyEndTurnAbilityEffects();advancePerishCounters();decrementTurnFieldCounters();
+  const finalPressure=tacticalBoardPressure();
+  const score=Math.max(-9,Math.min(9,(finalPressure-initialPressure)*3+selfCostValue*3));
+  for(const sw of trace.filter(t=>t.type==='switch'&&t.side==='my')){const idx=state.myTeam.indexOf(sw.to);notes.push(sw.to+'：交代後の推定HP '+Math.round(state.my[idx].hp??100)+'%');}
+  const result={score,ordered,trace,end:captureTurnAttackState(),pressureBefore:initialPressure,pressureAfter:finalPressure,
+   notes:[...new Set([...notes,'積み・バトン後の耐久と次ターンの打点を推定'])]};
+  return result;
+ });
+}
+function tacticalProjectionAssessment(actions,pair=null){
+ const actualPair=pair||opponentPairPredictions()[0]||null;
+ if(!hasTacticalProjection(actions,actualPair))return {score:0,notes:[]};
+ return memoDuringRefresh('tacticalProjection:'+JSON.stringify([actions,actualPair]),()=>projectTacticalTurn(actions,actualPair));
+}
+
+const BATTLE_STAGE_KEYS=['atkStage','defStage','spaStage','spdStage','speStage','accStage','evaStage'];
+const SWITCHING_MOVES=new Set(['バトンタッチ','とんぼがえり','ボルトチェンジ','クイックターン','すてゼリフ']);
+const QUICK_TACTICAL_MOVES=new Set(['バトンタッチ','ほろびのうた','じこあんじ','つるぎのまい','わるだくみ','りゅうのまい','めいそう','ちょうのまい','とぐろをまく','ソウルビート']);
+function switchRestriction(side,idx,move=''){
+  const name=state[side+'Team']?.[idx],d=state[side]?.[idx];
+  if(!name||(d?.hp??100)<=0||SWITCHING_MOVES.has(move))return {blocked:false,reason:''};
+  const effective=effectiveBattleName(side,idx,name);
+  if(BATTLE_DATA[effective]?.types.includes('ゴースト')||confirmedAbilityIs(side,idx,name,'かげふみ'))return {blocked:false,reason:''};
+  const item=knownHeldItemState(side,idx);
+  if(item.known&&item.item==='きれいなぬけがら')return {blocked:false,reason:''};
+  const other=side==='my'?'opp':'my';
+  for(const i of state[other+'Active']||[]){
+    const n=state[other+'Team']?.[i],x=state[other]?.[i];
+    if(n&&(x?.hp??100)>0&&!x?.pendingPostTurnEntry&&confirmedAbilityIs(other,i,n,'かげふみ')){
+      return {blocked:true,reason:n+'のかげふみ',trapper:n};
+    }
+  }
+  return {blocked:false,reason:''};
+}
+function tacticalSwitchDestinations(side,idx,move=''){
+  if(switchRestriction(side,idx,move).blocked)return [];
+  const reserved=pendingSwitchDestinations(side,idx);
+  return manualSwitchCandidateIndices(side).filter(i=>!reserved.has(i));
+}
+function tacticalActionNeedsInput(side,idx){
+  const a=state[side]?.[idx]?.currentTurnAction;
+  if(a?.kind!=='move'||a.failed)return false;
+  if(SWITCHING_MOVES.has(a.move)&&manualSwitchCandidateIndices(side).length)return !a.to;
+  return a.move==='じこあんじ'&&(!['my','opp'].includes(a.targetSide)||!Number.isInteger(a.targetSlot));
+}
+function hasIncompleteTacticalAction(){
+  return ['my','opp'].some(side=>(state[side+'Team']||[]).some((_,idx)=>tacticalActionNeedsInput(side,idx)));
+}
+function recordMoveSwitchForSlot(side,slot,toIdx){
+  const idx=turnOriginIndex(side,slot),a=state[side]?.[idx]?.currentTurnAction;
+  if(a?.kind!=='move'||a.failed||!SWITCHING_MOVES.has(a.move))return false;
+  if(!tacticalSwitchDestinations(side,idx,a.move).includes(toIdx))return false;
+  a.to=state[side+'Team'][toIdx];
+  return true;
+}
+function recordPsychUpTarget(side,idx,targetSide,targetSlot){
+  const a=state[side]?.[idx]?.currentTurnAction;
+  if(a?.kind!=='move'||a.move!=='じこあんじ'||a.failed||!['my','opp'].includes(targetSide)||![0,1].includes(targetSlot))return false;
+  const ti=state[targetSide+'Active']?.[targetSlot],n=state[targetSide+'Team']?.[ti];
+  if(!n||(side===targetSide&&idx===ti)||(state[targetSide]?.[ti]?.hp??100)<=0)return false;
+  a.targetSide=targetSide;a.targetSlot=targetSlot;a.target=n;
+  return true;
+}
+function applyRecordedPsychUp(side,idx,action){
+  if(!['my','opp'].includes(action?.targetSide)||![0,1].includes(action?.targetSlot))return false;
+  const ti=state[action.targetSide+'Active']?.[action.targetSlot];
+  const target=state[action.targetSide]?.[ti],source=state[side]?.[idx];
+  if(!target||!source||(target.hp??100)<=0||side===action.targetSide&&idx===ti)return false;
+  BATTLE_STAGE_KEYS.forEach(k=>source[k]=clampStage(target[k]||0));
+  return true;
+}
+function copyBatonState(d){
+  return {stages:Object.fromEntries(BATTLE_STAGE_KEYS.map(k=>[k,clampStage(d[k]||0)])),
+    perishCount:Number.isInteger(d.perishCount)?d.perishCount:null,perishUncertain:!!d.perishUncertain};
+}
+function restoreBatonState(d,passed){
+  if(!passed)return;
+  BATTLE_STAGE_KEYS.forEach(k=>d[k]=clampStage(passed.stages?.[k]||0));
+  d.perishCount=passed.perishCount;d.perishUncertain=passed.perishUncertain;
+}
+function commitRecordedMoveSwitch(side,idx,name,action){
+  if(!action.to||action.failed||!SWITCHING_MOVES.has(action.move))return null;
+  const active=state[side+'Active'],team=state[side+'Team'];
+  const slot=active.indexOf(idx),toIdx=team.indexOf(action.to);
+  if(slot<0||toIdx<0||active.includes(toIdx)||(state[side]?.[toIdx]?.hp??100)<=0)throw Error('交代技の交代先を確認してください');
+  const beforeCombat=captureTurnAttackState();
+  const beforeField={weather:$('weather')?.value||'なし',terrain:$('terrain')?.value||'なし'};
+  const outgoing=ensureBattleEntry(side,idx,name);
+  const batonState=action.move==='バトンタッチ'?copyBatonState(outgoing):null;
+  resetEntryStages(side,idx,name);
+  active[slot]=toIdx;
+  const incoming=ensureBattleEntry(side,toIdx,action.to);
+  incoming.freshEntry=true;incoming.enteredBySwitchThisTurn=true;
+  resolveEntryEvents([{side,idx:toIdx,name:action.to,batonState}]);
+  const point=turnFieldCheckpoint('switch',side,action.to,action.move);
+  point.beforeCombat=beforeCombat;point.beforeField=beforeField;point.afterCombat=captureTurnAttackState();
+  return point;
+}
+function applyPerishSong(side,idx,name){
+  const ignoreAbilities=attackerIgnoresDefensiveAbilities(side,idx,name);
+  for(const targetSide of ['my','opp'])for(const ti of state[targetSide+'Active']||[]){
+    const n=state[targetSide+'Team']?.[ti];if(!n)continue;
+    const d=ensureBattleEntry(targetSide,ti,n);
+    if((d.hp??100)<=0||d.pendingPostTurnEntry||Number.isInteger(d.perishCount))continue;
+    const self=side===targetSide&&idx===ti;
+    const immune=!self&&!ignoreAbilities&&confirmedAbilityIs(targetSide,ti,n,'ぼうおん');
+    if(immune)continue;
+    d.perishCount=4;
+    d.perishUncertain=!self&&!ignoreAbilities&&targetSide==='opp'&&!d.abilityConfirmed&&!d.megaEvolved&&possibleAbility(targetSide,ti,n,'ぼうおん');
+  }
+}
+function advancePerishCounters(){
+  let fainted=false;
+  for(const side of ['my','opp'])for(const idx of state[side+'Active']||[]){
+    const d=state[side]?.[idx];
+    if(!d||d.pendingPostTurnEntry||(d.hp??100)<=0||!Number.isInteger(d.perishCount)||d.perishCount<=0)continue;
+    d.perishCount--;
+    if(d.perishCount===0&&!d.perishUncertain){d.hp=0;fainted=true;}
+  }
+  return fainted;
+}
+function setObservedPerishCount(side,idx,count){
+  if(!['my','opp'].includes(side)||!state[side+'Active']?.includes(idx)||count!==null&&(!Number.isInteger(count)||count<0||count>4))return false;
+  const d=ensureBattleEntry(side,idx,state[side+'Team'][idx]);
+  d.perishCount=count;d.perishUncertain=false;
+  if(count===0)d.hp=0;
+  return true;
+}
+function perishCountText(d){
+  return Number.isInteger(d?.perishCount)?'滅び'+(d.perishUncertain?'？':'')+d.perishCount:'';
+}
+function validateTacticalMember(d){
+  if(d.perishCount!=null&&(!Number.isInteger(d.perishCount)||d.perishCount<0||d.perishCount>4))throw Error('滅びのカウントが不正です。');
+  if(d.perishUncertain!=null&&typeof d.perishUncertain!=='boolean')throw Error('滅びの確認状態が不正です。');
+  const a=d.currentTurnAction||d.action;
+  if(a?.targetSide!=null&&!['my','opp'].includes(a.targetSide)||a?.targetSlot!=null&&![0,1].includes(a.targetSlot))throw Error('技の対象が不正です。');
+  if(a?.to!=null&&typeof a.to!=='string')throw Error('交代技の交代先が不正です。');
+}
+function finishPostPerishReplacements(){
+  if(!state.pendingEndTurnReplacements||hasPendingKOReplacement())return;
+  applyPostTurnEntries();state.pendingEndTurnReplacements=false;
+  snapshotTurnStartActives();state.turnRecordStart=turnRecordSnapshot();
+  // Undo this replacement together with the prior completed turn, not as its input.
+}
+function tacticalRefresh(){
+  renderCards();renderRosterHp();refresh();save();
+  if(document.body.classList.contains('mode45'))updateGuide45();
+}
+function renderTacticalActionDetails(side,idx,slot,parent){
+  const d=state[side]?.[idx],a=d?.currentTurnAction;
+  if(a?.kind!=='move'||a.failed)return;
+  if(SWITCHING_MOVES.has(a.move)){
+    const wrap=document.createElement('div');wrap.className='fixed45-switches tactical-targets';
+    const label=document.createElement('div');label.className='row-title';label.textContent=a.move+'：交代先';wrap.appendChild(label);
+    tacticalSwitchDestinations(side,idx,a.move).forEach(pi=>{
+      const b=document.createElement('button');b.type='button';b.className='bench-btn';b.textContent=state[side+'Team'][pi];
+      if(a.to===b.textContent)b.classList.add('active');
+      b.onclick=()=>{if(recordMoveSwitchForSlot(side,slot,pi))tacticalRefresh();};wrap.appendChild(b);
+    });
+    if(wrap.children.length===1){const t=document.createElement('span');t.textContent='交代可能な控えなし';wrap.appendChild(t);}
+    parent.appendChild(wrap);
+  }else if(a.move==='じこあんじ'){
+    const wrap=document.createElement('div');wrap.className='fixed45-switches tactical-targets';
+    const label=document.createElement('div');label.className='row-title';label.textContent='じこあんじ：コピー対象';wrap.appendChild(label);
+    for(const ts of ['my','opp'])(state[ts+'Active']||[]).forEach((ti,targetSlot)=>{
+      if(ts===side&&ti===idx||(state[ts]?.[ti]?.hp??100)<=0)return;
+      const b=document.createElement('button');b.type='button';b.className='bench-btn';
+      const pending=state[ts]?.[ti]?.currentTurnAction;
+      const targetName=pending?.to||state[ts+'Team'][ti];
+      b.textContent=(ts===side?'味方：':'相手：')+targetName;
+      if(a.targetSide===ts&&a.targetSlot===targetSlot)b.classList.add('active');
+      b.onclick=()=>{if(recordPsychUpTarget(side,idx,ts,targetSlot))tacticalRefresh();};wrap.appendChild(b);
+    });
+    parent.appendChild(wrap);
+  }
+}
+function renderPerishControls(side,idx,parent){
+  const d=state[side]?.[idx];if(!Number.isInteger(d?.perishCount))return;
+  const wrap=document.createElement('div');wrap.className='perish-controls';
+  const label=document.createElement('b');label.textContent='開始時 '+perishCountText(d)+(d.perishCount===1?'：このターン末':'');wrap.appendChild(label);
+  if(d.perishUncertain){const n=document.createElement('span');n.className='row-title';n.textContent='ぼうおん未確認：実際のカウントを選択';wrap.appendChild(n);}
+  for(const count of [null,3,2,1,0]){
+    const b=document.createElement('button');b.type='button';b.className='chip';b.textContent=count===null?'解除':String(count);
+    if(count===d.perishCount&&!d.perishUncertain)b.classList.add('active');
+    b.onclick=()=>{if(setObservedPerishCount(side,idx,count))tacticalRefresh();};wrap.appendChild(b);
+  }
+  parent.appendChild(wrap);
+}
+function renderOwnTacticalQuickButtons(entry,slot,parent){
+  const moves=(savedMyMoves[entry.idx]||entry.d.moves||[]).filter(m=>QUICK_TACTICAL_MOVES.has(m));
+  if(!moves.length)return;
+  const wrap=document.createElement('div');wrap.className='fixed45-section';
+  const label=document.createElement('div');label.className='fixed45-label';label.textContent='使った技（必要時）';wrap.appendChild(label);
+  const buttons=document.createElement('div');buttons.className='fixed45-actions';
+  moves.forEach(move=>{
+    const b=document.createElement('button');b.type='button';b.textContent=move;
+    if(entry.d.currentTurnAction?.move===move)b.classList.add('active');
+    b.onclick=()=>{if(entry.d.currentTurnAction?.move===move)entry.d.currentTurnAction=null;else setCurrentTurnMove('my',entry.idx,entry.name,move);tacticalRefresh();};buttons.appendChild(b);
+  });
+  wrap.appendChild(buttons);parent.appendChild(wrap);
+}
+function batonRecipientValue(side,idx,toIdx){
+  const d=state[side]?.[idx]||{},n=state[side+'Team']?.[toIdx];
+  if(!n)return 0;
+  const moves=side==='my'?myMovesFor(toIdx):(state.opp?.[toIdx]?.moves||MOVE_MAP[n]||[]);
+  const physical=moves.some(m=>DAMAGE_MOVES[m]?.cat==='phys'),special=moves.some(m=>DAMAGE_MOVES[m]?.cat==='spec');
+  let score=(physical?(d.atkStage||0)*.8:0)+(special?(d.spaStage||0)*.8:0)+
+    (d.defStage||0)*.3+(d.spdStage||0)*.3+(d.speStage||0)*.45;
+  if(Number.isInteger(d.perishCount))score-=d.perishCount<=1?18:d.perishCount===2?5:2;
+  return score;
+}
+function tacticalPlanAssessment(actions,opponentPair=null){
+  let score=0;const notes=[];
+  const oppActions=opponentPair?[opponentPair.a,opponentPair.b].filter(Boolean):[];
+  for(const entry of leadData('my')){
+    const a=(actions||[]).find(x=>x?.actor===entry.name),d=entry.d;
+    const count=d.perishCount;
+    const normal=a?.kind==='switch'&&!switchRestriction('my',entry.idx).blocked;
+    const pivot=SWITCHING_MOVES.has(a?.move)&&a.move!=='バトンタッチ'&&benchEntries().length>0;
+    const blockedPivot=pivot&&oppActions.some(o=>o.actor===a.target&&PROTECT_MOVES.has(o.move));
+    const escape=normal; // Pivot success depends on the target, immunity and action order.
+    if(pivot&&!blockedPivot&&count===1)notes.push(entry.name+'：交代技の成功時のみ滅び解除');
+    if(Number.isInteger(count)&&count>0){
+      const factor=d.perishUncertain?.5:1;
+      if(count===1){score+=(escape?normal?8:2:-22)*factor;notes.push(entry.name+(escape?'：滅び回避の交代':'：滅び1、まもる・バトンでは回避不可'));}
+      else if(count===2&&!escape){score-=3*factor;if(switchRestriction('my',entry.idx).blocked){score-=2;notes.push(entry.name+'：滅び2、かげふみ解除を優先');}}
+    }
+    if(a?.move==='バトンタッチ'){
+      const toIdx=state.myTeam.indexOf(a.switchTo);
+      score+=batonRecipientValue('my',entry.idx,toIdx);
+      notes.push(Number.isInteger(count)?'バトン先にも滅びが残る':entry.name+'：能力ランクを'+a.switchTo+'へ引き継ぐ');
+    }
+    if(a?.move==='じこあんじ'&&a.targetSide==='my'){
+      const ti=state.myTeam.indexOf(a.target);if(ti>=0)score+=Math.max(0,(state.my[ti]?.spaStage||0)-(d.spaStage||0))*.65;
+    }
+    if(a?.move==='ほろびのうた'){
+      let affected=0;
+      for(const target of leadData('opp'))if(!Number.isInteger(target.d.perishCount)&&!confirmedAbilityIs('opp',target.idx,target.name,'ぼうおん'))affected+=switchRestriction('opp',target.idx).blocked?2:.35;
+      score+=affected;
+      if(!benchEntries().length&&!confirmedAbilityIs('my',entry.idx,entry.name,'ぼうおん'))score-=2;
+    }
+  }
+  for(const target of leadData('opp')){
+    const count=target.d.perishCount;if(!Number.isInteger(count)||count<=0||target.d.perishUncertain)continue;
+    const restriction=switchRestriction('opp',target.idx);
+    const trapperLeaving=(actions||[]).some(a=>a.actor===restriction.trapper&&(a.kind==='switch'||SWITCHING_MOVES.has(a.move)));
+    const trapped=restriction.blocked&&!trapperLeaving;
+    const planned=oppActions.find(a=>a.actor===target.name);
+    const escaping=planned&&(planned.kind==='switch'||SWITCHING_MOVES.has(planned.move)&&planned.move!=='バトンタッチ');
+    if(count===1&&trapped&&!escaping){
+      for(const a of actions||[])if(PROTECT_MOVES.has(a?.move))score+=2*protectChainSuccessProbability(state.my[state.myTeam.indexOf(a.actor)],a.move);
+      notes.push(target.name+'：滅び1、耐えればターン末KO');
+    }
+    if(count===2&&trapped)notes.push(target.name+'：滅び2、交代封じを維持');
+  }
+  return {score,notes:[...new Set(notes)].slice(0,3)};
 }
 
 function manualSwitchCandidateIndices(side){
@@ -2831,6 +3318,7 @@ function learnedReason(name,move=null,kind='move'){
 }
 
 function bestOpponentSwitch(entry,blocked=new Set()){
+  if(switchRestriction('opp',entry.idx).blocked)return null;
   const currentRisk=opponentDefensiveRisk(entry.name);
   const hp=entry.d.hp??100;
   const currentAbility=abilityOf('opp',entry.idx,entry.name);
@@ -2862,7 +3350,8 @@ function bestOpponentSwitch(entry,blocked=new Set()){
     (currentAbility==='いかく'?0.25:0);
 
   const learningBonus=learnedSwitchBonus(entry.name);
-  const learnedSwitchScore=switchScore+learningBonus;
+  const perishUrgency=entry.d.perishCount===1?12:entry.d.perishCount===2?4:0;
+  const learnedSwitchScore=switchScore+learningBonus+perishUrgency;
   if(learnedSwitchScore<1.8)return null;
   let reason='相性不利を回避';
   if(hp<=20)reason='低HPを温存';
@@ -2871,6 +3360,7 @@ function bestOpponentSwitch(entry,blocked=new Set()){
   else if(best.utility>0.4)reason='いかく再展開も狙える';
   const lr=learnedReason(entry.name,null,'switch');
   if(lr&&learningBonus>0.25)reason=lr;
+  if(perishUrgency)reason='滅びのカウントを解除';
   return {kind:'switch',actor:entry.name,actorIdx:entry.idx,switchTo:best.name,switchIdx:best.idx,score:7+learnedSwitchScore,reason,learningBonus};
 }
 
@@ -3082,6 +3572,12 @@ function opponentAttackCandidates(entry){
     PASSIVE_PUNISH_MOVES.has(m)||OPPONENT_SUPPORT_MOVES.has(m)
   );
   support.forEach(m=>{
+    if(m==='バトンタッチ'){
+      opponentBenchEntries().forEach(b=>out.push({kind:'support',actor:entry.name,actorIdx:entry.idx,move:m,switchTo:b.name,score:5.5+batonRecipientValue('opp',entry.idx,b.idx),reason:Number.isInteger(entry.d.perishCount)?'能力と滅びを引き継ぐ':'能力上昇を後続へ',learningBonus:0}));return;
+    }
+    if(m==='じこあんじ'){
+      for(const side of ['opp','my'])leadData(side).filter(t=>side!=='opp'||t.idx!==entry.idx).forEach(t=>out.push({kind:'support',actor:entry.name,actorIdx:entry.idx,move:m,target:t.name,targetSide:side,score:5.5+Math.max(0,(t.d.spaStage||0)-(entry.d.spaStage||0)),reason:'能力ランクをコピー',learningBonus:0}));return;
+    }
     let score=5.5;
     if(PROTECT_MOVES.has(m)){
       const pr=opponentProtectRisk(entry);
@@ -3136,11 +3632,13 @@ function opponentChoicesFor(entry){
 }
 function legalOpponentPair(a,b){
   if(!a||!b||a.actor===b.actor)return false;
-  if(a.kind==='switch'&&b.kind==='switch'&&a.switchTo===b.switchTo)return false;
+  if(a.switchTo&&b.switchTo&&a.switchTo===b.switchTo)return false;
   return true;
 }
 function scoreOpponentPair(a,b){
   let s=(a?.score||0)+(b?.score||0);
+  const combo=[a,b];
+  if(combo.some(x=>x?.move==='ねこだまし')&&combo.some(x=>x?.move==='めいそう'))s+=1.2;
   // Mild bonus for complementary pressure instead of redundant passive actions.
   if(a?.kind==='attack'&&b?.kind==='attack'&&a.target===b.target)s+=1.1; // focus-fire
   if(a?.kind==='switch'&&b?.kind!=='switch')s+=.2;
@@ -3187,7 +3685,7 @@ function renderOpponentPredictionAction(a){
   }
   const kind=a.kind==='support'?'展開':'攻撃';
   const kindCls=a.kind==='support'?'switch':'attack';
-  const target=a.spread
+  const target=a.switchTo?` → <span class="opp-pred-target">${spriteImgHtml(a.switchTo)}${a.switchTo}</span>`:a.spread
     ?` → <span class="opp-pred-target">自分全体</span>`
     :(a.target?` → <span class="opp-pred-target">${spriteImgHtml(a.target)}<span>${a.target}</span></span>`:'');
   return `${actor} <span class="opp-pred-kind ${kindCls}">${kind}</span> <span class="opp-pred-move">${a.move}</span>${target} <span class="opp-pred-note">（${a.reason}）</span>`;
@@ -3409,7 +3907,7 @@ function renderOpponentActions(){
   renderOpponentBacklineInference();
 }
 const ITEMS=['不明'];
-const ITEM_MAP={"ゴリランダー":["きせきのタネ","オボンのみ","いのちのたま","だっしゅつボタン","オッカのみ","グラスシード","たべのこし"],"オオニューラ":["グラスシード","サイコシード","しろいハーブ","きあいのタスキ"],"ガオガエン":["オボンのみ","ヨプのみ","イトケのみ","ゴツゴツメット","しろいハーブ","たべのこし"],"メガボーマンダ":["ボーマンダナイト"],"ボーマンダ":["いのちのたま","こだわりスカーフ","ハバンのみ","きあいのタスキ","ヤチェのみ","たべのこし","ゴツゴツメット","たつじんのおび","するどいくちばし"],"ドドゲザン":["ヨプのみ","いのちのたま","くろいメガネ","きあいのタスキ","オッカのみ"],"イエッサン♀":["ナモのみ","ゴツゴツメット","サイコシード","オボンのみ","きあいのタスキ"],"イダイトウ":["こだわりスカーフ","いのちのたま","しんぴのしずく","きあいのタスキ","オボンのみ"],"ガブリアス":["いのちのたま","こだわりスカーフ","オボンのみ","ゴツゴツメット","ロゼルのみ","やわらかいすな","たべのこし"],"リキキリン":["オボンのみ","ナモのみ","グラスシード","メンタルハーブ","サイコシード"],"サーフゴー":["いのちのたま","グラスシード","こだわりスカーフ","たべのこし","きあいのタスキ"],"ペリッパー":["きあいのタスキ","オボンのみ","いのちのたま","しめったいわ","こだわりスカーフ"],"エルフーン":["きあいのタスキ","オッカのみ","ようせいのハネ","オボンのみ","バコウのみ","たべのこし"],"ブリジュラス":["たべのこし","ヨプのみ","いのちのたま","じしゃく","こだわりスカーフ"],"ミロカロス":["たべのこし","オボンのみ","サイコシード","グラスシード","リンドのみ"],"ニンフィア":["ようせいのハネ","いのちのたま","たべのこし"],"ウインディ(ヒスイ)":["きあいのタスキ","こだわりスカーフ"],"オーロンゲ":["ひかりのねんど","オボンのみ","ロゼルのみ"],"ライチュウ":["ライチュウナイトY","ライチュウナイトX","きあいのタスキ","ゴツゴツメット","シュカのみ"],"メガライチュウX":["ライチュウナイトX"],"メガライチュウY":["ライチュウナイトY"],"リザードン":["リザードナイトY","いのちのたま","きあいのタスキ"],"メガリザードンY":["リザードナイトY"],"サーナイト":["サーナイトナイト","きあいのタスキ","オボンのみ"],"メガサーナイト":["サーナイトナイト"],"ラグラージ":["ラグラージナイト","オボンのみ","たべのこし"],"メガラグラージ":["ラグラージナイト"],"グソクムシャ":["いのちのたま", "オボンのみ", "しんぴのしずく", "きあいのタスキ", "ぎんのこな"],"アマージョ":["こうかくレンズ", "オボンのみ", "いのちのたま", "きあいのタスキ", "とつげきチョッキ"],"ニョロトノ":["オボンのみ", "しめったいわ", "たべのこし", "ソクノのみ", "こだわりスカーフ"],"バンギラス":["とつげきチョッキ", "いのちのたま", "ヨプのみ", "きあいのタスキ", "じゃくてんほけん"],"ヤバソチャ":["オボンのみ", "たべのこし", "メンタルハーブ", "ゴツゴツメット", "きあいのタスキ"],"その他":["不明"]};
+const ITEM_MAP={"ゴリランダー":["きせきのタネ","オボンのみ","いのちのたま","だっしゅつボタン","オッカのみ","グラスシード","たべのこし"],"オオニューラ":["グラスシード","サイコシード","しろいハーブ","きあいのタスキ"],"ガオガエン":["オボンのみ","ヨプのみ","イトケのみ","ゴツゴツメット","しろいハーブ","たべのこし"],"メガボーマンダ":["ボーマンダナイト"],"ボーマンダ":["いのちのたま","こだわりスカーフ","ハバンのみ","きあいのタスキ","ヤチェのみ","たべのこし","ゴツゴツメット","たつじんのおび","するどいくちばし"],"ドドゲザン":["ヨプのみ","いのちのたま","くろいメガネ","きあいのタスキ","オッカのみ"],"イエッサン♀":["ナモのみ","ゴツゴツメット","サイコシード","オボンのみ","きあいのタスキ"],"イダイトウ":["こだわりスカーフ","いのちのたま","しんぴのしずく","きあいのタスキ","オボンのみ"],"ガブリアス":["いのちのたま","こだわりスカーフ","オボンのみ","ゴツゴツメット","ロゼルのみ","やわらかいすな","たべのこし","ガブリアスナイトZ"],"リキキリン":["オボンのみ","ナモのみ","グラスシード","メンタルハーブ","サイコシード"],"サーフゴー":["いのちのたま","グラスシード","こだわりスカーフ","たべのこし","きあいのタスキ"],"ペリッパー":["きあいのタスキ","オボンのみ","いのちのたま","しめったいわ","こだわりスカーフ"],"エルフーン":["きあいのタスキ","オッカのみ","ようせいのハネ","オボンのみ","バコウのみ","たべのこし"],"ブリジュラス":["たべのこし","ヨプのみ","いのちのたま","じしゃく","こだわりスカーフ"],"ミロカロス":["たべのこし","オボンのみ","サイコシード","グラスシード","リンドのみ"],"ニンフィア":["ようせいのハネ","いのちのたま","たべのこし"],"ウインディ(ヒスイ)":["きあいのタスキ","こだわりスカーフ"],"オーロンゲ":["ひかりのねんど","オボンのみ","ロゼルのみ"],"ライチュウ":["ライチュウナイトY","ライチュウナイトX","きあいのタスキ","ゴツゴツメット","シュカのみ"],"メガライチュウX":["ライチュウナイトX"],"メガライチュウY":["ライチュウナイトY"],"リザードン":["リザードナイトY","いのちのたま","きあいのタスキ"],"メガリザードンY":["リザードナイトY"],"サーナイト":["サーナイトナイト","きあいのタスキ","オボンのみ"],"メガサーナイト":["サーナイトナイト"],"ラグラージ":["ラグラージナイト","オボンのみ","たべのこし"],"メガラグラージ":["ラグラージナイト"],"グソクムシャ":["いのちのたま","オボンのみ","しんぴのしずく","きあいのタスキ","ぎんのこな","グソクムシャナイト"],"アマージョ":["こうかくレンズ","オボンのみ","いのちのたま","きあいのタスキ","とつげきチョッキ"],"ニョロトノ":["オボンのみ","しめったいわ","たべのこし","ソクノのみ","こだわりスカーフ"],"バンギラス":["とつげきチョッキ","いのちのたま","ヨプのみ","きあいのタスキ","じゃくてんほけん"],"ヤバソチャ":["オボンのみ","たべのこし","メンタルハーブ","ゴツゴツメット","きあいのタスキ"],"その他":["不明"],"メガガブリアスZ":["ガブリアスナイトZ"],"フラエッテ(えいえんのはな)":["フラエッタイト"],"メガフラエッテ":["フラエッタイト"],"クエスパトラ":["エレキシード","きあいのタスキ","たべのこし"],"メガグソクムシャ":["グソクムシャナイト"],"ゲンガー":["ゲンガナイト","きあいのタスキ"],"メガゲンガー":["ゲンガナイト"],"ジャラランガ":["たべのこし","オボンのみ"],"ウルガモス":["ゴツゴツメット","オボンのみ","きあいのタスキ"]};
 const state={myTeam:[],oppTeam:[],my:{},opp:{},myActive:[0,1],oppActive:[0,1],mySelected:[0,1,2,3]};
 function option(el,val,text=val){const o=document.createElement('option');o.value=val;o.textContent=text;el.appendChild(o)}
 function maxSpeed(name){const b=BASE_SPEED[name];if(b==null)return null;const pre=Math.floor(((2*b+31)*50)/100)+5+32;return Math.floor(pre*1.1)}
@@ -4691,10 +5189,7 @@ function renderLeadPrediction(){
     ?`<div class="fullteam-box"><div class="fullteam-title">6体構築データ <span class="fullteam-confidence">${fullTeam.exact?'完全一致':`${fullTeam.hits}/6一致`}</span></div><div class="fullteam-main">${fullTeam.label}</div><div class="fullteam-sub">${fullTeam.sourceTag}｜${fullTeam.plan}</div></div>`
     :'';
 
-  const meta=bestMetaArchetype(team);
-  const metaHtml=meta
-    ?`<div class="meta-archetype-box"><div class="meta-archetype-title">構築推定 <span class="meta-tag">${meta.type}</span></div><div class="meta-archetype-main">${meta.label}</div><div class="meta-archetype-sub">${meta.full?'定番コア一致':'定番コア部分一致'}｜${meta.plan}</div></div>`
-    :'';
+  const metaHtml=renderMetaHypotheses(team);
 
   const selected=predictSelection(team).slice(0,4);
   const selectionHtml=selected.length
@@ -4722,6 +5217,7 @@ function populateItems(select,poke,current){
   option(select,'なし','なし');
   option(select,'クリアチャーム','クリアチャーム');
   option(select,'ぼうじんゴーグル','ぼうじんゴーグル');
+  option(select,'きれいなぬけがら','きれいなぬけがら');
   (ITEM_MAP[poke]||[]).forEach(x=>option(select,x));
   if(current&&[...select.options].some(o=>o.value===current))select.value=current;
   else select.value='不明';
@@ -4803,6 +5299,11 @@ function renderMyMoveSetup(){
 }
 
 const MEGA_INFO={
+"メガガブリアスZ":{"base":"ガブリアス","mega":"メガガブリアスZ","stone":"ガブリアスナイトZ","preAbility":"さめはだ","postAbility":"ふゆう"},
+"メガフラエッテ":{"base":"フラエッテ(えいえんのはな)","mega":"メガフラエッテ","stone":"フラエッタイト","preAbility":"フラワーベール","postAbility":"フェアリーオーラ"},
+"メガグソクムシャ":{"base":"グソクムシャ","mega":"メガグソクムシャ","stone":"グソクムシャナイト","preAbility":"ききかいひ","postAbility":"かたいツメ"},
+"メガゲンガー":{"base":"ゲンガー","mega":"メガゲンガー","stone":"ゲンガナイト","preAbility":"のろわれボディ","postAbility":"かげふみ"},
+
   'メガボーマンダ':{base:'ボーマンダ',mega:'メガボーマンダ',stone:'ボーマンダナイト',preAbility:'いかく',postAbility:'スカイスキン'},
   'メガリザードンY':{base:'リザードン',mega:'メガリザードンY',stone:'リザードナイトY',preAbility:'もうか',postAbility:'ひでり'},
   'メガサーナイト':{base:'サーナイト',mega:'メガサーナイト',stone:'サーナイトナイト',preAbility:'トレース',postAbility:'フェアリースキン'},
@@ -4832,7 +5333,7 @@ function activateTerrainSeedFor(side,idx,name,terrain){
   if(!isGroundedPokemon(effectiveBattleName(side,idx,name)))return false;
   const seed=TERRAIN_SEEDS[rawHeldItemFor(side,idx)];
   if(!seed||seed.terrain!==terrain)return false;
-  d[seed.stat]=clampStage((d[seed.stat]||0)+1);
+  applyBattleBoost(side,idx,{[seed.stat]:1});
   d.itemConsumed=true;
   if(abilityOf(side,idx,name)==='かるわざ')d.unburdenActive=true;
   return true;
@@ -4857,6 +5358,8 @@ function setTerrainState(terrain,turns=5){
 function megaInfoFor(side,idx,name){
   if(MEGA_INFO[name])return MEGA_INFO[name];
   const item=heldItemFor(side,idx);
+  const match=Object.values(MEGA_INFO).find(info=>info.base===name&&info.stone===item);
+  if(match)return match;
   if(name==='ライチュウ'&&item==='ライチュウナイトX')return MEGA_INFO['メガライチュウX'];
   if(name==='ライチュウ'&&item==='ライチュウナイトY')return MEGA_INFO['メガライチュウY'];
   if(name==='ボーマンダ'&&item==='ボーマンダナイト')return MEGA_INFO['メガボーマンダ'];
@@ -4955,6 +5458,19 @@ function megaDecisionFor(entry){
 }
 
 const RELEVANT_ABILITIES={
+"ガブリアス":["さめはだ","すながくれ"],
+"グソクムシャ":["ききかいひ"],
+
+"メガガブリアスZ":["ふゆう"],
+"フラエッテ(えいえんのはな)":["フラワーベール"],
+"メガフラエッテ":["フェアリーオーラ"],
+"クエスパトラ":["かそく","びんじょう","おみとおし"],
+"メガグソクムシャ":["かたいツメ"],
+"ゲンガー":["のろわれボディ"],
+"メガゲンガー":["かげふみ"],
+"ジャラランガ":["ぼうおん","ぼうだん","ぼうじん"],
+"ウルガモス":["ほのおのからだ","むしのしらせ"],
+
   'ゴリランダー':['グラスメイカー','しんりょく'],
   'オオニューラ':['かるわざ','どくしゅ'],
   'ガオガエン':['いかく','もうか'],
@@ -4983,6 +5499,16 @@ const RELEVANT_ABILITIES={
   'ブリジュラス':['じきゅうりょく','がんじょう','すじがねいり']
 }
 const DEFAULT_ABILITY={
+"メガガブリアスZ":"さめはだ",
+"フラエッテ(えいえんのはな)":"フラワーベール",
+"メガフラエッテ":"フラワーベール",
+"クエスパトラ":"かそく",
+"メガグソクムシャ":"ききかいひ",
+"ゲンガー":"のろわれボディ",
+"メガゲンガー":"のろわれボディ",
+"ジャラランガ":"ぼうおん",
+"ウルガモス":"ほのおのからだ",
+
   'ガオガエン':'いかく',
   'ボーマンダ':'いかく',
   'メガボーマンダ':'いかく',
@@ -5004,12 +5530,15 @@ const DEFAULT_ABILITY={
 };
 function clampStage(v){return Math.max(-6,Math.min(6,Number(v)||0))}
 function ensureBattleEntry(side,idx,name){
-  const initialMoves=side==='opp'?(MOVE_MAP[name]||[]).slice(0,4):(savedMyMoves[idx]||['不明','不明','不明','不明']).slice(0,4);
+  const initialMoves=side==='opp'?opponentCandidateOrder(name,state.oppTeam).slice(0,4):(savedMyMoves[idx]||['不明','不明','不明','不明']).slice(0,4);
   while(initialMoves.length<4)initialMoves.push('不明');
   const d=state[side][idx]||(state[side][idx]={
     hp:100,moves:initialMoves,item:'不明',speedRecords:[],bulk:'neutral',
     confirmedMoves:[false,false,false,false],itemConfirmed:false
   });
+  if(!Array.isArray(d.moves))d.moves=initialMoves;
+  if(d.perishCount===undefined)d.perishCount=null;
+  if(d.perishUncertain===undefined)d.perishUncertain=false;
   if(typeof d.hp!=='number')d.hp=100;
   if(!Array.isArray(d.speedRecords))d.speedRecords=[];
   if(!Array.isArray(d.confirmedMoves))d.confirmedMoves=[false,false,false,false];
@@ -5037,6 +5566,15 @@ function ensureBattleEntry(side,idx,name){
   if(!Array.isArray(d.actionHistory))d.actionHistory=[];
   if(typeof d.freshEntry!=='boolean')d.freshEntry=false;
   if(typeof d.pendingPostTurnEntry!=='boolean')d.pendingPostTurnEntry=false;
+  if(side==='opp'){
+    const context=JSON.stringify(['1.89.0',name,state.oppTeam]);
+    if(d.candidateContext!==context){
+      const observed=new Set(d.moves.filter((m,i)=>d.confirmedMoves[i]));
+      const candidates=opponentCandidateOrder(name,state.oppTeam).filter(m=>!observed.has(m));
+      d.moves=d.moves.map((m,i)=>d.confirmedMoves[i]?m:(candidates.shift()||'不明'));
+      d.candidateContext=context;
+    }
+  }
   return d;
 }
 // v1.76.5: HP changes alone cannot establish whether a move landed.
@@ -5050,7 +5588,7 @@ function recordStaminaHits(side,idx,name,hits=1){
   const d=ensureBattleEntry(side,idx,name);
   if((d.hp??100)<=0||abilityOf(side,idx,name)!=='じきゅうりょく')return 0;
   const before=clampStage(d.defStage||0);
-  d.defStage=clampStage(before+count);
+  applyBattleBoost(side,idx,{defStage:count});
   return d.defStage-before;
 }
 // Only explicitly supported multi-hit moves have verified per-strike base power.
@@ -5269,6 +5807,7 @@ function applyConfirmedSingleHit(attackerIdx,moveName,defenderIdx,rollChoice='mi
   // attacks may be registered against it.
   let stageGain=0;
   if(remaining>0)stageGain=recordStaminaHits('opp',di,defender,1);
+  if(remaining>0&&moveName==='ルミナコリジョン')target.spdStage=clampStage((target.spdStage||0)-2);
   lastConfirmedHitSnapshot={state:before,attacker,defender,moveName,damage,previous};
   removeTurnGuardByFeint('opp',di,moveName,outcome);
   return {ok:true,damage,beforeHp:previous,afterHp:target.hp,stageGain,estimated:true,survivedBy:protection.survivedBy,unknownSurvival:estimate.unknownSurvival||[]};
@@ -5379,6 +5918,7 @@ function applyEstimatedIncomingHit(attackerIdx,moveName,defenderIdx,rollChoice='
   const previous=target.hp??100;
   target.hp=nextHp;
   const stageGain=remaining>0?recordStaminaHits('my',di,preview.defender,1):0;
+  if(remaining>0&&moveName==='ルミナコリジョン')target.spdStage=clampStage((target.spdStage||0)-2);
   lastConfirmedHitSnapshot={state:before,attacker:preview.attacker,defender:preview.defender,moveName,damage,incoming:true,estimated:true};
   removeTurnGuardByFeint('my',di,moveName,outcome);
   return {ok:true,damage,previous,afterHp:nextHp,stageGain,estimated:true,survivedBy:protection.survivedBy};
@@ -5395,12 +5935,12 @@ function resetEntryStages(side,idx,name){
   const d=ensureBattleEntry(side,idx,name);
   d.atkStage=0;d.defStage=0;d.spaStage=0;d.spdStage=0;d.speStage=0;
   d.accStage=0;d.evaStage=0;
-  d.unburdenActive=false;
+  d.unburdenActive=false;d.perishCount=null;d.perishUncertain=false;
 }
 
 function actionHistoryLabel(action){
   if(!action)return '';
-  if(action.kind==='move')return `${action.move||'技'}${action.failed?'（不発）':''}`;
+  if(action.kind==='move')return `${action.move||'技'}${action.to?'→'+action.to:action.target?'→'+action.target:''}${action.failed?'（不発）':''}`;
   if(action.kind==='switch')return `交代→${action.to||''}`;
   if(action.kind==='fainted_before_action')return '行動前にKO';
   return '';
@@ -5433,6 +5973,7 @@ function screenDamageMod(defenderSide,cat){
 
 function applyObservedMoveEffects(side,idx,name,move){
   if(!move)return;
+  if(move==='ほろびのうた')applyPerishSong(side,idx,name);
 
   // Field / speed-control moves
   if(move==='おいかぜ'){
@@ -5483,16 +6024,11 @@ function applyObservedMoveEffects(side,idx,name,move){
 
   // Simple self-boosts that are already represented by the engine.
   const d=ensureBattleEntry(side,idx,name);
-  if(move==='つるぎのまい'){
-    d.atkStage=clampStage((d.atkStage||0)+2);
-  }else if(move==='わるだくみ'){
-    d.spaStage=clampStage((d.spaStage||0)+2);
-  }else if(move==='りゅうのまい'){
-    d.atkStage=clampStage((d.atkStage||0)+1);
-    d.speStage=clampStage((d.speStage||0)+1);
-  }else if(move==='めいそう'){
-    d.spaStage=clampStage((d.spaStage||0)+1);
-    d.spdStage=clampStage((d.spdStage||0)+1);
+  if(SELF_SETUP_BOOSTS[move]){
+    // HP input is already the observed post-move value. Never deduct twice.
+    applyBattleBoost(side,idx,SELF_SETUP_BOOSTS[move]);
+  }else if(move==='スケイルノイズ'){
+    d.defStage=clampStage((d.defStage||0)-1);
   }else if(move==='インファイト'){
     d.defStage=clampStage((d.defStage||0)-1);
     d.spdStage=clampStage((d.spdStage||0)-1);
@@ -5607,7 +6143,7 @@ function pendingSwitchDestinations(side,excludeOriginIdx=null){
   (team||[]).forEach((name,idx)=>{
     if(idx===excludeOriginIdx)return;
     const a=state[side]?.[idx]?.currentTurnAction;
-    if(a?.kind!=='switch'||!a.to)return;
+    if(!a?.to||a.failed||!(a.kind==='switch'||a.kind==='move'&&SWITCHING_MOVES.has(a.move)))return;
     const toIdx=(team||[]).indexOf(a.to);
     if(toIdx>=0)out.add(toIdx);
   });
@@ -5621,6 +6157,7 @@ function recordSwitchForSlot(side,slot,toIdx){
   const toName=team[toIdx];
   if(!toName)return false;
 
+  if(switchRestriction(side,originIdx).blocked)return false;
   const allowed=manualSwitchCandidateIndices(side);
   if(!allowed.includes(toIdx))return false;
 
@@ -5653,6 +6190,7 @@ function recordForcedReplacement(side,slot,toIdx){
   incoming.pendingPostTurnEntry=true;
   incoming.freshEntry=false;
   incoming.enteredBySwitchThisTurn=false;
+  finishPostPerishReplacements();
   return true;
 }
 
@@ -5767,7 +6305,7 @@ function resolveEntryEvents(entries){
   // All simultaneous entrants must complete their switch-in stat reset before
   // ANY entry ability activates. Otherwise a later entrant can erase an
   // Intimidate drop applied by an earlier entrant in the same switch batch.
-  list.forEach(e=>resetEntryStages(e.side,e.idx,e.name));
+  list.forEach(e=>{resetEntryStages(e.side,e.idx,e.name);if(e.batonState)restoreBatonState(state[e.side][e.idx],e.batonState);});
   list.forEach(e=>{
     if(e.side==='opp'){
       if(!Array.isArray(state.seenOpp))state.seenOpp=[];
@@ -5813,7 +6351,7 @@ function resolveEntryEvents(entries){
 // Each event reads the field at its actual commit position; a callback can
 // temporarily use that checkpoint for a damage estimate without mutating play.
 // Store immutable, event-local evidence. No future UI or battle edits may alter it.
-const TURN_ATTACK_STATE_FIELDS=['hp','atkStage','defStage','spaStage','spdStage','speStage','accStage','evaStage','ability','abilityConfirmed','abilityCandidates','item','itemConfirmed','itemConsumed','megaEvolved','status','bulk','unburdenActive'];
+const TURN_ATTACK_STATE_FIELDS=['hp','atkStage','defStage','spaStage','spdStage','speStage','accStage','evaStage','ability','abilityConfirmed','abilityCandidates','item','itemConfirmed','itemConsumed','megaEvolved','status','bulk','unburdenActive','perishCount','perishUncertain'];
 function captureTurnAttackState(){
   const result={};
   for(const side of ['my','opp']){
@@ -6052,7 +6590,7 @@ function commitTurnActions(){
       if(slot<0)slot=(active||[]).indexOf(idx);
       if(toIdx<0||slot<0)return;
       const outgoing=ensureBattleEntry(side,idx,name);
-      outgoing.unburdenActive=false;
+      resetEntryStages(side,idx,name);
       active[slot]=toIdx;
       const incoming=ensureBattleEntry(side,toIdx,a.to);
       incoming.freshEntry=true;
@@ -6089,7 +6627,9 @@ function commitTurnActions(){
       ?turnFieldCheckpoint('move',side,name,a.move||''):null;
     if(a.kind==='move'&&a.move&&!a.failed){
       applyObservedMoveEffects(side,idx,name,a.move);
+      if(a.move==='じこあんじ')applyRecordedPsychUp(side,idx,a);
     }
+    const moveSwitch=a.kind==='move'&&!a.failed&&a.to?commitRecordedMoveSwitch(side,idx,name,a):null;
     if(attackPoint){
       // Preserve the post-action field separately for timeline diagnostics.
       const after=turnFieldCheckpoint('after-move',side,name,a.move||'');
@@ -6097,8 +6637,10 @@ function commitTurnActions(){
         weatherUnknown:after.weatherUnknown,terrainUnknown:after.terrainUnknown};
       const linked=linkedMultiHitForEvent(attackPoint,linkedHits);
       if(linked)attackPoint.multiHit=linked;
+      if(moveSwitch)attackPoint.afterCombat=captureTurnAttackState();
       fieldTimeline.push(attackPoint);
     }
+    if(moveSwitch)fieldTimeline.push(moveSwitch);
   });
   flushSwitchBatch();
   state.turnFieldTimeline=fieldTimeline;
@@ -6145,6 +6687,7 @@ function stageText(d){
   const push=(label,v)=>{if((v||0)!==0)bits.push(`${label}${v>0?'+':''}${v}`)};
   push('A',d.atkStage);push('B',d.defStage);push('C',d.spaStage);push('D',d.spdStage);push('S',d.speStage);
   if(d.unburdenActive)bits.push('かるわざ');
+  if(Number.isInteger(d.perishCount))bits.push(perishCountText(d));
   return bits.join(' ');
 }
 function abilityOf(side,idx,name){
@@ -6224,8 +6767,8 @@ function receiveIntimidate(targetSide,targetIdx,targetName){
   const lowered=clampStage(previous-1);
   if(lowered===previous)return false; // No actual stat drop at -6: no Defiant / Competitive trigger.
   d.atkStage=lowered;
-  if(abilityKnown&&ab==='まけんき')d.atkStage=clampStage(d.atkStage+2);
-  else if(abilityKnown&&ab==='かちき')d.spaStage=clampStage((d.spaStage||0)+2);
+  if(abilityKnown&&ab==='まけんき')applyBattleBoost(targetSide,targetIdx,{atkStage:2});
+  else if(abilityKnown&&ab==='かちき')applyBattleBoost(targetSide,targetIdx,{spaStage:2});
   return true;
 }
 function triggerEntryAbility(side,idx,name){
@@ -6404,7 +6947,9 @@ if(info){
   mb.onclick=()=>megaEvolve(side,idx,name);
   head.appendChild(mb);
 }
-const sw=document.createElement('button');sw.className='switch-btn';sw.textContent='交代';head.appendChild(sw);
+const sw=document.createElement('button');sw.className='switch-btn';
+const restriction=switchRestriction(side,idx);
+sw.textContent=restriction.blocked?'交代不可':'交代';sw.disabled=restriction.blocked;sw.title=restriction.reason;head.appendChild(sw);
 const menu=document.createElement('div');menu.className='switch-menu';card.insertBefore(menu,card.children[1]);
 sw.addEventListener('click',()=>menu.classList.toggle('open'));
 if(d.lastAction){
@@ -6415,7 +6960,7 @@ if(d.lastAction){
 }
 
 const activeKey=side==='my'?'myActive':'oppActive',team=side==='my'?state.myTeam:state.oppTeam;
-manualSwitchCandidateIndices(side).forEach(pi=>{
+tacticalSwitchDestinations(side,idx).forEach(pi=>{
   const pn=team[pi];
   const bb=document.createElement('button');bb.className='bench-btn';bb.textContent=pn;
   bb.onclick=()=>{
@@ -6432,7 +6977,7 @@ if(side==='my'){
   const sr=frag.querySelector('.speed-row');if(sr)sr.remove();
   d.moves=(savedMyMoves[idx]||['不明','不明','不明','不明']).slice(0,4);
 
-  const relevant=d.moves.filter(m=>['まもる','ねこだまし'].includes(m));
+  const relevant=d.moves.filter(m=>['まもる','ねこだまし'].includes(m)||QUICK_TACTICAL_MOVES.has(m));
   if(relevant.length){
     const ar=document.createElement('div');
     ar.className='row turn-action-row';
@@ -6447,7 +6992,7 @@ if(side==='my'){
         d.currentTurnAction=activeNow?null:{kind:'move',move};
         buttons.querySelectorAll('.turn-action-btn').forEach(x=>x.classList.remove('active'));
         if(!activeNow)b.classList.add('active');
-        refresh();save();
+        tacticalRefresh();
       };
       buttons.appendChild(b);
     });
@@ -6455,6 +7000,9 @@ if(side==='my'){
     card.insertBefore(ar,card.querySelector('.hpChips')?.closest('.row')||null);
   }
 }
+
+renderTacticalActionDetails(side,idx,slot,card);
+renderPerishControls(side,idx,card);
 
 // Stamina requires confirmation of actual damaging hits. HP selection is not proof.
 if(abilityOf(side,idx,name)==='じきゅうりょく'){
@@ -6667,7 +7215,7 @@ frag.querySelectorAll('.moveSelect').forEach((s,i)=>{
     s.parentNode.insertBefore(wrap,s);wrap.appendChild(s);
     const cb=document.createElement('button');cb.type='button';cb.className='confirm-btn'+(d.confirmedMoves[i]?' confirmed':'');
     cb.textContent=d.confirmedMoves[i]?'確認済':'確認';
-    cb.onclick=()=>{d.confirmedMoves[i]=!d.confirmedMoves[i];if(d.confirmedMoves[i])confirmObservedOpponentMove(idx,name,s.value);else if(d.currentTurnAction?.kind==='move'&&d.currentTurnAction.move===s.value)d.currentTurnAction=null;markGuide45(slot===0?'opp1':'opp2','action');cb.classList.toggle('confirmed',d.confirmedMoves[i]);cb.textContent=d.confirmedMoves[i]?'確認済':'確認';refresh();save()};
+    cb.onclick=()=>{d.confirmedMoves[i]=!d.confirmedMoves[i];if(d.confirmedMoves[i])confirmObservedOpponentMove(idx,name,s.value);else if(d.currentTurnAction?.kind==='move'&&d.currentTurnAction.move===s.value)d.currentTurnAction=null;markGuide45(slot===0?'opp1':'opp2','action');cb.classList.toggle('confirmed',d.confirmedMoves[i]);cb.textContent=d.confirmedMoves[i]?'確認済':'確認';tacticalRefresh()};
     wrap.appendChild(cb);
   }
   s.onchange=()=>{
@@ -6678,7 +7226,7 @@ frag.querySelectorAll('.moveSelect').forEach((s,i)=>{
     if(confirmBtn){confirmBtn.classList.add('confirmed');confirmBtn.textContent='確認済';}
     markGuide45(slot===0?'opp1':'opp2','action');
   }
-  refresh();save();
+  tacticalRefresh();
 }
 });
 
@@ -6687,7 +7235,7 @@ if(side==='opp'){
   const parent=item.parentNode;
   item.remove();
   const wrap=document.createElement('div');wrap.className='item-button-wrap';
-  const candidates=(ITEM_MAP[name]||[]).slice(0,5);
+  const candidates=opponentCandidateOrder(name,state.oppTeam,'items').slice(0,5);
   const renderItemButtons=()=>{
     wrap.innerHTML='';
     candidates.forEach(it=>{
@@ -6849,7 +7397,7 @@ function leadData(side){
     return arr.filter(i=>isAliveEntry(side,i)).map(i=>({name:team[i],d:state[side][i]||{},idx:i}));
   });
 }
-const SUPPORT_MOVES=new Set(['まもる','みきり','トリックルーム','おいかぜ','ねこだまし','このゆびとまれ','いかりのこな','てだすけ','ちょうはつ','アンコール','すてゼリフ','とんぼがえり','クイックターン','リフレクター','ひかりのかべ','おにび','でんじは','こわいかお','あまえる','うそなき','ワイドガード','いのちのしずく','じこさいせい','ちからをすいとる','ほろびのうた','ふういん','サイドチェンジ','コーチング','みがわり','りゅうのまい','つるぎのまい','わるだくみ','めいそう','とぐろをまく','あくび']);
+const SUPPORT_MOVES=new Set(['バトンタッチ','じこあんじ','ソウルビート','ちょうのまい','まもる','みきり','トリックルーム','おいかぜ','ねこだまし','このゆびとまれ','いかりのこな','てだすけ','ちょうはつ','アンコール','すてゼリフ','とんぼがえり','クイックターン','リフレクター','ひかりのかべ','おにび','でんじは','こわいかお','あまえる','うそなき','ワイドガード','いのちのしずく','じこさいせい','ちからをすいとる','ほろびのうた','ふういん','サイドチェンジ','コーチング','みがわり','りゅうのまい','つるぎのまい','わるだくみ','めいそう','とぐろをまく','あくび']);
 const PROTECT_MOVES=new Set(['まもる','みきり']);
 const SPEED_MOVES=new Set(['おいかぜ','こごえるかぜ','でんじは','こわいかお','がんせきふうじ','ほっぺすりすり']);
 const PIVOT_MOVES=new Set(['すてゼリフ','とんぼがえり','クイックターン','ボルトチェンジ']);
@@ -7187,6 +7735,7 @@ function preservationUrgency(entry){
 }
 
 function bestSwitchFor(entry){
+  if(switchRestriction('my',entry.idx).blocked)return null;
   const currentRisk=defensiveRiskForPokemon(entry.name);
   const currentHp=entry.d.hp??100;
   const preserve=preservationValue(entry);
@@ -7337,6 +7886,16 @@ function calcRealHP(base,ap){
 }
 
 const BATTLE_DATA={
+"メガガブリアスZ":{"types":["ドラゴン"],"hp":108,"atk":130,"def":85,"spa":141,"spd":85},
+"フラエッテ(えいえんのはな)":{"types":["フェアリー"],"hp":74,"atk":65,"def":67,"spa":125,"spd":128},
+"メガフラエッテ":{"types":["フェアリー"],"hp":74,"atk":85,"def":87,"spa":155,"spd":148},
+"クエスパトラ":{"types":["エスパー"],"hp":95,"atk":60,"def":60,"spa":101,"spd":60},
+"メガグソクムシャ":{"types":["むし","はがね"],"hp":75,"atk":150,"def":175,"spa":70,"spd":120},
+"ゲンガー":{"types":["ゴースト","どく"],"hp":60,"atk":65,"def":60,"spa":130,"spd":75},
+"メガゲンガー":{"types":["ゴースト","どく"],"hp":60,"atk":65,"def":80,"spa":170,"spd":95},
+"ジャラランガ":{"types":["ドラゴン","かくとう"],"hp":75,"atk":110,"def":125,"spa":100,"spd":105},
+"ウルガモス":{"types":["むし","ほのお"],"hp":85,"atk":60,"def":65,"spa":135,"spd":105},
+
 'ゴリランダー':{types:['くさ'],hp:100,atk:125,def:90,spa:60,spd:70},
 'オオニューラ':{types:['かくとう','どく'],hp:80,atk:130,def:60,spa:40,spd:80},
 'ガオガエン':{types:['ほのお','あく'],hp:95,atk:115,def:90,spa:80,spd:90},
@@ -7372,6 +7931,14 @@ const BATTLE_DATA={
 'その他':{types:[],hp:90,atk:100,def:100,spa:100,spd:100}
 };
 const DAMAGE_MOVES={
+"でんじほう":{"power":120,"type":"でんき","cat":"spec"},
+"ライジングボルト":{"power":70,"type":"でんき","cat":"spec"},
+"ルミナコリジョン":{"power":80,"type":"エスパー","cat":"spec"},
+"ヘドロばくだん":{"power":90,"type":"どく","cat":"spec"},
+"スケイルノイズ":{"power":110,"type":"ドラゴン","cat":"spec","spread":true},
+"むしのさざめき":{"power":90,"type":"むし","cat":"spec"},
+"げんしのちから":{"power":60,"type":"いわ","cat":"spec"},
+
 '１０まんボルト':{power:90,type:'でんき',cat:'spec'},
 '10まんボルト':{power:90,type:'でんき',cat:'spec'},
 'かみなり':{power:110,type:'でんき',cat:'spec'},
@@ -7559,6 +8126,16 @@ function weatherDefenseMod(defenderName,cat){
   return 1;
 }
 const POKEMON_WEIGHT_KG={
+"メガガブリアスZ":99,
+"フラエッテ(えいえんのはな)":0.9,
+"メガフラエッテ":100.8,
+"クエスパトラ":90,
+"メガグソクムシャ":148,
+"ゲンガー":40.5,
+"メガゲンガー":40.5,
+"ジャラランガ":78.2,
+"ウルガモス":46,
+
   'ゴリランダー':90.0,'オオニューラ':43.0,'ガオガエン':83.0,'ボーマンダ':102.6,
   'メガボーマンダ':112.6,'ドドゲザン':120.0,'イエッサン♀':28.0,'イエッサン♂':28.0,
   'グソクムシャ':108.0,'イダイトウ':110.0,'ガブリアス':95.0,'リキキリン':160.0,
@@ -7667,6 +8244,14 @@ function resolveMoveForDamage(side,idx,name,moveName,mv,defenderSide=null,defend
     abilityMod*=1.2;
   }
 
+  if(moveName==='ライジングボルト'&&$('terrain')?.value==='エレキ'&&effectiveDefender&&isGroundedPokemon(effectiveDefender)){
+    power*=2;condition='エレキフィールド・接地した対象';
+  }
+  if(moveType==='フェアリー'&&['my','opp'].some(s=>(state[s+'Active']||[]).some(i=>{
+    const n=state[s+'Team']?.[i];return n&&(state[s]?.[i]?.hp??100)>0&&abilityOf(s,i,n)==='フェアリーオーラ';
+  })))abilityMod*=4/3;
+  if(abilityOf(side,idx,name)==='かたいツメ'&&['アイアンヘッド','きゅうけつ','アクアジェット','であいがしら','ふいうち','とんぼがえり','インファイト','アクアブレイク'].includes(moveName))abilityMod*=1.3;
+
   if(moveName==='ウェザーボール'){
     const w=$('weather')?.value||'なし';
     const weatherType={雨:'みず',晴れ:'ほのお',砂:'いわ',雪:'こおり'}[w];
@@ -7752,7 +8337,7 @@ function itemDamageMod(attackerName,moveType,item){
 function isGroundedPokemon(name){
   const p=BATTLE_DATA[name];
   if(!p)return true;
-  return !p.types.includes('ひこう');
+  return name!=='メガガブリアスZ'&&!p.types.includes('ひこう');
 }
 function terrainDamageMod(attackerName,moveType,defenderName,moveName){
   const t=$('terrain')?.value||'なし';
@@ -7961,6 +8546,14 @@ function multiHitKOEstimate(attackerName,moveName,defenderName,attackerIdx,defen
 // v1.78.0: shared hit chance (accuracy/evasion stages and explicit known modifiers).
 // A move that bypasses accuracy checks must not be reduced by Hustle or stages.
 const MOVE_BASE_ACCURACY={
+"でんじほう":0.5,
+"ライジングボルト":1,
+"ルミナコリジョン":1,
+"ヘドロばくだん":1,
+"スケイルノイズ":1,
+"むしのさざめき":1,
+"げんしのちから":1,
+
  '10まんばりき':0.95,
  '10まんボルト':1,
  'いわなだれ':0.9,
@@ -8454,7 +9047,7 @@ function renderDamageOutput(force=false){
 }
 
 const PASSIVE_PUNISH_MOVES=new Set(['つるぎのまい','わるだくみ','りゅうのまい','めいそう','おいかぜ','トリックルーム','みがわり','コーチング']);
-const OPPONENT_SUPPORT_MOVES=new Set([
+const OPPONENT_SUPPORT_MOVES=new Set(['バトンタッチ','じこあんじ','ソウルビート','ちょうのまい',
   'ちょうはつ','まもる','みきり','ワイドガード','ファストガード',
   'このゆびとまれ','いかりのこな','てだすけ','アンコール','あくび','おにび',
   'こわいかお','うそなき','さいみんじゅつ','ふういん','くろいきり',
@@ -8527,7 +9120,7 @@ function renderRecAction(a){
   }else{
     const move=`<span class="rec-move">${a.move||'技未設定'}</span>`;
     const mv=DAMAGE_MOVES[a.move];
-    const target=mv?.spread
+    const target=a.switchTo?` <span class="rec-arrow">→</span> <span class="rec-target">${spriteImgHtml(a.switchTo)}${a.switchTo}</span>`:mv?.spread
       ?` <span class="rec-arrow">→</span> <span class="rec-target">相手全体</span>`
       :(a.target?` <span class="rec-arrow">→</span> <span class="rec-target">${spriteImgHtml(a.target)}<span>${a.target}</span></span>`:'');
     body=`${move}${target}`;
@@ -8585,6 +9178,7 @@ function fallbackNonSwitchAction(entry,mode,primaryThreat,lowHpTarget){
 }
 
 function legalSwitchCandidates(entry,blockedNames=new Set()){
+  if(switchRestriction('my',entry.idx).blocked)return [];
   const currentRisk=defensiveRiskForPokemon(entry.name);
   return benchEntries()
     .filter(b=>!blockedNames.has(b.name))
@@ -8616,7 +9210,7 @@ function resolveJointActions(actions,mode,primaryThreat,lowHpTarget){
 
     // A legal switch destination must be a living bench Pokémon and unique within the pair.
     const destIdx=(state.myTeam||[]).findIndex((n,idx)=>n===a.switchTo && !state.myActive.includes(idx) && (state.my[idx]?.hp??100)>0);
-    const legalDestination=destIdx>=0 && !usedSwitchTargets.has(a.switchTo);
+    const legalDestination=destIdx>=0 && !usedSwitchTargets.has(a.switchTo)&&!switchRestriction('my',entry.idx).blocked;
 
     if(legalDestination){
       usedSwitchTargets.add(a.switchTo);
@@ -9354,6 +9948,12 @@ function simulationStrictlyBefore(a,b){
 }
 function oneTurnSimulation(actions,forcedOppPair=null){
   const oppPair=forcedOppPair||opponentPairPredictions()[0]||null;
+  if(hasTacticalProjection(actions,oppPair)){
+    const projected=tacticalProjectionAssessment(actions,oppPair);
+    const incoming=projected.trace.filter(t=>t.type==='attack'&&t.side==='opp');
+    return {score:-incoming.reduce((n,t)=>n+t.lossPct/100*2,0),ordered:projected.ordered,
+      notes:projected.notes.slice(0,3),opponentPair:oppPair,unavailableActors:[],tacticalProjection:projected};
+  }
   const oppActions=oppPair?[oppPair.a,oppPair.b].filter(Boolean):[];
   const ordered=sortTurnSimulationEvents([
     ...(actions||[]).map(a=>simulatedActionEvent(a,'my')),
@@ -9724,9 +10324,15 @@ function planDamageInsight(actions,scenarioPair=null,turnSimulation=null){
   const pair=scenarioPair||simulation.opponentPair;
   const unavailable=new Set(simulation.unavailableActors||[]);
   const available=(actions||[]).filter(a=>!unavailable.has(a?.actor));
-  const actionSets=available.map(a=>({action:a,insights:scenarioDamageInsights(a,pair)}));
+  const projection=simulation.tacticalProjection;
+  const actionSets=available.map(a=>({action:a,insights:projection?
+    projection.trace.filter(t=>t.type==='attack'&&t.side==='my'&&t.actor===a.actor&&t.move===a.move).map(t=>({
+      actor:t.actor,target:t.target,targetIdx:t.targetIdx,move:t.move,spread:!!DAMAGE_MOVES[t.move]?.spread,
+      koChance:t.koChance,minCurPct:t.min/t.currentHp*100,maxCurPct:t.max/t.currentHp*100,
+      avgCurPct:t.avg/t.currentHp*100,curHp:t.currentHp,fullHp:t.fullHp,accuracy:t.accuracy,rolls:t.rolls,conditional:true
+    })):scenarioDamageInsights(a,pair)}));
   const singles=actionSets.flatMap(x=>x.insights);
-  const combined=combinedTargetDamageInsight(available,pair);
+  const combined=projection?[]:combinedTargetDamageInsight(available,pair);
   let score=0;
   const notes=[];
 
@@ -10025,9 +10631,11 @@ function pivotTwoTurnValue(action){
   };
 }
 
-function twoTurnLookahead(actions){
-  let score=0;
-  const notes=[];
+function twoTurnLookahead(actions,opponentPair=null){
+  const tactical=tacticalPlanAssessment(actions,opponentPair);
+  const projected=tacticalProjectionAssessment(actions,opponentPair);
+  let score=tactical.score+projected.score;
+  const notes=[...projected.notes,...tactical.notes];
 
   (actions||[]).forEach(a=>{
     if(!a)return;
@@ -10238,7 +10846,7 @@ function recommendationPlanScore(label,actions,tc,primary,low,secondRead,forcedO
   score-=backlineRisk.penalty;
 
   // Two-turn lookahead: switching/pivoting is valued for what it enables next turn.
-  const lookahead=twoTurnLookahead(actions);
+  const lookahead=twoTurnLookahead(actions,forcedOppPair);
   score+=lookahead.score;
 
   // Avoid overcommitting to two passive actions outside a stall context.
@@ -10312,13 +10920,19 @@ function myActionCandidatesFor(entry){
 
   const push=a=>{
     if(!a)return;
-    const key=[a.kind||'move',a.actor,a.move||'',a.target||'',a.switchTo||''].join('|');
+    const key=[a.kind||'move',a.actor,a.move||'',a.target||'',a.targetSide||'',a.switchTo||''].join('|');
     if(!out.some(x=>x._key===key))out.push({...a,_key:key});
   };
 
   moves.forEach(move=>{
     if(!move||move==='不明')return;
     const mv=DAMAGE_MOVES[move];
+    if(move==='バトンタッチ'){
+      benchEntries().forEach(b=>push({actor:entry.name,move,switchTo:b.name,target:null,note:'能力ランクを引き継ぐ'}));return;
+    }
+    if(move==='じこあんじ'){
+      for(const side of ['my','opp'])leadData(side).filter(t=>side!=='my'||t.idx!==entry.idx).forEach(t=>push({actor:entry.name,move,target:t.name,targetSide:side,note:'能力ランクをコピー'}));return;
+    }
 
     if(mv?.power){
       if(priorityMoveIsActive(move) && move==='ねこだまし' && !fakeOutAvailable(entry))return;
@@ -10365,7 +10979,7 @@ function myActionCandidatesFor(entry){
 
 function legalMyActionPair(a,b){
   if(!a||!b||a.actor===b.actor||!recommendationActionIsLegal(a)||!recommendationActionIsLegal(b))return false;
-  if(a.kind==='switch'&&b.kind==='switch'&&a.switchTo===b.switchTo)return false;
+  if(a.switchTo&&b.switchTo&&a.switchTo===b.switchTo)return false;
   return true;
 }
 
@@ -10432,7 +11046,7 @@ function opponentScenarioAdjustment(actions,pair){
 
 function planSignature(actions){
   return (actions||[]).map(a=>[
-    a?.kind||'move',a?.actor||'',a?.move||'',a?.target||'',a?.switchTo||''
+    a?.kind||'move',a?.actor||'',a?.move||'',a?.target||'',a?.targetSide||'',a?.switchTo||''
   ].join(':')).join('||');
 }
 function recommendationConfidenceFromMargin(margin){
@@ -10534,7 +11148,7 @@ function opponentWinConditions(pair){
   }
 
   // Support + attack synergy: speed/setup survives while partner creates immediate pressure.
-  const setup=acts.find(a=>a.kind==='support'&&['トリックルーム','おいかぜ','つるぎのまい','わるだくみ','りゅうのまい','めいそう'].includes(a.move));
+  const setup=acts.find(a=>a.kind==='support'&&['トリックルーム','おいかぜ','つるぎのまい','わるだくみ','りゅうのまい','めいそう','ソウルビート','ちょうのまい','バトンタッチ','じこあんじ'].includes(a.move));
   const attack=acts.find(a=>a.kind==='attack');
   if(setup&&attack)add('tempo:'+setup.actor,`${setup.move}を通しながら攻撃でテンポを取る`,.86,[setup.actor,attack.actor],attack.target?[attack.target]:[]);
 
@@ -10726,9 +11340,15 @@ function recommendationActionIsLegal(action){
   if(!actor||(actor.d.hp??100)<=0)return false;
   if(action.kind==='switch'){
     const idx=(state.myTeam||[]).indexOf(action.switchTo);
-    return idx>=0&&benchEntries().some(x=>x.idx===idx);
+    return idx>=0&&benchEntries().some(x=>x.idx===idx)&&!switchRestriction('my',actor.idx).blocked;
   }
   if(!action.move||!(myMovesFor(actor.idx)||[]).includes(action.move))return false;
+  if(action.move==='ソウルビート'&&!clangorousSoulCost('my',actor.idx)?.canUse)return false;
+  if(action.move==='バトンタッチ')return benchEntries().some(x=>x.name===action.switchTo);
+  if(action.move==='じこあんじ'){
+    const side=action.targetSide||'opp',target=activeEntryByName(side,action.target);
+    return !!target&&(side!=='my'||target.idx!==actor.idx);
+  }
   if(action.move==='ねこだまし'&&!fakeOutAvailable(actor))return false;
   if(pranksterTargetBlockReason(action))return false;
   const mv=DAMAGE_MOVES[action.move];
@@ -10741,7 +11361,7 @@ function recommendationActionIsLegal(action){
 function recommendationPairIsLegal(actions){
   if(!Array.isArray(actions)||actions.length!==2)return false;
   if(!actions.every(recommendationActionIsLegal)||new Set(actions.map(a=>a.actor)).size!==actions.length)return false;
-  const sw=actions.filter(a=>a.kind==='switch').map(a=>a.switchTo);
+  const sw=actions.filter(a=>a.switchTo).map(a=>a.switchTo);
   return new Set(sw).size===sw.length;
 }
 function sanitizeRecommendationPlan(plan,fallback){
@@ -10780,7 +11400,7 @@ function choosePrimaryRecommendation(stable,attack,read,tc,primary,low,secondRea
 }
 
 function recommendationReason(actions,tc,primary){
-  const reasons=[];
+  const reasons=[...tacticalPlanAssessment(actions).notes];
   const arr=actions||[];
   if(arr.some(a=>String(a?.note||'').includes('温存')))reasons.push('後半で再利用価値が高いポケモンを温存');
   else if(arr.some(a=>a?.kind==='switch'))reasons.push('相性不利または被ダメージを抑えるため交代を高評価');
@@ -11212,7 +11832,7 @@ function saveMatchHistory(){
 function captureTurnRecommendation(plan,warning){
   if(state.turnRecommendation?.turn===battleTurnNumber)return;
   state.turnRecommendation={turn:battleTurnNumber,recordedAt:new Date().toISOString(),label:plan.label||'',
-    actions:(plan.actions||[]).map(a=>({actor:a.actor||'',kind:a.kind||'',move:a.move||'',target:a.target||'',switchTo:a.switchTo||'',note:a.note||''})),
+    actions:(plan.actions||[]).map(a=>({actor:a.actor||'',kind:a.kind||'',move:a.move||'',target:a.target||'',targetSide:a.targetSide||'',switchTo:a.switchTo||'',note:a.note||''})),
     warning:warning||'',confidence:plan.robust?.confidence||null};
 }
 function turnRecordSnapshot(source=state,field=null){
@@ -11226,7 +11846,7 @@ function turnRecordSnapshot(source=state,field=null){
       return {name,idx,slot:active.includes(idx)?active.indexOf(idx):origin.indexOf(idx),active:active.includes(idx),wasActive:origin.includes(idx),hp:d.hp??null,status:d.status||'なし',
         stages:Object.fromEntries(['atkStage','defStage','spaStage','spdStage','speStage','accStage','evaStage'].filter(k=>d[k]).map(k=>[k,d[k]])),
         action:d.currentTurnAction?JSON.parse(JSON.stringify(d.currentTurnAction)):null,
-        pendingEntry:!!d.pendingPostTurnEntry};
+        pendingEntry:!!d.pendingPostTurnEntry,perishCount:d.perishCount??null,perishUncertain:!!d.perishUncertain};
     }).filter(e=>e.active||e.wasActive||e.action||e.pendingEntry);
   }
   return out;
@@ -11326,9 +11946,22 @@ function recordCurrentMatch(){
 }
 function turnRecommendationText(rec){
   if(!rec||!Array.isArray(rec.actions))return '記録なし';
-  return rec.actions.map(a=>`${a.actor||''}：${a.kind==='switch'?'交代→'+(a.switchTo||'不明'):(a.move||'不明')+(a.target?'→'+a.target:'')}`).join(' ／ ');
+  return rec.actions.map(a=>`${a.actor||''}：${a.kind==='switch'?'交代→'+(a.switchTo||'不明'):(a.move||'不明')+(a.switchTo?'→'+a.switchTo:a.target?'→'+a.target:'')}`).join(' ／ ');
 }
-function turnRecordEntries(turn,side){return Array.isArray(turn?.input?.[side])?turn.input[side].filter(e=>e&&typeof e==='object'):[]}
+function turnRecordEntries(turn,side){
+  const result=new Map();
+  for(const phase of ['input','end','start'])for(const e of turn?.[phase]?.[side]||[]){
+    if(e&&typeof e==='object'&&!result.has(e.idx))result.set(e.idx,{...e,enteredAfterInput:phase==='end'});
+  }
+  return [...result.values()].sort((a,b)=>a.idx-b.idx);
+}
+function recordedTacticalState(snapshot,side,idx){
+  const e=snapshot?.[side]?.find(x=>x.idx===idx);if(!e)return '';
+  const names={atkStage:'A',defStage:'B',spaStage:'C',spdStage:'D',speStage:'S',accStage:'命中',evaStage:'回避'};
+  const stages=Object.entries(e.stages||{}).filter(([,v])=>v).map(([k,v])=>(names[k]||k)+(v>0?'+':'')+v);
+  if(Number.isInteger(e.perishCount))stages.push('滅び'+(e.perishUncertain?'？':'')+e.perishCount);
+  return stages.join('／');
+}
 function recordedHp(snapshot,side,idx){
   const entry=Array.isArray(snapshot?.[side])?snapshot[side].find(e=>e?.idx===idx):null;
   return entry?.hp==null?'不明':`${entry.hp}%`;
@@ -11371,12 +12004,12 @@ function renderMatchReviews(){
         const wrap=document.createElement('div');wrap.className='turn-review-scroll';
         const table=document.createElement('table');
         const tr=document.createElement('tr');
-        ['側・ポケモン','開始HP','入力HP','終了HP','入力した行動'].forEach(t=>{const th=document.createElement('th');th.textContent=t;tr.appendChild(th)});table.appendChild(tr);
+        ['側・ポケモン','開始HP','入力HP','終了HP','入力した行動','終了ランク・滅び'].forEach(t=>{const th=document.createElement('th');th.textContent=t;tr.appendChild(th)});table.appendChild(tr);
         for(const side of ['my','opp'])for(const entry of turnRecordEntries(turn,side)){
           const row=document.createElement('tr');
-          const flag=!entry.pendingEntry&&turn.hpInputs?.[(side==='my'?'my':'opp')+(entry.slot+1)];
+          const flag=!entry.pendingEntry&&!entry.enteredAfterInput&&turn.hpInputs?.[(side==='my'?'my':'opp')+(entry.slot+1)];
           const cells=[(side==='my'?'自分：':'相手：')+entry.name,recordedHp(turn.start,side,entry.idx),
-            recordedHp(turn.input,side,entry.idx)+(flag?'':'（HP選択未確認）'),recordedHp(turn.end,side,entry.idx),recordedAction(entry)];
+            recordedHp(turn.input,side,entry.idx)+(flag?'':'（HP選択未確認）'),recordedHp(turn.end,side,entry.idx),recordedAction(entry),recordedTacticalState(turn.end,side,entry.idx)];
           cells.forEach(t=>{const td=document.createElement('td');td.textContent=t;row.appendChild(td)});table.appendChild(row);
         }
         wrap.appendChild(table);detail.appendChild(wrap);
@@ -11474,7 +12107,7 @@ function writeStorageBatch(entries){
 function createBackupPayload(){
   const match=currentMatchPayload();
   return JSON.parse(JSON.stringify({
-    backupFormat:'gc2027ii-backup',backupVersion:1,appVersion:'1.86.1',
+    backupFormat:'gc2027ii-backup',backupVersion:1,appVersion:'1.89.0',
     exportedAt:new Date().toISOString(),matches:matchHistory,
     myTeam:savedMyTeam,myMoves:savedMyMoves,myProfiles:savedMyProfiles,
     currentMatch:validSavedMatch(JSON.stringify(match))?match:null
@@ -11489,7 +12122,7 @@ function validateTurnSnapshot(snapshot){
     for(const entry of snapshot[side]){
       if(!entry||typeof entry.name!=='string'||!Number.isInteger(entry.idx)||entry.idx<0||entry.idx>5||seen.has(entry.idx)||
         entry.hp!==null&&(!Number.isFinite(entry.hp)||entry.hp<0||entry.hp>100))throw Error('ターンのHPまたはポケモンが不正です。');
-      seen.add(entry.idx);
+      seen.add(entry.idx);validateTacticalMember(entry);
       if(entry.action!=null&&(!['move','switch','fainted_before_action'].includes(entry.action.kind)||
         ['move','to'].some(k=>entry.action[k]!=null&&typeof entry.action[k]!=='string')))throw Error('ターンの行動記録が不正です。');
     }
@@ -11508,6 +12141,8 @@ function validateTurnLog(turns){
   }
 }
 function validateTurnRuntime(source){
+  if(source.pendingEndTurnReplacements!=null&&typeof source.pendingEndTurnReplacements!=='boolean')throw Error('交代待ち状態が不正です。');
+  for(const side of ['my','opp'])for(const d of Object.values(source[side]||{}))validateTacticalMember(d);
   if(source.turnLog!=null)validateTurnLog(source.turnLog);
   if(source.turnRecordStart!=null)validateTurnSnapshot(source.turnRecordStart);
   if(source.turnHpInputs!=null&&(typeof source.turnHpInputs!=='object'||Array.isArray(source.turnHpInputs)||Object.values(source.turnHpInputs).some(v=>typeof v!=='boolean')))throw Error('HPの入力記録が不正です。');
@@ -11663,16 +12298,16 @@ function exportMatchJson(){
   downloadTextFile(`GC2027II_match_history_${new Date().toISOString().slice(0,10)}.json`,text,'application/json;charset=utf-8');
 }
 function exportTurnCsv(){
-  const rows=[['日時','勝敗','自分選出','自分先発','相手6体','相手先発','ターン','確定状態','側','ポケモン','開始HP','入力HP','終了HP','HP入力確認','行動','状態異常','場の開始','場の入力','場の終了','開始時の推奨','推奨の注意','メモ']];
+  const rows=[['日時','勝敗','自分選出','自分先発','相手6体','相手先発','ターン','確定状態','側','ポケモン','開始HP','入力HP','終了HP','HP入力確認','行動','状態異常','場の開始','場の入力','場の終了','開始時の推奨','推奨の注意','メモ','開始ランク・滅び','終了ランク・滅び']];
   for(const match of matchHistory)for(const turn of (Array.isArray(match.turns)?match.turns:[])){
     if(!turn||typeof turn!=='object')continue;
     for(const side of ['my','opp'])for(const e of turnRecordEntries(turn,side))rows.push([
       match.date,match.result,(match.mySelected||[]).join('／'),(match.myLeads||[]).join('／'),(match.opponentTeam||[]).join('／'),(match.opponentLeads||[]).join('／'),
       turn.turn,turn.status==='committed'?'確定':'未確定',side==='my'?'自分':'相手',e.name,
       recordedHp(turn.start,side,e.idx),recordedHp(turn.input,side,e.idx),recordedHp(turn.end,side,e.idx),
-      !e.pendingEntry&&turn.hpInputs?.[(side==='my'?'my':'opp')+(e.slot+1)]?'HP選択済み':'HP選択未確認',recordedAction(e),e.status||'',
+      !e.pendingEntry&&!e.enteredAfterInput&&turn.hpInputs?.[(side==='my'?'my':'opp')+(e.slot+1)]?'HP選択済み':'HP選択未確認',recordedAction(e),e.status||'',
       JSON.stringify(turn.start?.field||{}),JSON.stringify(turn.input?.field||{}),JSON.stringify(turn.end?.field||{}),
-      turnRecommendationText(turn.recommendation),turn.recommendation?.warning||'',match.notes||''
+      turnRecommendationText(turn.recommendation),turn.recommendation?.warning||'',match.notes||'',recordedTacticalState(turn.start,side,e.idx),recordedTacticalState(turn.end,side,e.idx)
     ]);
   }
   const csv='\ufeff'+rows.map(row=>row.map(csvEscape).join(',')).join('\r\n');
@@ -11794,7 +12429,7 @@ state.initialOppLead=[...opponentLeads];
 state.initialMyLead=[...pick.leads];
 state.seenOpp=[...opponentLeads];
 state.savedMatchRecordId=null;
-state.turnLog=[];state.turnRecordStart=null;state.turnRecommendation=null;state.turnHpInputs={};
+state.turnLog=[];state.turnRecordStart=null;state.turnRecommendation=null;state.turnHpInputs={};state.pendingEndTurnReplacements=false;
 state.entryOrderCursor=0;state.entryOrderJournal={};state.entryFieldUncertainty={};state.turnFieldTimeline=[];
 state.megaUsed={my:null,opp:null};
 state.megaTransitionHistory=[];state.confirmedMultiHitHistory=[];
@@ -11880,13 +12515,23 @@ function restoreTurnCommitTransaction(snap){
   fixed45FailArmed=JSON.parse(JSON.stringify(snap.fixed45FailArmed));
   guide45TurnFinalized=snap.guide45TurnFinalized;
 }
+function applyEndTurnAbilityEffects(){
+  for(const side of ['my','opp'])for(const idx of state[side+'Active']||[]){
+    const name=state[side+'Team']?.[idx],d=state[side]?.[idx];
+    if(name&&d&&(d.hp??100)>0&&confirmedAbilityIs(side,idx,name,'かそく'))applyBattleBoost(side,idx,{speStage:1});
+  }
+}
 function finalizeTurnState(){
   const before=captureTurnCommitTransaction();
   try{
+    if(hasIncompleteTacticalAction())throw Error('交代先またはじこあんじの対象を選択してください');
     const turnRecord=buildTurnRecord();
     commitTurnActions();
     decrementTurnFieldCounters();
+    applyEndTurnAbilityEffects();
+    const perishKO=advancePerishCounters();
     applyPostTurnEntries();
+    if(perishKO&&hasPendingKOReplacement())state.pendingEndTurnReplacements=true;
     turnRecord.status='committed';turnRecord.end=turnRecordSnapshot();
     state.turnLog=[...(state.turnLog||[]).filter(t=>t.turn!==turnRecord.turn),turnRecord];
     battleTurnNumber++;
@@ -11933,6 +12578,12 @@ function renderSavedMyTeam(){
   $('myTeamSetupBox').classList.add('hidden');
 }
 const SPECIES_CLAUSE_BASE={
+"メガガブリアスZ":"ガブリアス",
+"フラエッテ(えいえんのはな)":"フラエッテ",
+"メガフラエッテ":"フラエッテ",
+"メガグソクムシャ":"グソクムシャ",
+"メガゲンガー":"ゲンガー",
+
   'メガボーマンダ':'ボーマンダ',
   'メガリザードンY':'リザードン',
   'メガサーナイト':'サーナイト',
@@ -12039,7 +12690,7 @@ function validSavedMatch(raw){
     if(!parsed||typeof parsed!=='object'||!parsed.state||!Array.isArray(parsed.state.oppTeam)||parsed.state.oppTeam.length!==6)return null;
     if(parsed.runtime&&(!Number.isInteger(Number(parsed.runtime.battleTurnNumber))||Number(parsed.runtime.battleTurnNumber)<1))return null;
     const st=parsed.state;
-    if(st.turnLog!=null||st.turnRecordStart!=null||st.turnHpInputs!=null)validateTurnRuntime(st);
+    validateTurnRuntime(st);
     const indices=(xs,n)=>Array.isArray(xs)&&xs.length===n&&new Set(xs).size===n&&xs.every(i=>Number.isInteger(i)&&i>=0&&i<6);
     for(const key of ['myActive','oppActive'])if(st[key]!=null&&!indices(st[key],2))return null;
     if(st.mySelected!=null&&!indices(st.mySelected,4))return null;
@@ -12154,7 +12805,7 @@ function newMatch(){
   state.mySelected=[0,1,2,3];
   state.myActive=[0,1];state.oppActive=[0,1];
   state.savedMatchRecordId=null;
-  state.turnLog=[];state.turnRecordStart=null;state.turnRecommendation=null;state.turnHpInputs={};
+  state.turnLog=[];state.turnRecordStart=null;state.turnRecommendation=null;state.turnHpInputs={};state.pendingEndTurnReplacements=false;
   state.entryOrderCursor=0;state.entryOrderJournal={};state.entryFieldUncertainty={};state.turnFieldTimeline=[];
   state.megaUsed={my:null,opp:null};
 state.megaTransitionHistory=[];state.confirmedMultiHitHistory=[];
@@ -12298,6 +12949,8 @@ function markGuide45(key,part){
   save();
 }
 function guideStepDone(key){
+  const side=key.startsWith('opp')?'opp':'my',slot=key.endsWith('1')?0:1;
+  if(tacticalActionNeedsInput(side,turnOriginIndex(side,slot)))return false;
   const node=guide45State[key];
   return !!node&&Object.values(node).every(Boolean);
 }
@@ -12311,7 +12964,7 @@ function autoFinalizeTurnIfReady(){
   if(!document.body.classList.contains('mode45'))return false;
   if(guide45TurnFinalized)return false;
   if(!guide45InputsComplete())return false;
-  if(hasPendingKOReplacement())return false;
+  if(hasPendingKOReplacement()||hasIncompleteTacticalAction())return false;
 
   // Capture before changing the finalized flag: if finalization fails,
   // restore the cursor and snapshot so the user can retry safely.
@@ -12341,7 +12994,7 @@ function currentGuideStep(){
   }
   if(hasPendingKOReplacement())return 'replaceKO';
   autoFinalizeTurnIfReady();
-  return 'recommend';
+  return hasPendingKOReplacement()?'replaceKO':'recommend';
 }
 function guide45NextLabel(step){
   if(step==='opp1'){
@@ -12540,6 +13193,7 @@ function fixed45RenderProgress(currentKey){
 
 function fixed45SetPrompt(status,cur){
   if(!status)return;
+  if(cur.side&&tacticalActionNeedsInput(cur.side,turnOriginIndex(cur.side,cur.slot))){status.className='fixed45-status pending';status.textContent='交代先またはコピー対象を選択';return;}
   status.className='fixed45-status';
   if(cur.key==='recommend'){
     status.classList.add('complete');
@@ -12634,6 +13288,13 @@ function fixed45Render(){
   if($('fixed45BackBtn'))$('fixed45BackBtn').disabled=(cur.key==='opp1'&&!guide45State.opp1.hp&&!guide45State.opp1.action);
   mon.className=`fixed45-mon ${cur.side}`;
   mon.innerHTML=`${spriteImgHtml(e.name,18,'')}${e.name}`;
+
+  if(cur.side==='my')renderOwnTacticalQuickButtons(e,cur.slot,body);
+  renderTacticalActionDetails(cur.side,e.idx,cur.slot,body);
+  renderPerishControls(cur.side,e.idx,body);
+  if(tacticalActionNeedsInput(cur.side,e.idx)&&$('fixed45SkipBtn')){
+    $('fixed45SkipBtn').disabled=true;$('fixed45SkipBtn').textContent='対象を選択';
+  }
 
   const hpSec=document.createElement('div');
   hpSec.className='fixed45-section';
@@ -12745,7 +13406,7 @@ function fixed45Render(){
     actionSec.appendChild(acts);
 
     const sw=document.createElement('div');sw.className='fixed45-switches';
-    manualSwitchCandidateIndices('opp').forEach(pi=>{
+    tacticalSwitchDestinations('opp',e.idx).forEach(pi=>{
       const pn=state.oppTeam[pi];
       const b=document.createElement('button');b.type='button';b.textContent=`交代→${pn}`;
       if(e.d.currentTurnAction?.kind==='switch'&&Number(e.d.currentTurnAction.toIdx)===Number(pi))b.classList.add('active');
@@ -12757,6 +13418,8 @@ function fixed45Render(){
       };
       sw.appendChild(b);
     });
+    const blocked=switchRestriction('opp',e.idx);
+    if(blocked.blocked){const n=document.createElement('div');n.className='row-title';n.textContent=blocked.reason+'：通常交代不可';sw.appendChild(n);}
     actionSec.appendChild(sw);body.appendChild(actionSec);
   } else {
     const relevant=(e.d.moves||[]).filter(m=>['まもる','ねこだまし'].includes(m));
