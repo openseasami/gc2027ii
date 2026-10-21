@@ -1,0 +1,21 @@
+const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
+const src=fs.readFileSync(__dirname+'/index.html','utf8');
+const a=src.indexOf('const COMMON_STATUS_SECONDARIES='),b=src.indexOf('function planCommonSecondaryForecast(',a);
+assert.ok(a>0&&b>a);
+const sandbox={};vm.createContext(sandbox);vm.runInContext(src.slice(a,b)+'\nthis.forecast=forecastCommonSecondaryStatus;',sandbox);
+const f=sandbox.forecast;let n=0;
+function check(move,ability,weather,bypass,expected){const o=f(move,1,'',[],ability,'',bypass,'',{weather});assert.equal(o.probability,expected,`${move}/${ability}/${weather}/${bypass}`);n++;}
+check('かえんほうしゃ','きよめのしお','なし',false,0);
+check('10まんボルト','きよめのしお','なし',false,0);
+check('ヘドロばくだん','パステルベール','なし',false,0);
+check('かえんほうしゃ','すいほう','なし',false,0);
+check('かえんほうしゃ','ねつこうかん','なし',false,0);
+check('かえんほうしゃ','リーフガード','晴れ',false,0);
+check('かえんほうしゃ','リーフガード','なし',false,.1);
+check('10まんボルト','リーフガード','晴れ',true,.1);
+check('かえんほうしゃ','きよめのしお','なし',true,.1);
+check('ヘドロばくだん','パステルベール','なし',true,.3);
+check('かえんほうしゃ','すいほう','なし',true,.1);
+check('かえんほうしゃ','リーフガード','sun',false,0);
+assert.ok(src.includes("weather:$('weather')?.value||'なし'"));n++;
+console.log(n+' additional status-immunity checks passed');

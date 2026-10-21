@@ -1,0 +1,5 @@
+Executed 2026-10-20 05:27 UTC
+All 29 test-*.js scripts passed.
+verify-release.js: 9/9 checks passed.
+One targeted terrain grounding test has 9 assertions.
+The tests do not establish browser-deployed or complete cartridge accuracy.

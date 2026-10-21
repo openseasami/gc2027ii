@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict');
+const engine=require('./effect-engine.js');
+const defender={ability:'くだけるよろい'};
+const ctx={attacker:{ability:''},defender,damaging:true,category:'physical',substitute:false};
+let got=engine.evaluate('on_hit',ctx);
+assert.deepEqual(got.events.map(e=>[e.kind,e.stat,e.stages]),[['stat_drop','def',-1],['stat_boost','spe',2]]);
+assert.equal(engine.evaluate('on_hit',{...ctx,substitute:true}).events.length,0);
+assert.equal(engine.evaluate('on_hit',{...ctx,damaging:false}).events.length,0);
+assert.equal(engine.evaluate('on_hit',{...ctx,category:'special'}).events.length,0);
+assert.equal(engine.evaluate('on_hit',{...ctx,substitute:undefined}).unknown,true);
+assert.equal(engine.evaluate('on_hit',{...ctx,defender:{ability:'びびり'},moveType:'あく',substitute:true}).events.length,0);
+assert.equal(engine.evaluate('on_move_used',{move:'ソウルビート',succeeded:true}).events.length,0);
+console.log('On-hit activation guards and unmodeled HP-cost guard PASS');

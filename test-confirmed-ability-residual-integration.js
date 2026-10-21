@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const s=fs.readFileSync('index.html','utf8');
+assert.match(s,/function applyConfirmedHitAbilityStages\(/);
+assert.match(s,/if\(remaining>0\)applyConfirmedHitAbilityStages\('my',ai,'opp',di,moveName,1\)/);
+assert.match(s,/function recordEndTurnResidualProjections\(/);
+assert.match(s,/recordEndTurnResidualProjections\(\);/);
+assert.match(s,/autoApplied:false/);
+const engine=require('./effect-engine.js');
+let result=engine.evaluate('on_hit',{defender:{ability:'くだけるよろい'},attacker:{ability:''},damaging:true,category:'physical',contact:false,moveType:'いわ'});
+assert.deepEqual(result.events.map(x=>[x.kind,x.stat,x.stages]),[['stat_drop','def',-1],['stat_boost','spe',2]]);
+result=engine.evaluate('on_hit',{defender:{ability:'ぬめぬめ'},attacker:{ability:''},damaging:true,category:'physical',contact:true,moveType:'ノーマル'});
+assert.equal(result.events[0]?.side,'attacker');
+console.log('Confirmed ability and residual transaction integration: PASS');

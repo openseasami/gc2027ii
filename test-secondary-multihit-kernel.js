@@ -1,0 +1,21 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const src=fs.readFileSync(__dirname+'/index.html','utf8');
+const start=src.indexOf('function perStrikeSecondaryProbability(');
+const end=src.indexOf('function planCommonSecondaryForecast(',start);
+assert.ok(start>0&&end>start);
+const ctx={};vm.createContext(ctx);vm.runInContext(src.slice(start,end)+';this.fn=perStrikeSecondaryProbability;',ctx);
+const p=ctx.fn;let checks=0;
+function near(a,b){assert.ok(Math.abs(a-b)<1e-10,`${a} != ${b}`);checks++}
+near(p(1,.3,[[1,1]]),.3);
+near(p(1,.3,[[4,1]]),1-.7**4);
+near(p(.8,.3,[[4,1]]),.8*(1-.7**4));
+near(p(1,.3,[[2,.5],[4,.5]]),.5*(1-.7**2)+.5*(1-.7**4));
+near(p(1,.3,[[4,1]],{damagePerStrike:20,targetHp:35}),1-.7**2);
+near(p(1,.3,[[4,1]],{damagePerStrike:20,substituteHp:35}),1-.7**2);
+near(p(1,.3,[[4,1]],{damagePerStrike:20,substituteHp:35,targetHp:20}),.3);
+near(p(1,.3,[[4,1]],{substituteHp:35}),0);
+near(p(1,.3,[[4,1]],{blocked:true}),0);
+near(p(0,.3,[[4,1]]),0);
+near(p(1,0,[[4,1]]),0);
+near(p(1,.3,[[2,2],[4,2]]),.5*(1-.7**2)+.5*(1-.7**4));
+console.log(`${checks} multi-strike secondary probability checks passed`);

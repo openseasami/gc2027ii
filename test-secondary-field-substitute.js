@@ -1,0 +1,22 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const src=fs.readFileSync(__dirname+'/index.html','utf8');
+const begin=src.indexOf('const COMMON_STATUS_SECONDARIES='),end=src.indexOf('function planCommonSecondaryForecast(',begin);
+assert.ok(begin>0&&end>begin);
+const sandbox={};vm.createContext(sandbox);vm.runInContext(src.slice(begin,end)+'\nthis.forecast=forecastCommonSecondaryStatus;',sandbox);
+const f=sandbox.forecast;let n=0;
+function check(move,options,expected,ability='',item='',bypass=false){const out=f(move,1,'',[],ability,item,bypass,'',options);assert.equal(out.probability,expected,move+JSON.stringify(options));n++}
+check('10まんボルト',{terrain:'ミスト',grounded:true},0);
+check('かえんほうしゃ',{terrain:'ミスト',grounded:true},0);
+check('れいとうビーム',{terrain:'ミスト',grounded:true},0);
+check('ヘドロばくだん',{terrain:'ミスト',grounded:true},0);
+check('10まんボルト',{terrain:'ミスト',grounded:false},.1);
+check('かえんほうしゃ',{terrain:'グラス',grounded:true},.1);
+check('かえんほうしゃ',{terrain:'ミスト'},.1);
+check('かえんほうしゃ',{substituteBlocks:true},0);
+check('かえんほうしゃ',{substituteBlocks:false},.1);
+check('かえんほうしゃ',{substituteBlocks:true},0,'','',true);
+check('かえんほうしゃ',{substituteBlocks:false},0,'','おんみつマント',true);
+check('10まんボルト',{terrain:'ミスト',grounded:true},0,'じゅうなん','',true);
+assert.ok(src.includes('substituteBlocksConfirmedHit(\'my\',attacker.idx,\'opp\',target.idx,action.move)'));n++;
+assert.ok(src.includes("terrain:$('terrain')?.value||'なし'"));n++;
+console.log(`${n} secondary terrain/substitute checks passed`);

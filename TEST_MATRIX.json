@@ -1,0 +1,2007 @@
+{
+  "schema": "gc2027ii-matrix-v1",
+  "cases": [
+    {
+      "function": "usageEligible",
+      "args": [
+        -1,
+        "move"
+      ],
+      "expected": null,
+      "label": "move threshold -1"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        0,
+        "move"
+      ],
+      "expected": false,
+      "label": "move threshold 0"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        6.999,
+        "move"
+      ],
+      "expected": false,
+      "label": "move threshold 6.999"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        7,
+        "move"
+      ],
+      "expected": false,
+      "label": "move threshold 7"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        7.001,
+        "move"
+      ],
+      "expected": false,
+      "label": "move threshold 7.001"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        9.999,
+        "move"
+      ],
+      "expected": false,
+      "label": "move threshold 9.999"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        10,
+        "move"
+      ],
+      "expected": true,
+      "label": "move threshold 10"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        10.001,
+        "move"
+      ],
+      "expected": true,
+      "label": "move threshold 10.001"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        100,
+        "move"
+      ],
+      "expected": true,
+      "label": "move threshold 100"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        101,
+        "move"
+      ],
+      "expected": null,
+      "label": "move threshold 101"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        -1,
+        "ability"
+      ],
+      "expected": null,
+      "label": "ability threshold -1"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        0,
+        "ability"
+      ],
+      "expected": false,
+      "label": "ability threshold 0"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        6.999,
+        "ability"
+      ],
+      "expected": false,
+      "label": "ability threshold 6.999"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        7,
+        "ability"
+      ],
+      "expected": false,
+      "label": "ability threshold 7"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        7.001,
+        "ability"
+      ],
+      "expected": true,
+      "label": "ability threshold 7.001"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        9.999,
+        "ability"
+      ],
+      "expected": true,
+      "label": "ability threshold 9.999"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        10,
+        "ability"
+      ],
+      "expected": true,
+      "label": "ability threshold 10"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        10.001,
+        "ability"
+      ],
+      "expected": true,
+      "label": "ability threshold 10.001"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        100,
+        "ability"
+      ],
+      "expected": true,
+      "label": "ability threshold 100"
+    },
+    {
+      "function": "usageEligible",
+      "args": [
+        101,
+        "ability"
+      ],
+      "expected": null,
+      "label": "ability threshold 101"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "晴れ",
+        "あついいわ"
+      ],
+      "expected": 8,
+      "label": "晴れ あついいわ"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "晴れ",
+        "なし"
+      ],
+      "expected": 5,
+      "label": "晴れ なし"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "晴れ",
+        "あついいわ"
+      ],
+      "expected": 8,
+      "label": "晴れ あついいわ"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "晴れ",
+        "しめったいわ"
+      ],
+      "expected": 5,
+      "label": "晴れ しめったいわ"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "晴れ",
+        null
+      ],
+      "expected": null,
+      "label": "晴れ item unknown"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "雨",
+        "しめったいわ"
+      ],
+      "expected": 8,
+      "label": "雨 しめったいわ"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "雨",
+        "なし"
+      ],
+      "expected": 5,
+      "label": "雨 なし"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "雨",
+        "あついいわ"
+      ],
+      "expected": 5,
+      "label": "雨 あついいわ"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "雨",
+        "しめったいわ"
+      ],
+      "expected": 8,
+      "label": "雨 しめったいわ"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "雨",
+        null
+      ],
+      "expected": null,
+      "label": "雨 item unknown"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "砂",
+        "さらさらいわ"
+      ],
+      "expected": 8,
+      "label": "砂 さらさらいわ"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "砂",
+        "なし"
+      ],
+      "expected": 5,
+      "label": "砂 なし"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "砂",
+        "あついいわ"
+      ],
+      "expected": 5,
+      "label": "砂 あついいわ"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "砂",
+        "しめったいわ"
+      ],
+      "expected": 5,
+      "label": "砂 しめったいわ"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "砂",
+        null
+      ],
+      "expected": null,
+      "label": "砂 item unknown"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "雪",
+        "つめたいいわ"
+      ],
+      "expected": 8,
+      "label": "雪 つめたいいわ"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "雪",
+        "なし"
+      ],
+      "expected": 5,
+      "label": "雪 なし"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "雪",
+        "あついいわ"
+      ],
+      "expected": 5,
+      "label": "雪 あついいわ"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "雪",
+        "しめったいわ"
+      ],
+      "expected": 5,
+      "label": "雪 しめったいわ"
+    },
+    {
+      "function": "weatherEntryTurns",
+      "args": [
+        "雪",
+        null
+      ],
+      "expected": null,
+      "label": "雪 item unknown"
+    },
+    {
+      "function": "fieldTurnsAfterTurn",
+      "args": [
+        -1
+      ],
+      "expected": null,
+      "label": "countdown -1"
+    },
+    {
+      "function": "fieldTurnsAfterTurn",
+      "args": [
+        0
+      ],
+      "expected": 0,
+      "label": "countdown 0"
+    },
+    {
+      "function": "fieldTurnsAfterTurn",
+      "args": [
+        1
+      ],
+      "expected": 0,
+      "label": "countdown 1"
+    },
+    {
+      "function": "fieldTurnsAfterTurn",
+      "args": [
+        2
+      ],
+      "expected": 1,
+      "label": "countdown 2"
+    },
+    {
+      "function": "fieldTurnsAfterTurn",
+      "args": [
+        5
+      ],
+      "expected": 4,
+      "label": "countdown 5"
+    },
+    {
+      "function": "fieldTurnsAfterTurn",
+      "args": [
+        8
+      ],
+      "expected": 7,
+      "label": "countdown 8"
+    },
+    {
+      "function": "fieldTurnsAfterTurn",
+      "args": [
+        99
+      ],
+      "expected": 98,
+      "label": "countdown 99"
+    },
+    {
+      "function": "fieldTurnsAfterTurn",
+      "args": [
+        1.5
+      ],
+      "expected": null,
+      "label": "countdown 1.5"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        1,
+        {
+          "abilityActive": false,
+          "itemHeld": false,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 1,
+      "label": "unburden 1 False False False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        1,
+        {
+          "abilityActive": false,
+          "itemHeld": false,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 1,
+      "label": "unburden 1 False False True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        1,
+        {
+          "abilityActive": false,
+          "itemHeld": true,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 1,
+      "label": "unburden 1 False True False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        1,
+        {
+          "abilityActive": false,
+          "itemHeld": true,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 1,
+      "label": "unburden 1 False True True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        1,
+        {
+          "abilityActive": true,
+          "itemHeld": false,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 1,
+      "label": "unburden 1 True False False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        1,
+        {
+          "abilityActive": true,
+          "itemHeld": false,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 2,
+      "label": "unburden 1 True False True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        1,
+        {
+          "abilityActive": true,
+          "itemHeld": true,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 1,
+      "label": "unburden 1 True True False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        1,
+        {
+          "abilityActive": true,
+          "itemHeld": true,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 1,
+      "label": "unburden 1 True True True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        1,
+        {
+          "abilityActive": true,
+          "itemHeld": false
+        }
+      ],
+      "expected": null,
+      "label": "unburden unknown history"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        50,
+        {
+          "abilityActive": false,
+          "itemHeld": false,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 50,
+      "label": "unburden 50 False False False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        50,
+        {
+          "abilityActive": false,
+          "itemHeld": false,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 50,
+      "label": "unburden 50 False False True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        50,
+        {
+          "abilityActive": false,
+          "itemHeld": true,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 50,
+      "label": "unburden 50 False True False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        50,
+        {
+          "abilityActive": false,
+          "itemHeld": true,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 50,
+      "label": "unburden 50 False True True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        50,
+        {
+          "abilityActive": true,
+          "itemHeld": false,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 50,
+      "label": "unburden 50 True False False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        50,
+        {
+          "abilityActive": true,
+          "itemHeld": false,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 100,
+      "label": "unburden 50 True False True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        50,
+        {
+          "abilityActive": true,
+          "itemHeld": true,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 50,
+      "label": "unburden 50 True True False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        50,
+        {
+          "abilityActive": true,
+          "itemHeld": true,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 50,
+      "label": "unburden 50 True True True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        50,
+        {
+          "abilityActive": true,
+          "itemHeld": false
+        }
+      ],
+      "expected": null,
+      "label": "unburden unknown history"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        101,
+        {
+          "abilityActive": false,
+          "itemHeld": false,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 101,
+      "label": "unburden 101 False False False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        101,
+        {
+          "abilityActive": false,
+          "itemHeld": false,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 101,
+      "label": "unburden 101 False False True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        101,
+        {
+          "abilityActive": false,
+          "itemHeld": true,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 101,
+      "label": "unburden 101 False True False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        101,
+        {
+          "abilityActive": false,
+          "itemHeld": true,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 101,
+      "label": "unburden 101 False True True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        101,
+        {
+          "abilityActive": true,
+          "itemHeld": false,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 101,
+      "label": "unburden 101 True False False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        101,
+        {
+          "abilityActive": true,
+          "itemHeld": false,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 202,
+      "label": "unburden 101 True False True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        101,
+        {
+          "abilityActive": true,
+          "itemHeld": true,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 101,
+      "label": "unburden 101 True True False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        101,
+        {
+          "abilityActive": true,
+          "itemHeld": true,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 101,
+      "label": "unburden 101 True True True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        101,
+        {
+          "abilityActive": true,
+          "itemHeld": false
+        }
+      ],
+      "expected": null,
+      "label": "unburden unknown history"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        200,
+        {
+          "abilityActive": false,
+          "itemHeld": false,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 200,
+      "label": "unburden 200 False False False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        200,
+        {
+          "abilityActive": false,
+          "itemHeld": false,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 200,
+      "label": "unburden 200 False False True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        200,
+        {
+          "abilityActive": false,
+          "itemHeld": true,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 200,
+      "label": "unburden 200 False True False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        200,
+        {
+          "abilityActive": false,
+          "itemHeld": true,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 200,
+      "label": "unburden 200 False True True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        200,
+        {
+          "abilityActive": true,
+          "itemHeld": false,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 200,
+      "label": "unburden 200 True False False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        200,
+        {
+          "abilityActive": true,
+          "itemHeld": false,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 400,
+      "label": "unburden 200 True False True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        200,
+        {
+          "abilityActive": true,
+          "itemHeld": true,
+          "itemLostThisStay": false
+        }
+      ],
+      "expected": 200,
+      "label": "unburden 200 True True False"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        200,
+        {
+          "abilityActive": true,
+          "itemHeld": true,
+          "itemLostThisStay": true
+        }
+      ],
+      "expected": 200,
+      "label": "unburden 200 True True True"
+    },
+    {
+      "function": "unburdenSpeed",
+      "args": [
+        200,
+        {
+          "abilityActive": true,
+          "itemHeld": false
+        }
+      ],
+      "expected": null,
+      "label": "unburden unknown history"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "どく",
+        [
+          "はがね"
+        ]
+      ],
+      "expected": true,
+      "label": "どく immunity ['はがね']"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "どく",
+        [
+          "みず"
+        ]
+      ],
+      "expected": false,
+      "label": "どく immunity ['みず']"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "どく",
+        [
+          "みず",
+          "はがね"
+        ]
+      ],
+      "expected": true,
+      "label": "どく immunity ['みず', 'はがね']"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "どく",
+        []
+      ],
+      "expected": null,
+      "label": "どく immunity []"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "どく",
+        [
+          null
+        ]
+      ],
+      "expected": null,
+      "label": "どく immunity [None]"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "やけど",
+        [
+          "ほのお"
+        ]
+      ],
+      "expected": true,
+      "label": "やけど immunity ['ほのお']"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "やけど",
+        [
+          "みず"
+        ]
+      ],
+      "expected": false,
+      "label": "やけど immunity ['みず']"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "やけど",
+        [
+          "みず",
+          "ほのお"
+        ]
+      ],
+      "expected": true,
+      "label": "やけど immunity ['みず', 'ほのお']"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "やけど",
+        []
+      ],
+      "expected": null,
+      "label": "やけど immunity []"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "やけど",
+        [
+          null
+        ]
+      ],
+      "expected": null,
+      "label": "やけど immunity [None]"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "まひ",
+        [
+          "でんき"
+        ]
+      ],
+      "expected": true,
+      "label": "まひ immunity ['でんき']"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "まひ",
+        [
+          "みず"
+        ]
+      ],
+      "expected": false,
+      "label": "まひ immunity ['みず']"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "まひ",
+        [
+          "みず",
+          "でんき"
+        ]
+      ],
+      "expected": true,
+      "label": "まひ immunity ['みず', 'でんき']"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "まひ",
+        []
+      ],
+      "expected": null,
+      "label": "まひ immunity []"
+    },
+    {
+      "function": "statusTypeImmune",
+      "args": [
+        "まひ",
+        [
+          null
+        ]
+      ],
+      "expected": null,
+      "label": "まひ immunity [None]"
+    },
+    {
+      "function": "contactStatusType",
+      "args": [
+        "せいでんき"
+      ],
+      "expected": "まひ",
+      "label": "contact type せいでんき"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 0
+        }
+      ],
+      "expected": 0,
+      "label": "contact せいでんき hits 0"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 1
+        }
+      ],
+      "expected": 0.30000000000000004,
+      "label": "contact せいでんき hits 1"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 2
+        }
+      ],
+      "expected": 0.51,
+      "label": "contact せいでんき hits 2"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 3
+        }
+      ],
+      "expected": 0.657,
+      "label": "contact せいでんき hits 3"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 5
+        }
+      ],
+      "expected": 0.8319300000000001,
+      "label": "contact せいでんき hits 5"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": null,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown せいでんき contact"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": false,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked せいでんき contact"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": null,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown せいでんき damaging"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": false,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked せいでんき damaging"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": true,
+          "substitute": null,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown せいでんき substitute"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": true,
+          "substitute": true,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked せいでんき substitute"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": null,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown せいでんき immune"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": true,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked せいでんき immune"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": null
+        }
+      ],
+      "expected": null,
+      "label": "unknown せいでんき alreadyStatus"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "せいでんき",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": true
+        }
+      ],
+      "expected": 0,
+      "label": "blocked せいでんき alreadyStatus"
+    },
+    {
+      "function": "contactStatusType",
+      "args": [
+        "ほのおのからだ"
+      ],
+      "expected": "やけど",
+      "label": "contact type ほのおのからだ"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 0
+        }
+      ],
+      "expected": 0,
+      "label": "contact ほのおのからだ hits 0"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 1
+        }
+      ],
+      "expected": 0.30000000000000004,
+      "label": "contact ほのおのからだ hits 1"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 2
+        }
+      ],
+      "expected": 0.51,
+      "label": "contact ほのおのからだ hits 2"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 3
+        }
+      ],
+      "expected": 0.657,
+      "label": "contact ほのおのからだ hits 3"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 5
+        }
+      ],
+      "expected": 0.8319300000000001,
+      "label": "contact ほのおのからだ hits 5"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": null,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown ほのおのからだ contact"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": false,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked ほのおのからだ contact"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": null,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown ほのおのからだ damaging"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": false,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked ほのおのからだ damaging"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": true,
+          "substitute": null,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown ほのおのからだ substitute"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": true,
+          "substitute": true,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked ほのおのからだ substitute"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": null,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown ほのおのからだ immune"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": true,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked ほのおのからだ immune"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": null
+        }
+      ],
+      "expected": null,
+      "label": "unknown ほのおのからだ alreadyStatus"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "ほのおのからだ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": true
+        }
+      ],
+      "expected": 0,
+      "label": "blocked ほのおのからだ alreadyStatus"
+    },
+    {
+      "function": "contactStatusType",
+      "args": [
+        "どくのトゲ"
+      ],
+      "expected": "どく",
+      "label": "contact type どくのトゲ"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 0
+        }
+      ],
+      "expected": 0,
+      "label": "contact どくのトゲ hits 0"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 1
+        }
+      ],
+      "expected": 0.30000000000000004,
+      "label": "contact どくのトゲ hits 1"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 2
+        }
+      ],
+      "expected": 0.51,
+      "label": "contact どくのトゲ hits 2"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 3
+        }
+      ],
+      "expected": 0.657,
+      "label": "contact どくのトゲ hits 3"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 5
+        }
+      ],
+      "expected": 0.8319300000000001,
+      "label": "contact どくのトゲ hits 5"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": null,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown どくのトゲ contact"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": false,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked どくのトゲ contact"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": null,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown どくのトゲ damaging"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": false,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked どくのトゲ damaging"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": true,
+          "substitute": null,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown どくのトゲ substitute"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": true,
+          "substitute": true,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked どくのトゲ substitute"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": null,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown どくのトゲ immune"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": true,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked どくのトゲ immune"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": null
+        }
+      ],
+      "expected": null,
+      "label": "unknown どくのトゲ alreadyStatus"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくのトゲ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": true
+        }
+      ],
+      "expected": 0,
+      "label": "blocked どくのトゲ alreadyStatus"
+    },
+    {
+      "function": "contactStatusType",
+      "args": [
+        "どくしゅ"
+      ],
+      "expected": "どく",
+      "label": "contact type どくしゅ"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 0
+        }
+      ],
+      "expected": 0,
+      "label": "contact どくしゅ hits 0"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 1
+        }
+      ],
+      "expected": 0.30000000000000004,
+      "label": "contact どくしゅ hits 1"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 2
+        }
+      ],
+      "expected": 0.51,
+      "label": "contact どくしゅ hits 2"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 3
+        }
+      ],
+      "expected": 0.657,
+      "label": "contact どくしゅ hits 3"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false,
+          "hits": 5
+        }
+      ],
+      "expected": 0.8319300000000001,
+      "label": "contact どくしゅ hits 5"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": null,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown どくしゅ contact"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": false,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked どくしゅ contact"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": null,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown どくしゅ damaging"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": false,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked どくしゅ damaging"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": true,
+          "substitute": null,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown どくしゅ substitute"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": true,
+          "substitute": true,
+          "immune": false,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked どくしゅ substitute"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": null,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": null,
+      "label": "unknown どくしゅ immune"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": true,
+          "alreadyStatus": false
+        }
+      ],
+      "expected": 0,
+      "label": "blocked どくしゅ immune"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": null
+        }
+      ],
+      "expected": null,
+      "label": "unknown どくしゅ alreadyStatus"
+    },
+    {
+      "function": "contactStatusRisk",
+      "args": [
+        {
+          "ability": "どくしゅ",
+          "contact": true,
+          "damaging": true,
+          "substitute": false,
+          "immune": false,
+          "alreadyStatus": true
+        }
+      ],
+      "expected": 0,
+      "label": "blocked どくしゅ alreadyStatus"
+    }
+  ]
+}

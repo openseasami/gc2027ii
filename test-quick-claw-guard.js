@@ -1,0 +1,16 @@
+const assert=require('node:assert/strict');
+const fs=require('fs'),vm=require('vm');
+const html=fs.readFileSync(__dirname+'/index.html','utf8');
+const a=html.indexOf('function guardTimingCompare('),b=html.indexOf('function evaluateGuardTiming(',a);
+assert(a>0&&b>a);const ctx={};vm.createContext(ctx);vm.runInContext(html.slice(a,b),ctx);
+const cmp=ctx.guardTimingCompare;
+assert.equal(cmp(1,0,50,100,false,{guardItem:'せんせいのツメ'}).order,'attack-first');
+assert.equal(cmp(0,0,120,50,false,{guardItem:'せんせいのツメ'}).quickClawRisk,.2);
+assert.equal(cmp(0,0,120,50,false,{guardItem:'せんせいのツメ'}).order,'unknown');
+assert.equal(cmp(0,0,120,50,false,{attackItem:'せんせいのツメ'}).order,'attack-first');
+assert.equal(cmp(0,0,50,120,false,{attackItem:'せんせいのツメ'}).order,'unknown');
+assert.equal(cmp(0,0,50,120,true,{guardItem:'せんせいのツメ'}).order,'unknown');
+assert.equal(cmp(0,0,50,120,true,{attackItem:'せんせいのツメ'}).order,'attack-first');
+assert.equal(cmp(0,0,100,100,false,{guardItem:'せんせいのツメ'}).order,'tie');
+assert.equal(cmp(0,0,null,120,false,{attackItem:'せんせいのツメ'}).order,'unknown');
+console.log('Quick Claw guard timing: 9 cases pass');
