@@ -1,6 +1,6 @@
 const CACHE_PREFIX = 'gc2027ii-' + encodeURIComponent(self.registration.scope) + '-';
-const CACHE = CACHE_PREFIX + 'v2.9.0';
-const SHELL = ['./', './index.html', './battle-core.js', './effect-engine.js', './priority-engine.js', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
+const CACHE = CACHE_PREFIX + 'v2.9.1';
+const SHELL = ['./', './index.html', './battle-core.js', './effect-engine.js', './priority-engine.js', './turn-order-effects.js', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)));
 });

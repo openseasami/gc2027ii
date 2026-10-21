@@ -15,3 +15,12 @@
 
 ## 実際の作業結果と限界
 4段階に横断する管理・検証を一括実施。ただし特性、技、持ち物、メガシンカ、完全対戦再現の全件実装は未完了。ブラウザーの完全E2Eや公式ゲームでの戦闘照合は行っていない。
+
+## v2.9.1 継続開発のゲート
+
+- `IMPLEMENTATION_LEDGER.json` schemaVersion=2 は全候補について名称登録、効果の部分実装/要調査、単体テスト証拠、統合テスト証拠を分離する。`withoutProjection` は「実装がない」の意味ではない。HTMLに別経路があるため必ず参照箇所を確認する。
+- `MECHANICS_EVIDENCE.json` の `scope` が各証拠の限界。`scoped-tests-defined` はテストの定義がある状態であり、全仕様の検証完了ではない。実行結果とソースハッシュは `TEST_RESULTS.json` を参照する。
+- 持ち物166件、メガ82形態の候補台帳を追加。メガの共通変化経路の検証を全形態の固有効果・能力値・使用可否の保証に流用しない。
+- 優先度は既存 `PRIORITY_POLICY.json` の部分的な採用率を使用する。unknownを対象外にしない。
+- 新しい再実行入口は `python run-development-checks.py`。全既存JS/Pythonテスト、リリース検査、実ブラウザー検査を実行する。必要パッケージは `requirements-dev.txt`、Chromiumは `/usr/bin/chromium`。
+- 公開用一式は開発途中のパッケージとして作成する。デプロイ済みサイトとの一致は未検証。完成判定は引き続き false。

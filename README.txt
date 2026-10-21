@@ -1,5 +1,12 @@
-v2.9.0
-ZIPを解凍しindex.html、sw.js、manifest.webmanifest、アイコンをGitHubリポジトリのルートへ上書きしてください。
+v2.9.1
+開発途中です。完成判定はfalse。
+今回の実装・検証・残件: DEVELOPMENT_CHECKPOINT.md / COMPLETION_REPORT.md
+全テスト再実行: python run-development-checks.py（requirements-dev.txtとChromiumが必要）
+公開用一式: release/gc2027ii-v2.9.1-development.zip
+mainと公開サイトは変更していません。
+
+以下は過去の版の更新履歴です。検証範囲と完成判定の最新情報は上記レポートを参照してください。
+公開用ZIPにはHTML、全外部JSエンジン、Service Worker、manifest、アイコンを同梱します。完成版ではありません。
 ブラウザ版: https://openseasami.github.io/gc2027ii/
 今回の変更: ポイズンヒール、あめうけざら、アイスボディ、サンパワー、かんそうはだの天候・状態異常に起因するターン末HP影響を推奨予測に反映。観測HPを自動変更しません。
 検証: node verify-release.js と node test-residual.js

@@ -63,6 +63,12 @@
     {name:'ドわすれ',kind:'stat_boost',stat:'spd',stages:2,target:'self'},
     {name:'かたくなる',kind:'stat_boost',stat:'def',stages:1,target:'self'},
     {name:'まるくなる',kind:'stat_boost',stat:'def',stages:1,target:'self'},
+    {name:'からにこもる',kind:'stat_boost',stat:'def',stages:1,target:'self'},
+    {name:'かくばる',kind:'stat_boost',stat:'atk',stages:1,target:'self'},
+    {name:'ヨガのポーズ',kind:'stat_boost',stat:'atk',stages:1,target:'self'},
+    {name:'ロックカット',kind:'stat_boost',stat:'spe',stages:2,target:'self'},
+    {name:'つめとぎ',kind:'multi_boost',stats:{atk:1,acc:1},target:'self'},
+    {name:'ギアチェンジ',kind:'multi_boost',stats:{atk:1,spe:2},target:'self'},
     // Deterministic self-stage effects, projected ONLY after success is confirmed.
     {name:'こわいかお',kind:'stat_boost',stat:'spe',stages:-2,target:'opponent'},
     {name:'うそなき',kind:'stat_boost',stat:'spd',stages:-2,target:'opponent'},

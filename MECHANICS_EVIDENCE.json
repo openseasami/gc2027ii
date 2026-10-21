@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "meaning": "Evidence is limited to named scenarios; neither a source path nor a passing test certifies full mechanics or format legality.",
+  "groups": [
+    {
+      "category": "moves",
+      "names": [
+        "からにこもる",
+        "かくばる",
+        "ヨガのポーズ",
+        "ロックカット",
+        "つめとぎ",
+        "ギアチェンジ"
+      ],
+      "paths": [
+        "effect-engine.js:moveDefinitions",
+        "index.html:applyObservedMoveEffects",
+        "index.html:applyBattleBoost",
+        "index.html:commitTurnActions"
+      ],
+      "unitTests": [
+        "test-registered-setup-integration.js"
+      ],
+      "integrationTests": [
+        "test-registered-setup-integration.js"
+      ],
+      "scope": "Explicit success/unknown/failure projection, recording pipeline on both sides, rank caps and confirmed Contrary/Simple. Complete legality and other item/ability exceptions unverified."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "にほんばれ",
+        "あまごい",
+        "すなあらし",
+        "ゆきげしき",
+        "リフレクター",
+        "ひかりのかべ"
+      ],
+      "paths": [
+        "effect-engine.js:moveDefinitions",
+        "index.html:applyObservedMoveEffects"
+      ],
+      "unitTests": [
+        "test-v282-move-field-registry.js"
+      ],
+      "integrationTests": [
+        "test-field-items-integration.js",
+        "test-engine-real-functions.js"
+      ],
+      "scope": "Confirmed weather/screen setters; matching duration items and consumed/nonmatching items. Ability suppression and all match scenarios remain unverified."
+    },
+    {
+      "category": "items",
+      "names": [
+        "グラスシード",
+        "エレキシード",
+        "サイコシード",
+        "ミストシード"
+      ],
+      "paths": [
+        "index.html:activateTerrainSeedFor",
+        "index.html:setTerrainState",
+        "index.html:heldItemFor"
+      ],
+      "unitTests": [],
+      "integrationTests": [
+        "test-field-items-integration.js"
+      ],
+      "scope": "Terrain match, airborne holder, rank cap including Contrary, fainted/pending holder, one-time consumption and Unburden activation. Item suppression and complete battle E2E unverified."
+    },
+    {
+      "category": "items",
+      "names": [
+        "あついいわ",
+        "しめったいわ",
+        "さらさらいわ",
+        "つめたいいわ"
+      ],
+      "paths": [
+        "battle-core.js:weatherEntryTurns",
+        "index.html:entryWeatherDuration",
+        "index.html:applyObservedMoveEffects"
+      ],
+      "unitTests": [
+        "test-field-lifecycle-shared.js",
+        "test-torkoal-weather-rock.js"
+      ],
+      "integrationTests": [
+        "test-field-items-integration.js"
+      ],
+      "scope": "Matching weather duration 8, nonmatching/consumed 5; no complete item suppression oracle."
+    },
+    {
+      "category": "items",
+      "names": [
+        "ひかりのねんど"
+      ],
+      "paths": [
+        "index.html:applyObservedMoveEffects",
+        "index.html:heldItemFor"
+      ],
+      "unitTests": [],
+      "integrationTests": [
+        "test-field-items-integration.js"
+      ],
+      "scope": "Reflect/Light Screen duration 8 on holder's side, consumed item 5; Aurora Veil and suppression unverified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "かるわざ"
+      ],
+      "paths": [
+        "battle-core.js:unburdenMultiplier",
+        "index.html:activateTerrainSeedFor",
+        "index.html:speedFieldMultiplier"
+      ],
+      "unitTests": [
+        "test-unburden-usage.js"
+      ],
+      "integrationTests": [
+        "test-unburden-live-integration.js",
+        "test-field-items-integration.js"
+      ],
+      "scope": "Explicit activation and terrain-seed consumption; all item loss/ability replacement cases not certified."
+    },
+    {
+      "category": "mega",
+      "names": [
+        "メガアブソル",
+        "メガアブソルZ",
+        "メガウツボット",
+        "メガエアームド",
+        "メガエルレイド",
+        "メガエンブオー",
+        "メガオニゴーリ",
+        "メガオーダイル",
+        "メガカイリュー",
+        "メガカイロス",
+        "メガカエンジシ",
+        "メガカメックス",
+        "メガカラマネロ",
+        "メガガブリアス",
+        "メガガブリアスZ",
+        "メガガメノデス",
+        "メガガルーラ",
+        "メガキラフロル",
+        "メガギャラドス",
+        "メガクチート",
+        "メガグソクムシャ",
+        "メガケケンカニ",
+        "メガゲッコウガ",
+        "メガゲンガー",
+        "メガゴルーグ",
+        "メガサメハダー",
+        "メガサーナイト",
+        "メガシビルドン",
+        "メガシャンデラ",
+        "メガジジーロン",
+        "メガジュカイン",
+        "メガジュペッタ",
+        "メガスコヴィラン",
+        "メガスターミー",
+        "メガスピアー",
+        "メガズルズキン",
+        "メガセグレイブ",
+        "メガタイレーツ",
+        "メガタブンネ",
+        "メガチャーレム",
+        "メガチリーン",
+        "メガチルタリス",
+        "メガデンリュウ",
+        "メガドラミドロ",
+        "メガドリュウズ",
+        "メガニャオニクス(オス)",
+        "メガニャオニクス(メス)",
+        "メガハガネール",
+        "メガハッサム",
+        "メガバクーダ",
+        "メガバシャーモ",
+        "メガバンギラス",
+        "メガピクシー",
+        "メガピジョット",
+        "メガフシギバナ",
+        "メガフラエッテ",
+        "メガフーディン",
+        "メガブリガロン",
+        "メガプテラ",
+        "メガヘラクロス",
+        "メガヘルガー",
+        "メガペンドラー",
+        "メガボスゴドラ",
+        "メガボーマンダ",
+        "メガマフォクシー",
+        "メガミミロップ",
+        "メガムクホーク",
+        "メガメガニウム",
+        "メガメタグロス",
+        "メガヤドラン",
+        "メガヤミラミ",
+        "メガユキノオー",
+        "メガユキメノコ",
+        "メガライチュウX",
+        "メガライチュウY",
+        "メガライボルト",
+        "メガラグラージ",
+        "メガリザードンX",
+        "メガリザードンY",
+        "メガルカリオ",
+        "メガルカリオZ",
+        "メガルチャブル"
+      ],
+      "paths": [
+        "index.html:megaInfoFor",
+        "index.html:effectiveBattleName",
+        "index.html:megaEvolve"
+      ],
+      "unitTests": [],
+      "integrationTests": [
+        "test-mega-transactions.js"
+      ],
+      "scope": "Generic transition on 82 inherited catalog forms: pre/post name, ability, one per side, matching own stone, KO/bench rejection, failed-save rollback and retry. Independent form stats, legal stones and all post-ability mechanics unverified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "あまのじゃく"
+      ],
+      "paths": [
+        "index.html:applyBattleBoost",
+        "index.html:activateTerrainSeedFor"
+      ],
+      "unitTests": [
+        "test-registered-setup-integration.js"
+      ],
+      "integrationTests": [
+        "test-field-items-integration.js",
+        "test-registered-setup-integration.js"
+      ],
+      "scope": "Confirmed self-rank deltas through shared boost path and seed rank boundaries. Intimidate, guaranteed-hit stat-drop and other direct-write paths are not covered."
+    }
+  ]
+}

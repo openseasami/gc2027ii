@@ -1,24 +1,34 @@
-# Global Challenge 2027 II v1.86.1
+# Global Challenge 2027 II 支援サイト — v2.9.1
 
-GitHub Pages向け公開ファイルです。ビルドは不要です。
+**開発途中です。完成判定は false。** 開発ブランチは `codex-development`。
 
-## アップロード
-1. ZIPを解凍します。
-2. このフォルダの中身をGitHubのリポジトリの公開場所へアップロードします。フォルダそのものではなく、index.htmlが公開場所の直下に来るようにしてください。
-3. 既存のサイトを更新する場合は、index.html、sw.js、manifest.webmanifest、icon-192.png、icon-512.pngをすべて上書きします。
+現在の実装内容・制約・再開手順は [DEVELOPMENT_CHECKPOINT.md](DEVELOPMENT_CHECKPOINT.md)、
+完成条件の評価は [COMPLETION_REPORT.md](COMPLETION_REPORT.md) を参照してください。
 
-## 初めて公開する場合
-GitHubの Settings → Pages で、Sourceを「Deploy from a branch」、Branchを「main」、Folderを「/(root)」に設定してSaveします。公開URLは同じPages設定画面に表示されます。
+- [実装台帳](IMPLEMENTATION_LEDGER.json): 特性・技・持ち物・メガの登録/部分実装/検証証拠。
+- [未対応・未検証一覧](DEVELOPMENT_BACKLOG.json): 優先度・依存関係・残件。
+- [テスト実行結果](TEST_RESULTS.json): 終了コード・ログ・ソースSHA-256。
+- [開発ゲート](DEVELOPMENT_GATES.md): 完成判定の条件。
 
-## スマートフォン
-公開URLをSafariまたはChromeで開きます。更新後は再読み込みしてください。iPhoneではSafariの共有メニューからホーム画面に追加できます。以前の版が表示される場合は、開いているサイト画面を閉じてから再度開いてください。
+## 開発検証
 
-## 対戦データの移行
-現在の保存場所とは異なるURLで使う場合、自動では引き継がれません。移行前に旧サイトで「JSON出力」、移行先で「JSONから復元」を使ってください。
+Node.js、Python、`/usr/bin/chromium` を使用します。
 
-## 確認済みの範囲
-本体はv1.86.1です。26項目の自動検証が通過しています。実機での表示・タップ操作の検証は未実施です。
-この配布物に個人の対戦記録やアカウント情報は含まれていません。
+```sh
+python -m venv --system-site-packages work/test-venv
+work/test-venv/bin/python -m pip install -r requirements-dev.txt
+work/test-venv/bin/python run-development-checks.py
+python build-development-release.py
+```
 
-設定方法の参考：
-https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+テスト成功だけでは、対象大会の使用可否、全効果の実装、公式ゲームとの一致を保証しません。
+ブラウザー検証はローカルHTTPを使用します。実行範囲の詳細は完成判定レポートに記録しています。
+
+## 公開用ファイル
+
+`release/gc2027ii-v2.9.1-development.zip` に静的サイト一式を保存しています。
+ビルドは不要です。同梱のHTML、全外部JS、Service Worker、manifest、アイコンを同じ場所に配置してください。
+`release/RELEASE_MANIFEST.json` と `release/SHA256SUMS.txt` で内容を確認できます。
+
+この開発作業では `main` と公開サイトを更新していません。公開ブランチの変更・デプロイは行っていません。
+保存先のURLが変わる場合の対戦データ移行には、既存のJSON出力/復元機能を使用できます。

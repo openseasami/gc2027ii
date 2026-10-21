@@ -19,16 +19,21 @@ try:
   assert response.status==200
   assert page.locator('body').evaluate("x=>x.classList.contains('mode45')")
   assert page.evaluate("typeof window.EffectEngine==='object' && typeof window.BattleCore==='object'")
-  page.locator('#fixed45ExitBtn').click(force=True)
+  # Start a real match before clicking controls inside the hidden battle section.
+  page.locator('[data-fill="opp"]').click()
+  for index in range(4):page.locator('#myPickButtons .my-pick-btn').nth(index).click()
+  page.locator('#startMatchBtn').click()
+  assert page.locator('#battleArea').is_visible(), page.locator('#registerStatus').inner_text()
+  page.locator('#fixed45ExitBtn').click()
   assert not page.locator('body').evaluate("x=>x.classList.contains('mode45')")
   page.reload(wait_until='domcontentloaded');page.wait_for_timeout(300)
   assert not page.locator('body').evaluate("x=>x.classList.contains('mode45')")
-  page.locator('#mode45Btn').click(force=True)
+  page.locator('#mode45Btn').click()
   assert page.locator('body').evaluate("x=>x.classList.contains('mode45')")
   page.reload(wait_until='domcontentloaded');page.wait_for_timeout(300)
   assert page.locator('body').evaluate("x=>x.classList.contains('mode45')")
   assert not errors,errors[:3]
-  mobile=ctx.new_page(viewport={'width':375,'height':812}); mobile.goto(url,wait_until='domcontentloaded');mobile.wait_for_timeout(350)
+  mobile=ctx.new_page(); mobile.set_viewport_size({'width':375,'height':812}); mobile.goto(url,wait_until='domcontentloaded');mobile.wait_for_timeout(350)
   assert mobile.locator('#mode45Btn').count()==1
   print('PASS Chromium HTTP launch, real localStorage reload, mode45 on/off, external engines, mobile viewport, no JS exceptions')
   browser.close()
