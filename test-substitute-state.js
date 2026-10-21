@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const src=fs.readFileSync(__dirname+'/index.html','utf8');
+const start=src.indexOf('function observedSubstituteHp('),end=src.indexOf('function renderSubstituteObservation(');
+const state={opp:[{substituteHp:0}],my:[{substituteHp:0}]};
+const ctx={state,abilityFullHp:()=>200};vm.createContext(ctx);vm.runInContext(src.slice(start,end),ctx);
+const f=ctx;
+assert.equal(f.observedSubstituteHp('opp',0),0);
+assert.equal(f.setObservedSubstituteHp('opp',0,50),true);
+assert.equal(f.observedSubstituteHp('opp',0),50);
+assert.equal(f.setObservedSubstituteHp('opp',0,51),false);
+assert.equal(f.setObservedSubstituteHp('opp',0,-1),false);
+assert.equal(f.setObservedSubstituteHp('opp',0,1.5),false);
+assert.equal(f.applyObservedSubstituteStrike('opp',0,20).after,30);
+assert.equal(f.applyObservedSubstituteStrike('opp',0,40).broken,true);
+assert.equal(f.observedSubstituteHp('opp',0),0);
+assert.equal(f.applyObservedSubstituteStrike('opp',0,5),null);
+assert.equal(f.setObservedSubstituteHp('opp',0,20),true);
+const snap=JSON.parse(JSON.stringify(state));f.applyObservedSubstituteStrike('opp',0,5);assert.equal(state.opp[0].substituteHp,15);
+state.opp=snap.opp;assert.equal(f.observedSubstituteHp('opp',0),20);
+console.log('12 substitute state assertions passed');

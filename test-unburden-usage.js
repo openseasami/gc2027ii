@@ -1,0 +1,11 @@
+const a=require('node:assert/strict'),b=require('./battle-core.js');let n=0;
+const ck=(v,expected)=>{a.deepEqual(v,expected);n++};
+ck(b.unburdenSpeed(120,{abilityActive:true,itemHeld:false,itemLostThisStay:true}),240);
+ck(b.unburdenSpeed(120,{abilityActive:true,itemHeld:true,itemLostThisStay:false}),120);
+ck(b.unburdenSpeed(120,{abilityActive:true,itemHeld:false,itemLostThisStay:false}),120);
+ck(b.unburdenSpeed(120,{abilityActive:false,itemHeld:false,itemLostThisStay:true}),120);
+ck(b.unburdenSpeed(120,{abilityActive:true,itemHeld:false}),null);
+ck(b.unburdenSpeed(1,{abilityActive:true,itemHeld:false,itemLostThisStay:true}),2);
+for(const [kind,r,expected] of [['ability',7,false],['ability',7.0001,true],['ability',93,true],['move',10,true],['move',9.999,false],['move',101,null],['ability',null,null]])ck(b.usageEligible(r,kind),expected);
+a.throws(()=>b.unburdenSpeed(0,{}));n++;
+console.log(n+' unburden/usage cases passed');

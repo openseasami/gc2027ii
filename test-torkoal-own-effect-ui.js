@@ -1,0 +1,18 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),path=require('path');
+const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
+assert(html.includes("markObservedEffectReviewed('my',e.idx,targetIdx,true)"));
+assert(html.includes("markObservedEffectReviewed('my',e.idx,null,false)"));
+const a=html.indexOf('function pendingObservedTargetEffect('),b=html.indexOf('function guideStepDone(');
+const state={myActive:[0,1],oppActive:[0,1],myTeam:['コータス','A'],oppTeam:['B','C'],my:{0:{hp:100,currentTurnAction:{kind:'move',move:'あくび'}},1:{hp:100}},opp:{0:{hp:100},1:{hp:100}}};
+const ctx={state};vm.createContext(ctx);vm.runInContext(html.slice(a,b),ctx);
+const fn=x=>vm.runInContext(x,ctx);
+assert.equal(fn("pendingObservedTargetEffect('my',0)"),false);
+assert.equal(fn("markObservedEffectReviewed('my',0,1,true)"),true);
+assert.equal(state.my[0].currentTurnAction.targetIdx,1);
+assert.equal(state.my[0].currentTurnAction.sleepAllowed,true);
+state.my[0].currentTurnAction={kind:'move',move:'クリアスモッグ'};
+assert.equal(fn("markObservedEffectReviewed('my',0,0,true)"),true);
+assert.equal(state.my[0].currentTurnAction.targetIdx,0);
+assert.equal(fn("markObservedEffectReviewed('my',0,null,false)"),true);
+assert.equal(state.my[0].currentTurnAction.hitConfirmed,undefined);
+console.log('PASS own side Yawn/Clear Smog manual confirmation');

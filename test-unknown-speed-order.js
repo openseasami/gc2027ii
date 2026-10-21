@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict'),fs=require('fs'),vm=require('node:vm');
+const html=fs.readFileSync(__dirname+'/index.html','utf8');
+const start=html.indexOf('function sortTurnSimulationEvents('),end=html.indexOf('\n// v1.78.4:',start);
+assert.ok(start>0&&end>start);
+const ctx={$:()=>({value:'3'})};vm.createContext(ctx);vm.runInContext(html.slice(start,end),ctx);
+const mk=(speed,side='opp')=>({priority:0,speed,side,idx:0});
+const names=x=>Array.from(x,p=>p.speed);
+assert.deepEqual(names(ctx.sortTurnSimulationEvents([mk(10),mk(null),mk(40)])),[10,40,null]);
+assert.deepEqual(names(ctx.sortTurnSimulationEvents([mk(null),mk(40),mk(10)])),[10,40,null]);
+ctx.$=()=>({value:'0'});
+assert.deepEqual(names(ctx.sortTurnSimulationEvents([mk(null),mk(40),mk(10)])),[40,10,null]);
+assert.deepEqual(names(ctx.sortTurnSimulationEvents([mk(null),mk(40),mk(10),{priority:1,speed:null,side:'my',idx:0}])),[null,40,10,null]);
+assert.ok(html.includes('speed:fieldSpeed(action.actor||team[idx],side,idx)'));
+console.log('5 unknown-speed / Trick Room order checks passed');

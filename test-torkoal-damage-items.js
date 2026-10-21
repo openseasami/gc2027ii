@@ -1,0 +1,15 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const text=fs.readFileSync(__dirname+'/index.html','utf8');
+const code=text.slice(text.indexOf('function itemDamageMod('),text.indexOf('// Field-damage grounding'));
+const context={};vm.createContext(context);vm.runInContext(code,context);
+const m=context.itemDamageMod;
+assert.equal(m('コータス','ほのお','もくたん'),1.2);
+assert.equal(m('コータス','みず','もくたん'),1);
+assert.equal(m('コータス','ほのお','ひのたまプレート'),1.2);
+assert.equal(m('コータス','ほのお','いのちのたま'),1.3);
+assert.equal(m('コータス','ほのお','不明'),1);
+assert.match(text,/const attackHeld=prof\.item;/);
+assert.match(text,/const confirmedOpponentItem=attacker\.d\.itemConfirmed===true/);
+assert.match(text,/mv\.cat==='spec'&&attackHeld==='こだわりメガネ'/);
+assert.match(text,/mv\.cat==='spec'&&confirmedOpponentItem==='こだわりメガネ'/);
+console.log('8 Torkoal held-item damage checks passed');

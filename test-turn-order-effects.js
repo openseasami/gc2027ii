@@ -1,0 +1,18 @@
+const assert=require('node:assert/strict');
+const {analyse}=require('./turn-order-effects');
+const a=(speed,item='',priority=0,ability='')=>({speed,item,priority,ability});
+assert.equal(analyse([a(100),a(50)]).pairs[0].order,'a-first');
+assert.equal(analyse([a(100),a(50)],true).pairs[0].order,'b-first');
+assert.equal(analyse([a(100),a(50,'せんせいのツメ')]).pairs[0].order,'unknown');
+assert.equal(analyse([a(100),a(50,'せんせいのツメ',1)]).pairs[0].order,'b-first');
+assert.equal(analyse([a(100,'こうこうのしっぽ'),a(50)]).pairs[0].order,'b-first');
+assert.equal(analyse([a(100),a(50,'','クイックドロウ')]).pairs[0].order,'unknown');
+assert.equal(analyse([a(100,'',0,'あとだし'),a(50)]).pairs[0].order,'b-first');
+assert.equal(analyse([a(100),a(null)]).pairs[0].order,'unknown');
+assert.equal(analyse([a(100),a(100)]).pairs[0].order,'tie');
+assert.equal(analyse([a(100, '',1),a(50,'せんせいのツメ')]).pairs[0].order,'a-first');
+assert.equal(analyse([a(90),a(80),a(70),a(60)]).pairs.length,6);
+const html=require('fs').readFileSync(__dirname+'/index.html','utf8');
+assert.ok(html.includes('function activeOrderCaveats()'));
+assert.ok(html.includes('warning+activeOrderCaveats()'));
+console.log('turn order group effects 13 assertions passed');

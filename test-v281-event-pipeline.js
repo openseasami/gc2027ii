@@ -1,0 +1,15 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const e=require('./effect-engine.js');
+const html=fs.readFileSync('./index.html','utf8');
+const speed=e.evaluate('on_turn_end',{source:{ability:'かそく'}});
+assert.deepEqual(speed.events.map(x=>({kind:x.kind,stat:x.stat,stages:x.stages})),[{kind:'stat_boost',stat:'spe',stages:1}]);
+assert.equal(e.evaluate('on_turn_end',{source:{ability:'ひでり'}}).events.length,0);
+assert.equal(e.evaluate('on_move_used',{source:{ability:'かそく'}}).events.length,0);
+const hit=e.evaluate('on_hit',{attacker:{ability:'どくしゅ',types:['ノーマル'],status:'なし'},defender:{ability:'',types:['ノーマル'],status:'なし'},contact:true,damaging:true,substitute:false});
+assert.equal(hit.events[0].status,'どく');assert.ok(Math.abs(hit.events[0].chance-.3)<1e-12);
+const noContact=e.evaluate('on_hit',{attacker:{ability:'どくしゅ',types:['ノーマル'],status:'なし'},defender:{ability:'',types:['ノーマル'],status:'なし'},contact:false,damaging:true,substitute:false});
+assert.equal(noContact.events[0].chance,0);
+assert.match(html,/EffectEngine\.evaluate\('on_turn_end'/);
+assert.match(html,/confirmedAbilityIs\(side,idx,name,'かそく'\)/);
+console.log('Event pipeline: hit/move/end-turn and UI integration passed');
