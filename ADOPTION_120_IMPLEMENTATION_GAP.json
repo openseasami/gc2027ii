@@ -1,0 +1,14 @@
+{
+  "species": 120,
+  "updatedProfiles": 1,
+  "targetMoveRows": 906,
+  "targetAbilityRows": 174,
+  "targetUniqueMoves": 252,
+  "targetUniqueAbilities": 112,
+  "untranslatedTargetMoves": [],
+  "untranslatedTargetAbilities": [],
+  "catalogMoveNamesFound": 252,
+  "catalogMoveNamesMissing": [],
+  "basis": "Static name/catalog audit only; move/ability effect correctness and live UI wiring NOT certified",
+  "source": "ADOPTION_120_VERIFIED.json"
+}
