@@ -21,7 +21,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.358101+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "c6ec58092fded147d41a": {
       "id": "c6ec58092fded147d41a",
@@ -73,7 +73,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.373244+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "4cdd26c48d18d85516d5": {
       "id": "4cdd26c48d18d85516d5",
@@ -90,11 +90,21 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "classification": "未実装",
-      "status": "in-progress",
+      "status": "verified-scope",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.379309+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。",
+      "evidence": {
+        "scope": "シェルアーマー：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+        "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+        "tests": [
+          "test-critical-engine-differential.js"
+        ]
+      },
+      "testFingerprint": "e3a523d8dc752b08b789f3edb15537a6585ed6b79ee531d1c1b921748b10bdb0",
+      "verifiedAt": "2026-10-22T15:16:32.053663+00:00",
+      "completion": false
     },
     "51ee9e7e374889a9c59d": {
       "id": "51ee9e7e374889a9c59d",
@@ -111,11 +121,21 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "classification": "未実装",
-      "status": "in-progress",
+      "status": "verified-scope",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.385655+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。",
+      "evidence": {
+        "scope": "きょううん：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+        "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+        "tests": [
+          "test-critical-engine-differential.js"
+        ]
+      },
+      "testFingerprint": "e3a523d8dc752b08b789f3edb15537a6585ed6b79ee531d1c1b921748b10bdb0",
+      "verifiedAt": "2026-10-22T15:16:32.053735+00:00",
+      "completion": false
     },
     "cd8947ee3b241929acea": {
       "id": "cd8947ee3b241929acea",
@@ -136,7 +156,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.391244+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "a7645d5e98d33ff95348": {
       "id": "a7645d5e98d33ff95348",
@@ -157,7 +177,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.398032+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "755c302b279b774e0d71": {
       "id": "755c302b279b774e0d71",
@@ -174,11 +194,21 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "classification": "未実装",
-      "status": "in-progress",
+      "status": "verified-scope",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.403884+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。",
+      "evidence": {
+        "scope": "ひとでなし：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+        "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+        "tests": [
+          "test-critical-engine-differential.js"
+        ]
+      },
+      "testFingerprint": "e3a523d8dc752b08b789f3edb15537a6585ed6b79ee531d1c1b921748b10bdb0",
+      "verifiedAt": "2026-10-22T15:16:32.053787+00:00",
+      "completion": false
     },
     "896d6848bd646641c757": {
       "id": "896d6848bd646641c757",
@@ -230,7 +260,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.417117+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "f3f0af3408875b6b8160": {
       "id": "f3f0af3408875b6b8160",
@@ -251,7 +281,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.422860+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "c203c46cfe28b0187327": {
       "id": "c203c46cfe28b0187327",
@@ -272,7 +302,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.429500+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "2eaed3a36630cc720b28": {
       "id": "2eaed3a36630cc720b28",
@@ -293,7 +323,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.437071+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "b37a0257d19cf9dac15c": {
       "id": "b37a0257d19cf9dac15c",
@@ -403,11 +433,21 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "classification": "未実装",
-      "status": "in-progress",
+      "status": "verified-scope",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.463687+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。",
+      "evidence": {
+        "scope": "カブトアーマー：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+        "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+        "tests": [
+          "test-critical-engine-differential.js"
+        ]
+      },
+      "testFingerprint": "e3a523d8dc752b08b789f3edb15537a6585ed6b79ee531d1c1b921748b10bdb0",
+      "verifiedAt": "2026-10-22T15:16:32.053854+00:00",
+      "completion": false
     },
     "1da86dbfb0f00eb71574": {
       "id": "1da86dbfb0f00eb71574",
@@ -524,7 +564,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.514358+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "183a33aa10cf52c58370": {
       "id": "183a33aa10cf52c58370",
@@ -548,7 +588,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.520880+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "9cc3a192f19087a6e947": {
       "id": "9cc3a192f19087a6e947",
@@ -568,11 +608,21 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "classification": "未実装",
-      "status": "in-progress",
+      "status": "verified-scope",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.526857+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。",
+      "evidence": {
+        "scope": "きんちょうかん：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+        "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+        "tests": [
+          "test-priority-resist-berries.js"
+        ]
+      },
+      "testFingerprint": "e3a523d8dc752b08b789f3edb15537a6585ed6b79ee531d1c1b921748b10bdb0",
+      "verifiedAt": "2026-10-22T15:16:32.053904+00:00",
+      "completion": false
     },
     "77b8994f746d5a1e8b46": {
       "id": "77b8994f746d5a1e8b46",
@@ -596,7 +646,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.533025+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "95638be5ab42322ca19b": {
       "id": "95638be5ab42322ca19b",
@@ -620,7 +670,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.539865+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "cbc2d35ecb3f3c45466f": {
       "id": "cbc2d35ecb3f3c45466f",
@@ -644,7 +694,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.545963+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "14d5c32aad02f6b43a31": {
       "id": "14d5c32aad02f6b43a31",
@@ -664,11 +714,21 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "classification": "未実装",
-      "status": "in-progress",
+      "status": "verified-scope",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.552410+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。",
+      "evidence": {
+        "scope": "きみょうなくすり：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+        "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+        "tests": [
+          "test-entry-focus-state.js"
+        ]
+      },
+      "testFingerprint": "e3a523d8dc752b08b789f3edb15537a6585ed6b79ee531d1c1b921748b10bdb0",
+      "verifiedAt": "2026-10-22T15:16:32.053952+00:00",
+      "completion": false
     },
     "436d675a15024a8c3e93": {
       "id": "436d675a15024a8c3e93",
@@ -692,7 +752,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.559326+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "d22286d3b73de3947583": {
       "id": "d22286d3b73de3947583",
@@ -750,7 +810,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.570972+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "dd644d04cd354d402fce": {
       "id": "dd644d04cd354d402fce",
@@ -774,7 +834,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.576533+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "3e75742e20fb726ee16d": {
       "id": "3e75742e20fb726ee16d",
@@ -798,7 +858,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.582623+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "d102a3f989c96d7f59a7": {
       "id": "d102a3f989c96d7f59a7",
@@ -822,7 +882,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.588139+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "7309b430760de39bb92e": {
       "id": "7309b430760de39bb92e",
@@ -846,7 +906,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.594232+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     },
     "e5936f53ec393309f269": {
       "id": "e5936f53ec393309f269",
@@ -904,7 +964,481 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.605470+00:00",
-      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "4010978cf055a3690296": {
+      "id": "4010978cf055a3690296",
+      "category": "abilities",
+      "name": "のろわれボディ",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "4010978cf055a369029642d183b76094280684b1b2c120131e6f0d5fb3cb9d20",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 100,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.411790+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "be4c6c5707b0f5785e63": {
+      "id": "be4c6c5707b0f5785e63",
+      "category": "abilities",
+      "name": "でんきにかえる",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "be4c6c5707b0f5785e635377ce4f7c0604ca2155b3156b139eca230fad13b6ff",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 97.9,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.418598+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "e7c77b0adc9ef389b21d": {
+      "id": "e7c77b0adc9ef389b21d",
+      "category": "abilities",
+      "name": "どくげしょう",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "e7c77b0adc9ef389b21d8d13c4b9fa68bba2ef7fc8b14a609a331515dd99cbba",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 96.7,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.424490+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "6d85b0dc6a7e7eaace3c": {
+      "id": "6d85b0dc6a7e7eaace3c",
+      "category": "abilities",
+      "name": "スナイパー",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "6d85b0dc6a7e7eaace3cd21a886877f1321972e95eadfb2590f0fbd57c5758d6",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 96,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "verified-scope",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.430471+00:00",
+      "evidence": {
+        "scope": "スナイパー：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+        "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+        "tests": [
+          "test-critical-engine-differential.js"
+        ]
+      },
+      "testFingerprint": "e3a523d8dc752b08b789f3edb15537a6585ed6b79ee531d1c1b921748b10bdb0",
+      "verifiedAt": "2026-10-22T15:16:32.054000+00:00",
+      "completion": false
+    },
+    "5c1c81689565cbe438b1": {
+      "id": "5c1c81689565cbe438b1",
+      "category": "abilities",
+      "name": "リベロ",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "5c1c81689565cbe438b195da30da4fe6e4d03cb256995b2410bf5f8b9e99fe55",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 91.7,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.436189+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "19828986ddfa724aa88f": {
+      "id": "19828986ddfa724aa88f",
+      "category": "abilities",
+      "name": "へんげんじざい",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "19828986ddfa724aa88fd19a5df0ec397bccf853bec1d01ebfc859d28daf9339",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 91.6,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.442032+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "f263bd4c6d8f738da9c2": {
+      "id": "f263bd4c6d8f738da9c2",
+      "category": "abilities",
+      "name": "テレパシー",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "f263bd4c6d8f738da9c237621043eb0d44c9cdadc6e321b31dba5aaa7cf84bc8",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 33.7,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.447430+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "ecee1dbccea3847642e3": {
+      "id": "ecee1dbccea3847642e3",
+      "category": "abilities",
+      "name": "しめりけ",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "ecee1dbccea3847642e3fa46249174d3157e1107f740fe75d9d68ee4efbdf8e3",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 31.4,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.453564+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "c741478fbd05734100f7": {
+      "id": "c741478fbd05734100f7",
+      "category": "abilities",
+      "name": "メロメロボディ",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "c741478fbd05734100f7a09be70d77e7e28a659ee25d748b320bdb230230e87b",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 28.5,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.458992+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "b9effd125968c2f8e5bf": {
+      "id": "b9effd125968c2f8e5bf",
+      "category": "abilities",
+      "name": "ぎゃくじょう",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "b9effd125968c2f8e5bff7d9687841415b99900aa8e372ef5d7a392cd49194db",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 21.4,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.464952+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "e0c9136928e105f5cf33": {
+      "id": "e0c9136928e105f5cf33",
+      "category": "abilities",
+      "name": "ふくつのこころ",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "e0c9136928e105f5cf33839a4d4d1c6b5d7de17e68a9c6d448ee8e11788d23d4",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 7.4,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.470844+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "cd16fc6644082e51004d": {
+      "id": "cd16fc6644082e51004d",
+      "category": "abilities",
+      "name": "いかりのつぼ",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "cd16fc6644082e51004d6d3ca3bdb7f65f11a352bcefd57360def9f62c2016a7",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.476996+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "5622383394b6fcd0fd31": {
+      "id": "5622383394b6fcd0fd31",
+      "category": "abilities",
+      "name": "こぼれダネ",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "5622383394b6fcd0fd316d3e408f86dd327d98021d461e868e1018b552ea270c",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.482825+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "4e57a2f7d8c654b4a616": {
+      "id": "4e57a2f7d8c654b4a616",
+      "category": "abilities",
+      "name": "さまようたましい",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "4e57a2f7d8c654b4a6167a4c318754f5d8d663df8cb58821e5c49af667803508",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.489289+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "66c1c1a571fb62c86c2d": {
+      "id": "66c1c1a571fb62c86c2d",
+      "category": "abilities",
+      "name": "じゅくせい",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "66c1c1a571fb62c86c2de500dd2a59778c244d5c636df22057d02904ef7b70e2",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "verified-scope",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.495081+00:00",
+      "evidence": {
+        "scope": "じゅくせい：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+        "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+        "tests": [
+          "test-priority-resist-berries.js"
+        ]
+      },
+      "testFingerprint": "e3a523d8dc752b08b789f3edb15537a6585ed6b79ee531d1c1b921748b10bdb0",
+      "verifiedAt": "2026-10-22T15:16:32.054050+00:00",
+      "completion": false
+    },
+    "fc2855cc1da6ed6faabc": {
+      "id": "fc2855cc1da6ed6faabc",
+      "category": "abilities",
+      "name": "すなはき",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "fc2855cc1da6ed6faabc204cf947829c5a698cf751f8fd8a56bfc129226d5f07",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.501200+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "649aaad790bd86febd46": {
+      "id": "649aaad790bd86febd46",
+      "category": "abilities",
+      "name": "ほうし",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "649aaad790bd86febd4604b74109cd07cfcc3d02646d8925e953ac6327b80799",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.510941+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "7faa8dbd7fd190e982dc": {
+      "id": "7faa8dbd7fd190e982dc",
+      "category": "abilities",
+      "name": "ゆうばく",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "7faa8dbd7fd190e982dc17adeb0a4541ba05a9395364a62e180ac8da24bfe312",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.517286+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+    },
+    "fcd5f30daa3ab8f7f502": {
+      "id": "fcd5f30daa3ab8f7f502",
+      "category": "abilities",
+      "name": "ミイラ",
+      "phase": "implement",
+      "family": "hit",
+      "dependencyGroup": "hit:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "fcd5f30daa3ab8f7f5026db718519b00461cb1c532e5bb7d9a21e67f3cd7b36b",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
+      "claimedAt": "2026-10-22T12:46:11.522665+00:00",
+      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
     }
   },
   "failures": [
@@ -1014,6 +1548,32 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-22T15:16:32.095247+00:00",
+      "commit": "8c40932cd304b3fd61a12215cd9e56f3794da028",
+      "reason": "大会実用版へ限定。118/118成功、8特性の限定スコープを検証、候補網羅を停止。",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
+    },
+    {
+      "at": "2026-10-22T15:20:42.456844+00:00",
+      "commit": "3eab251e9792bf95a2f833219ccd4cdcc6545703",
+      "reason": "実装3eab251、118/118成功。大会向けローカル合格、公式仕様/端末は未検証。網羅中断と残り予算を保存。",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {
@@ -1030,5 +1590,11 @@
       "DEVELOPMENT_AUTOMATION_POLICY.json": "f3b4c3488ea27c4aefda970cc753d5e8c6da09b26384d8df099d5475d876a4a6",
       "test-development-automation.py": "0f8b109c1f61cdceaf4638e2b272682e5a5a1aa5d65c291964e732096ac72050"
     }
+  },
+  "workPolicy": {
+    "mode": "tournament-practical",
+    "coverageExpansionPaused": true,
+    "gates": "TOURNAMENT_PRACTICAL_GATES.json",
+    "reason": "User prioritized top-120 damage/speed/order and 45s critical defects over candidate enumeration."
   }
 }

@@ -1,0 +1,58 @@
+{
+  "4cdd26c48d18d85516d5": {
+    "scope": "シェルアーマー：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+    "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+    "tests": [
+      "test-critical-engine-differential.js"
+    ]
+  },
+  "51ee9e7e374889a9c59d": {
+    "scope": "きょううん：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+    "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+    "tests": [
+      "test-critical-engine-differential.js"
+    ]
+  },
+  "755c302b279b774e0d71": {
+    "scope": "ひとでなし：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+    "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+    "tests": [
+      "test-critical-engine-differential.js"
+    ]
+  },
+  "21ab97973002e9ad8419": {
+    "scope": "カブトアーマー：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+    "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+    "tests": [
+      "test-critical-engine-differential.js"
+    ]
+  },
+  "9cc3a192f19087a6e947": {
+    "scope": "きんちょうかん：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+    "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+    "tests": [
+      "test-priority-resist-berries.js"
+    ]
+  },
+  "14d5c32aad02f6b43a31": {
+    "scope": "きみょうなくすり：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+    "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+    "tests": [
+      "test-entry-focus-state.js"
+    ]
+  },
+  "6d85b0dc6a7e7eaace3c": {
+    "scope": "スナイパー：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+    "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+    "tests": [
+      "test-critical-engine-differential.js"
+    ]
+  },
+  "66c1c1a571fb62c86c2d": {
+    "scope": "じゅくせい：大会実用版の限定計算/イベント経路。範囲はMECHANICS_EVIDENCE.jsonと個別差分結果に記録。",
+    "remaining": "全発動条件・全複合効果・対象大会仕様・完全試合の照合は未完了。completion:false。",
+    "tests": [
+      "test-priority-resist-berries.js"
+    ]
+  }
+}

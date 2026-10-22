@@ -1,0 +1,8 @@
+{
+  "completion": false,
+  "oracle": "pokemon-showdown@0.11.10",
+  "rateCases": 432,
+  "damageCases": 1152,
+  "failures": [],
+  "scope": "General Gen9 rate and neutral physical critical damage/negative attack/positive defense/screens/Sniper only. No complete damage or Champions certification."
+}

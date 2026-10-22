@@ -1,0 +1,7 @@
+{
+  "completion": false,
+  "oracle": "pokemon-showdown@0.11.10",
+  "cases": 16384,
+  "failures": [],
+  "scope": "Chople/Colbur only: super-effective hit, active/consumed, Unnerve, Ripen, Substitute/bypass, Life Orb/screens, fixed raw stats and random rolls. Read-only forecast/unknown source gating and confirmed consumption adapter. Other berries and full game interactions unverified."
+}

@@ -1,0 +1,8 @@
+{
+  "completion": false,
+  "oracle": "pokemon-showdown@0.11.10",
+  "scenarios": 10368,
+  "cases": 331776,
+  "failures": [],
+  "scope": "Rillaboom to Eevee fixed raw stats, four moves, rain/sun/grass, spread, screens, burn, Guts, Choice Band/Specs, type items/Life Orb and rank combinations; actual outgoing/incoming paths. No official base stats, all abilities or full-match parity."
+}

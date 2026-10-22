@@ -52,8 +52,8 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通の行動順経路で後攻化・攻撃技限定の確率先制を扱う。表示だけが未対応だった。",
       "executableReferences": [
-        "index.html:activeOrderCaveats:8132",
-        "index.html:orderEffectProfile:10651",
+        "index.html:activeOrderCaveats:8148",
+        "index.html:orderEffectProfile:10736",
         "turn-order-effects.js:analyse:14"
       ],
       "tests": [
@@ -152,7 +152,7 @@
       "classification": "部分実装",
       "assessmentScope": "音フラグに基づく水タイプ化。実Showdown ModifyTypeとの10ケース比較、威力を上げないことを検証。",
       "executableReferences": [
-        "index.html:resolveMoveForDamage:8990"
+        "index.html:resolveMoveForDamage:9006"
       ],
       "tests": [
         "test-adoption-priority-mechanics.js"
@@ -218,7 +218,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通接触ダメージ予測で接触ペナルティを除外する。",
       "executableReferences": [
-        "index.html:projectedContactPunishmentForAction:11375"
+        "index.html:projectedContactPunishmentForAction:11466"
       ],
       "tests": [
         "test-contact.js"
@@ -255,7 +255,7 @@
       "classification": "部分実装",
       "assessmentScope": "相手対象ランク技の確定適用を阻止し、かたやぶり時は適用する。",
       "executableReferences": [
-        "index.html:applyConfirmedTargetRanks:6584"
+        "index.html:applyConfirmedTargetRanks:6593"
       ],
       "tests": [
         "test-target-ranks-integration.js"
@@ -388,7 +388,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed entry only: once per battle evasion drop, substitute and rank reactions; both-side Reflect/Light Screen/Aurora Veil removal. Full form changes and official rules remain unverified.",
       "executableReferences": [
-        "index.html:triggerEntryAbility:7360"
+        "index.html:triggerEntryAbility:7376"
       ],
       "tests": [
         "test-entry-screens-syrup.js"
@@ -519,12 +519,17 @@
         ],
         "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
       },
-      "currentlyMarkedUnsupported": true,
-      "classification": "未実装",
-      "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
-      "executableReferences": [],
-      "tests": [],
-      "scopedTestsPassed": false,
+      "currentlyMarkedUnsupported": false,
+      "classification": "部分実装",
+      "assessmentScope": "50 real Showdown entry rank reset cases. Seven ranks on living ally only, not source/foe; Focus Energy preserved. Full suppression and switch scenarios unverified.",
+      "executableReferences": [
+        "index.html:triggerEntryAbility:7365"
+      ],
+      "tests": [
+        "test-entry-focus-state.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scopedTestsPassed": true,
       "fullMechanicVerified": false,
       "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。",
       "priority": {
@@ -583,12 +588,17 @@
         ],
         "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
       },
-      "currentlyMarkedUnsupported": true,
-      "classification": "未実装",
-      "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
-      "executableReferences": [],
-      "tests": [],
-      "scopedTestsPassed": false,
+      "currentlyMarkedUnsupported": false,
+      "classification": "部分実装",
+      "assessmentScope": "General Gen9 rate and neutral physical critical damage only: 432 rate /1152 damage comparisons. Random critical scenarios are separate, not weighted into recommendation. Body Press/Foul Play, full modifier interactions and event legality unverified.",
+      "executableReferences": [
+        "critical-effects.js:profile:10"
+      ],
+      "tests": [
+        "test-critical-engine-differential.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scopedTestsPassed": true,
       "fullMechanicVerified": false,
       "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。",
       "priority": {
@@ -654,8 +664,8 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
-        "index.html:confirmedSleepProtection:6459",
-        "index.html:forecastCommonSecondaryStatus:11265"
+        "index.html:confirmedSleepProtection:6467",
+        "index.html:forecastCommonSecondaryStatus:11356"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"
@@ -688,12 +698,17 @@
         ],
         "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
       },
-      "currentlyMarkedUnsupported": true,
-      "classification": "未実装",
-      "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
-      "executableReferences": [],
-      "tests": [],
-      "scopedTestsPassed": false,
+      "currentlyMarkedUnsupported": false,
+      "classification": "部分実装",
+      "assessmentScope": "Only block/double reduction of Chople/Colbur predictions and confirmed hit adapter. No all berry eating/healing/recycle/ability-change handlers or full battle certification.",
+      "executableReferences": [
+        "index.html:defensiveBerryForDamage:9290"
+      ],
+      "tests": [
+        "test-priority-resist-berries.js",
+        "browser_priority_berries_test.py"
+      ],
+      "scopedTestsPassed": true,
       "fullMechanicVerified": false,
       "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。",
       "priority": {
@@ -981,7 +996,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11260"
+        "index.html:forecastCommonSecondaryStatus:11351"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -1017,12 +1032,17 @@
         ],
         "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
       },
-      "currentlyMarkedUnsupported": true,
-      "classification": "未実装",
-      "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
-      "executableReferences": [],
-      "tests": [],
-      "scopedTestsPassed": false,
+      "currentlyMarkedUnsupported": false,
+      "classification": "部分実装",
+      "assessmentScope": "Only block/double reduction of Chople/Colbur predictions and confirmed hit adapter. No all berry eating/healing/recycle/ability-change handlers or full battle certification.",
+      "executableReferences": [
+        "index.html:defensiveBerryForDamage:9294"
+      ],
+      "tests": [
+        "test-priority-resist-berries.js",
+        "browser_priority_berries_test.py"
+      ],
+      "scopedTestsPassed": true,
       "fullMechanicVerified": false,
       "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。",
       "priority": {
@@ -1052,7 +1072,7 @@
       "classification": "部分実装",
       "assessmentScope": "Recommendation redirection penalties/Lightning Rod target candidates only; no full engine redirection simulation.",
       "executableReferences": [
-        "index.html:ignoresMoveRedirection:3556"
+        "index.html:ignoresMoveRedirection:3557"
       ],
       "tests": [
         "test-stalwart-targeting.js"
@@ -1149,7 +1169,8 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "確認済み命中の共通みがわり迂回経路が存在し、両陣営の適用を検証。",
       "executableReferences": [
-        "index.html:substituteBlocksConfirmedHit:5827"
+        "index.html:substituteBlocksConfirmedHit:5831",
+        "index.html:defensiveBerryForDamage:9293"
       ],
       "tests": [
         "test-substitute-bypass.js"
@@ -1184,7 +1205,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed damaging received hits only; Justified Dark and Stamina any damage. Four-turn real Showdown doubles rank comparison; not complete damage, consumption or KO event parity.",
       "executableReferences": [
-        "index.html:applyConfirmedHitAbilityStages:6209"
+        "index.html:applyConfirmedHitAbilityStages:6215"
       ],
       "tests": [
         "test-hit-event-multiturn.js"
@@ -1446,7 +1467,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11264"
+        "index.html:forecastCommonSecondaryStatus:11355"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"
@@ -1548,7 +1569,7 @@
       "classification": "部分実装",
       "assessmentScope": "Accuracy reduction immunity for external rank changes, self changes and ability bypass; evasion ignoring and full event legality remain unverified. Ignore positive target evasion stages in accuracy forecast. Existing rank protection separate; all accuracy interactions and full-game parity unverified.",
       "executableReferences": [
-        "index.html:effectiveMoveAccuracy:9570"
+        "index.html:effectiveMoveAccuracy:9637"
       ],
       "tests": [
         "test-hit-event-multiturn.js",
@@ -1614,7 +1635,7 @@
       "classification": "部分実装",
       "assessmentScope": "確認済み特性かつ観測HP満タン時のひこう技優先度+1。攻撃技・変化技とHP減少時を実Showdown48ケースで比較。",
       "executableReferences": [
-        "index.html:movePriorityForActor:10644"
+        "index.html:movePriorityForActor:10729"
       ],
       "tests": [
         "test-gale-wings-differential.js"
@@ -1747,12 +1768,17 @@
         ],
         "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
       },
-      "currentlyMarkedUnsupported": true,
-      "classification": "未実装",
-      "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
-      "executableReferences": [],
-      "tests": [],
-      "scopedTestsPassed": false,
+      "currentlyMarkedUnsupported": false,
+      "classification": "部分実装",
+      "assessmentScope": "General Gen9 rate and neutral physical critical damage only: 432 rate /1152 damage comparisons. Random critical scenarios are separate, not weighted into recommendation. Body Press/Foul Play, full modifier interactions and event legality unverified.",
+      "executableReferences": [
+        "critical-effects.js:profile:9"
+      ],
+      "tests": [
+        "test-critical-engine-differential.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scopedTestsPassed": true,
       "fullMechanicVerified": false,
       "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。",
       "priority": {
@@ -1811,7 +1837,7 @@
       "classification": "部分実装",
       "assessmentScope": "Poison secondary forecast type-immunity bypass only; independent trySetStatus comparison. Damage immunity, hazards and direct status action pipeline remain separate/incomplete.",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11258"
+        "index.html:forecastCommonSecondaryStatus:11349"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -1850,7 +1876,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed Yawn scheduling/resolution only, active ally immunity, KO/unknown handling. Direct sleep moves, ability-change automatic cures and full sleep counters unverified.",
       "executableReferences": [
-        "index.html:confirmedSleepProtection:6457"
+        "index.html:confirmedSleepProtection:6465"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -1981,7 +2007,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11263"
+        "index.html:forecastCommonSecondaryStatus:11354"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -2052,7 +2078,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed Yawn scheduling/resolution only, active ally immunity, KO/unknown handling. Direct sleep moves, ability-change automatic cures and full sleep counters unverified.",
       "executableReferences": [
-        "index.html:confirmedSleepProtection:6457"
+        "index.html:confirmedSleepProtection:6465"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2247,12 +2273,17 @@
         "referenceHooks": [],
         "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
       },
-      "currentlyMarkedUnsupported": true,
-      "classification": "未実装",
-      "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
-      "executableReferences": [],
-      "tests": [],
-      "scopedTestsPassed": false,
+      "currentlyMarkedUnsupported": false,
+      "classification": "部分実装",
+      "assessmentScope": "General Gen9 rate and neutral physical critical damage only: 432 rate /1152 damage comparisons. Random critical scenarios are separate, not weighted into recommendation. Body Press/Foul Play, full modifier interactions and event legality unverified.",
+      "executableReferences": [
+        "critical-effects.js:profile:7"
+      ],
+      "tests": [
+        "test-critical-engine-differential.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scopedTestsPassed": true,
       "fullMechanicVerified": false,
       "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。",
       "priority": {
@@ -2282,8 +2313,8 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通の行動順経路で後攻化・攻撃技限定の確率先制を扱う。表示だけが未対応だった。",
       "executableReferences": [
-        "index.html:activeOrderCaveats:8132",
-        "index.html:orderEffectProfile:10653",
+        "index.html:activeOrderCaveats:8148",
+        "index.html:orderEffectProfile:10738",
         "turn-order-effects.js:analyse:20"
       ],
       "tests": [
@@ -2316,12 +2347,17 @@
         "referenceHooks": [],
         "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
       },
-      "currentlyMarkedUnsupported": true,
-      "classification": "未実装",
-      "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
-      "executableReferences": [],
-      "tests": [],
-      "scopedTestsPassed": false,
+      "currentlyMarkedUnsupported": false,
+      "classification": "部分実装",
+      "assessmentScope": "General Gen9 rate and neutral physical critical damage only: 432 rate /1152 damage comparisons. Random critical scenarios are separate, not weighted into recommendation. Body Press/Foul Play, full modifier interactions and event legality unverified.",
+      "executableReferences": [
+        "critical-effects.js:profile:7"
+      ],
+      "tests": [
+        "test-critical-engine-differential.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scopedTestsPassed": true,
       "fullMechanicVerified": false,
       "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。",
       "priority": {
@@ -2385,7 +2421,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed Yawn scheduling/resolution only, active ally immunity, KO/unknown handling. Direct sleep moves, ability-change automatic cures and full sleep counters unverified.",
       "executableReferences": [
-        "index.html:confirmedSleepProtection:6458"
+        "index.html:confirmedSleepProtection:6466"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2416,12 +2452,17 @@
         ],
         "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
       },
-      "currentlyMarkedUnsupported": true,
-      "classification": "未実装",
-      "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
-      "executableReferences": [],
-      "tests": [],
-      "scopedTestsPassed": false,
+      "currentlyMarkedUnsupported": false,
+      "classification": "部分実装",
+      "assessmentScope": "General Gen9 rate and neutral physical critical damage only: 432 rate /1152 damage comparisons. Random critical scenarios are separate, not weighted into recommendation. Body Press/Foul Play, full modifier interactions and event legality unverified.",
+      "executableReferences": [
+        "critical-effects.js:profile:11"
+      ],
+      "tests": [
+        "test-critical-engine-differential.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scopedTestsPassed": true,
       "fullMechanicVerified": false,
       "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。",
       "priority": {
@@ -2559,7 +2600,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed entry only: once per battle evasion drop, substitute and rank reactions; both-side Reflect/Light Screen/Aurora Veil removal. Full form changes and official rules remain unverified.",
       "executableReferences": [
-        "index.html:triggerEntryAbility:7356"
+        "index.html:triggerEntryAbility:7372"
       ],
       "tests": [
         "test-entry-screens-syrup.js"
@@ -2598,11 +2639,11 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed active grass protection in target rank moves/Intimidate and secondary status forecast; initial Yawn immunity, not retroactive Yawn sleep immunity. Contrary/Simple order compared with real engine. Other rank paths and self-status effects remain incomplete.",
       "executableReferences": [
-        "index.html:confirmedSleepProtection:6458",
-        "index.html:applyConfirmedTargetRanks:6585",
-        "index.html:receiveIntimidate:7321",
-        "index.html:triggerEntryAbility:7369",
-        "index.html:planCommonSecondaryForecast:11347"
+        "index.html:confirmedSleepProtection:6466",
+        "index.html:applyConfirmedTargetRanks:6594",
+        "index.html:receiveIntimidate:7330",
+        "index.html:triggerEntryAbility:7385",
+        "index.html:planCommonSecondaryForecast:11438"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2702,7 +2743,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed defender ability weight for Low Kick/Grass Knot, minimum weight and threshold rounding. Float Stone, Autotomize, Heavy Slam/Heat Crash and full damage unverified.",
       "executableReferences": [
-        "index.html:weightBasedMovePower:8905"
+        "index.html:weightBasedMovePower:8921"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2780,7 +2821,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11262"
+        "index.html:forecastCommonSecondaryStatus:11353"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -2942,7 +2983,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed defender ability weight for Low Kick/Grass Knot, minimum weight and threshold rounding. Float Stone, Autotomize, Heavy Slam/Heat Crash and full damage unverified.",
       "executableReferences": [
-        "index.html:weightBasedMovePower:8906"
+        "index.html:weightBasedMovePower:8922"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -3011,8 +3052,8 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
-        "index.html:confirmedSleepProtection:6459",
-        "index.html:forecastCommonSecondaryStatus:11266"
+        "index.html:confirmedSleepProtection:6467",
+        "index.html:forecastCommonSecondaryStatus:11357"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"

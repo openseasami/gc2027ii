@@ -1,5 +1,6 @@
 v2.9.6
-開発途中です。完成判定はfalse。
+開発途中です。完成判定はfalse。ローカル大会向け検査は118/118成功、大会仕様と実端末操作は未確認。
+大会向け条件/結果: TOURNAMENT_PRACTICAL_GATES.md / TOURNAMENT_PRACTICAL_RESULTS.json
 今回の実装・検証・残件: DEVELOPMENT_CHECKPOINT.md / COMPLETION_REPORT.md
 網羅性の5分類と元91件の監査: COVERAGE_AUDIT.md / ABILITY_UNSUPPORTED_REVIEW.json
 全テスト再実行: python run-development-checks.py（requirements-dev.txtとChromiumが必要）

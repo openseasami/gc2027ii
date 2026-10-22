@@ -1,0 +1,37 @@
+{
+  "completion": false,
+  "generatedAt": "2026-10-22T15:21:44.064287+00:00",
+  "localChecksPassed": true,
+  "checks": {
+    "developmentBranch": true,
+    "allTestsPassed": true,
+    "currentSourceHashes": true,
+    "requiredCommands": true,
+    "adoption120": true,
+    "preservedCatalogs": true,
+    "speedDifferential": true,
+    "damageDifferential": true,
+    "criticalDifferential": true,
+    "browserPractical": true,
+    "priorityBerries": true,
+    "observedCompleteMatch": true,
+    "incompleteRemainsExplicit": true
+  },
+  "tournamentAccepted": false,
+  "readiness": "conditional-reference-build",
+  "pending": [
+    "Official C/M-C eligibility, Mega permissions and form stats remain unconfirmed (REGULATION_SOURCE_REVIEW.json).",
+    "General Gen9 differential scopes do not cover all important 120-profile damage/ability/item combinations or a complete match state oracle.",
+    "Tournament device and human 45-second operation timing have not been measured."
+  ],
+  "testCommands": {
+    "passed": 118,
+    "total": 118
+  },
+  "speedComparisons": 40320,
+  "damageComparisons": 331776,
+  "criticalComparisons": 1584,
+  "priorityBerryComparisons": 16384,
+  "maxRefreshMs": 538.1,
+  "sourceCommit": "3eab251e9792bf95a2f833219ccd4cdcc6545703"
+}

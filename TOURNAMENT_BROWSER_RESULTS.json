@@ -1,0 +1,35 @@
+{
+  "completion": false,
+  "passed": true,
+  "scope": "Fixture-based Chromium practical checks; no official legality/full battle oracle or human 45s timing certification",
+  "refreshSamplesMs": [
+    517.5,
+    480.5,
+    472.8,
+    517.4,
+    538.1,
+    509.8,
+    361.2,
+    366.8,
+    350.3,
+    371.1,
+    388.9,
+    390.4,
+    378.3,
+    354.4,
+    353.1,
+    407.3,
+    376,
+    368.9
+  ],
+  "criticalConditions": {
+    "guaranteed": true,
+    "blocked": false,
+    "blockedProfile": true,
+    "unknown": false,
+    "known": false,
+    "focus": 2
+  },
+  "maxRefreshMs": 538.1,
+  "errors": []
+}

@@ -9,6 +9,8 @@
 - [未対応・未検証一覧](DEVELOPMENT_BACKLOG.json): 優先度・依存関係・残件。
 - [テスト実行結果](TEST_RESULTS.json): 終了コード・ログ・ソースSHA-256。
 - [開発ゲート](DEVELOPMENT_GATES.md): 完成判定の条件。
+- [大会実用版の合格条件](TOURNAMENT_PRACTICAL_GATES.md): 候補網羅を停止し、上位120の重大不具合へ集中。
+- [大会実用版の検証結果](TOURNAMENT_PRACTICAL_RESULTS.json): ローカル合格と未確認事項を区別。
 - [網羅性監査](COVERAGE_AUDIT.md): 1,149候補の5分類と元91件の調査範囲。
 
 ## 開発検証
@@ -20,6 +22,7 @@ python -m venv --system-site-packages work/test-venv
 work/test-venv/bin/python -m pip install -r requirements-dev.txt
 npm ci --ignore-scripts --cache work/npm-cache
 work/test-venv/bin/python run-development-checks.py
+python evaluate-tournament-practical.py
 python build-development-release.py
 ```
 

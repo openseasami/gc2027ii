@@ -1,26 +1,28 @@
 {
-  "version": "v2.9.5",
-  "baseCommit": "9c73275602b11d44f6daacc9032667baf5bff3bf",
+  "version": "v2.9.6",
+  "baseCommit": "8c40932cd304b3fd61a12215cd9e56f3794da028",
   "branch": "codex-development",
-  "implementationCommit": "3fbccd9aa71c34105cc222a092ab575d558d1a31",
+  "implementationCommit": "3eab251e9792bf95a2f833219ccd4cdcc6545703",
   "completion": false,
   "counts": {
-    "newPartialAbilityScopes": 10,
-    "reviewedExistingMoveScopes": 3,
-    "continuedDependencyGroups": 2,
-    "verifiedScopedTasks": 10,
-    "inProgressTasks": 26,
-    "remainingExplicitlyUnsupportedAbilityLabels": 66,
+    "newVerifiedScopedTasks": 8,
+    "newPartialCandidateScopes": 21,
+    "newPartialAbilityScopes": 13,
+    "newPartialMoveScopes": 1,
+    "newPartialItemScopes": 7,
+    "historicalVerifiedScopedTasks": 18,
+    "inProgressTasks": 37,
+    "remainingExplicitlyUnsupportedAbilityLabels": 58,
     "notFullyVerifiedCandidates": 1149
   },
   "coverageSummary": {
     "total": 1149,
     "categories": {
-      "未実装": 66,
-      "部分実装": 173,
+      "未実装": 58,
+      "部分実装": 194,
       "別経路で実装済み": 10,
       "仕様対象外": 0,
-      "要調査": 900
+      "要調査": 887
     },
     "fullyImplemented": 0,
     "fullyUnverified": 1149,
@@ -30,26 +32,26 @@
   "remainingStageSummary": {
     "abilities": {
       "registered": 203,
-      "partialEffect": 61,
-      "requiresReview": 142,
-      "unitTestsDefined": 46,
-      "integrationTestsDefined": 46,
+      "partialEffect": 74,
+      "requiresReview": 129,
+      "unitTestsDefined": 59,
+      "integrationTestsDefined": 59,
       "authoritativelyVerified": 0
     },
     "moves": {
       "registered": 698,
-      "partialEffect": 70,
-      "requiresReview": 628,
-      "unitTestsDefined": 45,
-      "integrationTestsDefined": 45,
+      "partialEffect": 71,
+      "requiresReview": 627,
+      "unitTestsDefined": 46,
+      "integrationTestsDefined": 46,
       "authoritativelyVerified": 0
     },
     "items": {
       "registered": 166,
-      "partialEffect": 10,
-      "requiresReview": 156,
-      "unitTestsDefined": 5,
-      "integrationTestsDefined": 10,
+      "partialEffect": 17,
+      "requiresReview": 149,
+      "unitTestsDefined": 12,
+      "integrationTestsDefined": 17,
       "authoritativelyVerified": 0
     },
     "mega": {
@@ -62,11 +64,18 @@
     }
   },
   "testCommands": {
-    "passed": 110,
-    "total": 110
+    "passed": 118,
+    "total": 118
   },
-  "externalDifferentialCases": 3107,
   "externalDifferentialFailures": 0,
+  "differentialComparisons": {
+    "commonDamage": 331776,
+    "speed": 40320,
+    "criticalRate": 432,
+    "criticalDamage": 1152,
+    "priorityResistBerries": 16384,
+    "entryReset": 50
+  },
   "preservedDataSha256": {
     "NATIONAL_DEX": "984457909967fa730f2372a9bb6556c8eb625c5437617d9d71336dadbc26703a",
     "NATIONAL_MOVES": "85bbcfde946a0fc2eb005d055b615a7898946fb475ca69251a16d9bfa8c2c12b",
@@ -80,5 +89,19 @@
     "turns": 4,
     "rankCheckpoints": 8,
     "scope": "existing partial confirmed-hit adapter"
-  }
+  },
+  "practicalAcceptance": {
+    "localChecksPassed": true,
+    "tournamentAccepted": false,
+    "report": "TOURNAMENT_PRACTICAL_RESULTS.json"
+  },
+  "sprintBudget": {
+    "totalMinutes": 120,
+    "startedAt": "2026-10-22T14:46:53Z",
+    "recordedAt": "2026-10-22T15:20:42.415221+00:00",
+    "elapsedMinutesRoundedUp": 34,
+    "remainingMinutesEstimate": 86,
+    "meaning": "Elapsed wall time since latest tournament-practical instruction; estimate, not a service/session execution quota."
+  },
+  "coverageExpansionPaused": true
 }

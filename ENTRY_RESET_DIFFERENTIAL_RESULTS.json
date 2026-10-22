@@ -1,0 +1,7 @@
+{
+  "completion": false,
+  "oracle": "pokemon-showdown@0.11.10",
+  "cases": 50,
+  "failures": [],
+  "scope": "Curious Medicine rank reset; Focus Energy record/save/reset/Baton local integration; not full match or official legality."
+}

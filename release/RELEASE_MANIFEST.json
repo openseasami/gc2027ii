@@ -1,32 +1,38 @@
 {
-  "version": "v2.9.5",
+  "version": "v2.9.6",
   "development": true,
   "complete": false,
   "completion": false,
-  "generatedAt": "2026-10-22T12:31:49.375001+00:00",
-  "baseCommit": "9c73275602b11d44f6daacc9032667baf5bff3bf",
+  "generatedAt": "2026-10-22T15:20:42.668539+00:00",
+  "baseCommit": "8c40932cd304b3fd61a12215cd9e56f3794da028",
   "branch": "codex-development",
-  "implementationCommit": "3fbccd9aa71c34105cc222a092ab575d558d1a31",
+  "implementationCommit": "3eab251e9792bf95a2f833219ccd4cdcc6545703",
   "testCommands": {
-    "passed": 110,
-    "total": 110
+    "passed": 118,
+    "total": 118
   },
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "battle-core.js": "6e2b4eef1fa8c49484103f07e53134f188c342fa405a0c4f4466317bd4cff9ae",
+    "battle-core.js": "9a43bd7f018fdeea2239bb7ae34125b01c30908e11c3059c28fe00824927e713",
+    "critical-effects.js": "83d54bd9fb80c307c8fdcb399fa0d11fbd7a27722bbf0b340407ba8417f4c72c",
     "effect-engine.js": "3156698677b98833e634993a132631995bef21e37d06715ec78a63524f99bf30",
     "icon-192.png": "269f2adbba00855bf883fd0a284cf2bc5d3aa87dcdea67bc2484aa11204b1502",
     "icon-512.png": "3ab233c4b30a924ec0e12ae0e737abfdc465cd339bf92b043fd81e42babaa4f8",
-    "index.html": "6f6c21886d3755ebf0867c9dc0ce3b1ffac88a2879ed1a78cd53cf041d3e62bf",
+    "index.html": "bb7ae73d666794cbec8032b54c89f46607d85b36509276cb82450bec130cfec3",
     "manifest.webmanifest": "ba634d04f244146555591b6db7e3bc82550ae06623d8dac25dea74a132c3936c",
     "priority-engine.js": "1c7fb953de596fc7b0da6f9def31a818f06f615c69f69db871310751abbabffb",
     "rank-effects.js": "f9b217183a9b079178c3c7c51171310cbc1ecc0774abee93df0d88fe10d0a2ce",
-    "sw.js": "ea558d2fdddc20a30bd5f645f9e22b324ac26eae645b24017f53b8a6f43e3f31",
+    "sw.js": "1487138c11db72f0af965430ad70c0ece03333100ce731a5c6a2f10e14f75f6c",
     "turn-order-effects.js": "f0b4cda295774f7e9e47ddd321d23599d68a2c070d2c99d185b2e24f313518e4"
   },
   "limitations": [
     "No deployment performed",
     "Full mechanics and legality not certified",
     "See DEVELOPMENT_CHECKPOINT.md and DEVELOPMENT_BACKLOG.json in source repository"
-  ]
+  ],
+  "practicalAcceptance": {
+    "localChecksPassed": true,
+    "tournamentAccepted": false,
+    "readiness": "conditional-reference-build"
+  }
 }

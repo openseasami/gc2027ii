@@ -1,0 +1,14 @@
+{
+  "completion": false,
+  "passed": true,
+  "scope": "Explicit state/move fixtures, not legality or full match simulation",
+  "checks": {
+    "berryMax": 30,
+    "plainMax": 60,
+    "focusedMax": 83,
+    "undo": true,
+    "unknownHeld": true,
+    "unnerve": true
+  },
+  "errors": []
+}

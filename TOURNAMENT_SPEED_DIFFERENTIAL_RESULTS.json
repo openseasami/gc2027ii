@@ -1,0 +1,8 @@
+{
+  "completion": false,
+  "oracle": "pokemon-showdown@0.11.10",
+  "profiles": 120,
+  "cases": 40320,
+  "failures": [],
+  "scope": "Existing intrinsic input speeds for 120 profiles; rank, Choice Scarf, Tailwind, paralysis, Swift Swim, Chlorophyll, Surge Surfer, Quick Feet, Unburden. No base-stat, event-legality or full-match certification."
+}

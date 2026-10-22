@@ -1,0 +1,19 @@
+{
+  "completion": false,
+  "baseCommit": "8c40932cd304b3fd61a12215cd9e56f3794da028",
+  "implementationCommit": "3eab251e9792bf95a2f833219ccd4cdcc6545703",
+  "productionDefectsAddressed": [
+    {"cause":"Choice Scarf rounded before speed rank changes", "resolution":"rank first, chain speed modifiers once, paralysis last", "evidence":"TOURNAMENT_SPEED_DIFFERENTIAL_RESULTS.json"},
+    {"cause":"burn halved the attack stat; terrain/type items applied after base damage; final modifiers truncated separately", "resolution":"correct scoped modifier phases and fixed-point chain", "evidence":"TOURNAMENT_DAMAGE_DIFFERENTIAL_RESULTS.json"},
+    {"cause":"critical conditions and armor/Sniper lacked shared calculation integration", "resolution":"shared limited critical profile and bidirectional critical damage", "evidence":"CRITICAL_DIFFERENTIAL_RESULTS.json"},
+    {"cause":"priority resist berries absent from damage/focus estimates", "resolution":"Chople/Colbur active and one-use guards, confirmed consumption, read-only virtual focus state", "evidence":"PRIORITY_BERRY_DIFFERENTIAL_RESULTS.json"},
+    {"cause":"unverified predictive KO labels displayed certainty", "resolution":"provisional labels/notice and removal of certainty colors", "evidence":"TOURNAMENT_BROWSER_RESULTS.json"}
+  ],
+  "recoveredTestFailures": [
+    {"commands":["test-final-modifier-separation.js","test-independent-damage-audit.js","test-torkoal-damage-base.js"],"cause":"legacy arithmetic fixtures expected old modifier phases; isolated fallback fixture also omitted battlePokeRound dependency", "resolution":"correct independent arithmetic phase reference and load required dependency; retain independent real Showdown checks", "finalStatus":"all pass in final 118-command run"},
+    {"command":"test-tournament-speed-differential.js", "cause":"new harness first tried to parse multiline BASE_SPEED as a one-line literal and did not drain simulated event logs", "resolution":"use documented National Dex-derived intrinsic fixture inputs and normal Battle.sendUpdates log delivery", "finalStatus":"40320 cases pass; no base-stat certification claimed"},
+    {"command":"browser_priority_berries_test.py", "cause":"new fixture passed a name where damageInsightVsTarget requires a defender entry", "resolution":"pass actual active defender entry", "finalStatus":"pass; forecast/confirmed-consumption/undo/reload checked"}
+  ],
+  "finalRun":{"passed":118,"total":118,"report":"TEST_RESULTS.json"},
+  "limitations":"Recovered harness/model-expectation failures are distinct from production defects. Passing scoped comparisons never certifies all mechanics or tournament rules."
+}
