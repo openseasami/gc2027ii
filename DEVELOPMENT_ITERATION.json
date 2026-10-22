@@ -1,14 +1,14 @@
 {
-  "version": "v2.9.8",
-  "baseCommit": "d2fe4858779e85bb68d4fc282e407122485ce9d1",
+  "version": "v2.9.9",
+  "baseCommit": "ee7ae6daf98ce83553bd9bf614d4b49a6d0a5148",
   "branch": "codex-development",
-  "implementationCommit": "6e47b44a5fec7421e48ef66f349ad42d73e8dd94",
+  "implementationCommit": "a537fdf8d6350312b43e908e091d1a86b8c21eba",
   "completion": false,
   "counts": {
-    "majorAccuracyFixes": 2,
-    "majorMatchupConditions": 16,
-    "scenarios": 2880,
-    "newPartialMoveScope": 1,
+    "recommendationScenarios": 28,
+    "fullPlannerAcceptanceScenarios": 4,
+    "denialOrderBoundaries": 11,
+    "reproducedPreviousDenialFailures": 9,
     "inProgressTasks": 37,
     "notFullyVerifiedCandidates": 1149
   },
@@ -61,8 +61,8 @@
     }
   },
   "testCommands": {
-    "passed": 123,
-    "total": 123
+    "passed": 125,
+    "total": 125
   },
   "externalDifferentialFailures": 0,
   "differentialComparisons": {
@@ -95,15 +95,16 @@
   "sprintBudget": {
     "totalMinutes": 120,
     "startedAt": "2026-10-22T14:46:53Z",
-    "recordedAt": "2026-10-22T21:34:14.609873+00:00",
-    "remainingMinutesEstimate": 41,
-    "meaning": "前回までの概算残66分から、今回主要対面検証約25分を引いた概算。待機時間や権限枠ではなく開発時間の目安。",
+    "recordedAt": "2026-10-22T21:56:48.010906+00:00",
+    "remainingMinutesEstimate": 16,
+    "meaning": "概算残41分から推奨検証・全回帰・保存の今回約25分を差し引いた目安。待機期間は含めず、実行時間上限や承認を意味しない。",
     "previousRecordedRemainingMinutes": 86,
     "pcSessionMinutesApprox": 20,
     "mainMatchupSessionMinutesApprox": 25,
     "initialRecordedElapsedMinutes": 34,
-    "elapsedMinutesEstimate": 79,
-    "previousRecordedAt": "2026-10-22T15:20:42.415221+00:00"
+    "elapsedMinutesEstimate": 104,
+    "previousRecordedAt": "2026-10-22T15:20:42.415221+00:00",
+    "recommendationSessionMinutesApprox": 25
   },
   "coverageExpansionPaused": true,
   "previousIterationCounts": {
@@ -125,5 +126,19 @@
   },
   "mainMatchupValidation": "MAIN_MATCHUP_DIFFERENTIAL_RESULTS.json",
   "userReportedPcOperation": true,
-  "uiPreserved": true
+  "uiPreserved": true,
+  "previousIterationAccuracyCounts": {
+    "majorAccuracyFixes": 2,
+    "majorMatchupConditions": 16,
+    "scenarios": 2880,
+    "newPartialMoveScope": 1,
+    "inProgressTasks": 37,
+    "notFullyVerifiedCandidates": 1149
+  },
+  "recommendationValidation": "RECOMMENDATION_STRATEGY_RESULTS.json",
+  "recommendationLimitations": [
+    "Opponent choice likelihoods and multi-turn optimality unverified",
+    "Ally-hitting spread damage joint valuation unverified",
+    "Only 4 scenarios assert first recommendation; others assert scenario scoring or conditions"
+  ]
 }

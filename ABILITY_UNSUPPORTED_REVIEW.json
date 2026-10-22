@@ -255,7 +255,8 @@
       "classification": "部分実装",
       "assessmentScope": "相手対象ランク技の確定適用を阻止し、かたやぶり時は適用する。",
       "executableReferences": [
-        "index.html:applyConfirmedTargetRanks:6608"
+        "index.html:applyConfirmedTargetRanks:6608",
+        "index.html:disruptionCanAffect:12617"
       ],
       "tests": [
         "test-target-ranks-integration.js"
@@ -1172,7 +1173,8 @@
         "index.html:substituteBlocksConfirmedHit:5843",
         "index.html:defensiveBerryForDamage:9308",
         "index.html:damageEstimate:9401",
-        "index.html:opponentDamageEstimateAgainstMy:10940"
+        "index.html:opponentDamageEstimateAgainstMy:10940",
+        "index.html:disruptionCanAffect:12607"
       ],
       "tests": [
         "test-substitute-bypass.js",

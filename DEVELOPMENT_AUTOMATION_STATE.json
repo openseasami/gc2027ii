@@ -1600,6 +1600,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-22T21:56:48.207604+00:00",
+      "commit": "a537fdf8d6350312b43e908e091d1a86b8c21eba",
+      "reason": "PC UI preserved; recommendation tactics 28/28 and denial boundaries 11/11; all 125 checks passed; broader strategy remains unverified",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {
@@ -1618,11 +1631,12 @@
     }
   },
   "workPolicy": {
-    "mode": "pc-main-matchups",
+    "mode": "pc-recommendation-validation",
     "coverageExpansionPaused": true,
     "gates": "TOURNAMENT_PRACTICAL_GATES.json",
-    "reason": "Preserve user-confirmed UI; validate important adoption-120 matchups and fix major calculation defects only.",
+    "reason": "Preserve confirmed PC UI; prioritize tactical recommendation validity and major accuracy defects, not broad coverage.",
     "userReportedPcOperation": true,
-    "uiPreservation": "UI_PRESERVATION_BASELINE.json"
+    "uiPreservation": "UI_PRESERVATION_BASELINE.json",
+    "recommendationValidation": "RECOMMENDATION_STRATEGY_RESULTS.json"
   }
 }

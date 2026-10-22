@@ -1,31 +1,31 @@
 {
-  "version": "v2.9.8",
+  "version": "v2.9.9",
   "development": true,
   "complete": false,
   "completion": false,
-  "generatedAt": "2026-10-22T21:33:53.748212+00:00",
-  "baseCommit": "d2fe4858779e85bb68d4fc282e407122485ce9d1",
+  "generatedAt": "2026-10-22T21:56:48.510357+00:00",
+  "baseCommit": "ee7ae6daf98ce83553bd9bf614d4b49a6d0a5148",
   "branch": "codex-development",
-  "implementationCommit": "6e47b44a5fec7421e48ef66f349ad42d73e8dd94",
+  "implementationCommit": "a537fdf8d6350312b43e908e091d1a86b8c21eba",
   "testCommands": {
-    "passed": 123,
-    "total": 123
+    "passed": 125,
+    "total": 125
   },
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "PC_TRIAL_START.md": "158dd5a8d8d095c0efbbf5d185e7d7d003e3e626e06baf1fc9f73471957e83d7",
+    "PC_TRIAL_START.md": "b55d1361aa58798a3f14a9e9d8d2dfac1ea680b4d8d054bdb081a76730dc3060",
     "battle-core.js": "9a43bd7f018fdeea2239bb7ae34125b01c30908e11c3059c28fe00824927e713",
     "critical-effects.js": "83d54bd9fb80c307c8fdcb399fa0d11fbd7a27722bbf0b340407ba8417f4c72c",
     "effect-engine.js": "06e5fd3ba720d83316fa32a9b4e79bd8c3c729b57d3e9326049c2375481d6e78",
     "icon-192.png": "269f2adbba00855bf883fd0a284cf2bc5d3aa87dcdea67bc2484aa11204b1502",
     "icon-512.png": "3ab233c4b30a924ec0e12ae0e737abfdc465cd339bf92b043fd81e42babaa4f8",
-    "index.html": "c5053a3173cd798ae2709927edcf4e93e30fc1e41b9d8f06dc8f9ecc300ee558",
+    "index.html": "7289da61ddba4fbd918b4b20ae6b91e5511bc06345db488c1db005ff7a78656c",
     "launch-pc-trial.py": "c4cc5092cb846e71311ca1a7f26facae52b508847abc2c846baff401528d1575",
     "manifest.webmanifest": "ba634d04f244146555591b6db7e3bc82550ae06623d8dac25dea74a132c3936c",
     "priority-engine.js": "1c7fb953de596fc7b0da6f9def31a818f06f615c69f69db871310751abbabffb",
     "rank-effects.js": "f9b217183a9b079178c3c7c51171310cbc1ecc0774abee93df0d88fe10d0a2ce",
     "start-pc-trial.cmd": "ccbe4c2c28ddec7356806d0501b683d3f395577a618bd40e4033adf6a1f9f64a",
-    "sw.js": "4deea522628985868bd8bd123deac78aa1c20ed2abe6539ed8777a9a2a4cf31c",
+    "sw.js": "83dd9b16b3ad8594ce3d51e1fad55f1339e87be951fadaa2686cc637bd3f7966",
     "turn-order-effects.js": "f0b4cda295774f7e9e47ddd321d23599d68a2c070d2c99d185b2e24f313518e4"
   },
   "limitations": [

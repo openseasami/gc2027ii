@@ -1,0 +1,328 @@
+{
+  "completion": false,
+  "scope": "Explicit tactical constraints on actual planner/scenario helpers, not game-theoretic optimality or opponent-prediction calibration",
+  "sourceSha256": "7289da61ddba4fbd918b4b20ae6b91e5511bc06345db488c1db005ff7a78656c",
+  "total": 28,
+  "passed": 28,
+  "scenarios": [
+    {
+      "id": "fake-out-valid-first-turn",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "fake-out-blocked-せいしんりょく",
+      "passed": true,
+      "evidence": "せいしんりょく"
+    },
+    {
+      "id": "fake-out-blocked-りんぷん",
+      "passed": true,
+      "evidence": "りんぷん"
+    },
+    {
+      "id": "fake-out-blocked-テイルアーマー",
+      "passed": true,
+      "evidence": "テイルアーマー"
+    },
+    {
+      "id": "fake-out-covert-cloak",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "fake-out-psychic-terrain",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "fake-out-not-entry-turn",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "taunt-after-tailwind-no-denial",
+      "passed": true,
+      "evidence": {
+        "fast": 0.65,
+        "late": 0
+      }
+    },
+    {
+      "id": "trick-room-reverses-denial-order",
+      "passed": true,
+      "evidence": 0.65
+    },
+    {
+      "id": "taunt-blocked-どんかん",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "taunt-blocked-おうごんのからだ",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "taunt-blocked-マジックミラー",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "taunt-blocked-アロマベール",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "taunt-mental-herb-no-turn-denial",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "taunt-bypasses-substitute",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "substitute-stops-fake-out-flinch",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "ally-aroma-veil-blocks-taunt",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "protect-stops-targeted-denial",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "late-ko-does-not-prevent-setup",
+      "passed": true,
+      "evidence": {
+        "earlyKO": 0.9,
+        "lateKO": 0
+      }
+    },
+    {
+      "id": "known-switch-targets-entrant",
+      "passed": true,
+      "evidence": "サーフゴー"
+    },
+    {
+      "id": "switch-immunity-not-outgoing-damage",
+      "passed": true,
+      "evidence": [
+        {
+          "target": "サーフゴー",
+          "avg": 0
+        }
+      ]
+    },
+    {
+      "id": "unknown-switch-not-assured-ko",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "wide-guard-blocks-spread",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "full-planner-finishes-two-low-hp-foes",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "ウッドハンマー",
+            "target": "ガブリアス",
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "りゅうのはどう",
+            "target": "リキキリン",
+            "note": ""
+          }
+        ],
+        "scenarios": 1,
+        "generated": 7,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ウッドハンマー",
+                "target": "リキキリン",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "りゅうのはどう",
+                "target": "ガブリアス",
+                "note": "先手KO後の無駄打ち回避"
+              }
+            ],
+            "label": "attack",
+            "quick": 8.47247,
+            "values": [
+              17.415399999999998
+            ],
+            "aggregate": {
+              "average": 17.415399999999998,
+              "worst": 17.415399999999998,
+              "best": 17.415399999999998,
+              "spread": 0,
+              "score": 17.415399999999998
+            },
+            "score": 17.415399999999998
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "りゅうのはどう",
+                "target": "リキキリン",
+                "note": ""
+              }
+            ],
+            "label": "stable",
+            "quick": 6.452263599999999,
+            "values": [
+              17.347752
+            ],
+            "aggregate": {
+              "average": 17.347752,
+              "worst": 17.347752,
+              "best": 17.347752,
+              "spread": 0,
+              "score": 17.347752
+            },
+            "score": 17.347752
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "りゅうのはどう",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "label": "stable",
+            "quick": 5.8107359999999995,
+            "values": [
+              15.999519999999999
+            ],
+            "aggregate": {
+              "average": 15.999519999999999,
+              "worst": 15.999519999999999,
+              "best": 15.999519999999999,
+              "spread": 0,
+              "score": 15.99952
+            },
+            "score": 15.99952
+          }
+        ]
+      }
+    },
+    {
+      "id": "full-planner-terminal-trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "ウッドハンマー",
+            "target": "リキキリン",
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "りゅうのはどう",
+            "target": "ガブリアス",
+            "note": "先手KO後の無駄打ち回避"
+          }
+        ],
+        "covered": [
+          "リキキリン",
+          "ガブリアス"
+        ],
+        "scenarios": 1
+      }
+    },
+    {
+      "id": "full-planner-terminal-spread",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "なみのり",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "covered": [
+          "リキキリン",
+          "ガブリアス"
+        ],
+        "scenarios": 1
+      }
+    },
+    {
+      "id": "full-planner-focus-needed-for-ko",
+      "passed": true,
+      "evidence": {
+        "targetHp": 39,
+        "maxSingle": 30,
+        "sumMin": 49,
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "たいあたり",
+            "target": "リキキリン",
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "たいあたり",
+            "target": "リキキリン",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "protect-favored-against-focus-scenario",
+      "passed": true,
+      "evidence": {
+        "guard": 2.7,
+        "attack": 0
+      }
+    }
+  ],
+  "previousDenialOnly": false
+}
