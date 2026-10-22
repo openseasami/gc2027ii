@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
   "completion": false,
-  "mode": "tournament-practical",
+  "mode": "pc-browser-trial",
   "budgetMinutes": 120,
   "startedAt": "2026-10-22T14:46:53Z",
   "branch": "codex-development",
   "coverageExpansionPaused": true,
   "priority": [
+    "PC Chromium usability: fixed compact dual-target rail, 45s real controls, save/restore",
     "120-profile damage/speed/order defects",
     "important active ability/item interactions",
     "45-second input/save/history/undo regressions",
@@ -27,7 +28,8 @@
   "tournamentAcceptancePending": [
     "Official C/M-C eligibility, Mega permissions and form stats remain unconfirmed (REGULATION_SOURCE_REVIEW.json).",
     "General Gen9 differential scopes do not cover all important 120-profile damage/ability/item combinations or a complete match state oracle.",
-    "Tournament device and human 45-second operation timing have not been measured."
+    "Tournament device and human 45-second operation timing have not been measured.",
+    "Native Windows Chrome/Edge products and human decision time remain unverified; Chromium Windows-UA profiles are compatibility tests only."
   ],
   "requiredCommands": [
     "test-tournament-damage-differential.js",
@@ -44,7 +46,9 @@
     "browser_mechanics_regression_test.py",
     "browser_smoke_portable.py",
     "test-priority-resist-berries.js",
-    "browser_priority_berries_test.py"
+    "browser_priority_berries_test.py",
+    "browser_pc_trial_test.py",
+    "test-pc-launcher.py"
   ],
   "forbidden": [
     "main modifications",

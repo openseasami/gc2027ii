@@ -23,7 +23,7 @@ def main():
     html=(ROOT/'index.html').read_text()
     version=re.search(r'<title>[^<]*?(v\d+\.\d+\.\d+)</title>',html).group(1)
     scripts=re.findall(r'<script\b[^>]*src=["\']\./([^"\']+)["\']',html)
-    files=sorted(set(['.nojekyll','index.html','sw.js','manifest.webmanifest','icon-192.png','icon-512.png']+scripts))
+    files=sorted(set(['launch-pc-trial.py','start-pc-trial.cmd','PC_TRIAL_START.md','.nojekyll','index.html','sw.js','manifest.webmanifest','icon-192.png','icon-512.png']+scripts))
     for name in files:
         if not (ROOT/name).is_file():raise SystemExit('Missing runtime file '+name)
     unresolved=[]

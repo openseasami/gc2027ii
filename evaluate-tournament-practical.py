@@ -28,6 +28,8 @@ def evaluate():
  checks['browserPractical']=browser['passed'] and len(browser['refreshSamplesMs'])>=18 and max(browser['refreshSamplesMs'])<limit['browserRefreshBudgetMs'] and not browser['errors']
  berries=read('PRIORITY_BERRY_DIFFERENTIAL_RESULTS.json');berry_browser=read('PRIORITY_BERRY_BROWSER_RESULTS.json')
  checks['priorityBerries']=berries['cases']>=limit['priorityBerryCasesAtLeast'] and not berries['failures'] and berry_browser['passed'] and not berry_browser['errors']
+ pc=read('PC_BROWSER_RESULTS.json')
+ checks['pcBrowserTrial']=pc['passed'] and len(pc['profiles'])==2 and sum(len(p['layouts']) for p in pc['profiles'])==8 and all(p['automatedTurnSeconds']<45 for p in pc['profiles'])
  checks['observedCompleteMatch']=match['passed'] and match['undoReplay'] and match['reload'] and match['opponentPokemon']==4
  checks['incompleteRemainsExplicit']=read('IMPLEMENTATION_LEDGER.json')['completion'] is False and read('DEVELOPMENT_BACKLOG.json')['completion'] is False
  passed=all(checks.values())
