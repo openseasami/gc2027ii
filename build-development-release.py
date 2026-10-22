@@ -34,7 +34,7 @@ def main():
                 completionBlockedBy=['Full per-effect and authoritative verification incomplete'],dependencies=dependency[category]))
     rank={'target':0,'unknown':1,'defer':2}
     unresolved.sort(key=lambda r:(rank[r['priority']['classification']],r['category'],r['name']))
-    backlog=dict(schemaVersion=1,complete=False,completion=False,scope='Every row still lacks full authoritative verification; requires-review does not mean no implementation.',
+    backlog=dict(schemaVersion=1,complete=False,completion=False,continuation=dict(planner='development-automation.py',policy='DEVELOPMENT_AUTOMATION_POLICY.json',state='DEVELOPMENT_AUTOMATION_STATE.json',instructions='AGENTS.md',completion=False),scope='Every row still lacks full authoritative verification; requires-review does not mean no implementation.',
         stageSummary=ledger['stageSummary'],coverageSummary=ledger['coverageSummary'],dependencies=dependency,entries=unresolved,
         definiteUnsupportedAbilityLabels=ledger['abilities']['markedUnsupported'],
         criticalWork=['Confirm target regulation and legal forms/stones/stats without widening the roster','Audit remaining direct rank assignments, ally targets, spread target observations and all secondary-effect immunities','Audit legacy direct item reads outside shared active-effect adapters','Complete all post-Mega ability/form-stat rules and differential match scenarios','Independent full doubles match oracle; observed complete-match browser E2E exists but is not a simulator oracle'],outOfCatalogEvidence=ledger.get('outOfCatalogEvidence',[]))

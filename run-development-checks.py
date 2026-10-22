@@ -25,7 +25,7 @@ def main():
     for file in sorted(ROOT.glob('browser_*test.py')):
         results.append(run([sys.executable,file.name]))
     results.append(run([sys.executable,'browser_smoke_portable.py']))
-    files=['rank-effects.js','index.html','sw.js','battle-core.js','effect-engine.js','priority-engine.js','turn-order-effects.js','implementation-ledger.js','MECHANICS_EVIDENCE.json','coverage-assessment.js','COVERAGE_REVIEW_PLAN.json','ABILITY_REVIEW_BASELINE.json','ABILITY_REFERENCE_HOOKS.json','reference-ability-audit.js']
+    files=['rank-effects.js','index.html','sw.js','battle-core.js','effect-engine.js','priority-engine.js','turn-order-effects.js','implementation-ledger.js','MECHANICS_EVIDENCE.json','coverage-assessment.js','COVERAGE_REVIEW_PLAN.json','ABILITY_REVIEW_BASELINE.json','ABILITY_REFERENCE_HOOKS.json','reference-ability-audit.js','development-automation.py','DEVELOPMENT_AUTOMATION_POLICY.json']
     files += sorted({p.name for pattern in ['test-*.js','test-*.py','browser_*.py'] for p in ROOT.glob(pattern)})
     report=dict(generatedAt=datetime.now(timezone.utc).isoformat(),complete=False,completion=False,
         limitations=['Passing scenarios do not certify full mechanics, event legality, official-game parity, mobile usability or deployed-site equivalence.'],

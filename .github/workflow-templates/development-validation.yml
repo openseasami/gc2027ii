@@ -1,0 +1,40 @@
+# Inert template: not under .github/workflows, no schedule enabled.
+name: Development validation (template)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: gc2027ii-development-validation
+  cancel-in-progress: false
+jobs:
+  validate:
+    if: github.ref == 'refs/heads/codex-development'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: codex-development
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci --ignore-scripts --cache work/npm-cache
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser || sudo apt-get install -y chromium
+          python -m pip install -r requirements-dev.txt
+      - run: python run-development-checks.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: development-validation-results
+          path: |
+            TEST_RESULTS.json
+            *DIFFERENTIAL_RESULTS.json
+            FULL_MATCH_E2E_RESULTS.json
+            IMPLEMENTATION_LEDGER.json

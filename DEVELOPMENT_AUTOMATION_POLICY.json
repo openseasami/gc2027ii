@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "completion": false,
+  "branch": "codex-development",
+  "maxUnchangedRetries": 3,
+  "eventFamilies": {
+    "entry": ["Start", "SwitchIn"],
+    "hit": ["Hit", "Damage", "Flinch"],
+    "item": ["Item", "Eat", "Heal"],
+    "switch": ["SwitchOut", "DragOut", "EmergencyExit"],
+    "ko": ["Faint"],
+    "end-turn": ["Residual"],
+    "order": ["Priority"],
+    "damage": ["BasePower", "ModifyAtk", "ModifySpA", "ModifyDamage"]
+  },
+  "capabilities": {"confirmed-event": true, "rank-adapter": true, "item-activity": true, "official-event-rules": false},
+  "dependencies": {
+    "entry": ["confirmed-event", "rank-adapter"],
+    "hit": ["confirmed-event", "rank-adapter"],
+    "item": ["confirmed-event", "item-activity"],
+    "switch": ["confirmed-event"],
+    "ko": ["confirmed-event"],
+    "mega": ["official-event-rules"]
+  }
+}
