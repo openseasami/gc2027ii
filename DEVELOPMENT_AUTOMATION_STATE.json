@@ -1613,6 +1613,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-22T22:32:01.862350+00:00",
+      "commit": "4e762ae4399661eceab000741efdf14189edcf81",
+      "reason": "Final tactical audit: 17 cases, 256 same-side damage comparisons and all 127 commands pass; UI/data preserved; completion false",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {
@@ -1631,12 +1644,13 @@
     }
   },
   "workPolicy": {
-    "mode": "pc-recommendation-validation",
+    "mode": "pc-final-tactical-audit",
     "coverageExpansionPaused": true,
     "gates": "TOURNAMENT_PRACTICAL_GATES.json",
-    "reason": "Preserve confirmed PC UI; prioritize tactical recommendation validity and major accuracy defects, not broad coverage.",
+    "reason": "Tournament-budget final audit: preserve UI and data, fix critical ally-hit/Protect/future-priority errors only. Broad coverage remains paused.",
     "userReportedPcOperation": true,
     "uiPreservation": "UI_PRESERVATION_BASELINE.json",
-    "recommendationValidation": "RECOMMENDATION_STRATEGY_RESULTS.json"
+    "recommendationValidation": "RECOMMENDATION_STRATEGY_RESULTS.json",
+    "finalTacticalAudit": "FINAL_TACTICAL_AUDIT_RESULTS.json"
   }
 }

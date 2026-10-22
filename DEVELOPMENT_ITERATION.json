@@ -1,25 +1,25 @@
 {
-  "version": "v2.9.9",
-  "baseCommit": "ee7ae6daf98ce83553bd9bf614d4b49a6d0a5148",
+  "version": "v2.9.10",
+  "baseCommit": "6259c6595515c5cd9ef06343648b35057d27d218",
   "branch": "codex-development",
-  "implementationCommit": "a537fdf8d6350312b43e908e091d1a86b8c21eba",
+  "implementationCommit": "4e762ae4399661eceab000741efdf14189edcf81",
   "completion": false,
   "counts": {
-    "recommendationScenarios": 28,
-    "fullPlannerAcceptanceScenarios": 4,
-    "denialOrderBoundaries": 11,
-    "reproducedPreviousDenialFailures": 9,
-    "inProgressTasks": 37,
-    "notFullyVerifiedCandidates": 1149
+    "finalTacticalScenarios": 17,
+    "sameSideDamageComparisons": 256,
+    "allyHitTargetDefinitions": 10,
+    "previousRecommendationScenarios": 28,
+    "notFullyVerifiedCandidates": 1149,
+    "inProgressTasks": 37
   },
   "coverageSummary": {
     "total": 1149,
     "categories": {
-      "未実装": 58,
+      "未実装": 57,
       "部分実装": 195,
       "別経路で実装済み": 10,
       "仕様対象外": 0,
-      "要調査": 886
+      "要調査": 887
     },
     "fullyImplemented": 0,
     "fullyUnverified": 1149,
@@ -61,8 +61,8 @@
     }
   },
   "testCommands": {
-    "passed": 125,
-    "total": 125
+    "passed": 127,
+    "total": 127
   },
   "externalDifferentialFailures": 0,
   "differentialComparisons": {
@@ -95,16 +95,17 @@
   "sprintBudget": {
     "totalMinutes": 120,
     "startedAt": "2026-10-22T14:46:53Z",
-    "recordedAt": "2026-10-22T21:56:48.010906+00:00",
-    "remainingMinutesEstimate": 16,
-    "meaning": "概算残41分から推奨検証・全回帰・保存の今回約25分を差し引いた目安。待機期間は含めず、実行時間上限や承認を意味しない。",
+    "recordedAt": "2026-10-22T22:32:01.716582+00:00",
+    "remainingMinutesEstimate": 0,
+    "meaning": "前回残16分を今回の最終戦術監査・全回帰・保存で使った概算。待機期間を含めず、必要な最終検証/保存を優先。新規の網羅開発は停止。",
     "previousRecordedRemainingMinutes": 86,
     "pcSessionMinutesApprox": 20,
     "mainMatchupSessionMinutesApprox": 25,
     "initialRecordedElapsedMinutes": 34,
-    "elapsedMinutesEstimate": 104,
+    "elapsedMinutesEstimate": 120,
     "previousRecordedAt": "2026-10-22T15:20:42.415221+00:00",
-    "recommendationSessionMinutesApprox": 25
+    "recommendationSessionMinutesApprox": 25,
+    "finalTacticalSessionMinutesApprox": 16
   },
   "coverageExpansionPaused": true,
   "previousIterationCounts": {
@@ -137,8 +138,17 @@
   },
   "recommendationValidation": "RECOMMENDATION_STRATEGY_RESULTS.json",
   "recommendationLimitations": [
-    "Opponent choice likelihoods and multi-turn optimality unverified",
-    "Ally-hitting spread damage joint valuation unverified",
-    "Only 4 scenarios assert first recommendation; others assert scenario scoring or conditions"
-  ]
+    "Opponent action/switch probability calibration unverified",
+    "General multi-turn optimal policy unverified",
+    "Ally-hit damage cost is conservative; exact joint KO order, all secondaries and activation combinations unverified"
+  ],
+  "previousTacticalCounts": {
+    "recommendationScenarios": 28,
+    "fullPlannerAcceptanceScenarios": 4,
+    "denialOrderBoundaries": 11,
+    "reproducedPreviousDenialFailures": 9,
+    "inProgressTasks": 37,
+    "notFullyVerifiedCandidates": 1149
+  },
+  "finalTacticalAudit": "FINAL_TACTICAL_AUDIT_RESULTS.json"
 }

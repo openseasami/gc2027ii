@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T21:56:28.723Z",
+  "generatedAt": "2026-10-22T22:31:41.797Z",
   "conditionalMoveProjections": {
     "total": 0,
     "entries": [],
@@ -985,12 +985,13 @@
     "status": "partial; no full-match authoritative E2E oracle"
   },
   "tests": {
-    "availableFiles": 102,
+    "availableFiles": 103,
     "files": [
       "test-ability-received-hit-guards.js",
       "test-accuracy-protection.js",
       "test-adoption-priority-mechanics.js",
       "test-adoption-priority.js",
+      "test-ally-hit-targets.js",
       "test-battle-rounding-reference.js",
       "test-cloak-mirror.js",
       "test-common-secondary.js",
@@ -1154,7 +1155,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9165
+            9166
           ]
         },
         "unitVerification": {
@@ -1171,7 +1172,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9165"
+            "index.html:sharedAbilityDamageModifiers:9166"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -1199,7 +1200,7 @@
           "candidateSourceLines": [
             2283,
             8163,
-            10752
+            10753
           ]
         },
         "unitVerification": {
@@ -1225,7 +1226,7 @@
           "assessmentScope": "共通の行動順経路で後攻化・攻撃技限定の確率先制を扱う。表示だけが未対応だった。",
           "executableReferences": [
             "index.html:activeOrderCaveats:8163",
-            "index.html:orderEffectProfile:10752",
+            "index.html:orderEffectProfile:10753",
             "turn-order-effects.js:analyse:14"
           ],
           "tests": [
@@ -1329,9 +1330,9 @@
           "candidateSourceLines": [
             2283,
             5677,
-            11296,
-            11297,
-            14048
+            11298,
+            11299,
+            14083
           ]
         },
         "unitVerification": {
@@ -1348,9 +1349,9 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:estimatedEndTurnResidual:11296",
-            "index.html:estimatedEndTurnResidual:11297",
-            "index.html:recordEndTurnResidualProjections:14048",
+            "index.html:estimatedEndTurnResidual:11298",
+            "index.html:estimatedEndTurnResidual:11299",
+            "index.html:recordEndTurnResidualProjections:14083",
             "effect-engine.js:residualProjection:177"
           ],
           "tests": [],
@@ -1448,8 +1449,8 @@
             8451,
             8453,
             8545,
-            11927,
-            11929
+            11962,
+            11964
           ]
         },
         "unitVerification": {
@@ -1474,7 +1475,7 @@
             "index.html:triggerEntryAbility:7419",
             "index.html:preservationValue:8451",
             "index.html:bestSwitchFor:8545",
-            "index.html:nextTurnUtilityValue:11927"
+            "index.html:nextTurnUtilityValue:11962"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -1537,7 +1538,7 @@
           "candidateSourceLines": [
             2283,
             5685,
-            11235
+            11237
           ]
         },
         "unitVerification": {
@@ -1554,7 +1555,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:projectedSelfDamageForAction:11235"
+            "index.html:projectedSelfDamageForAction:11237"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -1579,9 +1580,9 @@
           "candidateSourceLines": [
             2283,
             5694,
-            10724,
-            10730,
-            10741
+            10725,
+            10731,
+            10742
           ]
         },
         "unitVerification": {
@@ -1598,8 +1599,8 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:pranksterTargetBlockReason:10724",
-            "index.html:movePriorityForActor:10741"
+            "index.html:pranksterTargetBlockReason:10725",
+            "index.html:movePriorityForActor:10742"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -1663,7 +1664,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            9021
+            9022
           ]
         },
         "unitVerification": {
@@ -1686,7 +1687,7 @@
           "classification": "部分実装",
           "assessmentScope": "音フラグに基づく水タイプ化。実Showdown ModifyTypeとの10ケース比較、威力を上げないことを検証。",
           "executableReferences": [
-            "index.html:resolveMoveForDamage:9021"
+            "index.html:resolveMoveForDamage:9022"
           ],
           "tests": [
             "test-adoption-priority-mechanics.js"
@@ -1752,7 +1753,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            11482
+            11484
           ]
         },
         "unitVerification": {
@@ -1775,7 +1776,7 @@
           "classification": "別経路で実装済み",
           "assessmentScope": "共通接触ダメージ予測で接触ペナルティを除外する。",
           "executableReferences": [
-            "index.html:projectedContactPunishmentForAction:11482"
+            "index.html:projectedContactPunishmentForAction:11484"
           ],
           "tests": [
             "test-contact.js"
@@ -1804,7 +1805,7 @@
           "candidateSourceLines": [
             2283,
             6608,
-            12617
+            12652
           ]
         },
         "unitVerification": {
@@ -1828,7 +1829,7 @@
           "assessmentScope": "相手対象ランク技の確定適用を阻止し、かたやぶり時は適用する。",
           "executableReferences": [
             "index.html:applyConfirmedTargetRanks:6608",
-            "index.html:disruptionCanAffect:12617"
+            "index.html:disruptionCanAffect:12652"
           ],
           "tests": [
             "test-target-ranks-integration.js"
@@ -1997,7 +1998,7 @@
             2319,
             5665,
             5703,
-            14020
+            14055
           ]
         },
         "unitVerification": {
@@ -2014,7 +2015,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:applyEndTurnAbilityEffects:14020"
+            "index.html:applyEndTurnAbilityEffects:14055"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -2040,7 +2041,7 @@
             2283,
             5461,
             5666,
-            9146
+            9147
           ]
         },
         "unitVerification": {
@@ -2057,7 +2058,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9146"
+            "index.html:sharedAbilityDamageModifiers:9147"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -2199,7 +2200,7 @@
             5673,
             5722,
             7269,
-            9319
+            9320
           ]
         },
         "unitVerification": {
@@ -2231,7 +2232,7 @@
             "index.html:activateWhiteHerbFor:5498",
             "index.html:activateTerrainSeedFor:5524",
             "index.html:stageText:7269",
-            "index.html:commitConfirmedBerryConsumption:9319"
+            "index.html:commitConfirmedBerryConsumption:9320"
           ],
           "tests": [
             "test-unburden-usage.js",
@@ -2300,12 +2301,12 @@
           "candidateSourceLines": [
             2283,
             5750,
-            8897,
-            9168,
-            11298,
-            11299,
-            11306,
-            11307
+            8898,
+            9169,
+            11300,
+            11301,
+            11308,
+            11309
           ]
         },
         "unitVerification": {
@@ -2323,10 +2324,10 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:abilityImpact:5750",
-            "index.html:abilityDamageImmunity:8897",
-            "index.html:sharedAbilityDamageModifiers:9168",
-            "index.html:estimatedEndTurnResidual:11298",
-            "index.html:estimatedEndTurnResidual:11306",
+            "index.html:abilityDamageImmunity:8898",
+            "index.html:sharedAbilityDamageModifiers:9169",
+            "index.html:estimatedEndTurnResidual:11300",
+            "index.html:estimatedEndTurnResidual:11308",
             "effect-engine.js:residualProjection:190"
           ],
           "tests": [],
@@ -2409,16 +2410,16 @@
             6136,
             6138,
             6338,
-            9148,
-            9294,
-            9297,
+            9149,
+            9295,
             9298,
-            9429,
-            9465,
-            9490,
-            9980,
-            10567,
-            10955
+            9299,
+            9430,
+            9466,
+            9491,
+            9981,
+            10568,
+            10956
           ]
         },
         "unitVerification": {
@@ -2439,12 +2440,12 @@
             "index.html:resolveHitSurvival:5978",
             "index.html:applyConfirmedMultiHit:6136",
             "index.html:previewIncomingMultiHit:6338",
-            "index.html:koSurvivalAssessment:9294",
-            "index.html:koSurvivalAssessment:9298",
-            "index.html:damageEstimate:9429",
-            "index.html:multiHitKOEstimate:9490",
-            "index.html:sequentialFocusDamage:10567",
-            "index.html:opponentDamageEstimateAgainstMy:10955"
+            "index.html:koSurvivalAssessment:9295",
+            "index.html:koSurvivalAssessment:9299",
+            "index.html:damageEstimate:9430",
+            "index.html:multiHitKOEstimate:9491",
+            "index.html:sequentialFocusDamage:10568",
+            "index.html:opponentDamageEstimateAgainstMy:10956"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -2468,7 +2469,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9148
+            9149
           ]
         },
         "unitVerification": {
@@ -2485,7 +2486,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9148"
+            "index.html:sharedAbilityDamageModifiers:9149"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -2685,7 +2686,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            9119
+            9120
           ]
         },
         "unitVerification": {
@@ -2711,7 +2712,7 @@
           "classification": "部分実装",
           "assessmentScope": "Source-aware confirmed rank changes, actual per-stat reactions, caps, single reflection and Opportunist gains. External general Gen 9 Battle.boost comparison; no full Champions or all ability mechanics claim.",
           "executableReferences": [
-            "index.html:abilityTypeEffect:9119"
+            "index.html:abilityTypeEffect:9120"
           ],
           "tests": [
             "test-rank-effects.js",
@@ -2874,7 +2875,7 @@
           "candidateSourceLines": [
             2283,
             6480,
-            11372
+            11374
           ]
         },
         "unitVerification": {
@@ -2898,7 +2899,7 @@
           "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
           "executableReferences": [
             "index.html:confirmedSleepProtection:6480",
-            "index.html:forecastCommonSecondaryStatus:11372"
+            "index.html:forecastCommonSecondaryStatus:11374"
           ],
           "tests": [
             "test-secondary-immunity-abilities.js"
@@ -2924,7 +2925,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9150
+            9151
           ]
         },
         "unitVerification": {
@@ -2941,7 +2942,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9150"
+            "index.html:sharedAbilityDamageModifiers:9151"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -2969,7 +2970,7 @@
           "candidateSourceLines": [
             2283,
             5679,
-            9305
+            9306
           ]
         },
         "unitVerification": {
@@ -2993,7 +2994,7 @@
           "classification": "部分実装",
           "assessmentScope": "Only block/double reduction of Chople/Colbur predictions and confirmed hit adapter. No all berry eating/healing/recycle/ability-change handlers or full battle certification.",
           "executableReferences": [
-            "index.html:defensiveBerryForDamage:9305"
+            "index.html:defensiveBerryForDamage:9306"
           ],
           "tests": [
             "test-priority-resist-berries.js",
@@ -3134,7 +3135,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9171
+            9172
           ]
         },
         "unitVerification": {
@@ -3151,7 +3152,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9171"
+            "index.html:sharedAbilityDamageModifiers:9172"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -3220,7 +3221,7 @@
             2283,
             5467,
             5690,
-            9142
+            9143
           ]
         },
         "unitVerification": {
@@ -3300,8 +3301,8 @@
           ],
           "candidateSourceLines": [
             2283,
-            9127,
-            9131
+            9128,
+            9132
           ]
         },
         "unitVerification": {
@@ -3325,8 +3326,8 @@
           "classification": "部分実装",
           "assessmentScope": "Guts multiplier/burn exemption in actual damage estimate formula with a supplied modifier fixture; full event adapter and secondary conditions not certified.",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9127",
-            "index.html:sharedAbilityDamageModifiers:9131"
+            "index.html:sharedAbilityDamageModifiers:9128",
+            "index.html:sharedAbilityDamageModifiers:9132"
           ],
           "tests": [
             "test-tournament-damage-differential.js",
@@ -3354,8 +3355,8 @@
           "candidateSourceLines": [
             2283,
             5789,
-            11729,
-            11732
+            11764,
+            11767
           ]
         },
         "unitVerification": {
@@ -3373,7 +3374,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:applySwitchOutAbility:5789",
-            "index.html:switchOutAbilityValue:11729"
+            "index.html:switchOutAbilityValue:11764"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -3438,7 +3439,7 @@
             5459,
             5659,
             5700,
-            11522
+            11524
           ]
         },
         "unitVerification": {
@@ -3455,7 +3456,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:projectedContactPunishmentForAction:11522"
+            "index.html:projectedContactPunishmentForAction:11524"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -3480,8 +3481,8 @@
           "candidateSourceLines": [
             2283,
             5788,
-            11725,
-            11727
+            11760,
+            11762
           ]
         },
         "unitVerification": {
@@ -3499,7 +3500,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:applySwitchOutAbility:5788",
-            "index.html:switchOutAbilityValue:11725"
+            "index.html:switchOutAbilityValue:11760"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -3665,9 +3666,9 @@
             3042,
             5672,
             5687,
-            9142,
-            11437,
-            12612
+            9143,
+            11439,
+            12647
           ]
         },
         "unitVerification": {
@@ -3715,8 +3716,8 @@
             6227,
             7775,
             7778,
-            9470,
-            10569
+            9471,
+            10570
           ]
         },
         "unitVerification": {
@@ -3742,8 +3743,8 @@
             "index.html:recordStaminaHits:5953",
             "index.html:applyConfirmedHitAbilityStages:6227",
             "index.html:makeCard:7775",
-            "index.html:multiHitKOEstimate:9470",
-            "index.html:sequentialFocusDamage:10569"
+            "index.html:multiHitKOEstimate:9471",
+            "index.html:sequentialFocusDamage:10570"
           ],
           "tests": [
             "test-hit-event-multiturn.js"
@@ -3810,7 +3811,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            11367
+            11369
           ]
         },
         "unitVerification": {
@@ -3835,7 +3836,7 @@
           "classification": "別経路で実装済み",
           "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
           "executableReferences": [
-            "index.html:forecastCommonSecondaryStatus:11367"
+            "index.html:forecastCommonSecondaryStatus:11369"
           ],
           "tests": [
             "test-common-secondary.js",
@@ -3865,7 +3866,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            9309
+            9310
           ]
         },
         "unitVerification": {
@@ -3889,7 +3890,7 @@
           "classification": "部分実装",
           "assessmentScope": "Only block/double reduction of Chople/Colbur predictions and confirmed hit adapter. No all berry eating/healing/recycle/ability-change handlers or full battle certification.",
           "executableReferences": [
-            "index.html:defensiveBerryForDamage:9309"
+            "index.html:defensiveBerryForDamage:9310"
           ],
           "tests": [
             "test-priority-resist-berries.js",
@@ -4017,9 +4018,9 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9137,
-            9167,
-            11371
+            9138,
+            9168,
+            11373
           ]
         },
         "unitVerification": {
@@ -4036,9 +4037,9 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9137",
-            "index.html:sharedAbilityDamageModifiers:9167",
-            "index.html:forecastCommonSecondaryStatus:11371"
+            "index.html:sharedAbilityDamageModifiers:9138",
+            "index.html:sharedAbilityDamageModifiers:9168",
+            "index.html:forecastCommonSecondaryStatus:11373"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -4119,9 +4120,9 @@
             2283,
             2738,
             8752,
-            9544,
-            11173,
-            11183
+            9545,
+            11174,
+            11184
           ]
         },
         "unitVerification": {
@@ -4210,7 +4211,7 @@
           "candidateSourceLines": [
             2283,
             4077,
-            11311
+            11313
           ]
         },
         "unitVerification": {
@@ -4228,7 +4229,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:speedFieldMultiplier:4077",
-            "index.html:estimatedEndTurnResidual:11311"
+            "index.html:estimatedEndTurnResidual:11313"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -4253,8 +4254,8 @@
           "candidateSourceLines": [
             2283,
             5659,
-            9657,
-            11311
+            9658,
+            11313
           ]
         },
         "unitVerification": {
@@ -4271,8 +4272,8 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9657",
-            "index.html:estimatedEndTurnResidual:11311"
+            "index.html:effectiveMoveAccuracy:9658",
+            "index.html:estimatedEndTurnResidual:11313"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -4296,8 +4297,8 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9153,
-            11311
+            9154,
+            11313
           ]
         },
         "unitVerification": {
@@ -4314,8 +4315,8 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9153",
-            "index.html:estimatedEndTurnResidual:11311"
+            "index.html:sharedAbilityDamageModifiers:9154",
+            "index.html:estimatedEndTurnResidual:11313"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -4382,10 +4383,10 @@
           "candidateSourceLines": [
             2283,
             5843,
-            9308,
-            9401,
-            10940,
-            12607
+            9309,
+            9402,
+            10941,
+            12642
           ]
         },
         "unitVerification": {
@@ -4411,10 +4412,10 @@
           "assessmentScope": "確認済み命中の共通みがわり迂回経路が存在し、両陣営の適用を検証。",
           "executableReferences": [
             "index.html:substituteBlocksConfirmedHit:5843",
-            "index.html:defensiveBerryForDamage:9308",
-            "index.html:damageEstimate:9401",
-            "index.html:opponentDamageEstimateAgainstMy:10940",
-            "index.html:disruptionCanAffect:12607"
+            "index.html:defensiveBerryForDamage:9309",
+            "index.html:damageEstimate:9402",
+            "index.html:opponentDamageEstimateAgainstMy:10941",
+            "index.html:disruptionCanAffect:12642"
           ],
           "tests": [
             "test-substitute-bypass.js",
@@ -4449,7 +4450,7 @@
           "candidateSourceLines": [
             2283,
             5677,
-            9652
+            9653
           ]
         },
         "unitVerification": {
@@ -4478,7 +4479,7 @@
           "classification": "部分実装",
           "assessmentScope": "Source-aware confirmed rank changes, actual per-stat reactions, caps, single reflection and Opportunist gains. External general Gen 9 Battle.boost comparison; no full Champions or all ability mechanics claim. Ignore positive target evasion stages in accuracy forecast. Existing rank protection separate; all accuracy interactions and full-game parity unverified.",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9652"
+            "index.html:effectiveMoveAccuracy:9653"
           ],
           "tests": [
             "test-rank-effects.js",
@@ -4569,8 +4570,8 @@
             2283,
             3042,
             5687,
-            11437,
-            12612
+            11439,
+            12647
           ]
         },
         "unitVerification": {
@@ -4597,8 +4598,8 @@
           "assessmentScope": "Source-aware confirmed rank changes, actual per-stat reactions, caps, single reflection and Opportunist gains. External general Gen 9 Battle.boost comparison; no full Champions or all ability mechanics claim.",
           "executableReferences": [
             "index.html:projectTacticalTurn:3042",
-            "index.html:planCommonSecondaryForecast:11437",
-            "index.html:disruptionCanAffect:12612"
+            "index.html:planCommonSecondaryForecast:11439",
+            "index.html:disruptionCanAffect:12647"
           ],
           "tests": [
             "test-rank-effects.js",
@@ -4631,7 +4632,7 @@
           "candidateSourceLines": [
             2283,
             5684,
-            11517
+            11519
           ]
         },
         "unitVerification": {
@@ -4648,7 +4649,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:projectedContactPunishmentForAction:11517"
+            "index.html:projectedContactPunishmentForAction:11519"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -4674,7 +4675,7 @@
             2283,
             5680,
             5751,
-            8897
+            8898
           ]
         },
         "unitVerification": {
@@ -4692,7 +4693,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:abilityImpact:5751",
-            "index.html:abilityDamageImmunity:8897"
+            "index.html:abilityDamageImmunity:8898"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -4717,7 +4718,7 @@
           "candidateSourceLines": [
             2283,
             5682,
-            9145
+            9146
           ]
         },
         "unitVerification": {
@@ -4734,7 +4735,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9145"
+            "index.html:sharedAbilityDamageModifiers:9146"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -4759,7 +4760,7 @@
           "candidateSourceLines": [
             2283,
             5688,
-            9166
+            9167
           ]
         },
         "unitVerification": {
@@ -4776,7 +4777,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9166"
+            "index.html:sharedAbilityDamageModifiers:9167"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -4838,10 +4839,10 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9152,
-            11378,
-            11438,
-            12612
+            9153,
+            11380,
+            11440,
+            12647
           ]
         },
         "unitVerification": {
@@ -4858,10 +4859,10 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9152",
-            "index.html:forecastCommonSecondaryStatus:11378",
-            "index.html:planCommonSecondaryForecast:11438",
-            "index.html:disruptionCanAffect:12612"
+            "index.html:sharedAbilityDamageModifiers:9153",
+            "index.html:forecastCommonSecondaryStatus:11380",
+            "index.html:planCommonSecondaryForecast:11440",
+            "index.html:disruptionCanAffect:12647"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -4885,7 +4886,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9129
+            9130
           ]
         },
         "unitVerification": {
@@ -4902,7 +4903,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9129"
+            "index.html:sharedAbilityDamageModifiers:9130"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -4927,7 +4928,7 @@
           "candidateSourceLines": [
             2283,
             5750,
-            8897
+            8898
           ]
         },
         "unitVerification": {
@@ -4945,7 +4946,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:abilityImpact:5750",
-            "index.html:abilityDamageImmunity:8897"
+            "index.html:abilityDamageImmunity:8898"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -5009,7 +5010,7 @@
             2283,
             5678,
             5750,
-            8897
+            8898
           ]
         },
         "unitVerification": {
@@ -5027,7 +5028,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:abilityImpact:5750",
-            "index.html:abilityDamageImmunity:8897"
+            "index.html:abilityDamageImmunity:8898"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -5052,7 +5053,7 @@
           "candidateSourceLines": [
             2283,
             5695,
-            9187
+            9188
           ]
         },
         "unitVerification": {
@@ -5069,7 +5070,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:damageStabMod:9187"
+            "index.html:damageStabMod:9188"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -5093,7 +5094,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9147
+            9148
           ]
         },
         "unitVerification": {
@@ -5110,7 +5111,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9147"
+            "index.html:sharedAbilityDamageModifiers:9148"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -5172,7 +5173,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9127
+            9128
           ]
         },
         "unitVerification": {
@@ -5189,7 +5190,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9127"
+            "index.html:sharedAbilityDamageModifiers:9128"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -5252,7 +5253,7 @@
           "candidateSourceLines": [
             2283,
             5751,
-            8897
+            8898
           ]
         },
         "unitVerification": {
@@ -5270,7 +5271,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:abilityImpact:5751",
-            "index.html:abilityDamageImmunity:8897"
+            "index.html:abilityDamageImmunity:8898"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -5373,9 +5374,9 @@
           "candidateSourceLines": [
             2283,
             5673,
-            11539,
             11541,
-            11551
+            11543,
+            11553
           ]
         },
         "unitVerification": {
@@ -5392,7 +5393,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:projectedContactPunishmentForAction:11541"
+            "index.html:projectedContactPunishmentForAction:11543"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -5457,7 +5458,7 @@
           "candidateSourceLines": [
             2283,
             5750,
-            8897
+            8898
           ]
         },
         "unitVerification": {
@@ -5475,7 +5476,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:abilityImpact:5750",
-            "index.html:abilityDamageImmunity:8897"
+            "index.html:abilityDamageImmunity:8898"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -5506,7 +5507,7 @@
           "candidateSourceLines": [
             2283,
             3001,
-            12617
+            12652
           ]
         },
         "unitVerification": {
@@ -5533,7 +5534,7 @@
           "assessmentScope": "Source-aware confirmed rank changes, actual per-stat reactions, caps, single reflection and Opportunist gains. External general Gen 9 Battle.boost comparison; no full Champions or all ability mechanics claim.",
           "executableReferences": [
             "index.html:projectTacticalTurn:3001",
-            "index.html:disruptionCanAffect:12617"
+            "index.html:disruptionCanAffect:12652"
           ],
           "tests": [
             "test-rank-effects.js",
@@ -5646,7 +5647,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            11371
+            11373
           ]
         },
         "unitVerification": {
@@ -5669,7 +5670,7 @@
           "classification": "別経路で実装済み",
           "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
           "executableReferences": [
-            "index.html:forecastCommonSecondaryStatus:11371"
+            "index.html:forecastCommonSecondaryStatus:11373"
           ],
           "tests": [
             "test-secondary-immunity-abilities.js"
@@ -5775,7 +5776,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9163
+            9164
           ]
         },
         "unitVerification": {
@@ -5792,7 +5793,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9163"
+            "index.html:sharedAbilityDamageModifiers:9164"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -5819,7 +5820,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            9652
+            9653
           ]
         },
         "unitVerification": {
@@ -5847,7 +5848,7 @@
           "classification": "部分実装",
           "assessmentScope": "Accuracy reduction immunity for external rank changes, self changes and ability bypass; evasion ignoring and full event legality remain unverified. Ignore positive target evasion stages in accuracy forecast. Existing rank protection separate; all accuracy interactions and full-game parity unverified.",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9652"
+            "index.html:effectiveMoveAccuracy:9653"
           ],
           "tests": [
             "test-hit-event-multiturn.js",
@@ -6030,7 +6031,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            10745
+            10746
           ]
         },
         "unitVerification": {
@@ -6053,7 +6054,7 @@
           "classification": "部分実装",
           "assessmentScope": "確認済み特性かつ観測HP満タン時のひこう技優先度+1。攻撃技・変化技とHP減少時を実Showdown48ケースで比較。",
           "executableReferences": [
-            "index.html:movePriorityForActor:10745"
+            "index.html:movePriorityForActor:10746"
           ],
           "tests": [
             "test-gale-wings-differential.js"
@@ -6117,8 +6118,8 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9130,
-            9659
+            9131,
+            9660
           ]
         },
         "unitVerification": {
@@ -6135,8 +6136,8 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9130",
-            "index.html:effectiveMoveAccuracy:9659"
+            "index.html:sharedAbilityDamageModifiers:9131",
+            "index.html:effectiveMoveAccuracy:9660"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -6242,13 +6243,13 @@
             5885,
             5888,
             7267,
-            9391,
-            9488,
-            10451,
-            10564,
-            11660,
-            11690,
-            13423
+            9392,
+            9489,
+            10452,
+            10565,
+            11695,
+            11725,
+            13458
           ]
         },
         "unitVerification": {
@@ -6268,8 +6269,8 @@
             "index.html:disguiseProtects:5742",
             "index.html:abilityImpact:5757",
             "index.html:renderAbilityEventControls:5885",
-            "index.html:multiHitKOEstimate:9488",
-            "index.html:sequentialFocusDamage:10564"
+            "index.html:multiHitKOEstimate:9489",
+            "index.html:sequentialFocusDamage:10565"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -6473,7 +6474,7 @@
             5714,
             5715,
             5751,
-            8897
+            8898
           ]
         },
         "unitVerification": {
@@ -6494,7 +6495,7 @@
             "index.html:opponentAttackCandidates:3644",
             "index.html:megaDecisionFor:5649",
             "index.html:abilityImpact:5751",
-            "index.html:abilityDamageImmunity:8897"
+            "index.html:abilityDamageImmunity:8898"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -6646,7 +6647,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9658
+            9659
           ]
         },
         "unitVerification": {
@@ -6663,7 +6664,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9658"
+            "index.html:effectiveMoveAccuracy:9659"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -6726,7 +6727,7 @@
           "candidateSourceLines": [
             2283,
             5683,
-            9170
+            9171
           ]
         },
         "unitVerification": {
@@ -6743,7 +6744,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9170"
+            "index.html:sharedAbilityDamageModifiers:9171"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -6769,7 +6770,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            11365
+            11367
           ]
         },
         "unitVerification": {
@@ -6792,7 +6793,7 @@
           "classification": "部分実装",
           "assessmentScope": "Poison secondary forecast type-immunity bypass only; independent trySetStatus comparison. Damage immunity, hazards and direct status action pipeline remain separate/incomplete.",
           "executableReferences": [
-            "index.html:forecastCommonSecondaryStatus:11365"
+            "index.html:forecastCommonSecondaryStatus:11367"
           ],
           "tests": [
             "test-protection-weight-differential.js"
@@ -6873,8 +6874,8 @@
             2283,
             5459,
             5662,
-            8897,
-            11350
+            8898,
+            11352
           ]
         },
         "unitVerification": {
@@ -6891,8 +6892,8 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:abilityDamageImmunity:8897",
-            "index.html:forecastGroundedForTerrain:11350"
+            "index.html:abilityDamageImmunity:8898",
+            "index.html:forecastGroundedForTerrain:11352"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -7014,8 +7015,8 @@
             2738,
             8205,
             8798,
-            9529,
-            11339
+            9530,
+            11341
           ]
         },
         "unitVerification": {
@@ -7141,7 +7142,7 @@
             3291,
             5669,
             5707,
-            8900
+            8901
           ]
         },
         "unitVerification": {
@@ -7162,7 +7163,7 @@
             "index.html:applyPerishSong:3157",
             "index.html:tacticalPlanAssessment:3289",
             "index.html:tacticalPlanAssessment:3291",
-            "index.html:abilityDamageImmunity:8900"
+            "index.html:abilityDamageImmunity:8901"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -7189,9 +7190,9 @@
             5669,
             7309,
             7310,
-            11311,
-            11312,
-            14391
+            11313,
+            11314,
+            14426
           ]
         },
         "unitVerification": {
@@ -7209,8 +7210,8 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:powderRedirectImmune:7309",
-            "index.html:estimatedEndTurnResidual:11311",
-            "index.html:estimatedEndTurnResidual:11312"
+            "index.html:estimatedEndTurnResidual:11313",
+            "index.html:estimatedEndTurnResidual:11314"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -7235,7 +7236,7 @@
           "candidateSourceLines": [
             2283,
             5669,
-            8900
+            8901
           ]
         },
         "unitVerification": {
@@ -7252,7 +7253,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:abilityDamageImmunity:8900"
+            "index.html:abilityDamageImmunity:8901"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -7342,7 +7343,7 @@
           "candidateSourceLines": [
             2283,
             5670,
-            9142
+            9143
           ]
         },
         "unitVerification": {
@@ -7383,7 +7384,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            11370
+            11372
           ]
         },
         "unitVerification": {
@@ -7408,7 +7409,7 @@
           "classification": "別経路で実装済み",
           "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
           "executableReferences": [
-            "index.html:forecastCommonSecondaryStatus:11370"
+            "index.html:forecastCommonSecondaryStatus:11372"
           ],
           "tests": [
             "test-common-secondary.js",
@@ -7438,7 +7439,7 @@
             5465,
             5674,
             5692,
-            9142
+            9143
           ]
         },
         "unitVerification": {
@@ -7515,7 +7516,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9173
+            9174
           ]
         },
         "unitVerification": {
@@ -7532,7 +7533,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9173"
+            "index.html:sharedAbilityDamageModifiers:9174"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -7561,9 +7562,9 @@
             5885,
             5888,
             7268,
-            8897,
-            9136,
-            13424
+            8898,
+            9137,
+            13459
           ]
         },
         "unitVerification": {
@@ -7583,9 +7584,9 @@
             "index.html:abilityImpact:5753",
             "index.html:renderAbilityEventControls:5885",
             "index.html:stageText:7268",
-            "index.html:abilityDamageImmunity:8897",
-            "index.html:sharedAbilityDamageModifiers:9136",
-            "index.html:recordedTacticalState:13424"
+            "index.html:abilityDamageImmunity:8898",
+            "index.html:sharedAbilityDamageModifiers:9137",
+            "index.html:recordedTacticalState:13459"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -7741,7 +7742,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9657
+            9658
           ]
         },
         "unitVerification": {
@@ -7758,7 +7759,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9657"
+            "index.html:effectiveMoveAccuracy:9658"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -7928,10 +7929,10 @@
           "candidateSourceLines": [
             2283,
             3042,
-            9172,
-            11374,
-            11438,
-            12612
+            9173,
+            11376,
+            11440,
+            12647
           ]
         },
         "unitVerification": {
@@ -7958,9 +7959,9 @@
           "assessmentScope": "Source-aware confirmed rank changes, actual per-stat reactions, caps, single reflection and Opportunist gains. External general Gen 9 Battle.boost comparison; no full Champions or all ability mechanics claim.",
           "executableReferences": [
             "index.html:projectTacticalTurn:3042",
-            "index.html:forecastCommonSecondaryStatus:11374",
-            "index.html:planCommonSecondaryForecast:11438",
-            "index.html:disruptionCanAffect:12612",
+            "index.html:forecastCommonSecondaryStatus:11376",
+            "index.html:planCommonSecondaryForecast:11440",
+            "index.html:disruptionCanAffect:12647",
             "rank-effects.js:resolve:21"
           ],
           "tests": [
@@ -8030,9 +8031,9 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            11301,
-            11302,
-            14049
+            11303,
+            11304,
+            14084
           ]
         },
         "unitVerification": {
@@ -8049,9 +8050,9 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:estimatedEndTurnResidual:11301",
-            "index.html:estimatedEndTurnResidual:11302",
-            "index.html:recordEndTurnResidualProjections:14049",
+            "index.html:estimatedEndTurnResidual:11303",
+            "index.html:estimatedEndTurnResidual:11304",
+            "index.html:recordEndTurnResidualProjections:14084",
             "effect-engine.js:residualProjection:195"
           ],
           "tests": [],
@@ -8115,8 +8116,8 @@
           "candidateSourceLines": [
             2283,
             3001,
-            12616,
-            12617
+            12651,
+            12652
           ]
         },
         "unitVerification": {
@@ -8134,8 +8135,8 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:projectTacticalTurn:3001",
-            "index.html:disruptionCanAffect:12616",
-            "index.html:disruptionCanAffect:12617"
+            "index.html:disruptionCanAffect:12651",
+            "index.html:disruptionCanAffect:12652"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -8303,7 +8304,7 @@
           "candidateSourceLines": [
             2283,
             8163,
-            10754
+            10755
           ]
         },
         "unitVerification": {
@@ -8329,7 +8330,7 @@
           "assessmentScope": "共通の行動順経路で後攻化・攻撃技限定の確率先制を扱う。表示だけが未対応だった。",
           "executableReferences": [
             "index.html:activeOrderCaveats:8163",
-            "index.html:orderEffectProfile:10754",
+            "index.html:orderEffectProfile:10755",
             "turn-order-effects.js:analyse:20"
           ],
           "tests": [
@@ -8509,9 +8510,9 @@
           "candidateSourceLines": [
             2283,
             5692,
-            9134,
-            11304,
-            11305
+            9135,
+            11306,
+            11307
           ]
         },
         "unitVerification": {
@@ -8528,9 +8529,9 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9134",
-            "index.html:estimatedEndTurnResidual:11304",
-            "index.html:estimatedEndTurnResidual:11305",
+            "index.html:sharedAbilityDamageModifiers:9135",
+            "index.html:estimatedEndTurnResidual:11306",
+            "index.html:estimatedEndTurnResidual:11307",
             "effect-engine.js:residualProjection:186"
           ],
           "tests": [],
@@ -8758,7 +8759,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9697
+            9698
           ]
         },
         "unitVerification": {
@@ -8775,7 +8776,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:multiHitOutcomeDistribution:9697"
+            "index.html:multiHitOutcomeDistribution:9698"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -8896,7 +8897,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9144
+            9145
           ]
         },
         "unitVerification": {
@@ -8913,7 +8914,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9144"
+            "index.html:sharedAbilityDamageModifiers:9145"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -8937,7 +8938,8 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            5689
+            5689,
+            8897
           ]
         },
         "unitVerification": {
@@ -8951,9 +8953,11 @@
         "authoritativeVerification": "unverified",
         "limitations": [],
         "coverage": {
-          "classification": "未実装",
-          "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
-          "executableReferences": [],
+          "classification": "要調査",
+          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "executableReferences": [
+            "index.html:abilityDamageImmunity:8897"
+          ],
           "tests": [],
           "scopedTestsPassed": false,
           "fullMechanicVerified": false,
@@ -9020,7 +9024,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            9195
+            9196
           ]
         },
         "unitVerification": {
@@ -9043,7 +9047,7 @@
           "classification": "部分実装",
           "assessmentScope": "Known weather suppressors remove weather effects in shared damage/speed/residual forecasts. Not every weather interaction or actual HP mutation.",
           "executableReferences": [
-            "index.html:effectiveWeatherForDamage:9195"
+            "index.html:effectiveWeatherForDamage:9196"
           ],
           "tests": [
             "test-weather-item-consistency.js"
@@ -9072,7 +9076,7 @@
             5469,
             5986,
             5991,
-            9667
+            9668
           ]
         },
         "unitVerification": {
@@ -9089,7 +9093,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9667"
+            "index.html:effectiveMoveAccuracy:9668"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -9113,7 +9117,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9176
+            9177
           ]
         },
         "unitVerification": {
@@ -9130,7 +9134,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9176"
+            "index.html:sharedAbilityDamageModifiers:9177"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -9243,8 +9247,8 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9151,
-            9175
+            9152,
+            9176
           ]
         },
         "unitVerification": {
@@ -9261,8 +9265,8 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9151",
-            "index.html:sharedAbilityDamageModifiers:9175"
+            "index.html:sharedAbilityDamageModifiers:9152",
+            "index.html:sharedAbilityDamageModifiers:9176"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -9286,7 +9290,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9169
+            9170
           ]
         },
         "unitVerification": {
@@ -9303,7 +9307,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9169"
+            "index.html:sharedAbilityDamageModifiers:9170"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -9327,7 +9331,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9176
+            9177
           ]
         },
         "unitVerification": {
@@ -9344,7 +9348,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9176"
+            "index.html:sharedAbilityDamageModifiers:9177"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -9370,7 +9374,7 @@
             2283,
             5466,
             5696,
-            9022
+            9023
           ]
         },
         "unitVerification": {
@@ -9422,7 +9426,7 @@
             6609,
             7345,
             7400,
-            11454
+            11456
           ]
         },
         "unitVerification": {
@@ -9449,7 +9453,7 @@
             "index.html:applyConfirmedTargetRanks:6609",
             "index.html:receiveIntimidate:7345",
             "index.html:triggerEntryAbility:7400",
-            "index.html:planCommonSecondaryForecast:11454"
+            "index.html:planCommonSecondaryForecast:11456"
           ],
           "tests": [
             "test-protection-weight-differential.js"
@@ -9475,7 +9479,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9022
+            9023
           ]
         },
         "unitVerification": {
@@ -9514,7 +9518,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9162
+            9163
           ]
         },
         "unitVerification": {
@@ -9531,7 +9535,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9162"
+            "index.html:sharedAbilityDamageModifiers:9163"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -9555,7 +9559,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9141
+            9142
           ]
         },
         "unitVerification": {
@@ -9572,7 +9576,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9141"
+            "index.html:sharedAbilityDamageModifiers:9142"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -9676,7 +9680,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            8936
+            8937
           ]
         },
         "unitVerification": {
@@ -9699,7 +9703,7 @@
           "classification": "部分実装",
           "assessmentScope": "Confirmed defender ability weight for Low Kick/Grass Knot, minimum weight and threshold rounding. Float Stone, Autotomize, Heavy Slam/Heat Crash and full damage unverified.",
           "executableReferences": [
-            "index.html:weightBasedMovePower:8936"
+            "index.html:weightBasedMovePower:8937"
           ],
           "tests": [
             "test-protection-weight-differential.js"
@@ -9725,8 +9729,8 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            11288,
-            11289
+            11290,
+            11291
           ]
         },
         "unitVerification": {
@@ -9743,8 +9747,8 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:estimatedEndTurnResidual:11288",
-            "index.html:estimatedEndTurnResidual:11289",
+            "index.html:estimatedEndTurnResidual:11290",
+            "index.html:estimatedEndTurnResidual:11291",
             "effect-engine.js:residualProjection:181"
           ],
           "tests": [],
@@ -9807,7 +9811,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9141
+            9142
           ]
         },
         "unitVerification": {
@@ -9824,7 +9828,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9141"
+            "index.html:sharedAbilityDamageModifiers:9142"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -9910,7 +9914,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            11369
+            11371
           ]
         },
         "unitVerification": {
@@ -9935,7 +9939,7 @@
           "classification": "別経路で実装済み",
           "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
           "executableReferences": [
-            "index.html:forecastCommonSecondaryStatus:11369"
+            "index.html:forecastCommonSecondaryStatus:11371"
           ],
           "tests": [
             "test-common-secondary.js",
@@ -10000,10 +10004,10 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            11235,
-            11262,
-            11311,
-            11522
+            11237,
+            11264,
+            11313,
+            11524
           ]
         },
         "unitVerification": {
@@ -10020,10 +10024,10 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:projectedSelfDamageForAction:11235",
-            "index.html:projectedSelfDamageForAction:11262",
-            "index.html:estimatedEndTurnResidual:11311",
-            "index.html:projectedContactPunishmentForAction:11522"
+            "index.html:projectedSelfDamageForAction:11237",
+            "index.html:projectedSelfDamageForAction:11264",
+            "index.html:estimatedEndTurnResidual:11313",
+            "index.html:projectedContactPunishmentForAction:11524"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -10048,7 +10052,7 @@
           "candidateSourceLines": [
             2283,
             3001,
-            12617
+            12652
           ]
         },
         "unitVerification": {
@@ -10066,7 +10070,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:projectTacticalTurn:3001",
-            "index.html:disruptionCanAffect:12617"
+            "index.html:disruptionCanAffect:12652"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -10090,7 +10094,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9177
+            9178
           ]
         },
         "unitVerification": {
@@ -10107,7 +10111,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9177"
+            "index.html:sharedAbilityDamageModifiers:9178"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -10268,7 +10272,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9149
+            9150
           ]
         },
         "unitVerification": {
@@ -10285,7 +10289,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9149"
+            "index.html:sharedAbilityDamageModifiers:9150"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -10349,7 +10353,7 @@
           "paths": [],
           "candidateSourceLines": [
             2283,
-            9129
+            9130
           ]
         },
         "unitVerification": {
@@ -10366,7 +10370,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:sharedAbilityDamageModifiers:9129"
+            "index.html:sharedAbilityDamageModifiers:9130"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -10393,7 +10397,7 @@
           ],
           "candidateSourceLines": [
             2283,
-            8937
+            8938
           ]
         },
         "unitVerification": {
@@ -10416,7 +10420,7 @@
           "classification": "部分実装",
           "assessmentScope": "Confirmed defender ability weight for Low Kick/Grass Knot, minimum weight and threshold rounding. Float Stone, Autotomize, Heavy Slam/Heat Crash and full damage unverified.",
           "executableReferences": [
-            "index.html:weightBasedMovePower:8937"
+            "index.html:weightBasedMovePower:8938"
           ],
           "tests": [
             "test-protection-weight-differential.js"
@@ -10484,7 +10488,7 @@
             2283,
             5681,
             6480,
-            11373
+            11375
           ]
         },
         "unitVerification": {
@@ -10508,7 +10512,7 @@
           "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
           "executableReferences": [
             "index.html:confirmedSleepProtection:6480",
-            "index.html:forecastCommonSecondaryStatus:11373"
+            "index.html:forecastCommonSecondaryStatus:11375"
           ],
           "tests": [
             "test-secondary-immunity-abilities.js"
@@ -10574,8 +10578,8 @@
           "paths": [],
           "candidateSourceLines": [
             8746,
-            9524,
-            11185
+            9525,
+            11186
           ]
         },
         "unitVerification": {
@@ -10592,7 +10596,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:estimatedMoveHitChance:11185"
+            "index.html:estimatedMoveHitChance:11186"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -10617,8 +10621,8 @@
           "candidateSourceLines": [
             5637,
             8737,
-            9525,
-            11338
+            9526,
+            11340
           ]
         },
         "unitVerification": {
@@ -10810,12 +10814,12 @@
             7206,
             7271,
             8189,
-            10042,
-            14630,
-            14634,
-            14643,
-            15115,
-            15163
+            10043,
+            14665,
+            14669,
+            14678,
+            15150,
+            15198
           ]
         },
         "unitVerification": {
@@ -10845,11 +10849,11 @@
             "index.html:opponentAttackCandidates:3746",
             "index.html:applyConfirmedYawn:6484",
             "index.html:commitTurnActions:7206",
-            "index.html:pendingObservedTargetEffect:14630",
-            "index.html:markObservedEffectReviewed:14634",
-            "index.html:markObservedEffectReviewed:14643",
-            "index.html:fixed45Render:15115",
-            "index.html:fixed45Render:15163"
+            "index.html:pendingObservedTargetEffect:14665",
+            "index.html:markObservedEffectReviewed:14669",
+            "index.html:markObservedEffectReviewed:14678",
+            "index.html:fixed45Render:15150",
+            "index.html:fixed45Render:15198"
           ],
           "tests": [
             "test-protection-weight-differential.js",
@@ -11098,8 +11102,8 @@
           "candidateSourceLines": [
             2738,
             8189,
-            10046,
-            12815
+            10047,
+            12850
           ]
         },
         "unitVerification": {
@@ -11123,7 +11127,7 @@
           "classification": "部分実装",
           "assessmentScope": "Explicit reviewed opposing target and body hit; partner untouched, unknown mechanics deferred, blocks/reflection/actual reactions. Ally targeting, all status immunities and full outcome simulation remain incomplete.",
           "executableReferences": [
-            "index.html:recommendationActionIsLegal:12815"
+            "index.html:recommendationActionIsLegal:12850"
           ],
           "tests": [
             "test-target-ranks-integration.js",
@@ -11154,7 +11158,7 @@
           "candidateSourceLines": [
             2738,
             4359,
-            10045
+            10046
           ]
         },
         "unitVerification": {
@@ -11429,13 +11433,13 @@
             8189,
             8471,
             8611,
-            10042,
-            10148,
-            10706,
-            11102,
-            11947,
-            12454,
-            12545
+            10043,
+            10149,
+            10707,
+            11103,
+            11982,
+            12489,
+            12580
           ]
         },
         "unitVerification": {
@@ -11481,13 +11485,13 @@
             8189,
             8471,
             8611,
-            10042,
-            10148,
-            10706,
-            11102,
-            11947,
-            12454,
-            12545
+            10043,
+            10149,
+            10707,
+            11103,
+            11982,
+            12489,
+            12580
           ]
         },
         "unitVerification": {
@@ -11509,11 +11513,11 @@
             "index.html:opponentAttackCandidates:3728",
             "index.html:preservationValue:8471",
             "index.html:actionForMon:8611",
-            "index.html:fallbackNonSwitchAction:10148",
-            "index.html:movePriorityValue:10706",
-            "index.html:nextTurnUtilityValue:11947",
-            "index.html:opponentScenarioAdjustment:12454",
-            "index.html:opponentWinConditions:12545"
+            "index.html:fallbackNonSwitchAction:10149",
+            "index.html:movePriorityValue:10707",
+            "index.html:nextTurnUtilityValue:11982",
+            "index.html:opponentScenarioAdjustment:12489",
+            "index.html:opponentWinConditions:12580"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -11718,7 +11722,7 @@
           "candidateSourceLines": [
             2738,
             8189,
-            10044
+            10045
           ]
         },
         "unitVerification": {
@@ -12064,7 +12068,7 @@
           "candidateSourceLines": [
             2738,
             8779,
-            9526
+            9527
           ]
         },
         "unitVerification": {
@@ -12145,8 +12149,8 @@
             2738,
             3746,
             8189,
-            10043,
-            12815
+            10044,
+            12850
           ]
         },
         "unitVerification": {
@@ -12171,7 +12175,7 @@
           "assessmentScope": "Explicit reviewed opposing target and body hit; partner untouched, unknown mechanics deferred, blocks/reflection/actual reactions. Ally targeting, all status immunities and full outcome simulation remain incomplete.",
           "executableReferences": [
             "index.html:opponentAttackCandidates:3746",
-            "index.html:recommendationActionIsLegal:12815"
+            "index.html:recommendationActionIsLegal:12850"
           ],
           "tests": [
             "test-target-ranks-integration.js",
@@ -12547,14 +12551,14 @@
             8203,
             8463,
             8758,
-            9527,
-            10039,
-            11932,
-            12463,
-            12541,
-            12547,
-            12578,
-            12666
+            9528,
+            10040,
+            11967,
+            12498,
+            12576,
+            12582,
+            12613,
+            12701
           ]
         },
         "unitVerification": {
@@ -12574,12 +12578,12 @@
             "index.html:opponentAttackCandidates:3732",
             "index.html:threatInfo:8203",
             "index.html:preservationValue:8463",
-            "index.html:nextTurnUtilityValue:11932",
-            "index.html:opponentScenarioAdjustment:12463",
-            "index.html:opponentWinConditions:12541",
-            "index.html:opponentWinConditions:12547",
-            "index.html:opponentWinConditions:12578",
-            "index.html:winConditionActionBlockScore:12666"
+            "index.html:nextTurnUtilityValue:11967",
+            "index.html:opponentScenarioAdjustment:12498",
+            "index.html:opponentWinConditions:12576",
+            "index.html:opponentWinConditions:12582",
+            "index.html:opponentWinConditions:12613",
+            "index.html:winConditionActionBlockScore:12701"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -12980,9 +12984,9 @@
             3746,
             4356,
             8189,
-            10042,
-            12378,
-            12815
+            10043,
+            12413,
+            12850
           ]
         },
         "unitVerification": {
@@ -13001,8 +13005,8 @@
           "executableReferences": [
             "index.html:opponentAttackCandidates:3746",
             "index.html:opponentSelectionRoleProfile:4356",
-            "index.html:myActionCandidatesFor:12378",
-            "index.html:recommendationActionIsLegal:12815"
+            "index.html:myActionCandidatesFor:12413",
+            "index.html:recommendationActionIsLegal:12850"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -13027,8 +13031,8 @@
           "candidateSourceLines": [
             2738,
             8776,
-            9060,
-            9528
+            9061,
+            9529
           ]
         },
         "unitVerification": {
@@ -13045,7 +13049,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:resolveMoveForDamage:9060"
+            "index.html:resolveMoveForDamage:9061"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -13338,8 +13342,8 @@
           "candidateSourceLines": [
             2738,
             8798,
-            9529,
-            11339
+            9530,
+            11341
           ]
         },
         "unitVerification": {
@@ -13864,7 +13868,7 @@
           "candidateSourceLines": [
             2738,
             8799,
-            9530
+            9531
           ]
         },
         "unitVerification": {
@@ -13941,10 +13945,10 @@
             2738,
             5637,
             8738,
-            9531,
-            9670,
-            9672,
-            11338
+            9532,
+            9671,
+            9673,
+            11340
           ]
         },
         "unitVerification": {
@@ -13961,8 +13965,8 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9670",
-            "index.html:effectiveMoveAccuracy:9672"
+            "index.html:effectiveMoveAccuracy:9671",
+            "index.html:effectiveMoveAccuracy:9673"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -14057,8 +14061,8 @@
           "status": "requires-review",
           "paths": [],
           "candidateSourceLines": [
-            9361,
-            10905
+            9362,
+            10906
           ]
         },
         "unitVerification": {
@@ -14075,8 +14079,8 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:damageEstimate:9361",
-            "index.html:opponentDamageEstimateAgainstMy:10905"
+            "index.html:damageEstimate:9362",
+            "index.html:opponentDamageEstimateAgainstMy:10906"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -14419,7 +14423,7 @@
             4355,
             8191,
             8800,
-            9532
+            9533
           ]
         },
         "unitVerification": {
@@ -14534,7 +14538,7 @@
             2315,
             2738,
             8801,
-            9533
+            9534
           ]
         },
         "unitVerification": {
@@ -14772,7 +14776,7 @@
           "candidateSourceLines": [
             2738,
             8802,
-            9534
+            9535
           ]
         },
         "unitVerification": {
@@ -15118,8 +15122,8 @@
             2283,
             2738,
             8803,
-            9054,
-            9535
+            9055,
+            9536
           ]
         },
         "unitVerification": {
@@ -15142,7 +15146,7 @@
           "classification": "部分実装",
           "assessmentScope": "Existing variable weight power connected to known defender abilities; not full damage or all weight modifiers.",
           "executableReferences": [
-            "index.html:resolveMoveForDamage:9054"
+            "index.html:resolveMoveForDamage:9055"
           ],
           "tests": [
             "test-protection-weight-differential.js"
@@ -15331,7 +15335,7 @@
             3021,
             3747,
             6559,
-            10043
+            10044
           ]
         },
         "unitVerification": {
@@ -15415,8 +15419,8 @@
             2283,
             2738,
             8771,
-            9054,
-            9536
+            9055,
+            9537
           ]
         },
         "unitVerification": {
@@ -15439,7 +15443,7 @@
           "classification": "部分実装",
           "assessmentScope": "Existing variable weight power connected to known defender abilities; not full damage or all weight modifiers.",
           "executableReferences": [
-            "index.html:resolveMoveForDamage:9054"
+            "index.html:resolveMoveForDamage:9055"
           ],
           "tests": [
             "test-protection-weight-differential.js"
@@ -15466,7 +15470,7 @@
           "candidateSourceLines": [
             2738,
             8804,
-            9537
+            9538
           ]
         },
         "unitVerification": {
@@ -15506,7 +15510,7 @@
           "candidateSourceLines": [
             2738,
             8734,
-            9522
+            9523
           ]
         },
         "unitVerification": {
@@ -15803,7 +15807,7 @@
             6588,
             8191,
             8805,
-            9538
+            9539
           ]
         },
         "unitVerification": {
@@ -15924,12 +15928,12 @@
             8189,
             8471,
             8611,
-            10042,
-            10148,
-            10706,
-            11947,
-            12454,
-            12545
+            10043,
+            10149,
+            10707,
+            11982,
+            12489,
+            12580
           ]
         },
         "unitVerification": {
@@ -15951,11 +15955,11 @@
             "index.html:opponentAttackCandidates:3728",
             "index.html:preservationValue:8471",
             "index.html:actionForMon:8611",
-            "index.html:fallbackNonSwitchAction:10148",
-            "index.html:movePriorityValue:10706",
-            "index.html:nextTurnUtilityValue:11947",
-            "index.html:opponentScenarioAdjustment:12454",
-            "index.html:opponentWinConditions:12545"
+            "index.html:fallbackNonSwitchAction:10149",
+            "index.html:movePriorityValue:10707",
+            "index.html:nextTurnUtilityValue:11982",
+            "index.html:opponentScenarioAdjustment:12489",
+            "index.html:opponentWinConditions:12580"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -16059,9 +16063,9 @@
             4355,
             8189,
             8191,
-            10043,
-            12378,
-            12815
+            10044,
+            12413,
+            12850
           ]
         },
         "unitVerification": {
@@ -16087,8 +16091,8 @@
           "executableReferences": [
             "index.html:opponentAttackCandidates:3746",
             "index.html:opponentSelectionRoleProfile:4355",
-            "index.html:myActionCandidatesFor:12378",
-            "index.html:recommendationActionIsLegal:12815"
+            "index.html:myActionCandidatesFor:12413",
+            "index.html:recommendationActionIsLegal:12850"
           ],
           "tests": [
             "test-target-ranks-integration.js",
@@ -16188,7 +16192,7 @@
           "candidateSourceLines": [
             2738,
             3746,
-            10043
+            10044
           ]
         },
         "unitVerification": {
@@ -16447,7 +16451,7 @@
           ],
           "candidateSourceLines": [
             8726,
-            9068
+            9069
           ]
         },
         "unitVerification": {
@@ -16470,7 +16474,7 @@
           "classification": "部分実装",
           "assessmentScope": "Existing variable HP power and Body Press defense-source flags only; complete damage and legality remain unverified.",
           "executableReferences": [
-            "index.html:resolveMoveForDamage:9068"
+            "index.html:resolveMoveForDamage:9069"
           ],
           "tests": [
             "test-torkoal-core.js"
@@ -17002,8 +17006,8 @@
             2738,
             8216,
             8789,
-            9539,
-            10706
+            9540,
+            10707
           ]
         },
         "unitVerification": {
@@ -17020,7 +17024,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:movePriorityValue:10706"
+            "index.html:movePriorityValue:10707"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -17093,11 +17097,11 @@
             3719,
             7207,
             8189,
-            10040,
-            12360,
-            12578,
-            12808,
-            14067
+            10041,
+            12395,
+            12613,
+            12843,
+            14102
           ]
         },
         "unitVerification": {
@@ -17122,9 +17126,9 @@
             "index.html:tacticalPlanAssessment:3284",
             "index.html:opponentAttackCandidates:3719",
             "index.html:commitTurnActions:7207",
-            "index.html:myActionCandidatesFor:12360",
-            "index.html:opponentWinConditions:12578",
-            "index.html:recommendationActionIsLegal:12808"
+            "index.html:myActionCandidatesFor:12395",
+            "index.html:opponentWinConditions:12613",
+            "index.html:recommendationActionIsLegal:12843"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -17150,7 +17154,7 @@
             2738,
             3751,
             8189,
-            10046
+            10047
           ]
         },
         "unitVerification": {
@@ -17229,7 +17233,7 @@
             2259,
             2738,
             8750,
-            9540
+            9541
           ]
         },
         "unitVerification": {
@@ -17271,8 +17275,9 @@
             2738,
             5675,
             8778,
-            9244,
-            9541
+            9245,
+            9542,
+            11562
           ]
         },
         "unitVerification": {
@@ -17289,7 +17294,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:terrainDamageMod:9244"
+            "index.html:terrainDamageMod:9245"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -17350,8 +17355,8 @@
           "candidateSourceLines": [
             2738,
             8806,
-            9090,
-            9542
+            9091,
+            9543
           ]
         },
         "unitVerification": {
@@ -17368,7 +17373,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:resolveMoveForDamage:9090"
+            "index.html:resolveMoveForDamage:9091"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -17391,7 +17396,8 @@
           "status": "requires-review",
           "paths": [],
           "candidateSourceLines": [
-            9244
+            9245,
+            11562
           ]
         },
         "unitVerification": {
@@ -17408,7 +17414,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:terrainDamageMod:9244"
+            "index.html:terrainDamageMod:9245"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -17430,7 +17436,9 @@
         "effect": {
           "status": "requires-review",
           "paths": [],
-          "candidateSourceLines": []
+          "candidateSourceLines": [
+            11562
+          ]
         },
         "unitVerification": {
           "status": "unverified",
@@ -17505,7 +17513,7 @@
           "candidateSourceLines": [
             2738,
             8768,
-            9543
+            9544
           ]
         },
         "unitVerification": {
@@ -17690,7 +17698,7 @@
             2738,
             3751,
             8189,
-            10044
+            10045
           ]
         },
         "unitVerification": {
@@ -17731,9 +17739,9 @@
             2260,
             2738,
             8752,
-            9544,
-            11173,
-            11183
+            9545,
+            11174,
+            11184
           ]
         },
         "unitVerification": {
@@ -17750,7 +17758,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:estimatedMoveHitChance:11183"
+            "index.html:estimatedMoveHitChance:11184"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -17781,9 +17789,9 @@
             8189,
             8192,
             8759,
-            9545,
-            12378,
-            12815
+            9546,
+            12413,
+            12850
           ]
         },
         "unitVerification": {
@@ -17802,8 +17810,8 @@
           "executableReferences": [
             "index.html:opponentSelectionRoleProfile:4356",
             "index.html:opponentSelectionRoleProfile:4358",
-            "index.html:myActionCandidatesFor:12378",
-            "index.html:recommendationActionIsLegal:12815"
+            "index.html:myActionCandidatesFor:12413",
+            "index.html:recommendationActionIsLegal:12850"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -18004,9 +18012,9 @@
           "candidateSourceLines": [
             2738,
             8788,
-            9573,
-            11174,
-            11184
+            9574,
+            11175,
+            11185
           ]
         },
         "unitVerification": {
@@ -18190,7 +18198,7 @@
           "candidateSourceLines": [
             2738,
             8858,
-            9546
+            9547
           ]
         },
         "unitVerification": {
@@ -18302,7 +18310,7 @@
           "candidateSourceLines": [
             2738,
             8848,
-            9547
+            9548
           ]
         },
         "unitVerification": {
@@ -18594,7 +18602,7 @@
           "candidateSourceLines": [
             2738,
             8807,
-            9548
+            9549
           ]
         },
         "unitVerification": {
@@ -18634,7 +18642,7 @@
           "candidateSourceLines": [
             2738,
             8808,
-            9549
+            9550
           ]
         },
         "unitVerification": {
@@ -18671,7 +18679,9 @@
         "effect": {
           "status": "requires-review",
           "paths": [],
-          "candidateSourceLines": []
+          "candidateSourceLines": [
+            11562
+          ]
         },
         "unitVerification": {
           "status": "unverified",
@@ -18746,8 +18756,8 @@
           "candidateSourceLines": [
             2738,
             8809,
-            9550,
-            11339
+            9551,
+            11341
           ]
         },
         "unitVerification": {
@@ -18787,7 +18797,7 @@
           "candidateSourceLines": [
             2738,
             8782,
-            9551
+            9552
           ]
         },
         "unitVerification": {
@@ -18900,7 +18910,7 @@
             2738,
             3751,
             8189,
-            10044
+            10045
           ]
         },
         "unitVerification": {
@@ -19018,8 +19028,8 @@
             2869,
             3064,
             8189,
-            10040,
-            12578
+            10041,
+            12613
           ]
         },
         "unitVerification": {
@@ -19036,7 +19046,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:opponentWinConditions:12578"
+            "index.html:opponentWinConditions:12613"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -19070,13 +19080,13 @@
             8189,
             8261,
             8608,
-            10041,
-            10072,
-            10145,
-            12378,
-            12614,
-            12638,
-            12815
+            10042,
+            10073,
+            10146,
+            12413,
+            12649,
+            12673,
+            12850
           ]
         },
         "unitVerification": {
@@ -19100,12 +19110,12 @@
             "index.html:ownPairSynergy:4781",
             "index.html:stallActionForMon:8261",
             "index.html:actionForMon:8608",
-            "index.html:antiPassiveReadAction:10072",
-            "index.html:fallbackNonSwitchAction:10145",
-            "index.html:myActionCandidatesFor:12378",
-            "index.html:disruptionCanAffect:12614",
-            "index.html:winConditionActionBlockScore:12638",
-            "index.html:recommendationActionIsLegal:12815"
+            "index.html:antiPassiveReadAction:10073",
+            "index.html:fallbackNonSwitchAction:10146",
+            "index.html:myActionCandidatesFor:12413",
+            "index.html:disruptionCanAffect:12649",
+            "index.html:winConditionActionBlockScore:12673",
+            "index.html:recommendationActionIsLegal:12850"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -19454,8 +19464,8 @@
           "candidateSourceLines": [
             2738,
             8857,
-            9552,
-            9639
+            9553,
+            9640
           ]
         },
         "unitVerification": {
@@ -19472,7 +19482,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9639"
+            "index.html:effectiveMoveAccuracy:9640"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -19714,13 +19724,13 @@
             8189,
             8611,
             8761,
-            9553,
-            10039,
-            10148,
-            12463,
-            12542,
-            12547,
-            12578
+            9554,
+            10040,
+            10149,
+            12498,
+            12577,
+            12582,
+            12613
           ]
         },
         "unitVerification": {
@@ -19741,11 +19751,11 @@
             "index.html:opponentSelectionRoleProfile:4353",
             "index.html:ownSelectionRoleProfile:4817",
             "index.html:actionForMon:8611",
-            "index.html:fallbackNonSwitchAction:10148",
-            "index.html:opponentScenarioAdjustment:12463",
-            "index.html:opponentWinConditions:12542",
-            "index.html:opponentWinConditions:12547",
-            "index.html:opponentWinConditions:12578"
+            "index.html:fallbackNonSwitchAction:10149",
+            "index.html:opponentScenarioAdjustment:12498",
+            "index.html:opponentWinConditions:12577",
+            "index.html:opponentWinConditions:12582",
+            "index.html:opponentWinConditions:12613"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -19844,9 +19854,9 @@
             3740,
             8189,
             8611,
-            10042,
-            10148,
-            10703
+            10043,
+            10149,
+            10704
           ]
         },
         "unitVerification": {
@@ -19865,8 +19875,8 @@
           "executableReferences": [
             "index.html:opponentAttackCandidates:3740",
             "index.html:actionForMon:8611",
-            "index.html:fallbackNonSwitchAction:10148",
-            "index.html:movePriorityValue:10703"
+            "index.html:fallbackNonSwitchAction:10149",
+            "index.html:movePriorityValue:10704"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -20038,8 +20048,8 @@
             2738,
             8216,
             8810,
-            9554,
-            10706
+            9555,
+            10707
           ]
         },
         "unitVerification": {
@@ -20056,7 +20066,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:movePriorityValue:10706"
+            "index.html:movePriorityValue:10707"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -20154,8 +20164,8 @@
             2738,
             8216,
             8787,
-            9555,
-            10707
+            9556,
+            10708
           ]
         },
         "unitVerification": {
@@ -20172,7 +20182,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:movePriorityValue:10707"
+            "index.html:movePriorityValue:10708"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -20233,7 +20243,7 @@
           "candidateSourceLines": [
             8189,
             8191,
-            12815
+            12850
           ]
         },
         "unitVerification": {
@@ -20250,7 +20260,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:recommendationActionIsLegal:12815"
+            "index.html:recommendationActionIsLegal:12850"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -20312,7 +20322,7 @@
             2315,
             2738,
             8728,
-            9516
+            9517
           ]
         },
         "unitVerification": {
@@ -20832,7 +20842,7 @@
           "candidateSourceLines": [
             2738,
             8767,
-            9556
+            9557
           ]
         },
         "unitVerification": {
@@ -20912,7 +20922,7 @@
             8189,
             8192,
             8811,
-            9557
+            9558
           ]
         },
         "unitVerification": {
@@ -20954,7 +20964,7 @@
           "candidateSourceLines": [
             2738,
             8812,
-            9558
+            9559
           ]
         },
         "unitVerification": {
@@ -21775,7 +21785,9 @@
         "effect": {
           "status": "requires-review",
           "paths": [],
-          "candidateSourceLines": []
+          "candidateSourceLines": [
+            11562
+          ]
         },
         "unitVerification": {
           "status": "unverified",
@@ -21925,8 +21937,8 @@
           "candidateSourceLines": [
             2738,
             4359,
-            10045,
-            11373
+            10046,
+            11375
           ]
         },
         "unitVerification": {
@@ -21951,7 +21963,7 @@
           "assessmentScope": "Confirmed weather/screen setters; matching duration items and consumed/nonmatching items. Ability suppression and all match scenarios remain unverified.",
           "executableReferences": [
             "index.html:opponentSelectionRoleProfile:4359",
-            "index.html:forecastCommonSecondaryStatus:11373"
+            "index.html:forecastCommonSecondaryStatus:11375"
           ],
           "tests": [
             "test-v282-move-field-registry.js",
@@ -22074,25 +22086,25 @@
             8457,
             8607,
             8742,
-            9559,
-            10144,
-            10705,
-            10846,
-            11921,
-            11923,
-            12091,
-            12095,
-            12230,
-            12232,
-            12235,
-            12365,
-            12384,
-            12607,
-            12608,
-            12628,
-            12637,
-            12812,
-            15139
+            9560,
+            10145,
+            10706,
+            10847,
+            11956,
+            11958,
+            12126,
+            12130,
+            12265,
+            12267,
+            12270,
+            12400,
+            12419,
+            12642,
+            12643,
+            12663,
+            12672,
+            12847,
+            15174
           ]
         },
         "unitVerification": {
@@ -22121,22 +22133,22 @@
             "index.html:stallActionForMon:8259",
             "index.html:preservationValue:8455",
             "index.html:actionForMon:8607",
-            "index.html:fallbackNonSwitchAction:10144",
-            "index.html:movePriorityValue:10705",
-            "index.html:renderGuardTimingPlanner:10846",
-            "index.html:nextTurnUtilityValue:11921",
-            "index.html:twoTurnLookahead:12091",
-            "index.html:recommendationPlanScore:12230",
-            "index.html:recommendationPlanScore:12232",
-            "index.html:recommendationPlanScore:12235",
-            "index.html:myActionCandidatesFor:12365",
-            "index.html:myActionCandidatesFor:12384",
-            "index.html:disruptionCanAffect:12607",
-            "index.html:disruptionCanAffect:12608",
-            "index.html:winConditionActionBlockScore:12628",
-            "index.html:winConditionActionBlockScore:12637",
-            "index.html:recommendationActionIsLegal:12812",
-            "index.html:fixed45Render:15139"
+            "index.html:fallbackNonSwitchAction:10145",
+            "index.html:movePriorityValue:10706",
+            "index.html:renderGuardTimingPlanner:10847",
+            "index.html:nextTurnUtilityValue:11956",
+            "index.html:twoTurnLookahead:12126",
+            "index.html:recommendationPlanScore:12265",
+            "index.html:recommendationPlanScore:12267",
+            "index.html:recommendationPlanScore:12270",
+            "index.html:myActionCandidatesFor:12400",
+            "index.html:myActionCandidatesFor:12419",
+            "index.html:disruptionCanAffect:12642",
+            "index.html:disruptionCanAffect:12643",
+            "index.html:winConditionActionBlockScore:12663",
+            "index.html:winConditionActionBlockScore:12672",
+            "index.html:recommendationActionIsLegal:12847",
+            "index.html:fixed45Render:15174"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -22269,8 +22281,8 @@
           "candidateSourceLines": [
             2738,
             8784,
-            9560,
-            11342
+            9561,
+            11344
           ]
         },
         "unitVerification": {
@@ -22311,7 +22323,7 @@
             2684,
             2738,
             8813,
-            9561
+            9562
           ]
         },
         "unitVerification": {
@@ -22749,7 +22761,7 @@
           "candidateSourceLines": [
             2738,
             8786,
-            9562
+            9563
           ]
         },
         "unitVerification": {
@@ -22933,8 +22945,8 @@
           "candidateSourceLines": [
             2738,
             8856,
-            9046,
-            9563
+            9047,
+            9564
           ]
         },
         "unitVerification": {
@@ -22951,7 +22963,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:resolveMoveForDamage:9046"
+            "index.html:resolveMoveForDamage:9047"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -23084,8 +23096,8 @@
           "candidateSourceLines": [
             2738,
             8815,
-            9564,
-            9639
+            9565,
+            9640
           ]
         },
         "unitVerification": {
@@ -23102,7 +23114,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9639"
+            "index.html:effectiveMoveAccuracy:9640"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -23160,7 +23172,9 @@
         "effect": {
           "status": "requires-review",
           "paths": [],
-          "candidateSourceLines": []
+          "candidateSourceLines": [
+            11562
+          ]
         },
         "unitVerification": {
           "status": "unverified",
@@ -23199,7 +23213,7 @@
           "candidateSourceLines": [
             2738,
             3751,
-            10046
+            10047
           ]
         },
         "unitVerification": {
@@ -23434,7 +23448,9 @@
         "effect": {
           "status": "requires-review",
           "paths": [],
-          "candidateSourceLines": []
+          "candidateSourceLines": [
+            11562
+          ]
         },
         "unitVerification": {
           "status": "unverified",
@@ -23514,7 +23530,7 @@
             2738,
             3745,
             8189,
-            10044
+            10045
           ]
         },
         "unitVerification": {
@@ -23929,9 +23945,9 @@
             2738,
             8216,
             8756,
-            9565,
-            10707,
-            11180
+            9566,
+            10708,
+            11181
           ]
         },
         "unitVerification": {
@@ -23948,8 +23964,8 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:movePriorityValue:10707",
-            "index.html:estimatedMoveHitChance:11180"
+            "index.html:movePriorityValue:10708",
+            "index.html:estimatedMoveHitChance:11181"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -23974,7 +23990,7 @@
           "candidateSourceLines": [
             2738,
             8189,
-            10043
+            10044
           ]
         },
         "unitVerification": {
@@ -24050,7 +24066,7 @@
           "candidateSourceLines": [
             2738,
             8816,
-            9566
+            9567
           ]
         },
         "unitVerification": {
@@ -24126,9 +24142,10 @@
           "candidateSourceLines": [
             2738,
             8817,
-            9567,
-            9671,
-            11340
+            9568,
+            9672,
+            11342,
+            11562
           ]
         },
         "unitVerification": {
@@ -24145,7 +24162,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9671"
+            "index.html:effectiveMoveAccuracy:9672"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -24241,7 +24258,9 @@
         "effect": {
           "status": "requires-review",
           "paths": [],
-          "candidateSourceLines": []
+          "candidateSourceLines": [
+            11562
+          ]
         },
         "unitVerification": {
           "status": "unverified",
@@ -24281,7 +24300,7 @@
           ],
           "candidateSourceLines": [
             8725,
-            9068
+            9069
           ]
         },
         "unitVerification": {
@@ -24304,7 +24323,7 @@
           "classification": "部分実装",
           "assessmentScope": "Existing variable HP power and Body Press defense-source flags only; complete damage and legality remain unverified.",
           "executableReferences": [
-            "index.html:resolveMoveForDamage:9068"
+            "index.html:resolveMoveForDamage:9069"
           ],
           "tests": [
             "test-torkoal-core.js"
@@ -24594,7 +24613,8 @@
           "status": "requires-review",
           "paths": [],
           "candidateSourceLines": [
-            5637
+            5637,
+            11562
           ]
         },
         "unitVerification": {
@@ -24670,8 +24690,8 @@
           "candidateSourceLines": [
             2738,
             4356,
-            10046,
-            10711
+            10047,
+            10712
           ]
         },
         "unitVerification": {
@@ -24689,7 +24709,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:opponentSelectionRoleProfile:4356",
-            "index.html:movePriorityValue:10711"
+            "index.html:movePriorityValue:10712"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -24825,7 +24845,7 @@
             5637,
             8191,
             8740,
-            9568
+            9569
           ]
         },
         "unitVerification": {
@@ -24975,7 +24995,7 @@
           "candidateSourceLines": [
             2738,
             8818,
-            9569
+            9570
           ]
         },
         "unitVerification": {
@@ -25092,7 +25112,7 @@
             3287,
             6529,
             8189,
-            10046
+            10047
           ]
         },
         "unitVerification": {
@@ -25136,9 +25156,9 @@
             2684,
             2738,
             8780,
-            9570,
-            9670,
-            9672
+            9571,
+            9671,
+            9673
           ]
         },
         "unitVerification": {
@@ -25156,8 +25176,8 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:opponentCandidateOrder:2684",
-            "index.html:effectiveMoveAccuracy:9670",
-            "index.html:effectiveMoveAccuracy:9672"
+            "index.html:effectiveMoveAccuracy:9671",
+            "index.html:effectiveMoveAccuracy:9673"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -25386,20 +25406,20 @@
             8189,
             8190,
             8757,
-            9571,
-            9667,
-            10041,
-            10833,
-            10853,
-            11125,
-            12113,
-            12119,
-            12124,
-            12151,
-            12868,
-            13037,
-            14403,
-            15139
+            9572,
+            9668,
+            10042,
+            10834,
+            10854,
+            11126,
+            12148,
+            12154,
+            12159,
+            12186,
+            12903,
+            13072,
+            14438,
+            15174
           ]
         },
         "unitVerification": {
@@ -25431,12 +25451,12 @@
             "index.html:makeCard:7827",
             "index.html:makeCard:7900",
             "index.html:makeCard:7924",
-            "index.html:renderGuardTimingPlanner:10853",
-            "index.html:consecutiveProtectAttempts:12113",
-            "index.html:protectChainSuccessProbability:12119",
-            "index.html:renderOpponentGuardAssumption:12151",
-            "index.html:installNationalDex:14403",
-            "index.html:fixed45Render:15139"
+            "index.html:renderGuardTimingPlanner:10854",
+            "index.html:consecutiveProtectAttempts:12148",
+            "index.html:protectChainSuccessProbability:12154",
+            "index.html:renderOpponentGuardAssumption:12186",
+            "index.html:installNationalDex:14438",
+            "index.html:fixed45Render:15174"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -25542,7 +25562,7 @@
             5869,
             5874,
             8189,
-            10039
+            10040
           ]
         },
         "unitVerification": {
@@ -25595,11 +25615,11 @@
             7924,
             8189,
             8190,
-            10041,
-            10853,
-            12113,
-            12119,
-            12151
+            10042,
+            10854,
+            12148,
+            12154,
+            12186
           ]
         },
         "unitVerification": {
@@ -25626,10 +25646,10 @@
             "index.html:makeCard:7827",
             "index.html:makeCard:7900",
             "index.html:makeCard:7924",
-            "index.html:renderGuardTimingPlanner:10853",
-            "index.html:consecutiveProtectAttempts:12113",
-            "index.html:protectChainSuccessProbability:12119",
-            "index.html:renderOpponentGuardAssumption:12151"
+            "index.html:renderGuardTimingPlanner:10854",
+            "index.html:consecutiveProtectAttempts:12148",
+            "index.html:protectChainSuccessProbability:12154",
+            "index.html:renderOpponentGuardAssumption:12186"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -25869,7 +25889,7 @@
           "paths": [],
           "candidateSourceLines": [
             2738,
-            10046
+            10047
           ]
         },
         "unitVerification": {
@@ -26125,7 +26145,7 @@
           "candidateSourceLines": [
             2738,
             8819,
-            9572
+            9573
           ]
         },
         "unitVerification": {
@@ -26201,7 +26221,7 @@
           "candidateSourceLines": [
             2738,
             8733,
-            9521
+            9522
           ]
         },
         "unitVerification": {
@@ -26324,12 +26344,12 @@
             4817,
             8189,
             8611,
-            10039,
-            10148,
-            12463,
-            12542,
-            12547,
-            12578
+            10040,
+            10149,
+            12498,
+            12577,
+            12582,
+            12613
           ]
         },
         "unitVerification": {
@@ -26351,11 +26371,11 @@
             "index.html:opponentSelectionRoleProfile:4353",
             "index.html:ownSelectionRoleProfile:4817",
             "index.html:actionForMon:8611",
-            "index.html:fallbackNonSwitchAction:10148",
-            "index.html:opponentScenarioAdjustment:12463",
-            "index.html:opponentWinConditions:12542",
-            "index.html:opponentWinConditions:12547",
-            "index.html:opponentWinConditions:12578"
+            "index.html:fallbackNonSwitchAction:10149",
+            "index.html:opponentScenarioAdjustment:12498",
+            "index.html:opponentWinConditions:12577",
+            "index.html:opponentWinConditions:12582",
+            "index.html:opponentWinConditions:12613"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -26560,9 +26580,9 @@
           "candidateSourceLines": [
             2738,
             8788,
-            9573,
-            11174,
-            11184
+            9574,
+            11175,
+            11185
           ]
         },
         "unitVerification": {
@@ -26579,7 +26599,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:estimatedMoveHitChance:11184"
+            "index.html:estimatedMoveHitChance:11185"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -27093,7 +27113,7 @@
           "candidateSourceLines": [
             2738,
             8772,
-            9574
+            9575
           ]
         },
         "unitVerification": {
@@ -27216,7 +27236,7 @@
             2686,
             2738,
             8793,
-            9575
+            9576
           ]
         },
         "unitVerification": {
@@ -27266,12 +27286,12 @@
             4817,
             8189,
             8611,
-            10039,
-            10148,
-            12463,
-            12542,
-            12547,
-            12578
+            10040,
+            10149,
+            12498,
+            12577,
+            12582,
+            12613
           ]
         },
         "unitVerification": {
@@ -27292,11 +27312,11 @@
             "index.html:opponentSelectionRoleProfile:4353",
             "index.html:ownSelectionRoleProfile:4817",
             "index.html:actionForMon:8611",
-            "index.html:fallbackNonSwitchAction:10148",
-            "index.html:opponentScenarioAdjustment:12463",
-            "index.html:opponentWinConditions:12542",
-            "index.html:opponentWinConditions:12547",
-            "index.html:opponentWinConditions:12578"
+            "index.html:fallbackNonSwitchAction:10149",
+            "index.html:opponentScenarioAdjustment:12498",
+            "index.html:opponentWinConditions:12577",
+            "index.html:opponentWinConditions:12582",
+            "index.html:opponentWinConditions:12613"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -27357,7 +27377,7 @@
           "candidateSourceLines": [
             2738,
             8820,
-            9576
+            9577
           ]
         },
         "unitVerification": {
@@ -27397,7 +27417,7 @@
           "candidateSourceLines": [
             2738,
             8849,
-            9577
+            9578
           ]
         },
         "unitVerification": {
@@ -27437,8 +27457,8 @@
           "candidateSourceLines": [
             2738,
             8783,
-            9578,
-            11340
+            9579,
+            11342
           ]
         },
         "unitVerification": {
@@ -27632,13 +27652,13 @@
             8189,
             8611,
             8760,
-            9579,
-            10039,
-            10148,
-            12463,
-            12542,
-            12547,
-            12578
+            9580,
+            10040,
+            10149,
+            12498,
+            12577,
+            12582,
+            12613
           ]
         },
         "unitVerification": {
@@ -27659,11 +27679,11 @@
             "index.html:opponentSelectionRoleProfile:4353",
             "index.html:ownSelectionRoleProfile:4817",
             "index.html:actionForMon:8611",
-            "index.html:fallbackNonSwitchAction:10148",
-            "index.html:opponentScenarioAdjustment:12463",
-            "index.html:opponentWinConditions:12542",
-            "index.html:opponentWinConditions:12547",
-            "index.html:opponentWinConditions:12578"
+            "index.html:fallbackNonSwitchAction:10149",
+            "index.html:opponentScenarioAdjustment:12498",
+            "index.html:opponentWinConditions:12577",
+            "index.html:opponentWinConditions:12582",
+            "index.html:opponentWinConditions:12613"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -27724,7 +27744,7 @@
           "candidateSourceLines": [
             2738,
             8770,
-            9580
+            9581
           ]
         },
         "unitVerification": {
@@ -27945,8 +27965,8 @@
             2738,
             8216,
             8777,
-            9581,
-            10707
+            9582,
+            10708
           ]
         },
         "unitVerification": {
@@ -27963,7 +27983,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:movePriorityValue:10707"
+            "index.html:movePriorityValue:10708"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -28060,7 +28080,7 @@
           "candidateSourceLines": [
             2738,
             8821,
-            9582
+            9583
           ]
         },
         "unitVerification": {
@@ -28172,8 +28192,8 @@
           "candidateSourceLines": [
             2738,
             8822,
-            9040,
-            9583
+            9041,
+            9584
           ]
         },
         "unitVerification": {
@@ -28190,7 +28210,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:resolveMoveForDamage:9040"
+            "index.html:resolveMoveForDamage:9041"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -28365,10 +28385,10 @@
             3744,
             4356,
             8189,
-            10042,
-            12378,
-            12639,
-            12815
+            10043,
+            12413,
+            12674,
+            12850
           ]
         },
         "unitVerification": {
@@ -28387,9 +28407,9 @@
           "executableReferences": [
             "index.html:opponentAttackCandidates:3744",
             "index.html:opponentSelectionRoleProfile:4356",
-            "index.html:myActionCandidatesFor:12378",
-            "index.html:winConditionActionBlockScore:12639",
-            "index.html:recommendationActionIsLegal:12815"
+            "index.html:myActionCandidatesFor:12413",
+            "index.html:winConditionActionBlockScore:12674",
+            "index.html:recommendationActionIsLegal:12850"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -28513,8 +28533,8 @@
             2283,
             2738,
             8823,
-            9084,
-            9584
+            9085,
+            9585
           ]
         },
         "unitVerification": {
@@ -28531,7 +28551,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:resolveMoveForDamage:9084"
+            "index.html:resolveMoveForDamage:9085"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -28561,8 +28581,8 @@
             2687,
             2738,
             8747,
-            9585,
-            11186
+            9586,
+            11187
           ]
         },
         "unitVerification": {
@@ -28587,7 +28607,7 @@
           "assessmentScope": "Confirmed successful self-rank changes and White Herb/Simple/Contrary. Does not certify all damage, miss, protection or format legality cases.",
           "executableReferences": [
             "index.html:opponentCandidateOrder:2687",
-            "index.html:estimatedMoveHitChance:11186"
+            "index.html:estimatedMoveHitChance:11187"
           ],
           "tests": [
             "test-item-lifecycle.js",
@@ -28618,10 +28638,10 @@
             2684,
             2738,
             8781,
-            9023,
-            9027,
-            9033,
-            9586
+            9024,
+            9028,
+            9034,
+            9587
           ]
         },
         "unitVerification": {
@@ -28645,8 +28665,8 @@
           "assessmentScope": "Existing effective-weather type and base power, Cloud Nine/Air Lock suppression; complete damage remains unverified.",
           "executableReferences": [
             "index.html:opponentCandidateOrder:2684",
-            "index.html:resolveMoveForDamage:9023",
-            "index.html:resolveMoveForDamage:9027"
+            "index.html:resolveMoveForDamage:9024",
+            "index.html:resolveMoveForDamage:9028"
           ],
           "tests": [
             "test-weather-ball-effective-weather.js"
@@ -28673,9 +28693,9 @@
           "candidateSourceLines": [
             2738,
             8775,
-            9587,
-            11174,
-            11184
+            9588,
+            11175,
+            11185
           ]
         },
         "unitVerification": {
@@ -28692,7 +28712,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:estimatedMoveHitChance:11184"
+            "index.html:estimatedMoveHitChance:11185"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -28718,9 +28738,9 @@
             2257,
             2738,
             8744,
-            9588,
-            11173,
-            11183
+            9589,
+            11174,
+            11184
           ]
         },
         "unitVerification": {
@@ -28737,7 +28757,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:estimatedMoveHitChance:11183"
+            "index.html:estimatedMoveHitChance:11184"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -28834,7 +28854,7 @@
           "candidateSourceLines": [
             2738,
             8824,
-            9589
+            9590
           ]
         },
         "unitVerification": {
@@ -28910,7 +28930,7 @@
           "candidateSourceLines": [
             2738,
             8825,
-            9590
+            9591
           ]
         },
         "unitVerification": {
@@ -28987,7 +29007,7 @@
           ],
           "candidateSourceLines": [
             5652,
-            9025
+            9026
           ]
         },
         "unitVerification": {
@@ -29065,7 +29085,7 @@
             2738,
             5637,
             8791,
-            9591
+            9592
           ]
         },
         "unitVerification": {
@@ -29384,7 +29404,7 @@
           "status": "requires-review",
           "paths": [],
           "candidateSourceLines": [
-            10094
+            10095
           ]
         },
         "unitVerification": {
@@ -29653,7 +29673,7 @@
           "candidateSourceLines": [
             2738,
             8851,
-            9592
+            9593
           ]
         },
         "unitVerification": {
@@ -29733,7 +29753,7 @@
             8189,
             8192,
             8826,
-            9593
+            9594
           ]
         },
         "unitVerification": {
@@ -29847,10 +29867,10 @@
           "candidateSourceLines": [
             6450,
             7205,
-            14630,
-            14634,
-            15115,
-            15163
+            14665,
+            14669,
+            15150,
+            15198
           ]
         },
         "unitVerification": {
@@ -29869,10 +29889,10 @@
           "executableReferences": [
             "index.html:applyConfirmedClearSmog:6450",
             "index.html:commitTurnActions:7205",
-            "index.html:pendingObservedTargetEffect:14630",
-            "index.html:markObservedEffectReviewed:14634",
-            "index.html:fixed45Render:15115",
-            "index.html:fixed45Render:15163"
+            "index.html:pendingObservedTargetEffect:14665",
+            "index.html:markObservedEffectReviewed:14669",
+            "index.html:fixed45Render:15150",
+            "index.html:fixed45Render:15198"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -29972,8 +29992,8 @@
             8216,
             8360,
             8743,
-            9594,
-            10708
+            9595,
+            10709
           ]
         },
         "unitVerification": {
@@ -29991,7 +30011,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:priorityMoveIsActive:8360",
-            "index.html:movePriorityValue:10708"
+            "index.html:movePriorityValue:10709"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -30017,8 +30037,8 @@
           ],
           "candidateSourceLines": [
             2738,
-            10045,
-            11316
+            10046,
+            11318
           ]
         },
         "unitVerification": {
@@ -30035,7 +30055,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:estimatedEndTurnResidual:11316"
+            "index.html:estimatedEndTurnResidual:11318"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -30281,8 +30301,8 @@
             2738,
             8189,
             8611,
-            10039,
-            10148
+            10040,
+            10149
           ]
         },
         "unitVerification": {
@@ -30300,7 +30320,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:actionForMon:8611",
-            "index.html:fallbackNonSwitchAction:10148"
+            "index.html:fallbackNonSwitchAction:10149"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -30437,8 +30457,8 @@
             2261,
             2738,
             8753,
-            9595,
-            11186
+            9596,
+            11187
           ]
         },
         "unitVerification": {
@@ -30462,7 +30482,7 @@
           "classification": "部分実装",
           "assessmentScope": "Confirmed successful self-rank changes and White Herb/Simple/Contrary. Does not certify all damage, miss, protection or format legality cases.",
           "executableReferences": [
-            "index.html:estimatedMoveHitChance:11186"
+            "index.html:estimatedMoveHitChance:11187"
           ],
           "tests": [
             "test-item-lifecycle.js",
@@ -30598,7 +30618,7 @@
           "candidateSourceLines": [
             2738,
             8827,
-            9596
+            9597
           ]
         },
         "unitVerification": {
@@ -30674,7 +30694,7 @@
           "candidateSourceLines": [
             2738,
             8828,
-            9597
+            9598
           ]
         },
         "unitVerification": {
@@ -30714,7 +30734,7 @@
           "candidateSourceLines": [
             2738,
             8829,
-            9598
+            9599
           ]
         },
         "unitVerification": {
@@ -30754,7 +30774,7 @@
           "candidateSourceLines": [
             2738,
             8830,
-            9599
+            9600
           ]
         },
         "unitVerification": {
@@ -30795,8 +30815,8 @@
           ],
           "candidateSourceLines": [
             8376,
-            10733,
-            13000
+            10734,
+            13035
           ]
         },
         "unitVerification": {
@@ -30836,7 +30856,7 @@
           "candidateSourceLines": [
             2738,
             8189,
-            10045
+            10046
           ]
         },
         "unitVerification": {
@@ -31056,7 +31076,7 @@
           "candidateSourceLines": [
             2738,
             8850,
-            9600
+            9601
           ]
         },
         "unitVerification": {
@@ -31169,7 +31189,7 @@
             2261,
             2738,
             8754,
-            9601
+            9602
           ]
         },
         "unitVerification": {
@@ -31424,7 +31444,7 @@
           "paths": [],
           "candidateSourceLines": [
             2738,
-            10045
+            10046
           ]
         },
         "unitVerification": {
@@ -31465,7 +31485,7 @@
             2738,
             5963,
             8831,
-            9602
+            9603
           ]
         },
         "unitVerification": {
@@ -31508,7 +31528,7 @@
           "candidateSourceLines": [
             2738,
             8732,
-            9520
+            9521
           ]
         },
         "unitVerification": {
@@ -31882,10 +31902,10 @@
           "candidateSourceLines": [
             6450,
             7205,
-            14630,
-            14634,
-            15115,
-            15163
+            14665,
+            14669,
+            15150,
+            15198
           ]
         },
         "unitVerification": {
@@ -31925,7 +31945,7 @@
           "candidateSourceLines": [
             2738,
             8790,
-            9603
+            9604
           ]
         },
         "unitVerification": {
@@ -31970,9 +31990,9 @@
             3010,
             3064,
             8189,
-            10040,
-            12578,
-            12806
+            10041,
+            12613,
+            12841
           ]
         },
         "unitVerification": {
@@ -31991,8 +32011,8 @@
           "executableReferences": [
             "index.html:clangorousSoulCost:2918",
             "index.html:projectTacticalTurn:3009",
-            "index.html:opponentWinConditions:12578",
-            "index.html:recommendationActionIsLegal:12806"
+            "index.html:opponentWinConditions:12613",
+            "index.html:recommendationActionIsLegal:12841"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -32053,7 +32073,7 @@
           "candidateSourceLines": [
             2738,
             8847,
-            9604
+            9605
           ]
         },
         "unitVerification": {
@@ -32273,7 +32293,7 @@
           "candidateSourceLines": [
             2738,
             8832,
-            9605
+            9606
           ]
         },
         "unitVerification": {
@@ -32350,7 +32370,7 @@
             2738,
             5961,
             8833,
-            9606
+            9607
           ]
         },
         "unitVerification": {
@@ -32571,7 +32591,7 @@
             2738,
             5962,
             8834,
-            9607
+            9608
           ]
         },
         "unitVerification": {
@@ -32867,16 +32887,16 @@
             8202,
             8467,
             8611,
-            10039,
-            10148,
-            10710,
-            10814,
-            11940,
-            12463,
-            12540,
-            12547,
-            12578,
-            12667
+            10040,
+            10149,
+            10711,
+            10815,
+            11975,
+            12498,
+            12575,
+            12582,
+            12613,
+            12702
           ]
         },
         "unitVerification": {
@@ -32994,16 +33014,16 @@
             8202,
             8467,
             8611,
-            10039,
-            10148,
-            10710,
-            10814,
-            11940,
-            12463,
-            12540,
-            12547,
-            12578,
-            12667
+            10040,
+            10149,
+            10711,
+            10815,
+            11975,
+            12498,
+            12575,
+            12582,
+            12613,
+            12702
           ]
         },
         "unitVerification": {
@@ -33024,14 +33044,14 @@
             "index.html:threatInfo:8202",
             "index.html:preservationValue:8467",
             "index.html:actionForMon:8611",
-            "index.html:fallbackNonSwitchAction:10148",
-            "index.html:movePriorityValue:10710",
-            "index.html:nextTurnUtilityValue:11940",
-            "index.html:opponentScenarioAdjustment:12463",
-            "index.html:opponentWinConditions:12540",
-            "index.html:opponentWinConditions:12547",
-            "index.html:opponentWinConditions:12578",
-            "index.html:winConditionActionBlockScore:12667",
+            "index.html:fallbackNonSwitchAction:10149",
+            "index.html:movePriorityValue:10711",
+            "index.html:nextTurnUtilityValue:11975",
+            "index.html:opponentScenarioAdjustment:12498",
+            "index.html:opponentWinConditions:12575",
+            "index.html:opponentWinConditions:12582",
+            "index.html:opponentWinConditions:12613",
+            "index.html:winConditionActionBlockScore:12702",
             "turn-order-effects.js:analyse:23"
           ],
           "tests": [],
@@ -33093,7 +33113,7 @@
           "candidateSourceLines": [
             2738,
             8765,
-            9608
+            9609
           ]
         },
         "unitVerification": {
@@ -33229,10 +33249,10 @@
             5717,
             8694,
             8755,
-            8923,
-            9609,
-            9639,
-            11180
+            8924,
+            9610,
+            9640,
+            11181
           ]
         },
         "unitVerification": {
@@ -33249,8 +33269,8 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9639",
-            "index.html:estimatedMoveHitChance:11180"
+            "index.html:effectiveMoveAccuracy:9640",
+            "index.html:estimatedMoveHitChance:11181"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -33347,7 +33367,7 @@
           "candidateSourceLines": [
             2738,
             8835,
-            9610
+            9611
           ]
         },
         "unitVerification": {
@@ -33423,7 +33443,7 @@
           "candidateSourceLines": [
             2738,
             8836,
-            9611
+            9612
           ]
         },
         "unitVerification": {
@@ -33463,7 +33483,7 @@
           "candidateSourceLines": [
             2738,
             8837,
-            9612
+            9613
           ]
         },
         "unitVerification": {
@@ -33935,7 +33955,7 @@
           "candidateSourceLines": [
             2738,
             8838,
-            9613
+            9614
           ]
         },
         "unitVerification": {
@@ -33977,7 +33997,7 @@
             2685,
             2738,
             8751,
-            9614
+            9615
           ]
         },
         "unitVerification": {
@@ -34317,10 +34337,10 @@
             3300,
             3716,
             8189,
-            10040,
-            12357,
-            12578,
-            12807
+            10041,
+            12392,
+            12613,
+            12842
           ]
         },
         "unitVerification": {
@@ -34345,9 +34365,9 @@
             "index.html:tacticalPlanAssessment:3279",
             "index.html:tacticalPlanAssessment:3300",
             "index.html:opponentAttackCandidates:3716",
-            "index.html:myActionCandidatesFor:12357",
-            "index.html:opponentWinConditions:12578",
-            "index.html:recommendationActionIsLegal:12807"
+            "index.html:myActionCandidatesFor:12392",
+            "index.html:opponentWinConditions:12613",
+            "index.html:recommendationActionIsLegal:12842"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -34521,8 +34541,8 @@
             4356,
             6588,
             8839,
-            9615,
-            12378
+            9616,
+            12413
           ]
         },
         "unitVerification": {
@@ -34542,7 +34562,7 @@
             "index.html:opponentCandidateOrder:2686",
             "index.html:opponentSelectionRoleProfile:4356",
             "index.html:applyObservedMoveEffects:6588",
-            "index.html:myActionCandidatesFor:12378"
+            "index.html:myActionCandidatesFor:12413"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -34603,7 +34623,7 @@
           "candidateSourceLines": [
             2738,
             8766,
-            9616
+            9617
           ]
         },
         "unitVerification": {
@@ -34679,7 +34699,7 @@
           "candidateSourceLines": [
             2738,
             8774,
-            9617
+            9618
           ]
         },
         "unitVerification": {
@@ -34910,11 +34930,11 @@
             7827,
             7900,
             7924,
-            10041,
-            10705,
-            10853,
-            11210,
-            12151
+            10042,
+            10706,
+            10854,
+            11211,
+            12186
           ]
         },
         "unitVerification": {
@@ -34940,10 +34960,10 @@
             "index.html:makeCard:7827",
             "index.html:makeCard:7900",
             "index.html:makeCard:7924",
-            "index.html:movePriorityValue:10705",
-            "index.html:renderGuardTimingPlanner:10853",
-            "index.html:scenarioHitAvailability:11210",
-            "index.html:renderOpponentGuardAssumption:12151"
+            "index.html:movePriorityValue:10706",
+            "index.html:renderGuardTimingPlanner:10854",
+            "index.html:scenarioHitAvailability:11211",
+            "index.html:renderOpponentGuardAssumption:12186"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -35006,8 +35026,8 @@
             2687,
             2738,
             8748,
-            9618,
-            11186
+            9619,
+            11187
           ]
         },
         "unitVerification": {
@@ -35025,7 +35045,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:opponentCandidateOrder:2687",
-            "index.html:estimatedMoveHitChance:11186"
+            "index.html:estimatedMoveHitChance:11187"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -35053,10 +35073,10 @@
             6050,
             8216,
             8840,
-            9619,
-            10706,
-            10846,
-            10847
+            9620,
+            10707,
+            10847,
+            10848
           ]
         },
         "unitVerification": {
@@ -35075,9 +35095,9 @@
           "executableReferences": [
             "index.html:guardMoveResolution:5990",
             "index.html:removeTurnGuardByFeint:6050",
-            "index.html:movePriorityValue:10706",
-            "index.html:renderGuardTimingPlanner:10846",
-            "index.html:renderGuardTimingPlanner:10847"
+            "index.html:movePriorityValue:10707",
+            "index.html:renderGuardTimingPlanner:10847",
+            "index.html:renderGuardTimingPlanner:10848"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -35405,9 +35425,9 @@
             2259,
             2738,
             8749,
-            9620,
-            11173,
-            11183
+            9621,
+            11174,
+            11184
           ]
         },
         "unitVerification": {
@@ -35424,7 +35444,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:estimatedMoveHitChance:11183"
+            "index.html:estimatedMoveHitChance:11184"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -35701,8 +35721,8 @@
           "candidateSourceLines": [
             2738,
             8731,
-            9519,
-            11341
+            9520,
+            11343
           ]
         },
         "unitVerification": {
@@ -35740,7 +35760,8 @@
           "status": "requires-review",
           "paths": [],
           "candidateSourceLines": [
-            11341
+            11343,
+            11562
           ]
         },
         "unitVerification": {
@@ -35925,7 +35946,7 @@
           ],
           "candidateSourceLines": [
             8727,
-            9079
+            9080
           ]
         },
         "unitVerification": {
@@ -35948,7 +35969,7 @@
           "classification": "部分実装",
           "assessmentScope": "Existing variable HP power and Body Press defense-source flags only; complete damage and legality remain unverified.",
           "executableReferences": [
-            "index.html:resolveMoveForDamage:9079"
+            "index.html:resolveMoveForDamage:9080"
           ],
           "tests": [
             "test-torkoal-core.js"
@@ -36015,7 +36036,7 @@
             5637,
             8192,
             8739,
-            9621
+            9622
           ]
         },
         "unitVerification": {
@@ -36163,7 +36184,7 @@
           "status": "requires-review",
           "paths": [],
           "candidateSourceLines": [
-            9244
+            9245
           ]
         },
         "unitVerification": {
@@ -36180,7 +36201,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:terrainDamageMod:9244"
+            "index.html:terrainDamageMod:9245"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -36205,7 +36226,7 @@
           "candidateSourceLines": [
             2738,
             8841,
-            9622
+            9623
           ]
         },
         "unitVerification": {
@@ -36247,7 +36268,7 @@
             2738,
             6170,
             8842,
-            9623
+            9624
           ]
         },
         "unitVerification": {
@@ -36366,7 +36387,7 @@
           ],
           "candidateSourceLines": [
             7606,
-            13607
+            13642
           ]
         },
         "unitVerification": {
@@ -36779,7 +36800,7 @@
           "candidateSourceLines": [
             2738,
             8785,
-            9624
+            9625
           ]
         },
         "unitVerification": {
@@ -37162,8 +37183,8 @@
             2738,
             5637,
             8729,
-            9024,
-            9517
+            9025,
+            9518
           ]
         },
         "unitVerification": {
@@ -37180,7 +37201,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:resolveMoveForDamage:9024"
+            "index.html:resolveMoveForDamage:9025"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -37205,7 +37226,7 @@
           "candidateSourceLines": [
             2738,
             8792,
-            9625
+            9626
           ]
         },
         "unitVerification": {
@@ -37286,7 +37307,7 @@
             2738,
             3745,
             8189,
-            10044
+            10045
           ]
         },
         "unitVerification": {
@@ -37498,7 +37519,7 @@
             2738,
             6170,
             8730,
-            9518
+            9519
           ]
         },
         "unitVerification": {
@@ -37819,20 +37840,20 @@
             7900,
             7924,
             8189,
-            10041,
-            10613,
-            10617,
-            10620,
-            10686,
+            10042,
+            10614,
+            10618,
+            10621,
             10687,
             10688,
             10689,
-            10705,
-            10853,
-            11209,
-            12151,
-            12449,
-            12550
+            10690,
+            10706,
+            10854,
+            11210,
+            12186,
+            12484,
+            12585
           ]
         },
         "unitVerification": {
@@ -37861,15 +37882,15 @@
             "index.html:makeCard:7827",
             "index.html:makeCard:7900",
             "index.html:makeCard:7924",
-            "index.html:wideGuardRiskForEntry:10613",
-            "index.html:wideGuardRiskForEntry:10617",
-            "index.html:wideGuardRiskForEntry:10620",
-            "index.html:movePriorityValue:10705",
-            "index.html:renderGuardTimingPlanner:10853",
-            "index.html:scenarioHitAvailability:11209",
-            "index.html:renderOpponentGuardAssumption:12151",
-            "index.html:opponentScenarioAdjustment:12449",
-            "index.html:opponentWinConditions:12550"
+            "index.html:wideGuardRiskForEntry:10614",
+            "index.html:wideGuardRiskForEntry:10618",
+            "index.html:wideGuardRiskForEntry:10621",
+            "index.html:movePriorityValue:10706",
+            "index.html:renderGuardTimingPlanner:10854",
+            "index.html:scenarioHitAvailability:11210",
+            "index.html:renderOpponentGuardAssumption:12186",
+            "index.html:opponentScenarioAdjustment:12484",
+            "index.html:opponentWinConditions:12585"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -37896,7 +37917,7 @@
             2685,
             2738,
             8843,
-            9626
+            9627
           ]
         },
         "unitVerification": {
@@ -37939,7 +37960,7 @@
             2738,
             6588,
             8844,
-            9627
+            9628
           ]
         },
         "unitVerification": {
@@ -37982,9 +38003,9 @@
             2738,
             5637,
             8845,
-            9628,
-            11174,
-            11184
+            9629,
+            11175,
+            11185
           ]
         },
         "unitVerification": {
@@ -38001,7 +38022,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:estimatedMoveHitChance:11184"
+            "index.html:estimatedMoveHitChance:11185"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -38125,10 +38146,10 @@
             2270,
             2283,
             4051,
-            9210,
-            11262,
-            11611,
-            14391
+            9211,
+            11264,
+            11646,
+            14426
           ]
         },
         "unitVerification": {
@@ -38152,9 +38173,9 @@
           "classification": "部分実装",
           "assessmentScope": "331,776 real outgoing/incoming comparisons across 10,368 fixed-stat common-modifier scenarios. Correct power/stat/final phases, screens/burn/terrain/rain/sun. No all-species/stat/ability/full-match certification.",
           "executableReferences": [
-            "index.html:itemDamageMod:9210",
-            "index.html:projectedSelfDamageForAction:11262",
-            "index.html:installNationalDex:14391"
+            "index.html:itemDamageMod:9211",
+            "index.html:projectedSelfDamageForAction:11264",
+            "index.html:installNationalDex:14426"
           ],
           "tests": [
             "test-tournament-damage-differential.js",
@@ -38330,12 +38351,12 @@
             6135,
             6137,
             7328,
-            9293,
-            9298,
-            9490,
+            9294,
+            9299,
             9491,
-            10566,
-            14391
+            9492,
+            10567,
+            14426
           ]
         },
         "unitVerification": {
@@ -38356,12 +38377,12 @@
             "index.html:resolveHitSurvival:5978",
             "index.html:applyConfirmedMultiHit:6135",
             "index.html:confirmedFocusSash:7328",
-            "index.html:koSurvivalAssessment:9293",
-            "index.html:koSurvivalAssessment:9298",
-            "index.html:multiHitKOEstimate:9490",
+            "index.html:koSurvivalAssessment:9294",
+            "index.html:koSurvivalAssessment:9299",
             "index.html:multiHitKOEstimate:9491",
-            "index.html:sequentialFocusDamage:10566",
-            "index.html:installNationalDex:14391"
+            "index.html:multiHitKOEstimate:9492",
+            "index.html:sequentialFocusDamage:10567",
+            "index.html:installNationalDex:14426"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -38427,7 +38448,7 @@
           "candidateSourceLines": [
             2266,
             4051,
-            9214
+            9215
           ]
         },
         "unitVerification": {
@@ -38451,7 +38472,7 @@
           "classification": "部分実装",
           "assessmentScope": "331,776 real outgoing/incoming comparisons across 10,368 fixed-stat common-modifier scenarios. Correct power/stat/final phases, screens/burn/terrain/rain/sun. No all-species/stat/ability/full-match certification.",
           "executableReferences": [
-            "index.html:itemDamageMod:9214"
+            "index.html:itemDamageMod:9215"
           ],
           "tests": [
             "test-tournament-damage-differential.js",
@@ -38555,7 +38576,7 @@
           "status": "requires-review",
           "paths": [],
           "candidateSourceLines": [
-            11349
+            11351
           ]
         },
         "unitVerification": {
@@ -38572,7 +38593,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:forecastGroundedForTerrain:11349"
+            "index.html:forecastGroundedForTerrain:11351"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -38597,7 +38618,7 @@
           "candidateSourceLines": [
             2271,
             4051,
-            9213
+            9214
           ]
         },
         "unitVerification": {
@@ -38614,7 +38635,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:itemDamageMod:9213"
+            "index.html:itemDamageMod:9214"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -38674,7 +38695,7 @@
           "paths": [],
           "candidateSourceLines": [
             4051,
-            9660
+            9661
           ]
         },
         "unitVerification": {
@@ -38691,7 +38712,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9660"
+            "index.html:effectiveMoveAccuracy:9661"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -38719,7 +38740,7 @@
             2680,
             4051,
             4128,
-            14391
+            14426
           ]
         },
         "unitVerification": {
@@ -38745,7 +38766,7 @@
           "executableReferences": [
             "index.html:opponentCandidateOrder:2680",
             "index.html:fieldSpeed:4128",
-            "index.html:installNationalDex:14391"
+            "index.html:installNationalDex:14426"
           ],
           "tests": [
             "test-tournament-speed-differential.js",
@@ -38976,7 +38997,7 @@
           "paths": [],
           "candidateSourceLines": [
             4051,
-            9215
+            9216
           ]
         },
         "unitVerification": {
@@ -38993,7 +39014,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:itemDamageMod:9215"
+            "index.html:itemDamageMod:9216"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -39017,7 +39038,7 @@
           "paths": [],
           "candidateSourceLines": [
             4051,
-            9217
+            9218
           ]
         },
         "unitVerification": {
@@ -39034,7 +39055,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:itemDamageMod:9217"
+            "index.html:itemDamageMod:9218"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -39096,9 +39117,9 @@
           "paths": [],
           "candidateSourceLines": [
             8163,
-            10753,
-            10812,
-            10813
+            10754,
+            10813,
+            10814
           ]
         },
         "unitVerification": {
@@ -39116,8 +39137,8 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:activeOrderCaveats:8163",
-            "index.html:orderEffectProfile:10753",
-            "index.html:guardTimingCompare:10812",
+            "index.html:orderEffectProfile:10754",
+            "index.html:guardTimingCompare:10813",
             "turn-order-effects.js:analyse:21"
           ],
           "tests": [],
@@ -39180,8 +39201,8 @@
           "paths": [],
           "candidateSourceLines": [
             4051,
-            14043,
-            14391
+            14078,
+            14426
           ]
         },
         "unitVerification": {
@@ -39198,8 +39219,8 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:recordEndTurnResidualProjections:14043",
-            "index.html:installNationalDex:14391",
+            "index.html:recordEndTurnResidualProjections:14078",
+            "index.html:installNationalDex:14426",
             "effect-engine.js:residualProjection:172"
           ],
           "tests": [],
@@ -39618,7 +39639,7 @@
           "status": "requires-review",
           "paths": [],
           "candidateSourceLines": [
-            11350
+            11352
           ]
         },
         "unitVerification": {
@@ -39635,7 +39656,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:forecastGroundedForTerrain:11350"
+            "index.html:forecastGroundedForTerrain:11352"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -39699,7 +39720,7 @@
             "index.html:opponentDamageEstimateAgainstMy"
           ],
           "candidateSourceLines": [
-            9211
+            9212
           ]
         },
         "unitVerification": {
@@ -39723,7 +39744,7 @@
           "classification": "部分実装",
           "assessmentScope": "331,776 real outgoing/incoming comparisons across 10,368 fixed-stat common-modifier scenarios. Correct power/stat/final phases, screens/burn/terrain/rain/sun. No all-species/stat/ability/full-match certification.",
           "executableReferences": [
-            "index.html:itemDamageMod:9211"
+            "index.html:itemDamageMod:9212"
           ],
           "tests": [
             "test-tournament-damage-differential.js",
@@ -39786,7 +39807,7 @@
           "paths": [],
           "candidateSourceLines": [
             4051,
-            9216
+            9217
           ]
         },
         "unitVerification": {
@@ -39803,7 +39824,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:itemDamageMod:9216"
+            "index.html:itemDamageMod:9217"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -39827,7 +39848,7 @@
           "paths": [],
           "candidateSourceLines": [
             4051,
-            9218
+            9219
           ]
         },
         "unitVerification": {
@@ -39844,7 +39865,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:itemDamageMod:9218"
+            "index.html:itemDamageMod:9219"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -40320,7 +40341,7 @@
           "candidateSourceLines": [
             2268,
             4051,
-            14391
+            14426
           ]
         },
         "unitVerification": {
@@ -40337,7 +40358,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:installNationalDex:14391"
+            "index.html:installNationalDex:14426"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -42334,7 +42355,7 @@
           "candidateSourceLines": [
             2283,
             4051,
-            9303
+            9304
           ]
         },
         "unitVerification": {
@@ -42358,7 +42379,7 @@
           "classification": "部分実装",
           "assessmentScope": "Only Chople/Colbur: 16,384 general Gen9 damage/consumption comparisons, Unnerve/Ripen/Substitute/bypass/consumed, screens and Life Orb. Actual browser focus consumes only once; forecast read-only, confirmed hit consumption and undo/reload. Unknown opponent Unnerve leaves reduction unapplied. Other berries and whole battle oracle unverified.",
           "executableReferences": [
-            "index.html:defensiveBerryForDamage:9303",
+            "index.html:defensiveBerryForDamage:9304",
             "battle-core.js:resistBerry:49"
           ],
           "tests": [
@@ -42908,10 +42929,10 @@
           "paths": [],
           "candidateSourceLines": [
             2163,
-            9661,
-            9663,
+            9662,
             9664,
-            9665
+            9665,
+            9666
           ]
         },
         "unitVerification": {
@@ -42928,7 +42949,7 @@
           "classification": "要調査",
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
-            "index.html:effectiveMoveAccuracy:9661"
+            "index.html:effectiveMoveAccuracy:9662"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -43661,7 +43682,7 @@
           "candidateSourceLines": [
             3001,
             4051,
-            12616
+            12651
           ]
         },
         "unitVerification": {
@@ -43679,7 +43700,7 @@
           "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
           "executableReferences": [
             "index.html:projectTacticalTurn:3001",
-            "index.html:disruptionCanAffect:12616"
+            "index.html:disruptionCanAffect:12651"
           ],
           "tests": [],
           "scopedTestsPassed": false,
@@ -43926,7 +43947,7 @@
           ],
           "candidateSourceLines": [
             4051,
-            9303
+            9304
           ]
         },
         "unitVerification": {
@@ -43950,7 +43971,7 @@
           "classification": "部分実装",
           "assessmentScope": "Only Chople/Colbur: 16,384 general Gen9 damage/consumption comparisons, Unnerve/Ripen/Substitute/bypass/consumed, screens and Life Orb. Actual browser focus consumes only once; forecast read-only, confirmed hit consumption and undo/reload. Unknown opponent Unnerve leaves reduction unapplied. Other berries and whole battle oracle unverified.",
           "executableReferences": [
-            "index.html:defensiveBerryForDamage:9303",
+            "index.html:defensiveBerryForDamage:9304",
             "battle-core.js:resistBerry:49"
           ],
           "tests": [
@@ -45161,9 +45182,9 @@
             5662,
             5700,
             8679,
-            8912,
-            11353,
-            14126
+            8913,
+            11355,
+            14161
           ]
         },
         "unitVerification": {
@@ -45223,9 +45244,9 @@
             5662,
             5700,
             8679,
-            8912,
-            11353,
-            14126
+            8913,
+            11355,
+            14161
           ]
         },
         "unitVerification": {
@@ -45246,7 +45267,7 @@
           "classification": "部分実装",
           "assessmentScope": "Generic transition on 82 inherited catalog forms: pre/post name, ability, one per side, matching own stone, KO/bench rejection, failed-save rollback and retry. Independent form stats, legal stones and all post-ability mechanics unverified. Additional Magic Room and Klutz possession cases on every catalog form, 574 total generic scenarios.",
           "executableReferences": [
-            "index.html:forecastGroundedForTerrain:11353"
+            "index.html:forecastGroundedForTerrain:11355"
           ],
           "tests": [
             "test-mega-transactions.js"
@@ -45518,8 +45539,8 @@
             5666,
             5704,
             8683,
-            8916,
-            14129
+            8917,
+            14164
           ]
         },
         "unitVerification": {
@@ -45671,8 +45692,8 @@
             5668,
             5706,
             8685,
-            8918,
-            14130
+            8919,
+            14165
           ]
         },
         "unitVerification": {
@@ -45825,8 +45846,8 @@
             5466,
             5557,
             8717,
-            8929,
-            14134
+            8930,
+            14169
           ]
         },
         "unitVerification": {
@@ -47177,8 +47198,8 @@
             5664,
             5702,
             8681,
-            8914,
-            14128
+            8915,
+            14163
           ]
         },
         "unitVerification": {
@@ -47567,8 +47588,8 @@
             5676,
             5712,
             8693,
-            8923,
-            14132
+            8924,
+            14167
           ]
         },
         "unitVerification": {
@@ -47618,7 +47639,7 @@
             "index.html:megaEvolve"
           ],
           "candidateSourceLines": [
-            11353
+            11355
           ]
         },
         "unitVerification": {
@@ -47639,7 +47660,7 @@
           "classification": "部分実装",
           "assessmentScope": "Generic transition on 82 inherited catalog forms: pre/post name, ability, one per side, matching own stone, KO/bench rejection, failed-save rollback and retry. Independent form stats, legal stones and all post-ability mechanics unverified. Additional Magic Room and Klutz possession cases on every catalog form, 574 total generic scenarios.",
           "executableReferences": [
-            "index.html:forecastGroundedForTerrain:11353"
+            "index.html:forecastGroundedForTerrain:11355"
           ],
           "tests": [
             "test-mega-transactions.js"
@@ -48052,8 +48073,8 @@
             5553,
             5713,
             8709,
-            8927,
-            14136
+            8928,
+            14171
           ]
         },
         "unitVerification": {
@@ -48123,8 +48144,8 @@
             5653,
             5714,
             8710,
-            8927,
-            14137
+            8928,
+            14172
           ]
         },
         "unitVerification": {
@@ -48240,8 +48261,8 @@
             5558,
             5691,
             8720,
-            8930,
-            14135
+            8931,
+            14170
           ]
         },
         "unitVerification": {
@@ -48355,8 +48376,8 @@
             5693,
             5727,
             8705,
-            8926,
-            14133
+            8927,
+            14168
           ]
         },
         "unitVerification": {
@@ -48617,11 +48638,11 @@
   "coverageSummary": {
     "total": 1149,
     "categories": {
-      "未実装": 58,
+      "未実装": 57,
       "部分実装": 195,
       "別経路で実装済み": 10,
       "仕様対象外": 0,
-      "要調査": 886
+      "要調査": 887
     },
     "fullyImplemented": 0,
     "fullyUnverified": 1149,

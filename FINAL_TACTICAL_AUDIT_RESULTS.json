@@ -1,0 +1,262 @@
+{
+  "completion": false,
+  "sourceSha256": "4315acabc6cfbeab4392d03e0d5a6de2e7eef85c01e1f91da97dc1c398613982",
+  "total": 17,
+  "passed": 17,
+  "checks": [
+    {
+      "id": "earthquake-lethal-ally-cost",
+      "passed": true,
+      "evidence": {
+        "penalty": 15,
+        "notes": [
+          "じしん：味方サーフゴーにも被害・KO危険（参考推定）"
+        ],
+        "entries": [
+          {
+            "actor": "ガブリアス",
+            "target": "サーフゴー",
+            "move": "じしん",
+            "avg": 2,
+            "lethal": 1,
+            "open": 1,
+            "rolls": [
+              110,
+              110,
+              114,
+              114,
+              116,
+              116,
+              120,
+              120,
+              120,
+              122,
+              122,
+              126,
+              126,
+              128,
+              128,
+              132
+            ],
+            "fullHp": 162,
+            "currentHp": 2,
+            "conditional": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "ally-protect-removes-damage",
+      "passed": true,
+      "evidence": {
+        "penalty": 0,
+        "notes": [],
+        "entries": []
+      }
+    },
+    {
+      "id": "consecutive-protect-not-assured",
+      "passed": true,
+      "evidence": 10.000000000000002
+    },
+    {
+      "id": "switch-to-flying-ally-safe",
+      "passed": true,
+      "evidence": {
+        "penalty": 0,
+        "notes": [],
+        "entries": [
+          {
+            "actor": "ガブリアス",
+            "target": "ペリッパー",
+            "move": "じしん",
+            "avg": 0,
+            "lethal": 0,
+            "open": 1,
+            "rolls": [
+              0
+            ],
+            "fullHp": 135,
+            "currentHp": 135,
+            "conditional": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "telepathy-allied-hit-immunity",
+      "passed": true,
+      "evidence": {
+        "penalty": 0,
+        "notes": [],
+        "entries": [
+          {
+            "actor": "ガブリアス",
+            "target": "サーフゴー",
+            "move": "じしん",
+            "avg": 0,
+            "lethal": 0,
+            "open": 1,
+            "rolls": [
+              0
+            ],
+            "fullHp": 162,
+            "currentHp": 2,
+            "conditional": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "levitate-allied-earthquake-immunity",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "rock-slide-does-not-hit-ally",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "earthquake-single-foe-plus-ally-retains-spread-reduction",
+      "passed": true,
+      "evidence": {
+        "three": [
+          116,
+          116,
+          120,
+          120,
+          120,
+          122,
+          122,
+          126,
+          126,
+          128,
+          128,
+          132,
+          132,
+          134,
+          134,
+          138
+        ],
+        "two": [
+          116,
+          116,
+          120,
+          120,
+          120,
+          122,
+          122,
+          126,
+          126,
+          128,
+          128,
+          132,
+          132,
+          134,
+          134,
+          138
+        ]
+      }
+    },
+    {
+      "id": "incoming-single-foe-plus-ally-retains-spread-reduction",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "first-plan-preserves-partner-with-safe-terminal-line",
+      "passed": true,
+      "evidence": [
+        {
+          "actor": "ガブリアス",
+          "move": "ドラゴンクロー",
+          "target": "リキキリン",
+          "note": ""
+        },
+        {
+          "actor": "サーフゴー",
+          "move": "シャドーボール",
+          "target": "ガオガエン",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "perish-two-turn-loss-projected",
+      "passed": true,
+      "evidence": {
+        "first": 1,
+        "hp": 0
+      }
+    },
+    {
+      "id": "projection-does-not-mutate-battle",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "multi-turn-win-condition-switch-over-protect",
+      "passed": true,
+      "evidence": {
+        "escape": {
+          "score": 8,
+          "notes": [
+            "サーフゴー：滅び回避の交代"
+          ]
+        },
+        "protect": {
+          "score": -22,
+          "notes": [
+            "サーフゴー：滅び1、まもる・バトンでは回避不可"
+          ]
+        }
+      }
+    },
+    {
+      "id": "next-turn-fake-out-no-credit-in-psychic-terrain",
+      "passed": true,
+      "evidence": {
+        "fresh": {
+          "score": 1.7,
+          "reasons": [
+            "次ターンねこだまし成立時の参考推定"
+          ]
+        },
+        "blocked": {
+          "score": 0,
+          "reasons": []
+        }
+      }
+    },
+    {
+      "id": "opponent-repeat-protect-not-assured",
+      "passed": true,
+      "evidence": {
+        "firstProtect": 0,
+        "repeatProtect": 0.6666666666666667
+      }
+    },
+    {
+      "id": "own-repeat-protect-keeps-ko-risk",
+      "passed": true,
+      "evidence": {
+        "first": 0,
+        "repeat": -0.43
+      }
+    },
+    {
+      "id": "unknown-predictions-labelled",
+      "passed": true,
+      "evidence": "参考推定：ダメージ・素早さ・推奨は未検証条件を含みます。相手行動・交代・複数ターンの展開は未確定です。未確認の特性・持ち物・配分で結果が変わります。推定KO"
+    }
+  ],
+  "allyDamageDifferential": {
+    "completion": false,
+    "oracle": "pokemon-showdown@0.11.10",
+    "cases": 16,
+    "comparisons": 256,
+    "failures": [],
+    "scope": "Same-side direct damage with explicit app raw stats and known profiles; no complete battle oracle."
+  }
+}
