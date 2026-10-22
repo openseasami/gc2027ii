@@ -1,0 +1,9 @@
+{
+  "completion": false,
+  "oracle": "pokemon-showdown@0.11.10",
+  "weightCases": 42,
+  "rankCases": 27,
+  "statusCases": 9,
+  "failures": [],
+  "scope": "Weight events, Flower Veil rank and initial Yawn volatile only; not full damage or Champions rules"
+}

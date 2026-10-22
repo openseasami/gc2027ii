@@ -57,7 +57,7 @@ def plan(root,st):
 def verify(root,st,ids,evidence):
     # Evidence accepts a scoped, explicit task-to-test mapping, never whole-mechanic completion.
     report=read(root,'TEST_RESULTS.json');manifest=report.get('sourceSha256',{})
-    if not manifest or any(not (root/f).is_file() or hashlib.sha256((root/f).read_bytes()).hexdigest()!=h for f,h in manifest.items()): raise ValueError('Stale or missing test source hashes')
+    if not manifest: raise ValueError('Missing test source hashes')
     if not report['results'] or report['total']!=len(report['results']) or report['passed']!=sum(r['exitCode']==0 for r in report['results']): raise ValueError('Invalid test result counts')
     results={r['command'][-1]:r for r in report['results']}
     groups=read(root,'MECHANICS_EVIDENCE.json')['groups']
@@ -76,6 +76,7 @@ def verify(root,st,ids,evidence):
         st['failures'].append(failure)
         for tid in ids: st['tasks'][tid].update(status='retry-needed',lastFailure=len(st['failures'])-1)
         return False
+    if any(not (root/f).is_file() or hashlib.sha256((root/f).read_bytes()).hexdigest()!=h for f,h in manifest.items()): raise ValueError('Stale test source hashes')
     for tid in ids:
         st['tasks'][tid].update(status='verified-scope',evidence=evidence[tid],testFingerprint=digest(manifest),verifiedAt=now(),completion=False)
     return True

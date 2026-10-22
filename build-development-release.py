@@ -41,7 +41,7 @@ def main():
     (ROOT/'DEVELOPMENT_BACKLOG.json').write_text(json.dumps(backlog,ensure_ascii=False,indent=2)+'\n')
     out=ROOT/'release';out.mkdir(exist_ok=True)
     manifest=dict(version=version,development=True,complete=False,completion=False,generatedAt=datetime.now(timezone.utc).isoformat(),
-        baseCommit='ce6c75f14783fd53d97f6ac336c461b18dca8b54',branch='codex-development',
+        baseCommit=json.loads((ROOT/'DEVELOPMENT_ITERATION.json').read_text())['baseCommit'],branch='codex-development',
         implementationCommit=json.loads((ROOT/'DEVELOPMENT_ITERATION.json').read_text()).get('implementationCommit'),
         testCommands={'passed':tests['passed'],'total':tests['total']},
         files={name:sha256((ROOT/name).read_bytes()).hexdigest() for name in files},

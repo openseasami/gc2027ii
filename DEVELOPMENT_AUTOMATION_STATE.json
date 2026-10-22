@@ -1,8 +1,915 @@
 {
   "schemaVersion": 1,
   "completion": false,
-  "tasks": {},
-  "failures": [],
+  "tasks": {
+    "0518bc560506c16d656f": {
+      "id": "0518bc560506c16d656f",
+      "category": "abilities",
+      "name": "バトルスイッチ",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "0518bc560506c16d656f123284edd842b554ff2ecb98a5a41ad25e9a18da8161",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 100,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
+      "claimedAt": "2026-10-22T12:13:02.358101+00:00"
+    },
+    "c6ec58092fded147d41a": {
+      "id": "c6ec58092fded147d41a",
+      "category": "abilities",
+      "name": "フラワーベール",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "c6ec58092fded147d41ae4b9a261f002a512d251f2894dbdb411a81f95fb20d0",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 99.3,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "verified-scope",
+      "attempts": 1,
+      "inputFingerprint": "71a8da5e78435ba128e7b9ff1ba46aaae449dfebe566818892e1428df9bd061c",
+      "claimedAt": "2026-10-22T12:24:45.029988+00:00",
+      "lastFailure": 0,
+      "evidence": {
+        "scope": "フラワーベール：限定的な共通経路を接続し、登録したテストで検証。詳細はMECHANICS_EVIDENCE.json。",
+        "remaining": "全仕様・全発動条件・公式Champions・全状態の試合照合は未完了",
+        "tests": [
+          "test-protection-weight-differential.js"
+        ]
+      },
+      "testFingerprint": "9ba81b065187e14affcf61ce4167083a9cc6b5af8b40206942de83a9f62d96c5",
+      "verifiedAt": "2026-10-22T12:29:14.824166+00:00",
+      "completion": false
+    },
+    "eb5a96c9c4cb21e1c927": {
+      "id": "eb5a96c9c4cb21e1c927",
+      "category": "abilities",
+      "name": "わるいてぐせ",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "eb5a96c9c4cb21e1c9275b7b6fc1f84a89f1ac238d5193441b8c33f0867514fd",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 58.8,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
+      "claimedAt": "2026-10-22T12:13:02.373244+00:00"
+    },
+    "4cdd26c48d18d85516d5": {
+      "id": "4cdd26c48d18d85516d5",
+      "category": "abilities",
+      "name": "シェルアーマー",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "4cdd26c48d18d85516d5d26225140923f1d2b792df759dd83ec38e314c1ba3ae",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 52.4,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
+      "claimedAt": "2026-10-22T12:13:02.379309+00:00"
+    },
+    "51ee9e7e374889a9c59d": {
+      "id": "51ee9e7e374889a9c59d",
+      "category": "abilities",
+      "name": "きょううん",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "51ee9e7e374889a9c59d78b92fd7b9748fe3d78635386fb36de62d1813ccbc59",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 32.5,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
+      "claimedAt": "2026-10-22T12:13:02.385655+00:00"
+    },
+    "cd8947ee3b241929acea": {
+      "id": "cd8947ee3b241929acea",
+      "category": "abilities",
+      "name": "シンクロ",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "cd8947ee3b241929acea6427e4cd6b3a8e58c2e0d3f3d0422bac7c67f8879f27",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 20.7,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
+      "claimedAt": "2026-10-22T12:13:02.391244+00:00"
+    },
+    "a7645d5e98d33ff95348": {
+      "id": "a7645d5e98d33ff95348",
+      "category": "abilities",
+      "name": "マジシャン",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "a7645d5e98d33ff95348052045292a008f3722386347d69daac8edda4c98c8b8",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 17.9,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
+      "claimedAt": "2026-10-22T12:13:02.398032+00:00"
+    },
+    "755c302b279b774e0d71": {
+      "id": "755c302b279b774e0d71",
+      "category": "abilities",
+      "name": "ひとでなし",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "755c302b279b774e0d716d34613d35bb066070db2f1593f735fc0b200844a55f",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 8.7,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
+      "claimedAt": "2026-10-22T12:13:02.403884+00:00"
+    },
+    "896d6848bd646641c757": {
+      "id": "896d6848bd646641c757",
+      "category": "abilities",
+      "name": "すじがねいり",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "896d6848bd646641c7578bbbb6e99f54f1405439de3164cf9a92573a60f55538",
+      "priority": {
+        "classification": "defer",
+        "maxObservedPercent": 1.8,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "verified-scope",
+      "attempts": 1,
+      "inputFingerprint": "71a8da5e78435ba128e7b9ff1ba46aaae449dfebe566818892e1428df9bd061c",
+      "claimedAt": "2026-10-22T12:24:45.035584+00:00",
+      "lastFailure": 0,
+      "evidence": {
+        "scope": "すじがねいり：限定的な共通経路を接続し、登録したテストで検証。詳細はMECHANICS_EVIDENCE.json。",
+        "remaining": "全仕様・全発動条件・公式Champions・全状態の試合照合は未完了",
+        "tests": [
+          "test-stalwart-targeting.js"
+        ]
+      },
+      "testFingerprint": "9ba81b065187e14affcf61ce4167083a9cc6b5af8b40206942de83a9f62d96c5",
+      "verifiedAt": "2026-10-22T12:29:14.824233+00:00",
+      "completion": false
+    },
+    "0d67f4de2e42124a9272": {
+      "id": "0d67f4de2e42124a9272",
+      "category": "abilities",
+      "name": "あくしゅう",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "0d67f4de2e42124a9272a290646503c8fe019904b95a246d0fecc5c670eaf2ce",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
+      "claimedAt": "2026-10-22T12:13:02.417117+00:00"
+    },
+    "f3f0af3408875b6b8160": {
+      "id": "f3f0af3408875b6b8160",
+      "category": "abilities",
+      "name": "ちどりあし",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "f3f0af3408875b6b8160f83fe4c131ee4a15d74138236690d4c87d71be8e1536",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
+      "claimedAt": "2026-10-22T12:13:02.422860+00:00"
+    },
+    "c203c46cfe28b0187327": {
+      "id": "c203c46cfe28b0187327",
+      "category": "abilities",
+      "name": "にげあし",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "c203c46cfe28b01873277c239ccf63ba1bdea0f4f60ae06f49a775dfbfcbdcfc",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
+      "claimedAt": "2026-10-22T12:13:02.429500+00:00"
+    },
+    "2eaed3a36630cc720b28": {
+      "id": "2eaed3a36630cc720b28",
+      "category": "abilities",
+      "name": "はやおき",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "2eaed3a36630cc720b28e9455d8da03dcee96f6457191c4fd137087d2210846d",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
+      "claimedAt": "2026-10-22T12:13:02.437071+00:00"
+    },
+    "b37a0257d19cf9dac15c": {
+      "id": "b37a0257d19cf9dac15c",
+      "category": "abilities",
+      "name": "ふしょく",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "b37a0257d19cf9dac15c3e9d87a0d35d81cbbbc32e56c0d02d5f7da5a9b8e2fa",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "verified-scope",
+      "attempts": 1,
+      "inputFingerprint": "71a8da5e78435ba128e7b9ff1ba46aaae449dfebe566818892e1428df9bd061c",
+      "claimedAt": "2026-10-22T12:24:45.040566+00:00",
+      "lastFailure": 0,
+      "evidence": {
+        "scope": "ふしょく：限定的な共通経路を接続し、登録したテストで検証。詳細はMECHANICS_EVIDENCE.json。",
+        "remaining": "全仕様・全発動条件・公式Champions・全状態の試合照合は未完了",
+        "tests": [
+          "test-protection-weight-differential.js"
+        ]
+      },
+      "testFingerprint": "9ba81b065187e14affcf61ce4167083a9cc6b5af8b40206942de83a9f62d96c5",
+      "verifiedAt": "2026-10-22T12:29:14.824282+00:00",
+      "completion": false
+    },
+    "b8cdb90173f752e89490": {
+      "id": "b8cdb90173f752e89490",
+      "category": "abilities",
+      "name": "ふみん",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "b8cdb90173f752e89490d0dd7fbbff91ddabb3c10d82e0de06e808689c4c666f",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "verified-scope",
+      "attempts": 1,
+      "inputFingerprint": "71a8da5e78435ba128e7b9ff1ba46aaae449dfebe566818892e1428df9bd061c",
+      "claimedAt": "2026-10-22T12:24:45.045477+00:00",
+      "lastFailure": 0,
+      "evidence": {
+        "scope": "ふみん：限定的な共通経路を接続し、登録したテストで検証。詳細はMECHANICS_EVIDENCE.json。",
+        "remaining": "全仕様・全発動条件・公式Champions・全状態の試合照合は未完了",
+        "tests": [
+          "test-protection-weight-differential.js"
+        ]
+      },
+      "testFingerprint": "9ba81b065187e14affcf61ce4167083a9cc6b5af8b40206942de83a9f62d96c5",
+      "verifiedAt": "2026-10-22T12:29:14.824328+00:00",
+      "completion": false
+    },
+    "c7635febb1fe628d3fba": {
+      "id": "c7635febb1fe628d3fba",
+      "category": "abilities",
+      "name": "やるき",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "c7635febb1fe628d3fba488db7789e78e2b9c3c958c4625ec97480feb297886a",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "verified-scope",
+      "attempts": 1,
+      "inputFingerprint": "71a8da5e78435ba128e7b9ff1ba46aaae449dfebe566818892e1428df9bd061c",
+      "claimedAt": "2026-10-22T12:24:45.050447+00:00",
+      "lastFailure": 0,
+      "evidence": {
+        "scope": "やるき：限定的な共通経路を接続し、登録したテストで検証。詳細はMECHANICS_EVIDENCE.json。",
+        "remaining": "全仕様・全発動条件・公式Champions・全状態の試合照合は未完了",
+        "tests": [
+          "test-protection-weight-differential.js"
+        ]
+      },
+      "testFingerprint": "9ba81b065187e14affcf61ce4167083a9cc6b5af8b40206942de83a9f62d96c5",
+      "verifiedAt": "2026-10-22T12:29:14.824374+00:00",
+      "completion": false
+    },
+    "21ab97973002e9ad8419": {
+      "id": "21ab97973002e9ad8419",
+      "category": "abilities",
+      "name": "カブトアーマー",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "21ab97973002e9ad84192f3ddd573ac2e321b1411ff384cc456a10564cf840d4",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
+      "claimedAt": "2026-10-22T12:13:02.463687+00:00"
+    },
+    "1da86dbfb0f00eb71574": {
+      "id": "1da86dbfb0f00eb71574",
+      "category": "abilities",
+      "name": "スイートベール",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "1da86dbfb0f00eb715747a321be09d0239b629d3064f94fee6ba64a268e7e126",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "verified-scope",
+      "attempts": 1,
+      "inputFingerprint": "71a8da5e78435ba128e7b9ff1ba46aaae449dfebe566818892e1428df9bd061c",
+      "claimedAt": "2026-10-22T12:24:45.055562+00:00",
+      "lastFailure": 0,
+      "evidence": {
+        "scope": "スイートベール：限定的な共通経路を接続し、登録したテストで検証。詳細はMECHANICS_EVIDENCE.json。",
+        "remaining": "全仕様・全発動条件・公式Champions・全状態の試合照合は未完了",
+        "tests": [
+          "test-protection-weight-differential.js"
+        ]
+      },
+      "testFingerprint": "9ba81b065187e14affcf61ce4167083a9cc6b5af8b40206942de83a9f62d96c5",
+      "verifiedAt": "2026-10-22T12:29:14.824418+00:00",
+      "completion": false
+    },
+    "ddc217bf01802a48d62e": {
+      "id": "ddc217bf01802a48d62e",
+      "category": "abilities",
+      "name": "ヘヴィメタル",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "ddc217bf01802a48d62ec9356995a6e0e7b7f5eb11434e3965ba0dd87e761a26",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "verified-scope",
+      "attempts": 1,
+      "inputFingerprint": "71a8da5e78435ba128e7b9ff1ba46aaae449dfebe566818892e1428df9bd061c",
+      "claimedAt": "2026-10-22T12:24:45.060527+00:00",
+      "lastFailure": 0,
+      "evidence": {
+        "scope": "ヘヴィメタル：限定的な共通経路を接続し、登録したテストで検証。詳細はMECHANICS_EVIDENCE.json。",
+        "remaining": "全仕様・全発動条件・公式Champions・全状態の試合照合は未完了",
+        "tests": [
+          "test-protection-weight-differential.js"
+        ]
+      },
+      "testFingerprint": "9ba81b065187e14affcf61ce4167083a9cc6b5af8b40206942de83a9f62d96c5",
+      "verifiedAt": "2026-10-22T12:29:14.824541+00:00",
+      "completion": false
+    },
+    "d4591be57a54f41b3ad7": {
+      "id": "d4591be57a54f41b3ad7",
+      "category": "abilities",
+      "name": "ライトメタル",
+      "phase": "implement",
+      "family": "abilities",
+      "dependencyGroup": "abilities:implement",
+      "dependencies": [],
+      "scopeFingerprint": "d4591be57a54f41b3ad7f5948e785ae77bb38be868f6bd894617bd346b3367af",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "verified-scope",
+      "attempts": 1,
+      "inputFingerprint": "71a8da5e78435ba128e7b9ff1ba46aaae449dfebe566818892e1428df9bd061c",
+      "claimedAt": "2026-10-22T12:24:45.065510+00:00",
+      "lastFailure": 0,
+      "evidence": {
+        "scope": "ライトメタル：限定的な共通経路を接続し、登録したテストで検証。詳細はMECHANICS_EVIDENCE.json。",
+        "remaining": "全仕様・全発動条件・公式Champions・全状態の試合照合は未完了",
+        "tests": [
+          "test-protection-weight-differential.js"
+        ]
+      },
+      "testFingerprint": "9ba81b065187e14affcf61ce4167083a9cc6b5af8b40206942de83a9f62d96c5",
+      "verifiedAt": "2026-10-22T12:29:14.824592+00:00",
+      "completion": false
+    },
+    "c77980e7c774d13399f5": {
+      "id": "c77980e7c774d13399f5",
+      "category": "abilities",
+      "name": "イリュージョン",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "c77980e7c774d13399f52ab63913417f54ab8ff87e4793fbda8c9c6648f5e1c0",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 100,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.514358+00:00"
+    },
+    "183a33aa10cf52c58370": {
+      "id": "183a33aa10cf52c58370",
+      "category": "abilities",
+      "name": "おもてなし",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "183a33aa10cf52c58370f135c2537f93e32e3203055c0cac2d2732acd153fe10",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 96.4,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.520880+00:00"
+    },
+    "9cc3a192f19087a6e947": {
+      "id": "9cc3a192f19087a6e947",
+      "category": "abilities",
+      "name": "きんちょうかん",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "9cc3a192f19087a6e947e6d9615c2f1b8de74f508ffac8f2a7ce57798b3d09d8",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 91.4,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.526857+00:00"
+    },
+    "77b8994f746d5a1e8b46": {
+      "id": "77b8994f746d5a1e8b46",
+      "category": "abilities",
+      "name": "トレース",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "77b8994f746d5a1e8b46301a04bc883d4a4a73f3935733ab0426d008f07a54ff",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 73.3,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.533025+00:00"
+    },
+    "95638be5ab42322ca19b": {
+      "id": "95638be5ab42322ca19b",
+      "category": "abilities",
+      "name": "おみとおし",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "95638be5ab42322ca19b1f8744363d0047436314ab517c9f281b0d22b892f006",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 67.9,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.539865+00:00"
+    },
+    "cbc2d35ecb3f3c45466f": {
+      "id": "cbc2d35ecb3f3c45466f",
+      "category": "abilities",
+      "name": "プレッシャー",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "cbc2d35ecb3f3c45466f8c320a40ee8b37e04bf5fe1c3a00a3faed4381f48510",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 41.2,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.545963+00:00"
+    },
+    "14d5c32aad02f6b43a31": {
+      "id": "14d5c32aad02f6b43a31",
+      "category": "abilities",
+      "name": "きみょうなくすり",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "14d5c32aad02f6b43a31a738bd68ca34825083daebadbd3c82af59da885cba46",
+      "priority": {
+        "classification": "target",
+        "maxObservedPercent": 15.7,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.552410+00:00"
+    },
+    "436d675a15024a8c3e93": {
+      "id": "436d675a15024a8c3e93",
+      "category": "abilities",
+      "name": "かわりもの",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "436d675a15024a8c3e933719aa686392ea7e8710fc5ca0cd6c21331b3adc9b79",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.559326+00:00"
+    },
+    "d22286d3b73de3947583": {
+      "id": "d22286d3b73de3947583",
+      "category": "abilities",
+      "name": "かんろなミツ",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "d22286d3b73de394758368aa1e0a530597bc6d07ed36bf99261433db4326acfd",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "verified-scope",
+      "attempts": 1,
+      "inputFingerprint": "71a8da5e78435ba128e7b9ff1ba46aaae449dfebe566818892e1428df9bd061c",
+      "claimedAt": "2026-10-22T12:24:45.150036+00:00",
+      "lastFailure": 0,
+      "evidence": {
+        "scope": "かんろなミツ：限定的な共通経路を接続し、登録したテストで検証。詳細はMECHANICS_EVIDENCE.json。",
+        "remaining": "全仕様・全発動条件・公式Champions・全状態の試合照合は未完了",
+        "tests": [
+          "test-entry-screens-syrup.js"
+        ]
+      },
+      "testFingerprint": "9ba81b065187e14affcf61ce4167083a9cc6b5af8b40206942de83a9f62d96c5",
+      "verifiedAt": "2026-10-22T12:29:14.928113+00:00",
+      "completion": false
+    },
+    "981ecd25127a05f6c708": {
+      "id": "981ecd25127a05f6c708",
+      "category": "abilities",
+      "name": "きけんよち",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "981ecd25127a05f6c7086bc8997dceb7bd893ad5692502408234ac725decc55b",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.570972+00:00"
+    },
+    "dd644d04cd354d402fce": {
+      "id": "dd644d04cd354d402fce",
+      "category": "abilities",
+      "name": "ぎたい",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "dd644d04cd354d402fce0b3f6c3a1d73d68d28089cd5cc77d148cfc5d9e91121",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.576533+00:00"
+    },
+    "3e75742e20fb726ee16d": {
+      "id": "3e75742e20fb726ee16d",
+      "category": "abilities",
+      "name": "くいしんぼう",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "3e75742e20fb726ee16d659fa1079a5c77ecc89ee110fdcaf5ed5028dce83801",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.582623+00:00"
+    },
+    "d102a3f989c96d7f59a7": {
+      "id": "d102a3f989c96d7f59a7",
+      "category": "abilities",
+      "name": "てんきや",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "d102a3f989c96d7f59a730c94dc70dd2d2786ace3089423ecbc0c47b8842739d",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.588139+00:00"
+    },
+    "7309b430760de39bb92e": {
+      "id": "7309b430760de39bb92e",
+      "category": "abilities",
+      "name": "よちむ",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "7309b430760de39bb92eae5cb7df571c5b1e388fab3fa8ae15406f863bc540ca",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.594232+00:00"
+    },
+    "e5936f53ec393309f269": {
+      "id": "e5936f53ec393309f269",
+      "category": "abilities",
+      "name": "バリアフリー",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "e5936f53ec393309f2692581dc0877e44737008536533205ea3bde81eaa30267",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "verified-scope",
+      "attempts": 1,
+      "inputFingerprint": "71a8da5e78435ba128e7b9ff1ba46aaae449dfebe566818892e1428df9bd061c",
+      "claimedAt": "2026-10-22T12:24:45.157886+00:00",
+      "lastFailure": 0,
+      "evidence": {
+        "scope": "バリアフリー：限定的な共通経路を接続し、登録したテストで検証。詳細はMECHANICS_EVIDENCE.json。",
+        "remaining": "全仕様・全発動条件・公式Champions・全状態の試合照合は未完了",
+        "tests": [
+          "test-entry-screens-syrup.js"
+        ]
+      },
+      "testFingerprint": "9ba81b065187e14affcf61ce4167083a9cc6b5af8b40206942de83a9f62d96c5",
+      "verifiedAt": "2026-10-22T12:29:14.928179+00:00",
+      "completion": false
+    },
+    "ee705bf327139e4f3dea": {
+      "id": "ee705bf327139e4f3dea",
+      "category": "abilities",
+      "name": "マイティチェンジ",
+      "phase": "implement",
+      "family": "entry",
+      "dependencyGroup": "entry:implement",
+      "dependencies": [
+        "confirmed-event",
+        "rank-adapter"
+      ],
+      "scopeFingerprint": "ee705bf327139e4f3deab2873d76cfe9073377c554d82018474fe5751827c613",
+      "priority": {
+        "classification": "unknown",
+        "maxObservedPercent": null,
+        "basis": "Inherited partial adoption sample; unknown entries remain in scope."
+      },
+      "classification": "未実装",
+      "status": "in-progress",
+      "attempts": 1,
+      "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
+      "claimedAt": "2026-10-22T12:19:16.605470+00:00"
+    }
+  },
+  "failures": [
+    {
+      "at": "2026-10-22T12:24:44.956076+00:00",
+      "tasks": [
+        "c6ec58092fded147d41a",
+        "896d6848bd646641c757",
+        "b37a0257d19cf9dac15c",
+        "b8cdb90173f752e89490",
+        "c7635febb1fe628d3fba",
+        "1da86dbfb0f00eb71574",
+        "ddc217bf01802a48d62e",
+        "d4591be57a54f41b3ad7",
+        "d22286d3b73de3947583",
+        "e5936f53ec393309f269"
+      ],
+      "sourceFingerprint": "1c9d0ab82f8e5c12a3b86b5ddf6203194bec635d46b6474bcc6b235cdc911aee",
+      "causes": [
+        {
+          "command": [
+            "node",
+            "test-implementation-ledger.js"
+          ],
+          "exitCode": 1,
+          "stderr": "/workspace/gc2027ii/implementation-ledger.js:51\n  for(const name of group.names)if(!names?.includes(name))throw Error('Evidence outside inventory: '+group.category+'/'+name);\n                                                          ^\n\nError: Evidence outside inventory: abilities/しんがん\n    at Object.<anonymous> (/workspace/gc2027ii/implementation-ledger.js:51:65)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\n    at Object..js (node:internal/modules/cjs/loader:2003:10)\n    at Module.load (node:internal/modules/cjs/loader:1594:32)\n    at Module._load (node:internal/modules/cjs/loader:1396:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.require (node:internal/modules/cjs/loader:1617:12)\n    at require (node:internal/modules/helpers:153:16)\n    at Object.<anonymous> (/workspace/gc2027ii/test-implementation-ledger.js:2:1)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\n\nNode.js v24.19.0\n",
+          "stdout": ""
+        }
+      ]
+    }
+  ],
   "checkpoints": [
     {
       "at": "2026-10-22T12:03:14.010618+00:00",
@@ -38,6 +945,32 @@
       "counts": {
         "verified-scope": 0,
         "in-progress": 0,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
+    },
+    {
+      "at": "2026-10-22T12:29:14.875244+00:00",
+      "commit": "9c73275602b11d44f6daacc9032667baf5bff3bf",
+      "reason": "abilities:implement：成功した限定スコープ8件を保存。未完了の着手状態は維持",
+      "completion": false,
+      "counts": {
+        "verified-scope": 8,
+        "in-progress": 28,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
+    },
+    {
+      "at": "2026-10-22T12:29:14.968312+00:00",
+      "commit": "9c73275602b11d44f6daacc9032667baf5bff3bf",
+      "reason": "entry:implement：成功した限定スコープ2件を保存。未完了の着手状態は維持",
+      "completion": false,
+      "counts": {
+        "verified-scope": 10,
+        "in-progress": 26,
         "retry-needed": 0,
         "blocked": 0,
         "pending": 0

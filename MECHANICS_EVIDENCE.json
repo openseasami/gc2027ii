@@ -622,6 +622,170 @@
         "test-weather-ball-effective-weather.js"
       ],
       "scope": "Existing effective-weather type and base power, Cloud Nine/Air Lock suppression; complete damage remains unverified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "フラワーベール"
+      ],
+      "paths": [
+        "index.html:confirmedAllyAbilityProtection",
+        "index.html:applyConfirmedTargetRanks",
+        "index.html:receiveIntimidate",
+        "index.html:forecastCommonSecondaryStatus"
+      ],
+      "unitTests": [
+        "test-protection-weight-differential.js"
+      ],
+      "integrationTests": [
+        "test-protection-weight-differential.js"
+      ],
+      "scope": "Confirmed active grass protection in target rank moves/Intimidate and secondary status forecast; initial Yawn immunity, not retroactive Yawn sleep immunity. Contrary/Simple order compared with real engine. Other rank paths and self-status effects remain incomplete."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "ふみん",
+        "やるき",
+        "スイートベール"
+      ],
+      "paths": [
+        "index.html:confirmedSleepProtection",
+        "index.html:applyConfirmedYawn",
+        "index.html:advanceConfirmedYawn"
+      ],
+      "unitTests": [
+        "test-protection-weight-differential.js"
+      ],
+      "integrationTests": [
+        "test-protection-weight-differential.js"
+      ],
+      "scope": "Confirmed Yawn scheduling/resolution only, active ally immunity, KO/unknown handling. Direct sleep moves, ability-change automatic cures and full sleep counters unverified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "ヘヴィメタル",
+        "ライトメタル"
+      ],
+      "paths": [
+        "index.html:weightBasedMovePower",
+        "index.html:resolveMoveForDamage"
+      ],
+      "unitTests": [
+        "test-protection-weight-differential.js"
+      ],
+      "integrationTests": [
+        "test-protection-weight-differential.js"
+      ],
+      "scope": "Confirmed defender ability weight for Low Kick/Grass Knot, minimum weight and threshold rounding. Float Stone, Autotomize, Heavy Slam/Heat Crash and full damage unverified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "ふしょく"
+      ],
+      "paths": [
+        "index.html:forecastCommonSecondaryStatus"
+      ],
+      "unitTests": [
+        "test-protection-weight-differential.js"
+      ],
+      "integrationTests": [
+        "test-protection-weight-differential.js"
+      ],
+      "scope": "Poison secondary forecast type-immunity bypass only; independent trySetStatus comparison. Damage immunity, hazards and direct status action pipeline remain separate/incomplete."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "すじがねいり"
+      ],
+      "paths": [
+        "index.html:ignoresMoveRedirection",
+        "index.html:defensiveReadForPlan",
+        "index.html:opponentAttackCandidates"
+      ],
+      "unitTests": [
+        "test-stalwart-targeting.js"
+      ],
+      "integrationTests": [
+        "test-stalwart-targeting.js"
+      ],
+      "scope": "Recommendation redirection penalties/Lightning Rod target candidates only; no full engine redirection simulation."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "はっこう",
+        "するどいめ"
+      ],
+      "paths": [
+        "index.html:effectiveMoveAccuracy"
+      ],
+      "unitTests": [
+        "test-accuracy-protection.js"
+      ],
+      "integrationTests": [
+        "test-accuracy-protection.js"
+      ],
+      "scope": "Ignore positive target evasion stages in accuracy forecast. Existing rank protection separate; all accuracy interactions and full-game parity unverified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "かんろなミツ",
+        "バリアフリー"
+      ],
+      "paths": [
+        "index.html:triggerEntryAbility"
+      ],
+      "unitTests": [
+        "test-entry-screens-syrup.js"
+      ],
+      "integrationTests": [
+        "test-entry-screens-syrup.js"
+      ],
+      "scope": "Confirmed entry only: once per battle evasion drop, substitute and rank reactions; both-side Reflect/Light Screen/Aurora Veil removal. Full form changes and official rules remain unverified."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "あくび"
+      ],
+      "paths": [
+        "index.html:applyConfirmedYawn",
+        "index.html:advanceConfirmedYawn"
+      ],
+      "unitTests": [
+        "test-protection-weight-differential.js",
+        "test-torkoal-yawn.js",
+        "test-torkoal-yawn-terrain.js"
+      ],
+      "integrationTests": [
+        "test-protection-weight-differential.js",
+        "test-torkoal-yawn.js",
+        "test-torkoal-yawn-terrain.js"
+      ],
+      "scope": "Explicit target and successful observation with sleepAllowed, terrain and confirmed immunity checks at scheduling/resolution. Full sleep counter/RNG and direct status routes remain unverified."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "けたぐり",
+        "くさむすび"
+      ],
+      "paths": [
+        "index.html:resolveMoveForDamage",
+        "index.html:weightBasedMovePower"
+      ],
+      "unitTests": [
+        "test-protection-weight-differential.js"
+      ],
+      "integrationTests": [
+        "test-protection-weight-differential.js"
+      ],
+      "scope": "Existing variable weight power connected to known defender abilities; not full damage or all weight modifiers."
     }
   ],
   "outOfCatalogEvidence": [
@@ -643,6 +807,17 @@
         "test-target-ranks-integration.js"
       ],
       "scope": "External negative-rank protection, self changes retained, Mold Breaker does not bypass items, Guard Dog event ordering. Full item interactions unverified."
+    },
+    {
+      "category": "abilities",
+      "name": "しんがん",
+      "paths": [
+        "index.html:effectiveMoveAccuracy"
+      ],
+      "tests": [
+        "test-accuracy-protection.js"
+      ],
+      "scope": "Positive evasion ignore forecast only; not part of target regulation inventory. No legality inferred."
     }
   ]
 }

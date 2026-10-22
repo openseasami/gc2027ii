@@ -26,8 +26,12 @@ class Tests(unittest.TestCase):
   before=a.tasks(self.root)[0]['id'];b=a.read(self.root,'DEVELOPMENT_BACKLOG.json');b['entries'][0]['effect']['candidateSourceLines']=[123];self.put('DEVELOPMENT_BACKLOG.json',b);self.assertEqual(before,a.tasks(self.root)[0]['id']);self.assertFalse(st['completion'])
  def test_failure_retry_and_stale_hash(self):
   ids=self.claim();st=a.state(self.root);self.report(True);self.assertFalse(a.verify(self.root,st,ids,self.evidence(ids)));self.assertEqual(st['tasks'][ids[0]]['status'],'retry-needed');self.assertIn('AssertionError',st['failures'][0]['causes'][0]['stderr'])
-  (self.root/'test-fixture.js').write_text('changed')
+  self.report();(self.root/'test-fixture.js').write_text('changed')
+  for tid in ids:st['tasks'][tid]['status']='in-progress'
   with self.assertRaisesRegex(ValueError,'Stale'):a.verify(self.root,st,ids,self.evidence(ids))
+ def test_historical_failure_is_recorded_after_fix(self):
+  ids=self.claim();st=a.state(self.root);self.report(True);(self.root/'test-fixture.js').write_text('correction after failed test')
+  self.assertFalse(a.verify(self.root,st,ids,self.evidence(ids)));self.assertEqual(len(st['failures']),1);self.assertTrue(all(t['status']=='retry-needed'for t in st['tasks'].values()))
  def test_unrelated_evidence_and_branch_guard(self):
   ids=self.claim();st=a.state(self.root);e=self.evidence(ids);e[ids[0]]['tests']=['unrelated.js']
   with self.assertRaisesRegex(ValueError,'registered'):a.verify(self.root,st,ids,e)

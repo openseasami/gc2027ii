@@ -1,0 +1,5 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');const h=fs.readFileSync('index.html','utf8');let ab='',weather='なし';const state={myTeam:['A'],oppTeam:['B'],my:[{}],opp:[{abilityConfirmed:true,evaStage:2}]};const ctx={state,DAMAGE_MOVES:{attack:{cat:'spec'}},MOVE_BASE_ACCURACY:{attack:1,'かみなり':.7},abilityOf:s=>s==='my'?ab:'',heldItemFor:()=>'',effectiveWeatherForDamage:()=>weather,$:()=>({value:'雨'})};vm.createContext(ctx);vm.runInContext(h.slice(h.indexOf('function accuracyStageMultiplier('),h.indexOf('// v1.78.0: one accuracy-aware')),ctx);
+assert.equal(ctx.effectiveMoveAccuracy('attack','my',0,'opp',0).accuracy,.6);
+for(const ability of ['するどいめ','はっこう','しんがん']){ab=ability;assert.equal(ctx.effectiveMoveAccuracy('attack','my',0,'opp',0).accuracy,1);}
+ab='';state.opp[0].evaStage=0;assert.equal(ctx.effectiveMoveAccuracy('かみなり','my',0,'opp',0).accuracy,.7,'suppressed displayed rain is not sure-hit');weather='雨';assert.equal(ctx.effectiveMoveAccuracy('かみなり','my',0,'opp',0).accuracy,1);
+console.log('PASS positive evasion ignores and effective-weather accuracy consistency');

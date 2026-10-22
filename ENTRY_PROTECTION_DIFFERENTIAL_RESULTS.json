@@ -1,0 +1,7 @@
+{
+  "completion": false,
+  "oracle": "pokemon-showdown@0.11.10",
+  "cases": 31,
+  "failures": [],
+  "scope": "Syrup entry/rank/substitute/once-only and both-side screen clearing; not full match or Champions rules"
+}

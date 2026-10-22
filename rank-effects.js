@@ -37,7 +37,7 @@
     if(intimidate&&key==='atkStage'&&activeAbility==='ばんけん'&&(working[key]||0)>-6){
      applyDelta({atkStage:1},'guard-dog');continue;
     }
-    if(item==='クリアチャーム'||['クリアボディ','しろいけむり'].includes(activeAbility)||blockers[activeAbility]===key){blocked.push(key);continue;}
+    if(input.flowerVeil&&!bypass||item==='クリアチャーム'||['クリアボディ','しろいけむり'].includes(activeAbility)||blockers[activeAbility]===key){blocked.push(key);continue;}
     if(activeAbility==='ミラーアーマー'&&allowReflection&&(working[key]||0)>-6){
      if(sourceStages&&(sourceStages.hp??100)>0){
       const reflected=resolve({stages:sourceWorking,changes:{[key]:clamp((working[key]||0)+delta)-(working[key]||0)},ability:sourceAbility,item:sourceItem,origin,allowReflection:false});
