@@ -1,4 +1,4 @@
-/* GC2027II shared deterministic battle-math kernel, v2.5.3.
+/* GC2027II shared deterministic battle-math kernel, v2.5.4.
    This module is intentionally isolated from DOM and mutable battle state.
    The app retains its existing modifiers and calls these functions at the final calculation step. */
 (function(root,factory){
@@ -18,21 +18,37 @@
     const s=Math.max(-6,Math.min(6,Math.trunc(Number(stage)||0)));
     return s>=0?Math.floor(value*(2+s)/2):Math.floor(value*2/(2-s));
   }
+  // Modifiers chain in 12-bit fixed point; chain ties round up, application ties down.
+  function chainModifiers(values){
+    return values.reduce((acc,m)=>Math.floor((acc*Math.round(m*4096)+2048)/4096),4096)/4096;
+  }
   function baseDamage(power,attack,defense,spreadActive,weatherFactor,terrainFactor){
     if(!positive(power)||!positive(attack)||!positive(defense))throw Error('Invalid damage stats');
     if(!Number.isFinite(weatherFactor)||!Number.isFinite(terrainFactor)||weatherFactor<0||terrainFactor<0)throw Error('Invalid field modifier');
-    let base=Math.floor(Math.floor(Math.floor((22*Math.max(1,Math.floor(power))*attack)/Math.max(1,defense))/50)+2);
+    const bp=Math.max(1,pokeRound(power,terrainFactor));
+    let base=Math.floor(Math.floor(Math.floor((22*bp*attack)/Math.max(1,defense))/50)+2);
     if(spreadActive)base=pokeRound(base,.75);
-    base=pokeRound(base,weatherFactor);
-    return Math.floor(base*terrainFactor);
+    return pokeRound(base,weatherFactor);
   }
-  function damageRoll(base,randomPercent,ability,stab,effectiveness,item,screen,otherFinal=1){
+  function damageRoll(base,randomPercent,ability,stab,effectiveness,item,screen,otherFinal=1,burn=1,sniper=1,berry=1){
     if(base<=0||effectiveness<=0||screen<=0)return 0;
-    const mods=[ability,stab,effectiveness,item,screen,otherFinal];
+    const mods=[ability,stab,effectiveness,item,screen,otherFinal,burn,sniper,berry];
     if(mods.some(v=>!Number.isFinite(v)||v<0))throw Error('Invalid damage modifier');
     let damage=Math.floor(base*randomPercent/100);
-    for(const multiplier of mods)damage=Math.floor(damage*multiplier);
+    damage=pokeRound(damage,ability);
+    damage=pokeRound(damage,stab);
+    damage=Math.floor(damage*effectiveness);
+    damage=pokeRound(damage,burn);
+    const screenFixed=screen===2/3?2732/4096:screen;
+    const itemFixed=item===1.3?5324/4096:item;
+    damage=pokeRound(damage,chainModifiers([screenFixed,otherFinal,sniper,itemFixed,berry]));
     return Math.max(1,damage);
+  }
+  // Prioritized defensive berries only. Unknown inputs never become a protection fact.
+  function resistBerry({item,type,effectiveness,substitute=false,bypassSubstitute=false,blocked=false,ripen=false}={}){
+    const types={'ヨプのみ':'かくとう','ナモのみ':'あく'};
+    if(!types[item]||types[item]!==type||!(effectiveness>1)||blocked||substitute&&!bypassSubstitute)return {factor:1,consume:false};
+    return {factor:ripen?.25:.5,consume:true};
   }
   // Poison Touch: conditional risk only, never auto-confirms a status effect.
   // Unknown contact/protection must stay unknown rather than a fabricated 0%.
@@ -104,5 +120,5 @@
     if(kind==='move')return rate>=10;
     throw Error('Unknown usage category');
   }
-  return Object.freeze({pokeRound,stageStat,baseDamage,damageRoll,poisonTouchRisk,contactStatusRisk,contactStatusType,statusTypeImmune,assessedContactStatusRisk,unburdenSpeed,usageEligible,weatherEntryTurns,fieldTurnsAfterTurn,version:'2.5.3'});
+  return Object.freeze({pokeRound,chainModifiers,resistBerry,stageStat,baseDamage,damageRoll,poisonTouchRisk,contactStatusRisk,contactStatusType,statusTypeImmune,assessedContactStatusRisk,unburdenSpeed,usageEligible,weatherEntryTurns,fieldTurnsAfterTurn,version:'2.5.4'});
 });

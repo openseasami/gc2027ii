@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "completion": false,
+  "mode": "tournament-practical",
+  "budgetMinutes": 120,
+  "startedAt": "2026-10-22T14:46:53Z",
+  "branch": "codex-development",
+  "coverageExpansionPaused": true,
+  "priority": [
+    "120-profile damage/speed/order defects",
+    "important active ability/item interactions",
+    "45-second input/save/history/undo regressions",
+    "uncertainty presentation"
+  ],
+  "localAcceptance": {
+    "allRecordedCommandsPassWithCurrentHashes": true,
+    "adoptionProfilesPreserved": 120,
+    "criticalRateCasesAtLeast": 432,
+    "criticalDamageCasesAtLeast": 1152,
+    "speedCasesAtLeast": 40320,
+    "commonDamageCasesAtLeast": 331776,
+    "browserRefreshBudgetMs": 5000,
+    "observedCompleteMatchE2ERequired": true,
+    "predictionCertaintyMustRemainFalse": true,
+    "priorityBerryCasesAtLeast": 16384
+  },
+  "tournamentAcceptancePending": [
+    "Official C/M-C eligibility, Mega permissions and form stats remain unconfirmed (REGULATION_SOURCE_REVIEW.json).",
+    "General Gen9 differential scopes do not cover all important 120-profile damage/ability/item combinations or a complete match state oracle.",
+    "Tournament device and human 45-second operation timing have not been measured."
+  ],
+  "requiredCommands": [
+    "test-tournament-damage-differential.js",
+    "test-tournament-speed-differential.js",
+    "test-critical-engine-differential.js",
+    "test-entry-focus-state.js",
+    "test-independent-turn-order-audit.js",
+    "test-unknown-speed-order.js",
+    "test-order-effect-groups.js",
+    "test-adoption-normalization.py",
+    "browser_tournament_practical_test.py",
+    "browser_layout_regression_test.py",
+    "browser_full_match_test.py",
+    "browser_mechanics_regression_test.py",
+    "browser_smoke_portable.py",
+    "test-priority-resist-berries.js",
+    "browser_priority_berries_test.py"
+  ],
+  "forbidden": [
+    "main modifications",
+    "public deployment",
+    "untested completion claims",
+    "broad handler/name coverage pursuit during this sprint"
+  ]
+}

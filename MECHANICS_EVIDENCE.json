@@ -786,6 +786,201 @@
         "test-protection-weight-differential.js"
       ],
       "scope": "Existing variable weight power connected to known defender abilities; not full damage or all weight modifiers."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "きょううん",
+        "ひとでなし",
+        "スナイパー",
+        "カブトアーマー",
+        "シェルアーマー"
+      ],
+      "paths": [
+        "critical-effects.js:profile",
+        "index.html:damageEstimate",
+        "index.html:opponentDamageEstimateAgainstMy"
+      ],
+      "unitTests": [
+        "test-critical-engine-differential.js"
+      ],
+      "integrationTests": [
+        "test-critical-engine-differential.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scope": "General Gen9 rate and neutral physical critical damage only: 432 rate /1152 damage comparisons. Random critical scenarios are separate, not weighted into recommendation. Body Press/Foul Play, full modifier interactions and event legality unverified."
+    },
+    {
+      "category": "items",
+      "names": [
+        "ピントレンズ"
+      ],
+      "paths": [
+        "critical-effects.js:profile"
+      ],
+      "unitTests": [
+        "test-critical-engine-differential.js"
+      ],
+      "integrationTests": [
+        "test-critical-engine-differential.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scope": "Known active item critical stage in 432 rate combinations; full suppression/transfer and weighted recommendation unverified."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "きあいだめ"
+      ],
+      "paths": [
+        "index.html:applyObservedMoveEffects",
+        "index.html:copyBatonState",
+        "index.html:resetEntryStages"
+      ],
+      "unitTests": [
+        "test-entry-focus-state.js"
+      ],
+      "integrationTests": [
+        "test-entry-focus-state.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scope": "Confirmed successful Focus Energy +2, no stacking; JSON persistence, switch reset, Baton Pass. Psych Up and full interactions unverified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "きみょうなくすり"
+      ],
+      "paths": [
+        "index.html:triggerEntryAbility"
+      ],
+      "unitTests": [
+        "test-entry-focus-state.js"
+      ],
+      "integrationTests": [
+        "test-entry-focus-state.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scope": "50 real Showdown entry rank reset cases. Seven ranks on living ally only, not source/foe; Focus Energy preserved. Full suppression and switch scenarios unverified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "すいすい",
+        "ようりょくそ",
+        "サーフテール",
+        "はやあし",
+        "かるわざ"
+      ],
+      "paths": [
+        "index.html:fieldSpeed",
+        "index.html:speedFieldMultiplier"
+      ],
+      "unitTests": [
+        "test-tournament-speed-differential.js"
+      ],
+      "integrationTests": [
+        "test-tournament-speed-differential.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scope": "40,320 real Gen9 speed modifier comparisons using intrinsic inputs derived from 120 adoption profiles. No official base-stat, opponent distribution or whole-order certification."
+    },
+    {
+      "category": "items",
+      "names": [
+        "こだわりスカーフ"
+      ],
+      "paths": [
+        "index.html:fieldSpeed"
+      ],
+      "unitTests": [
+        "test-tournament-speed-differential.js"
+      ],
+      "integrationTests": [
+        "test-tournament-speed-differential.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scope": "Rank before combined fixed-point modifiers, compared with Tailwind/status/weather/abilities over 120 input profiles; unknown item and opponent stat priors remain estimates."
+    },
+    {
+      "category": "items",
+      "names": [
+        "いのちのたま",
+        "きせきのタネ",
+        "もくたん"
+      ],
+      "paths": [
+        "battle-core.js:baseDamage",
+        "battle-core.js:damageRoll",
+        "index.html:damageEstimate",
+        "index.html:opponentDamageEstimateAgainstMy"
+      ],
+      "unitTests": [
+        "test-tournament-damage-differential.js"
+      ],
+      "integrationTests": [
+        "test-tournament-damage-differential.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scope": "331,776 real outgoing/incoming comparisons across 10,368 fixed-stat common-modifier scenarios. Correct power/stat/final phases, screens/burn/terrain/rain/sun. No all-species/stat/ability/full-match certification."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "こんじょう"
+      ],
+      "paths": [
+        "index.html:sharedAbilityDamageModifiers",
+        "battle-core.js:damageRoll"
+      ],
+      "unitTests": [
+        "test-tournament-damage-differential.js"
+      ],
+      "integrationTests": [
+        "test-tournament-damage-differential.js",
+        "browser_tournament_practical_test.py"
+      ],
+      "scope": "Guts multiplier/burn exemption in actual damage estimate formula with a supplied modifier fixture; full event adapter and secondary conditions not certified."
+    },
+    {
+      "category": "items",
+      "names": [
+        "ヨプのみ",
+        "ナモのみ"
+      ],
+      "paths": [
+        "battle-core.js:resistBerry",
+        "index.html:defensiveBerryForDamage",
+        "index.html:commitConfirmedBerryConsumption",
+        "index.html:sequentialFocusDamage"
+      ],
+      "unitTests": [
+        "test-priority-resist-berries.js"
+      ],
+      "integrationTests": [
+        "test-priority-resist-berries.js",
+        "browser_priority_berries_test.py"
+      ],
+      "scope": "Only Chople/Colbur: 16,384 general Gen9 damage/consumption comparisons, Unnerve/Ripen/Substitute/bypass/consumed, screens and Life Orb. Actual browser focus consumes only once; forecast read-only, confirmed hit consumption and undo/reload. Unknown opponent Unnerve leaves reduction unapplied. Other berries and whole battle oracle unverified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "きんちょうかん",
+        "じゅくせい"
+      ],
+      "paths": [
+        "index.html:defensiveBerryForDamage",
+        "battle-core.js:resistBerry"
+      ],
+      "unitTests": [
+        "test-priority-resist-berries.js"
+      ],
+      "integrationTests": [
+        "test-priority-resist-berries.js",
+        "browser_priority_berries_test.py"
+      ],
+      "scope": "Only block/double reduction of Chople/Colbur predictions and confirmed hit adapter. No all berry eating/healing/recycle/ability-change handlers or full battle certification."
     }
   ],
   "outOfCatalogEvidence": [

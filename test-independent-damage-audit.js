@@ -11,15 +11,19 @@ let checks=0;
 // Reference uses BigInt to avoid the application's floating-point expression order.
 function fixed(v,m){const scaled=BigInt(Math.round(m*4096));return Number((BigInt(v)*scaled+2047n)/4096n)}
 function baseline(p,a,d,spread,w,t){
- let x=Number(((22n*BigInt(p)*BigInt(a)/BigInt(d))/50n)+2n);
+ const bp=Math.max(1,fixed(p,t));
+ let x=Number(((22n*BigInt(bp)*BigInt(a)/BigInt(d))/50n)+2n);
  if(spread)x=fixed(x,.75);
  x=fixed(x,w);
- return Math.floor(x*t);
+ return x;
 }
 function finalRoll(base,percent,ability,stab,eff,item,screen,other){
  if(base<=0||eff<=0||screen<=0)return 0;
  let x=Math.floor(base*percent/100);
- for(const m of [ability,stab,eff,item,screen,other])x=Math.floor(x*m);
+ x=fixed(fixed(x,ability),stab);x=Math.floor(x*eff);
+ const parts=[screen===2/3?2732/4096:screen,other,1,item===1.3?5324/4096:item];
+ const chain=parts.reduce((acc,m)=>(acc*BigInt(Math.round(m*4096))+2048n)/4096n,4096n);
+ x=Number((BigInt(x)*chain+2047n)/4096n);
  return Math.max(1,x);
 }
 const rng=(()=>{let seed=0x2048ab19;return()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296}})();

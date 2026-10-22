@@ -3,7 +3,7 @@
 from datetime import datetime, timezone
 from hashlib import sha256
 from pathlib import Path
-import json,re,zipfile
+import json,re,zipfile,subprocess,sys
 ROOT=Path(__file__).resolve().parent
 
 def main():
@@ -16,6 +16,10 @@ def main():
             raise SystemExit('Source changed after tests: '+name)
     if ledger['releaseGate']['complete']:
         raise SystemExit('This packager is only for incomplete development checkpoints')
+    practical=None
+    if (ROOT/'TOURNAMENT_PRACTICAL_GATES.json').exists():
+        subprocess.run([sys.executable,'evaluate-tournament-practical.py'],cwd=ROOT,check=True,capture_output=True)
+        practical=json.loads((ROOT/'TOURNAMENT_PRACTICAL_RESULTS.json').read_text())
     html=(ROOT/'index.html').read_text()
     version=re.search(r'<title>[^<]*?(v\d+\.\d+\.\d+)</title>',html).group(1)
     scripts=re.findall(r'<script\b[^>]*src=["\']\./([^"\']+)["\']',html)
@@ -38,6 +42,12 @@ def main():
         stageSummary=ledger['stageSummary'],coverageSummary=ledger['coverageSummary'],dependencies=dependency,entries=unresolved,
         definiteUnsupportedAbilityLabels=ledger['abilities']['markedUnsupported'],
         criticalWork=['Confirm target regulation and legal forms/stones/stats without widening the roster','Audit remaining direct rank assignments, ally targets, spread target observations and all secondary-effect immunities','Audit legacy direct item reads outside shared active-effect adapters','Complete all post-Mega ability/form-stat rules and differential match scenarios','Independent full doubles match oracle; observed complete-match browser E2E exists but is not a simulator oracle'],outOfCatalogEvidence=ledger.get('outOfCatalogEvidence',[]))
+    if practical is not None:
+        focus=json.loads((ROOT/'TOURNAMENT_PRACTICAL_GATES.json').read_text())
+        backlog['practicalFocus']={k:focus[k] for k in ['mode','budgetMinutes','startedAt','coverageExpansionPaused','priority']}
+        backlog['practicalFocus']['gates']='TOURNAMENT_PRACTICAL_GATES.json'
+        backlog['practicalFocus']['results']='TOURNAMENT_PRACTICAL_RESULTS.json'
+        backlog['criticalWork']=['Prioritize actual team/top-120 damage, speed/order and 45-second critical defects within remaining sprint budget','Validate other frequently used resist berries, Aurora Veil and one-use interactions without broad candidate enumeration','Retain unconfirmed C/M-C/Mega and complete-match oracle as unresolved; predictions remain provisional']
     (ROOT/'DEVELOPMENT_BACKLOG.json').write_text(json.dumps(backlog,ensure_ascii=False,indent=2)+'\n')
     out=ROOT/'release';out.mkdir(exist_ok=True)
     manifest=dict(version=version,development=True,complete=False,completion=False,generatedAt=datetime.now(timezone.utc).isoformat(),
@@ -46,6 +56,7 @@ def main():
         testCommands={'passed':tests['passed'],'total':tests['total']},
         files={name:sha256((ROOT/name).read_bytes()).hexdigest() for name in files},
         limitations=['No deployment performed','Full mechanics and legality not certified','See DEVELOPMENT_CHECKPOINT.md and DEVELOPMENT_BACKLOG.json in source repository'])
+    if practical is not None:manifest['practicalAcceptance']={k:practical[k] for k in ['localChecksPassed','tournamentAccepted','readiness']}
     manifestText=json.dumps(manifest,ensure_ascii=False,indent=2)+'\n'
     (out/'RELEASE_MANIFEST.json').write_text(manifestText)
     status=f'''# {version} 開発途中の公開用ファイル一式\n\n完成版ではありません。自動テスト{tests['passed']}/{tests['total']}コマンド成功。\n全効果・対象大会の使用可否・公式ゲームとの試合照合は未完了です。\n\n同梱ファイルを静的ホスティングの同じディレクトリへ配置してください。\n全外部JSを含めて配置する必要があります。file://からの直接起動は検証対象外です。\n既存のデータ保存先は変更していません。公開・デプロイは行っていません。\n'''

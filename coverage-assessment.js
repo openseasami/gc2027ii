@@ -26,7 +26,7 @@ function executableIndex(sources){
  return index;
 }
 function assess(data){
- const files=['index.html','effect-engine.js','battle-core.js','priority-engine.js','turn-order-effects.js','rank-effects.js'];
+ const files=['critical-effects.js','index.html','effect-engine.js','battle-core.js','priority-engine.js','turn-order-effects.js','rank-effects.js'];
  const sources=Object.fromEntries(files.map(f=>[f,read(f)]));const refs=executableIndex(sources);
  const plan=JSON.parse(read('COVERAGE_REVIEW_PLAN.json'));const baseline=JSON.parse(read('ABILITY_REVIEW_BASELINE.json'));
  const result=JSON.parse(read('TEST_RESULTS.json'));
