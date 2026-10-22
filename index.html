@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Global Challenge 2027 II Support v2.9.9</title>
+<title>Global Challenge 2027 II Support v2.9.10</title>
 <style>
 :root{--bg:#f4f6f8;--panel:#fff;--line:#d8dee8;--text:#18202b;--muted:#667085;--accent:#2563eb;--accent2:#dbeafe;--danger:#b42318;--warn:#fff4cc;--ok:#eaf7ee;--chip:#f8fafc;--violet:#7c3aed}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}button,select{font:inherit}button{cursor:pointer}
@@ -8894,6 +8894,7 @@ function attackerIgnoresDefensiveAbilities(side,idx,name){
 function abilityDamageImmunity(as,ai,an,ds,di,dn,type,move=''){
  if(di==null)return '';
  const ab=knownBattleAbility(ds,di,dn);if(!ab||abilityBypassed(as,ai,an,ab))return '';
+ if(as===ds&&ai!==di&&ab==='テレパシー')return ab;
  const checks={でんき:['ひらいしん','ちくでん','でんきエンジン'],みず:['ちょすい','よびみず','かんそうはだ'],ほのお:['もらいび','こんがりボディ'],くさ:['そうしょく'],じめん:['ふゆう','どしょく']};
  if((checks[type]||[]).includes(ab))return ab;
  const f=abilityMoveTraits(move);
@@ -9328,20 +9329,20 @@ function criticalProfileForDamage(as,ai,an,ds,di,dn,move){
  const item=itemState.known?heldItemFor(as,ai):null;
  return CriticalEffects.profile(move,{attackerAbility:aa,defenderAbility:da,item,status:target?.status||'',focus:actor?.criticalFocus||0,bypass:!!da&&abilityBypassed(as,ai,an,da)});
 }
-function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx=null,perHitPower=null,criticalRequest=false){
+function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx=null,perHitPower=null,criticalRequest=false,defenderSide='opp'){
  const effectiveAttacker=effectiveBattleName('my',attackerIdx,attackerName);
- const effectiveDefender=defenderIdx==null?defenderName:effectiveBattleName('opp',defenderIdx,defenderName);
+ const effectiveDefender=defenderIdx==null?defenderName:effectiveBattleName(defenderSide,defenderIdx,defenderName);
  const mv=DAMAGE_MOVES[moveName],a=BATTLE_DATA[effectiveAttacker],d=BATTLE_DATA[effectiveDefender];
  if(mv?.catalogOnly)return {text:'固有効果は計算未対応',ko:'',chance:''};
  if(!mv||!a||!d||mv.cat==='status'||!mv.power)return {text:'補助技',ko:'',chance:''};
 
- const resolved=resolveMoveForDamage('my',attackerIdx,attackerName,moveName,mv,'opp',defenderIdx,defenderName);
+ const resolved=resolveMoveForDamage('my',attackerIdx,attackerName,moveName,mv,defenderSide,defenderIdx,defenderName);
  const moveType=resolved.moveType,power=perHitPower==null?resolved.power:perHitPower,abilityMod=resolved.abilityMod;
- const criticalProfile=typeof criticalProfileForDamage==='function'?criticalProfileForDamage('my',attackerIdx,attackerName,'opp',defenderIdx,defenderName,moveName):null;
+ const criticalProfile=typeof criticalProfileForDamage==='function'?criticalProfileForDamage('my',attackerIdx,attackerName,defenderSide,defenderIdx,defenderName,moveName):null;
  const critical=!!criticalProfile&&!criticalProfile.blocked&&(criticalRequest===true||criticalProfile.chance===1)&&!resolved.useOwnDefense&&!resolved.useDefenderAttack;
  if(power<=0)return {critical,criticalProfile,text:'現在HP不明・計算不可',ko:'',chance:''};
 
- const mods=sharedAbilityDamageModifiers('my',attackerIdx,attackerName,'opp',defenderIdx,defenderName,moveName,mv,moveType,power,abilityTypeEffect('my',attackerIdx,attackerName,moveType,d.types));
+ const mods=sharedAbilityDamageModifiers('my',attackerIdx,attackerName,defenderSide,defenderIdx,defenderName,moveName,mv,moveType,power,abilityTypeEffect('my',attackerIdx,attackerName,moveType,d.types));
  const prof={...(savedMyProfiles[attackerIdx]||{nature:'まじめ',hp:0,atk:32,def:0,spa:32,spd:0,spe:2}),item:heldItemFor('my',attackerIdx)};
  const battleState=state.my?.[attackerIdx]||{};
  let atk;
@@ -9349,7 +9350,7 @@ function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderB
    const baseDef=calcRealStat(a.def,prof.def||0,prof.nature||'まじめ','def');
    atk=applyStage(baseDef,battleState.defStage||0);
  }else if(resolved.useDefenderAttack){
-   const fp=foulPlayAttackSource('opp',defenderIdx,defenderName);
+   const fp=foulPlayAttackSource(defenderSide,defenderIdx,defenderName);
    atk=Math.max(1,fp?.atk||1);
  }else{
    const rawAtk=mv.cat==='phys'
@@ -9364,16 +9365,16 @@ function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderB
  const attackHeld=prof.item;
  const choiceAtk=(mv.cat==='spec'&&attackHeld==='こだわりメガネ')||(mv.cat==='phys'&&!resolved.useOwnDefense&&!resolved.useDefenderAttack&&attackHeld==='こだわりハチマキ')?1.5:1;
  atk=Math.max(1,Math.floor(atk*(resolved.useDefenderAttack?1:mods.attack)*choiceAtk));
- const ds=defenderSpreadForBulk(defenderBulk||'neutral');
+ const ds=defenderSide==='my'?{...(savedMyProfiles[defenderIdx]||{}),nature:savedMyProfiles[defenderIdx]?.nature||'まじめ'}:defenderSpreadForBulk(defenderBulk||'neutral');
  const rawDef=mv.cat==='phys'
-   ?calcRealStat(d.def,ds.def,ds.nature,'def')
-   :calcRealStat(d.spd,ds.spd,ds.nature,'spd');
- const defenderState=defenderIdx==null?null:state.opp?.[defenderIdx];
+   ?calcRealStat(d.def,ds.def||0,ds.nature,'def')
+   :calcRealStat(d.spd,ds.spd||0,ds.nature,'spd');
+ const defenderState=defenderIdx==null?null:state[defenderSide]?.[defenderIdx];
  const defStage=mv.cat==='phys'?(defenderState?.defStage||0):(defenderState?.spdStage||0);
  let def=applyStage(rawDef,mods.ignoreDefenseStage?0:critical?Math.min(0,defStage):defStage);
  def=Math.max(1,Math.floor(def*mods.defense));
  def=Math.max(1,Math.floor(def*weatherDefenseMod(effectiveDefender,mv.cat)));
- const hp=calcRealHP(d.hp,ds.hp);
+ const hp=calcRealHP(d.hp,ds.hp||0);
  // KO odds use observed remaining HP, while displayed damage percentage stays based on max HP.
  const observedHp=defenderState?.hp;
  const currentHp=(defenderIdx!=null && Number.isFinite(Number(observedHp)))
@@ -9381,25 +9382,25 @@ function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderB
 
  const eff=abilityTypeEffect('my',attackerIdx,attackerName,moveType,d.types);
  const immunity=defenderIdx==null?'':abilityDamageImmunity(
-   'my',attackerIdx,attackerName,'opp',defenderIdx,defenderName,moveType,moveName
+   'my',attackerIdx,attackerName,defenderSide,defenderIdx,defenderName,moveType,moveName
  );
  if(eff===0||immunity){
    return {critical,criticalProfile,text:'0.0%',ko:'無効',chance:'',rolls:[0],hp,currentHp,eff:0,immunity};
  }
 
- if(disguiseProtects('my',attackerIdx,attackerName,'opp',defenderIdx,defenderName)){
+ if(disguiseProtects('my',attackerIdx,attackerName,defenderSide,defenderIdx,defenderName)){
   const cost=Math.max(1,Math.floor(hp/8));return {critical,criticalProfile,text:'ばけのかわ消費（HP '+(cost/hp*100).toFixed(1)+'%）',ko:currentHp<=cost?'ばけのかわ反動でKO':'ばけのかわで防ぐ',chance:'',rolls:Array(16).fill(cost),hp,currentHp,eff,koChance:currentHp>0&&currentHp<=cost?1:0,disguise:true};
  }
  const heldMod=itemDamageMod(effectiveAttacker,moveType,prof.item);
- const terrainMod=terrainDamageMod(effectiveAttacker,moveType,effectiveDefender,moveName,'my',attackerIdx,'opp',defenderIdx);
+ const terrainMod=terrainDamageMod(effectiveAttacker,moveType,effectiveDefender,moveName,'my',attackerIdx,defenderSide,defenderIdx);
  const modifiedPower=typeof estimatedModifiedPower==='function'?estimatedModifiedPower(power,[mods.power,abilityMod,heldMod===1.2?heldMod:1,terrainMod]):power*mods.power;
- let base=battleBaseDamage(modifiedPower,atk,def,mv.spread && leadData('opp').length>=2,moveType,1);
+ let base=battleBaseDamage(modifiedPower,atk,def,mv.spread && (leadData('opp').length+(typeof ALLY_HIT_MOVES!=='undefined'&&ALLY_HIT_MOVES.has(moveName)?Math.max(0,leadData('my').length-1):0))>=2,moveType,1);
 
  if(critical)base=Math.floor(base*1.5);
  const stab=damageStabMod('my',attackerIdx,attackerName,effectiveAttacker,moveType);
  const item=heldMod===1.2?1:heldMod;
- const screen=critical||confirmedAbilityIs('my',attackerIdx,attackerName,'すりぬけ')?1:screenDamageMod('opp',mv.cat);
- const berry=typeof defensiveBerryForDamage==='function'?defensiveBerryForDamage('my',attackerIdx,attackerName,'opp',defenderIdx,defenderName,moveName,moveType,eff):{factor:1,consume:false};
+ const screen=critical||confirmedAbilityIs('my',attackerIdx,attackerName,'すりぬけ')?1:screenDamageMod(defenderSide,mv.cat);
+ const berry=typeof defensiveBerryForDamage==='function'?defensiveBerryForDamage('my',attackerIdx,attackerName,defenderSide,defenderIdx,defenderName,moveName,moveType,eff):{factor:1,consume:false};
  // Apply distinct modifiers in battle order instead of combining into one
  // floating-point multiplier. This keeps KO thresholds stable near integer cuts.
  // This remains an estimated calculator, not a full cartridge-accurate engine.
@@ -9425,8 +9426,8 @@ function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderB
    else ko=`乱数${minHits}〜${Number.isFinite(maxHits)?maxHits:'∞'}発`;
  }
  // KO status accounts for confirmed survival effects; keep raw damage rolls unchanged.
- const survival=(defenderIdx==null || typeof koSurvivalAssessment!=='function')?{blocks:false,uncertain:[]}:koSurvivalAssessment('opp',defenderIdx,currentHp,hp);
- if(survival.blocks&&abilityBypassed('my',attackerIdx,attackerName,'がんじょう')&&!confirmedFocusSash('opp',defenderIdx)){survival.blocks=false;}
+ const survival=(defenderIdx==null || typeof koSurvivalAssessment!=='function')?{blocks:false,uncertain:[]}:koSurvivalAssessment(defenderSide,defenderIdx,currentHp,hp);
+ if(survival.blocks&&abilityBypassed('my',attackerIdx,attackerName,'がんじょう')&&!confirmedFocusSash(defenderSide,defenderIdx)){survival.blocks=false;}
  const rawKo=ko;
  const hasLethalRoll=ohko>0;
  if(currentHp>0 && hasLethalRoll){
@@ -9434,12 +9435,12 @@ function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderB
    else if(survival.uncertain.length)ko=ko.replace(/^(確定|乱数)1発/, '条件付き$1発');
  }
  const koChance=currentHp>0&&!survival.blocks?ohko/rolls.length:0;
- const unknownSurvival=(defenderIdx!=null && state.opp?.[defenderIdx]) ?
-   [!state.opp[defenderIdx].itemConfirmed?'持ち物未確認':null,
-    !state.opp[defenderIdx].abilityConfirmed?'特性未確認':null].filter(Boolean):[];
+ const unknownSurvival=(defenderIdx!=null && state[defenderSide]?.[defenderIdx]) ?
+   [!state[defenderSide][defenderIdx].itemConfirmed?'持ち物未確認':null,
+    !state[defenderSide][defenderIdx].abilityConfirmed?'特性未確認':null].filter(Boolean):[];
  const result={critical,criticalProfile,berry,text:(critical?'急所 ':'')+`${minPct.toFixed(1)}–${maxPct.toFixed(1)}%`,ko,chance,eff,rolls,hp,currentHp,unknownSurvival,uncertainSurvival:survival.uncertain,koChance,rawKo,survivalReason:survival.reason};
  if(!critical&&!criticalRequest&&criticalProfile?.known&&(criticalProfile.chance>1/24||criticalProfile.sniper)&&!resolved.useOwnDefense&&!resolved.useDefenderAttack){
-   const scenario=damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx,perHitPower,true);
+   const scenario=damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx,perHitPower,true,defenderSide);
    result.criticalRolls=scenario.rolls;result.text+=` ／ ${scenario.text}（急所率${(criticalProfile.chance*100).toFixed(1)}%、通常予測と区別）`;
  }
  if(criticalProfile?.forced&&!criticalProfile.known)result.text+='（急所条件あり・特性/持ち物未確認）';
@@ -9965,7 +9966,7 @@ function markPredictionUncertainty(box){
  box.dataset.predictionVerified='false';
  if(!box.querySelector('.prediction-uncertainty')){
   const note=document.createElement('div');note.className='prediction-uncertainty damage-assumption';
-  note.textContent='参考推定：ダメージ・素早さ・推奨は未検証条件を含みます。未確認の特性・持ち物・配分で結果が変わります。';
+  note.textContent='参考推定：ダメージ・素早さ・推奨は未検証条件を含みます。相手行動・交代・複数ターンの展開は未確定です。未確認の特性・持ち物・配分で結果が変わります。';
   box.prepend(note);
  }
 }
@@ -10932,7 +10933,7 @@ function opponentDamageEstimateAgainstMy(action,targetEntry,powerOverride=null,c
   const heldMod=attacker.d.itemConfirmed?itemDamageMod(attackerName,moveType,heldItemFor('opp',attacker.idx)):1;
   const terrainMod=terrainDamageMod(attackerName,moveType,defenderName,moveName,'opp',attacker.idx,'my',targetEntry.idx);
   const modifiedPower=typeof estimatedModifiedPower==='function'?estimatedModifiedPower(power,[mods.power,abilityMod,heldMod===1.2?heldMod:1,terrainMod]):power*mods.power;
-  let base=battleBaseDamage(modifiedPower,atk,def,(mv.spread||action.spread)&&leadData('my').length>=2,moveType,1);
+  let base=battleBaseDamage(modifiedPower,atk,def,(mv.spread||action.spread)&&(leadData('my').length+(typeof ALLY_HIT_MOVES!=='undefined'&&ALLY_HIT_MOVES.has(moveName)?Math.max(0,leadData('opp').length-1):0))>=2,moveType,1);
 
   if(critical)base=Math.floor(base*1.5);
   const stab=damageStabMod('opp',attacker.idx,attacker.name,attackerName,moveType);
@@ -11011,7 +11012,7 @@ function oneTurnSimulation(actions,forcedOppPair=null){
   const skipped=ev=>simulationStrictlyBefore(defeated.get(key(ev.side,ev.actor)),ev);
   const ownGuardBlocks=(attack,target)=>{
     const guard=ordered.find(e=>e.side==='my'&&e.actor===target.name&&PROTECT_MOVES.has(e.action.move));
-    return guard&&!skipped(guard)&&simulationStrictlyBefore(guard,attack)&&!guardMoveResolution(attack.action.move,guard.action.move).ok;
+    return guard&&!skipped(guard)&&simulationStrictlyBefore(guard,attack)&&!guardMoveResolution(attack.action.move,guard.action.move).ok?protectChainSuccessProbability(target.d,guard.action.move):0;
   };
   ordered.forEach(ev=>{
     const a=ev.action;
@@ -11049,10 +11050,10 @@ function oneTurnSimulation(actions,forcedOppPair=null){
         // A declared switch changes the recipient. Do not KO the outgoing actor
         // using a calculation against its old species/HP.
         if((actions||[]).some(x=>x.actor===target.name&&x.kind==='switch'))return;
-        if(ownGuardBlocks(ev,target))return;
+        const guardChance=ownGuardBlocks(ev,target);if(guardChance>=1)return;
         const exact=opponentDamageEstimateAgainstMy(a,target);
         const accuracy=effectiveMoveAccuracy(a.move,'opp',ev.idx,'my',target.idx).accuracy;
-        const chance=(exact?.koChance??roughOpponentAttackLethalChance(a,target))*accuracy;
+        const chance=(exact?.koChance??roughOpponentAttackLethalChance(a,target))*accuracy*(1-guardChance);
         incoming.push({event:ev,target:target.name,chance});
         if(chance>=1-1e-10)defeated.set(key('my',target.name),ev);
         if(chance>=.4){score-=chance*.65;notes.push(`${a.actor}の${a.move}で${target.name}にKO圧力`);}
@@ -11214,8 +11215,9 @@ function scenarioHitAvailability(action,scenarioPair,target){
     if(!defender)return;
     const timing=evaluateGuardTiming('my',attacker.idx,action.move,'opp',defender.idx,guard.move);
     if(!timing.guardCanBlock)return;
-    if(timing.order==='guard-first')availability=0;
-    else if(timing.order==='tie'||timing.order==='unknown')availability=Math.min(availability,.5);
+    const success=protectChainSuccessProbability(defender.d,guard.move);
+    if(timing.order==='guard-first')availability=Math.min(availability,1-success);
+    else if(timing.order==='tie'||timing.order==='unknown')availability=Math.min(availability,1-success*.5);
   });
   return availability;
 }
@@ -11556,6 +11558,38 @@ function projectedContactPunishmentForAction(action,scenarioPair=null){
   return {actor:action.actor,move:action.move,currentHp,maxHp,
     recoil:0,orb:0,contact:reflected,total:reflected,statusRisk,notes,conditional:true};
 }
+// Pinned Gen9 target=allAdjacent (checked against Showdown in regression).
+const ALLY_HIT_MOVES=new Set(['じしん','じならし','なみのり','ほうでん','ふんえん','ヘドロウェーブ','はなふぶき','ばくおんぱ','だいばくはつ','じばく']);
+function planAllyDamageRisk(actions){
+ let penalty=0;const notes=[],entries=[];
+ for(const action of actions||[]){
+  if(action.kind==='switch'||!ALLY_HIT_MOVES.has(action.move))continue;
+  const actor=activeEntryByName('my',action.actor);if(!actor)continue;
+  for(const original of leadData('my').filter(e=>e.idx!==actor.idx)){
+   const partner=(actions||[]).find(a=>a.actor===original.name);
+   const target=partner?.kind==='switch'?switchDestinationEntry(partner):original;if(!target)continue;
+   const attack=simulatedActionEvent({...action,kind:'move'},'my');
+   const guard=partner&&PROTECT_MOVES.has(partner.move)?simulatedActionEvent({...partner,kind:'move'},'my'):null;
+   let open=1;
+   if(guard&&!guardMoveResolution(action.move,partner.move).ok){
+    const chance=protectChainSuccessProbability(original.d,partner.move);
+    if(simulationStrictlyBefore(guard,attack))open=1-chance;
+    else if(!simulationStrictlyBefore(attack,guard))open=1-chance*.5;
+   }
+   if(open<=0)continue;
+   const r=damageEstimate(actor.name,action.move,target.name,actor.idx,null,target.idx,null,false,'my');
+   if(!r?.rolls?.length){penalty+=4;notes.push('味方被害の計算未確認：参考推定');continue;}
+   const accuracy=effectiveMoveAccuracy(action.move,'my',actor.idx,'my',target.idx).accuracy;
+   const avg=r.rolls.reduce((n,x)=>n+Math.min(x,r.currentHp),0)/r.rolls.length*open*accuracy;
+   const lethal=(r.koChance||0)*open; // Conservative risk; damage also depends on accuracy.
+   const cost=Math.min(5,avg/Math.max(1,r.currentHp)*5)+lethal*10;
+   penalty+=cost;
+   entries.push({actor:actor.name,target:target.name,move:action.move,avg,lethal,open,rolls:r.rolls,fullHp:r.hp,currentHp:r.currentHp,conditional:true});
+   if(avg>0)notes.push(`${action.move}：味方${target.name}にも被害${lethal>0?'・KO危険':''}（参考推定）`);
+  }
+ }
+ return {penalty,notes,entries};
+}
 function planSelfDamageRisk(actions,scenarioPair=null){
   const byActor=new Map();
   (actions||[]).forEach(a=>{
@@ -11572,8 +11606,9 @@ function planSelfDamageRisk(actions,scenarioPair=null){
     const old=byActor.get(d.actor);
     byActor.set(d.actor,old?{...old,total:d.total+old.total,recoil:d.recoil+old.recoil,orb:d.orb+old.orb}:d);
   });
-  let penalty=0;
-  const notes=[];
+  const allyRisk=planAllyDamageRisk(actions);
+  let penalty=allyRisk.penalty;
+  const notes=[...allyRisk.notes];
   // End-of-turn chip can finish a recoil user; grassy recovery can offset it.
   const leaving=new Set((actions||[]).filter(a=>a?.kind==='switch').map(a=>a.actor));
   leadData('my').forEach(entry=>{
@@ -11918,9 +11953,9 @@ function nextTurnUtilityValue(entry,willBeFresh=false){
   const reasons=[];
 
   // Fake Out is specifically valuable on a fresh entry.
-  if(willBeFresh && (moves.includes('ねこだまし')||r.includes('fakeout'))){
+  if(willBeFresh&&moves.includes('ねこだまし')&&leadData('opp').some(e=>!priorityBlockedAgainst(e,'opp'))){
     score+=1.7;
-    reasons.push('次ターンねこだまし');
+    reasons.push('次ターンねこだまし成立時の参考推定');
   }
 
   // Intimidate has immediate value on switch-in and also creates a reusable cycle.
@@ -12090,9 +12125,9 @@ function twoTurnLookahead(actions,opponentPair=null){
       const inc=switchDestinationEntry(a);
       return !!inc && myMovesFor(inc.idx).includes('ねこだまし');
     });
-    if(freshNext){
+    if(freshNext&&leadData('opp').some(e=>!priorityBlockedAgainst(e,'opp'))){
       score+=.55;
-      notes.push('次ターンのねこだましで展開阻止を継続');
+      notes.push('次ターンのねこだまし成立時のみ展開阻止（相手行動・盤面は参考推定）');
     }
   }
 

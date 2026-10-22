@@ -80,7 +80,7 @@ try:
   if not page.evaluate('!!navigator.serviceWorker.controller'):page.reload(wait_until='networkidle')
   assert page.evaluate('!!navigator.serviceWorker.controller')
   cached=page.evaluate('''async () => {
-   const names=await caches.keys(),name=names.find(n=>n.endsWith('v2.9.9'));
+   const names=await caches.keys(),name=names.find(n=>n.endsWith('v2.9.10'));
    if(!name)return [];const cache=await caches.open(name);return (await cache.keys()).map(r=>new URL(r.url).pathname.split('/').pop());
   }''')
   for file in ['index.html','battle-core.js','effect-engine.js','priority-engine.js','turn-order-effects.js','rank-effects.js','critical-effects.js']:assert file in cached,(file,cached)

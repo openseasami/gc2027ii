@@ -1062,5 +1062,21 @@
     ],
     "scope": "28 explicit tactical acceptance scenarios including 4 actual full planner outputs; timing, Protect, switches, disruption immunities and double/focus KO. Not strategy optimality, prediction probability calibration, ally-hit damage or exhaustive action interaction certification.",
     "report": "RECOMMENDATION_STRATEGY_RESULTS.json"
+  },
+  "finalTacticalAudit": {
+    "completion": false,
+    "paths": [
+      "index.html:damageEstimate",
+      "index.html:planAllyDamageRisk",
+      "index.html:scenarioHitAvailability",
+      "index.html:oneTurnSimulation",
+      "index.html:nextTurnUtilityValue"
+    ],
+    "tests": [
+      "test-ally-hit-targets.js",
+      "browser_final_tactical_test.py"
+    ],
+    "scope": "Critical ally-hit joint cost, same-side raw-stat damage with profiles/screens, Telepathy/flying/Levitate, Protect chain, switch entrant and short Perish horizon. No general policy-optimality or opponent probability certification.",
+    "report": "FINAL_TACTICAL_AUDIT_RESULTS.json"
   }
 }
