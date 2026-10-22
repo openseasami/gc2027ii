@@ -414,6 +414,144 @@
         "browser_mechanics_regression_test.py"
       ],
       "scope": "One use, negative-rank reset without boost modifiers, move/entry/Mega/end-turn boundaries, Unburden, suppression, unknown opponent item guard. General Gen 9 item Update differential; not a full item-timing oracle."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "あとだし",
+        "クイックドロウ"
+      ],
+      "paths": [
+        "index.html:orderEffectProfile",
+        "turn-order-effects.js"
+      ],
+      "unitTests": [
+        "test-order-effect-groups.js",
+        "test-external-rule-corrections.js"
+      ],
+      "integrationTests": [
+        "test-order-effect-groups.js",
+        "test-external-rule-corrections.js"
+      ],
+      "scope": "共通の行動順経路で後攻化・攻撃技限定の確率先制を扱う。表示だけが未対応だった。 確率発動の観測結果確定、全交代・優先度との組合せは未網羅。"
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "すりぬけ"
+      ],
+      "paths": [
+        "index.html:substituteBlocksConfirmedHit"
+      ],
+      "unitTests": [
+        "test-substitute-bypass.js"
+      ],
+      "integrationTests": [
+        "test-substitute-bypass.js"
+      ],
+      "scope": "確認済み命中の共通みがわり迂回経路が存在し、両陣営の適用を検証。 壁・しんぴのまもり等の全迂回効果は未網羅。"
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "きよめのしお",
+        "ねつこうかん",
+        "リーフガード"
+      ],
+      "paths": [
+        "index.html:forecastCommonSecondaryStatus"
+      ],
+      "unitTests": [
+        "test-secondary-immunity-abilities.js"
+      ],
+      "integrationTests": [
+        "test-secondary-immunity-abilities.js"
+      ],
+      "scope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。 直接状態技、塩のゴースト軽減、熱交換の攻撃上昇等はこのテストの対象外。"
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "うるおいボイス"
+      ],
+      "paths": [
+        "index.html:resolveMoveForDamage"
+      ],
+      "unitTests": [
+        "test-adoption-priority-mechanics.js"
+      ],
+      "integrationTests": [
+        "test-adoption-priority-mechanics.js"
+      ],
+      "scope": "音フラグに基づく水タイプ化。実Showdown ModifyTypeとの10ケース比較、威力を上げないことを検証。 全音技・別タイプ変更特性・ダメージおよび大会固有仕様の完全比較は未完了。"
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "おうごんのからだ"
+      ],
+      "paths": [
+        "index.html:applyConfirmedTargetRanks"
+      ],
+      "unitTests": [
+        "test-target-ranks-integration.js"
+      ],
+      "integrationTests": [
+        "test-target-ranks-integration.js"
+      ],
+      "scope": "相手対象ランク技の確定適用を阻止し、かたやぶり時は適用する。 全変化技・味方対象・反射・特性無効化との相互作用は未完了。"
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "えんかく"
+      ],
+      "paths": [
+        "index.html:projectedContactPunishmentForAction"
+      ],
+      "unitTests": [
+        "test-contact.js"
+      ],
+      "integrationTests": [
+        "test-contact.js"
+      ],
+      "scope": "共通接触ダメージ予測で接触ペナルティを除外する。 確定命中イベント全体の接触判定・他の接触特性との統合は未完了。"
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "じゅうなん",
+        "めんえき",
+        "マグマのよろい"
+      ],
+      "paths": [
+        "index.html:forecastCommonSecondaryStatus"
+      ],
+      "unitTests": [
+        "test-common-secondary.js",
+        "test-secondary-immunity-abilities.js"
+      ],
+      "integrationTests": [
+        "test-common-secondary.js",
+        "test-secondary-immunity-abilities.js"
+      ],
+      "scope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。 直接状態技、既存状態の解除、特性変更時の更新は未網羅。"
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "はやてのつばさ"
+      ],
+      "paths": [
+        "index.html:movePriorityForActor"
+      ],
+      "unitTests": [
+        "test-gale-wings-differential.js"
+      ],
+      "integrationTests": [
+        "test-gale-wings-differential.js"
+      ],
+      "scope": "確認済み特性かつ観測HP満タン時のひこう技優先度+1。攻撃技・変化技とHP減少時を実Showdown48ケースで比較。 全タイプ変更・全HP観測精度・公式Champions世代仕様・試合全体での一致は未網羅。"
     }
   ],
   "outOfCatalogEvidence": [

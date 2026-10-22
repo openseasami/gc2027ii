@@ -1,0 +1,18 @@
+{
+  "completion": false,
+  "checkedAt": "2026-10-22T10:54:25.178003+00:00",
+  "attempts": [
+    {
+      "url": "https://champions-news.pokemon-home.com/ja/page/816.html",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "verified": false
+    },
+    {
+      "url": "https://web-view.app.pokemonchampions.jp/battle/pages/events/rs178713870219xeaaio/ja/pokemon.html",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "verified": false
+    }
+  ],
+  "finding": "C/M-C equivalence, target event allowed roster and Mega eligibility/stats remain unconfirmed; inherited catalogs unchanged. No exclusions or new Mega mechanics inferred.",
+  "showdown": "0.11.10 is a general Gen 9 local mechanics oracle; not an official Champions rule source."
+}

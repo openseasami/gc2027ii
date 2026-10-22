@@ -1,0 +1,11 @@
+{
+  "oracle": "pokemon-showdown",
+  "version": "0.11.10",
+  "entryPoint": "Battle.runEvent(ModifyPriority)",
+  "cases": 48,
+  "failures": [],
+  "completion": false,
+  "limitations": [
+    "General Gen 9 registered move type and observed full HP only; not official Champions rules or full-match parity"
+  ]
+}

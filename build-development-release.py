@@ -29,19 +29,19 @@ def main():
                 'mega':['event legality and base/form stats','stone/ability transitions','independent scenarios']}
     for category,rows in ledger['inventory'].items():
         for row in rows:
-            unresolved.append(dict(category=category,name=row['name'],priority=row['priority'],effect=row['effect'],
+            unresolved.append(dict(category=category,name=row['name'],priority=row['priority'],effect=row['effect'],coverage=row['coverage'],
                 unitVerification=row['unitVerification'],integrationVerification=row['integrationVerification'],
                 completionBlockedBy=['Full per-effect and authoritative verification incomplete'],dependencies=dependency[category]))
     rank={'target':0,'unknown':1,'defer':2}
     unresolved.sort(key=lambda r:(rank[r['priority']['classification']],r['category'],r['name']))
     backlog=dict(schemaVersion=1,complete=False,completion=False,scope='Every row still lacks full authoritative verification; requires-review does not mean no implementation.',
-        stageSummary=ledger['stageSummary'],dependencies=dependency,entries=unresolved,
+        stageSummary=ledger['stageSummary'],coverageSummary=ledger['coverageSummary'],dependencies=dependency,entries=unresolved,
         definiteUnsupportedAbilityLabels=ledger['abilities']['markedUnsupported'],
-        criticalWork=['Confirm target regulation and legal forms/stones/stats without widening the roster','Audit remaining direct rank assignments, ally targets, spread target observations and all secondary-effect immunities','Audit legacy direct item reads outside shared active-effect adapters','Complete all post-Mega ability/form-stat rules and differential match scenarios','Independent full doubles match oracle and complete browser E2E'],outOfCatalogEvidence=ledger.get('outOfCatalogEvidence',[]))
+        criticalWork=['Confirm target regulation and legal forms/stones/stats without widening the roster','Audit remaining direct rank assignments, ally targets, spread target observations and all secondary-effect immunities','Audit legacy direct item reads outside shared active-effect adapters','Complete all post-Mega ability/form-stat rules and differential match scenarios','Independent full doubles match oracle; observed complete-match browser E2E exists but is not a simulator oracle'],outOfCatalogEvidence=ledger.get('outOfCatalogEvidence',[]))
     (ROOT/'DEVELOPMENT_BACKLOG.json').write_text(json.dumps(backlog,ensure_ascii=False,indent=2)+'\n')
     out=ROOT/'release';out.mkdir(exist_ok=True)
     manifest=dict(version=version,development=True,complete=False,completion=False,generatedAt=datetime.now(timezone.utc).isoformat(),
-        baseCommit='650d5f2ce3def84871ab1ce88c1a134e9c6afa42',branch='codex-development',
+        baseCommit='8df2eb1240b9d712a9cf4c1f91cbe45831913860',branch='codex-development',
         implementationCommit=json.loads((ROOT/'DEVELOPMENT_ITERATION.json').read_text()).get('implementationCommit'),
         testCommands={'passed':tests['passed'],'total':tests['total']},
         files={name:sha256((ROOT/name).read_bytes()).hexdigest() for name in files},

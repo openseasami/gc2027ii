@@ -17,3 +17,14 @@ for(const [ab,w,key]of [['あめうけざら','雨','heal'],['かんそうはだ
 weather='砂';ability='';suppressed=false;item='ぼうじんゴーグル';assert.equal(ctx.estimatedEndTurnResidual({name:'TEST',idx:0,d:{}}).damage,0);
 item='';assert.equal(ctx.estimatedEndTurnResidual({name:'TEST',idx:0,d:{}}).damage,10);scenarios++;
 console.log(`PASS ${scenarios} shared weather suppression and active-item residual scenarios`);
+
+ctx.abilityBypassed=()=>false;ctx.abilityMoveTraits=()=>({});
+vm.runInContext(fn('sharedAbilityDamageModifiers'),ctx);
+for(const [ab,w,cat,type,key,boost]of [['サンパワー','晴れ','spec','ほのお','attack',1.5],['すなのちから','砂','phys','いわ','power',1.3]]){
+ ability=ab;weather=w;suppressed=false;
+ assert.equal(ctx.sharedAbilityDamageModifiers('my',0,'TEST','opp',0,'TEST','test',{cat},type,80,1)[key],boost);
+ suppressed=true;
+ assert.equal(ctx.sharedAbilityDamageModifiers('my',0,'TEST','opp',0,'TEST','test',{cat},type,80,1)[key],1);
+ assert.equal(ctx.$('weather').value,w,'Suppression must preserve displayed weather');
+}
+console.log('PASS Solar Power / Sand Force damage suppression and displayed-weather persistence');

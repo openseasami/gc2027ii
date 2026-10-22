@@ -1,0 +1,1313 @@
+{
+  "completion": false,
+  "oracle": "pokemon-showdown",
+  "version": "0.11.10",
+  "meaning": "Research leads, not implementation or official event-rule evidence. Species slot correspondence may differ between games.",
+  "entries": [
+    {
+      "name": "あくしゅう",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "stench"
+      ],
+      "referenceDescription": "This Pokemon's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onModifyMove"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "あとだし",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "stall"
+      ],
+      "referenceDescription": "This Pokemon moves last among Pokemon using the same or greater priority moves.",
+      "referenceFlags": {},
+      "referenceHooks": [],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "いかりのつぼ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "angerpoint"
+      ],
+      "referenceDescription": "If this Pokemon, but not its substitute, is struck by a critical hit, its Attack is raised by 12 stages.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "いやしのこころ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "healer"
+      ],
+      "referenceDescription": "30% chance this Pokemon's ally has its non-volatile status condition cured at the end of each turn.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onResidual"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "うるおいボイス",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "liquidvoice"
+      ],
+      "referenceDescription": "This Pokemon's sound-based moves become Water-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onModifyType"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "うるおいボディ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "hydration"
+      ],
+      "referenceDescription": "This Pokemon has its non-volatile status condition cured at the end of each turn if Rain Dance is active. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onResidual"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "えんかく",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "longreach"
+      ],
+      "referenceDescription": "This Pokemon's attacks do not make contact with the target.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onModifyMove"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "おうごんのからだ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "goodasgold"
+      ],
+      "referenceDescription": "This Pokemon is immune to Status moves.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onTryHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "おみとおし",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "frisk"
+      ],
+      "referenceDescription": "On switch-in, this Pokemon identifies the held items of all opposing Pokemon.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onStart"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "おもてなし",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "hospitality"
+      ],
+      "referenceDescription": "On switch-in, this Pokemon restores 1/4 of its ally's maximum HP, rounded down.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onStart"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "かわりもの",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "imposter"
+      ],
+      "referenceDescription": "On switch-in, this Pokemon Transforms into the opposing Pokemon that is facing it. If there is no Pokemon at that position, this Pokemon does not Transform.",
+      "referenceFlags": {
+        "failroleplay": 1,
+        "noreceiver": 1,
+        "noentrain": 1,
+        "notrace": 1
+      },
+      "referenceHooks": [
+        "onSwitchIn"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "かんろなミツ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "supersweetsyrup"
+      ],
+      "referenceDescription": "On switch-in, this Pokemon lowers the evasiveness of opponents 1 stage. Once per battle.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onStart"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ききかいひ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "emergencyexit"
+      ],
+      "referenceDescription": "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onEmergencyExit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "きけんよち",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "anticipation"
+      ],
+      "referenceDescription": "On switch-in, this Pokemon is alerted if any opposing Pokemon has an attack that is super effective against this Pokemon, or an OHKO move. This effect considers any move that deals direct damage as an attacking move of its respective type, Hidden Power counts as its determined type, and Judgment, Multi-Attack, Natural Gift, Revelation Dance, Techno Blast, and Weather Ball are considered Normal-type moves.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onStart"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "きずなへんげ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "battlebond"
+      ],
+      "referenceDescription": "If this Pokemon is a Greninja, its Attack, Special Attack, and Speed are raised by 1 stage if it attacks and knocks out another Pokemon. This effect can only happen once per battle.",
+      "referenceFlags": {
+        "failroleplay": 1,
+        "noreceiver": 1,
+        "noentrain": 1,
+        "notrace": 1,
+        "failskillswap": 1,
+        "cantsuppress": 1
+      },
+      "referenceHooks": [
+        "onSourceAfterFaint"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "きみょうなくすり",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "curiousmedicine"
+      ],
+      "referenceDescription": "On switch-in, this Pokemon's allies have their stat stages reset to 0.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onStart"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "きゅうばん",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "suctioncups"
+      ],
+      "referenceDescription": "This Pokemon cannot be forced to switch out by another Pokemon's attack or item.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onDragOut"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "きょううん",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "superluck"
+      ],
+      "referenceDescription": "This Pokemon's critical hit ratio is raised by 1 stage.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onModifyCritRatio"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "きょうせい",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "symbiosis"
+      ],
+      "referenceDescription": "If an ally uses its item, this Pokemon gives its item to that ally immediately. Does not activate if the ally's item was stolen or knocked off, or if the ally used an Eject Button or Eject Pack.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onAllyAfterUseItem"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "きよめのしお",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "purifyingsalt"
+      ],
+      "referenceDescription": "This Pokemon cannot become affected by a non-volatile status condition or Yawn. If a Pokemon uses a Ghost-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onSetStatus",
+        "onTryAddVolatile",
+        "onSourceModifyAtk",
+        "onSourceModifySpA"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "きんちょうかん",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "unnerve"
+      ],
+      "referenceDescription": "While this Pokemon is active, it prevents opposing Pokemon from using their Berries. This Ability activates before hazards and other Abilities take effect.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onStart",
+        "onEnd",
+        "onFoeTryEatItem"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ぎたい",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "mimicry"
+      ],
+      "referenceDescription": "This Pokemon's types change to match the active Terrain when this Pokemon acquires this Ability, or whenever a Terrain begins. Electric type during Electric Terrain, Grass type during Grassy Terrain, Fairy type during Misty Terrain, and Psychic type during Psychic Terrain. If this Ability is acquired without an active Terrain, or a Terrain ends, this Pokemon's types become the original types for its species.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onStart",
+        "onTerrainChange"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ぎゃくじょう",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "berserk"
+      ],
+      "referenceDescription": "When this Pokemon has more than 1/2 its maximum HP and takes damage from an attack bringing it to 1/2 or less of its maximum HP, its Special Attack is raised by 1 stage. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onDamage",
+        "onTryEatItem",
+        "onAfterMoveSecondary"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "くいしんぼう",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "gluttony"
+      ],
+      "referenceDescription": "When this Pokemon is holding a Berry that usually activates with 1/4 or less of its maximum HP, it is eaten at 1/2 or less of its maximum HP instead.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onStart",
+        "onDamage"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "こぼれダネ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "seedsower"
+      ],
+      "referenceDescription": "When this Pokemon is hit by an attack, the effect of Grassy Terrain begins.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onDamagingHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "さまようたましい",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "wanderingspirit"
+      ],
+      "referenceDescription": "Pokemon making contact with this Pokemon have their Ability swapped with this one. Does not affect Pokemon with the Abilities As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Hunger Switch, Ice Face, Illusion, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Protosynthesis, Quark Drive, RKS System, Schooling, Shields Down, Stance Change, Tera Shell, Tera Shift, Teraform Zero, Wonder Guard, Zen Mode, or Zero to Hero.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onDamagingHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "しめりけ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "damp"
+      ],
+      "referenceDescription": "While this Pokemon is active, Explosion, Mind Blown, Misty Explosion, Self-Destruct, and the Aftermath Ability are prevented from having an effect.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onAnyTryMove",
+        "onAnyDamage"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "しゅうかく",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "harvest"
+      ],
+      "referenceDescription": "If the last item this Pokemon used is a Berry, there is a 50% chance it gets restored at the end of each turn. If Sunny Day is active, this chance is 100%.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onResidual"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "じしんかじょう",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "moxie"
+      ],
+      "referenceDescription": "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onSourceAfterFaint"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "じゅうなん",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "limber"
+      ],
+      "referenceDescription": "This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onUpdate",
+        "onSetStatus"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "じゅくせい",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "ripen"
+      ],
+      "referenceDescription": "When this Pokemon eats certain Berries, the effects are doubled. Berries that restore HP or PP have the amount doubled, Berries that raise stat stages have the amount doubled, Berries that halve damage taken quarter it instead, and a Jaboca Berry or Rowap Berry has the attacker lose 1/4 of its maximum HP, rounded down.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onTryHeal",
+        "onChangeBoost",
+        "onSourceModifyDamage",
+        "onTryEatItem",
+        "onEatItem"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "すじがねいり",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "stalwart"
+      ],
+      "referenceDescription": "This Pokemon's moves cannot be redirected to a different target by any effect.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onModifyMove"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "すてみ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "reckless"
+      ],
+      "referenceDescription": "This Pokemon's attacks with recoil or crash damage have their power multiplied by 1.2. Does not affect Struggle.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onBasePower"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "すなはき",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "sandspit"
+      ],
+      "referenceDescription": "When this Pokemon is hit by an attack, the effect of Sandstorm begins.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onDamagingHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "すりぬけ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "infiltrator"
+      ],
+      "referenceDescription": "This Pokemon's moves ignore substitutes and the opposing side's Reflect, Light Screen, Safeguard, Mist, and Aurora Veil.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onModifyMove"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "せいぎのこころ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "justified"
+      ],
+      "referenceDescription": "This Pokemon's Attack is raised by 1 stage after it is damaged by a Dark-type move.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onDamagingHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "だっぴ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "shedskin"
+      ],
+      "referenceDescription": "This Pokemon has a 33% chance to have its non-volatile status condition cured at the end of each turn.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onResidual"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ちどりあし",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "tangledfeet"
+      ],
+      "referenceDescription": "This Pokemon's evasiveness is doubled as long as it is confused.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onModifyAccuracy"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "てんきや",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "forecast"
+      ],
+      "referenceDescription": "If this Pokemon is a Castform, its type changes to the current weather condition's type, except Sandstorm. This effect is prevented if this Pokemon is holding a Utility Umbrella and the weather is Rain Dance or Sunny Day.",
+      "referenceFlags": {
+        "failroleplay": 1,
+        "noreceiver": 1,
+        "noentrain": 1,
+        "notrace": 1
+      },
+      "referenceHooks": [
+        "onStart",
+        "onWeatherChange"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "でんきにかえる",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "electromorphosis"
+      ],
+      "referenceDescription": "This Pokemon gains the Charge effect when it takes a hit from an attack.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onDamagingHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "とうそうしん",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "rivalry"
+      ],
+      "referenceDescription": "This Pokemon's attacks have their power multiplied by 1.25 against targets of the same gender or multiplied by 0.75 against targets of the opposite gender. There is no modifier if either this Pokemon or the target is genderless.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onBasePower"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "どくげしょう",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "toxicdebris"
+      ],
+      "referenceDescription": "If this Pokemon is hit by a physical attack, Toxic Spikes are set on the opposing side.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onDamagingHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "にげあし",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "runaway"
+      ],
+      "referenceDescription": "No competitive use.",
+      "referenceFlags": {},
+      "referenceHooks": [],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ねつこうかん",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "thermalexchange"
+      ],
+      "referenceDescription": "This Pokemon's Attack is raised 1 stage after it is damaged by a Fire-type move. This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onDamagingHit",
+        "onUpdate",
+        "onSetStatus"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ねんちゃく",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "stickyhold"
+      ],
+      "referenceDescription": "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack, unless the attack knocks out this Pokemon. A Sticky Barb will be transferred to other Pokemon regardless of this Ability.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onTakeItem"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "のろわれボディ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "cursedbody"
+      ],
+      "referenceDescription": "If this Pokemon is hit by an attack, there is a 30% chance that move gets disabled unless one of the attacker's moves is already disabled.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onDamagingHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "はっこう",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "illuminate"
+      ],
+      "referenceDescription": "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onTryBoost",
+        "onModifyMove"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "はやおき",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "earlybird"
+      ],
+      "referenceDescription": "This Pokemon's sleep counter drops by 2 instead of 1.",
+      "referenceFlags": {},
+      "referenceHooks": [],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "はやてのつばさ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "galewings"
+      ],
+      "referenceDescription": "If this Pokemon is at full HP, its Flying-type moves have their priority increased by 1.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onModifyPriority"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "はらぺこスイッチ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "hungerswitch"
+      ],
+      "referenceDescription": "If this Pokemon is a Morpeko, it changes formes between its Full Belly Mode and Hangry Mode at the end of each turn.",
+      "referenceFlags": {
+        "failroleplay": 1,
+        "noreceiver": 1,
+        "noentrain": 1,
+        "notrace": 1,
+        "failskillswap": 1,
+        "notransform": 1
+      },
+      "referenceHooks": [
+        "onResidual"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "はりこみ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "stakeout"
+      ],
+      "referenceDescription": "This Pokemon's offensive stat is doubled against a target that switched in this turn.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onModifyAtk",
+        "onModifySpA"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "はんすう",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "cudchew"
+      ],
+      "referenceDescription": "If this Pokemon eats a Berry, it will eat that Berry again at the end of the next turn.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onEatItem",
+        "onEnd"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ひとでなし",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "merciless"
+      ],
+      "referenceDescription": "This Pokemon's attacks are critical hits if the target is poisoned.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onModifyCritRatio"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ふくつのこころ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "steadfast"
+      ],
+      "referenceDescription": "If this Pokemon flinches, its Speed is raised by 1 stage.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onFlinch"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ふしょく",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "corrosion"
+      ],
+      "referenceDescription": "This Pokemon can poison or badly poison a Pokemon regardless of its typing.",
+      "referenceFlags": {},
+      "referenceHooks": [],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ふみん",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "insomnia"
+      ],
+      "referenceDescription": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onUpdate",
+        "onSetStatus",
+        "onTryAddVolatile"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "へんげんじざい",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "protean"
+      ],
+      "referenceDescription": "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only happen once per switch-in, and only if this Pokemon is not Terastallized.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onPrepareHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ほうし",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "effectspore"
+      ],
+      "referenceDescription": "30% chance a Pokemon making contact with this Pokemon will be poisoned, paralyzed, or fall asleep.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onDamagingHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ほおぶくろ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "cheekpouch"
+      ],
+      "referenceDescription": "If this Pokemon eats a held Berry, it restores 1/3 of its maximum HP, rounded down, in addition to the Berry's effect. This effect can also activate after the effects of Bug Bite, Fling, Pluck, Stuff Cheeks, and Teatime if the eaten Berry had an effect on this Pokemon.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onEatItem"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "めんえき",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "immunity"
+      ],
+      "referenceDescription": "This Pokemon cannot be poisoned. Gaining this Ability while poisoned cures it.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onUpdate",
+        "onSetStatus"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ものひろい",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "pickup"
+      ],
+      "referenceDescription": "At the end of each turn, if this Pokemon is not holding an item and at least one adjacent Pokemon used an item during this turn, one of those Pokemon is selected at random and this Pokemon obtains that Pokemon's last used item. An item is not considered the last used if it was a popped Air Balloon, if the item was picked up by another Pokemon with this Ability, or if the item was lost to Bug Bite, Corrosive Gas, Covet, Incinerate, Knock Off, Pluck, or Thief. Items thrown with Fling can be picked up.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onResidual"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "やるき",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "vitalspirit"
+      ],
+      "referenceDescription": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onUpdate",
+        "onSetStatus",
+        "onTryAddVolatile"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ゆうばく",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "aftermath"
+      ],
+      "referenceDescription": "If this Pokemon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. If any active Pokemon has the Damp Ability, this effect is prevented.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onDamagingHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "よちむ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "forewarn"
+      ],
+      "referenceDescription": "On switch-in, this Pokemon is alerted to the move with the highest power, at random, known by an opposing Pokemon. This effect considers OHKO moves to have 150 power, Counter, Mirror Coat, and Metal Burst to have 120 power, every other attacking move with an unspecified power to have 80 power, and non-damaging moves to have 1 power.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onStart"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "わるいてぐせ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "pickpocket"
+      ],
+      "referenceDescription": "If this Pokemon has no item and is hit by a contact move, it steals the attacker's item. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onAfterMoveSecondary"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "アナライズ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "analytic"
+      ],
+      "referenceDescription": "The power of this Pokemon's move is multiplied by 1.3 if it is the last to move in a turn. Does not affect Doom Desire and Future Sight.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onBasePower"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "イリュージョン",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "illusion"
+      ],
+      "referenceDescription": "When this Pokemon switches in, it appears as the last unfainted Pokemon in its party until it takes direct damage from another Pokemon's attack. This Pokemon's actual level and HP are displayed instead of those of the mimicked Pokemon.",
+      "referenceFlags": {
+        "failroleplay": 1,
+        "noreceiver": 1,
+        "noentrain": 1,
+        "notrace": 1,
+        "failskillswap": 1
+      },
+      "referenceHooks": [
+        "onBeforeSwitchIn",
+        "onDamagingHit",
+        "onEnd",
+        "onFaint"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "カブトアーマー",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "battlearmor"
+      ],
+      "referenceDescription": "This Pokemon cannot be struck by a critical hit.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "クイックドロウ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "quickdraw"
+      ],
+      "referenceDescription": "This Pokemon has a 30% chance to move first in its priority bracket with attacking moves.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onFractionalPriority"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "シェルアーマー",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "shellarmor"
+      ],
+      "referenceDescription": "This Pokemon cannot be struck by a critical hit.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "シンクロ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "synchronize"
+      ],
+      "referenceDescription": "If another Pokemon burns, paralyzes, poisons, or badly poisons this Pokemon, that Pokemon receives the same non-volatile status condition.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onAfterSetStatus"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "スイートベール",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "sweetveil"
+      ],
+      "referenceDescription": "This Pokemon and its allies cannot fall asleep, but those already asleep do not wake up immediately. This Pokemon and its allies cannot use Rest successfully or become affected by Yawn, and those previously affected will not fall asleep.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onAllySetStatus",
+        "onAllyTryAddVolatile"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "スナイパー",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "sniper"
+      ],
+      "referenceDescription": "If this Pokemon strikes with a critical hit, the damage is multiplied by 1.5.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onModifyDamage"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "テレパシー",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "telepathy"
+      ],
+      "referenceDescription": "This Pokemon does not take damage from attacks made by its allies.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onTryHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "トレース",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "trace"
+      ],
+      "referenceDescription": "On switch-in, this Pokemon copies a random opposing Pokemon's Ability. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Flower Gift, Forecast, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Teraform Zero, Tera Shell, Tera Shift, Trace, Zen Mode, and Zero to Hero. If no opposing Pokemon has an Ability that can be copied, this Ability will activate as soon as one does.",
+      "referenceFlags": {
+        "failroleplay": 1,
+        "noreceiver": 1,
+        "noentrain": 1,
+        "notrace": 1
+      },
+      "referenceHooks": [
+        "onStart",
+        "onUpdate"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "バトルスイッチ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "stancechange"
+      ],
+      "referenceDescription": "If this Pokemon is an Aegislash, it changes to Blade Forme before using an attacking move, and changes to Shield Forme before using King's Shield.",
+      "referenceFlags": {
+        "failroleplay": 1,
+        "noreceiver": 1,
+        "noentrain": 1,
+        "notrace": 1,
+        "failskillswap": 1,
+        "cantsuppress": 1
+      },
+      "referenceHooks": [
+        "onModifyMove"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "バリアフリー",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "screencleaner"
+      ],
+      "referenceDescription": "On switch-in, the effects of Aurora Veil, Light Screen, and Reflect end for both sides.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onStart"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "フラワーベール",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "flowerveil"
+      ],
+      "referenceDescription": "Grass-type Pokemon on this Pokemon's side cannot have their stat stages lowered by other Pokemon or have a non-volatile status condition inflicted on them by other Pokemon.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onAllyTryBoost",
+        "onAllySetStatus",
+        "onAllyTryAddVolatile"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "プレッシャー",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "pressure"
+      ],
+      "referenceDescription": "If this Pokemon is the target of an opposing Pokemon's move, that move loses one additional PP. Imprison, Snatch, and Tera Blast also lose one additional PP when used by an opposing Pokemon, but Sticky Web does not.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onStart",
+        "onDeductPP"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ヘドロえき",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "liquidooze"
+      ],
+      "referenceDescription": "This Pokemon damages those draining HP from it for as much as they would heal.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onSourceTryHeal"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ヘヴィメタル",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "heavymetal"
+      ],
+      "referenceDescription": "This Pokemon's weight is doubled. This effect is calculated after the effect of Autotomize, and before the effect of Float Stone.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onModifyWeight"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "マイティチェンジ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "zerotohero"
+      ],
+      "referenceDescription": "If this Pokemon is a Palafin in Zero Form, switching out has it change to Hero Form.",
+      "referenceFlags": {
+        "failroleplay": 1,
+        "noreceiver": 1,
+        "noentrain": 1,
+        "notrace": 1,
+        "failskillswap": 1,
+        "cantsuppress": 1,
+        "notransform": 1
+      },
+      "referenceHooks": [
+        "onSwitchOut",
+        "onSwitchIn"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "マグマのよろい",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "magmaarmor"
+      ],
+      "referenceDescription": "This Pokemon cannot be frozen. Gaining this Ability while frozen cures it.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onUpdate",
+        "onImmunity"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "マジシャン",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "magician"
+      ],
+      "referenceDescription": "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack. Does not affect Doom Desire and Future Sight.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onAfterMoveSecondarySelf"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ミイラ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "mummy"
+      ],
+      "referenceDescription": "Pokemon making contact with this Pokemon have their Ability changed to Mummy. Does not affect Pokemon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Mummy, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Zen Mode, or Zero to Hero Abilities.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onDamagingHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ムラっけ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "moody"
+      ],
+      "referenceDescription": "This Pokemon has a random stat, other than accuracy or evasiveness, raised by 2 stages and another stat lowered by 1 stage at the end of each turn.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onResidual"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "メロメロボディ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "cutecharm"
+      ],
+      "referenceDescription": "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onDamagingHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "ライトメタル",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "lightmetal"
+      ],
+      "referenceDescription": "This Pokemon's weight is halved, rounded down to a tenth of a kilogram. This effect is calculated after the effect of Autotomize, and before the effect of Float Stone. A Pokemon's weight will not drop below 0.1 kg.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onModifyWeight"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "リベロ",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "libero"
+      ],
+      "referenceDescription": "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type. This effect can only happen once per switch-in, and only if this Pokemon is not Terastallized.",
+      "referenceFlags": {},
+      "referenceHooks": [
+        "onPrepareHit"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "リーフガード",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "leafguard"
+      ],
+      "referenceDescription": "If Sunny Day is active, this Pokemon cannot become affected by a non-volatile status condition or Yawn, and Rest will fail for it. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+      "referenceFlags": {
+        "breakable": 1
+      },
+      "referenceHooks": [
+        "onSetStatus",
+        "onTryAddVolatile"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    },
+    {
+      "name": "レシーバー",
+      "identityStatus": "unambiguous inherited species-slot correspondence; not externally confirmed Japanese identity",
+      "candidateIds": [
+        "receiver"
+      ],
+      "referenceDescription": "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Flower Gift, Forecast, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Tera Shell, Tera Shift, Teraform Zero, Trace, Wonder Guard, Zen Mode, and Zero to Hero.",
+      "referenceFlags": {
+        "failroleplay": 1,
+        "noreceiver": 1,
+        "noentrain": 1,
+        "notrace": 1
+      },
+      "referenceHooks": [
+        "onAllyFaint"
+      ],
+      "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
+    }
+  ]
+}

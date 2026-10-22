@@ -1,0 +1,29 @@
+{
+  "completion": false,
+  "passed": true,
+  "kind": "complete observed match UI workflow",
+  "stateInjection": false,
+  "actions": [
+    "ねこだまし",
+    "インファイト",
+    "opp1 KO",
+    "opp2 KO",
+    "交代→ガオガエン",
+    "交代→ボーマンダ",
+    "opp1 KO",
+    "opp2 KO",
+    "交代→ガオガエン",
+    "交代→ボーマンダ",
+    "opp1 KO",
+    "opp2 KO"
+  ],
+  "limitations": [
+    "Not a full battle simulator differential",
+    "No official damage, RNG, Champions legality or mobile time-budget oracle"
+  ],
+  "turns": 3,
+  "opponentPokemon": 4,
+  "historyRecords": 1,
+  "reload": true,
+  "undoReplay": true
+}

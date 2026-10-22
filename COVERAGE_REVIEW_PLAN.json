@@ -1,0 +1,108 @@
+{
+  "completion": false,
+  "scopes": [
+    {
+      "category": "abilities",
+      "names": [
+        "あとだし",
+        "クイックドロウ"
+      ],
+      "tests": [
+        "test-order-effect-groups.js",
+        "test-external-rule-corrections.js"
+      ],
+      "scope": "共通の行動順経路で後攻化・攻撃技限定の確率先制を扱う。表示だけが未対応だった。",
+      "remaining": "確率発動の観測結果確定、全交代・優先度との組合せは未網羅。",
+      "alternate": true
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "すりぬけ"
+      ],
+      "tests": [
+        "test-substitute-bypass.js"
+      ],
+      "scope": "確認済み命中の共通みがわり迂回経路が存在し、両陣営の適用を検証。",
+      "remaining": "壁・しんぴのまもり等の全迂回効果は未網羅。",
+      "alternate": true
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "きよめのしお",
+        "ねつこうかん",
+        "リーフガード"
+      ],
+      "tests": [
+        "test-secondary-immunity-abilities.js"
+      ],
+      "scope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
+      "remaining": "直接状態技、塩のゴースト軽減、熱交換の攻撃上昇等はこのテストの対象外。",
+      "alternate": true
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "うるおいボイス"
+      ],
+      "tests": [
+        "test-adoption-priority-mechanics.js"
+      ],
+      "scope": "音フラグに基づく水タイプ化。実Showdown ModifyTypeとの10ケース比較、威力を上げないことを検証。",
+      "remaining": "全音技・別タイプ変更特性・ダメージおよび大会固有仕様の完全比較は未完了。",
+      "alternate": false
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "おうごんのからだ"
+      ],
+      "tests": [
+        "test-target-ranks-integration.js"
+      ],
+      "scope": "相手対象ランク技の確定適用を阻止し、かたやぶり時は適用する。",
+      "remaining": "全変化技・味方対象・反射・特性無効化との相互作用は未完了。",
+      "alternate": false
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "えんかく"
+      ],
+      "tests": [
+        "test-contact.js"
+      ],
+      "scope": "共通接触ダメージ予測で接触ペナルティを除外する。",
+      "remaining": "確定命中イベント全体の接触判定・他の接触特性との統合は未完了。",
+      "alternate": true
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "じゅうなん",
+        "めんえき",
+        "マグマのよろい"
+      ],
+      "tests": [
+        "test-common-secondary.js",
+        "test-secondary-immunity-abilities.js"
+      ],
+      "scope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
+      "remaining": "直接状態技、既存状態の解除、特性変更時の更新は未網羅。",
+      "alternate": true
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "はやてのつばさ"
+      ],
+      "tests": [
+        "test-gale-wings-differential.js"
+      ],
+      "scope": "確認済み特性かつ観測HP満タン時のひこう技優先度+1。攻撃技・変化技とHP減少時を実Showdown48ケースで比較。",
+      "remaining": "全タイプ変更・全HP観測精度・公式Champions世代仕様・試合全体での一致は未網羅。",
+      "alternate": false
+    }
+  ]
+}

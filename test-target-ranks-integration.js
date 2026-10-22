@@ -51,3 +51,7 @@ reset();state.my[1].ability='ミラーアーマー';state.opp[0].itemConfirmed=f
 assert.equal(ctx.applyConfirmedTargetRanks('opp',0,'C','あまえる',action),false);
 assert.equal(state.opp[0].atkStage,undefined,'unknown source item does not create a guessed reflected drop');
 console.log('PASS reflected rank change source-item protection and unknown guards');
+
+reset();state.opp[1].ability='おうごんのからだ';assert.equal(ctx.applyConfirmedTargetRanks('my',0,'A','うそなき',action),false);
+bypass=true;assert.equal(ctx.applyConfirmedTargetRanks('my',0,'A','うそなき',action),true);assert.equal(state.opp[1].spdStage,-2);
+console.log('PASS Good as Gold blocks targeted status ranks unless ignored by Mold Breaker');

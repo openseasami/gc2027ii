@@ -1,0 +1,11 @@
+{
+  "oracle": "pokemon-showdown",
+  "version": "0.11.10",
+  "entryPoint": "Battle.runEvent(ModifyType)",
+  "cases": 10,
+  "failures": [],
+  "completion": false,
+  "limitations": [
+    "Liquid Voice move type only; no full damage, Champions legality or full-match parity"
+  ]
+}

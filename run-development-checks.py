@@ -25,13 +25,14 @@ def main():
     for file in sorted(ROOT.glob('browser_*test.py')):
         results.append(run([sys.executable,file.name]))
     results.append(run([sys.executable,'browser_smoke_portable.py']))
-    subprocess.run(['node','implementation-ledger.js'],cwd=ROOT,check=True)
-    files=['rank-effects.js','index.html','sw.js','battle-core.js','effect-engine.js','priority-engine.js','turn-order-effects.js','implementation-ledger.js','MECHANICS_EVIDENCE.json']
+    files=['rank-effects.js','index.html','sw.js','battle-core.js','effect-engine.js','priority-engine.js','turn-order-effects.js','implementation-ledger.js','MECHANICS_EVIDENCE.json','coverage-assessment.js','COVERAGE_REVIEW_PLAN.json','ABILITY_REVIEW_BASELINE.json','ABILITY_REFERENCE_HOOKS.json','reference-ability-audit.js']
+    files += sorted({p.name for pattern in ['test-*.js','test-*.py','browser_*.py'] for p in ROOT.glob(pattern)})
     report=dict(generatedAt=datetime.now(timezone.utc).isoformat(),complete=False,completion=False,
         limitations=['Passing scenarios do not certify full mechanics, event legality, official-game parity, mobile usability or deployed-site equivalence.'],
         sourceSha256={name:sha256((ROOT/name).read_bytes()).hexdigest() for name in files},
         total=len(results),passed=sum(r['exitCode']==0 for r in results),results=results)
     (ROOT/'TEST_RESULTS.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+    subprocess.run(['node','implementation-ledger.js'],cwd=ROOT,check=True)
     for result in results:
         print(('PASS' if result['exitCode']==0 else 'FAIL')+' '+result['command'][-1])
     print(f"{report['passed']}/{report['total']} commands passed; complete=false")

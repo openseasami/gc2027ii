@@ -19,3 +19,9 @@ check('かえんほうしゃ','すいほう','なし',true,.1);
 check('かえんほうしゃ','リーフガード','sun',false,0);
 assert.ok(src.includes("weather:$('weather')?.value||'なし'"));n++;
 console.log(n+' additional status-immunity checks passed');
+
+check('ヘドロばくだん','めんえき','なし',false,0);
+check('ヘドロばくだん','めんえき','なし',true,.3);
+check('れいとうビーム','マグマのよろい','なし',false,0);
+check('れいとうビーム','マグマのよろい','なし',true,.1);
+console.log('PASS poison/freeze immunity and Mold Breaker forecasting regressions');
