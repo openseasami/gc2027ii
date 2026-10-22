@@ -1171,12 +1171,16 @@
         ],
         "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
       },
-      "currentlyMarkedUnsupported": true,
-      "classification": "未実装",
-      "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
-      "executableReferences": [],
-      "tests": [],
-      "scopedTestsPassed": false,
+      "currentlyMarkedUnsupported": false,
+      "classification": "部分実装",
+      "assessmentScope": "Confirmed damaging received hits only; Justified Dark and Stamina any damage. Four-turn real Showdown doubles rank comparison; not complete damage, consumption or KO event parity.",
+      "executableReferences": [
+        "index.html:applyConfirmedHitAbilityStages:6202"
+      ],
+      "tests": [
+        "test-hit-event-multiturn.js"
+      ],
+      "scopedTestsPassed": true,
       "fullMechanicVerified": false,
       "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。",
       "priority": {
@@ -1531,12 +1535,15 @@
         ],
         "remaining": "Each reference hook needs an explicit app scope and independent scenario; empty hooks do not imply no effect."
       },
-      "currentlyMarkedUnsupported": true,
-      "classification": "未実装",
-      "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
+      "currentlyMarkedUnsupported": false,
+      "classification": "部分実装",
+      "assessmentScope": "Accuracy reduction immunity for external rank changes, self changes and ability bypass; evasion ignoring and full event legality remain unverified.",
       "executableReferences": [],
-      "tests": [],
-      "scopedTestsPassed": false,
+      "tests": [
+        "test-hit-event-multiturn.js",
+        "test-rank-differential.js"
+      ],
+      "scopedTestsPassed": true,
       "fullMechanicVerified": false,
       "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。",
       "priority": {

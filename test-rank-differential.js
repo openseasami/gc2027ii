@@ -8,7 +8,7 @@ const battle=new ps.Battle({formatid:'gen9doublescustomgame',seed:[1,2,3,4]});
 for(const side of ['p1','p2'])battle.setPlayer(side,{team:[{species:'Pikachu',ability:'Static',moves:['splash']},{species:'Eevee',ability:'Run Away',moves:['splash']}]});
 battle.makeChoices('team 12','team 12');
 const map={atkStage:'atk',defStage:'def',spaStage:'spa',spdStage:'spd',speStage:'spe',accStage:'accuracy',evaStage:'evasion'};
-const abilities={'':'Static','あまのじゃく':'Contrary','たんじゅん':'Simple','まけんき':'Defiant','かちき':'Competitive','クリアボディ':'Clear Body','しろいけむり':'White Smoke','かいりきバサミ':'Hyper Cutter','はとむね':'Big Pecks','するどいめ':'Keen Eye','ミラーアーマー':'Mirror Armor','ばんけん':'Guard Dog','びびり':'Rattled','せいしんりょく':'Inner Focus','どんかん':'Oblivious','きもったま':'Scrappy','マイペース':'Own Tempo'};
+const abilities={'':'Static','あまのじゃく':'Contrary','たんじゅん':'Simple','まけんき':'Defiant','かちき':'Competitive','クリアボディ':'Clear Body','しろいけむり':'White Smoke','かいりきバサミ':'Hyper Cutter','はとむね':'Big Pecks','するどいめ':'Keen Eye','はっこう':'Illuminate','ミラーアーマー':'Mirror Armor','ばんけん':'Guard Dog','びびり':'Rattled','せいしんりょく':'Inner Focus','どんかん':'Oblivious','きもったま':'Scrappy','マイペース':'Own Tempo'};
 const items={'':'','クリアチャーム':'clearamulet'};
 let cases=0;const failures=[];
 try{

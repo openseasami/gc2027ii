@@ -552,6 +552,76 @@
         "test-gale-wings-differential.js"
       ],
       "scope": "確認済み特性かつ観測HP満タン時のひこう技優先度+1。攻撃技・変化技とHP減少時を実Showdown48ケースで比較。 全タイプ変更・全HP観測精度・公式Champions世代仕様・試合全体での一致は未網羅。"
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "せいぎのこころ",
+        "じきゅうりょく"
+      ],
+      "paths": [
+        "effect-engine.js:definitions",
+        "index.html:applyConfirmedHitAbilityStages"
+      ],
+      "unitTests": [
+        "test-hit-event-multiturn.js"
+      ],
+      "integrationTests": [
+        "test-hit-event-multiturn.js"
+      ],
+      "scope": "Confirmed damaging received hits only; Justified Dark and Stamina any damage. Four-turn real Showdown doubles rank comparison; not complete damage, consumption or KO event parity."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "はっこう"
+      ],
+      "paths": [
+        "rank-effects.js:resolve"
+      ],
+      "unitTests": [
+        "test-hit-event-multiturn.js",
+        "test-rank-differential.js"
+      ],
+      "integrationTests": [
+        "test-hit-event-multiturn.js",
+        "test-rank-differential.js"
+      ],
+      "scope": "Accuracy reduction immunity for external rank changes, self changes and ability bypass; evasion ignoring and full event legality remain unverified."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "ふんか",
+        "しおふき",
+        "ボディプレス"
+      ],
+      "paths": [
+        "index.html:resolveMoveForDamage"
+      ],
+      "unitTests": [
+        "test-torkoal-core.js"
+      ],
+      "integrationTests": [
+        "test-torkoal-core.js"
+      ],
+      "scope": "Existing variable HP power and Body Press defense-source flags only; complete damage and legality remain unverified."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "ウェザーボール"
+      ],
+      "paths": [
+        "index.html:resolveMoveForDamage"
+      ],
+      "unitTests": [
+        "test-weather-ball-effective-weather.js"
+      ],
+      "integrationTests": [
+        "test-weather-ball-effective-weather.js"
+      ],
+      "scope": "Existing effective-weather type and base power, Cloud Nine/Air Lock suppression; complete damage remains unverified."
     }
   ],
   "outOfCatalogEvidence": [

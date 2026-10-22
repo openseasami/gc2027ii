@@ -1,0 +1,29 @@
+{
+  "completion": false,
+  "oracle": "pokemon-showdown@0.11.10",
+  "turns": 4,
+  "checkpoints": [
+    {
+      "turn": 1,
+      "atk": 1,
+      "def": 1
+    },
+    {
+      "turn": 2,
+      "atk": 2,
+      "def": 2
+    },
+    {
+      "turn": 3,
+      "atk": 3,
+      "def": 3
+    },
+    {
+      "turn": 4,
+      "atk": 4,
+      "def": 4
+    }
+  ],
+  "failures": [],
+  "scope": "Actual four-turn doubles engine transcript compared with app confirmed-hit rank adapter; damage/HP/actions are not simulated by the app adapter."
+}

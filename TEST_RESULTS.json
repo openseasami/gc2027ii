@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-22T11:01:07.414713+00:00",
+  "generatedAt": "2026-10-22T11:50:45.755106+00:00",
   "complete": false,
   "completion": false,
   "limitations": [
     "Passing scenarios do not certify full mechanics, event legality, official-game parity, mobile usability or deployed-site equivalence."
   ],
   "sourceSha256": {
-    "rank-effects.js": "81b1f9f8fc4773154c2077ec8a869f2ff167a4f2b7b1de677120d2f9b1cdb895",
-    "index.html": "c7f1c30f600813f88ddc3025880894170244c2733e14420931735a32bff6ffc5",
-    "sw.js": "87863ce3e32381229ccb05a4b647caf9dc933d34225f6fbe060845447bd6d51a",
+    "rank-effects.js": "34426f737b9f39bd33c2bad8db8544f431dbd0a8517cf7ab1c56a23fb9efc866",
+    "index.html": "826f252d81365e81abad17353c5813a557bcc5f46777ce7721667e992299df4a",
+    "sw.js": "1e954098e32bd4fe0458ee4f0bd9c7fd7a73a859d787c23ba677dfd6ecf1c556",
     "battle-core.js": "6e2b4eef1fa8c49484103f07e53134f188c342fa405a0c4f4466317bd4cff9ae",
-    "effect-engine.js": "84e3cd5583e48d22988c6e42f7ca0461f01b33ad1684b47c74f007c59176d639",
+    "effect-engine.js": "3156698677b98833e634993a132631995bef21e37d06715ec78a63524f99bf30",
     "priority-engine.js": "1c7fb953de596fc7b0da6f9def31a818f06f615c69f69db871310751abbabffb",
     "turn-order-effects.js": "f0b4cda295774f7e9e47ddd321d23599d68a2c070d2c99d185b2e24f313518e4",
     "implementation-ledger.js": "8a67b2d030f6971aae9feebe5fc9fa5c4f5f39a0add5c83d6b2d8f10e7b0a0a0",
-    "MECHANICS_EVIDENCE.json": "2abf7ccf0722e129cb63bfdad1501b9e96ed22c2747916849f4543e78c7e47b3",
+    "MECHANICS_EVIDENCE.json": "0285aa8ccc38574df53085728047ff78af7a459eea32c6ad4bffd46d44ef7e79",
     "coverage-assessment.js": "d64d4163e7d55bf26858889e0628d1a78078467ed81d0046b4c5e9ce5bb7e7e9",
     "COVERAGE_REVIEW_PLAN.json": "afe50fe2a92cdafdf74f9e315dbcf19a815e12da8e5b17d9f36396f781c43f8f",
     "ABILITY_REVIEW_BASELINE.json": "bc76c32470d3013ad2384e7fab5a35e46ce23d37f3acf50b68b89ac8ef3ca277",
@@ -23,7 +23,7 @@
     "browser_dom_test.py": "50ce0dc8a3551076d43d92c9b06493305c47444c9c208ba0b10206d566b822dd",
     "browser_full_match_test.py": "b1f0933fc87b2bf0f66cefa60c6d2a70a0fcfbe5e0dc2851a9918860fc6452b1",
     "browser_http_release_test.py": "efaf7d401b8053dd6def75cae33c8d643822477cff312743b10d5292f37d3674",
-    "browser_layout_regression_test.py": "f6d7354eaa20068b2b5711cdc43304313a20841937ff39878bdff3aa5ff872cd",
+    "browser_layout_regression_test.py": "28e16d980ba7245ddea42d6a983b5f189baf8af0925e35418dbae600424b0f41",
     "browser_mechanics_regression_test.py": "90494652a0a65a98dc5c6ef4d10ee2d729af93934c2ac2edd967a9f2f2b43df8",
     "browser_smoke_portable.py": "d7234a5b749055c8049a302516a6b217cdd19cfa9a71ee43f9308176c5b2be33",
     "browser_state_test.py": "3f56c12d38559518a90163b2d755a40a09d59c62a89ca9be5fe7d6f438239f7b",
@@ -63,6 +63,7 @@
     "test-grounding-form.js": "f5995b782eac4297323029c7a6e87febcf1d8609c66c3b0e8f553c1a62a7ce4b",
     "test-grounding-integration.js": "669eeeedb0179d0ed80cff6a6871c5b85d0368900f940962022720436bd0404d",
     "test-guaranteed-stat-drops.js": "c3f369a001c295bd066237431a0a02a274a95f20f528d50682f47f73459066ea",
+    "test-hit-event-multiturn.js": "aed7756b92af6d38279ab5ed87459a7da657c70b49466d2ba27f6dad5e702504",
     "test-implementation-ledger.js": "58936e1f2c46443ba69c112021f4f2735ede891ee2d156990d15bf3fb28ef3cf",
     "test-independent-damage-audit.js": "adb8a4cdbd0753656c0e90ad8fc5a4ca9b65f62e2dd9fd99cac70fee90d4c8f5",
     "test-independent-turn-order-audit.js": "1ecc041c6c9f0ae43ab20e22951d018491dd7ed848d0d0eb17ff23d7bef00355",
@@ -82,7 +83,7 @@
     "test-priority-boundaries.js": "54c54232248b64ab24a7770b5938afa4d61564c199f8755de5120b855ce318a1",
     "test-pwa-navigation-fallback.js": "42edb0b2c9280d6e951d31bcf6909f084fc4a8d0961d6570dcc3e190e93363a7",
     "test-quick-claw-guard.js": "8a477e76e56e9e4a8774ec3cc54e3effebfa9080c9668730addbf7999a33448c",
-    "test-rank-differential.js": "e3eccc2cd2601a0ba489e03b6b3996be47cf39c2a01a34c3dcafee88637f71fe",
+    "test-rank-differential.js": "7350f5b0171c8beead9d7498f4c54b61e70901381da3738ca54cb5274acba40e",
     "test-rank-effects.js": "67c254133fb269247e65da1f17d767b198f3482ab7c2bcbed4a4897afd7ae488",
     "test-registered-setup-integration.js": "6d49a8b5445a681c602fc2de84940068e8a899933a4e6b1611e332a2bcff1cd6",
     "test-residual.js": "69d4dd24a9bc5c19565e549b2b58c328401ee05d81aa302cdefb25c1403f4e06",
@@ -124,8 +125,8 @@
     "test-weather-ball-effective-weather.js": "35af9ea192f117e3d6cb973cbdea4f52f993668571f4c75855726ba4a4c497c6",
     "test-weather-item-consistency.js": "1b43ad670d88f6d363995e497c48dbc4ce3c048b66e5f71c5ea3c4f572c39aca"
   },
-  "total": 104,
-  "passed": 104,
+  "total": 105,
+  "passed": 105,
   "results": [
     {
       "command": [
@@ -133,7 +134,7 @@
         "test-ability-received-hit-guards.js"
       ],
       "exitCode": 0,
-      "seconds": 0.108,
+      "seconds": 0.052,
       "stdout": "On-hit activation guards and unmodeled HP-cost guard PASS\n",
       "stderr": ""
     },
@@ -143,7 +144,7 @@
         "test-adoption-priority-mechanics.js"
       ],
       "exitCode": 0,
-      "seconds": 0.847,
+      "seconds": 0.624,
       "stdout": "PASS 10 real Showdown Liquid Voice type cases; 13 effective-weather defense regressions\n",
       "stderr": ""
     },
@@ -153,7 +154,7 @@
         "test-adoption-priority.js"
       ],
       "exitCode": 0,
-      "seconds": 0.043,
+      "seconds": 0.103,
       "stdout": "1491 adoption policy values checked across 120 species\n",
       "stderr": ""
     },
@@ -163,7 +164,7 @@
         "test-battle-rounding-reference.js"
       ],
       "exitCode": 0,
-      "seconds": 0.097,
+      "seconds": 0.202,
       "stdout": "1664 fixed-point rounding references passed; 9 cases changed from old floor method\n",
       "stderr": ""
     },
@@ -183,7 +184,7 @@
         "test-common-secondary.js"
       ],
       "exitCode": 0,
-      "seconds": 0.094,
+      "seconds": 0.213,
       "stdout": "18 common secondary forecast checks passed\n",
       "stderr": ""
     },
@@ -193,7 +194,7 @@
         "test-confirmed-ability-residual-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.199,
+      "seconds": 0.154,
       "stdout": "Confirmed ability and residual transaction integration: PASS\n",
       "stderr": ""
     },
@@ -203,7 +204,7 @@
         "test-contact-assessed-batch.js"
       ],
       "exitCode": 0,
-      "seconds": 0.077,
+      "seconds": 0.117,
       "stdout": "PASS 33 assessed contact status cases\n",
       "stderr": ""
     },
@@ -213,7 +214,7 @@
         "test-contact-ko.js"
       ],
       "exitCode": 0,
-      "seconds": 0.095,
+      "seconds": 0.157,
       "stdout": "PASS four strikes stop at two-hit KO\nPASS four strikes against healthy target\nPASS KO at first strike\nPASS static status probability respects two contacts\nPASS weighted damage rolls\nPASS missing hp keeps existing assumption\n6 KO-limited contact tests passed\n",
       "stderr": ""
     },
@@ -223,7 +224,7 @@
         "test-contact-status-batch.js"
       ],
       "exitCode": 0,
-      "seconds": 0.12,
+      "seconds": 0.105,
       "stdout": "55 grouped contact status cases passed\n",
       "stderr": ""
     },
@@ -233,7 +234,7 @@
         "test-contact.js"
       ],
       "exitCode": 0,
-      "seconds": 0.1,
+      "seconds": 0.201,
       "stdout": "PASS rough skin fixed reflection\nPASS iron barbs fixed reflection\nPASS no contact\nPASS long reach\nPASS magic guard prevents reflection\nPASS static 30% conditional status\nPASS flame body 30% conditional status\nPASS protect excludes contact\nPASS multi-hit rough skin expectation\nPASS multi-hit static cumulative probability\nPASS single hit unchanged after multi-hit\n11 contact prediction tests passed\n",
       "stderr": ""
     },
@@ -243,7 +244,7 @@
         "test-continuous-effects-batch.js"
       ],
       "exitCode": 0,
-      "seconds": 0.2,
+      "seconds": 0.092,
       "stdout": "continuous effects validated\n",
       "stderr": ""
     },
@@ -253,7 +254,7 @@
         "test-coverage-assessment.js"
       ],
       "exitCode": 0,
-      "seconds": 0.11,
+      "seconds": 0.106,
       "stdout": "PASS all 1149 candidates classified, all original 91 labels reviewed, exact references cannot certify full coverage\n",
       "stderr": ""
     },
@@ -263,7 +264,7 @@
         "test-effect-coverage-expansion.js"
       ],
       "exitCode": 0,
-      "seconds": 0.037,
+      "seconds": 0.097,
       "stdout": "PASS expanded effects and conditional safety\n",
       "stderr": ""
     },
@@ -273,7 +274,7 @@
         "test-effect-engine-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.19,
+      "seconds": 0.185,
       "stdout": "Effect registry integration: PASS\n",
       "stderr": ""
     },
@@ -283,7 +284,7 @@
         "test-effect-engine.js"
       ],
       "exitCode": 0,
-      "seconds": 0.073,
+      "seconds": 0.072,
       "stdout": "Effect engine: event and boundary checks passed\n",
       "stderr": ""
     },
@@ -293,7 +294,7 @@
         "test-endturn-residual-confirmed.js"
       ],
       "exitCode": 0,
-      "seconds": 0.128,
+      "seconds": 0.149,
       "stdout": "End-turn projections conditional & confirmation test: PASS\n",
       "stderr": ""
     },
@@ -303,7 +304,7 @@
         "test-engine-real-functions.js"
       ],
       "exitCode": 0,
-      "seconds": 0.202,
+      "seconds": 0.095,
       "stdout": "15 real-function integrated assertions passed\n",
       "stderr": ""
     },
@@ -313,7 +314,7 @@
         "test-entry-field-real-functions.js"
       ],
       "exitCode": 0,
-      "seconds": 0.191,
+      "seconds": 0.095,
       "stdout": "17 actual entry/field integration assertions passed\n",
       "stderr": ""
     },
@@ -323,7 +324,7 @@
         "test-entry-rollback-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.16,
+      "seconds": 0.125,
       "stdout": "13 actual entry/end-turn/transaction integration assertions passed\n",
       "stderr": ""
     },
@@ -333,7 +334,7 @@
         "test-entry-tie-replay.js"
       ],
       "exitCode": 0,
-      "seconds": 0.22,
+      "seconds": 0.093,
       "stdout": "8 entry tie replay assertions passed\n",
       "stderr": ""
     },
@@ -343,7 +344,7 @@
         "test-external-rule-corrections.js"
       ],
       "exitCode": 0,
-      "seconds": 0.207,
+      "seconds": 0.086,
       "stdout": "External rules corrections 8 checks passed\n",
       "stderr": ""
     },
@@ -353,7 +354,7 @@
         "test-field-items-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.114,
+      "seconds": 0.193,
       "stdout": "PASS 24 field/item integration scenarios; no full item-ability parity claim\nPASS Contrary terrain-seed activation boundaries\nPASS queued KO replacement resolves before seed activation\n",
       "stderr": ""
     },
@@ -363,7 +364,7 @@
         "test-field-lifecycle-shared.js"
       ],
       "exitCode": 0,
-      "seconds": 0.148,
+      "seconds": 0.094,
       "stdout": "31 shared field lifecycle checks passed\n",
       "stderr": ""
     },
@@ -373,7 +374,7 @@
         "test-final-modifier-separation.js"
       ],
       "exitCode": 0,
-      "seconds": 0.391,
+      "seconds": 0.44,
       "stdout": "46080 modifier chains checked, 4369 combined-rounding differences detected\n",
       "stderr": ""
     },
@@ -383,7 +384,7 @@
         "test-four-phase-final-audit.js"
       ],
       "exitCode": 0,
-      "seconds": 0.146,
+      "seconds": 0.108,
       "stdout": "Four-phase extension regression PASS\n",
       "stderr": ""
     },
@@ -393,7 +394,7 @@
         "test-gale-wings-differential.js"
       ],
       "exitCode": 0,
-      "seconds": 1.196,
+      "seconds": 0.754,
       "stdout": "PASS 48 real Showdown Gale Wings full/injured HP priority cases and unknown/switch guards\n",
       "stderr": ""
     },
@@ -403,7 +404,7 @@
         "test-generated-matrix.js"
       ],
       "exitCode": 0,
-      "seconds": 0.121,
+      "seconds": 0.091,
       "stdout": "Generated matrix: 163/163 passed\n",
       "stderr": ""
     },
@@ -413,7 +414,7 @@
         "test-grounding-form.js"
       ],
       "exitCode": 0,
-      "seconds": 0.102,
+      "seconds": 0.149,
       "stdout": "7 grounded form cases passed\n",
       "stderr": ""
     },
@@ -423,7 +424,7 @@
         "test-grounding-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.217,
+      "seconds": 0.175,
       "stdout": "10 grounded priority tests passed\n",
       "stderr": ""
     },
@@ -433,8 +434,18 @@
         "test-guaranteed-stat-drops.js"
       ],
       "exitCode": 0,
-      "seconds": 0.109,
+      "seconds": 0.103,
       "stdout": "14 guaranteed stat-drop regression checks passed\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "test-hit-event-multiturn.js"
+      ],
+      "exitCode": 0,
+      "seconds": 1.351,
+      "stdout": "PASS four-turn real doubles engine / confirmed-hit rank checkpoints, type/unknown/KO guards and Illuminate rank scope\nPASS hit gating, substitute immunity, per-hit repetition and rank cap\n",
       "stderr": ""
     },
     {
@@ -443,8 +454,8 @@
         "test-implementation-ledger.js"
       ],
       "exitCode": 0,
-      "seconds": 3.357,
-      "stdout": "{\"abilityProjection\":17,\"abilityTotal\":203,\"moveProjection\":63,\"moveTotal\":698,\"markedUnsupported\":78,\"releaseComplete\":false}\nPASS implementation ledger and conservative confirmed move projection\nPASS four-stage inventories and conservative evidence classification\n",
+      "seconds": 3.731,
+      "stdout": "{\"abilityProjection\":18,\"abilityTotal\":203,\"moveProjection\":63,\"moveTotal\":698,\"markedUnsupported\":76,\"releaseComplete\":false}\nPASS implementation ledger and conservative confirmed move projection\nPASS four-stage inventories and conservative evidence classification\n",
       "stderr": ""
     },
     {
@@ -453,7 +464,7 @@
         "test-independent-damage-audit.js"
       ],
       "exitCode": 0,
-      "seconds": 0.284,
+      "seconds": 0.207,
       "stdout": "45005 independent arithmetic-model differential checks passed (seed 0x2048ab19). External battle simulator parity NOT verified.\n",
       "stderr": ""
     },
@@ -463,7 +474,7 @@
         "test-independent-turn-order-audit.js"
       ],
       "exitCode": 0,
-      "seconds": 0.592,
+      "seconds": 0.392,
       "stdout": "Independent turn-order oracle: 113540 definite comparisons; 6460 uncertainty pairs; 512 guard cases passed.\n",
       "stderr": ""
     },
@@ -473,7 +484,7 @@
         "test-integrated-projected-boosts.js"
       ],
       "exitCode": 0,
-      "seconds": 0.111,
+      "seconds": 0.094,
       "stdout": "Integrated registered self boosts: PASS\n",
       "stderr": ""
     },
@@ -483,7 +494,7 @@
         "test-item-differential.js"
       ],
       "exitCode": 0,
-      "seconds": 0.629,
+      "seconds": 0.673,
       "stdout": "PASS 60 real Showdown White Herb/Simple/Contrary/Klutz/Magic Room differential cases\n",
       "stderr": ""
     },
@@ -493,7 +504,7 @@
         "test-item-lifecycle.js"
       ],
       "exitCode": 0,
-      "seconds": 0.188,
+      "seconds": 0.152,
       "stdout": "PASS 24 item lifecycle, self-drop moves, suppression and Magic Room integration scenarios\n",
       "stderr": ""
     },
@@ -503,7 +514,7 @@
         "test-ko-entry-actual.js"
       ],
       "exitCode": 0,
-      "seconds": 0.174,
+      "seconds": 0.116,
       "stdout": "10 actual post-KO entry assertions passed\n",
       "stderr": ""
     },
@@ -513,7 +524,7 @@
         "test-ko-replacement-real.js"
       ],
       "exitCode": 0,
-      "seconds": 0.148,
+      "seconds": 0.092,
       "stdout": "12 actual forced-KO replacement assertions passed\n",
       "stderr": ""
     },
@@ -523,7 +534,7 @@
         "test-mega-transactions.js"
       ],
       "exitCode": 0,
-      "seconds": 0.251,
+      "seconds": 0.188,
       "stdout": "PASS 574 generic Mega transaction scenarios across 82 catalog forms; external form rules unverified\n",
       "stderr": ""
     },
@@ -533,7 +544,7 @@
         "test-mode45-fixed.js"
       ],
       "exitCode": 0,
-      "seconds": 0.093,
+      "seconds": 0.109,
       "stdout": "8 fixed 45 mode assertions passed\n",
       "stderr": ""
     },
@@ -543,7 +554,7 @@
         "test-mode45-reload.js"
       ],
       "exitCode": 0,
-      "seconds": 0.198,
+      "seconds": 0.093,
       "stdout": "9 mode45 reload assertions passed\n",
       "stderr": ""
     },
@@ -553,7 +564,7 @@
         "test-moldbreaker-secondary.js"
       ],
       "exitCode": 0,
-      "seconds": 0.098,
+      "seconds": 0.2,
       "stdout": "62 Mold Breaker secondary interactions passed\n",
       "stderr": ""
     },
@@ -573,7 +584,7 @@
         "test-order-effect-groups.js"
       ],
       "exitCode": 0,
-      "seconds": 0.174,
+      "seconds": 0.079,
       "stdout": "Order effects registry: 12 checks pass\n",
       "stderr": ""
     },
@@ -583,7 +594,7 @@
         "test-phase1-4-batch.js"
       ],
       "exitCode": 0,
-      "seconds": 0.093,
+      "seconds": 0.037,
       "stdout": "Phase 1-4 deterministic event batch passed\n",
       "stderr": ""
     },
@@ -593,7 +604,7 @@
         "test-poison-touch-risk.js"
       ],
       "exitCode": 0,
-      "seconds": 0.068,
+      "seconds": 0.026,
       "stdout": "9 poison-touch conditional risk cases passed (not auto-status application)\n",
       "stderr": ""
     },
@@ -603,7 +614,7 @@
         "test-priority-boundaries.js"
       ],
       "exitCode": 0,
-      "seconds": 0.105,
+      "seconds": 0.067,
       "stdout": "14 priority boundary tests passed\n",
       "stderr": ""
     },
@@ -613,7 +624,7 @@
         "test-pwa-navigation-fallback.js"
       ],
       "exitCode": 0,
-      "seconds": 0.037,
+      "seconds": 0.07,
       "stdout": "PWA navigation fallback URL validated\n",
       "stderr": ""
     },
@@ -623,7 +634,7 @@
         "test-quick-claw-guard.js"
       ],
       "exitCode": 0,
-      "seconds": 0.114,
+      "seconds": 0.186,
       "stdout": "Quick Claw guard timing: 9 cases pass\n",
       "stderr": ""
     },
@@ -633,8 +644,8 @@
         "test-rank-differential.js"
       ],
       "exitCode": 0,
-      "seconds": 1.565,
-      "stdout": "PASS 2720 real Showdown rank differential cases, version 0.11.10\n",
+      "seconds": 1.045,
+      "stdout": "PASS 2880 real Showdown rank differential cases, version 0.11.10\n",
       "stderr": ""
     },
     {
@@ -643,7 +654,7 @@
         "test-rank-effects.js"
       ],
       "exitCode": 0,
-      "seconds": 0.154,
+      "seconds": 0.035,
       "stdout": "PASS 33 source-aware rank rules plus unknown/invalid guards\n",
       "stderr": ""
     },
@@ -653,7 +664,7 @@
         "test-registered-setup-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.118,
+      "seconds": 0.237,
       "stdout": "PASS 30 registered setup integration scenarios (recording, failure, side, cap)\nPASS confirmed Contrary/Simple self-rank deltas, caps and ordinary fallback\n",
       "stderr": ""
     },
@@ -663,7 +674,7 @@
         "test-residual.js"
       ],
       "exitCode": 0,
-      "seconds": 0.234,
+      "seconds": 0.202,
       "stdout": "11 residual prediction tests passed.\n",
       "stderr": ""
     },
@@ -673,7 +684,7 @@
         "test-secondary-block.js"
       ],
       "exitCode": 0,
-      "seconds": 0.097,
+      "seconds": 0.206,
       "stdout": "26 secondary-effect defensive ability checks passed\n",
       "stderr": ""
     },
@@ -683,7 +694,7 @@
         "test-secondary-field-substitute.js"
       ],
       "exitCode": 0,
-      "seconds": 0.108,
+      "seconds": 0.144,
       "stdout": "14 secondary terrain/substitute checks passed\n",
       "stderr": ""
     },
@@ -693,7 +704,7 @@
         "test-secondary-grounded.js"
       ],
       "exitCode": 0,
-      "seconds": 0.208,
+      "seconds": 0.207,
       "stdout": "8 forecast grounded checks passed\n",
       "stderr": ""
     },
@@ -703,7 +714,7 @@
         "test-secondary-immunity-abilities.js"
       ],
       "exitCode": 0,
-      "seconds": 0.142,
+      "seconds": 0.204,
       "stdout": "13 additional status-immunity checks passed\nPASS poison/freeze immunity and Mold Breaker forecasting regressions\n",
       "stderr": ""
     },
@@ -713,7 +724,7 @@
         "test-secondary-multihit-kernel.js"
       ],
       "exitCode": 0,
-      "seconds": 0.226,
+      "seconds": 0.228,
       "stdout": "12 multi-strike secondary probability checks passed\n",
       "stderr": ""
     },
@@ -723,7 +734,7 @@
         "test-shared-battle-core.js"
       ],
       "exitCode": 0,
-      "seconds": 0.256,
+      "seconds": 0.269,
       "stdout": "2264 shared-kernel parity checks passed\n",
       "stderr": ""
     },
@@ -733,7 +744,7 @@
         "test-status-type-batch.js"
       ],
       "exitCode": 0,
-      "seconds": 0.202,
+      "seconds": 0.262,
       "stdout": "shared status type immunity 33 checks passed\n",
       "stderr": ""
     },
@@ -743,7 +754,7 @@
         "test-substitute-bypass.js"
       ],
       "exitCode": 0,
-      "seconds": 0.205,
+      "seconds": 0.107,
       "stdout": "14 Substitute bypass checks passed\n",
       "stderr": ""
     },
@@ -753,7 +764,7 @@
         "test-substitute-contact.js"
       ],
       "exitCode": 0,
-      "seconds": 0.21,
+      "seconds": 0.148,
       "stdout": "PASS [4,20,100,0]\nPASS [4,20,35,0]\nPASS [4,20,100,30]\nPASS [4,20,35,30]\nPASS [2,20,100,40]\nPASS [1,20,100,10]\nPASS [4,20,15,20]\nPASS [4,20,100,null]\n8 Substitute/contact forecast checks passed\n",
       "stderr": ""
     },
@@ -763,7 +774,7 @@
         "test-substitute-create.js"
       ],
       "exitCode": 0,
-      "seconds": 0.117,
+      "seconds": 0.108,
       "stdout": "11 Substitute creation checks passed\n",
       "stderr": ""
     },
@@ -773,7 +784,7 @@
         "test-substitute-state.js"
       ],
       "exitCode": 0,
-      "seconds": 0.187,
+      "seconds": 0.147,
       "stdout": "12 substitute state assertions passed\n",
       "stderr": ""
     },
@@ -783,7 +794,7 @@
         "test-substitute-strikes.js"
       ],
       "exitCode": 0,
-      "seconds": 0.26,
+      "seconds": 0.091,
       "stdout": "10 Substitute-hit integration checks passed\n",
       "stderr": ""
     },
@@ -793,7 +804,7 @@
         "test-target-ranks-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.213,
+      "seconds": 0.107,
       "stdout": "PASS 213 explicit doubles targets, rank reactions, Intimidate and unknown-outcome integration scenarios\nPASS actual gain propagation preserves Opportunist on reactions and Contrary Intimidate\nPASS reflected rank change source-item protection and unknown guards\nPASS Good as Gold blocks targeted status ranks unless ignored by Mold Breaker\n",
       "stderr": ""
     },
@@ -803,7 +814,7 @@
         "test-terrain-damage-grounding.js"
       ],
       "exitCode": 0,
-      "seconds": 0.145,
+      "seconds": 0.062,
       "stdout": "9 terrain damage grounded checks passed\n",
       "stderr": ""
     },
@@ -813,7 +824,7 @@
         "test-torkoal-clear-smog.js"
       ],
       "exitCode": 0,
-      "seconds": 0.108,
+      "seconds": 0.163,
       "stdout": "PASS confirmed clear smog: safe targeting, 7 stages, substitute, miss and ambiguity\n",
       "stderr": ""
     },
@@ -823,7 +834,7 @@
         "test-torkoal-core.js"
       ],
       "exitCode": 0,
-      "seconds": 0.21,
+      "seconds": 0.253,
       "stdout": "17 Torkoal variable-power and Body Press checks passed\n",
       "stderr": ""
     },
@@ -833,7 +844,7 @@
         "test-torkoal-damage-base.js"
       ],
       "exitCode": 0,
-      "seconds": 0.259,
+      "seconds": 0.248,
       "stdout": "974 shared damage-base regression checks passed\n",
       "stderr": ""
     },
@@ -843,7 +854,7 @@
         "test-torkoal-damage-items.js"
       ],
       "exitCode": 0,
-      "seconds": 0.1,
+      "seconds": 0.12,
       "stdout": "8 Torkoal held-item damage checks passed\n",
       "stderr": ""
     },
@@ -853,7 +864,7 @@
         "test-torkoal-effect-ui.js"
       ],
       "exitCode": 0,
-      "seconds": 0.126,
+      "seconds": 0.226,
       "stdout": "PASS observed-effect UI state, explicit target, uncertain no effect, failed move\n",
       "stderr": ""
     },
@@ -863,7 +874,7 @@
         "test-torkoal-own-effect-ui.js"
       ],
       "exitCode": 0,
-      "seconds": 0.183,
+      "seconds": 0.215,
       "stdout": "PASS own side Yawn/Clear Smog manual confirmation\n",
       "stderr": ""
     },
@@ -873,7 +884,7 @@
         "test-torkoal-weather-rock.js"
       ],
       "exitCode": 0,
-      "seconds": 0.216,
+      "seconds": 0.141,
       "stdout": "14 weather-rock checks passed\n",
       "stderr": ""
     },
@@ -883,7 +894,7 @@
         "test-torkoal-yawn-initial-terrain.js"
       ],
       "exitCode": 0,
-      "seconds": 0.102,
+      "seconds": 0.1,
       "stdout": "PASS initial and delayed Yawn terrain immunity: 11 checks\n",
       "stderr": ""
     },
@@ -893,7 +904,7 @@
         "test-torkoal-yawn-terrain.js"
       ],
       "exitCode": 0,
-      "seconds": 0.16,
+      "seconds": 0.18,
       "stdout": "PASS delayed Yawn resolution terrain: Misty/Electric grounded, airborne, Grassy\n",
       "stderr": ""
     },
@@ -903,7 +914,7 @@
         "test-torkoal-yawn.js"
       ],
       "exitCode": 0,
-      "seconds": 0.137,
+      "seconds": 0.173,
       "stdout": "PASS confirmed Yawn: target, guards, delayed sleep, status precedence, active-only\n",
       "stderr": ""
     },
@@ -913,7 +924,7 @@
         "test-turn-order-effects.js"
       ],
       "exitCode": 0,
-      "seconds": 0.092,
+      "seconds": 0.1,
       "stdout": "turn order group effects 13 assertions passed\n",
       "stderr": ""
     },
@@ -923,7 +934,7 @@
         "test-turn-sequence.js"
       ],
       "exitCode": 0,
-      "seconds": 0.227,
+      "seconds": 0.1,
       "stdout": "23 multi-turn scenario assertions passed\n",
       "stderr": ""
     },
@@ -933,7 +944,7 @@
         "test-turn-transaction.js"
       ],
       "exitCode": 0,
-      "seconds": 0.101,
+      "seconds": 0.116,
       "stdout": "12 turn-transaction integration assertions passed\n",
       "stderr": ""
     },
@@ -943,7 +954,7 @@
         "test-unburden-live-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.088,
+      "seconds": 0.139,
       "stdout": "6 live Unburden integration cases passed\n",
       "stderr": ""
     },
@@ -953,7 +964,7 @@
         "test-unburden-usage.js"
       ],
       "exitCode": 0,
-      "seconds": 0.152,
+      "seconds": 0.137,
       "stdout": "14 unburden/usage cases passed\n",
       "stderr": ""
     },
@@ -963,7 +974,7 @@
         "test-unknown-speed-order.js"
       ],
       "exitCode": 0,
-      "seconds": 0.098,
+      "seconds": 0.094,
       "stdout": "5 unknown-speed / Trick Room order checks passed\n",
       "stderr": ""
     },
@@ -973,7 +984,7 @@
         "test-v28-entry-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.112,
+      "seconds": 0.157,
       "stdout": "v2.8 entry event registry + UI integration: PASS\n",
       "stderr": ""
     },
@@ -983,7 +994,7 @@
         "test-v281-event-pipeline.js"
       ],
       "exitCode": 0,
-      "seconds": 0.147,
+      "seconds": 0.144,
       "stdout": "Event pipeline: hit/move/end-turn and UI integration passed\n",
       "stderr": ""
     },
@@ -993,7 +1004,7 @@
         "test-v282-move-field-registry.js"
       ],
       "exitCode": 0,
-      "seconds": 0.102,
+      "seconds": 0.112,
       "stdout": "v2.8.2: 12 field/screen move events, confirmation gates, UI hookup PASS\n",
       "stderr": ""
     },
@@ -1003,7 +1014,7 @@
         "test-v283-simulation-move-events.js"
       ],
       "exitCode": 0,
-      "seconds": 0.107,
+      "seconds": 0.124,
       "stdout": "v2.8.3: simulation dispatch shares all 12 canonical move definitions PASS\n",
       "stderr": ""
     },
@@ -1013,7 +1024,7 @@
         "test-weather-ball-effective-weather.js"
       ],
       "exitCode": 0,
-      "seconds": 0.185,
+      "seconds": 0.108,
       "stdout": "40 weather ball checks passed\n",
       "stderr": ""
     },
@@ -1023,7 +1034,7 @@
         "test-weather-item-consistency.js"
       ],
       "exitCode": 0,
-      "seconds": 0.114,
+      "seconds": 0.13,
       "stdout": "PASS 9 shared weather suppression and active-item residual scenarios\nPASS Solar Power / Sand Force damage suppression and displayed-weather persistence\n",
       "stderr": ""
     },
@@ -1033,7 +1044,7 @@
         "test-adoption-import.py"
       ],
       "exitCode": 0,
-      "seconds": 0.179,
+      "seconds": 0.152,
       "stdout": "",
       "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK\n"
     },
@@ -1043,9 +1054,9 @@
         "test-adoption-mixed.py"
       ],
       "exitCode": 0,
-      "seconds": 0.271,
+      "seconds": 0.149,
       "stdout": "",
-      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.010s\n\nOK\n"
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.005s\n\nOK\n"
     },
     {
       "command": [
@@ -1053,9 +1064,9 @@
         "test-adoption-normalization.py"
       ],
       "exitCode": 0,
-      "seconds": 0.187,
+      "seconds": 0.126,
       "stdout": "",
-      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.009s\n\nOK\n"
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.006s\n\nOK\n"
     },
     {
       "command": [
@@ -1065,7 +1076,7 @@
       "exitCode": 0,
       "seconds": 0.264,
       "stdout": "",
-      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n"
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n"
     },
     {
       "command": [
@@ -1073,7 +1084,7 @@
         "test-collect-120-source.py"
       ],
       "exitCode": 0,
-      "seconds": 0.269,
+      "seconds": 0.242,
       "stdout": "",
       "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n"
     },
@@ -1083,9 +1094,9 @@
         "test-snapshot-120.py"
       ],
       "exitCode": 0,
-      "seconds": 0.123,
+      "seconds": 0.119,
       "stdout": "",
-      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.004s\n\nOK\n"
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.003s\n\nOK\n"
     },
     {
       "command": [
@@ -1093,7 +1104,7 @@
         "verify-release.js"
       ],
       "exitCode": 0,
-      "seconds": 0.167,
+      "seconds": 0.141,
       "stdout": "PASS HTML inline scripts compile\nPASS shared engine ships offline\nPASS service worker compiles and navigation fallback points to correct URL\nPASS offline shell files are included\nPASS manifest icons exist\nPASS HTML, cache and README versions agree\nPASS national dex entries have usable structure\nPASS ability coverage matches listed abilities\nPASS move catalog populated\nPASS status selection consistent with save validation\n10 release integrity checks passed. This does not replace browser or battle-engine runtime tests.\n",
       "stderr": ""
     },
@@ -1103,7 +1114,7 @@
         "browser_dom_test.py"
       ],
       "exitCode": 0,
-      "seconds": 3.882,
+      "seconds": 3.628,
       "stdout": "PASS: Chromium inline scripts, initial 45s mode, exit, re-entry, no uncaught errors\nLIMIT: about:blank cannot verify persistence, HTTP navigation blocked by environment\n",
       "stderr": ""
     },
@@ -1113,7 +1124,7 @@
         "browser_full_match_test.py"
       ],
       "exitCode": 0,
-      "seconds": 19.318,
+      "seconds": 19.677,
       "stdout": "PASS complete observed 4-vs-4 match UI: three turns, KO replacements, undo/replay, reload, win record; no state injection\n",
       "stderr": ""
     },
@@ -1123,7 +1134,7 @@
         "browser_http_release_test.py"
       ],
       "exitCode": 0,
-      "seconds": 9.019,
+      "seconds": 9.081,
       "stdout": "PASS Chromium HTTP launch, real localStorage reload, mode45 on/off, external engines, mobile viewport, no JS exceptions\n",
       "stderr": ""
     },
@@ -1133,7 +1144,7 @@
         "browser_layout_regression_test.py"
       ],
       "exitCode": 0,
-      "seconds": 12.752,
+      "seconds": 12.879,
       "stdout": "PASS normal input scrolling and fixed narrower/taller damage panel at five viewport sizes\nPASS real team save/start/reload and preserved active slots\nPASS observed-action fixture: real turn commit, save/reload, undo, and history save deduplication\nPASS offline HTTP reload with all external engines cached; no uncaught browser exceptions\n",
       "stderr": ""
     },
@@ -1143,7 +1154,7 @@
         "browser_mechanics_regression_test.py"
       ],
       "exitCode": 0,
-      "seconds": 9.975,
+      "seconds": 9.635,
       "stdout": "PASS Magic Room changes real damage rolls and survives HTTP save/reload\nPASS actual target-confirmation button and turn commit change only the selected doubles target\nPASS Shell Smash + White Herb real commit/reload and historical Magic Room isolation\n",
       "stderr": ""
     },
@@ -1153,7 +1164,7 @@
         "browser_state_test.py"
       ],
       "exitCode": 0,
-      "seconds": 9.534,
+      "seconds": 9.24,
       "stdout": "PASS first-visit default ON and label\nPASS exit OFF persists 0 in simulated storage\nPASS new-document restore OFF\nPASS new-document restore ON\nPASS preexisting OFF preference restored\nLIMIT document-level tests use an in-memory localStorage double; network navigation, genuine disk persistence, service worker and deployment remain unverified\n",
       "stderr": ""
     },
@@ -1163,7 +1174,7 @@
         "browser_smoke_portable.py"
       ],
       "exitCode": 0,
-      "seconds": 6.448,
+      "seconds": 6.312,
       "stdout": "PASS default mode45 enabled\nPASS exit action and localStorage stub writes OFF\nPASS reload-equivalent fresh document restores OFF\nPASS re-enable action persists ON\nPASS reload-equivalent fresh document restores ON\nLIMITATIONS: mocked storage, set_content document, no full battle E2E or deployed-site check\n",
       "stderr": ""
     }

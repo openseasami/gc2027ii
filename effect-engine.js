@@ -21,6 +21,7 @@
     {id:'electric_surge',name:'エレキメイカー',trigger:'on_entry',side:'source',kind:'terrain',terrain:'エレキ',turns:5},
     {id:'misty_surge',name:'ミストメイカー',trigger:'on_entry',side:'source',kind:'terrain',terrain:'ミスト',turns:5},
     {id:'speed_boost',name:'かそく',trigger:'on_turn_end',side:'source',kind:'stat_boost',stat:'spe',stages:1},
+    {id:'justified',name:'せいぎのこころ',trigger:'on_hit',side:'defender',kind:'stat_boost',stat:'atk',stages:1,requiresDamage:true,requiresTypes:['あく']},
     {id:'stamina',name:'じきゅうりょく',trigger:'on_hit',side:'defender',kind:'stat_boost',stat:'def',stages:1,requiresDamage:true},
     {id:'weak_armor',name:'くだけるよろい',trigger:'on_hit',side:'defender',kind:'weak_armor',requiresPhysicalDamage:true,requiresDamage:true},
     {id:'gooey',name:'ぬめぬめ',trigger:'after_contact',side:'defender',kind:'opponent_stat_drop',stat:'spe',stages:-1,requiresContact:true},

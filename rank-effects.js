@@ -6,9 +6,9 @@
  'use strict';
  const keys=['atkStage','defStage','spaStage','spdStage','speStage','accStage','evaStage'];
  const clamp=n=>Math.max(-6,Math.min(6,n));
- const blockers={'かいりきバサミ':'atkStage','はとむね':'defStage','するどいめ':'accStage'};
+ const blockers={'かいりきバサミ':'atkStage','はとむね':'defStage','するどいめ':'accStage','はっこう':'accStage'};
  const intimidateImmune=new Set(['せいしんりょく','どんかん','きもったま','マイペース']);
- const breakable=new Set(['あまのじゃく','たんじゅん','クリアボディ','しろいけむり','ミラーアーマー','かいりきバサミ','はとむね','するどいめ','りんぷん','ばんけん']);
+ const breakable=new Set(['あまのじゃく','たんじゅん','クリアボディ','しろいけむり','ミラーアーマー','かいりきバサミ','はとむね','するどいめ','はっこう','りんぷん','ばんけん']);
  function resolve(input={}){
   const {stages={},changes={},ability='',item='',origin='opponent',secondary=false,intimidate=false,bypass=false,
    sourceStages=null,sourceAbility='',sourceItem='',allowReflection=true}=input;
