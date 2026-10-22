@@ -1,60 +1,38 @@
 {
-  "version": "v2.9.2",
-  "baseCommit": "650d5f2ce3def84871ab1ce88c1a134e9c6afa42",
+  "version": "v2.9.3",
+  "baseCommit": "8df2eb1240b9d712a9cf4c1f91cbe45831913860",
+  "branch": "codex-development",
+  "implementationCommit": "dfa12ffa9b7fe3af9f279960037bf1b1867a00d3",
   "completion": false,
   "counts": {
-    "addedSharedMoveDefinitions": 21,
-    "migratedExistingSelfEffectDefinitions": 3,
-    "newPartialMoveEffectScopes": 18,
-    "connectedExplicitOpposingTargetMoveScopes": 14,
-    "remainingExplicitlyUnsupportedAbilityLabels": 91,
+    "newPartialAbilityScopes": 3,
+    "existingAlternateAbilityScopes": 10,
+    "weatherCalculationPathsFixed": 2,
+    "undoCursorFixes": 1,
+    "remainingExplicitlyUnsupportedAbilityLabels": 78,
     "notFullyVerifiedCandidates": 1149
   },
-  "addedSharedMoveDefinitions": [
-    "いやなおと",
-    "おたけび",
-    "かいでんぱ",
-    "からをやぶる",
-    "きんぞくおん",
-    "くすぐる",
-    "つぶらなひとみ",
-    "ないしょばなし",
-    "なみだめ",
-    "ばかぢから",
-    "ぶちかまし",
-    "りゅうせいぐん",
-    "アーマーキャノン",
-    "アームハンマー",
-    "インファイト",
-    "オーバーヒート",
-    "ゴールドラッシュ",
-    "スケイルノイズ",
-    "フェザーダンス",
-    "マジックルーム",
-    "リーフストーム"
-  ],
-  "migratedExistingEffects": [
-    "インファイト",
-    "スケイルノイズ",
-    "ゴールドラッシュ"
-  ],
-  "classification": "Counts describe scoped effects/adapters, never fully complete mechanics. Projection absence is not proof of missing implementation.",
-  "preservedDataSha256": {
-    "NATIONAL_DEX": "984457909967fa730f2372a9bb6556c8eb625c5437617d9d71336dadbc26703a",
-    "NATIONAL_MOVES": "85bbcfde946a0fc2eb005d055b615a7898946fb475ca69251a16d9bfa8c2c12b",
-    "REGULATION_MC": "9b72494e82ae1cdfd44924b245bc8be95fd176a13b46b425bce014166c899a8a",
-    "PRIORITY_POLICY.json": "b1ff0e2b8742353511b80ef9857acd6285ccdbbf4a02ad58dbbb91f65ee1eb42",
-    "ADOPTION_120_VERIFIED.json": "2d66c2b05457a3ded459f4830a93b9b1a04e00d5a803325145002feada5c7b43",
-    "ADOPTION_120_NORMALIZED.json": "4eda15a0810d74d3124aeace37cf51d75eadd36a37e9ff2ab10377d697e3bd47",
-    "ADOPTION_120_EFFECT_AUDIT.json": "db45dd824ac6a8e57df87bc8b3be266a718b605525d99b27f8c3859fdf9ef42c"
+  "coverageSummary": {
+    "total": 1149,
+    "categories": {
+      "未実装": 78,
+      "部分実装": 153,
+      "別経路で実装済み": 10,
+      "仕様対象外": 0,
+      "要調査": 908
+    },
+    "fullyImplemented": 0,
+    "fullyUnverified": 1149,
+    "testEvidenceMatchesRuntime": true,
+    "meaning": "Five-way scoped implementation assessment; alternate routes are implemented only within assessmentScope, never full mechanic certification. Outside-scope requires verified rule evidence; currently none."
   },
   "remainingStageSummary": {
     "abilities": {
       "registered": 203,
-      "partialEffect": 36,
-      "requiresReview": 167,
-      "unitTestsDefined": 20,
-      "integrationTestsDefined": 20,
+      "partialEffect": 49,
+      "requiresReview": 154,
+      "unitTestsDefined": 33,
+      "integrationTestsDefined": 33,
       "authoritativelyVerified": 0
     },
     "moves": {
@@ -82,12 +60,23 @@
       "authoritativelyVerified": 0
     }
   },
-  "implementationCommit": "f1696ff09f0c59f0b3df156c1ce982a33c04c529",
   "testCommands": {
-    "passed": 100,
-    "total": 100
+    "passed": 104,
+    "total": 104
   },
-  "externalDifferentialCases": 2780,
+  "externalDifferentialCases": 2838,
+  "externalDifferentialFailures": 0,
+  "fullMatchUIE2E": true,
+  "fullMatchAuthoritativeOracle": false,
+  "preservedDataSha256": {
+    "NATIONAL_DEX": "984457909967fa730f2372a9bb6556c8eb625c5437617d9d71336dadbc26703a",
+    "NATIONAL_MOVES": "85bbcfde946a0fc2eb005d055b615a7898946fb475ca69251a16d9bfa8c2c12b",
+    "REGULATION_MC": "9b72494e82ae1cdfd44924b245bc8be95fd176a13b46b425bce014166c899a8a",
+    "PRIORITY_POLICY.json": "b1ff0e2b8742353511b80ef9857acd6285ccdbbf4a02ad58dbbb91f65ee1eb42",
+    "ADOPTION_120_VERIFIED.json": "2d66c2b05457a3ded459f4830a93b9b1a04e00d5a803325145002feada5c7b43",
+    "ADOPTION_120_NORMALIZED.json": "4eda15a0810d74d3124aeace37cf51d75eadd36a37e9ff2ab10377d697e3bd47",
+    "ADOPTION_120_EFFECT_AUDIT.json": "db45dd824ac6a8e57df87bc8b3be266a718b605525d99b27f8c3859fdf9ef42c"
+  },
   "totalUnimplementedMechanicsCount": null,
-  "totalUnimplementedMechanicsCountReason": "Full per-mechanic audit remains incomplete; candidate/projection counts are not implementation counts."
+  "totalUnimplementedMechanicsCountReason": "78 means named ability handlers not found under conservative scan; 908 remain research and all 1149 lack full verification. Scoped categories are not a complete count of missing game effects."
 }

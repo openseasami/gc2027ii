@@ -9,6 +9,7 @@
 - [未対応・未検証一覧](DEVELOPMENT_BACKLOG.json): 優先度・依存関係・残件。
 - [テスト実行結果](TEST_RESULTS.json): 終了コード・ログ・ソースSHA-256。
 - [開発ゲート](DEVELOPMENT_GATES.md): 完成判定の条件。
+- [網羅性監査](COVERAGE_AUDIT.md): 1,149候補の5分類と元91件の調査範囲。
 
 ## 開発検証
 

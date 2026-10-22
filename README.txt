@@ -1,6 +1,7 @@
 v2.9.3
 開発途中です。完成判定はfalse。
 今回の実装・検証・残件: DEVELOPMENT_CHECKPOINT.md / COMPLETION_REPORT.md
+網羅性の5分類と元91件の監査: COVERAGE_AUDIT.md / ABILITY_UNSUPPORTED_REVIEW.json
 全テスト再実行: python run-development-checks.py（requirements-dev.txtとChromiumが必要）
 公開用一式: release/gc2027ii-v2.9.3-development.zip
 mainと公開サイトは変更していません。

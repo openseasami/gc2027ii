@@ -1,15 +1,15 @@
 {
-  "version": "v2.9.2",
+  "version": "v2.9.3",
   "development": true,
   "complete": false,
   "completion": false,
-  "generatedAt": "2026-10-22T10:07:38.464987+00:00",
-  "baseCommit": "650d5f2ce3def84871ab1ce88c1a134e9c6afa42",
+  "generatedAt": "2026-10-22T11:02:39.626174+00:00",
+  "baseCommit": "8df2eb1240b9d712a9cf4c1f91cbe45831913860",
   "branch": "codex-development",
-  "implementationCommit": "f1696ff09f0c59f0b3df156c1ce982a33c04c529",
+  "implementationCommit": "dfa12ffa9b7fe3af9f279960037bf1b1867a00d3",
   "testCommands": {
-    "passed": 100,
-    "total": 100
+    "passed": 104,
+    "total": 104
   },
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -17,11 +17,11 @@
     "effect-engine.js": "84e3cd5583e48d22988c6e42f7ca0461f01b33ad1684b47c74f007c59176d639",
     "icon-192.png": "269f2adbba00855bf883fd0a284cf2bc5d3aa87dcdea67bc2484aa11204b1502",
     "icon-512.png": "3ab233c4b30a924ec0e12ae0e737abfdc465cd339bf92b043fd81e42babaa4f8",
-    "index.html": "14889c7bec5a8eee5a3f9ad769abb4ade0ff8cdbf774fdb9a311e7f5cf1b2969",
+    "index.html": "c7f1c30f600813f88ddc3025880894170244c2733e14420931735a32bff6ffc5",
     "manifest.webmanifest": "ba634d04f244146555591b6db7e3bc82550ae06623d8dac25dea74a132c3936c",
     "priority-engine.js": "1c7fb953de596fc7b0da6f9def31a818f06f615c69f69db871310751abbabffb",
     "rank-effects.js": "81b1f9f8fc4773154c2077ec8a869f2ff167a4f2b7b1de677120d2f9b1cdb895",
-    "sw.js": "dd8bcec0fcb4ecb0fa1776b8aac0d4a148a57d8bc55094247f5412fd2c1e284b",
+    "sw.js": "87863ce3e32381229ccb05a4b647caf9dc933d34225f6fbe060845447bd6d51a",
     "turn-order-effects.js": "f0b4cda295774f7e9e47ddd321d23599d68a2c070d2c99d185b2e24f313518e4"
   },
   "limitations": [
