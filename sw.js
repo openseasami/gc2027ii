@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'gc2027ii-' + encodeURIComponent(self.registration.scope) + '-';
-const CACHE = CACHE_PREFIX + 'v2.9.8';
+const CACHE = CACHE_PREFIX + 'v2.9.9';
 const SHELL = ['./', './index.html', './battle-core.js', './effect-engine.js', './priority-engine.js', './turn-order-effects.js', './rank-effects.js', './critical-effects.js', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)));

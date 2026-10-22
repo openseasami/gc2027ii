@@ -1048,5 +1048,19 @@
       ],
       "scope": "Positive evasion ignore forecast only; not part of target regulation inventory. No legality inferred."
     }
-  ]
+  ],
+  "recommendationEvidence": {
+    "completion": false,
+    "paths": [
+      "index.html:winConditionActionBlockScore",
+      "index.html:enablerDenialAvailability",
+      "index.html:disruptionCanAffect"
+    ],
+    "tests": [
+      "test-recommendation-denial-order.js",
+      "browser_recommendation_strategy_test.py"
+    ],
+    "scope": "28 explicit tactical acceptance scenarios including 4 actual full planner outputs; timing, Protect, switches, disruption immunities and double/focus KO. Not strategy optimality, prediction probability calibration, ally-hit damage or exhaustive action interaction certification.",
+    "report": "RECOMMENDATION_STRATEGY_RESULTS.json"
+  }
 }
