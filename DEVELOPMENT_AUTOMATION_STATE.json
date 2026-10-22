@@ -20,7 +20,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
-      "claimedAt": "2026-10-22T12:13:02.358101+00:00"
+      "claimedAt": "2026-10-22T12:13:02.358101+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "c6ec58092fded147d41a": {
       "id": "c6ec58092fded147d41a",
@@ -71,7 +72,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
-      "claimedAt": "2026-10-22T12:13:02.373244+00:00"
+      "claimedAt": "2026-10-22T12:13:02.373244+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "4cdd26c48d18d85516d5": {
       "id": "4cdd26c48d18d85516d5",
@@ -91,7 +93,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
-      "claimedAt": "2026-10-22T12:13:02.379309+00:00"
+      "claimedAt": "2026-10-22T12:13:02.379309+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "51ee9e7e374889a9c59d": {
       "id": "51ee9e7e374889a9c59d",
@@ -111,7 +114,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
-      "claimedAt": "2026-10-22T12:13:02.385655+00:00"
+      "claimedAt": "2026-10-22T12:13:02.385655+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "cd8947ee3b241929acea": {
       "id": "cd8947ee3b241929acea",
@@ -131,7 +135,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
-      "claimedAt": "2026-10-22T12:13:02.391244+00:00"
+      "claimedAt": "2026-10-22T12:13:02.391244+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "a7645d5e98d33ff95348": {
       "id": "a7645d5e98d33ff95348",
@@ -151,7 +156,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
-      "claimedAt": "2026-10-22T12:13:02.398032+00:00"
+      "claimedAt": "2026-10-22T12:13:02.398032+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "755c302b279b774e0d71": {
       "id": "755c302b279b774e0d71",
@@ -171,7 +177,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
-      "claimedAt": "2026-10-22T12:13:02.403884+00:00"
+      "claimedAt": "2026-10-22T12:13:02.403884+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "896d6848bd646641c757": {
       "id": "896d6848bd646641c757",
@@ -222,7 +229,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
-      "claimedAt": "2026-10-22T12:13:02.417117+00:00"
+      "claimedAt": "2026-10-22T12:13:02.417117+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "f3f0af3408875b6b8160": {
       "id": "f3f0af3408875b6b8160",
@@ -242,7 +250,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
-      "claimedAt": "2026-10-22T12:13:02.422860+00:00"
+      "claimedAt": "2026-10-22T12:13:02.422860+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "c203c46cfe28b0187327": {
       "id": "c203c46cfe28b0187327",
@@ -262,7 +271,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
-      "claimedAt": "2026-10-22T12:13:02.429500+00:00"
+      "claimedAt": "2026-10-22T12:13:02.429500+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "2eaed3a36630cc720b28": {
       "id": "2eaed3a36630cc720b28",
@@ -282,7 +292,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
-      "claimedAt": "2026-10-22T12:13:02.437071+00:00"
+      "claimedAt": "2026-10-22T12:13:02.437071+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "b37a0257d19cf9dac15c": {
       "id": "b37a0257d19cf9dac15c",
@@ -395,7 +406,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
-      "claimedAt": "2026-10-22T12:13:02.463687+00:00"
+      "claimedAt": "2026-10-22T12:13:02.463687+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "1da86dbfb0f00eb71574": {
       "id": "1da86dbfb0f00eb71574",
@@ -511,7 +523,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.514358+00:00"
+      "claimedAt": "2026-10-22T12:19:16.514358+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "183a33aa10cf52c58370": {
       "id": "183a33aa10cf52c58370",
@@ -534,7 +547,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.520880+00:00"
+      "claimedAt": "2026-10-22T12:19:16.520880+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "9cc3a192f19087a6e947": {
       "id": "9cc3a192f19087a6e947",
@@ -557,7 +571,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.526857+00:00"
+      "claimedAt": "2026-10-22T12:19:16.526857+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "77b8994f746d5a1e8b46": {
       "id": "77b8994f746d5a1e8b46",
@@ -580,7 +595,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.533025+00:00"
+      "claimedAt": "2026-10-22T12:19:16.533025+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "95638be5ab42322ca19b": {
       "id": "95638be5ab42322ca19b",
@@ -603,7 +619,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.539865+00:00"
+      "claimedAt": "2026-10-22T12:19:16.539865+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "cbc2d35ecb3f3c45466f": {
       "id": "cbc2d35ecb3f3c45466f",
@@ -626,7 +643,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.545963+00:00"
+      "claimedAt": "2026-10-22T12:19:16.545963+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "14d5c32aad02f6b43a31": {
       "id": "14d5c32aad02f6b43a31",
@@ -649,7 +667,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.552410+00:00"
+      "claimedAt": "2026-10-22T12:19:16.552410+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "436d675a15024a8c3e93": {
       "id": "436d675a15024a8c3e93",
@@ -672,7 +691,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.559326+00:00"
+      "claimedAt": "2026-10-22T12:19:16.559326+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "d22286d3b73de3947583": {
       "id": "d22286d3b73de3947583",
@@ -729,7 +749,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.570972+00:00"
+      "claimedAt": "2026-10-22T12:19:16.570972+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "dd644d04cd354d402fce": {
       "id": "dd644d04cd354d402fce",
@@ -752,7 +773,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.576533+00:00"
+      "claimedAt": "2026-10-22T12:19:16.576533+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "3e75742e20fb726ee16d": {
       "id": "3e75742e20fb726ee16d",
@@ -775,7 +797,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.582623+00:00"
+      "claimedAt": "2026-10-22T12:19:16.582623+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "d102a3f989c96d7f59a7": {
       "id": "d102a3f989c96d7f59a7",
@@ -798,7 +821,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.588139+00:00"
+      "claimedAt": "2026-10-22T12:19:16.588139+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "7309b430760de39bb92e": {
       "id": "7309b430760de39bb92e",
@@ -821,7 +845,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.594232+00:00"
+      "claimedAt": "2026-10-22T12:19:16.594232+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     },
     "e5936f53ec393309f269": {
       "id": "e5936f53ec393309f269",
@@ -878,7 +903,8 @@
       "status": "in-progress",
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
-      "claimedAt": "2026-10-22T12:19:16.605470+00:00"
+      "claimedAt": "2026-10-22T12:19:16.605470+00:00",
+      "resumeNote": "未完了。前提モデル（急所/形態/持ち物移動/PP/対象と状態）の有無を追跡してから既存経路へ統合。既存スコープとの重複を避け、未検証を完成にしない。"
     }
   },
   "failures": [
@@ -975,21 +1001,34 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-22T12:32:46.171740+00:00",
+      "commit": "3fbccd9aa71c34105cc222a092ab575d558d1a31",
+      "reason": "v2.9.5：2依存グループの10特性を限定検証、3技を再分類。全110検証成功。残る26着手項目から再開",
+      "completion": false,
+      "counts": {
+        "verified-scope": 10,
+        "in-progress": 26,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {
     "status": "verified-scope",
     "completion": false,
-    "implementationCommit": "5473e017697909db202e5b1996a0e53fcec92dc6",
+    "implementationCommit": "3fbccd9aa71c34105cc222a092ab575d558d1a31",
     "scope": "Planner, dependency gates, scoped test association, hash freshness, retry budget, duplicate prevention, persisted checkpoints; no autonomous coding daemon or enabled schedule.",
     "tests": [
       "test-development-automation.py"
     ],
-    "unitTests": 9,
+    "unitTests": 10,
     "sourceSha256": {
-      "development-automation.py": "06a506fe6f9ffd91301c4b0917596ff734914cc19662d87839c5998dae3fdae2",
+      "development-automation.py": "aebbbe0a108e1dbfc539e24fdb0c0eced7133eecc755e3bb60f995cb4a289cd3",
       "DEVELOPMENT_AUTOMATION_POLICY.json": "f3b4c3488ea27c4aefda970cc753d5e8c6da09b26384d8df099d5475d876a4a6",
-      "test-development-automation.py": "11ae135f8f99142f8bb541906441267ff7ce903e49433f355885ceb7571a5cf7"
+      "test-development-automation.py": "0f8b109c1f61cdceaf4638e2b272682e5a5a1aa5d65c291964e732096ac72050"
     }
   }
 }

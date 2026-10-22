@@ -1,17 +1,26 @@
 {
-  "version": "v2.9.4",
-  "baseCommit": "a5cc0fb0f66540855a0934cfd34a0a722650c0e6",
+  "version": "v2.9.5",
+  "baseCommit": "9c73275602b11d44f6daacc9032667baf5bff3bf",
   "branch": "codex-development",
-  "implementationCommit": "5473e017697909db202e5b1996a0e53fcec92dc6",
+  "implementationCommit": "3fbccd9aa71c34105cc222a092ab575d558d1a31",
   "completion": false,
+  "counts": {
+    "newPartialAbilityScopes": 10,
+    "reviewedExistingMoveScopes": 3,
+    "continuedDependencyGroups": 2,
+    "verifiedScopedTasks": 10,
+    "inProgressTasks": 26,
+    "remainingExplicitlyUnsupportedAbilityLabels": 66,
+    "notFullyVerifiedCandidates": 1149
+  },
   "coverageSummary": {
     "total": 1149,
     "categories": {
-      "未実装": 76,
-      "部分実装": 160,
+      "未実装": 66,
+      "部分実装": 173,
       "別経路で実装済み": 10,
       "仕様対象外": 0,
-      "要調査": 903
+      "要調査": 900
     },
     "fullyImplemented": 0,
     "fullyUnverified": 1149,
@@ -21,18 +30,18 @@
   "remainingStageSummary": {
     "abilities": {
       "registered": 203,
-      "partialEffect": 51,
-      "requiresReview": 152,
-      "unitTestsDefined": 36,
-      "integrationTestsDefined": 36,
+      "partialEffect": 61,
+      "requiresReview": 142,
+      "unitTestsDefined": 46,
+      "integrationTestsDefined": 46,
       "authoritativelyVerified": 0
     },
     "moves": {
       "registered": 698,
-      "partialEffect": 67,
-      "requiresReview": 631,
-      "unitTestsDefined": 42,
-      "integrationTestsDefined": 42,
+      "partialEffect": 70,
+      "requiresReview": 628,
+      "unitTestsDefined": 45,
+      "integrationTestsDefined": 45,
       "authoritativelyVerified": 0
     },
     "items": {
@@ -53,17 +62,11 @@
     }
   },
   "testCommands": {
-    "passed": 106,
-    "total": 106
+    "passed": 110,
+    "total": 110
   },
-  "externalDifferentialCases": 2998,
+  "externalDifferentialCases": 3107,
   "externalDifferentialFailures": 0,
-  "multiTurnComparison": {
-    "turns": 4,
-    "rankCheckpoints": 8,
-    "failures": 0,
-    "scope": "confirmed-hit rank adapter only"
-  },
   "preservedDataSha256": {
     "NATIONAL_DEX": "984457909967fa730f2372a9bb6556c8eb625c5437617d9d71336dadbc26703a",
     "NATIONAL_MOVES": "85bbcfde946a0fc2eb005d055b615a7898946fb475ca69251a16d9bfa8c2c12b",
@@ -73,19 +76,9 @@
     "ADOPTION_120_NORMALIZED.json": "4eda15a0810d74d3124aeace37cf51d75eadd36a37e9ff2ab10377d697e3bd47",
     "ADOPTION_120_EFFECT_AUDIT.json": "db45dd824ac6a8e57df87bc8b3be266a718b605525d99b27f8c3859fdf9ef42c"
   },
-  "previousMechanicsCounts": {
-    "newPartialAbilityScopes": 2,
-    "connectedExistingAbilityScopes": 1,
-    "reviewedExistingMoveScopes": 4,
-    "notFullyVerifiedCandidates": 1149,
-    "remainingExplicitlyUnsupportedAbilityLabels": 76
-  },
-  "mechanicsImplementationCommit": "7596416a51ba7744564054e01b93fcf766ded035",
-  "automationRevision": 1,
-  "counts": {
-    "newGameMechanics": 0,
-    "automationUnitTests": 9,
-    "dependencyGroups": 18,
-    "candidates": 1149
+  "multiTurnComparison": {
+    "turns": 4,
+    "rankCheckpoints": 8,
+    "scope": "existing partial confirmed-hit adapter"
   }
 }
