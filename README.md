@@ -43,3 +43,5 @@ python build-development-release.py
 
 [継続開発の操作と権限範囲](DEVELOPMENT_AUTOMATION.md)、[実行契約](AGENTS.md) を参照。
 短い再開指示と依存グループ選択、失敗・証拠・チェックポイント保存を用意。定期実行は未有効化。
+
+最新の精度検証は [MAIN_MATCHUP_VALIDATION.md](MAIN_MATCHUP_VALIDATION.md)。PC実機操作はユーザー確認済み、UIを維持し、主要対面と重大不具合だけを検証・修正しています。

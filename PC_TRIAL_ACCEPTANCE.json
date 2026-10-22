@@ -2,10 +2,10 @@
   "completion": false,
   "pcEquivalentTrialPassed": true,
   "readiness": "conditional-pc-browser-trial",
-  "implementationCommit": "ce3e3b8a2f70d20bd3e4bc6e04dc072b77e7b926",
+  "implementationCommit": "6e47b44a5fec7421e48ef66f349ad42d73e8dd94",
   "testCommands": {
-    "passed": 120,
-    "total": 120
+    "passed": 123,
+    "total": 123
   },
   "engine": "Linux Chromium 154.0.8037.57",
   "compatibilityProfiles": [
@@ -28,8 +28,15 @@
     "Native Windows Chrome/Edge and Windows .cmd execution unverified; Python launcher tested on Linux",
     "Automated timing excludes human decision/input variability",
     "C/M-C and Mega legality/stats unconfirmed",
-    "Other resist berries, Aurora Veil and full battle combinations remain unverified; estimates stay provisional"
+    "Other resist berries, all screen removal/transfer and full battle combinations remain unverified; estimates stay provisional"
   ],
-  "trialArchive": "release/gc2027ii-v2.9.7-development.zip",
-  "startup": "PC_TRIAL_START.md"
+  "trialArchive": "release/gc2027ii-v2.9.8-development.zip",
+  "startup": "PC_TRIAL_START.md",
+  "userReportedPcOperation": {
+    "confirmed": true,
+    "dateJST": "2026-10-23",
+    "scope": "PC実機操作に問題なしとユーザー確認。OS/ブラウザ版の詳細なし。"
+  },
+  "uiPreservation": "UI_PRESERVATION_BASELINE.json",
+  "mainMatchupValidation": "MAIN_MATCHUP_VALIDATION.md"
 }

@@ -72,5 +72,24 @@
       "total": 120
     },
     "nativeWindowsVerified": false
+  },
+  "mainMatchupIteration": {
+    "implementationCommit": "6e47b44a5fec7421e48ef66f349ad42d73e8dd94",
+    "productionDefects": [
+      "Aurora Veil missing from damage/lifecycle",
+      "Known Infiltrator not bypassing screens in damage adapters"
+    ],
+    "beforeFix": "MAIN_MATCHUP_BEFORE_FIX.json",
+    "afterFix": "MAIN_MATCHUP_DIFFERENTIAL_RESULTS.json",
+    "harnessCorrections": [
+      "Use BASE_SPEED for speed fixture instead of absent BATTLE_DATA.spe",
+      "Set Battle active move for Choice item ModifyMove hook",
+      "Run move-specific ModifyPriority before global priority events"
+    ],
+    "finalRun": {
+      "passed": 123,
+      "total": 123
+    },
+    "uiPreserved": true
   }
 }

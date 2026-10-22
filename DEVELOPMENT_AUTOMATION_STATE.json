@@ -1587,6 +1587,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-22T21:33:53.486099+00:00",
+      "commit": "6e47b44a5fec7421e48ef66f349ad42d73e8dd94",
+      "reason": "UI維持。主要16対面の計算/速度/順序を照合し壁の重大不具合2件を修正。123/123成功。",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {
@@ -1605,9 +1618,11 @@
     }
   },
   "workPolicy": {
-    "mode": "pc-browser-trial",
+    "mode": "pc-main-matchups",
     "coverageExpansionPaused": true,
     "gates": "TOURNAMENT_PRACTICAL_GATES.json",
-    "reason": "PC browser usability/stability and top-120 calculation defects first; smartphone regression only; no broad candidate enumeration."
+    "reason": "Preserve user-confirmed UI; validate important adoption-120 matchups and fix major calculation defects only.",
+    "userReportedPcOperation": true,
+    "uiPreservation": "UI_PRESERVATION_BASELINE.json"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "completion": false,
+  "oracle": "pokemon-showdown@0.11.10",
+  "scenarios": 2880,
+  "comparisons": 46080,
+  "speedComparisons": 5760,
+  "priorityComparisons": 2880,
+  "orderComparisons": 5760,
+  "failureCount": 0,
+  "failures": [],
+  "scope": "Actual page outgoing/incoming adapters with explicit raw stats; selected adoption-120 matchups. Not full AP/species data, legality, RNG or complete match certification.",
+  "matchups": 16,
+  "veilLifecycle": {
+    "snow": true,
+    "clay": true,
+    "suppressed": true,
+    "failed": true,
+    "stacking": true,
+    "countdown": true,
+    "rollback": true,
+    "saveReload": true
+  }
+}

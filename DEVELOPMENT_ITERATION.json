@@ -1,14 +1,14 @@
 {
-  "version": "v2.9.7",
-  "baseCommit": "e9533eae94d7c6a5dd05bac1339531ea71ffa407",
+  "version": "v2.9.8",
+  "baseCommit": "d2fe4858779e85bb68d4fc282e407122485ce9d1",
   "branch": "codex-development",
-  "implementationCommit": "ce3e3b8a2f70d20bd3e4bc6e04dc072b77e7b926",
+  "implementationCommit": "6e47b44a5fec7421e48ef66f349ad42d73e8dd94",
   "completion": false,
   "counts": {
-    "newCombatCandidateScopes": 0,
-    "pcLayoutProfiles": 8,
-    "pcWorkflowProfiles": 2,
-    "testCommands": 120,
+    "majorAccuracyFixes": 2,
+    "majorMatchupConditions": 16,
+    "scenarios": 2880,
+    "newPartialMoveScope": 1,
     "inProgressTasks": 37,
     "notFullyVerifiedCandidates": 1149
   },
@@ -16,10 +16,10 @@
     "total": 1149,
     "categories": {
       "未実装": 58,
-      "部分実装": 194,
+      "部分実装": 195,
       "別経路で実装済み": 10,
       "仕様対象外": 0,
-      "要調査": 887
+      "要調査": 886
     },
     "fullyImplemented": 0,
     "fullyUnverified": 1149,
@@ -37,10 +37,10 @@
     },
     "moves": {
       "registered": 698,
-      "partialEffect": 71,
-      "requiresReview": 627,
-      "unitTestsDefined": 46,
-      "integrationTestsDefined": 46,
+      "partialEffect": 72,
+      "requiresReview": 626,
+      "unitTestsDefined": 47,
+      "integrationTestsDefined": 47,
       "authoritativelyVerified": 0
     },
     "items": {
@@ -61,8 +61,8 @@
     }
   },
   "testCommands": {
-    "passed": 120,
-    "total": 120
+    "passed": 123,
+    "total": 123
   },
   "externalDifferentialFailures": 0,
   "differentialComparisons": {
@@ -95,12 +95,15 @@
   "sprintBudget": {
     "totalMinutes": 120,
     "startedAt": "2026-10-22T14:46:53Z",
-    "recordedAt": "2026-10-22T15:20:42.415221+00:00",
-    "elapsedMinutesRoundedUp": 34,
-    "remainingMinutesEstimate": 66,
-    "meaning": "前回34分＋今回PC優先作業約20分の概算。待機期間を含めない。正確な累積計測や実行権限枠ではない。",
+    "recordedAt": "2026-10-22T21:34:14.609873+00:00",
+    "remainingMinutesEstimate": 41,
+    "meaning": "前回までの概算残66分から、今回主要対面検証約25分を引いた概算。待機時間や権限枠ではなく開発時間の目安。",
     "previousRecordedRemainingMinutes": 86,
-    "pcSessionMinutesApprox": 20
+    "pcSessionMinutesApprox": 20,
+    "mainMatchupSessionMinutesApprox": 25,
+    "initialRecordedElapsedMinutes": 34,
+    "elapsedMinutesEstimate": 79,
+    "previousRecordedAt": "2026-10-22T15:20:42.415221+00:00"
   },
   "coverageExpansionPaused": true,
   "previousIterationCounts": {
@@ -119,5 +122,8 @@
     "acceptance": "PC_TRIAL_ACCEPTANCE.json",
     "nativeWindowsVerified": false,
     "completion": false
-  }
+  },
+  "mainMatchupValidation": "MAIN_MATCHUP_DIFFERENTIAL_RESULTS.json",
+  "userReportedPcOperation": true,
+  "uiPreserved": true
 }

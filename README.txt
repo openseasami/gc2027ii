@@ -1,6 +1,6 @@
 v2.9.8
 PC起動方法: PC_TRIAL_START.md / start-pc-trial.cmd
-開発途中です。完成判定はfalse。ローカル大会向け検査は120/120成功、大会仕様と実端末操作は未確認。
+開発途中です。完成判定はfalse。ローカル大会向け検査は123/123成功、大会仕様と実端末操作は未確認。
 大会向け条件/結果: TOURNAMENT_PRACTICAL_GATES.md / TOURNAMENT_PRACTICAL_RESULTS.json
 今回の実装・検証・残件: DEVELOPMENT_CHECKPOINT.md / COMPLETION_REPORT.md
 網羅性の5分類と元91件の監査: COVERAGE_AUDIT.md / ABILITY_UNSUPPORTED_REVIEW.json
@@ -57,3 +57,5 @@ v2.8.4: 独立整数演算オラクルによるダメージモデル差分照合
 v2.8.9: 出典・閾値・重複・既存データとの衝突を検査する採用率CSV一括取込（import-adoption-batch.py）を追加。外部取得やダメージ照合は未完了。
 
 v2.9.0: 統計ページの上位10内から未登録6種・技と特性75観測を出典付きで追加（計12/262種）。未掲載252ではなく未登録250種は未調査。実機照合・全262種収集は未完了。
+
+主要対面検証: MAIN_MATCHUP_VALIDATION.md / MAIN_MATCHUP_DIFFERENTIAL_RESULTS.json。PC実機操作はユーザー確認済み。UI維持。
