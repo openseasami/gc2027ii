@@ -34,14 +34,14 @@ def main():
                 completionBlockedBy=['Full per-effect and authoritative verification incomplete'],dependencies=dependency[category]))
     rank={'target':0,'unknown':1,'defer':2}
     unresolved.sort(key=lambda r:(rank[r['priority']['classification']],r['category'],r['name']))
-    backlog=dict(schemaVersion=1,complete=False,scope='Every row still lacks full authoritative verification; requires-review does not mean no implementation.',
+    backlog=dict(schemaVersion=1,complete=False,completion=False,scope='Every row still lacks full authoritative verification; requires-review does not mean no implementation.',
         stageSummary=ledger['stageSummary'],dependencies=dependency,entries=unresolved,
         definiteUnsupportedAbilityLabels=ledger['abilities']['markedUnsupported'],
-        criticalWork=['Confirm target regulation and legal forms/stones/stats','Unify source-aware rank changes across existing paths','Connect confirmed target effects without guessed targets','Verify item suppression and post-Mega abilities','Independent full doubles match oracle and complete browser E2E'])
+        criticalWork=['Confirm target regulation and legal forms/stones/stats without widening the roster','Audit remaining direct rank assignments, ally targets, spread target observations and all secondary-effect immunities','Audit legacy direct item reads outside shared active-effect adapters','Complete all post-Mega ability/form-stat rules and differential match scenarios','Independent full doubles match oracle and complete browser E2E'],outOfCatalogEvidence=ledger.get('outOfCatalogEvidence',[]))
     (ROOT/'DEVELOPMENT_BACKLOG.json').write_text(json.dumps(backlog,ensure_ascii=False,indent=2)+'\n')
     out=ROOT/'release';out.mkdir(exist_ok=True)
-    manifest=dict(version=version,development=True,complete=False,generatedAt=datetime.now(timezone.utc).isoformat(),
-        baseCommit='e99c740dc7205da29518dab62829f3fe026ba26d',branch='codex-development',
+    manifest=dict(version=version,development=True,complete=False,completion=False,generatedAt=datetime.now(timezone.utc).isoformat(),
+        baseCommit='650d5f2ce3def84871ab1ce88c1a134e9c6afa42',branch='codex-development',
         testCommands={'passed':tests['passed'],'total':tests['total']},
         files={name:sha256((ROOT/name).read_bytes()).hexdigest() for name in files},
         limitations=['No deployment performed','Full mechanics and legality not certified','See DEVELOPMENT_CHECKPOINT.md and DEVELOPMENT_BACKLOG.json in source repository'])

@@ -49,12 +49,13 @@ function inventory(category,names,projected=new Set()){
 for(const group of evidence.groups){
   const names={abilities:abilityNames,moves:moveNames,items:itemNames,mega:megaNames}[group.category];
   for(const name of group.names)if(!names?.includes(name))throw Error('Evidence outside inventory: '+group.category+'/'+name);
-  for(const file of [...group.unitTests,...group.integrationTests])if(!tests.includes(file))throw Error('Missing evidence test '+file);
+  for(const file of [...group.unitTests,...group.integrationTests])if(!fs.existsSync(path.join(root,file))||!(/^(test-.*\.(js|py)|browser_.*\.py)$/.test(file)))throw Error('Missing evidence test '+file);
 }
-data.schemaVersion=2;
+data.schemaVersion=2;data.completion=false;data.releaseGate.completion=false;
 data.inventory={abilities:inventory('abilities',abilityNames,projectedAbilities),moves:inventory('moves',moveNames,projectedMoves),items:inventory('items',itemNames),mega:inventory('mega',megaNames)};
 data.items={status:'partial; per-item evidence inventory available',total:itemNames.length};
 data.mega={status:'partial; generic transformation path identified, per-form authoritative oracle missing',total:megaNames.length};
+data.outOfCatalogEvidence=evidence.outOfCatalogEvidence||[];
 data.prioritySource={file:'PRIORITY_POLICY.json',scopeNote:policy.scopeNote,dataCoverage:policy.dataCoverage};
 data.assessmentRules={projectionAbsence:'Not proof of missing implementation: inspect HTML and shared math paths.',testEvidence:'Tests cover only their explicit scenarios; execution outcomes are in TEST_RESULTS.json.',sourceMentions:'Candidate source lines are discovery hints, not verified implementation.',legality:'Regulation catalog is inherited and requires external confirmation for the target event.'};
 data.stageSummary=Object.fromEntries(Object.entries(data.inventory).map(([category,rows])=>[category,{registered:rows.length,partialEffect:rows.filter(r=>r.effect.status==='partial').length,requiresReview:rows.filter(r=>r.effect.status==='requires-review').length,unitTestsDefined:rows.filter(r=>r.unitVerification.tests.length).length,integrationTestsDefined:rows.filter(r=>r.integrationVerification.tests.length).length,authoritativelyVerified:0}]));

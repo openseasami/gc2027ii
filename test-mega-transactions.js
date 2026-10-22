@@ -5,18 +5,18 @@ function section(a,b){const i=html.indexOf(a),j=html.indexOf(b,i+a.length);asser
 const regulation=vm.runInNewContext('('+html.match(/^const REGULATION_MC\s*=\s*(.*);$/m)[1]+')');
 const state={my:[],opp:[],myTeam:[],oppTeam:[],myActive:[0,1],oppActive:[0,1]};
 const fields=Object.fromEntries(['weather','weatherTurns','terrain','terrainTurns'].map(k=>[k,{value:'なし'}]));
-const profiles=[];let failure=false;
+const profiles=[];let failure=false,suppressedAbility='';
 const ctx={state,savedMyProfiles:profiles,RELEVANT_ABILITIES:{},MEGA_INFO:regulation.megaInfo,
  BATTLE_STAGE_KEYS:['atkStage','defStage','spaStage','spdStage','speStage','accStage','evaStage'],
  $:id=>fields[id],BattleCore:require('./battle-core.js'),clampStage:n=>Math.max(-6,Math.min(6,n)),
- ensureBattleEntry:(side,i)=>state[side][i],confirmedAbilityIs:()=>false,abilityOf:()=>'',
+ ensureBattleEntry:(side,i)=>state[side][i],confirmedAbilityIs:(s,i,n,a)=>s==='my'&&i===0&&a===suppressedAbility,abilityOf:()=>'',
  confirmObservedEntryField:()=>{},renderCards:()=>{},refresh:()=>{},save:()=>!failure,
 };
-vm.createContext(ctx);vm.runInContext(section('function applyBattleBoost(','function clangorousSoulCost(')+section('function entryWeatherDuration(','const ELECTRIC_PRESSURE_MOVES='),ctx);
+ctx.RankEffects=require('./rank-effects.js');vm.createContext(ctx);vm.runInContext(section('function applyBattleBoost(','function clangorousSoulCost(')+section('function entryWeatherDuration(','const ELECTRIC_PRESSURE_MOVES='),ctx);
 function reset(name,info){
  state.my=[{hp:100},{hp:100,item:'エレキシード'}];state.opp=[{hp:100},{hp:100}];state.myTeam=[name,'味方'];state.oppTeam=[name,'相手'];
  state.megaUsed={my:null,opp:null};state.megaTransitionHistory=[];state.entryFieldUncertainty={};
- profiles[0]={item:info.stone};profiles[1]={item:'エレキシード'};
+ suppressedAbility='';state.magicRoomTurns=0;profiles[0]={item:info.stone};profiles[1]={item:'エレキシード'};
  for(const [key,field] of Object.entries(fields))field.value=key.endsWith('Turns')?'0':'なし';failure=false;
 }
 let cases=0;
@@ -40,5 +40,11 @@ for(const [name,info] of Object.entries(regulation.megaInfo)){
   assert.equal(state.my[1].itemConsumed,true,'ally seed consumed only on successful save');assert.equal(state.my[1].defStage,1);
  }
  cases++;
+ reset(name,info);state.magicRoomTurns=3;assert.equal(ctx.heldItemFor('my',0),'');
+ assert.equal(ctx.megaEvolve('my',0,name),true,'Magic Room does not block Mega stone possession');
+ assert.equal(state.magicRoomTurns,3,'Mega/render must not reset Room duration');cases++;
+ reset(name,info);suppressedAbility='ぶきよう';assert.equal(ctx.heldItemFor('my',0),'');
+ assert.equal(ctx.megaEvolve('my',0,name),true,'Klutz does not prevent Mega Evolution');cases++;
+
 }
 console.log(`PASS ${cases} generic Mega transaction scenarios across ${Object.keys(regulation.megaInfo).length} catalog forms; external form rules unverified`);

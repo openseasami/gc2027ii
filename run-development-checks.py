@@ -26,8 +26,8 @@ def main():
         results.append(run([sys.executable,file.name]))
     results.append(run([sys.executable,'browser_smoke_portable.py']))
     subprocess.run(['node','implementation-ledger.js'],cwd=ROOT,check=True)
-    files=['index.html','sw.js','battle-core.js','effect-engine.js','priority-engine.js','turn-order-effects.js','implementation-ledger.js','MECHANICS_EVIDENCE.json']
-    report=dict(generatedAt=datetime.now(timezone.utc).isoformat(),complete=False,
+    files=['rank-effects.js','index.html','sw.js','battle-core.js','effect-engine.js','priority-engine.js','turn-order-effects.js','implementation-ledger.js','MECHANICS_EVIDENCE.json']
+    report=dict(generatedAt=datetime.now(timezone.utc).isoformat(),complete=False,completion=False,
         limitations=['Passing scenarios do not certify full mechanics, event legality, official-game parity, mobile usability or deployed-site equivalence.'],
         sourceSha256={name:sha256((ROOT/name).read_bytes()).hexdigest() for name in files},
         total=len(results),passed=sum(r['exitCode']==0 for r in results),results=results)

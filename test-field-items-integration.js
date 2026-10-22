@@ -12,7 +12,7 @@ const ctx={state,savedMyProfiles,BattleCore:require('./battle-core.js'),EffectEn
  // Grounding must never be queried for seed activation (Flying/Levitate allowed).
  isGroundedPokemon:()=>{throw Error('seed activation must not depend on grounding')},
 };
-vm.createContext(ctx);
+ctx.RankEffects=require('./rank-effects.js');vm.createContext(ctx);
 vm.runInContext(section('function applyBattleBoost(','function clangorousSoulCost(')
  +section('function entryWeatherDuration(','function megaInfoWithChosenAbility(')
  +section('function applyObservedMoveEffects(','function confirmObservedOpponentMove('),ctx);

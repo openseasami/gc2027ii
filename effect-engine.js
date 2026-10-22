@@ -43,6 +43,19 @@
     {name:'リフレクター',kind:'screen',screen:'reflect',turns:5},
     {name:'ひかりのかべ',kind:'screen',screen:'lightScreen',turns:5},
     {name:'くろいきり',kind:'reset_stages',target:'all'},
+    {name:'マジックルーム',kind:'magic_room',turns:5},
+    {name:'からをやぶる',kind:'multi_boost',stats:{def:-1,spd:-1,atk:2,spa:2,spe:2},target:'self'},
+    {name:'インファイト',kind:'multi_boost',stats:{def:-1,spd:-1},target:'self'},
+    {name:'ばかぢから',kind:'multi_boost',stats:{atk:-1,def:-1},target:'self'},
+    {name:'アームハンマー',kind:'multi_boost',stats:{spe:-1},target:'self'},
+    {name:'オーバーヒート',kind:'multi_boost',stats:{spa:-2},target:'self'},
+    {name:'りゅうせいぐん',kind:'multi_boost',stats:{spa:-2},target:'self'},
+    {name:'リーフストーム',kind:'multi_boost',stats:{spa:-2},target:'self'},
+    {name:'ぶちかまし',kind:'multi_boost',stats:{def:-1,spd:-1},target:'self'},
+    {name:'アーマーキャノン',kind:'multi_boost',stats:{def:-1,spd:-1},target:'self'},
+    {name:'スケイルノイズ',kind:'multi_boost',stats:{def:-1},target:'self'},
+    {name:'ゴールドラッシュ',kind:'multi_boost',stats:{spa:-1},target:'self'},
+
     {name:'つるぎのまい',kind:'stat_boost',stat:'atk',stages:2,target:'self'},
     {name:'わるだくみ',kind:'stat_boost',stat:'spa',stages:2,target:'self'},
     {name:'てっぺき',kind:'stat_boost',stat:'def',stages:2,target:'self'},
@@ -75,6 +88,16 @@
     {name:'あまえる',kind:'stat_boost',stat:'atk',stages:-2,target:'opponent'},
     {name:'すなかけ',kind:'stat_boost',stat:'acc',stages:-1,target:'opponent'},
     {name:'えんまく',kind:'stat_boost',stat:'acc',stages:-1,target:'opponent'},
+    {name:'いやなおと',kind:'multi_boost',stats:{def:-2},target:'opponent'},
+    {name:'きんぞくおん',kind:'multi_boost',stats:{spd:-2},target:'opponent'},
+    {name:'かいでんぱ',kind:'multi_boost',stats:{spa:-2},target:'opponent'},
+    {name:'つぶらなひとみ',kind:'multi_boost',stats:{atk:-1},target:'opponent'},
+    {name:'フェザーダンス',kind:'multi_boost',stats:{atk:-2},target:'opponent'},
+    {name:'ないしょばなし',kind:'multi_boost',stats:{spa:-1},target:'opponent'},
+    {name:'おたけび',kind:'multi_boost',stats:{atk:-1,spa:-1},target:'opponent'},
+    {name:'なみだめ',kind:'multi_boost',stats:{atk:-1,spa:-1},target:'opponent'},
+    {name:'くすぐる',kind:'multi_boost',stats:{atk:-1,def:-1},target:'opponent'},
+
 
   ].map(d=>Object.freeze(d)));
   const moveByName=new Map(moveDefinitions.map(d=>[d.name,d]));

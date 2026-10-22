@@ -1,0 +1,12 @@
+{
+  "oracle": "pokemon-showdown",
+  "version": "0.11.10",
+  "entryPoint": "Battle.eachEvent(Update)",
+  "cases": 60,
+  "failures": [],
+  "complete": false,
+  "completion": false,
+  "limitations": [
+    "General Gen 9 White Herb item update event, not full match or Champions-specific timing"
+  ]
+}

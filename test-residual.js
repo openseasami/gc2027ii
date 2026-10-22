@@ -14,7 +14,7 @@ function test(ability,status,weather,expectedDamage,expectedHeal){
  effectiveBattleName:()=> 'TEST',BATTLE_DATA:{TEST:{hp:100,types:['ノーマル']}},
  savedMyProfiles:[{hp:0,item:''}],calcRealHP:()=>160,
  $:(id)=>({value:id==='weather'?weather:'なし'}),
- abilityOf:()=>ability,isGroundedPokemon:()=>false
+ heldItemFor:()=>'',abilityOf:()=>ability,isGroundedPokemon:()=>false
  };
  const fn=vm.runInNewContext('('+source+')',context);
  const r=fn({name:'TEST',idx:0,d:{status}});

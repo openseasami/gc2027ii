@@ -4,7 +4,7 @@ assert(html.includes("markObservedEffectReviewed('my',e.idx,targetIdx,true)"));
 assert(html.includes("markObservedEffectReviewed('my',e.idx,null,false)"));
 const a=html.indexOf('function pendingObservedTargetEffect('),b=html.indexOf('function guideStepDone(');
 const state={myActive:[0,1],oppActive:[0,1],myTeam:['コータス','A'],oppTeam:['B','C'],my:{0:{hp:100,currentTurnAction:{kind:'move',move:'あくび'}},1:{hp:100}},opp:{0:{hp:100},1:{hp:100}}};
-const ctx={state};vm.createContext(ctx);vm.runInContext(html.slice(a,b),ctx);
+const ctx={state,EffectEngine:require('./effect-engine.js')};vm.createContext(ctx);vm.runInContext(html.slice(html.indexOf('function isRecordedTargetRankMove('),html.indexOf('function applyConfirmedTargetRanks(')),ctx);vm.runInContext(html.slice(a,b),ctx);
 const fn=x=>vm.runInContext(x,ctx);
 assert.equal(fn("pendingObservedTargetEffect('my',0)"),false);
 assert.equal(fn("markObservedEffectReviewed('my',0,1,true)"),true);

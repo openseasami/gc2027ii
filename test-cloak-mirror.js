@@ -1,6 +1,6 @@
 const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
 const src=fs.readFileSync(__dirname+'/index.html','utf8');let a=src.indexOf('function applyConfirmedGuaranteedStatDrop('),b=src.indexOf('function applyConfirmedSingleHit(',a);
-let c={clampStage:x=>Math.max(-6,Math.min(6,x))};vm.createContext(c);vm.runInContext(src.slice(a,b),c);
+let c={clampStage:x=>Math.max(-6,Math.min(6,x))};c.RankEffects=require('./rank-effects.js');vm.createContext(c);vm.runInContext(src.slice(a,b),c);
 let f=c.applyConfirmedGuaranteedStatDrop,n=0;
 const test=(v)=>{assert.ok(v);n++};
 for(const move of ['ルミナコリジョン','アシッドボム','マジカルフレイム']){

@@ -219,7 +219,7 @@
       "integrationTests": [
         "test-mega-transactions.js"
       ],
-      "scope": "Generic transition on 82 inherited catalog forms: pre/post name, ability, one per side, matching own stone, KO/bench rejection, failed-save rollback and retry. Independent form stats, legal stones and all post-ability mechanics unverified."
+      "scope": "Generic transition on 82 inherited catalog forms: pre/post name, ability, one per side, matching own stone, KO/bench rejection, failed-save rollback and retry. Independent form stats, legal stones and all post-ability mechanics unverified. Additional Magic Room and Klutz possession cases on every catalog form, 574 total generic scenarios."
     },
     {
       "category": "abilities",
@@ -238,6 +238,203 @@
         "test-registered-setup-integration.js"
       ],
       "scope": "Confirmed self-rank deltas through shared boost path and seed rank boundaries. Intimidate, guaranteed-hit stat-drop and other direct-write paths are not covered."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "あまのじゃく",
+        "まけんき",
+        "かちき",
+        "クリアボディ",
+        "しろいけむり",
+        "かいりきバサミ",
+        "はとむね",
+        "するどいめ",
+        "ミラーアーマー",
+        "ばんけん",
+        "びびり",
+        "せいしんりょく",
+        "どんかん",
+        "きもったま",
+        "マイペース",
+        "りんぷん",
+        "びんじょう"
+      ],
+      "paths": [
+        "rank-effects.js:resolve",
+        "index.html:receiveIntimidate",
+        "index.html:applyConfirmedTargetRanks",
+        "index.html:applyConfirmedGuaranteedStatDrop",
+        "index.html:commitRankResolution"
+      ],
+      "unitTests": [
+        "test-rank-effects.js",
+        "test-rank-differential.js"
+      ],
+      "integrationTests": [
+        "test-target-ranks-integration.js",
+        "test-cloak-mirror.js",
+        "test-moldbreaker-secondary.js"
+      ],
+      "scope": "Source-aware confirmed rank changes, actual per-stat reactions, caps, single reflection and Opportunist gains. External general Gen 9 Battle.boost comparison; no full Champions or all ability mechanics claim."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "ぶきよう"
+      ],
+      "paths": [
+        "index.html:heldItemFor",
+        "index.html:rawHeldItemFor"
+      ],
+      "unitTests": [
+        "test-item-lifecycle.js",
+        "test-item-differential.js"
+      ],
+      "integrationTests": [
+        "test-mega-transactions.js",
+        "browser_mechanics_regression_test.py"
+      ],
+      "scope": "Effect suppression on active item paths; physical possession and Mega stones preserved. Direct item reads outside shared adapters remain unverified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "ノーてんき"
+      ],
+      "paths": [
+        "index.html:effectiveWeatherForDamage",
+        "index.html:speedFieldMultiplier",
+        "index.html:estimatedEndTurnResidual"
+      ],
+      "unitTests": [
+        "test-weather-item-consistency.js"
+      ],
+      "integrationTests": [
+        "test-weather-item-consistency.js"
+      ],
+      "scope": "Known weather suppressors remove weather effects in shared damage/speed/residual forecasts. Not every weather interaction or actual HP mutation."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "からをやぶる",
+        "インファイト",
+        "ばかぢから",
+        "アームハンマー",
+        "オーバーヒート",
+        "りゅうせいぐん",
+        "リーフストーム",
+        "ぶちかまし",
+        "アーマーキャノン",
+        "スケイルノイズ",
+        "ゴールドラッシュ"
+      ],
+      "paths": [
+        "effect-engine.js:moveDefinitions",
+        "index.html:applyObservedMoveEffects"
+      ],
+      "unitTests": [
+        "test-item-lifecycle.js"
+      ],
+      "integrationTests": [
+        "test-item-lifecycle.js",
+        "browser_mechanics_regression_test.py"
+      ],
+      "scope": "Confirmed successful self-rank changes and White Herb/Simple/Contrary. Does not certify all damage, miss, protection or format legality cases."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "こわいかお",
+        "うそなき",
+        "あまえる",
+        "すなかけ",
+        "えんまく",
+        "いやなおと",
+        "きんぞくおん",
+        "かいでんぱ",
+        "つぶらなひとみ",
+        "フェザーダンス",
+        "ないしょばなし",
+        "おたけび",
+        "なみだめ",
+        "くすぐる"
+      ],
+      "paths": [
+        "effect-engine.js:moveDefinitions",
+        "index.html:applyConfirmedTargetRanks",
+        "index.html:renderRankTargetControls"
+      ],
+      "unitTests": [
+        "test-target-ranks-integration.js"
+      ],
+      "integrationTests": [
+        "test-target-ranks-integration.js",
+        "browser_mechanics_regression_test.py"
+      ],
+      "scope": "Explicit reviewed opposing target and body hit; partner untouched, unknown mechanics deferred, blocks/reflection/actual reactions. Ally targeting, all status immunities and full outcome simulation remain incomplete."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "マジックルーム"
+      ],
+      "paths": [
+        "effect-engine.js:moveDefinitions",
+        "index.html:heldItemFor",
+        "index.html:decrementTurnFieldCounters",
+        "index.html:withHistoricalCombat"
+      ],
+      "unitTests": [
+        "test-item-lifecycle.js"
+      ],
+      "integrationTests": [
+        "browser_mechanics_regression_test.py",
+        "test-mega-transactions.js"
+      ],
+      "scope": "Five-turn toggle/counter in transactional state, shared item effects and damage, save/reload, historical isolation, Mega stone possession preserved. All legacy item readers and Champions legality unverified."
+    },
+    {
+      "category": "items",
+      "names": [
+        "しろいハーブ"
+      ],
+      "paths": [
+        "rank-effects.js:whiteHerb",
+        "index.html:activateWhiteHerbFor",
+        "index.html:commitTurnActions"
+      ],
+      "unitTests": [
+        "test-item-lifecycle.js",
+        "test-item-differential.js"
+      ],
+      "integrationTests": [
+        "test-item-lifecycle.js",
+        "browser_mechanics_regression_test.py"
+      ],
+      "scope": "One use, negative-rank reset without boost modifiers, move/entry/Mega/end-turn boundaries, Unburden, suppression, unknown opponent item guard. General Gen 9 item Update differential; not a full item-timing oracle."
+    }
+  ],
+  "outOfCatalogEvidence": [
+    {
+      "category": "items",
+      "names": [
+        "クリアチャーム"
+      ],
+      "paths": [
+        "rank-effects.js:resolve",
+        "index.html:applyConfirmedTargetRanks",
+        "index.html:receiveIntimidate"
+      ],
+      "unitTests": [
+        "test-rank-effects.js",
+        "test-rank-differential.js"
+      ],
+      "integrationTests": [
+        "test-target-ranks-integration.js"
+      ],
+      "scope": "External negative-rank protection, self changes retained, Mold Breaker does not bypass items, Guard Dog event ordering. Full item interactions unverified."
     }
   ]
 }

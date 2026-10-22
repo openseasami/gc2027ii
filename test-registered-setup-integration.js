@@ -9,7 +9,7 @@ const ctx={state,EffectEngine:engine,SELF_SETUP_BOOSTS:{},BATTLE_STAGE_KEYS:['at
  recordedTurnEvents:()=>['my','opp'].map(side=>({side,idx:0,actor:state[side+'Team'][0],action:state[side][0].currentTurnAction})),
  linkedMultiHitForEvent:()=>null,commitRecordedMoveSwitch:()=>null,
 };
-vm.createContext(ctx);vm.runInContext(section('function applyBattleBoost(','function clangorousSoulCost(')+section('function applyObservedMoveEffects(','function confirmObservedOpponentMove(')+section('function commitTurnActions(){','function stageText('),ctx);
+ctx.RankEffects=require('./rank-effects.js');vm.createContext(ctx);vm.runInContext(section('function applyBattleBoost(','function clangorousSoulCost(')+section('function applyObservedMoveEffects(','function confirmObservedOpponentMove(')+section('function commitTurnActions(){','function stageText('),ctx);
 let scenarios=0;
 for(const [move,boosts] of Object.entries(fixtures)){
  assert.equal(engine.evaluate('on_move_used',{move}).unknown,true);

@@ -80,12 +80,12 @@ try:
   if not page.evaluate('!!navigator.serviceWorker.controller'):page.reload(wait_until='networkidle')
   assert page.evaluate('!!navigator.serviceWorker.controller')
   cached=page.evaluate('''async () => {
-   const names=await caches.keys(),name=names.find(n=>n.endsWith('v2.9.1'));
+   const names=await caches.keys(),name=names.find(n=>n.endsWith('v2.9.2'));
    if(!name)return [];const cache=await caches.open(name);return (await cache.keys()).map(r=>new URL(r.url).pathname.split('/').pop());
   }''')
-  for file in ['index.html','battle-core.js','effect-engine.js','priority-engine.js','turn-order-effects.js']:assert file in cached,(file,cached)
+  for file in ['index.html','battle-core.js','effect-engine.js','priority-engine.js','turn-order-effects.js','rank-effects.js']:assert file in cached,(file,cached)
   context.set_offline(True);page.reload(wait_until='domcontentloaded')
-  assert page.evaluate('!!window.BattleCore && !!window.EffectEngine && !!window.PriorityEngine && !!window.TurnOrderEffects')
+  assert page.evaluate('!!window.BattleCore && !!window.EffectEngine && !!window.PriorityEngine && !!window.TurnOrderEffects && !!window.RankEffects')
   assert page.locator('#battleArea').is_visible()
   assert not errors,errors
   print('PASS offline HTTP reload with all external engines cached; no uncaught browser exceptions')

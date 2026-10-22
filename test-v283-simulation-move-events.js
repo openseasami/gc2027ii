@@ -4,9 +4,9 @@ const engine=require('./effect-engine.js');
 const html=fs.readFileSync(__dirname+'/index.html','utf8');
 const start=html.indexOf('if(!DAMAGE_MOVES[a.move]?.power){');
 assert.ok(start>0);
-const block=html.slice(start,start+560);
+const block=html.slice(start,start+1100);
 assert.match(block,/EffectEngine\.moveDefinitions\.some\(d=>d\.name===a\.move\)/);
-assert.match(block,/applyObservedMoveEffects\(side,ev\.idx,a\.actor,a\.move\)/);
+assert.match(block,/applyObservedMoveEffects\(side,ev\.idx,a\.actor,a\.move,blocked\?null:/);
 for(const def of engine.moveDefinitions){
  assert.ok(def.name);
  assert.equal(engine.evaluate('on_move_used',{move:def.name,succeeded:true}).events.length,1,def.name);

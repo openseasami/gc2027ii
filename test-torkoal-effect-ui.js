@@ -3,7 +3,7 @@ const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
 const start=html.indexOf('function pendingObservedTargetEffect('),end=html.indexOf('function guideStepDone(');
 assert(start>0&&end>start);
 const state={myActive:[0,1],oppActive:[0,1],myTeam:['A','B'],oppTeam:['コータス','C'],my:{0:{hp:100},1:{hp:100}},opp:{0:{currentTurnAction:{kind:'move',move:'あくび'}},1:{}}};
-const ctx={state};vm.createContext(ctx);vm.runInContext(html.slice(start,end),ctx);
+const ctx={state,EffectEngine:require('./effect-engine.js')};vm.createContext(ctx);vm.runInContext(html.slice(html.indexOf('function isRecordedTargetRankMove('),html.indexOf('function applyConfirmedTargetRanks(')),ctx);vm.runInContext(html.slice(start,end),ctx);
 const call=x=>vm.runInContext(x,ctx);
 assert(call("pendingObservedTargetEffect('opp',0)"));
 state.my[0].currentTurnAction={kind:'move',move:'あくび'};

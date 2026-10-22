@@ -1,0 +1,85 @@
+{
+  "version": "v2.9.2",
+  "baseCommit": "650d5f2ce3def84871ab1ce88c1a134e9c6afa42",
+  "completion": false,
+  "counts": {
+    "addedSharedMoveDefinitions": 21,
+    "migratedExistingSelfEffectDefinitions": 3,
+    "newPartialMoveEffectScopes": 18,
+    "connectedExplicitOpposingTargetMoveScopes": 14,
+    "remainingExplicitlyUnsupportedAbilityLabels": 91,
+    "notFullyVerifiedCandidates": 1149
+  },
+  "addedSharedMoveDefinitions": [
+    "いやなおと",
+    "おたけび",
+    "かいでんぱ",
+    "からをやぶる",
+    "きんぞくおん",
+    "くすぐる",
+    "つぶらなひとみ",
+    "ないしょばなし",
+    "なみだめ",
+    "ばかぢから",
+    "ぶちかまし",
+    "りゅうせいぐん",
+    "アーマーキャノン",
+    "アームハンマー",
+    "インファイト",
+    "オーバーヒート",
+    "ゴールドラッシュ",
+    "スケイルノイズ",
+    "フェザーダンス",
+    "マジックルーム",
+    "リーフストーム"
+  ],
+  "migratedExistingEffects": [
+    "インファイト",
+    "スケイルノイズ",
+    "ゴールドラッシュ"
+  ],
+  "classification": "Counts describe scoped effects/adapters, never fully complete mechanics. Projection absence is not proof of missing implementation.",
+  "preservedDataSha256": {
+    "NATIONAL_DEX": "984457909967fa730f2372a9bb6556c8eb625c5437617d9d71336dadbc26703a",
+    "NATIONAL_MOVES": "85bbcfde946a0fc2eb005d055b615a7898946fb475ca69251a16d9bfa8c2c12b",
+    "REGULATION_MC": "9b72494e82ae1cdfd44924b245bc8be95fd176a13b46b425bce014166c899a8a",
+    "PRIORITY_POLICY.json": "b1ff0e2b8742353511b80ef9857acd6285ccdbbf4a02ad58dbbb91f65ee1eb42",
+    "ADOPTION_120_VERIFIED.json": "2d66c2b05457a3ded459f4830a93b9b1a04e00d5a803325145002feada5c7b43",
+    "ADOPTION_120_NORMALIZED.json": "4eda15a0810d74d3124aeace37cf51d75eadd36a37e9ff2ab10377d697e3bd47",
+    "ADOPTION_120_EFFECT_AUDIT.json": "db45dd824ac6a8e57df87bc8b3be266a718b605525d99b27f8c3859fdf9ef42c"
+  },
+  "remainingStageSummary": {
+    "abilities": {
+      "registered": 203,
+      "partialEffect": 36,
+      "requiresReview": 167,
+      "unitTestsDefined": 20,
+      "integrationTestsDefined": 20,
+      "authoritativelyVerified": 0
+    },
+    "moves": {
+      "registered": 698,
+      "partialEffect": 63,
+      "requiresReview": 635,
+      "unitTestsDefined": 38,
+      "integrationTestsDefined": 38,
+      "authoritativelyVerified": 0
+    },
+    "items": {
+      "registered": 166,
+      "partialEffect": 10,
+      "requiresReview": 156,
+      "unitTestsDefined": 5,
+      "integrationTestsDefined": 10,
+      "authoritativelyVerified": 0
+    },
+    "mega": {
+      "registered": 82,
+      "partialEffect": 82,
+      "requiresReview": 0,
+      "unitTestsDefined": 0,
+      "integrationTestsDefined": 82,
+      "authoritativelyVerified": 0
+    }
+  }
+}

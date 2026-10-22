@@ -1,0 +1,19 @@
+{
+  "oracle": "pokemon-showdown",
+  "version": "0.11.10",
+  "format": "gen9doublescustomgame",
+  "entryPoint": "Battle.boost",
+  "seed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "cases": 2720,
+  "failures": [],
+  "complete": false,
+  "limitations": [
+    "No full-match or Champions-specific legality oracle",
+    "Intimidate event immunities, move hits and item lifecycle tested separately"
+  ]
+}

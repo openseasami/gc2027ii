@@ -1,0 +1,7 @@
+{
+  "name": "gc2027ii-development-checks",
+  "private": true,
+  "version": "2.9.2",
+  "description": "Pinned external oracle for local mechanics differential tests",
+  "devDependencies": {"pokemon-showdown": "0.11.10"}
+}
