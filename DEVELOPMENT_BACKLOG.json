@@ -1,30 +1,31 @@
 {
   "schemaVersion": 1,
   "complete": false,
+  "completion": false,
   "scope": "Every row still lacks full authoritative verification; requires-review does not mean no implementation.",
   "stageSummary": {
     "abilities": {
       "registered": 203,
-      "partialEffect": 19,
-      "requiresReview": 184,
-      "unitTestsDefined": 2,
-      "integrationTestsDefined": 2,
+      "partialEffect": 36,
+      "requiresReview": 167,
+      "unitTestsDefined": 20,
+      "integrationTestsDefined": 20,
       "authoritativelyVerified": 0
     },
     "moves": {
       "registered": 698,
-      "partialEffect": 42,
-      "requiresReview": 656,
-      "unitTestsDefined": 12,
-      "integrationTestsDefined": 12,
+      "partialEffect": 63,
+      "requiresReview": 635,
+      "unitTestsDefined": 38,
+      "integrationTestsDefined": 38,
       "authoritativelyVerified": 0
     },
     "items": {
       "registered": 166,
-      "partialEffect": 9,
-      "requiresReview": 157,
-      "unitTestsDefined": 4,
-      "integrationTestsDefined": 9,
+      "partialEffect": 10,
+      "requiresReview": 156,
+      "unitTestsDefined": 5,
+      "integrationTestsDefined": 10,
       "authoritativelyVerified": 0
     },
     "mega": {
@@ -71,8 +72,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9018
+          2270,
+          9085
         ]
       },
       "unitVerification": {
@@ -104,25 +105,36 @@
         "status": "partial",
         "paths": [
           "index.html:applyBattleBoost",
-          "index.html:activateTerrainSeedFor"
+          "index.html:activateTerrainSeedFor",
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
         ],
         "candidateSourceLines": [
-          2269,
-          2862,
-          5457
+          2270,
+          2863,
+          2869,
+          5498
         ]
       },
       "unitVerification": {
         "status": "scoped-tests-defined",
         "tests": [
-          "test-registered-setup-integration.js"
+          "test-registered-setup-integration.js",
+          "test-rank-effects.js",
+          "test-rank-differential.js"
         ]
       },
       "integrationVerification": {
         "status": "scoped-tests-defined",
         "tests": [
           "test-field-items-integration.js",
-          "test-registered-setup-integration.js"
+          "test-registered-setup-integration.js",
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
         ]
       },
       "completionBlockedBy": [
@@ -146,11 +158,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5613,
-          11066,
-          11067,
-          13780
+          2270,
+          5655,
+          11133,
+          11134,
+          13849
         ]
       },
       "unitVerification": {
@@ -184,15 +196,15 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          5613,
-          5614,
-          5659,
-          5660,
-          6715,
-          6812,
-          7284,
-          7291
+          2270,
+          5655,
+          5656,
+          5701,
+          5702,
+          6762,
+          6859,
+          7331,
+          7338
         ]
       },
       "unitVerification": {
@@ -226,28 +238,29 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          3425,
-          3442,
-          3452,
-          3799,
-          3951,
-          3955,
-          5418,
-          5590,
-          5610,
-          5611,
-          5621,
-          5646,
-          5647,
-          5648,
+          2270,
+          3449,
+          3466,
+          3476,
+          3823,
+          3975,
+          3979,
+          5442,
+          5632,
           5652,
-          7297,
-          8309,
-          8311,
-          8403,
-          11696,
-          11698
+          5653,
+          5663,
+          5688,
+          5689,
+          5690,
+          5694,
+          7298,
+          7344,
+          8376,
+          8378,
+          8470,
+          11763,
+          11765
         ]
       },
       "unitVerification": {
@@ -279,9 +292,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5621,
-          11005
+          2270,
+          5663,
+          11072
         ]
       },
       "unitVerification": {
@@ -313,11 +326,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5630,
-          10504,
-          10510,
-          10521
+          2270,
+          5672,
+          10571,
+          10577,
+          10588
         ]
       },
       "unitVerification": {
@@ -349,7 +362,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -381,7 +394,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -413,9 +426,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5601,
-          5630
+          2270,
+          5643,
+          5672
         ]
       },
       "unitVerification": {
@@ -447,8 +460,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5624
+          2270,
+          5666
         ]
       },
       "unitVerification": {
@@ -477,19 +490,32 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -514,11 +540,11 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          2305,
-          5601,
-          5639,
-          13752
+          2270,
+          2306,
+          5643,
+          5681,
+          13821
         ]
       },
       "unitVerification": {
@@ -550,10 +576,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5415,
-          5602,
-          8999
+          2270,
+          5439,
+          5644,
+          9066
         ]
       },
       "unitVerification": {
@@ -585,9 +611,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5631,
-          8750
+          2270,
+          5673,
+          8817
         ]
       },
       "unitVerification": {
@@ -616,23 +642,35 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269,
-          3426,
-          5619,
-          5654,
-          7251
+          2270,
+          3450,
+          5661,
+          5696
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -659,12 +697,13 @@
           "index.html:speedFieldMultiplier"
         ],
         "candidateSourceLines": [
-          2269,
-          4036,
-          5461,
-          5609,
-          5658,
-          7168
+          2270,
+          4060,
+          5476,
+          5502,
+          5651,
+          5700,
+          7220
         ]
       },
       "unitVerification": {
@@ -701,10 +740,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5415,
-          5596,
-          5640
+          2270,
+          5439,
+          5638,
+          5682
         ]
       },
       "unitVerification": {
@@ -736,7 +775,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -765,21 +804,33 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269,
-          7204,
-          8972
+          2270,
+          9039
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -802,7 +853,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -834,8 +885,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9003
+          2270,
+          9070
         ]
       },
       "unitVerification": {
@@ -867,8 +918,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5615
+          2270,
+          5657
         ]
       },
       "unitVerification": {
@@ -900,7 +951,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -934,8 +985,8 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          6169
+          2270,
+          6202
         ]
       },
       "unitVerification": {
@@ -967,10 +1018,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5421,
-          5626,
-          8995
+          2270,
+          5445,
+          5668,
+          9062
         ]
       },
       "unitVerification": {
@@ -1002,10 +1053,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5725,
-          11498,
-          11501
+          2270,
+          5767,
+          11565,
+          11568
         ]
       },
       "unitVerification": {
@@ -1037,11 +1088,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5413,
-          5595,
-          5636,
-          11291
+          2270,
+          5437,
+          5637,
+          5678,
+          11358
         ]
       },
       "unitVerification": {
@@ -1073,10 +1124,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5724,
-          11494,
-          11496
+          2270,
+          5766,
+          11561,
+          11563
         ]
       },
       "unitVerification": {
@@ -1108,9 +1159,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5614,
-          5626
+          2270,
+          5656,
+          5668
         ]
       },
       "unitVerification": {
@@ -1142,13 +1193,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          3006,
-          5608,
-          5623,
-          7204,
-          8995,
-          11207
+          2270,
+          3029,
+          5650,
+          5665,
+          9062,
+          11274
         ]
       },
       "unitVerification": {
@@ -1182,14 +1232,14 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          5633,
-          5662,
-          5888,
-          7633,
-          7636,
-          9272,
-          10349
+          2270,
+          5675,
+          5704,
+          5930,
+          7700,
+          7703,
+          9339,
+          10416
         ]
       },
       "unitVerification": {
@@ -1221,8 +1271,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5611
+          2270,
+          5653
         ]
       },
       "unitVerification": {
@@ -1254,8 +1304,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          11137
+          2270,
+          11204
         ]
       },
       "unitVerification": {
@@ -1287,10 +1337,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5617,
-          5656,
-          8201
+          2270,
+          5659,
+          5698,
+          8268
         ]
       },
       "unitVerification": {
@@ -1322,11 +1372,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          4033,
-          5421,
-          5586,
-          5627
+          2270,
+          4057,
+          5445,
+          5628,
+          5669
         ]
       },
       "unitVerification": {
@@ -1358,10 +1408,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          8990,
-          9020,
-          11141
+          2270,
+          9057,
+          9087,
+          11208
         ]
       },
       "unitVerification": {
@@ -1395,13 +1445,13 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          5615,
-          5661,
-          6715,
-          6812,
-          7284,
-          7291
+          2270,
+          5657,
+          5703,
+          6762,
+          6859,
+          7331,
+          7338
         ]
       },
       "unitVerification": {
@@ -1433,9 +1483,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          4033,
-          11081
+          2270,
+          4057,
+          11148
         ]
       },
       "unitVerification": {
@@ -1467,10 +1517,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5595,
-          9456,
-          11081
+          2270,
+          5637,
+          9523,
+          11148
         ]
       },
       "unitVerification": {
@@ -1502,8 +1552,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5778
+          2270,
+          5820
         ]
       },
       "unitVerification": {
@@ -1535,7 +1585,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -1564,23 +1614,35 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269,
-          3006,
-          5623,
-          7204,
-          11207
+          2270,
+          3029,
+          5665,
+          11274
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -1603,10 +1665,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5616,
-          5687,
-          8755
+          2270,
+          5658,
+          5729,
+          8822
         ]
       },
       "unitVerification": {
@@ -1638,9 +1700,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5618,
-          8998
+          2270,
+          5660,
+          9065
         ]
       },
       "unitVerification": {
@@ -1672,9 +1734,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5686,
-          8755
+          2270,
+          5728,
+          8822
         ]
       },
       "unitVerification": {
@@ -1706,9 +1768,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5631,
-          9040
+          2270,
+          5673,
+          9107
         ]
       },
       "unitVerification": {
@@ -1740,8 +1802,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9000
+          2270,
+          9067
         ]
       },
       "unitVerification": {
@@ -1773,8 +1835,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          8980
+          2270,
+          9047
         ]
       },
       "unitVerification": {
@@ -1806,7 +1868,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -1838,7 +1900,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -1870,7 +1932,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -1904,11 +1966,11 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          5609,
-          11308,
-          11310,
-          11320
+          2270,
+          5651,
+          11375,
+          11377,
+          11387
         ]
       },
       "unitVerification": {
@@ -1942,7 +2004,7 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -1971,21 +2033,33 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269,
-          2970,
-          7204
+          2270,
+          2988
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -2010,8 +2084,8 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          6169
+          2270,
+          6202
         ]
       },
       "unitVerification": {
@@ -2043,8 +2117,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          11141
+          2270,
+          11208
         ]
       },
       "unitVerification": {
@@ -2076,11 +2150,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5416,
-          5603,
-          5641,
-          5642
+          2270,
+          5440,
+          5645,
+          5683,
+          5684
         ]
       },
       "unitVerification": {
@@ -2112,7 +2186,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -2144,9 +2218,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          4044,
-          4084
+          2270,
+          4068,
+          4108
         ]
       },
       "unitVerification": {
@@ -2178,7 +2252,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -2210,19 +2284,19 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5678,
-          5693,
-          5820,
-          5823,
-          7166,
-          9207,
-          9290,
-          10231,
-          10344,
-          11429,
-          11459,
-          13158
+          2270,
+          5720,
+          5735,
+          5862,
+          5865,
+          7218,
+          9274,
+          9357,
+          10298,
+          10411,
+          11496,
+          11526,
+          13225
         ]
       },
       "unitVerification": {
@@ -2256,16 +2330,16 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          5419,
-          5510,
-          5587,
+          2270,
+          5443,
+          5551,
           5629,
-          5663,
-          6715,
-          6812,
-          7284,
-          7291
+          5671,
+          5705,
+          6762,
+          6859,
+          7331,
+          7338
         ]
       },
       "unitVerification": {
@@ -2297,7 +2371,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -2329,19 +2403,19 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          3554,
-          3560,
-          3600,
-          5422,
-          5423,
-          5585,
-          5620,
-          5649,
-          5650,
-          5651,
-          5687,
-          8755
+          2270,
+          3578,
+          3584,
+          3624,
+          5446,
+          5447,
+          5627,
+          5662,
+          5691,
+          5692,
+          5693,
+          5729,
+          8822
         ]
       },
       "unitVerification": {
@@ -2373,8 +2447,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9457
+          2270,
+          9524
         ]
       },
       "unitVerification": {
@@ -2406,7 +2480,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -2438,11 +2512,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5413,
-          5598,
-          8755,
-          11120
+          2270,
+          5437,
+          5640,
+          8822,
+          11187
         ]
       },
       "unitVerification": {
@@ -2474,7 +2548,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -2508,9 +2582,9 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          5606,
-          5644
+          2270,
+          5648,
+          5686
         ]
       },
       "unitVerification": {
@@ -2542,15 +2616,15 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          3117,
-          3120,
-          3195,
-          3252,
-          3254,
-          5605,
-          5643,
-          8758
+          2270,
+          3141,
+          3144,
+          3219,
+          3276,
+          3278,
+          5647,
+          5685,
+          8825
         ]
       },
       "unitVerification": {
@@ -2579,23 +2653,35 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269,
-          3426,
-          5618,
-          5653,
-          7250
+          2270,
+          3450,
+          5660,
+          5695
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -2618,11 +2704,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5419,
-          5610,
-          5628,
-          8995
+          2270,
+          5443,
+          5652,
+          5670,
+          9062
         ]
       },
       "unitVerification": {
@@ -2654,15 +2740,15 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5621,
-          5689,
-          5820,
-          5823,
-          7167,
-          8755,
-          8989,
-          13159
+          2270,
+          5663,
+          5731,
+          5862,
+          5865,
+          7219,
+          8822,
+          9056,
+          13226
         ]
       },
       "unitVerification": {
@@ -2694,8 +2780,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9456
+          2270,
+          9523
         ]
       },
       "unitVerification": {
@@ -2729,11 +2815,11 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          6715,
-          6812,
-          7284,
-          7291
+          2270,
+          6762,
+          6859,
+          7331,
+          7338
         ]
       },
       "unitVerification": {
@@ -2765,8 +2851,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          4033
+          2270,
+          4057
         ]
       },
       "unitVerification": {
@@ -2798,8 +2884,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5630
+          2270,
+          5672
         ]
       },
       "unitVerification": {
@@ -2831,7 +2917,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -2863,7 +2949,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -2897,12 +2983,12 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          5422,
-          5507,
-          5588,
-          7329,
-          7330
+          2270,
+          5446,
+          5548,
+          5630,
+          7376,
+          7377
         ]
       },
       "unitVerification": {
@@ -2931,22 +3017,32 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269,
-          6110,
-          6114,
-          7204
+          2270
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -2971,11 +3067,11 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          5608,
-          5657,
-          7327,
-          7328
+          2270,
+          5650,
+          5699,
+          7374,
+          7375
         ]
       },
       "unitVerification": {
@@ -3009,13 +3105,13 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          5622,
-          5623,
-          7323,
-          7324,
-          7325,
-          7326
+          2270,
+          5664,
+          5665,
+          7370,
+          7371,
+          7372,
+          7373
         ]
       },
       "unitVerification": {
@@ -3047,11 +3143,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5628,
-          8987,
-          11074,
-          11075
+          2270,
+          5670,
+          9054,
+          11141,
+          11142
         ]
       },
       "unitVerification": {
@@ -3083,7 +3179,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -3115,10 +3211,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5622,
-          5623,
-          5625
+          2270,
+          5664,
+          5665,
+          5667
         ]
       },
       "unitVerification": {
@@ -3150,7 +3246,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -3182,10 +3278,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5616,
-          5655,
-          8200
+          2270,
+          5658,
+          5697,
+          8267
         ]
       },
       "unitVerification": {
@@ -3217,8 +3313,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          8997
+          2270,
+          9064
         ]
       },
       "unitVerification": {
@@ -3250,8 +3346,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5625
+          2270,
+          5667
         ]
       },
       "unitVerification": {
@@ -3283,9 +3379,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5420,
-          5625
+          2270,
+          5444,
+          5667
         ]
       },
       "unitVerification": {
@@ -3314,20 +3410,28 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "index.html:effectiveWeatherForDamage",
+          "index.html:speedFieldMultiplier",
+          "index.html:estimatedEndTurnResidual"
+        ],
         "candidateSourceLines": [
-          2269,
-          9048
+          2270,
+          9115
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-weather-item-consistency.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-weather-item-consistency.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -3350,8 +3454,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9029
+          2270,
+          9096
         ]
       },
       "unitVerification": {
@@ -3383,7 +3487,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -3415,9 +3519,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9004,
-          9028
+          2270,
+          9071,
+          9095
         ]
       },
       "unitVerification": {
@@ -3449,10 +3553,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5420,
-          5632,
-          8875
+          2270,
+          5444,
+          5674,
+          8942
         ]
       },
       "unitVerification": {
@@ -3484,11 +3588,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5414,
-          5599,
-          5637,
-          5638
+          2270,
+          5438,
+          5641,
+          5679,
+          5680
         ]
       },
       "unitVerification": {
@@ -3520,8 +3624,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9015
+          2270,
+          9082
         ]
       },
       "unitVerification": {
@@ -3553,8 +3657,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5618
+          2270,
+          5660
         ]
       },
       "unitVerification": {
@@ -3586,9 +3690,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          11058,
-          11059
+          2270,
+          11125,
+          11126
         ]
       },
       "unitVerification": {
@@ -3617,20 +3721,33 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269,
-          5622
+          2270,
+          5664
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -3653,7 +3770,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -3685,11 +3802,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          11005,
-          11032,
-          11081,
-          11291
+          2270,
+          11072,
+          11099,
+          11148,
+          11358
         ]
       },
       "unitVerification": {
@@ -3721,8 +3838,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          2970
+          2270,
+          2988
         ]
       },
       "unitVerification": {
@@ -3754,8 +3871,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9030
+          2270,
+          9097
         ]
       },
       "unitVerification": {
@@ -3784,20 +3901,32 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269,
-          6112
+          2270
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -3820,7 +3949,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -3852,8 +3981,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9002
+          2270,
+          9069
         ]
       },
       "unitVerification": {
@@ -3885,9 +4014,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5619,
-          5632
+          2270,
+          5661,
+          5674
         ]
       },
       "unitVerification": {
@@ -3919,7 +4048,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -3951,9 +4080,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5617,
-          11143
+          2270,
+          5659,
+          11210
         ]
       },
       "unitVerification": {
@@ -3985,9 +4114,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          8604,
-          9326,
-          10955
+          8671,
+          9393,
+          11022
         ]
       },
       "unitVerification": {
@@ -4019,10 +4148,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          5573,
-          8595,
-          9327,
-          11108
+          5615,
+          8662,
+          9394,
+          11175
         ]
       },
       "unitVerification": {
@@ -4114,18 +4243,18 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3702,
-          6405,
-          7106,
-          7170,
-          8047,
-          9822,
-          14360,
-          14364,
-          14373,
-          14844,
-          14892
+          2725,
+          3726,
+          6442,
+          7157,
+          7222,
+          8114,
+          9889,
+          14430,
+          14434,
+          14443,
+          14914,
+          14962
         ]
       },
       "unitVerification": {
@@ -4156,22 +4285,29 @@
       "effect": {
         "status": "partial",
         "paths": [
-          "effect-engine.js:moveDefinitions"
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
         ],
         "candidateSourceLines": [
-          2724,
-          8047,
-          9826,
-          12551
+          2725,
+          8114,
+          9893,
+          12618
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -4197,9 +4333,9 @@
           "index.html:applyObservedMoveEffects"
         ],
         "candidateSourceLines": [
-          2724,
-          4313,
-          9825
+          2725,
+          4337,
+          9892
         ]
       },
       "unitVerification": {
@@ -4236,20 +4372,20 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3500,
-          3549,
-          3684,
-          8047,
-          8329,
-          8469,
-          9822,
-          9928,
-          10486,
-          10872,
-          11716,
-          12223,
-          12314
+          2725,
+          3524,
+          3573,
+          3708,
+          8114,
+          8396,
+          8536,
+          9889,
+          9995,
+          10553,
+          10939,
+          11783,
+          12290,
+          12381
         ]
       },
       "unitVerification": {
@@ -4341,9 +4477,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8047,
-          9824
+          2725,
+          8114,
+          9891
         ]
       },
       "unitVerification": {
@@ -4375,7 +4511,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724
+          2725
         ]
       },
       "unitVerification": {
@@ -4407,9 +4543,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8637,
-          9328
+          2725,
+          8704,
+          9395
         ]
       },
       "unitVerification": {
@@ -4473,24 +4609,24 @@
           "effect-engine.js:moveDefinitions"
         ],
         "candidateSourceLines": [
-          2157,
           2158,
-          2246,
-          2724,
-          3688,
-          8047,
-          8049,
-          8061,
-          8321,
-          8616,
-          9329,
-          9819,
-          11701,
-          12232,
-          12310,
-          12316,
-          12347,
-          12402
+          2159,
+          2247,
+          2725,
+          3712,
+          8114,
+          8116,
+          8128,
+          8388,
+          8683,
+          9396,
+          9886,
+          11768,
+          12299,
+          12377,
+          12383,
+          12414,
+          12469
         ]
       },
       "unitVerification": {
@@ -4522,13 +4658,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3702,
-          4310,
-          8047,
-          9822,
-          12147,
-          12551
+          2725,
+          3726,
+          4334,
+          8114,
+          9889,
+          12214,
+          12618
         ]
       },
       "unitVerification": {
@@ -4560,10 +4696,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8634,
-          8913,
-          9330
+          2725,
+          8701,
+          8980,
+          9397
         ]
       },
       "unitVerification": {
@@ -4595,10 +4731,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8656,
-          9331,
-          11109
+          2725,
+          8723,
+          9398,
+          11176
         ]
       },
       "unitVerification": {
@@ -4750,9 +4886,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8657,
-          9332
+          2725,
+          8724,
+          9399
         ]
       },
       "unitVerification": {
@@ -4811,17 +4947,25 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyObservedMoveEffects"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -4904,10 +5048,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2301,
-          2724,
-          8659,
-          9335
+          2302,
+          2725,
+          8726,
+          9402
         ]
       },
       "unitVerification": {
@@ -4969,9 +5113,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8660,
-          9336
+          2725,
+          8727,
+          9403
         ]
       },
       "unitVerification": {
@@ -5033,10 +5177,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8629,
-          8907,
-          9338
+          2725,
+          8696,
+          8974,
+          9405
         ]
       },
       "unitVerification": {
@@ -5068,9 +5212,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8592,
-          9324
+          2725,
+          8659,
+          9391
         ]
       },
       "unitVerification": {
@@ -5192,12 +5336,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          4309,
-          6511,
-          8049,
-          8663,
-          9340
+          2725,
+          4333,
+          6541,
+          8116,
+          8730,
+          9407
         ]
       },
       "unitVerification": {
@@ -5229,19 +5373,19 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3499,
-          3501,
-          3684,
-          8047,
-          8329,
-          8469,
-          9822,
-          9928,
-          10486,
-          11716,
-          12223,
-          12314
+          2725,
+          3523,
+          3525,
+          3708,
+          8114,
+          8396,
+          8536,
+          9889,
+          9995,
+          10553,
+          11783,
+          12290,
+          12381
         ]
       },
       "unitVerification": {
@@ -5333,9 +5477,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3702,
-          9823
+          2725,
+          3726,
+          9890
         ]
       },
       "unitVerification": {
@@ -5427,8 +5571,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          8584,
-          8921
+          8651,
+          8988
         ]
       },
       "unitVerification": {
@@ -5550,11 +5694,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8074,
-          8647,
-          9341,
-          10486
+          2725,
+          8141,
+          8714,
+          9408,
+          10553
         ]
       },
       "unitVerification": {
@@ -5586,23 +5730,23 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          2929,
-          2985,
-          3028,
-          3054,
-          3068,
-          3176,
-          3178,
-          3247,
-          3675,
-          7107,
-          8047,
-          9820,
-          12129,
-          12347,
-          12544,
-          13799
+          2725,
+          2947,
+          3003,
+          3051,
+          3078,
+          3092,
+          3200,
+          3202,
+          3271,
+          3699,
+          7158,
+          8114,
+          9887,
+          12196,
+          12414,
+          12611,
+          13868
         ]
       },
       "unitVerification": {
@@ -5634,10 +5778,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3707,
-          8047,
-          9826
+          2725,
+          3731,
+          8114,
+          9893
         ]
       },
       "unitVerification": {
@@ -5669,10 +5813,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2245,
-          2724,
-          8608,
-          9342
+          2246,
+          2725,
+          8675,
+          9409
         ]
       },
       "unitVerification": {
@@ -5704,12 +5848,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          2724,
-          5611,
-          8636,
-          9097,
-          9343
+          2270,
+          2725,
+          5653,
+          8703,
+          9164,
+          9410
         ]
       },
       "unitVerification": {
@@ -5741,10 +5885,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8664,
-          8943,
-          9344
+          2725,
+          8731,
+          9010,
+          9411
         ]
       },
       "unitVerification": {
@@ -5806,9 +5950,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8626,
-          9345
+          2725,
+          8693,
+          9412
         ]
       },
       "unitVerification": {
@@ -5900,12 +6044,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2246,
-          2724,
-          8610,
-          9346,
-          10943,
-          10953
+          2247,
+          2725,
+          8677,
+          9413,
+          11010,
+          11020
         ]
       },
       "unitVerification": {
@@ -5937,17 +6081,17 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2245,
-          2724,
-          3027,
-          4310,
-          4312,
-          8047,
-          8050,
-          8617,
-          9347,
-          12147,
-          12551
+          2246,
+          2725,
+          3050,
+          4334,
+          4336,
+          8114,
+          8117,
+          8684,
+          9414,
+          12214,
+          12618
         ]
       },
       "unitVerification": {
@@ -6039,9 +6183,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8706,
-          9349
+          2725,
+          8773,
+          9416
         ]
       },
       "unitVerification": {
@@ -6163,9 +6307,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8665,
-          9350
+          2725,
+          8732,
+          9417
         ]
       },
       "unitVerification": {
@@ -6197,9 +6341,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8666,
-          9351
+          2725,
+          8733,
+          9418
         ]
       },
       "unitVerification": {
@@ -6231,9 +6375,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8640,
-          9353
+          2725,
+          8707,
+          9420
         ]
       },
       "unitVerification": {
@@ -6295,10 +6439,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3707,
-          8047,
-          9824
+          2725,
+          3731,
+          8114,
+          9891
         ]
       },
       "unitVerification": {
@@ -6332,12 +6476,12 @@
           "effect-engine.js:moveDefinitions"
         ],
         "candidateSourceLines": [
-          2724,
-          2855,
-          3028,
-          8047,
-          9820,
-          12347
+          2725,
+          2856,
+          3051,
+          8114,
+          9887,
+          12414
         ]
       },
       "unitVerification": {
@@ -6369,23 +6513,23 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          2724,
-          2968,
-          2971,
-          3700,
-          4310,
-          4708,
-          4735,
-          8047,
-          8119,
-          8466,
-          9821,
-          9852,
-          9925,
-          12147,
-          12375,
-          12551
+          2270,
+          2725,
+          2986,
+          2989,
+          3724,
+          4334,
+          4732,
+          4759,
+          8114,
+          8186,
+          8533,
+          9888,
+          9919,
+          9992,
+          12214,
+          12442,
+          12618
         ]
       },
       "unitVerification": {
@@ -6569,23 +6713,23 @@
           "effect-engine.js:moveDefinitions"
         ],
         "candidateSourceLines": [
-          2248,
-          2724,
-          2853,
-          3028,
-          3695,
-          4307,
-          4771,
-          8047,
-          8469,
-          8619,
-          9355,
-          9819,
-          9928,
-          12232,
-          12311,
-          12316,
-          12347
+          2249,
+          2725,
+          2854,
+          3051,
+          3719,
+          4331,
+          4795,
+          8114,
+          8536,
+          8686,
+          9422,
+          9886,
+          9995,
+          12299,
+          12378,
+          12383,
+          12414
         ]
       },
       "unitVerification": {
@@ -6617,13 +6761,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3696,
-          8047,
-          8469,
-          9822,
-          9928,
-          10483
+          2725,
+          3720,
+          8114,
+          8536,
+          9889,
+          9995,
+          10550
         ]
       },
       "unitVerification": {
@@ -6717,11 +6861,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8074,
-          8668,
-          9356,
-          10486
+          2725,
+          8141,
+          8735,
+          9423,
+          10553
         ]
       },
       "unitVerification": {
@@ -6753,11 +6897,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8074,
-          8645,
-          9357,
-          10487
+          2725,
+          8141,
+          8712,
+          9424,
+          10554
         ]
       },
       "unitVerification": {
@@ -6819,9 +6963,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          8047,
-          8049,
-          12551
+          8114,
+          8116,
+          12618
         ]
       },
       "unitVerification": {
@@ -6853,10 +6997,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2301,
-          2724,
-          8586,
-          9318
+          2302,
+          2725,
+          8653,
+          9385
         ]
       },
       "unitVerification": {
@@ -6890,11 +7034,11 @@
           "effect-engine.js:moveDefinitions"
         ],
         "candidateSourceLines": [
-          2724,
-          2856,
-          3028,
-          4307,
-          8047
+          2725,
+          2857,
+          3051,
+          4331,
+          8114
         ]
       },
       "unitVerification": {
@@ -6956,9 +7100,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8625,
-          9358
+          2725,
+          8692,
+          9425
         ]
       },
       "unitVerification": {
@@ -6990,13 +7134,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3027,
-          4312,
-          8047,
-          8050,
-          8669,
-          9359
+          2725,
+          3050,
+          4336,
+          8114,
+          8117,
+          8736,
+          9426
         ]
       },
       "unitVerification": {
@@ -7028,9 +7172,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8670,
-          9360
+          2725,
+          8737,
+          9427
         ]
       },
       "unitVerification": {
@@ -7215,10 +7359,10 @@
           "index.html:applyObservedMoveEffects"
         ],
         "candidateSourceLines": [
-          2724,
-          4313,
-          9825,
-          11143
+          2725,
+          4337,
+          9892,
+          11210
         ]
       },
       "unitVerification": {
@@ -7285,47 +7429,47 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2243,
           2244,
           2245,
-          2269,
-          2301,
-          2303,
-          2673,
-          2724,
-          2996,
-          3006,
-          3594,
-          3738,
-          3847,
-          6354,
-          6682,
-          7603,
-          8047,
-          8062,
-          8074,
-          8117,
-          8313,
-          8315,
-          8465,
-          8600,
-          9361,
-          9924,
-          10485,
-          10622,
-          11690,
-          11692,
-          11860,
-          11864,
-          11999,
-          12001,
-          12004,
-          12134,
-          12153,
-          12362,
-          12371,
-          12548,
-          14868
+          2246,
+          2270,
+          2302,
+          2304,
+          2674,
+          2725,
+          3019,
+          3029,
+          3618,
+          3762,
+          3871,
+          6391,
+          6729,
+          7670,
+          8114,
+          8129,
+          8141,
+          8184,
+          8380,
+          8382,
+          8532,
+          8667,
+          9428,
+          9991,
+          10552,
+          10689,
+          11757,
+          11759,
+          11927,
+          11931,
+          12066,
+          12068,
+          12071,
+          12201,
+          12220,
+          12429,
+          12438,
+          12615,
+          14938
         ]
       },
       "unitVerification": {
@@ -7387,10 +7531,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8642,
-          9362,
-          11112
+          2725,
+          8709,
+          9429,
+          11179
         ]
       },
       "unitVerification": {
@@ -7422,10 +7566,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2670,
-          2724,
-          8671,
-          9363
+          2671,
+          2725,
+          8738,
+          9430
         ]
       },
       "unitVerification": {
@@ -7547,9 +7691,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8644,
-          9364
+          2725,
+          8711,
+          9431
         ]
       },
       "unitVerification": {
@@ -7581,10 +7725,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8714,
-          8899,
-          9365
+          2725,
+          8781,
+          8966,
+          9432
         ]
       },
       "unitVerification": {
@@ -7616,10 +7760,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8673,
-          9366,
-          9441
+          2725,
+          8740,
+          9433,
+          9508
         ]
       },
       "unitVerification": {
@@ -7651,9 +7795,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3707,
-          9826
+          2725,
+          3731,
+          9893
         ]
       },
       "unitVerification": {
@@ -7742,20 +7886,28 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyObservedMoveEffects"
+        ],
         "candidateSourceLines": [
-          2724,
-          8672
+          2725,
+          8739
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -7811,10 +7963,10 @@
           "index.html:applyObservedMoveEffects"
         ],
         "candidateSourceLines": [
-          2724,
-          3701,
-          8047,
-          9824
+          2725,
+          3725,
+          8114,
+          9891
         ]
       },
       "unitVerification": {
@@ -7941,13 +8093,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2248,
-          2724,
-          8074,
-          8614,
-          9367,
-          10487,
-          10950
+          2249,
+          2725,
+          8141,
+          8681,
+          9434,
+          10554,
+          11017
         ]
       },
       "unitVerification": {
@@ -7979,9 +8131,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8047,
-          9823
+          2725,
+          8114,
+          9890
         ]
       },
       "unitVerification": {
@@ -8013,9 +8165,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8674,
-          9368
+          2725,
+          8741,
+          9435
         ]
       },
       "unitVerification": {
@@ -8047,11 +8199,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8675,
-          9369,
-          9470,
-          11110
+          2725,
+          8742,
+          9436,
+          9537,
+          11177
         ]
       },
       "unitVerification": {
@@ -8083,8 +8235,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          8583,
-          8921
+          8650,
+          8988
         ]
       },
       "unitVerification": {
@@ -8146,7 +8298,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          5573
+          5615
         ]
       },
       "unitVerification": {
@@ -8208,14 +8360,14 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          2304,
-          2724,
-          3028,
-          3250,
-          6447,
-          8047,
-          9826
+          2270,
+          2305,
+          2725,
+          3051,
+          3274,
+          6484,
+          8114,
+          9893
         ]
       },
       "unitVerification": {
@@ -8247,12 +8399,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2670,
-          2724,
-          8638,
-          9372,
-          9469,
-          9471
+          2671,
+          2725,
+          8705,
+          9439,
+          9536,
+          9538
         ]
       },
       "unitVerification": {
@@ -8314,46 +8466,46 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2244,
-          2246,
+          2245,
           2247,
           2248,
-          2302,
-          2670,
+          2249,
+          2303,
           2671,
           2672,
           2673,
-          2724,
-          3239,
-          3478,
-          3488,
-          4772,
-          5923,
-          5926,
-          5943,
-          5955,
-          5962,
-          7603,
-          7685,
-          7758,
-          7782,
-          8047,
-          8048,
-          8615,
-          9373,
-          9466,
-          9821,
-          10609,
-          10629,
-          10895,
-          11882,
-          11888,
-          11893,
-          11920,
-          12604,
-          12773,
-          14134,
-          14868
+          2674,
+          2725,
+          3263,
+          3502,
+          3512,
+          4796,
+          5965,
+          5968,
+          5985,
+          5997,
+          6004,
+          7670,
+          7752,
+          7825,
+          7849,
+          8114,
+          8115,
+          8682,
+          9440,
+          9533,
+          9888,
+          10676,
+          10696,
+          10962,
+          11949,
+          11955,
+          11960,
+          11987,
+          12671,
+          12840,
+          14204,
+          14938
         ]
       },
       "unitVerification": {
@@ -8385,24 +8537,24 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3478,
-          4772,
-          5923,
-          5926,
-          5943,
-          5955,
-          5962,
-          7685,
-          7758,
-          7782,
-          8047,
-          8048,
-          9821,
-          10629,
-          11882,
-          11888,
-          11920
+          2725,
+          3502,
+          4796,
+          5965,
+          5968,
+          5985,
+          5997,
+          6004,
+          7752,
+          7825,
+          7849,
+          8114,
+          8115,
+          9888,
+          10696,
+          11949,
+          11955,
+          11987
         ]
       },
       "unitVerification": {
@@ -8494,8 +8646,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          9826
+          2725,
+          9893
         ]
       },
       "unitVerification": {
@@ -8527,9 +8679,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8677,
-          9374
+          2725,
+          8744,
+          9441
         ]
       },
       "unitVerification": {
@@ -8591,9 +8743,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8591,
-          9323
+          2725,
+          8658,
+          9390
         ]
       },
       "unitVerification": {
@@ -8687,23 +8839,23 @@
           "effect-engine.js:moveDefinitions"
         ],
         "candidateSourceLines": [
-          2303,
-          2305,
-          2724,
-          2854,
-          3028,
-          3695,
-          3738,
-          4307,
-          4771,
-          8047,
-          8469,
-          9819,
-          9928,
-          12232,
-          12311,
-          12316,
-          12347
+          2304,
+          2306,
+          2725,
+          2855,
+          3051,
+          3719,
+          3762,
+          4331,
+          4795,
+          8114,
+          8536,
+          9886,
+          9995,
+          12299,
+          12378,
+          12383,
+          12414
         ]
       },
       "unitVerification": {
@@ -8735,11 +8887,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8646,
-          9375,
-          10944,
-          10954
+          2725,
+          8713,
+          9442,
+          11011,
+          11021
         ]
       },
       "unitVerification": {
@@ -8858,21 +9010,29 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyObservedMoveEffects"
+        ],
         "candidateSourceLines": [
-          2724,
-          8630,
-          9376
+          2725,
+          8697,
+          9443
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -8895,10 +9055,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2672,
-          2724,
-          8651,
-          9377
+          2673,
+          2725,
+          8718,
+          9444
         ]
       },
       "unitVerification": {
@@ -8932,20 +9092,20 @@
           "effect-engine.js:moveDefinitions"
         ],
         "candidateSourceLines": [
-          2724,
-          2854,
-          3028,
-          3695,
-          4307,
-          4771,
-          8047,
-          8469,
-          9819,
-          9928,
-          12232,
-          12311,
-          12316,
-          12347
+          2725,
+          2855,
+          3051,
+          3719,
+          4331,
+          4795,
+          8114,
+          8536,
+          9886,
+          9995,
+          12299,
+          12378,
+          12383,
+          12414
         ]
       },
       "unitVerification": {
@@ -8977,9 +9137,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8707,
-          9379
+          2725,
+          8774,
+          9446
         ]
       },
       "unitVerification": {
@@ -9011,10 +9171,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8641,
-          9380,
-          11110
+          2725,
+          8708,
+          9447,
+          11177
         ]
       },
       "unitVerification": {
@@ -9048,23 +9208,23 @@
           "effect-engine.js:moveDefinitions"
         ],
         "candidateSourceLines": [
-          2247,
-          2724,
-          2853,
-          3028,
-          3695,
-          4307,
-          4771,
-          8047,
-          8469,
-          8618,
-          9381,
-          9819,
-          9928,
-          12232,
-          12311,
-          12316,
-          12347
+          2248,
+          2725,
+          2854,
+          3051,
+          3719,
+          4331,
+          4795,
+          8114,
+          8536,
+          8685,
+          9448,
+          9886,
+          9995,
+          12299,
+          12378,
+          12383,
+          12414
         ]
       },
       "unitVerification": {
@@ -9096,9 +9256,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8628,
-          9382
+          2725,
+          8695,
+          9449
         ]
       },
       "unitVerification": {
@@ -9220,11 +9380,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8074,
-          8635,
-          9383,
-          10487
+          2725,
+          8141,
+          8702,
+          9450,
+          10554
         ]
       },
       "unitVerification": {
@@ -9256,9 +9416,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8679,
-          9384
+          2725,
+          8746,
+          9451
         ]
       },
       "unitVerification": {
@@ -9320,10 +9480,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8680,
-          8893,
-          9385
+          2725,
+          8747,
+          8960,
+          9452
         ]
       },
       "unitVerification": {
@@ -9355,14 +9515,14 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3700,
-          4310,
-          8047,
-          9822,
-          12147,
-          12376,
-          12551
+          2725,
+          3724,
+          4334,
+          8114,
+          9889,
+          12214,
+          12443,
+          12618
         ]
       },
       "unitVerification": {
@@ -9391,17 +9551,25 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyObservedMoveEffects"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -9421,17 +9589,25 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyObservedMoveEffects"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -9454,11 +9630,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          2724,
-          8681,
-          8937,
-          9386
+          2270,
+          2725,
+          8748,
+          9004,
+          9453
         ]
       },
       "unitVerification": {
@@ -9487,25 +9663,32 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyObservedMoveEffects"
+        ],
         "candidateSourceLines": [
-          2244,
-          2673,
-          2724,
-          6501,
-          8605,
-          9387,
-          10956
+          2245,
+          2674,
+          2725,
+          8672,
+          9454,
+          11023
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -9528,13 +9711,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2670,
-          2724,
-          8639,
-          8876,
-          8880,
-          8886,
-          9388
+          2671,
+          2725,
+          8706,
+          8943,
+          8947,
+          8953,
+          9455
         ]
       },
       "unitVerification": {
@@ -9566,11 +9749,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8633,
-          9389,
-          10944,
-          10954
+          2725,
+          8700,
+          9456,
+          11011,
+          11021
         ]
       },
       "unitVerification": {
@@ -9602,12 +9785,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2243,
-          2724,
-          8602,
-          9390,
-          10943,
-          10953
+          2244,
+          2725,
+          8669,
+          9457,
+          11010,
+          11020
         ]
       },
       "unitVerification": {
@@ -9669,9 +9852,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8682,
-          9391
+          2725,
+          8749,
+          9458
         ]
       },
       "unitVerification": {
@@ -9703,9 +9886,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8683,
-          9392
+          2725,
+          8750,
+          9459
         ]
       },
       "unitVerification": {
@@ -9767,11 +9950,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2672,
-          2724,
-          5573,
-          8649,
-          9393
+          2673,
+          2725,
+          5615,
+          8716,
+          9460
         ]
       },
       "unitVerification": {
@@ -9830,17 +10013,25 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyObservedMoveEffects"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -9923,9 +10114,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8709,
-          9394
+          2725,
+          8776,
+          9461
         ]
       },
       "unitVerification": {
@@ -9957,13 +10148,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3027,
-          4312,
-          8047,
-          8050,
-          8684,
-          9395
+          2725,
+          3050,
+          4336,
+          8114,
+          8117,
+          8751,
+          9462
         ]
       },
       "unitVerification": {
@@ -9995,13 +10186,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2243,
-          2724,
-          8074,
-          8218,
-          8601,
-          9396,
-          10488
+          2244,
+          2725,
+          8141,
+          8285,
+          8668,
+          9463,
+          10555
         ]
       },
       "unitVerification": {
@@ -10095,11 +10286,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8047,
-          8469,
-          9819,
-          9928
+          2725,
+          8114,
+          8536,
+          9886,
+          9995
         ]
       },
       "unitVerification": {
@@ -10158,24 +10349,31 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyObservedMoveEffects"
+        ],
         "candidateSourceLines": [
-          2247,
-          2724,
-          6504,
-          8611,
-          9397,
-          10956
+          2248,
+          2725,
+          8678,
+          9464,
+          11023
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -10228,9 +10426,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8685,
-          9398
+          2725,
+          8752,
+          9465
         ]
       },
       "unitVerification": {
@@ -10262,9 +10460,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8686,
-          9399
+          2725,
+          8753,
+          9466
         ]
       },
       "unitVerification": {
@@ -10296,9 +10494,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8687,
-          9400
+          2725,
+          8754,
+          9467
         ]
       },
       "unitVerification": {
@@ -10330,9 +10528,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8688,
-          9401
+          2725,
+          8755,
+          9468
         ]
       },
       "unitVerification": {
@@ -10366,9 +10564,9 @@
           "effect-engine.js:moveDefinitions"
         ],
         "candidateSourceLines": [
-          8234,
-          10513,
-          12736
+          8301,
+          10580,
+          12803
         ]
       },
       "unitVerification": {
@@ -10460,9 +10658,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8708,
-          9402
+          2725,
+          8775,
+          9469
         ]
       },
       "unitVerification": {
@@ -10524,10 +10722,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2247,
-          2724,
-          8612,
-          9403
+          2248,
+          2725,
+          8679,
+          9470
         ]
       },
       "unitVerification": {
@@ -10559,8 +10757,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          9825
+          2725,
+          9892
         ]
       },
       "unitVerification": {
@@ -10589,22 +10787,29 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyObservedMoveEffects"
+        ],
         "candidateSourceLines": [
-          2724,
-          6499,
-          8590,
-          9322
+          2725,
+          8657,
+          9389
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -10687,9 +10892,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8648,
-          9405
+          2725,
+          8715,
+          9472
         ]
       },
       "unitVerification": {
@@ -10721,16 +10926,16 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          2857,
-          2887,
-          2978,
-          2979,
-          3028,
-          8047,
-          9820,
-          12347,
-          12542
+          2725,
+          2858,
+          2905,
+          2996,
+          2997,
+          3051,
+          8114,
+          9887,
+          12414,
+          12609
         ]
       },
       "unitVerification": {
@@ -10762,9 +10967,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8705,
-          9406
+          2725,
+          8772,
+          9473
         ]
       },
       "unitVerification": {
@@ -10796,9 +11001,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8690,
-          9407
+          2725,
+          8757,
+          9474
         ]
       },
       "unitVerification": {
@@ -10830,10 +11035,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          5896,
-          8691,
-          9408
+          2725,
+          5938,
+          8758,
+          9475
         ]
       },
       "unitVerification": {
@@ -10865,10 +11070,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          5897,
-          8692,
-          9409
+          2725,
+          5939,
+          8759,
+          9476
         ]
       },
       "unitVerification": {
@@ -10930,22 +11135,22 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3689,
-          8047,
-          8060,
-          8325,
-          8469,
-          9819,
-          9928,
-          10490,
-          10590,
-          11709,
-          12232,
-          12309,
-          12316,
-          12347,
-          12403
+          2725,
+          3713,
+          8114,
+          8127,
+          8392,
+          8536,
+          9886,
+          9995,
+          10557,
+          10657,
+          11776,
+          12299,
+          12376,
+          12383,
+          12414,
+          12470
         ]
       },
       "unitVerification": {
@@ -11009,22 +11214,22 @@
           "effect-engine.js:moveDefinitions"
         ],
         "candidateSourceLines": [
-          2724,
-          3689,
-          8047,
-          8060,
-          8325,
-          8469,
-          9819,
-          9928,
-          10490,
-          10590,
-          11709,
-          12232,
-          12309,
-          12316,
-          12347,
-          12403
+          2725,
+          3713,
+          8114,
+          8127,
+          8392,
+          8536,
+          9886,
+          9995,
+          10557,
+          10657,
+          11776,
+          12299,
+          12376,
+          12383,
+          12414,
+          12470
         ]
       },
       "unitVerification": {
@@ -11086,9 +11291,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8623,
-          9410
+          2725,
+          8690,
+          9477
         ]
       },
       "unitVerification": {
@@ -11150,34 +11355,34 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2241,
-          2248,
-          2260,
-          2270,
-          2281,
-          2293,
+          2242,
+          2249,
+          2261,
+          2271,
+          2282,
           2294,
-          2303,
-          2309,
-          2316,
-          2321,
+          2295,
+          2304,
+          2310,
+          2317,
           2322,
-          2324,
+          2323,
           2325,
-          2344,
-          2358,
-          2724,
-          2737,
-          2760,
-          4007,
-          5618,
-          5653,
-          8552,
-          8613,
-          8781,
-          9411,
-          9441,
-          10950
+          2326,
+          2345,
+          2359,
+          2725,
+          2738,
+          2761,
+          4031,
+          5660,
+          5695,
+          8619,
+          8680,
+          8848,
+          9478,
+          9508,
+          11017
         ]
       },
       "unitVerification": {
@@ -11269,9 +11474,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8693,
-          9412
+          2725,
+          8760,
+          9479
         ]
       },
       "unitVerification": {
@@ -11453,9 +11658,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8696,
-          9415
+          2725,
+          8763,
+          9482
         ]
       },
       "unitVerification": {
@@ -11487,11 +11692,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2246,
-          2671,
-          2724,
-          8609,
-          9416
+          2247,
+          2672,
+          2725,
+          8676,
+          9483
         ]
       },
       "unitVerification": {
@@ -11523,22 +11728,22 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          2929,
-          2960,
-          2963,
-          3027,
-          3028,
-          3099,
-          3233,
-          3242,
-          3263,
-          3672,
-          8047,
-          9820,
-          12126,
-          12347,
-          12543
+          2725,
+          2947,
+          2978,
+          2981,
+          3050,
+          3051,
+          3123,
+          3257,
+          3266,
+          3287,
+          3696,
+          8114,
+          9887,
+          12193,
+          12414,
+          12610
         ]
       },
       "unitVerification": {
@@ -11600,13 +11805,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2672,
-          2724,
-          4310,
-          6513,
-          8697,
-          9417,
-          12147
+          2673,
+          2725,
+          4334,
+          6541,
+          8764,
+          9484,
+          12214
         ]
       },
       "unitVerification": {
@@ -11668,9 +11873,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8624,
-          9418
+          2725,
+          8691,
+          9485
         ]
       },
       "unitVerification": {
@@ -11702,9 +11907,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8632,
-          9419
+          2725,
+          8699,
+          9486
         ]
       },
       "unitVerification": {
@@ -11768,22 +11973,22 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          2976,
-          2998,
-          5923,
-          5932,
-          5943,
-          5955,
-          5962,
-          7685,
-          7758,
-          7782,
-          9821,
-          10485,
-          10629,
-          10980,
-          11920
+          2725,
+          2994,
+          3021,
+          5965,
+          5974,
+          5985,
+          5997,
+          6004,
+          7752,
+          7825,
+          7849,
+          9888,
+          10552,
+          10696,
+          11047,
+          11987
         ]
       },
       "unitVerification": {
@@ -11815,12 +12020,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2244,
-          2673,
-          2724,
-          8606,
-          9420,
-          10956
+          2245,
+          2674,
+          2725,
+          8673,
+          9487,
+          11023
         ]
       },
       "unitVerification": {
@@ -11852,15 +12057,15 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          5925,
-          5985,
-          8074,
-          8698,
-          9421,
-          10486,
-          10622,
-          10623
+          2725,
+          5967,
+          6027,
+          8141,
+          8765,
+          9488,
+          10553,
+          10689,
+          10690
         ]
       },
       "unitVerification": {
@@ -11922,12 +12127,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2245,
-          2724,
-          8607,
-          9422,
-          10943,
-          10953
+          2246,
+          2725,
+          8674,
+          9489,
+          11010,
+          11020
         ]
       },
       "unitVerification": {
@@ -11989,10 +12194,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8589,
-          9321,
-          11111
+          2725,
+          8656,
+          9388,
+          11178
         ]
       },
       "unitVerification": {
@@ -12024,7 +12229,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          11111
+          11178
         ]
       },
       "unitVerification": {
@@ -12056,8 +12261,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          8585,
-          8932
+          8652,
+          8999
         ]
       },
       "unitVerification": {
@@ -12089,13 +12294,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3027,
-          4312,
-          5573,
-          8050,
-          8597,
-          9423
+          2725,
+          3050,
+          4336,
+          5615,
+          8117,
+          8664,
+          9490
         ]
       },
       "unitVerification": {
@@ -12157,9 +12362,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8699,
-          9424
+          2725,
+          8766,
+          9491
         ]
       },
       "unitVerification": {
@@ -12191,11 +12396,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2671,
-          2724,
-          6104,
-          8700,
-          9425
+          2672,
+          2725,
+          6146,
+          8767,
+          9492
         ]
       },
       "unitVerification": {
@@ -12287,9 +12492,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8643,
-          9426
+          2725,
+          8710,
+          9493
         ]
       },
       "unitVerification": {
@@ -12321,12 +12526,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2305,
-          2724,
-          5573,
-          8587,
-          8877,
-          9319
+          2306,
+          2725,
+          5615,
+          8654,
+          8944,
+          9386
         ]
       },
       "unitVerification": {
@@ -12358,9 +12563,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8650,
-          9427
+          2725,
+          8717,
+          9494
         ]
       },
       "unitVerification": {
@@ -12395,10 +12600,10 @@
           "index.html:applyObservedMoveEffects"
         ],
         "candidateSourceLines": [
-          2724,
-          3701,
-          8047,
-          9824
+          2725,
+          3725,
+          8114,
+          9891
         ]
       },
       "unitVerification": {
@@ -12432,17 +12637,25 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyObservedMoveEffects"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -12495,11 +12708,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2305,
-          2724,
-          6104,
-          8588,
-          9320
+          2306,
+          2725,
+          6146,
+          8655,
+          9387
         ]
       },
       "unitVerification": {
@@ -12531,36 +12744,36 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          2976,
-          2998,
-          3690,
-          3941,
-          3946,
-          5923,
-          5927,
-          5929,
-          5943,
-          5955,
-          5962,
-          7685,
-          7758,
-          7782,
-          8047,
-          9821,
-          10393,
-          10397,
-          10400,
-          10466,
+          2725,
+          2994,
+          3021,
+          3714,
+          3965,
+          3970,
+          5965,
+          5969,
+          5971,
+          5985,
+          5997,
+          6004,
+          7752,
+          7825,
+          7849,
+          8114,
+          9888,
+          10460,
+          10464,
           10467,
-          10468,
-          10469,
-          10485,
-          10629,
-          10979,
-          11920,
-          12218,
-          12319
+          10533,
+          10534,
+          10535,
+          10536,
+          10552,
+          10696,
+          11046,
+          11987,
+          12285,
+          12386
         ]
       },
       "unitVerification": {
@@ -12592,11 +12805,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2346,
-          2671,
-          2724,
-          8701,
-          9428
+          2347,
+          2672,
+          2725,
+          8768,
+          9495
         ]
       },
       "unitVerification": {
@@ -12628,7 +12841,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -12660,9 +12873,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          8021,
-          10528
+          2270,
+          8088,
+          10595
         ]
       },
       "unitVerification": {
@@ -12694,7 +12907,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -12726,7 +12939,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -12758,7 +12971,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -12790,8 +13003,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          11251
+          2270,
+          11318
         ]
       },
       "unitVerification": {
@@ -12823,7 +13036,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -12855,14 +13068,14 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5686,
-          8755,
-          9021,
-          11068,
-          11069,
-          11076,
-          11077
+          2270,
+          5728,
+          8822,
+          9088,
+          11135,
+          11136,
+          11143,
+          11144
         ]
       },
       "unitVerification": {
@@ -12894,7 +13107,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -12926,8 +13139,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9001
+          2270,
+          9068
         ]
       },
       "unitVerification": {
@@ -12959,7 +13172,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -12991,7 +13204,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13023,7 +13236,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13055,7 +13268,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13087,8 +13300,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          11142
+          2270,
+          11209
         ]
       },
       "unitVerification": {
@@ -13120,7 +13333,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13152,7 +13365,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13184,8 +13397,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9024
+          2270,
+          9091
         ]
       },
       "unitVerification": {
@@ -13217,7 +13430,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13249,9 +13462,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          8980,
-          8984
+          2270,
+          9047,
+          9051
         ]
       },
       "unitVerification": {
@@ -13283,7 +13496,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13315,7 +13528,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13344,22 +13557,32 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269,
-          6110,
-          6114,
-          7204
+          2270
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -13382,7 +13605,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13414,13 +13637,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2246,
-          2269,
-          2724,
-          8610,
-          9346,
-          10943,
-          10953
+          2247,
+          2270,
+          2725,
+          8677,
+          9413,
+          11010,
+          11020
         ]
       },
       "unitVerification": {
@@ -13452,7 +13675,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13481,20 +13704,33 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269,
-          5613
+          2270,
+          5655
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -13519,9 +13755,9 @@
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          5620,
-          11286
+          2270,
+          5662,
+          11353
         ]
       },
       "unitVerification": {
@@ -13553,9 +13789,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5624,
-          9019
+          2270,
+          5666,
+          9086
         ]
       },
       "unitVerification": {
@@ -13587,7 +13823,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13619,10 +13855,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9005,
-          11148,
-          11208
+          2270,
+          9072,
+          11215,
+          11275
         ]
       },
       "unitVerification": {
@@ -13654,8 +13890,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          8982
+          2270,
+          9049
         ]
       },
       "unitVerification": {
@@ -13687,7 +13923,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13719,7 +13955,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13751,9 +13987,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5687,
-          8755
+          2270,
+          5729,
+          8822
         ]
       },
       "unitVerification": {
@@ -13785,9 +14021,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5686,
-          8755
+          2270,
+          5728,
+          8822
         ]
       },
       "unitVerification": {
@@ -13819,7 +14055,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13851,7 +14087,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13883,8 +14119,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9016
+          2270,
+          9083
         ]
       },
       "unitVerification": {
@@ -13913,19 +14149,32 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -13948,7 +14197,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -13980,7 +14229,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -14012,9 +14261,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          8983,
-          9458
+          2270,
+          9050,
+          9525
         ]
       },
       "unitVerification": {
@@ -14046,7 +14295,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -14078,8 +14327,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5616
+          2270,
+          5658
         ]
       },
       "unitVerification": {
@@ -14108,19 +14357,32 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -14142,21 +14404,33 @@
       "effect": {
         "status": "partial",
         "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution",
           "effect-engine.js:definitions"
         ],
         "candidateSourceLines": [
-          2269,
-          5631,
-          6169
+          2270,
+          5673,
+          6202
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -14176,21 +14450,34 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269,
-          2874,
-          5601
+          2270,
+          2881,
+          5643
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -14213,9 +14500,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5619,
-          9023
+          2270,
+          5661,
+          9090
         ]
       },
       "unitVerification": {
@@ -14247,7 +14534,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -14279,7 +14566,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -14308,19 +14595,29 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "index.html:heldItemFor",
+          "index.html:rawHeldItemFor"
+        ],
         "candidateSourceLines": [
-          2269
+          2270,
+          5462
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "test-item-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-mega-transactions.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -14343,12 +14640,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          2724,
-          8063,
-          8656,
-          9331,
-          11109
+          2270,
+          2725,
+          8130,
+          8723,
+          9398,
+          11176
         ]
       },
       "unitVerification": {
@@ -14380,7 +14677,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -14412,13 +14709,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5605,
-          7209,
-          7210,
-          11081,
-          11082,
-          14122
+          2270,
+          5647,
+          7260,
+          7261,
+          11148,
+          11149,
+          14192
         ]
       },
       "unitVerification": {
@@ -14450,9 +14747,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5605,
-          8758
+          2270,
+          5647,
+          8825
         ]
       },
       "unitVerification": {
@@ -14484,9 +14781,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5606,
-          8995
+          2270,
+          5648,
+          9062
         ]
       },
       "unitVerification": {
@@ -14518,8 +14815,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          11140
+          2270,
+          11207
         ]
       },
       "unitVerification": {
@@ -14551,7 +14848,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -14583,8 +14880,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9026
+          2270,
+          9093
         ]
       },
       "unitVerification": {
@@ -14616,7 +14913,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -14648,7 +14945,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -14680,8 +14977,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          4033
+          2270,
+          4057
         ]
       },
       "unitVerification": {
@@ -14713,7 +15010,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -14742,24 +15039,36 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve",
+          "index.html:receiveIntimidate",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:applyConfirmedGuaranteedStatDrop",
+          "index.html:commitRankResolution"
+        ],
         "candidateSourceLines": [
-          2269,
-          3006,
-          6110,
-          9025,
-          11144,
-          11208
+          2270,
+          3029,
+          9092,
+          11211,
+          11275
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-rank-effects.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "test-cloak-mirror.js",
+          "test-moldbreaker-secondary.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -14782,10 +15091,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          11071,
-          11072,
-          13781
+          2270,
+          11138,
+          11139,
+          13850
         ]
       },
       "unitVerification": {
@@ -14817,8 +15126,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          2970
+          2270,
+          2988
         ]
       },
       "unitVerification": {
@@ -14850,7 +15159,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -14882,9 +15191,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          8021,
-          10530
+          2270,
+          8088,
+          10597
         ]
       },
       "unitVerification": {
@@ -14916,8 +15225,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          4033
+          2270,
+          4057
         ]
       },
       "unitVerification": {
@@ -14949,8 +15258,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5617
+          2270,
+          5659
         ]
       },
       "unitVerification": {
@@ -14982,8 +15291,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9496
+          2270,
+          9563
         ]
       },
       "unitVerification": {
@@ -15015,11 +15324,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5423,
-          5921,
-          5926,
-          9466
+          2270,
+          5447,
+          5963,
+          5968,
+          9533
         ]
       },
       "unitVerification": {
@@ -15051,7 +15360,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -15083,8 +15392,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9022
+          2270,
+          9089
         ]
       },
       "unitVerification": {
@@ -15116,8 +15425,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9029
+          2270,
+          9096
         ]
       },
       "unitVerification": {
@@ -15149,8 +15458,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          8875
+          2270,
+          8942
         ]
       },
       "unitVerification": {
@@ -15182,8 +15491,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          8994
+          2270,
+          9061
         ]
       },
       "unitVerification": {
@@ -15215,7 +15524,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -15247,7 +15556,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -15279,7 +15588,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -15311,8 +15620,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          8994
+          2270,
+          9061
         ]
       },
       "unitVerification": {
@@ -15344,8 +15653,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          11139
+          2270,
+          11206
         ]
       },
       "unitVerification": {
@@ -15377,7 +15686,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -15409,8 +15718,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          8982
+          2270,
+          9049
         ]
       },
       "unitVerification": {
@@ -15442,7 +15751,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -15474,7 +15783,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -15510,7 +15819,7 @@
           "index.html:applyObservedMoveEffects"
         ],
         "candidateSourceLines": [
-          5432
+          5456
         ]
       },
       "unitVerification": {
@@ -15547,13 +15856,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2256,
-          2269,
-          4007,
-          9063,
-          11032,
-          11380,
-          14122
+          2257,
+          2270,
+          4031,
+          9130,
+          11099,
+          11447,
+          14192
         ]
       },
       "unitVerification": {
@@ -15705,18 +16014,18 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          5909,
-          5913,
-          6070,
-          6072,
-          7228,
-          9142,
-          9147,
-          9292,
-          9293,
-          10346,
-          14122
+          4031,
+          5951,
+          5955,
+          6112,
+          6114,
+          7279,
+          9209,
+          9214,
+          9359,
+          9360,
+          10413,
+          14192
         ]
       },
       "unitVerification": {
@@ -15778,9 +16087,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2252,
-          4007,
-          9067
+          2253,
+          4031,
+          9134
         ]
       },
       "unitVerification": {
@@ -15812,7 +16121,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          3035
+          3058
         ]
       },
       "unitVerification": {
@@ -15844,7 +16153,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -15876,7 +16185,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          11119
+          11186
         ]
       },
       "unitVerification": {
@@ -15908,9 +16217,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2257,
-          4007,
-          9066
+          2258,
+          4031,
+          9133
         ]
       },
       "unitVerification": {
@@ -15972,8 +16281,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          9459
+          4031,
+          9526
         ]
       },
       "unitVerification": {
@@ -16005,10 +16314,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2666,
-          4007,
-          4081,
-          14122
+          2667,
+          4031,
+          4105,
+          14192
         ]
       },
       "unitVerification": {
@@ -16044,7 +16353,7 @@
           "index.html:applyObservedMoveEffects"
         ],
         "candidateSourceLines": [
-          5432
+          5456
         ]
       },
       "unitVerification": {
@@ -16085,8 +16394,8 @@
           "index.html:applyObservedMoveEffects"
         ],
         "candidateSourceLines": [
-          4007,
-          5432
+          4031,
+          5456
         ]
       },
       "unitVerification": {
@@ -16150,19 +16459,30 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:whiteHerb",
+          "index.html:activateWhiteHerbFor",
+          "index.html:commitTurnActions"
+        ],
         "candidateSourceLines": [
-          4007
+          4031,
+          5471
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "test-item-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -16185,8 +16505,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          9068
+          4031,
+          9135
         ]
       },
       "unitVerification": {
@@ -16218,8 +16538,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          9070
+          4031,
+          9137
         ]
       },
       "unitVerification": {
@@ -16251,7 +16571,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -16283,10 +16603,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          8021,
-          10529,
-          10588,
-          10589
+          8088,
+          10596,
+          10655,
+          10656
         ]
       },
       "unitVerification": {
@@ -16318,7 +16638,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -16350,9 +16670,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          13775,
-          14122
+          4031,
+          13844,
+          14192
         ]
       },
       "unitVerification": {
@@ -16384,7 +16704,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -16450,7 +16770,7 @@
           "index.html:applyObservedMoveEffects"
         ],
         "candidateSourceLines": [
-          5432
+          5456
         ]
       },
       "unitVerification": {
@@ -16670,8 +16990,8 @@
           "index.html:heldItemFor"
         ],
         "candidateSourceLines": [
-          4007,
-          6470
+          4031,
+          6509
         ]
       },
       "unitVerification": {
@@ -16705,7 +17025,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          11120
+          11187
         ]
       },
       "unitVerification": {
@@ -16767,7 +17087,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          9064
+          9131
         ]
       },
       "unitVerification": {
@@ -16829,8 +17149,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          9069
+          4031,
+          9136
         ]
       },
       "unitVerification": {
@@ -16862,8 +17182,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          9071
+          4031,
+          9138
         ]
       },
       "unitVerification": {
@@ -16985,7 +17305,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -17141,8 +17461,8 @@
           "index.html:heldItemFor"
         ],
         "candidateSourceLines": [
-          4007,
-          5447
+          4031,
+          5488
         ]
       },
       "unitVerification": {
@@ -17206,7 +17526,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -17268,9 +17588,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2254,
-          4007,
-          14122
+          2255,
+          4031,
+          14192
         ]
       },
       "unitVerification": {
@@ -17572,8 +17892,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          5413
+          4031,
+          5437
         ]
       },
       "unitVerification": {
@@ -17605,8 +17925,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          5413
+          4031,
+          5437
         ]
       },
       "unitVerification": {
@@ -17848,8 +18168,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          5415
+          4031,
+          5439
         ]
       },
       "unitVerification": {
@@ -17885,10 +18205,10 @@
           "index.html:heldItemFor"
         ],
         "candidateSourceLines": [
-          2253,
-          2668,
-          4007,
-          5446
+          2254,
+          2669,
+          4031,
+          5487
         ]
       },
       "unitVerification": {
@@ -18012,8 +18332,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          5416
+          4031,
+          5440
         ]
       },
       "unitVerification": {
@@ -18045,7 +18365,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -18111,9 +18431,9 @@
           "index.html:heldItemFor"
         ],
         "candidateSourceLines": [
-          2667,
-          4007,
-          5448
+          2668,
+          4031,
+          5489
         ]
       },
       "unitVerification": {
@@ -18177,9 +18497,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          5420,
-          5494
+          4031,
+          5444,
+          5535
         ]
       },
       "unitVerification": {
@@ -18271,7 +18591,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -18573,7 +18893,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -18935,7 +19255,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -19087,7 +19407,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -19149,7 +19469,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -19391,11 +19711,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2149,
-          9460,
-          9462,
-          9463,
-          9464
+          2150,
+          9527,
+          9529,
+          9530,
+          9531
         ]
       },
       "unitVerification": {
@@ -19457,8 +19777,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          5414
+          4031,
+          5438
         ]
       },
       "unitVerification": {
@@ -19730,10 +20050,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2255,
-          4007,
-          5418,
-          5492
+          2256,
+          4031,
+          5442,
+          5533
         ]
       },
       "unitVerification": {
@@ -19799,7 +20119,7 @@
           "index.html:heldItemFor"
         ],
         "candidateSourceLines": [
-          5449
+          5490
         ]
       },
       "unitVerification": {
@@ -20013,8 +20333,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2970,
-          4007
+          2988,
+          4031
         ]
       },
       "unitVerification": {
@@ -20076,7 +20396,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -20228,7 +20548,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -20290,9 +20610,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          5422,
-          5490
+          4031,
+          5446,
+          5531
         ]
       },
       "unitVerification": {
@@ -20324,9 +20644,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          5423,
-          5491
+          4031,
+          5447,
+          5532
         ]
       },
       "unitVerification": {
@@ -20388,9 +20708,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          5421,
-          5495
+          4031,
+          5445,
+          5536
         ]
       },
       "unitVerification": {
@@ -20482,9 +20802,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007,
-          5419,
-          5493
+          4031,
+          5443,
+          5534
         ]
       },
       "unitVerification": {
@@ -20546,7 +20866,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -20698,7 +21018,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          4007
+          4031
         ]
       },
       "unitVerification": {
@@ -21202,21 +21522,21 @@
           "index.html:megaEvolve"
         ],
         "candidateSourceLines": [
-          2270,
-          2272,
-          2283,
-          2302,
-          2724,
-          2726,
-          2749,
-          4007,
-          5413,
-          5598,
-          5636,
-          8537,
-          8770,
-          11123,
-          13857
+          2271,
+          2273,
+          2284,
+          2303,
+          2725,
+          2727,
+          2750,
+          4031,
+          5437,
+          5640,
+          5678,
+          8604,
+          8837,
+          11190,
+          13927
         ]
       },
       "unitVerification": {
@@ -21254,21 +21574,21 @@
           "index.html:megaEvolve"
         ],
         "candidateSourceLines": [
-          2270,
-          2272,
-          2283,
-          2302,
-          2724,
-          2726,
-          2749,
-          4007,
-          5413,
-          5598,
-          5636,
-          8537,
-          8770,
-          11123,
-          13857
+          2271,
+          2273,
+          2284,
+          2303,
+          2725,
+          2727,
+          2750,
+          4031,
+          5437,
+          5640,
+          5678,
+          8604,
+          8837,
+          11190,
+          13927
         ]
       },
       "unitVerification": {
@@ -21486,21 +21806,21 @@
           "index.html:megaEvolve"
         ],
         "candidateSourceLines": [
-          2270,
-          2276,
-          2287,
-          2329,
-          2357,
-          2724,
-          2730,
-          2753,
-          4007,
-          5415,
-          5602,
-          5640,
-          8541,
-          8774,
-          13860
+          2271,
+          2277,
+          2288,
+          2330,
+          2358,
+          2725,
+          2731,
+          2754,
+          4031,
+          5439,
+          5644,
+          5682,
+          8608,
+          8841,
+          13930
         ]
       },
       "unitVerification": {
@@ -21610,20 +21930,20 @@
           "index.html:megaEvolve"
         ],
         "candidateSourceLines": [
-          2270,
-          2278,
-          2289,
-          2304,
-          2724,
-          2732,
-          2755,
-          4007,
-          5416,
-          5604,
-          5642,
-          8543,
-          8776,
-          13861
+          2271,
+          2279,
+          2290,
+          2305,
+          2725,
+          2733,
+          2756,
+          4031,
+          5440,
+          5646,
+          5684,
+          8610,
+          8843,
+          13931
         ]
       },
       "unitVerification": {
@@ -21733,21 +22053,21 @@
           "index.html:megaEvolve"
         ],
         "candidateSourceLines": [
-          2270,
-          2281,
-          2293,
-          2343,
-          2345,
-          2671,
-          2724,
-          2744,
-          2767,
-          4007,
-          5420,
-          5494,
-          8575,
-          8787,
-          13865
+          2271,
+          2282,
+          2294,
+          2344,
+          2346,
+          2672,
+          2725,
+          2745,
+          2768,
+          4031,
+          5444,
+          5535,
+          8642,
+          8854,
+          13935
         ]
       },
       "unitVerification": {
@@ -22793,20 +23113,20 @@
           "index.html:megaEvolve"
         ],
         "candidateSourceLines": [
-          2270,
-          2274,
-          2285,
-          2303,
-          2724,
-          2728,
-          2751,
-          4007,
-          5414,
-          5600,
-          5638,
-          8539,
-          8772,
-          13859
+          2271,
+          2275,
+          2286,
+          2304,
+          2725,
+          2729,
+          2752,
+          4031,
+          5438,
+          5642,
+          5680,
+          8606,
+          8839,
+          13929
         ]
       },
       "unitVerification": {
@@ -23096,27 +23416,27 @@
           "index.html:megaEvolve"
         ],
         "candidateSourceLines": [
-          2241,
-          2270,
-          2281,
-          2293,
-          2308,
-          2310,
-          2316,
-          2322,
-          2324,
-          2351,
-          2724,
-          2737,
-          2760,
-          4007,
-          5418,
-          5492,
-          5612,
-          5648,
-          8551,
-          8781,
-          13863
+          2242,
+          2271,
+          2282,
+          2294,
+          2309,
+          2311,
+          2317,
+          2323,
+          2325,
+          2352,
+          2725,
+          2738,
+          2761,
+          4031,
+          5442,
+          5533,
+          5654,
+          5690,
+          8618,
+          8848,
+          13933
         ]
       },
       "unitVerification": {
@@ -23154,7 +23474,7 @@
           "index.html:megaEvolve"
         ],
         "candidateSourceLines": [
-          11123
+          11190
         ]
       },
       "unitVerification": {
@@ -23480,24 +23800,24 @@
           "index.html:megaEvolve"
         ],
         "candidateSourceLines": [
-          2270,
-          2281,
-          2293,
-          2305,
-          2424,
-          2428,
+          2271,
+          2282,
+          2294,
+          2306,
+          2425,
           2429,
-          2433,
-          2724,
-          2742,
-          2765,
-          4007,
-          5422,
-          5490,
-          5649,
-          8567,
-          8785,
-          13867
+          2430,
+          2434,
+          2725,
+          2743,
+          2766,
+          4031,
+          5446,
+          5531,
+          5691,
+          8634,
+          8852,
+          13937
         ]
       },
       "unitVerification": {
@@ -23535,28 +23855,28 @@
           "index.html:megaEvolve"
         ],
         "candidateSourceLines": [
-          2270,
-          2281,
-          2293,
-          2301,
-          2404,
-          2407,
-          2413,
-          2424,
-          2428,
+          2271,
+          2282,
+          2294,
+          2302,
+          2405,
+          2408,
+          2414,
+          2425,
           2429,
-          2433,
-          2724,
-          2742,
-          2765,
-          4007,
-          5423,
-          5491,
-          5589,
-          5650,
-          8568,
-          8785,
-          13868
+          2430,
+          2434,
+          2725,
+          2743,
+          2766,
+          4031,
+          5447,
+          5532,
+          5631,
+          5692,
+          8635,
+          8852,
+          13938
         ]
       },
       "unitVerification": {
@@ -23630,27 +23950,27 @@
           "index.html:megaEvolve"
         ],
         "candidateSourceLines": [
-          2270,
-          2281,
-          2293,
-          2330,
-          2336,
-          2338,
-          2364,
-          2366,
-          2384,
-          2387,
+          2271,
+          2282,
+          2294,
+          2331,
+          2337,
+          2339,
+          2365,
+          2367,
+          2385,
           2388,
-          2724,
-          2745,
-          2768,
-          4007,
-          5421,
-          5495,
-          5627,
-          8578,
-          8788,
-          13866
+          2389,
+          2725,
+          2746,
+          2769,
+          4031,
+          5445,
+          5536,
+          5669,
+          8645,
+          8855,
+          13936
         ]
       },
       "unitVerification": {
@@ -23724,26 +24044,26 @@
           "index.html:megaEvolve"
         ],
         "candidateSourceLines": [
-          2270,
-          2281,
-          2293,
-          2300,
-          2423,
-          2428,
-          2444,
-          2448,
-          2670,
-          2724,
-          2741,
-          2764,
-          4007,
-          5419,
-          5493,
-          5629,
-          5663,
-          8563,
-          8784,
-          13864
+          2271,
+          2282,
+          2294,
+          2301,
+          2424,
+          2429,
+          2445,
+          2449,
+          2671,
+          2725,
+          2742,
+          2765,
+          4031,
+          5443,
+          5534,
+          5671,
+          5705,
+          8630,
+          8851,
+          13934
         ]
       },
       "unitVerification": {
@@ -24305,21 +24625,21 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          2724,
-          3500,
-          3549,
-          3684,
-          8047,
-          8329,
-          8469,
-          9822,
-          9928,
-          10486,
-          10872,
-          11716,
-          12223,
-          12314
+          2270,
+          2725,
+          3524,
+          3573,
+          3708,
+          8114,
+          8396,
+          8536,
+          9889,
+          9995,
+          10553,
+          10939,
+          11783,
+          12290,
+          12381
         ]
       },
       "unitVerification": {
@@ -24531,7 +24851,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724
+          2725
         ]
       },
       "unitVerification": {
@@ -24560,17 +24880,26 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -24682,23 +25011,30 @@
       "effect": {
         "status": "partial",
         "paths": [
-          "effect-engine.js:moveDefinitions"
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
         ],
         "candidateSourceLines": [
-          2724,
-          3702,
-          8047,
-          9823,
-          12551
+          2725,
+          3726,
+          8114,
+          9890,
+          12618
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -24900,17 +25236,24 @@
       "effect": {
         "status": "partial",
         "paths": [
-          "effect-engine.js:moveDefinitions"
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
         ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -25140,17 +25483,26 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -25350,17 +25702,26 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -25413,7 +25774,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269
+          2270
         ]
       },
       "unitVerification": {
@@ -25788,13 +26149,13 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          5573,
-          8596,
-          9333,
-          9469,
-          9471,
-          11108
+          2725,
+          5615,
+          8663,
+          9400,
+          9536,
+          9538,
+          11175
         ]
       },
       "unitVerification": {
@@ -26045,7 +26406,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724
+          2725
         ]
       },
       "unitVerification": {
@@ -26314,17 +26675,26 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -26437,10 +26807,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8661,
-          8907,
-          9337
+          2725,
+          8728,
+          8974,
+          9404
         ]
       },
       "unitVerification": {
@@ -26499,17 +26869,26 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -26622,9 +27001,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8662,
-          9339
+          2725,
+          8729,
+          9406
         ]
       },
       "unitVerification": {
@@ -26897,26 +27276,33 @@
       "effect": {
         "status": "partial",
         "paths": [
-          "effect-engine.js:moveDefinitions"
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
         ],
         "candidateSourceLines": [
-          2724,
-          3702,
-          4309,
-          8047,
-          8049,
-          9823,
-          12147,
-          12551
+          2725,
+          3726,
+          4333,
+          8114,
+          8116,
+          9890,
+          12214,
+          12618
         ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -27479,7 +27865,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          9097
+          9164
         ]
       },
       "unitVerification": {
@@ -27601,10 +27987,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          3707,
-          8047,
-          9824
+          2725,
+          3731,
+          8114,
+          9891
         ]
       },
       "unitVerification": {
@@ -27639,7 +28025,7 @@
           "index.html:applyObservedMoveEffects"
         ],
         "candidateSourceLines": [
-          4313
+          4337
         ]
       },
       "unitVerification": {
@@ -27675,17 +28061,24 @@
       "effect": {
         "status": "partial",
         "paths": [
-          "effect-engine.js:moveDefinitions"
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
         ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -27768,11 +28161,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8646,
-          9375,
-          10944,
-          10954
+          2725,
+          8713,
+          9442,
+          11011,
+          11021
         ]
       },
       "unitVerification": {
@@ -27864,9 +28257,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8716,
-          9348
+          2725,
+          8783,
+          9415
         ]
       },
       "unitVerification": {
@@ -28138,10 +28531,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8667,
-          9352,
-          11109
+          2725,
+          8734,
+          9419,
+          11176
         ]
       },
       "unitVerification": {
@@ -28413,10 +28806,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8715,
-          9354,
-          9441
+          2725,
+          8782,
+          9421,
+          9508
         ]
       },
       "unitVerification": {
@@ -28445,17 +28838,26 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -29446,17 +29848,26 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -29596,17 +30007,26 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -30828,17 +31248,25 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyObservedMoveEffects"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -30981,10 +31409,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          4310,
-          9826,
-          10491
+          2725,
+          4334,
+          9893,
+          10558
         ]
       },
       "unitVerification": {
@@ -31106,12 +31534,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          4309,
-          5573,
-          8049,
-          8598,
-          9370
+          2725,
+          4333,
+          5615,
+          8116,
+          8665,
+          9437
         ]
       },
       "unitVerification": {
@@ -31203,9 +31631,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8676,
-          9371
+          2725,
+          8743,
+          9438
         ]
       },
       "unitVerification": {
@@ -32022,7 +32450,7 @@
           "index.html:applyObservedMoveEffects"
         ],
         "candidateSourceLines": [
-          4313
+          4337
         ]
       },
       "unitVerification": {
@@ -32329,9 +32757,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8678,
-          9378
+          2725,
+          8745,
+          9445
         ]
       },
       "unitVerification": {
@@ -32693,7 +33121,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          6104
+          6146
         ]
       },
       "unitVerification": {
@@ -32847,8 +33275,8 @@
           "effect-engine.js:moveDefinitions"
         ],
         "candidateSourceLines": [
-          5588,
-          8878
+          5630,
+          8945
         ]
       },
       "unitVerification": {
@@ -33030,7 +33458,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          9874
+          9941
         ]
       },
       "unitVerification": {
@@ -33311,12 +33739,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          6385,
-          7105,
-          14360,
-          14364,
-          14844,
-          14892
+          6422,
+          7156,
+          14430,
+          14434,
+          14914,
+          14962
         ]
       },
       "unitVerification": {
@@ -33410,9 +33838,9 @@
           "effect-engine.js:moveDefinitions"
         ],
         "candidateSourceLines": [
-          2724,
-          9825,
-          11086
+          2725,
+          9892,
+          11153
         ]
       },
       "unitVerification": {
@@ -33716,9 +34144,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8047,
-          9825
+          2725,
+          8114,
+          9892
         ]
       },
       "unitVerification": {
@@ -34050,10 +34478,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          5898,
-          8689,
-          9404
+          2725,
+          5940,
+          8756,
+          9471
         ]
       },
       "unitVerification": {
@@ -34265,12 +34693,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          6385,
-          7105,
-          14360,
-          14364,
-          14844,
-          14892
+          6422,
+          7156,
+          14430,
+          14434,
+          14914,
+          14962
         ]
       },
       "unitVerification": {
@@ -34904,9 +35332,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8694,
-          9413
+          2725,
+          8761,
+          9480
         ]
       },
       "unitVerification": {
@@ -35627,17 +36055,26 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:applyConfirmedTargetRanks",
+          "index.html:renderRankTargetControls"
+        ],
         "candidateSourceLines": []
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-target-ranks-integration.js",
+          "browser_mechanics_regression_test.py"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -36230,7 +36667,7 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          9097
+          9164
         ]
       },
       "unitVerification": {
@@ -36319,17 +36756,30 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
-        "candidateSourceLines": []
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:moveDefinitions",
+          "index.html:heldItemFor",
+          "index.html:decrementTurnFieldCounters",
+          "index.html:withHistoricalCombat"
+        ],
+        "candidateSourceLines": [
+          7531,
+          13409
+        ]
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-item-lifecycle.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "browser_mechanics_regression_test.py",
+          "test-mega-transactions.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -36774,9 +37224,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5619,
-          5632
+          2270,
+          5661,
+          5674
         ]
       },
       "unitVerification": {
@@ -37156,10 +37606,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          6515,
-          8702,
-          9429
+          2725,
+          6541,
+          8769,
+          9496
         ]
       },
       "unitVerification": {
@@ -37191,12 +37641,12 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          5573,
-          8703,
-          9430,
-          10944,
-          10954
+          2725,
+          5615,
+          8770,
+          9497,
+          11011,
+          11021
         ]
       },
       "unitVerification": {
@@ -37258,23 +37708,23 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5633,
-          5910,
-          5913,
-          6071,
-          6073,
-          6276,
-          9001,
-          9143,
-          9146,
-          9147,
-          9240,
-          9267,
-          9292,
-          9762,
-          10347,
-          10725
+          2270,
+          5675,
+          5952,
+          5955,
+          6113,
+          6115,
+          6313,
+          9068,
+          9210,
+          9213,
+          9214,
+          9307,
+          9334,
+          9359,
+          9829,
+          10414,
+          10792
         ]
       },
       "unitVerification": {
@@ -37306,8 +37756,8 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5633
+          2270,
+          5675
         ]
       },
       "unitVerification": {
@@ -37339,9 +37789,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          9006,
-          11081
+          2270,
+          9073,
+          11148
         ]
       },
       "unitVerification": {
@@ -37373,10 +37823,10 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2269,
-          5614,
-          5686,
-          8755
+          2270,
+          5656,
+          5728,
+          8822
         ]
       },
       "unitVerification": {
@@ -37408,11 +37858,11 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          4309,
-          8049,
-          8658,
-          9334
+          2725,
+          4333,
+          8116,
+          8725,
+          9401
         ]
       },
       "unitVerification": {
@@ -37446,11 +37896,11 @@
           "effect-engine.js:moveDefinitions"
         ],
         "candidateSourceLines": [
-          2724,
-          2990,
-          3703,
-          6473,
-          9823
+          2725,
+          3008,
+          3727,
+          6512,
+          9890
         ]
       },
       "unitVerification": {
@@ -37512,15 +37962,15 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          5755,
-          5788,
-          5790,
-          5796,
-          5803,
-          5804,
-          5809,
-          8047,
-          9819
+          5797,
+          5830,
+          5832,
+          5838,
+          5845,
+          5846,
+          5851,
+          8114,
+          9886
         ]
       },
       "unitVerification": {
@@ -37612,9 +38062,9 @@
         "status": "requires-review",
         "paths": [],
         "candidateSourceLines": [
-          2724,
-          8695,
-          9414
+          2725,
+          8762,
+          9481
         ]
       },
       "unitVerification": {
@@ -37706,7 +38156,6 @@
     "おうごんのからだ",
     "おみとおし",
     "おもてなし",
-    "かいりきバサミ",
     "かわりもの",
     "かんろなミツ",
     "ききかいひ",
@@ -37732,7 +38181,6 @@
     "すてみ",
     "すなはき",
     "すりぬけ",
-    "するどいめ",
     "せいぎのこころ",
     "だっぴ",
     "ちどりあし",
@@ -37745,18 +38193,15 @@
     "ねんちゃく",
     "のろわれボディ",
     "はっこう",
-    "はとむね",
     "はやおき",
     "はやてのつばさ",
     "はらぺこスイッチ",
     "はりこみ",
     "はんすう",
-    "ばんけん",
     "ひとでなし",
     "ふくつのこころ",
     "ふしょく",
     "ふみん",
-    "ぶきよう",
     "へんげんじざい",
     "ほうし",
     "ほおぶくろ",
@@ -37776,7 +38221,6 @@
     "スナイパー",
     "テレパシー",
     "トレース",
-    "ノーてんき",
     "バトルスイッチ",
     "バリアフリー",
     "フラワーベール",
@@ -37784,11 +38228,9 @@
     "ヘドロえき",
     "ヘヴィメタル",
     "マイティチェンジ",
-    "マイペース",
     "マグマのよろい",
     "マジシャン",
     "ミイラ",
-    "ミラーアーマー",
     "ムラっけ",
     "メロメロボディ",
     "ライトメタル",
@@ -37797,10 +38239,31 @@
     "レシーバー"
   ],
   "criticalWork": [
-    "Confirm target regulation and legal forms/stones/stats",
-    "Unify source-aware rank changes across existing paths",
-    "Connect confirmed target effects without guessed targets",
-    "Verify item suppression and post-Mega abilities",
+    "Confirm target regulation and legal forms/stones/stats without widening the roster",
+    "Audit remaining direct rank assignments, ally targets, spread target observations and all secondary-effect immunities",
+    "Audit legacy direct item reads outside shared active-effect adapters",
+    "Complete all post-Mega ability/form-stat rules and differential match scenarios",
     "Independent full doubles match oracle and complete browser E2E"
+  ],
+  "outOfCatalogEvidence": [
+    {
+      "category": "items",
+      "names": [
+        "クリアチャーム"
+      ],
+      "paths": [
+        "rank-effects.js:resolve",
+        "index.html:applyConfirmedTargetRanks",
+        "index.html:receiveIntimidate"
+      ],
+      "unitTests": [
+        "test-rank-effects.js",
+        "test-rank-differential.js"
+      ],
+      "integrationTests": [
+        "test-target-ranks-integration.js"
+      ],
+      "scope": "External negative-rank protection, self changes retained, Mold Breaker does not bypass items, Guard Dog event ordering. Full item interactions unverified."
+    }
   ]
 }

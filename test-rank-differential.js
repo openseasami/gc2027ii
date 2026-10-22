@@ -26,7 +26,7 @@ try{
   cases++;
  }
 }finally{battle.destroy();}
-const report={oracle:'pokemon-showdown',version,format:'gen9doublescustomgame',entryPoint:'Battle.boost',seed:[1,2,3,4],cases,failures,complete:false,limitations:['No full-match or Champions-specific legality oracle','Intimidate event immunities, move hits and item lifecycle tested separately']};
+const report={oracle:'pokemon-showdown',version,format:'gen9doublescustomgame',entryPoint:'Battle.boost',seed:[1,2,3,4],cases,failures,complete:false,completion:false,limitations:['No full-match or Champions-specific legality oracle','Intimidate event immunities, move hits and item lifecycle tested separately']};
 fs.writeFileSync(__dirname+'/RANK_DIFFERENTIAL_RESULTS.json',JSON.stringify(report,null,2)+'\n');
 assert.equal(failures.length,0,JSON.stringify(failures.slice(0,4)));
 console.log(`PASS ${cases} real Showdown rank differential cases, version ${version}`);

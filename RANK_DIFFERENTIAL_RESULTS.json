@@ -12,6 +12,7 @@
   "cases": 2720,
   "failures": [],
   "complete": false,
+  "completion": false,
   "limitations": [
     "No full-match or Champions-specific legality oracle",
     "Intimidate event immunities, move hits and item lifecycle tested separately"

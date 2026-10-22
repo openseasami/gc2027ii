@@ -42,6 +42,7 @@ def main():
     out=ROOT/'release';out.mkdir(exist_ok=True)
     manifest=dict(version=version,development=True,complete=False,completion=False,generatedAt=datetime.now(timezone.utc).isoformat(),
         baseCommit='650d5f2ce3def84871ab1ce88c1a134e9c6afa42',branch='codex-development',
+        implementationCommit=json.loads((ROOT/'DEVELOPMENT_ITERATION.json').read_text()).get('implementationCommit'),
         testCommands={'passed':tests['passed'],'total':tests['total']},
         files={name:sha256((ROOT/name).read_bytes()).hexdigest() for name in files},
         limitations=['No deployment performed','Full mechanics and legality not certified','See DEVELOPMENT_CHECKPOINT.md and DEVELOPMENT_BACKLOG.json in source repository'])

@@ -81,5 +81,13 @@
       "integrationTestsDefined": 82,
       "authoritativelyVerified": 0
     }
-  }
+  },
+  "implementationCommit": "f1696ff09f0c59f0b3df156c1ce982a33c04c529",
+  "testCommands": {
+    "passed": 100,
+    "total": 100
+  },
+  "externalDifferentialCases": 2780,
+  "totalUnimplementedMechanicsCount": null,
+  "totalUnimplementedMechanicsCountReason": "Full per-mechanic audit remains incomplete; candidate/projection counts are not implementation counts."
 }
