@@ -41,7 +41,11 @@ def plan(root,st):
     policy=read(root,'DEVELOPMENT_AUTOMATION_POLICY.json');groups={}
     for task in tasks(root):
         prior=st['tasks'].get(task['id'],{})
-        if prior.get('status') in ['verified-scope','blocked','in-progress']: continue
+        if prior.get('status')=='verified-scope':
+            if prior.get('testFingerprint')==input_fingerprint(root): continue
+            task['recommendedAction']='revalidate-existing-scope'
+            task['priorEvidence']=prior.get('evidence')
+        if prior.get('status') in ['blocked','in-progress']: continue
         if prior.get('attempts',0)>=policy['maxUnchangedRetries'] and prior.get('inputFingerprint')==input_fingerprint(root): continue
         group=groups.setdefault(task['dependencyGroup'],dict(id=task['dependencyGroup'],tasks=[],dependencies=task['dependencies'],blockedBy=[]))
         group['tasks'].append(task)

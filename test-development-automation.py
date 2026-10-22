@@ -45,6 +45,12 @@ class Tests(unittest.TestCase):
   self.assertEqual(a.main(['claim','--group','abilities:implement'],self.root),0);self.report()
   self.assertEqual(a.main(['verify','--ids',*ids,'--evidence','evidence.json'],self.root),0)
   self.assertTrue(all(t['status']=='verified-scope' for t in a.state(self.root)['tasks'].values()))
+ def test_changed_source_revalidates_without_reimplementation(self):
+  ids=self.claim();st=a.state(self.root);a.verify(self.root,st,ids,self.evidence(ids));a.save(self.root,a.STATE,st)
+  (self.root/'test-fixture.js').write_text('changed since verification')
+  group=next(g for g in a.plan(self.root,st) if g['id']=='abilities:implement')
+  self.assertTrue(all(t['recommendedAction']=='revalidate-existing-scope' for t in group['tasks']))
+  self.assertEqual(group['tasks'][0]['priorEvidence']['scope'],'fixture limited scope')
  def test_checkpoint_resume(self):
   ids=self.claim()
   subprocess.run(['git','-c','user.name=Test','-c','user.email=test@example.invalid','commit','--allow-empty','-m','fixture'],cwd=self.root,check=True,capture_output=True)

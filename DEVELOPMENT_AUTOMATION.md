@@ -37,7 +37,7 @@ python development-automation.py plan
 
 検証はTEST_RESULTS.jsonの実行成否・ソースSHAを確認し、対象名にMECHANICS_EVIDENCE.jsonで登録したテストだけ受理する。全回帰が失敗した状態、古いソース、無関係な成功テストではverified-scopeにしない。テストとスコープの意味的な対応のレビューはCodexが担い、単なる登録で正しさを保証しない。
 
-台帳の更新は既存implementation-ledger.js/coverage-assessment.jsへ一本化。CLIは証拠なしに台帳を書き換えない。verified-scopeは全機能完成ではなく、記録した範囲の履歴。ソース変更後は過去の証拠を現在の成功扱いにせず再検証する。テスト実行中にはソースを編集しない。
+台帳の更新は既存implementation-ledger.js/coverage-assessment.jsへ一本化。CLIは証拠なしに台帳を書き換えない。verified-scopeは全機能完成ではなく、記録した範囲の履歴。ソース変更後は過去の証拠を現在の成功扱いにせず再検証する。planはrecommendedAction=revalidate-existing-scopeと過去の証拠を表示し、再実装を要求しない。テスト実行中にはソースを編集しない。
 
 ## 優先度・依存関係・重複防止
 

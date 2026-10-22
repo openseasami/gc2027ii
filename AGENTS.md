@@ -6,7 +6,7 @@
 
 1. 作業ツリーとブランチを確認し、開発ブランチをfetch/fast-forward。ユーザーの未保存変更を上書きしない。
 2. DEVELOPMENT_CHECKPOINT.md、DEVELOPMENT_AUTOMATION.md、台帳・残件・開発ゲートを読む。
-3. `python development-automation.py plan` と `status` を読む。activeがあれば着手済みを先に再開する。新規は実行可能な最優先グループを `claim --group ID` で確保する。固定件数で切らず、同じ依存イベントの処理をまとめる。
+3. `python development-automation.py plan` と `status` を読む。activeがあれば着手済みを先に再開する。recommendedActionがrevalidate-existing-scopeの場合は既存実装を再利用して再検証だけを行う。新規は実行可能な最優先グループを `claim --group ID` で確保する。固定件数で切らず、同じ依存イベントの処理をまとめる。
 4. 関連ソース・既存テスト・調査済みスコープを追跡してから実装。未確定の公式仕様は該当IDだけblockし、他の実行可能な作業へ進む。既存共通経路を再実装しない。
 5. 個別の意味のある単体・統合・Showdownテストを追加。MECHANICS_EVIDENCE.jsonには対象名・経路・テスト・限定スコープと残課題を記録する。
 6. 固定の `work/test-venv/bin/python run-development-checks.py` を実行。ID別のscope/remaining/testsをJSONに書き、`verify --ids ... --evidence PATH` へ渡す。失敗時は記録された原因を調べ、修正後に再実行。同一入力での無制限再試行はしない。
