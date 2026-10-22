@@ -3,6 +3,7 @@
 **開発途中です。完成判定は false。** 開発ブランチは `codex-development`。
 
 現在の実装内容・制約・再開手順は [DEVELOPMENT_CHECKPOINT.md](DEVELOPMENT_CHECKPOINT.md)、
+PC試用版の起動は [PC_TRIAL_START.md](PC_TRIAL_START.md)、判定は [PC_TRIAL_ACCEPTANCE.json](PC_TRIAL_ACCEPTANCE.json)。
 完成条件の評価は [COMPLETION_REPORT.md](COMPLETION_REPORT.md) を参照してください。
 
 - [実装台帳](IMPLEMENTATION_LEDGER.json): 特性・技・持ち物・メガの登録/部分実装/検証証拠。

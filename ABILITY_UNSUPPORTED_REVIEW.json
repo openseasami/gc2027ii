@@ -52,8 +52,8 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通の行動順経路で後攻化・攻撃技限定の確率先制を扱う。表示だけが未対応だった。",
       "executableReferences": [
-        "index.html:activeOrderCaveats:8148",
-        "index.html:orderEffectProfile:10736",
+        "index.html:activeOrderCaveats:8160",
+        "index.html:orderEffectProfile:10749",
         "turn-order-effects.js:analyse:14"
       ],
       "tests": [
@@ -152,7 +152,7 @@
       "classification": "部分実装",
       "assessmentScope": "音フラグに基づく水タイプ化。実Showdown ModifyTypeとの10ケース比較、威力を上げないことを検証。",
       "executableReferences": [
-        "index.html:resolveMoveForDamage:9006"
+        "index.html:resolveMoveForDamage:9018"
       ],
       "tests": [
         "test-adoption-priority-mechanics.js"
@@ -218,7 +218,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通接触ダメージ予測で接触ペナルティを除外する。",
       "executableReferences": [
-        "index.html:projectedContactPunishmentForAction:11466"
+        "index.html:projectedContactPunishmentForAction:11479"
       ],
       "tests": [
         "test-contact.js"
@@ -255,7 +255,7 @@
       "classification": "部分実装",
       "assessmentScope": "相手対象ランク技の確定適用を阻止し、かたやぶり時は適用する。",
       "executableReferences": [
-        "index.html:applyConfirmedTargetRanks:6593"
+        "index.html:applyConfirmedTargetRanks:6605"
       ],
       "tests": [
         "test-target-ranks-integration.js"
@@ -388,7 +388,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed entry only: once per battle evasion drop, substitute and rank reactions; both-side Reflect/Light Screen/Aurora Veil removal. Full form changes and official rules remain unverified.",
       "executableReferences": [
-        "index.html:triggerEntryAbility:7376"
+        "index.html:triggerEntryAbility:7388"
       ],
       "tests": [
         "test-entry-screens-syrup.js"
@@ -523,7 +523,7 @@
       "classification": "部分実装",
       "assessmentScope": "50 real Showdown entry rank reset cases. Seven ranks on living ally only, not source/foe; Focus Energy preserved. Full suppression and switch scenarios unverified.",
       "executableReferences": [
-        "index.html:triggerEntryAbility:7365"
+        "index.html:triggerEntryAbility:7377"
       ],
       "tests": [
         "test-entry-focus-state.js",
@@ -664,8 +664,8 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
-        "index.html:confirmedSleepProtection:6467",
-        "index.html:forecastCommonSecondaryStatus:11356"
+        "index.html:confirmedSleepProtection:6479",
+        "index.html:forecastCommonSecondaryStatus:11369"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"
@@ -702,7 +702,7 @@
       "classification": "部分実装",
       "assessmentScope": "Only block/double reduction of Chople/Colbur predictions and confirmed hit adapter. No all berry eating/healing/recycle/ability-change handlers or full battle certification.",
       "executableReferences": [
-        "index.html:defensiveBerryForDamage:9290"
+        "index.html:defensiveBerryForDamage:9302"
       ],
       "tests": [
         "test-priority-resist-berries.js",
@@ -996,7 +996,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11351"
+        "index.html:forecastCommonSecondaryStatus:11364"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -1036,7 +1036,7 @@
       "classification": "部分実装",
       "assessmentScope": "Only block/double reduction of Chople/Colbur predictions and confirmed hit adapter. No all berry eating/healing/recycle/ability-change handlers or full battle certification.",
       "executableReferences": [
-        "index.html:defensiveBerryForDamage:9294"
+        "index.html:defensiveBerryForDamage:9306"
       ],
       "tests": [
         "test-priority-resist-berries.js",
@@ -1072,7 +1072,7 @@
       "classification": "部分実装",
       "assessmentScope": "Recommendation redirection penalties/Lightning Rod target candidates only; no full engine redirection simulation.",
       "executableReferences": [
-        "index.html:ignoresMoveRedirection:3557"
+        "index.html:ignoresMoveRedirection:3569"
       ],
       "tests": [
         "test-stalwart-targeting.js"
@@ -1169,8 +1169,8 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "確認済み命中の共通みがわり迂回経路が存在し、両陣営の適用を検証。",
       "executableReferences": [
-        "index.html:substituteBlocksConfirmedHit:5831",
-        "index.html:defensiveBerryForDamage:9293"
+        "index.html:substituteBlocksConfirmedHit:5843",
+        "index.html:defensiveBerryForDamage:9305"
       ],
       "tests": [
         "test-substitute-bypass.js"
@@ -1205,7 +1205,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed damaging received hits only; Justified Dark and Stamina any damage. Four-turn real Showdown doubles rank comparison; not complete damage, consumption or KO event parity.",
       "executableReferences": [
-        "index.html:applyConfirmedHitAbilityStages:6215"
+        "index.html:applyConfirmedHitAbilityStages:6227"
       ],
       "tests": [
         "test-hit-event-multiturn.js"
@@ -1467,7 +1467,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11355"
+        "index.html:forecastCommonSecondaryStatus:11368"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"
@@ -1569,7 +1569,7 @@
       "classification": "部分実装",
       "assessmentScope": "Accuracy reduction immunity for external rank changes, self changes and ability bypass; evasion ignoring and full event legality remain unverified. Ignore positive target evasion stages in accuracy forecast. Existing rank protection separate; all accuracy interactions and full-game parity unverified.",
       "executableReferences": [
-        "index.html:effectiveMoveAccuracy:9637"
+        "index.html:effectiveMoveAccuracy:9649"
       ],
       "tests": [
         "test-hit-event-multiturn.js",
@@ -1635,7 +1635,7 @@
       "classification": "部分実装",
       "assessmentScope": "確認済み特性かつ観測HP満タン時のひこう技優先度+1。攻撃技・変化技とHP減少時を実Showdown48ケースで比較。",
       "executableReferences": [
-        "index.html:movePriorityForActor:10729"
+        "index.html:movePriorityForActor:10742"
       ],
       "tests": [
         "test-gale-wings-differential.js"
@@ -1837,7 +1837,7 @@
       "classification": "部分実装",
       "assessmentScope": "Poison secondary forecast type-immunity bypass only; independent trySetStatus comparison. Damage immunity, hazards and direct status action pipeline remain separate/incomplete.",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11349"
+        "index.html:forecastCommonSecondaryStatus:11362"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -1876,7 +1876,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed Yawn scheduling/resolution only, active ally immunity, KO/unknown handling. Direct sleep moves, ability-change automatic cures and full sleep counters unverified.",
       "executableReferences": [
-        "index.html:confirmedSleepProtection:6465"
+        "index.html:confirmedSleepProtection:6477"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2007,7 +2007,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11354"
+        "index.html:forecastCommonSecondaryStatus:11367"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -2078,7 +2078,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed Yawn scheduling/resolution only, active ally immunity, KO/unknown handling. Direct sleep moves, ability-change automatic cures and full sleep counters unverified.",
       "executableReferences": [
-        "index.html:confirmedSleepProtection:6465"
+        "index.html:confirmedSleepProtection:6477"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2313,8 +2313,8 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通の行動順経路で後攻化・攻撃技限定の確率先制を扱う。表示だけが未対応だった。",
       "executableReferences": [
-        "index.html:activeOrderCaveats:8148",
-        "index.html:orderEffectProfile:10738",
+        "index.html:activeOrderCaveats:8160",
+        "index.html:orderEffectProfile:10751",
         "turn-order-effects.js:analyse:20"
       ],
       "tests": [
@@ -2421,7 +2421,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed Yawn scheduling/resolution only, active ally immunity, KO/unknown handling. Direct sleep moves, ability-change automatic cures and full sleep counters unverified.",
       "executableReferences": [
-        "index.html:confirmedSleepProtection:6466"
+        "index.html:confirmedSleepProtection:6478"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2600,7 +2600,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed entry only: once per battle evasion drop, substitute and rank reactions; both-side Reflect/Light Screen/Aurora Veil removal. Full form changes and official rules remain unverified.",
       "executableReferences": [
-        "index.html:triggerEntryAbility:7372"
+        "index.html:triggerEntryAbility:7384"
       ],
       "tests": [
         "test-entry-screens-syrup.js"
@@ -2639,11 +2639,11 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed active grass protection in target rank moves/Intimidate and secondary status forecast; initial Yawn immunity, not retroactive Yawn sleep immunity. Contrary/Simple order compared with real engine. Other rank paths and self-status effects remain incomplete.",
       "executableReferences": [
-        "index.html:confirmedSleepProtection:6466",
-        "index.html:applyConfirmedTargetRanks:6594",
-        "index.html:receiveIntimidate:7330",
-        "index.html:triggerEntryAbility:7385",
-        "index.html:planCommonSecondaryForecast:11438"
+        "index.html:confirmedSleepProtection:6478",
+        "index.html:applyConfirmedTargetRanks:6606",
+        "index.html:receiveIntimidate:7342",
+        "index.html:triggerEntryAbility:7397",
+        "index.html:planCommonSecondaryForecast:11451"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2743,7 +2743,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed defender ability weight for Low Kick/Grass Knot, minimum weight and threshold rounding. Float Stone, Autotomize, Heavy Slam/Heat Crash and full damage unverified.",
       "executableReferences": [
-        "index.html:weightBasedMovePower:8921"
+        "index.html:weightBasedMovePower:8933"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2821,7 +2821,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11353"
+        "index.html:forecastCommonSecondaryStatus:11366"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -2983,7 +2983,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed defender ability weight for Low Kick/Grass Knot, minimum weight and threshold rounding. Float Stone, Autotomize, Heavy Slam/Heat Crash and full damage unverified.",
       "executableReferences": [
-        "index.html:weightBasedMovePower:8922"
+        "index.html:weightBasedMovePower:8934"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -3052,8 +3052,8 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
-        "index.html:confirmedSleepProtection:6467",
-        "index.html:forecastCommonSecondaryStatus:11357"
+        "index.html:confirmedSleepProtection:6479",
+        "index.html:forecastCommonSecondaryStatus:11370"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"

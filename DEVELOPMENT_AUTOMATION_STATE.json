@@ -1574,6 +1574,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-22T15:39:03.349293+00:00",
+      "commit": "ce3e3b8a2f70d20bd3e4bc6e04dc072b77e7b926",
+      "reason": "PC試用版: 120/120成功、2 UA x 4配置、操作/復元を確認。Windows実機は未検証。",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {
@@ -1592,9 +1605,9 @@
     }
   },
   "workPolicy": {
-    "mode": "tournament-practical",
+    "mode": "pc-browser-trial",
     "coverageExpansionPaused": true,
     "gates": "TOURNAMENT_PRACTICAL_GATES.json",
-    "reason": "User prioritized top-120 damage/speed/order and 45s critical defects over candidate enumeration."
+    "reason": "PC browser usability/stability and top-120 calculation defects first; smartphone regression only; no broad candidate enumeration."
   }
 }

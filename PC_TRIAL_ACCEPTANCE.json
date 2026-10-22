@@ -1,0 +1,35 @@
+{
+  "completion": false,
+  "pcEquivalentTrialPassed": true,
+  "readiness": "conditional-pc-browser-trial",
+  "implementationCommit": "ce3e3b8a2f70d20bd3e4bc6e04dc072b77e7b926",
+  "testCommands": {
+    "passed": 120,
+    "total": 120
+  },
+  "engine": "Linux Chromium 154.0.8037.57",
+  "compatibilityProfiles": [
+    "Chrome Windows UA",
+    "Edge Windows UA"
+  ],
+  "viewportChecks": 8,
+  "automatedTurnSeconds": [
+    4.706,
+    5.03
+  ],
+  "clicksPerTurn": [
+    6,
+    6
+  ],
+  "nativeWindowsVerified": false,
+  "nativeChromeEdgeVerified": false,
+  "human45SecondTimingVerified": false,
+  "unresolved": [
+    "Native Windows Chrome/Edge and Windows .cmd execution unverified; Python launcher tested on Linux",
+    "Automated timing excludes human decision/input variability",
+    "C/M-C and Mega legality/stats unconfirmed",
+    "Other resist berries, Aurora Veil and full battle combinations remain unverified; estimates stay provisional"
+  ],
+  "trialArchive": "release/gc2027ii-v2.9.7-development.zip",
+  "startup": "PC_TRIAL_START.md"
+}

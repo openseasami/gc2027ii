@@ -1,18 +1,15 @@
 {
-  "version": "v2.9.6",
-  "baseCommit": "8c40932cd304b3fd61a12215cd9e56f3794da028",
+  "version": "v2.9.7",
+  "baseCommit": "e9533eae94d7c6a5dd05bac1339531ea71ffa407",
   "branch": "codex-development",
-  "implementationCommit": "3eab251e9792bf95a2f833219ccd4cdcc6545703",
+  "implementationCommit": "ce3e3b8a2f70d20bd3e4bc6e04dc072b77e7b926",
   "completion": false,
   "counts": {
-    "newVerifiedScopedTasks": 8,
-    "newPartialCandidateScopes": 21,
-    "newPartialAbilityScopes": 13,
-    "newPartialMoveScopes": 1,
-    "newPartialItemScopes": 7,
-    "historicalVerifiedScopedTasks": 18,
+    "newCombatCandidateScopes": 0,
+    "pcLayoutProfiles": 8,
+    "pcWorkflowProfiles": 2,
+    "testCommands": 120,
     "inProgressTasks": 37,
-    "remainingExplicitlyUnsupportedAbilityLabels": 58,
     "notFullyVerifiedCandidates": 1149
   },
   "coverageSummary": {
@@ -64,8 +61,8 @@
     }
   },
   "testCommands": {
-    "passed": 118,
-    "total": 118
+    "passed": 120,
+    "total": 120
   },
   "externalDifferentialFailures": 0,
   "differentialComparisons": {
@@ -100,8 +97,27 @@
     "startedAt": "2026-10-22T14:46:53Z",
     "recordedAt": "2026-10-22T15:20:42.415221+00:00",
     "elapsedMinutesRoundedUp": 34,
-    "remainingMinutesEstimate": 86,
-    "meaning": "Elapsed wall time since latest tournament-practical instruction; estimate, not a service/session execution quota."
+    "remainingMinutesEstimate": 66,
+    "meaning": "前回34分＋今回PC優先作業約20分の概算。待機期間を含めない。正確な累積計測や実行権限枠ではない。",
+    "previousRecordedRemainingMinutes": 86,
+    "pcSessionMinutesApprox": 20
   },
-  "coverageExpansionPaused": true
+  "coverageExpansionPaused": true,
+  "previousIterationCounts": {
+    "newVerifiedScopedTasks": 8,
+    "newPartialCandidateScopes": 21,
+    "newPartialAbilityScopes": 13,
+    "newPartialMoveScopes": 1,
+    "newPartialItemScopes": 7,
+    "historicalVerifiedScopedTasks": 18,
+    "inProgressTasks": 37,
+    "remainingExplicitlyUnsupportedAbilityLabels": 58,
+    "notFullyVerifiedCandidates": 1149
+  },
+  "pcTrial": {
+    "report": "PC_BROWSER_RESULTS.json",
+    "acceptance": "PC_TRIAL_ACCEPTANCE.json",
+    "nativeWindowsVerified": false,
+    "completion": false
+  }
 }

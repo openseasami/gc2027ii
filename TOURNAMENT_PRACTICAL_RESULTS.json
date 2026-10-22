@@ -1,6 +1,6 @@
 {
   "completion": false,
-  "generatedAt": "2026-10-22T15:21:44.064287+00:00",
+  "generatedAt": "2026-10-22T15:39:03.499320+00:00",
   "localChecksPassed": true,
   "checks": {
     "developmentBranch": true,
@@ -14,6 +14,7 @@
     "criticalDifferential": true,
     "browserPractical": true,
     "priorityBerries": true,
+    "pcBrowserTrial": true,
     "observedCompleteMatch": true,
     "incompleteRemainsExplicit": true
   },
@@ -22,16 +23,17 @@
   "pending": [
     "Official C/M-C eligibility, Mega permissions and form stats remain unconfirmed (REGULATION_SOURCE_REVIEW.json).",
     "General Gen9 differential scopes do not cover all important 120-profile damage/ability/item combinations or a complete match state oracle.",
-    "Tournament device and human 45-second operation timing have not been measured."
+    "Tournament device and human 45-second operation timing have not been measured.",
+    "Native Windows Chrome/Edge products and human decision time remain unverified; Chromium Windows-UA profiles are compatibility tests only."
   ],
   "testCommands": {
-    "passed": 118,
-    "total": 118
+    "passed": 120,
+    "total": 120
   },
   "speedComparisons": 40320,
   "damageComparisons": 331776,
   "criticalComparisons": 1584,
   "priorityBerryComparisons": 16384,
-  "maxRefreshMs": 538.1,
-  "sourceCommit": "3eab251e9792bf95a2f833219ccd4cdcc6545703"
+  "maxRefreshMs": 619,
+  "sourceCommit": "ce3e3b8a2f70d20bd3e4bc6e04dc072b77e7b926"
 }
