@@ -6,18 +6,18 @@
   "stageSummary": {
     "abilities": {
       "registered": 203,
-      "partialEffect": 49,
-      "requiresReview": 154,
-      "unitTestsDefined": 33,
-      "integrationTestsDefined": 33,
+      "partialEffect": 51,
+      "requiresReview": 152,
+      "unitTestsDefined": 36,
+      "integrationTestsDefined": 36,
       "authoritativelyVerified": 0
     },
     "moves": {
       "registered": 698,
-      "partialEffect": 63,
-      "requiresReview": 635,
-      "unitTestsDefined": 38,
-      "integrationTestsDefined": 38,
+      "partialEffect": 67,
+      "requiresReview": 631,
+      "unitTestsDefined": 42,
+      "integrationTestsDefined": 42,
       "authoritativelyVerified": 0
     },
     "items": {
@@ -40,11 +40,11 @@
   "coverageSummary": {
     "total": 1149,
     "categories": {
-      "未実装": 78,
-      "部分実装": 153,
+      "未実装": 76,
+      "部分実装": 160,
       "別経路で実装済み": 10,
       "仕様対象外": 0,
-      "要調査": 908
+      "要調査": 903
     },
     "fullyImplemented": 0,
     "fullyUnverified": 1149,
@@ -219,7 +219,7 @@
           "index.html:estimatedEndTurnResidual:11140",
           "index.html:estimatedEndTurnResidual:11141",
           "index.html:recordEndTurnResidualProjections:13856",
-          "effect-engine.js:residualProjection:175"
+          "effect-engine.js:residualProjection:176"
         ],
         "tests": [],
         "scopedTestsPassed": false,
@@ -1632,13 +1632,15 @@
       "effect": {
         "status": "partial",
         "paths": [
-          "effect-engine.js:definitions"
+          "effect-engine.js:definitions",
+          "index.html:applyConfirmedHitAbilityStages"
         ],
         "candidateSourceLines": [
           2270,
           5675,
           5704,
           5930,
+          6202,
           7702,
           7705,
           9342,
@@ -1646,26 +1648,33 @@
         ]
       },
       "coverage": {
-        "classification": "要調査",
-        "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+        "classification": "部分実装",
+        "assessmentScope": "Confirmed damaging received hits only; Justified Dark and Stamina any damage. Four-turn real Showdown doubles rank comparison; not complete damage, consumption or KO event parity.",
         "executableReferences": [
           "index.html:recordStaminaHits:5930",
+          "index.html:applyConfirmedHitAbilityStages:6202",
           "index.html:makeCard:7702",
           "index.html:multiHitKOEstimate:9342",
           "index.html:sequentialFocusDamage:10419"
         ],
-        "tests": [],
-        "scopedTestsPassed": false,
+        "tests": [
+          "test-hit-event-multiturn.js"
+        ],
+        "scopedTestsPassed": true,
         "fullMechanicVerified": false,
         "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-hit-event-multiturn.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-hit-event-multiturn.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -2121,28 +2130,40 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "effect-engine.js:definitions",
+          "index.html:applyConfirmedHitAbilityStages"
+        ],
         "candidateSourceLines": [
-          2270
+          2270,
+          6202
         ]
       },
       "coverage": {
-        "classification": "未実装",
-        "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
-        "executableReferences": [],
-        "tests": [],
-        "scopedTestsPassed": false,
+        "classification": "部分実装",
+        "assessmentScope": "Confirmed damaging received hits only; Justified Dark and Stamina any damage. Four-turn real Showdown doubles rank comparison; not complete damage, consumption or KO event parity.",
+        "executableReferences": [
+          "index.html:applyConfirmedHitAbilityStages:6202"
+        ],
+        "tests": [
+          "test-hit-event-multiturn.js"
+        ],
+        "scopedTestsPassed": true,
         "fullMechanicVerified": false,
         "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-hit-event-multiturn.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-hit-event-multiturn.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -2920,28 +2941,39 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "rank-effects.js:resolve"
+        ],
         "candidateSourceLines": [
           2270
         ]
       },
       "coverage": {
-        "classification": "未実装",
-        "assessmentScope": "未対応表示があり、名前に完全一致する実行関数内参照と台帳の効果経路がともに未検出。汎用処理での代替可否は引き続き調査する。",
+        "classification": "部分実装",
+        "assessmentScope": "Accuracy reduction immunity for external rank changes, self changes and ability bypass; evasion ignoring and full event legality remain unverified.",
         "executableReferences": [],
-        "tests": [],
-        "scopedTestsPassed": false,
+        "tests": [
+          "test-hit-event-multiturn.js",
+          "test-rank-differential.js"
+        ],
+        "scopedTestsPassed": true,
         "fullMechanicVerified": false,
         "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-hit-event-multiturn.js",
+          "test-rank-differential.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-hit-event-multiturn.js",
+          "test-rank-differential.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -4204,7 +4236,7 @@
           "index.html:sharedAbilityDamageModifiers:9057",
           "index.html:estimatedEndTurnResidual:11148",
           "index.html:estimatedEndTurnResidual:11149",
-          "effect-engine.js:residualProjection:184"
+          "effect-engine.js:residualProjection:185"
         ],
         "tests": [],
         "scopedTestsPassed": false,
@@ -4912,7 +4944,7 @@
         "executableReferences": [
           "index.html:estimatedEndTurnResidual:11132",
           "index.html:estimatedEndTurnResidual:11133",
-          "effect-engine.js:residualProjection:179"
+          "effect-engine.js:residualProjection:180"
         ],
         "tests": [],
         "scopedTestsPassed": false,
@@ -7384,31 +7416,39 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "index.html:resolveMoveForDamage"
+        ],
         "candidateSourceLines": [
           8653,
           8991
         ]
       },
       "coverage": {
-        "classification": "要調査",
-        "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+        "classification": "部分実装",
+        "assessmentScope": "Existing variable HP power and Body Press defense-source flags only; complete damage and legality remain unverified.",
         "executableReferences": [
           "index.html:resolveMoveForDamage:8991"
         ],
-        "tests": [],
-        "scopedTestsPassed": false,
+        "tests": [
+          "test-torkoal-core.js"
+        ],
+        "scopedTestsPassed": true,
         "fullMechanicVerified": false,
         "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-torkoal-core.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-torkoal-core.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -10877,31 +10917,39 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "index.html:resolveMoveForDamage"
+        ],
         "candidateSourceLines": [
           8652,
           8991
         ]
       },
       "coverage": {
-        "classification": "要調査",
-        "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+        "classification": "部分実装",
+        "assessmentScope": "Existing variable HP power and Body Press defense-source flags only; complete damage and legality remain unverified.",
         "executableReferences": [
           "index.html:resolveMoveForDamage:8991"
         ],
-        "tests": [],
-        "scopedTestsPassed": false,
+        "tests": [
+          "test-torkoal-core.js"
+        ],
+        "scopedTestsPassed": true,
         "fullMechanicVerified": false,
         "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-torkoal-core.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-torkoal-core.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -12830,8 +12878,10 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "index.html:resolveMoveForDamage"
+        ],
         "candidateSourceLines": [
           2671,
           2725,
@@ -12843,25 +12893,31 @@
         ]
       },
       "coverage": {
-        "classification": "要調査",
-        "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+        "classification": "部分実装",
+        "assessmentScope": "Existing effective-weather type and base power, Cloud Nine/Air Lock suppression; complete damage remains unverified.",
         "executableReferences": [
           "index.html:opponentCandidateOrder:2671",
           "index.html:resolveMoveForDamage:8946",
           "index.html:resolveMoveForDamage:8950"
         ],
-        "tests": [],
-        "scopedTestsPassed": false,
+        "tests": [
+          "test-weather-ball-effective-weather.js"
+        ],
+        "scopedTestsPassed": true,
         "fullMechanicVerified": false,
         "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-weather-ball-effective-weather.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-weather-ball-effective-weather.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -16141,31 +16197,39 @@
         "basis": "Inherited partial adoption sample; unknown entries remain in scope."
       },
       "effect": {
-        "status": "requires-review",
-        "paths": [],
+        "status": "partial",
+        "paths": [
+          "index.html:resolveMoveForDamage"
+        ],
         "candidateSourceLines": [
           8654,
           9002
         ]
       },
       "coverage": {
-        "classification": "要調査",
-        "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+        "classification": "部分実装",
+        "assessmentScope": "Existing variable HP power and Body Press defense-source flags only; complete damage and legality remain unverified.",
         "executableReferences": [
           "index.html:resolveMoveForDamage:9002"
         ],
-        "tests": [],
-        "scopedTestsPassed": false,
+        "tests": [
+          "test-torkoal-core.js"
+        ],
+        "scopedTestsPassed": true,
         "fullMechanicVerified": false,
         "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
       },
       "unitVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-torkoal-core.js"
+        ]
       },
       "integrationVerification": {
-        "status": "unverified",
-        "tests": []
+        "status": "scoped-tests-defined",
+        "tests": [
+          "test-torkoal-core.js"
+        ]
       },
       "completionBlockedBy": [
         "Full per-effect and authoritative verification incomplete"
@@ -17247,7 +17311,7 @@
           "index.html:sharedAbilityDamageModifiers:9091",
           "index.html:estimatedEndTurnResidual:11142",
           "index.html:estimatedEndTurnResidual:11150",
-          "effect-engine.js:residualProjection:188"
+          "effect-engine.js:residualProjection:189"
         ],
         "tests": [],
         "scopedTestsPassed": false,
@@ -19919,7 +19983,7 @@
           "index.html:estimatedEndTurnResidual:11145",
           "index.html:estimatedEndTurnResidual:11146",
           "index.html:recordEndTurnResidualProjections:13857",
-          "effect-engine.js:residualProjection:193"
+          "effect-engine.js:residualProjection:194"
         ],
         "tests": [],
         "scopedTestsPassed": false,
@@ -22033,7 +22097,7 @@
         "executableReferences": [
           "index.html:recordEndTurnResidualProjections:13851",
           "index.html:installNationalDex:14199",
-          "effect-engine.js:residualProjection:170"
+          "effect-engine.js:residualProjection:171"
         ],
         "tests": [],
         "scopedTestsPassed": false,
@@ -23068,7 +23132,7 @@
         "classification": "部分実装",
         "assessmentScope": "Terrain match, airborne holder, rank cap including Contrary, fainted/pending holder, one-time consumption and Unburden activation. Item suppression and complete battle E2E unverified.",
         "executableReferences": [
-          "effect-engine.js:residualProjection:197"
+          "effect-engine.js:residualProjection:198"
         ],
         "tests": [
           "test-field-items-integration.js"
@@ -24037,7 +24101,7 @@
         "assessmentScope": "Terrain match, airborne holder, rank cap including Contrary, fainted/pending holder, one-time consumption and Unburden activation. Item suppression and complete battle E2E unverified.",
         "executableReferences": [
           "index.html:opponentCandidateOrder:2669",
-          "effect-engine.js:residualProjection:197"
+          "effect-engine.js:residualProjection:198"
         ],
         "tests": [
           "test-field-items-integration.js"
@@ -24330,7 +24394,7 @@
         "assessmentScope": "Terrain match, airborne holder, rank cap including Contrary, fainted/pending holder, one-time consumption and Unburden activation. Item suppression and complete battle E2E unverified.",
         "executableReferences": [
           "index.html:opponentCandidateOrder:2668",
-          "effect-engine.js:residualProjection:197"
+          "effect-engine.js:residualProjection:198"
         ],
         "tests": [
           "test-field-items-integration.js"
@@ -26521,7 +26585,7 @@
         "classification": "部分実装",
         "assessmentScope": "Terrain match, airborne holder, rank cap including Contrary, fainted/pending holder, one-time consumption and Unburden activation. Item suppression and complete battle E2E unverified.",
         "executableReferences": [
-          "effect-engine.js:residualProjection:197"
+          "effect-engine.js:residualProjection:198"
         ],
         "tests": [
           "test-field-items-integration.js"
@@ -49961,7 +50025,6 @@
     "すじがねいり",
     "すてみ",
     "すなはき",
-    "せいぎのこころ",
     "だっぴ",
     "ちどりあし",
     "てんきや",
@@ -49971,7 +50034,6 @@
     "にげあし",
     "ねんちゃく",
     "のろわれボディ",
-    "はっこう",
     "はやおき",
     "はらぺこスイッチ",
     "はりこみ",
