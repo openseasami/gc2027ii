@@ -25,3 +25,7 @@
 ## PC優先（最新ユーザー方針）
 
 PCブラウザの固定ダメージ欄・相手2枠同時表示・45秒のクリック操作・保存復元を最優先する。スマートフォンは回帰維持。PC_BROWSER_RESULTS.jsonとPC_TRIAL_START.mdを読み、Windows実機検証とLinux Chromium/Windows UA互換試験を混同しない。
+
+## 実機操作確認後の最終方針
+
+ユーザーがPC実機操作に問題なしと確認。現在のUIを維持し、UI_PRESERVATION_BASELINE.jsonとtest-ui-preservation.pyでCSS/マークアップを固定する。上位120の主要対面の計算・順序・相互作用・推奨を検証し、重大な不具合だけ修正する。ユーザー確認の範囲をWindows版製品の自動テスト結果に読み替えない。

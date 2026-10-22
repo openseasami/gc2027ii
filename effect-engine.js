@@ -43,6 +43,7 @@
     {name:'トリックルーム',kind:'trick_room',turns:5},
     {name:'リフレクター',kind:'screen',screen:'reflect',turns:5},
     {name:'ひかりのかべ',kind:'screen',screen:'lightScreen',turns:5},
+    {name:'オーロラベール',kind:'screen',screen:'auroraVeil',turns:5},
     {name:'くろいきり',kind:'reset_stages',target:'all'},
     {name:'マジックルーム',kind:'magic_room',turns:5},
     {name:'からをやぶる',kind:'multi_boost',stats:{def:-1,spd:-1,atk:2,spa:2,spe:2},target:'self'},

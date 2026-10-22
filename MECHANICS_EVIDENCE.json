@@ -981,6 +981,40 @@
         "browser_priority_berries_test.py"
       ],
       "scope": "Only block/double reduction of Chople/Colbur predictions and confirmed hit adapter. No all berry eating/healing/recycle/ability-change handlers or full battle certification."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "オーロラベール"
+      ],
+      "paths": [
+        "effect-engine.js:moveDefinitions",
+        "index.html:applyObservedMoveEffects",
+        "index.html:screenDamageMod",
+        "index.html:decrementTurnFieldCounters"
+      ],
+      "unitTests": [
+        "test-veil-screen-effects.js"
+      ],
+      "integrationTests": [
+        "browser_main_matchups_test.py"
+      ],
+      "scope": "Confirmed success in effective snow only; 5/8 turns with active Light Clay; persists after snow; no stacking with Reflect/Light Screen; both damage directions, Infiltrator, rollback/save/reload tested. All removal/theft/reuse interactions and event legality unverified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "すりぬけ"
+      ],
+      "paths": [
+        "index.html:damageEstimate",
+        "index.html:opponentDamageEstimateAgainstMy"
+      ],
+      "unitTests": [],
+      "integrationTests": [
+        "browser_main_matchups_test.py"
+      ],
+      "scope": "Known Infiltrator ignores Reflect/Light Screen/Aurora Veil in both damage adapters on selected 120-profile matchups. Other bypassed effects and unknown ability confirmation not fully certified."
     }
   ],
   "outOfCatalogEvidence": [

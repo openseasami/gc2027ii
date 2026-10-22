@@ -15,6 +15,7 @@ class Gates(unittest.TestCase):
   self.put('TOURNAMENT_SPEED_DIFFERENTIAL_RESULTS.json',dict(profiles=120,cases=40320,failures=[]));self.put('TOURNAMENT_DAMAGE_DIFFERENTIAL_RESULTS.json',dict(cases=331776,failures=[]));self.put('CRITICAL_DIFFERENTIAL_RESULTS.json',dict(rateCases=432,damageCases=1152,failures=[]));self.put('TOURNAMENT_BROWSER_RESULTS.json',dict(passed=True,refreshSamplesMs=[500]*18,maxRefreshMs=500,errors=[]));self.put('FULL_MATCH_E2E_RESULTS.json',dict(passed=True,undoReplay=True,reload=True,opponentPokemon=4))
   self.put('PRIORITY_BERRY_DIFFERENTIAL_RESULTS.json',dict(cases=16384,failures=[]));self.put('PRIORITY_BERRY_BROWSER_RESULTS.json',dict(passed=True,errors=[]))
   self.put('PC_BROWSER_RESULTS.json',dict(passed=True,profiles=[dict(layouts=[{}]*4,automatedTurnSeconds=5)]*2))
+  self.put('MAIN_MATCHUP_DIFFERENTIAL_RESULTS.json',dict(matchups=16,comparisons=46080,failureCount=0,speedComparisons=5760,orderComparisons=5760))
   for n in ['IMPLEMENTATION_LEDGER.json','DEVELOPMENT_BACKLOG.json']:self.put(n,{'completion':False})
  def put(self,n,x):(self.root/n).write_text(json.dumps(x))
  def run_gate(self):

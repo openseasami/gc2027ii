@@ -30,6 +30,8 @@ def evaluate():
  checks['priorityBerries']=berries['cases']>=limit['priorityBerryCasesAtLeast'] and not berries['failures'] and berry_browser['passed'] and not berry_browser['errors']
  pc=read('PC_BROWSER_RESULTS.json')
  checks['pcBrowserTrial']=pc['passed'] and len(pc['profiles'])==2 and sum(len(p['layouts']) for p in pc['profiles'])==8 and all(p['automatedTurnSeconds']<45 for p in pc['profiles'])
+ matchup=read('MAIN_MATCHUP_DIFFERENTIAL_RESULTS.json')
+ checks['mainMatchups']=matchup['matchups']>=16 and matchup['comparisons']>=46080 and matchup['failureCount']==0 and matchup['speedComparisons']>=5760 and matchup['orderComparisons']>=5760
  checks['observedCompleteMatch']=match['passed'] and match['undoReplay'] and match['reload'] and match['opponentPokemon']==4
  checks['incompleteRemainsExplicit']=read('IMPLEMENTATION_LEDGER.json')['completion'] is False and read('DEVELOPMENT_BACKLOG.json')['completion'] is False
  passed=all(checks.values())

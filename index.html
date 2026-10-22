@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Global Challenge 2027 II Support v2.9.7</title>
+<title>Global Challenge 2027 II Support v2.9.8</title>
 <style>
 :root{--bg:#f4f6f8;--panel:#fff;--line:#d8dee8;--text:#18202b;--muted:#667085;--accent:#2563eb;--accent2:#dbeafe;--danger:#b42318;--warn:#fff4cc;--ok:#eaf7ee;--chip:#f8fafc;--violet:#7c3aed}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}button,select{font:inherit}button{cursor:pointer}
@@ -6427,13 +6427,14 @@ function ensureSideConditions(){
     if(!state.sideConditions[side])state.sideConditions[side]={reflect:0,lightScreen:0};
     if(typeof state.sideConditions[side].reflect!=='number')state.sideConditions[side].reflect=0;
     if(typeof state.sideConditions[side].lightScreen!=='number')state.sideConditions[side].lightScreen=0;
+    if(typeof state.sideConditions[side].auroraVeil!=='number')state.sideConditions[side].auroraVeil=0;
   });
   return state.sideConditions;
 }
 function screenDamageMod(defenderSide,cat){
   const sc=ensureSideConditions()[defenderSide];
-  if(cat==='phys'&&sc.reflect>0)return 2/3;
-  if(cat==='spec'&&sc.lightScreen>0)return 2/3;
+  if(cat==='phys'&&(sc.reflect>0||sc.auroraVeil>0))return 2/3;
+  if(cat==='spec'&&(sc.lightScreen>0||sc.auroraVeil>0))return 2/3;
   return 1;
 }
 
@@ -6549,6 +6550,8 @@ function applyObservedMoveEffects(side,idx,name,move,action=null){
     }else if(effect.kind==='magic_room'){
       state.magicRoomTurns=Number(state.magicRoomTurns)>0?0:effect.turns;
     }else if(effect.kind==='screen'){
+      if(action?.failed===true)continue;
+      if(effect.screen==='auroraVeil'&&(typeof effectiveWeatherForDamage==='function'?effectiveWeatherForDamage():$('weather')?.value)!=='雪')continue;
       const item=typeof activeHeldItemFor==='function'?activeHeldItemFor(side,idx):typeof heldItemFor==='function'?heldItemFor(side,idx):'';
       sc[side][effect.screen]=item==='ひかりのねんど'?8:effect.turns;
     }
@@ -9395,7 +9398,7 @@ function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderB
  if(critical)base=Math.floor(base*1.5);
  const stab=damageStabMod('my',attackerIdx,attackerName,effectiveAttacker,moveType);
  const item=heldMod===1.2?1:heldMod;
- const screen=critical?1:screenDamageMod('opp',mv.cat);
+ const screen=critical||confirmedAbilityIs('my',attackerIdx,attackerName,'すりぬけ')?1:screenDamageMod('opp',mv.cat);
  const berry=typeof defensiveBerryForDamage==='function'?defensiveBerryForDamage('my',attackerIdx,attackerName,'opp',defenderIdx,defenderName,moveName,moveType,eff):{factor:1,consume:false};
  // Apply distinct modifiers in battle order instead of combining into one
  // floating-point multiplier. This keeps KO thresholds stable near integer cuts.
@@ -10934,7 +10937,7 @@ function opponentDamageEstimateAgainstMy(action,targetEntry,powerOverride=null,c
   if(critical)base=Math.floor(base*1.5);
   const stab=damageStabMod('opp',attacker.idx,attacker.name,attackerName,moveType);
   const item=heldMod===1.2?1:heldMod;
-  const screen=critical?1:screenDamageMod('my',mv.cat);
+  const screen=critical||confirmedAbilityIs('opp',attacker.idx,attacker.name,'すりぬけ')?1:screenDamageMod('my',mv.cat);
   const berry=typeof defensiveBerryForDamage==='function'?defensiveBerryForDamage('opp',attacker.idx,attacker.name,'my',targetEntry.idx,targetEntry.name,moveName,moveType,eff):{factor:1,consume:false};
   // Full-HP defensive effects are evaluated independently for each strike.
   // Opponent's attack predictions are estimates; item/ability checks here are for our known defender.
@@ -13939,6 +13942,7 @@ function decrementTurnFieldCounters(){
   ['my','opp'].forEach(side=>{
     sc[side].reflect=Math.max(0,(sc[side].reflect||0)-1);
     sc[side].lightScreen=Math.max(0,(sc[side].lightScreen||0)-1);
+    sc[side].auroraVeil=Math.max(0,(sc[side].auroraVeil||0)-1);
   });
 }
 

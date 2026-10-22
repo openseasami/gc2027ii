@@ -1,4 +1,4 @@
-# Global Challenge 2027 II 支援サイト — v2.9.7
+# Global Challenge 2027 II 支援サイト — v2.9.8
 
 **開発途中です。完成判定は false。** 開発ブランチは `codex-development`。
 
@@ -32,7 +32,7 @@ python build-development-release.py
 
 ## 公開用ファイル
 
-`release/gc2027ii-v2.9.7-development.zip` に静的サイト一式を保存しています。
+`release/gc2027ii-v2.9.8-development.zip` に静的サイト一式を保存しています。
 ビルドは不要です。同梱のHTML、全外部JS、Service Worker、manifest、アイコンを同じ場所に配置してください。
 `release/RELEASE_MANIFEST.json` と `release/SHA256SUMS.txt` で内容を確認できます。
 

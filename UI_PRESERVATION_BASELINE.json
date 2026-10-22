@@ -1,0 +1,10 @@
+{
+  "completion": false,
+  "baseCommit": "d2fe4858779e85bb68d4fc282e407122485ce9d1",
+  "userConfirmedPcOperation": {
+    "reportedDateJST": "2026-10-23",
+    "scope": "PCブラウザ版の実機操作に問題がないとユーザーが確認。OS/ブラウザ詳細と判断時間の個別計測は報告なし。"
+  },
+  "styles": "c0d886703c87240a54033706664d7afa07c2a582039397fe9988ec824fdc64fd",
+  "markup": "ec702d66ab62bc3d4c2d2de40f038c93c497c92541b21847ad3d767e3ec9a672"
+}
