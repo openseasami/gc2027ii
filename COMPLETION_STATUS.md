@@ -1,3 +1,3 @@
-**NOT COMPLETE / 開発途中 / v2.9.4 / completion: false**
+**NOT COMPLETE / アプリ開発途中 / completion: false**
 
-最新の判定はCOMPLETION_REPORT.md、再開手順はDEVELOPMENT_CHECKPOINT.md、ログはTEST_RESULTS.jsonを参照。
+自動継続開発基盤の構築・検証は完了。全戦闘機能の完成ではない。最新の手順・判定はDEVELOPMENT_CHECKPOINT.mdとCOMPLETION_REPORT.mdを参照。

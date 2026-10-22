@@ -16,6 +16,47 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-22T12:06:11.865657+00:00",
+      "commit": "2a37932b34054a66d2c12a0f6ec8c57464c2fb4f",
+      "reason": "自動継続基盤構築・8テストと全106検証成功。次回はactive/planから再開",
+      "completion": false,
+      "counts": {
+        "verified-scope": 0,
+        "in-progress": 0,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
+    },
+    {
+      "at": "2026-10-22T12:09:04.432504+00:00",
+      "commit": "5473e017697909db202e5b1996a0e53fcec92dc6",
+      "reason": "基盤9テストと全106検証成功。ソース変更時は既存スコープの再検証へ",
+      "completion": false,
+      "counts": {
+        "verified-scope": 0,
+        "in-progress": 0,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
-  ]
+  ],
+  "foundation": {
+    "status": "verified-scope",
+    "completion": false,
+    "implementationCommit": "5473e017697909db202e5b1996a0e53fcec92dc6",
+    "scope": "Planner, dependency gates, scoped test association, hash freshness, retry budget, duplicate prevention, persisted checkpoints; no autonomous coding daemon or enabled schedule.",
+    "tests": [
+      "test-development-automation.py"
+    ],
+    "unitTests": 9,
+    "sourceSha256": {
+      "development-automation.py": "06a506fe6f9ffd91301c4b0917596ff734914cc19662d87839c5998dae3fdae2",
+      "DEVELOPMENT_AUTOMATION_POLICY.json": "f3b4c3488ea27c4aefda970cc753d5e8c6da09b26384d8df099d5475d876a4a6",
+      "test-development-automation.py": "11ae135f8f99142f8bb541906441267ff7ce903e49433f355885ceb7571a5cf7"
+    }
+  }
 }

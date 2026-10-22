@@ -50101,5 +50101,12 @@
       ],
       "scope": "External negative-rank protection, self changes retained, Mold Breaker does not bypass items, Guard Dog event ordering. Full item interactions unverified."
     }
-  ]
+  ],
+  "continuation": {
+    "planner": "development-automation.py",
+    "policy": "DEVELOPMENT_AUTOMATION_POLICY.json",
+    "state": "DEVELOPMENT_AUTOMATION_STATE.json",
+    "instructions": "AGENTS.md",
+    "completion": false
+  }
 }

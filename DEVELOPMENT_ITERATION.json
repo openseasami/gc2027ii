@@ -1,16 +1,9 @@
 {
   "version": "v2.9.4",
-  "baseCommit": "ce6c75f14783fd53d97f6ac336c461b18dca8b54",
+  "baseCommit": "a5cc0fb0f66540855a0934cfd34a0a722650c0e6",
   "branch": "codex-development",
-  "implementationCommit": "7596416a51ba7744564054e01b93fcf766ded035",
+  "implementationCommit": "5473e017697909db202e5b1996a0e53fcec92dc6",
   "completion": false,
-  "counts": {
-    "newPartialAbilityScopes": 2,
-    "connectedExistingAbilityScopes": 1,
-    "reviewedExistingMoveScopes": 4,
-    "notFullyVerifiedCandidates": 1149,
-    "remainingExplicitlyUnsupportedAbilityLabels": 76
-  },
   "coverageSummary": {
     "total": 1149,
     "categories": {
@@ -60,8 +53,8 @@
     }
   },
   "testCommands": {
-    "passed": 105,
-    "total": 105
+    "passed": 106,
+    "total": 106
   },
   "externalDifferentialCases": 2998,
   "externalDifferentialFailures": 0,
@@ -79,5 +72,20 @@
     "ADOPTION_120_VERIFIED.json": "2d66c2b05457a3ded459f4830a93b9b1a04e00d5a803325145002feada5c7b43",
     "ADOPTION_120_NORMALIZED.json": "4eda15a0810d74d3124aeace37cf51d75eadd36a37e9ff2ab10377d697e3bd47",
     "ADOPTION_120_EFFECT_AUDIT.json": "db45dd824ac6a8e57df87bc8b3be266a718b605525d99b27f8c3859fdf9ef42c"
+  },
+  "previousMechanicsCounts": {
+    "newPartialAbilityScopes": 2,
+    "connectedExistingAbilityScopes": 1,
+    "reviewedExistingMoveScopes": 4,
+    "notFullyVerifiedCandidates": 1149,
+    "remainingExplicitlyUnsupportedAbilityLabels": 76
+  },
+  "mechanicsImplementationCommit": "7596416a51ba7744564054e01b93fcf766ded035",
+  "automationRevision": 1,
+  "counts": {
+    "newGameMechanics": 0,
+    "automationUnitTests": 9,
+    "dependencyGroups": 18,
+    "candidates": 1149
   }
 }
