@@ -1,3 +1,15 @@
+# リリース候補の受入チェックポイント — v2.9.10 rc1
+
+completion:false。2026-10-23（日本時間）、既存ランタイム3fc189b8d77ed15fd4dc7552408c8417a3c45edfを変更せず、全127回帰とZIP展開後3検証が成功。限定した手動入力/参考推定の用途で条件付き合格。公式C/M-C/メガ・全仕様・全対面・推奨最適性は未認定。
+
+候補はrelease/rc1/gc2027ii-v2.9.10-tournament-rc1.zipの1つ。正式判定はRELEASE_CANDIDATE_RESULTS.json、利用範囲はRELEASE_CANDIDATE_DECISION.md、展開検証はrelease/rc1/RC_ARTIFACT_VERIFICATION.json。main・公開サイトは変更していない。旧開発ZIPと現候補を混同しない。
+
+以後は候補を凍結し、重大な再現不具合がある場合だけ修正と再検証を行う。一般網羅/新機能は再開しない。再梱包はpython build-tournament-candidate.py、正確なZIPの起動/PC検証はwork/test-venv/bin/python verify-tournament-candidate.py。通常の全回帰/整合性ゲートは維持し、再梱包後はSHA-256と判定記録も必ず更新する。自動公開はしない。
+
+---
+
+以下は前回の戦術監査記録。
+
 # 大会実用版・最終戦術監査チェックポイント — v2.9.10
 
 **completion:false。限定ケースの監査は合格、全戦術/全仕様完成ではない。**

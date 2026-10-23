@@ -1626,6 +1626,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-23T01:31:55.427480+00:00",
+      "commit": "3fc189b8d77ed15fd4dc7552408c8417a3c45edf",
+      "reason": "Limited reference-use RC1 accepted: 127/127 regression commands, 3/3 extracted archive checks, UI/data/runtime unchanged; completion false",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {
@@ -1644,13 +1657,14 @@
     }
   },
   "workPolicy": {
-    "mode": "pc-final-tactical-audit",
+    "mode": "pc-limited-release-candidate",
     "coverageExpansionPaused": true,
     "gates": "TOURNAMENT_PRACTICAL_GATES.json",
-    "reason": "Tournament-budget final audit: preserve UI and data, fix critical ally-hit/Protect/future-priority errors only. Broad coverage remains paused.",
+    "reason": "Existing runtime frozen; limited manual-reference RC accepted after all regression and exact-archive browser verification. Broad coverage remains paused.",
     "userReportedPcOperation": true,
     "uiPreservation": "UI_PRESERVATION_BASELINE.json",
     "recommendationValidation": "RECOMMENDATION_STRATEGY_RESULTS.json",
-    "finalTacticalAudit": "FINAL_TACTICAL_AUDIT_RESULTS.json"
+    "finalTacticalAudit": "FINAL_TACTICAL_AUDIT_RESULTS.json",
+    "releaseDecision": "RELEASE_CANDIDATE_RESULTS.json"
   }
 }

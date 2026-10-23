@@ -1,0 +1,73 @@
+{
+  "completion": false,
+  "assessedAt": "2026-10-23T01:31:55.345859+00:00",
+  "assessedDateJST": "2026-10-23",
+  "branch": "codex-development",
+  "sourceBaseCommit": "3fc189b8d77ed15fd4dc7552408c8417a3c45edf",
+  "runtimeVersion": "v2.9.10",
+  "candidate": "rc1",
+  "verdict": "conditional-pass-for-limited-reference-use",
+  "candidateAccepted": true,
+  "officialTournamentRulesCertified": false,
+  "fullSpecificationCompleted": false,
+  "knownCriticalDefectsInAcceptedScope": [],
+  "criticalDefectAssessment": "No unresolved reproduced release blocker within reviewed/tested manual-reference scope; untested mechanics are excluded, not declared defect-free.",
+  "acceptedScope": [
+    "PC manual observed-state entry, team/save/restore/history/undo",
+    "Damage/speed/order reference under explicitly tested inputs",
+    "Action candidates used as provisional advice, not guaranteed outcomes"
+  ],
+  "unverifiedScope": [
+    "Official C/M-C/Mega permissions and AP/base-stat certification",
+    "All 120x120 matchups and complete battle engine parity",
+    "Opponent action probabilities, general multi-turn optimality, exact joint KO order and all ally-hit secondary combinations",
+    "Native Windows product/version and human 45-second decision timing certification"
+  ],
+  "testCommands": {
+    "passed": 127,
+    "total": 127
+  },
+  "extractedArtifactCommands": {
+    "passed": 3,
+    "total": 3
+  },
+  "localChecks": {
+    "developmentBranch": true,
+    "allTestsPassed": true,
+    "currentSourceHashes": true,
+    "requiredCommands": true,
+    "adoption120": true,
+    "preservedCatalogs": true,
+    "speedDifferential": true,
+    "damageDifferential": true,
+    "criticalDifferential": true,
+    "browserPractical": true,
+    "priorityBerries": true,
+    "pcBrowserTrial": true,
+    "mainMatchups": true,
+    "observedCompleteMatch": true,
+    "incompleteRemainsExplicit": true
+  },
+  "dataAndUiUnchanged": true,
+  "applicationCodeChanged": false,
+  "coverageSummary": {
+    "total": 1149,
+    "categories": {
+      "未実装": 57,
+      "部分実装": 195,
+      "別経路で実装済み": 10,
+      "仕様対象外": 0,
+      "要調査": 887
+    },
+    "fullyImplemented": 0,
+    "fullyUnverified": 1149,
+    "testEvidenceMatchesRuntime": true,
+    "meaning": "Five-way scoped implementation assessment; alternate routes are implemented only within assessmentScope, never full mechanic certification. Outside-scope requires verified rule evidence; currently none."
+  },
+  "archive": "release/rc1/gc2027ii-v2.9.10-tournament-rc1.zip",
+  "archiveSha256": "6d5155a328319c3153e23472cdfadd38e5faebefcf8e2650208b652698e6635a",
+  "artifactVerification": "release/rc1/RC_ARTIFACT_VERIFICATION.json",
+  "scopeDocument": "RELEASE_CANDIDATE_DECISION.md",
+  "mainBaseline": "7390232ef3cdf6202fc934f99828ea9055a46fdf",
+  "publicDeploymentPerformed": false
+}

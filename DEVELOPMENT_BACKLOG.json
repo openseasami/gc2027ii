@@ -50680,5 +50680,17 @@
       "All ally-hit secondaries, activation combinations and move-specific self-KO exceptions unverified",
       "Official C/M-C/Mega and full battle oracle incomplete"
     ]
+  },
+  "releaseCandidate": {
+    "completion": false,
+    "candidate": "rc1",
+    "verdict": "conditional-pass-for-limited-reference-use",
+    "decision": "RELEASE_CANDIDATE_RESULTS.json",
+    "unverifiedScope": [
+      "Official C/M-C/Mega permissions and AP/base-stat certification",
+      "All 120x120 matchups and complete battle engine parity",
+      "Opponent action probabilities, general multi-turn optimality, exact joint KO order and all ally-hit secondary combinations",
+      "Native Windows product/version and human 45-second decision timing certification"
+    ]
   }
 }

@@ -1,11 +1,11 @@
 {
   "completion": false,
   "pcEquivalentTrialPassed": true,
-  "readiness": "conditional-pc-browser-trial",
-  "implementationCommit": "6e47b44a5fec7421e48ef66f349ad42d73e8dd94",
+  "readiness": "conditional-reference-release-candidate",
+  "implementationCommit": "4e762ae4399661eceab000741efdf14189edcf81",
   "testCommands": {
-    "passed": 123,
-    "total": 123
+    "passed": 127,
+    "total": 127
   },
   "engine": "Linux Chromium 154.0.8037.57",
   "compatibilityProfiles": [
@@ -14,8 +14,8 @@
   ],
   "viewportChecks": 8,
   "automatedTurnSeconds": [
-    4.706,
-    5.03
+    5.587,
+    5.21
   ],
   "clicksPerTurn": [
     6,
@@ -25,12 +25,11 @@
   "nativeChromeEdgeVerified": false,
   "human45SecondTimingVerified": false,
   "unresolved": [
-    "Native Windows Chrome/Edge and Windows .cmd execution unverified; Python launcher tested on Linux",
-    "Automated timing excludes human decision/input variability",
-    "C/M-C and Mega legality/stats unconfirmed",
-    "Other resist berries, all screen removal/transfer and full battle combinations remain unverified; estimates stay provisional"
+    "Official C/M-C/Mega permissions and AP/base stats unconfirmed",
+    "All matchups, general multi-turn optimality, exact joint KO order and all ally-hit secondary combinations unverified",
+    "Native Windows product/version and human 45-second decision timing unverified; user reported PC operation without problems"
   ],
-  "trialArchive": "release/gc2027ii-v2.9.8-development.zip",
+  "trialArchive": "release/rc1/gc2027ii-v2.9.10-tournament-rc1.zip",
   "startup": "PC_TRIAL_START.md",
   "userReportedPcOperation": {
     "confirmed": true,
@@ -38,5 +37,9 @@
     "scope": "PC実機操作に問題なしとユーザー確認。OS/ブラウザ版の詳細なし。"
   },
   "uiPreservation": "UI_PRESERVATION_BASELINE.json",
-  "mainMatchupValidation": "MAIN_MATCHUP_VALIDATION.md"
+  "mainMatchupValidation": "MAIN_MATCHUP_VALIDATION.md",
+  "runtimeVersion": "v2.9.10",
+  "sourceBaseCommit": "3fc189b8d77ed15fd4dc7552408c8417a3c45edf",
+  "artifactVerification": "release/rc1/RC_ARTIFACT_VERIFICATION.json",
+  "releaseDecision": "RELEASE_CANDIDATE_RESULTS.json"
 }

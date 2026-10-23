@@ -150,5 +150,13 @@
     "inProgressTasks": 37,
     "notFullyVerifiedCandidates": 1149
   },
-  "finalTacticalAudit": "FINAL_TACTICAL_AUDIT_RESULTS.json"
+  "finalTacticalAudit": "FINAL_TACTICAL_AUDIT_RESULTS.json",
+  "releaseCandidate": {
+    "verdict": "conditional-pass-for-limited-reference-use",
+    "sourceBaseCommit": "3fc189b8d77ed15fd4dc7552408c8417a3c45edf",
+    "archive": "release/rc1/gc2027ii-v2.9.10-tournament-rc1.zip",
+    "archiveSha256": "6d5155a328319c3153e23472cdfadd38e5faebefcf8e2650208b652698e6635a",
+    "assessment": "RELEASE_CANDIDATE_RESULTS.json",
+    "completion": false
+  }
 }
