@@ -34,6 +34,10 @@ def subset(expected, actual, path='backup'):
     else: assert expected==actual, (path, expected, actual)
 
 def retained(data):
+    # v2.9.14 deliberately recomputes the advisory ranking diagnostic; preserve
+    # every recorded input/outcome, including the turn's historical recommendation.
+    if data.get('currentMatch',{}).get('state'):
+        data['currentMatch']['state'].pop('lastRecommendationDiagnostic',None)
     return {k:data[k] for k in ['myTeam','myMoves','myProfiles','matches','currentMatch']}
 
 def export(page):
@@ -70,7 +74,7 @@ try:
         browser=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
         report['chromiumVersion']=browser.version
         for version, expected_hash in BASE['migrationArchives'].items():
-            archive=ROOT/f'release/gc2027ii-{version}-development.zip'
+            archive=ROOT/BASE.get('migrationArchivePaths',{}).get(version,f'release/gc2027ii-{version}-development.zip')
             assert sha256(archive.read_bytes()).hexdigest()==expected_hash, version
             old=Path(temp)/version
             with zipfile.ZipFile(archive) as z: z.extractall(old)
@@ -102,7 +106,7 @@ try:
             assert any(m['hp']==90 for m in expected['currentMatch']['state']['my'].values())
             # Real server directory upgrade: retain old origin/profile/storage/SW.
             active['directory']=str(ROOT)
-            page.reload(wait_until='networkidle');assert BASE['version'] in page.title()
+            page.reload(wait_until='networkidle');assert BASE.get('currentRuntimeVersion',BASE['version']) in page.title()
             subset(expected,retained(json.loads(export(page))))
             page.locator('#saveBtn').click();page.reload(wait_until='networkidle')
             subset(expected,retained(json.loads(export(page))))
@@ -136,4 +140,4 @@ try:
 finally:
     server.shutdown()
     (ROOT/'VERSION_MIGRATION_RESULTS.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-print('PASS old-release real saves: three versions, same-origin upgrade + fresh-profile JSON, save/reload, history, undo')
+print('PASS old-release real saves: four versions including c089a19 v2.9.13, same-origin upgrade + fresh-profile JSON, save/reload, history, undo')

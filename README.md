@@ -1,16 +1,12 @@
-# Global Challenge 2027 II 支援サイト — v2.9.13
+# Global Challenge 2027 II 支援サイト — v2.9.14
 
 **開発途中です。完成判定は false。** 開発ブランチは `codex-development`。
 
-最新の[最終ZIP前一括監査](FINAL_PREZIP_AUDIT.md)は技術面で合格（全140回帰＋展開検査4/4）です。`64d8d75`のタスキ修正に加え、登録済み半減実の除外漏れを修正しました。公式一覧の全件照合・独立ツール利用許可が未確認のため、新しい大会用ZIPは作成していません。旧ZIPはバックアップで、最新補正を含みません。修正済みソースの起動は[PC_TRIAL_START.md](PC_TRIAL_START.md)、判定は[FINAL_PREZIP_AUDIT_RESULTS.json](FINAL_PREZIP_AUDIT_RESULTS.json)を参照してください。
+最新は**v2.9.14の大会前練習・検証専用版**です。[実戦操作/推奨監査](LIVE_PRACTICAL_AUDIT.md)に従い、最後の1体の推奨、採点の非単調性、確実な単体2KOの評価、行動仮説の偏り、既存KO枠の重複入力を限定修正しました。既存UIとカタログ/採用データは保持しています。
 
-前回の[ダメージ・種族値・KO境界監査](FINAL_DAMAGE_KO_AUDIT.md)で、小数HPの被ダメージ計算時のタスキ判定を1件修正しました。新機能/UI/検証済みデータは変更していません。修正は開発ブランチのソースに含まれます。下記の元の固定ZIPは未更新で、この修正を含みません。修正を使う場合は本監査コミットの一式を取得し、ルートのstart-pc-trial.cmdから起動してください。
+配布は[gc2027ii-v2.9.14-practice-verification.zip](release/practice-v2.9.14/gc2027ii-v2.9.14-practice-verification.zip)。[SHA-256](release/practice-v2.9.14/SHA256SUMS.txt)、[実ZIP展開後の検証](release/practice-v2.9.14/ARTIFACT_VERIFICATION.json)、[起動](PC_TRIAL_START.md)、[JSONバックアップ/移行](JSON_BACKUP.md)、[未確認条件](UNCONFIRMED_CONDITIONS.md)を参照してください。公式一覧・規約の追加調査は今回の対象外で、対戦中の外部ツール利用許可は未確認です。
 
-**大会基準版はv2.9.13に固定し、追加機能を停止しました。** 指定ZIPは
-[gc2027ii-v2.9.13-tournament-trial.zip](release/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zip)
-の1つです。[最終回帰判定](TOURNAMENT_BASELINE_REPORT.md)、
-[SHA-256](release/tournament-v2.9.13/SHA256SUMS.txt)、[JSONバックアップ/移行](JSON_BACKUP.md)、
-[未確認条件](UNCONFIRMED_CONDITIONS.md)を参照してください。旧ZIP/RC1は履歴用です。
+旧v2.9.13練習ZIPはrelease/practice-v2.9.13/、それ以前の大会試用ZIPはrelease/tournament-v2.9.13/にバックアップとして保持し、上書きしません。タスキ・18半減実の修正は最新版にも含みます。古い大会用判定と練習専用配布の合格を混同しないでください。
 
 現在の実装内容・制約・再開手順は [DEVELOPMENT_CHECKPOINT.md](DEVELOPMENT_CHECKPOINT.md)、
 PC試用版の起動は [PC_TRIAL_START.md](PC_TRIAL_START.md)、判定は [PC_TRIAL_ACCEPTANCE.json](PC_TRIAL_ACCEPTANCE.json)。
@@ -34,21 +30,22 @@ work/test-venv/bin/python -m pip install -r requirements-dev.txt
 npm ci --ignore-scripts --cache work/npm-cache
 work/test-venv/bin/python run-development-checks.py
 python evaluate-tournament-practical.py
-python build-frozen-trial.py
-work/test-venv/bin/python verify-frozen-trial.py
+python evaluate-practice-release.py
+python build-practice-release.py
+work/test-venv/bin/python verify-practice-release.py
 ```
 
 テスト成功だけでは、対象大会の使用可否、全効果の実装、公式ゲームとの一致を保証しません。
 
 確定ZIPを理由なく上書きしないでください。再生成には現在の成功結果と
-TOURNAMENT_BASELINE_RESULTS.jsonの更新が必要です。固定対象はFROZEN_BASELINE.jsonに記録しています。
+PRACTICE_RELEASE_READINESS.jsonの最新ソース照合が必要です。固定対象はFROZEN_BASELINE.jsonに記録しています。
 ブラウザー検証はローカルHTTPを使用します。実行範囲の詳細は完成判定レポートに記録しています。
 
-## 公開用ファイル
+## ローカル練習用ファイル
 
-`release/gc2027ii-v2.9.13-development.zip` に静的サイト一式を保存しています。
+`release/practice-v2.9.14/gc2027ii-v2.9.14-practice-verification.zip` に静的サイト一式を保存しています。
 ビルドは不要です。同梱のHTML、全外部JS、Service Worker、manifest、アイコンを同じ場所に配置してください。
-`release/RELEASE_MANIFEST.json` と `release/SHA256SUMS.txt` で内容を確認できます。
+`release/practice-v2.9.14/RELEASE_MANIFEST.json` と `release/practice-v2.9.14/SHA256SUMS.txt` で内容を確認できます。
 
 この開発作業では `main` と公開サイトを更新していません。公開ブランチの変更・デプロイは行っていません。
 保存先のURLが変わる場合の対戦データ移行には、既存のJSON出力/復元機能を使用できます。

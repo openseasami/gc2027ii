@@ -1,0 +1,4727 @@
+{
+  "completion": false,
+  "passed": true,
+  "scope": "Explicit joint-planner constraints and local Gen9 damage/speed/order comparison, not policy optimality or official Champions certification",
+  "checks": [
+    {
+      "id": "1/full-board",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "じしん",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "サーフゴー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 4.3559491208434755,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.152669508692544
+          },
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "シャドーボール",
+                "target": "ガオガエン",
+                "note": ""
+              }
+            ],
+            "score": 3.803661644113097
+          },
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "リキキリン",
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 2.452257799069735
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "1/cleanup",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "ドラゴンクロー",
+            "target": "リキキリン",
+            "note": ""
+          },
+          {
+            "actor": "サーフゴー",
+            "move": "シャドーボール",
+            "target": "ガオガエン",
+            "note": ""
+          }
+        ],
+        "score": 22.17834,
+        "generated": 10,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "じしん",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 22.091480000000004
+          },
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "じしん",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "シャドーボール",
+                "target": "ガオガエン",
+                "note": ""
+              }
+            ],
+            "score": 19.637948
+          },
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "シャドーボール",
+                "target": "ガオガエン",
+                "note": ""
+              }
+            ],
+            "score": 17.317752000000006
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "covered": [
+          "リキキリン",
+          "ガオガエン"
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "1/trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "じしん",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "サーフゴー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 3.3559491208434755,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 3.152669508692543
+          },
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "シャドーボール",
+                "target": "ガオガエン",
+                "note": ""
+              }
+            ],
+            "score": 2.8242754557210796
+          },
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "リキキリン",
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 1.6073060010064975
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "1/tailwind",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "じしん",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "サーフゴー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 3.3559491208434755,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 3.152669508692543
+          },
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "シャドーボール",
+                "target": "ガオガエン",
+                "note": ""
+              }
+            ],
+            "score": 2.8242754557210796
+          },
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "リキキリン",
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 1.6073060010064975
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "1/screens",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "じしん",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "サーフゴー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 4.0150523774301075,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.152669508692544
+          },
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "シャドーボール",
+                "target": "ガオガエン",
+                "note": ""
+              }
+            ],
+            "score": 3.6763673867818425
+          },
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "リキキリン",
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 2.234868712113296
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "1/protect-switch",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "じしん",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "サーフゴー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 4.3559491208434755,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.152669508692544
+          },
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "シャドーボール",
+                "target": "ガオガエン",
+                "note": ""
+              }
+            ],
+            "score": 3.803661644113097
+          },
+          {
+            "actions": [
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "リキキリン",
+                "note": ""
+              },
+              {
+                "actor": "サーフゴー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 2.452257799069735
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "リキキリン",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ]
+        ],
+        "protectedDamageCount": 0,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "2/full-board",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "りゅうのはどう",
+            "target": "ガブリアス",
+            "note": ""
+          }
+        ],
+        "score": 4.542872506387228,
+        "generated": 15,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.152669508692544
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ウッドハンマー",
+                "target": "アシレーヌ",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.148646003812261
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ねこだまし",
+                "target": "アシレーヌ",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 2.8655374198641708
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "2/cleanup",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "ウッドハンマー",
+            "target": "アシレーヌ",
+            "note": "先手KO後の無駄打ち回避"
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "りゅうのはどう",
+            "target": "ガブリアス",
+            "note": ""
+          }
+        ],
+        "score": 24.018340000000002,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ねこだまし",
+                "target": "アシレーヌ",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "りゅうのはどう",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 23.27834
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "りゅうのはどう",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 18.147752
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ウッドハンマー",
+                "target": "アシレーヌ",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 15.395400000000002
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "covered": [
+          "アシレーヌ",
+          "ガブリアス"
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "2/trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "ウッドハンマー",
+            "target": "アシレーヌ",
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 4.395985581248577,
+        "generated": 14,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ウッドハンマー",
+                "target": "アシレーヌ",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "りゅうのはどう",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 4.610288217435178
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "りゅうのはどう",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 3.610351494164596
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ウッドハンマー",
+                "target": "ガブリアス",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "りゅうのはどう",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 3.389904316312649
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "2/tailwind",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "ウッドハンマー",
+            "target": "アシレーヌ",
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 4.395985581248577,
+        "generated": 15,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ウッドハンマー",
+                "target": "アシレーヌ",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "りゅうのはどう",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 4.610288217435178
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "りゅうのはどう",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 3.610351494164596
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ウッドハンマー",
+                "target": "ガブリアス",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "りゅうのはどう",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 3.389904316312649
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "2/screens",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 4.152669508692544,
+        "generated": 15,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "りゅうのはどう",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 4.324653779533651
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ウッドハンマー",
+                "target": "アシレーヌ",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 3.069605626737572
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ねこだまし",
+                "target": "アシレーヌ",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 2.8655374198641708
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "2/protect-switch",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "りゅうのはどう",
+            "target": "ガブリアス",
+            "note": ""
+          }
+        ],
+        "score": 4.542872506387228,
+        "generated": 15,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.152669508692544
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ウッドハンマー",
+                "target": "アシレーヌ",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.148646003812261
+          },
+          {
+            "actions": [
+              {
+                "actor": "ゴリランダー",
+                "move": "ねこだまし",
+                "target": "アシレーヌ",
+                "note": ""
+              },
+              {
+                "actor": "ドラパルト",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 2.8655374198641708
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガブリアス",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "アシレーヌ",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ]
+        ],
+        "protectedDamageCount": 0,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "3/full-board",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ペリッパー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ブリジュラス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 5.621755650909882,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "ラスターカノン",
+                "target": "ニンフィア",
+                "note": ""
+              }
+            ],
+            "score": 5.848251885073771
+          },
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "ウェザーボール",
+                "target": "ガオガエン",
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 5.555448405490769
+          },
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "なみのり",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 5.271283943739313
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "3/cleanup",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ペリッパー",
+            "move": "なみのり",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ブリジュラス",
+            "move": "ラスターカノン",
+            "target": "ニンフィア",
+            "note": ""
+          }
+        ],
+        "score": 24.749368107663223,
+        "generated": 10,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "なみのり",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "ラスターカノン",
+                "target": "ガオガエン",
+                "note": ""
+              }
+            ],
+            "score": 23.949368107663226
+          },
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "なみのり",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 22.44688888606524
+          },
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "ウェザーボール",
+                "target": "ガオガエン",
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "ラスターカノン",
+                "target": "ニンフィア",
+                "note": ""
+              }
+            ],
+            "score": 22.404677650709047
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "covered": [
+          "ガオガエン",
+          "ニンフィア"
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "3/trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ペリッパー",
+            "move": "ウェザーボール",
+            "target": "ガオガエン",
+            "note": ""
+          },
+          {
+            "actor": "ブリジュラス",
+            "move": "ラスターカノン",
+            "target": "ニンフィア",
+            "note": "先手KO後の無駄打ち回避"
+          }
+        ],
+        "score": 7.539854451426022,
+        "generated": 11,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "ウェザーボール",
+                "target": "ガオガエン",
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 5.959034367667181
+          },
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "ラスターカノン",
+                "target": "ニンフィア",
+                "note": ""
+              }
+            ],
+            "score": 5.000666457635283
+          },
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.621755650909883
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "3/tailwind",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ペリッパー",
+            "move": "ウェザーボール",
+            "target": "ガオガエン",
+            "note": ""
+          },
+          {
+            "actor": "ブリジュラス",
+            "move": "ラスターカノン",
+            "target": "ニンフィア",
+            "note": ""
+          }
+        ],
+        "score": 7.539854451426022,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "ウェザーボール",
+                "target": "ガオガエン",
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "ラスターカノン",
+                "target": "ガオガエン",
+                "note": ""
+              }
+            ],
+            "score": 6.907944902917247
+          },
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "ウェザーボール",
+                "target": "ガオガエン",
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 5.959034367667181
+          },
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "ラスターカノン",
+                "target": "ニンフィア",
+                "note": ""
+              }
+            ],
+            "score": 5.000666457635283
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "3/screens",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ペリッパー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ブリジュラス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 5.621755650909882,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "ラスターカノン",
+                "target": "ニンフィア",
+                "note": ""
+              }
+            ],
+            "score": 5.5529870923905325
+          },
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "なみのり",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.592856832501554
+          },
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "ラスターカノン",
+                "target": "ガオガエン",
+                "note": ""
+              }
+            ],
+            "score": 4.3894024560809495
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "3/protect-switch",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ペリッパー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ブリジュラス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 5.621755650909882,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "ラスターカノン",
+                "target": "ニンフィア",
+                "note": ""
+              }
+            ],
+            "score": 5.848251885073771
+          },
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "ウェザーボール",
+                "target": "ガオガエン",
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 5.555448405490769
+          },
+          {
+            "actions": [
+              {
+                "actor": "ペリッパー",
+                "move": "なみのり",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ブリジュラス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 5.271283943739313
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ガオガエン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ニンフィア",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "protectedDamageCount": 0,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "4/full-board",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "アシレーヌ",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ウルガモス",
+            "move": "かえんほうしゃ",
+            "target": "ドドゲザン",
+            "note": ""
+          }
+        ],
+        "score": 8.714637601803084,
+        "generated": 11,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ムーンフォース",
+                "target": "ガブリアス",
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 7.563543845043328
+          },
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ムーンフォース",
+                "target": "ガブリアス",
+                "note": "先手KO後の無駄打ち回避"
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 7.164741253965864
+          },
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ハイパーボイス",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 6.966086454358526
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "4/cleanup",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "アシレーヌ",
+            "move": "ハイパーボイス",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ウルガモス",
+            "move": "かえんほうしゃ",
+            "target": "ドドゲザン",
+            "note": ""
+          }
+        ],
+        "score": 26.09953385020911,
+        "generated": 10,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ハイパーボイス",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 25.299533850209112
+          },
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ムーンフォース",
+                "target": "ガブリアス",
+                "note": "先手KO後の無駄打ち回避"
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 22.7344212819394
+          },
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ハイパーボイス",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 22.65592547607921
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "covered": [
+          "ドドゲザン",
+          "ガブリアス"
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "4/trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "アシレーヌ",
+            "move": "ムーンフォース",
+            "target": "ガブリアス",
+            "note": ""
+          },
+          {
+            "actor": "ウルガモス",
+            "move": "かえんほうしゃ",
+            "target": "ガブリアス",
+            "note": ""
+          }
+        ],
+        "score": 9.836914947842853,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ムーンフォース",
+                "target": "ガブリアス",
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 8.71470768944382
+          },
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ハイパーボイス",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 8.466086454358525
+          },
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ムーンフォース",
+                "target": "ドドゲザン",
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 8.300318676035815
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "4/tailwind",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "アシレーヌ",
+            "move": "ムーンフォース",
+            "target": "ガブリアス",
+            "note": ""
+          },
+          {
+            "actor": "ウルガモス",
+            "move": "かえんほうしゃ",
+            "target": "ガブリアス",
+            "note": ""
+          }
+        ],
+        "score": 9.41312175840995,
+        "generated": 11,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ムーンフォース",
+                "target": "ガブリアス",
+                "note": "先手KO後の無駄打ち回避"
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 8.664741253965865
+          },
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ハイパーボイス",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 8.466086454358525
+          },
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 7.714637601803083
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "4/screens",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "アシレーヌ",
+            "move": "ムーンフォース",
+            "target": "ガブリアス",
+            "note": ""
+          },
+          {
+            "actor": "ウルガモス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.588326811797717,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 6.0683966243611165
+          },
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 5.997924731099314
+          },
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 4.816741764344925
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "4/protect-switch",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "アシレーヌ",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ウルガモス",
+            "move": "かえんほうしゃ",
+            "target": "ドドゲザン",
+            "note": ""
+          }
+        ],
+        "score": 8.714637601803084,
+        "generated": 11,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ムーンフォース",
+                "target": "ガブリアス",
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ガブリアス",
+                "note": ""
+              }
+            ],
+            "score": 7.563543845043328
+          },
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ムーンフォース",
+                "target": "ガブリアス",
+                "note": "先手KO後の無駄打ち回避"
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 7.164741253965864
+          },
+          {
+            "actions": [
+              {
+                "actor": "アシレーヌ",
+                "move": "ハイパーボイス",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ウルガモス",
+                "move": "かえんほうしゃ",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 6.966086454358526
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ガブリアス",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "protectedDamageCount": 0,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "5/full-board",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ニンフィア",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドドゲザン",
+            "move": "ドゲザン",
+            "target": "ドラパルト",
+            "note": ""
+          }
+        ],
+        "score": 6.746432951446917,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 5.621755650909882
+          },
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "ドゲザン",
+                "target": "ゴリランダー",
+                "note": ""
+              }
+            ],
+            "score": 5.189300702146214
+          },
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "ムーンフォース",
+                "target": "ドラパルト",
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "ドゲザン",
+                "target": "ドラパルト",
+                "note": ""
+              }
+            ],
+            "score": 4.7985367952517946
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "5/cleanup",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ニンフィア",
+            "move": "ムーンフォース",
+            "target": "ドラパルト",
+            "note": ""
+          },
+          {
+            "actor": "ドドゲザン",
+            "move": "ドゲザン",
+            "target": "ゴリランダー",
+            "note": "先手KO後の無駄打ち回避"
+          }
+        ],
+        "score": 21.884677650709044,
+        "generated": 10,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "ムーンフォース",
+                "target": "ゴリランダー",
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "ドゲザン",
+                "target": "ドラパルト",
+                "note": ""
+              }
+            ],
+            "score": 21.884677650709044
+          },
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "ドゲザン",
+                "target": "ドラパルト",
+                "note": ""
+              }
+            ],
+            "score": 15.790265725738506
+          },
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "ムーンフォース",
+                "target": "ドラパルト",
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 15.441303688267189
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "covered": [
+          "ドラパルト",
+          "ゴリランダー"
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "5/trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ニンフィア",
+            "move": "ムーンフォース",
+            "target": "ドラパルト",
+            "note": ""
+          },
+          {
+            "actor": "ドドゲザン",
+            "move": "ドゲザン",
+            "target": "ドラパルト",
+            "note": ""
+          }
+        ],
+        "score": 7.163679441550932,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "ドゲザン",
+                "target": "ドラパルト",
+                "note": ""
+              }
+            ],
+            "score": 6.087205669237511
+          },
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "ムーンフォース",
+                "target": "ゴリランダー",
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "ドゲザン",
+                "target": "ドラパルト",
+                "note": ""
+              }
+            ],
+            "score": 5.160347688101885
+          },
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.621755650909883
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "5/tailwind",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ニンフィア",
+            "move": "ムーンフォース",
+            "target": "ドラパルト",
+            "note": ""
+          },
+          {
+            "actor": "ドドゲザン",
+            "move": "ドゲザン",
+            "target": "ドラパルト",
+            "note": ""
+          }
+        ],
+        "score": 6.298536795251795,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "ドゲザン",
+                "target": "ドラパルト",
+                "note": ""
+              }
+            ],
+            "score": 5.746432951446919
+          },
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "ムーンフォース",
+                "target": "ゴリランダー",
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "ドゲザン",
+                "target": "ドラパルト",
+                "note": ""
+              }
+            ],
+            "score": 4.6362477923662215
+          },
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.621755650909883
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "5/screens",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ニンフィア",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドドゲザン",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 5.621755650909882,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "ドゲザン",
+                "target": "ドラパルト",
+                "note": ""
+              }
+            ],
+            "score": 5.777268396840434
+          },
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "ドゲザン",
+                "target": "ゴリランダー",
+                "note": ""
+              }
+            ],
+            "score": 4.758741308853244
+          },
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "ムーンフォース",
+                "target": "ドラパルト",
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.305550880504542
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "5/protect-switch",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ニンフィア",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドドゲザン",
+            "move": "ドゲザン",
+            "target": "ドラパルト",
+            "note": ""
+          }
+        ],
+        "score": 6.746432951446917,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 5.621755650909882
+          },
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "ドゲザン",
+                "target": "ゴリランダー",
+                "note": ""
+              }
+            ],
+            "score": 5.189300702146214
+          },
+          {
+            "actions": [
+              {
+                "actor": "ニンフィア",
+                "move": "ムーンフォース",
+                "target": "ドラパルト",
+                "note": ""
+              },
+              {
+                "actor": "ドドゲザン",
+                "move": "ドゲザン",
+                "target": "ドラパルト",
+                "note": ""
+              }
+            ],
+            "score": 4.7985367952517946
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "support",
+              "move": "まもる"
+            }
+          ],
+          [
+            {
+              "actor": "ドラパルト",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ゴリランダー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "protectedDamageCount": 0,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "6/full-board",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "オオニューラ",
+            "move": "インファイト",
+            "target": "ドドゲザン",
+            "note": ""
+          },
+          {
+            "actor": "ガブリアス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.5086565904579,
+        "generated": 11,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 5.568950428629589
+          },
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "ペリッパー",
+                "note": ""
+              }
+            ],
+            "score": 4.912102531569021
+          },
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "インファイト",
+                "target": "ペリッパー",
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.861201549579251
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "6/cleanup",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "オオニューラ",
+            "move": "インファイト",
+            "target": "ドドゲザン",
+            "note": ""
+          },
+          {
+            "actor": "ガブリアス",
+            "move": "ドラゴンクロー",
+            "target": "ペリッパー",
+            "note": "先手KO後の無駄打ち回避"
+          }
+        ],
+        "score": 22.5744212819394,
+        "generated": 10,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "インファイト",
+                "target": "ペリッパー",
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 21.174421281939406
+          },
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "いわなだれ",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "ドドゲザン",
+                "note": ""
+              }
+            ],
+            "score": 19.59983403226166
+          },
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "いわなだれ",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "ペリッパー",
+                "note": ""
+              }
+            ],
+            "score": 19.59983403226166
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "covered": [
+          "ドドゲザン",
+          "ペリッパー"
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "6/trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "オオニューラ",
+            "move": "インファイト",
+            "target": "ドドゲザン",
+            "note": ""
+          },
+          {
+            "actor": "ガブリアス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.9586565904579,
+        "generated": 12,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 6.018950428629588
+          },
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "インファイト",
+                "target": "ドドゲザン",
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "ペリッパー",
+                "note": ""
+              }
+            ],
+            "score": 5.968984160722003
+          },
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "ペリッパー",
+                "note": ""
+              }
+            ],
+            "score": 5.670201198868618
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "6/tailwind",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "オオニューラ",
+            "move": "インファイト",
+            "target": "ドドゲザン",
+            "note": ""
+          },
+          {
+            "actor": "ガブリアス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.9586565904579,
+        "generated": 11,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 6.018950428629588
+          },
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "インファイト",
+                "target": "ドドゲザン",
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "ペリッパー",
+                "note": "先手KO後の無駄打ち回避"
+              }
+            ],
+            "score": 5.968984160722003
+          },
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "ペリッパー",
+                "note": ""
+              }
+            ],
+            "score": 5.670201198868618
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "6/screens",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "オオニューラ",
+            "move": "インファイト",
+            "target": "ドドゲザン",
+            "note": ""
+          },
+          {
+            "actor": "ガブリアス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.5086565904579,
+        "generated": 11,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 5.568950428629589
+          },
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "インファイト",
+                "target": "ペリッパー",
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.799906589583918
+          },
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "ペリッパー",
+                "note": ""
+              }
+            ],
+            "score": 4.362102531569021
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "6/protect-switch",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "オオニューラ",
+            "move": "インファイト",
+            "target": "ドドゲザン",
+            "note": ""
+          },
+          {
+            "actor": "ガブリアス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.5086565904579,
+        "generated": 11,
+        "alternatives": [
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 5.568950428629589
+          },
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "ドラゴンクロー",
+                "target": "ペリッパー",
+                "note": ""
+              }
+            ],
+            "score": 4.912102531569021
+          },
+          {
+            "actions": [
+              {
+                "actor": "オオニューラ",
+                "move": "インファイト",
+                "target": "ペリッパー",
+                "note": ""
+              },
+              {
+                "actor": "ガブリアス",
+                "move": "まもる",
+                "target": null,
+                "note": ""
+              }
+            ],
+            "score": 4.861201549579251
+          }
+        ],
+        "scenarios": [
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "attack",
+              "move": "たいあたり"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ],
+          [
+            {
+              "actor": "ドドゲザン",
+              "kind": "support",
+              "move": "まもる"
+            },
+            {
+              "actor": "ペリッパー",
+              "kind": "attack",
+              "move": "たいあたり"
+            }
+          ]
+        ],
+        "protectedDamageCount": 0,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "last-survivor-has-action",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "じしん",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "text": "参考推定：ダメージ・素早さ・推奨は未検証条件を含みます。相手行動・交代・複数ターンの展開は未確定です。未確認の特性・持ち物・配分で結果が変わります。五分49残存数不利・総HP有利第一推奨複数読みガブリアス: じしん → 相手全体安定度：相手行動依存ガブリアスのじしん：両方推定KO / ガブリアス→ガオガエン：計算上1発（推定） / ガブリアス→リキキリン：計算上1発（推定）警戒：ガオガエンを守って有利ターンを進める（推定）。相性・HP・素早さ・確認技から最も安定する組み合わせを選択。他の選択肢・判断根拠判断根拠（詳細）：ガブリアスのじしん：両方推定KO。警戒する勝ち筋「ガオガエンを守って有利タ"
+      }
+    },
+    {
+      "id": "one-foe-no-dead-target",
+      "passed": true,
+      "evidence": [
+        {
+          "actor": "ガブリアス",
+          "move": "じしん",
+          "target": null,
+          "note": ""
+        },
+        {
+          "actor": "サーフゴー",
+          "move": "まもる",
+          "target": null,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "psychic-terrain-no-fake-out",
+      "passed": true,
+      "evidence": [
+        {
+          "actor": "ゴリランダー",
+          "move": "まもる",
+          "target": null,
+          "note": ""
+        },
+        {
+          "actor": "ドラパルト",
+          "move": "りゅうのはどう",
+          "target": "ガブリアス",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "lethal-ally-spread-avoided",
+      "passed": true,
+      "evidence": [
+        {
+          "actor": "ガブリアス",
+          "move": "じしん",
+          "target": null,
+          "note": ""
+        },
+        {
+          "actor": "サーフゴー",
+          "move": "まもる",
+          "target": null,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "repeated-protect-remains-uncertain",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "perish-escape-not-protect",
+      "passed": true,
+      "evidence": [
+        {
+          "actor": "ガブリアス",
+          "kind": "switch",
+          "switchTo": "ミロカロス",
+          "move": "交代",
+          "target": null,
+          "note": "交代"
+        },
+        {
+          "actor": "サーフゴー",
+          "move": "まもる",
+          "target": null,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "old-ko-slot-needs-no-repeat-input",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "new-ko-still-needs-action-observation",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "better-scenario-never-lowers-rank-0.01",
+      "passed": true,
+      "evidence": {
+        "old": 0,
+        "improved": 0.061000000000000006
+      }
+    },
+    {
+      "id": "better-scenario-never-lowers-rank-0.1",
+      "passed": true,
+      "evidence": {
+        "old": 0,
+        "improved": 0.6100000000000001
+      }
+    },
+    {
+      "id": "better-scenario-never-lowers-rank-0.5",
+      "passed": true,
+      "evidence": {
+        "old": 0,
+        "improved": 3.0500000000000003
+      }
+    },
+    {
+      "id": "empty-battle-never-completes-guide",
+      "passed": true,
+      "evidence": null
+    }
+  ],
+  "total": 48,
+  "successful": 48,
+  "differential": {
+    "completion": false,
+    "oracle": "pokemon-showdown@0.11.10",
+    "scenarios": 36,
+    "comparisons": 576,
+    "speedComparisons": 72,
+    "priorityComparisons": 36,
+    "orderComparisons": 72,
+    "failureCount": 0,
+    "failures": [],
+    "scope": "Actual page outgoing/incoming adapters with explicit raw stats; selected adoption-120 matchups. Not full AP/species data, legality, RNG or complete match certification."
+  },
+  "browserErrors": [],
+  "sourceSha256": {
+    "index.html": "9baeb926a1cb632ed46a8035c47016a71ea318c3d6ab75cb3a8e451cc811d607",
+    "live-practical-scenarios.js": "a6b8ab27d2474ed899fecccdc966a2da9af1d21303a6d6ee4b2b4d55ab82b1e7",
+    "live-practical-oracle.js": "500e1f508e274f565e4a24077327ebe7f5c263922caa6125007f340dac753a7f",
+    "browser_live_practical_test.py": "5df2ddf5100d7bbeb09c68ebfeceee1303083e366abaa7f89028f6c12551a4cb"
+  }
+}

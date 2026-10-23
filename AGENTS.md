@@ -1,5 +1,11 @@
 # 継続開発契約
 
+## 最新：c089a19基準のv2.9.14最終操作・推奨修正
+
+LIVE_PRACTICAL_AUDIT.md/PRACTICE_RELEASE_REPORT.mdを先に読む。最新ユーザー指示は、既存UI/データを保持した実戦操作・重大誤推奨の限定修正を許可し、v2.9.14 ZIPを要求する。以下の旧「実行ファイル変更なし」方針より優先する。公式一覧・規約の追加調査は対象外。対戦中の利用許可は未確認のまま。
+
+全142回帰（既存140＋追加2）、48条件、PC連続入力、4版移行と、実ZIP展開後の5件を検証する。新配布はrelease/practice-v2.9.14/のみ。全回帰→evaluate-tournament-practical.py→evaluate-practice-release.py→build-practice-release.py→verify-practice-release.py。旧v2.9.13の2つのZIPを上書きしない。一般候補網羅へ戻らず、completion:false、main/公開サイト不変更を維持する。
+
 ## 最新指示：45cf644から公式再照合・練習専用ZIP
 
 OFFICIAL_CATALOG_REVIEW.mdとPRACTICE_RELEASE_REPORT.mdを先に読む。新機能や実行ファイル/UI/データ変更を行わず、140回帰とPC E2Eを維持する。公式ポケモン/技/持ち物一覧が取得できなければ未確認のまま。最新ユーザー指示は技術合格時の「大会前の練習・検証専用ZIP」を認めており、以下の旧大会用ZIP保留条件を練習ZIPに誤適用しない。対戦中の使用許可や公式大会適合は認定しない。

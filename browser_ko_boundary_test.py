@@ -110,7 +110,7 @@ try:
  assert result.returncode==0,result.stderr[-4000:]
  report=json.loads(result.stdout);report.update(elapsedSeconds=round(time.monotonic()-started,3),species=344,megaSpecies=82,apValues=list(range(33)),natureCount=len(NATURES),profilePointLimit=66,
   sourceSha256={n:sha256((ROOT/n).read_bytes()).hexdigest() for n in ['index.html','battle-core.js','browser_ko_boundary_test.py','ko-boundary-oracle.js','ADOPTION_120_NORMALIZED.json','reference-data/stats-moves/showdown-normalized.json']},
-  presentation=data['presentation'],browserErrors=errors,baselineVersion='v2.9.13',
+  presentation=data['presentation'],browserErrors=errors,baselineVersion='v2.9.14',
   limitations=['AP numeric equivalence at Lv50/IV31; official AP rules, standard EV budget and different IVs/levels not certified',
    '120 stored profiles are historical tournament 30 plus ranked fallback 90, not current event measured top 120',
    'No-effect ability controls isolate basic modifiers; Sturdy/Sash are explicit test conditions, not species ability legality',

@@ -1,4 +1,4 @@
-> 最新の45cf644基準監査はPRACTICE_RELEASE_REPORT.md/OFFICIAL_CATALOG_REVIEW.mdを参照。最新指示で大会前の練習・検証専用ZIPを作成済み。以下の大会用ZIP保留判定は履歴として保持し、練習専用配布や対戦中の利用許諾と混同しない。
+> 最新のc089a19基準v2.9.14監査はLIVE_PRACTICAL_AUDIT.md/PRACTICE_RELEASE_RESULTS.jsonを参照。以下は過去の大会用ZIP判定として保持し、最新の練習専用配布や対戦中の利用許可と混同しない。
 
 # v2.9.13 最終ZIP作成前の一括監査
 

@@ -51144,11 +51144,11 @@
     "レシーバー"
   ],
   "criticalWork": [
-    "Preserve v2.9.13 runtime/UI/data byte-for-byte at 45cf644; no new features or broad mechanics work",
-    "Practice-only ZIP verified (140 regressions, actual extracted archive 4/4); preserve it and all historical backups",
-    "Official Pokemon, move/Pokemon-move-pair and item catalogs remain unconfirmed until complete primary-source bodies can be retrieved",
-    "Do not infer permission for independent browser support tools during official matches; no organizer messages authorized or sent",
-    "Do not run the old frozen packager or deploy; main and public site unchanged; completion:false"
+    "Preserve the v2.9.14 validated runtime and unchanged c089a19 UI/catalog/adoption data; no broad feature expansion",
+    "Keep v2.9.13 backups immutable; v2.9.14 all 142 regressions and real extracted ZIP 5/5 passed",
+    "Recommendation optimality and unknown opponent actions remain estimates; do not display certainty",
+    "Official catalog/rules research excluded from this iteration; existing unconfirmed state inherited",
+    "No main/public deployment or scheduled actions; completion:false"
   ],
   "outOfCatalogEvidence": [
     {
@@ -51279,13 +51279,14 @@
     "report": "PRACTICE_RELEASE_REPORT.md",
     "results": "PRACTICE_RELEASE_RESULTS.json",
     "artifact": {
-      "archive": "release/practice-v2.9.13/gc2027ii-v2.9.13-practice-verification.zip",
-      "sha256": "a1113c059faada5cada8b28b57d44227e18ae1aeeeb3932069ed739335d298da",
-      "verification": "release/practice-v2.9.13/ARTIFACT_VERIFICATION.json",
-      "filesVerified": 46,
-      "extractedArchiveChecksPassed": 4,
-      "extractedArchiveChecksTotal": 4,
-      "sourceBaseCommit": "45cf64448234612268e0c7ba08bc5b3af7a5fe19",
+      "version": "v2.9.14",
+      "archive": "release/practice-v2.9.14/gc2027ii-v2.9.14-practice-verification.zip",
+      "sha256": "a36b1119c6e08e20e35ac73131e963f2564dbdf30a2e60c8a9c187c072b91095",
+      "verification": "release/practice-v2.9.14/ARTIFACT_VERIFICATION.json",
+      "filesVerified": 49,
+      "extractedArchiveChecksPassed": 5,
+      "extractedArchiveChecksTotal": 5,
+      "sourceBaseCommit": "c089a1937d7fccc34e2b26a25087496cecc9a982",
       "purpose": "pre-tournament-practice-and-verification-only",
       "status": "practice-verification-only-pass",
       "sash64d8d75Included": true,

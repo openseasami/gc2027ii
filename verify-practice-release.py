@@ -6,9 +6,9 @@ from hashlib import sha256
 from datetime import datetime, timezone
 import json, shutil, subprocess, sys, zipfile
 ROOT = Path(__file__).resolve().parent
-DEST = ROOT / 'release/practice-v2.9.13'
-ARCHIVE = 'gc2027ii-v2.9.13-practice-verification.zip'
-TESTS = ['test-pc-launcher.py', 'browser_pc_trial_test.py', 'browser_prezip_test.py', 'browser_full_match_test.py']
+DEST = ROOT / 'release/practice-v2.9.14'
+ARCHIVE = 'gc2027ii-v2.9.14-practice-verification.zip'
+TESTS = ['test-pc-launcher.py', 'browser_pc_trial_test.py', 'browser_prezip_test.py', 'browser_full_match_test.py', 'browser_live_workflow_test.py']
 
 def digest(data): return sha256(data).hexdigest()
 def main():
@@ -41,7 +41,7 @@ def main():
                 assert manifest['runtimeSha256'] == baseline['runtimeSha256']
                 for name, expected in baseline['runtimeSha256'].items():
                     assert digest(z.read(name)) == digest((ROOT/name).read_bytes()) == expected, name
-                for name in ['TEST_RESULTS.json', 'OFFICIAL_MC_AUDIT.json', 'OFFICIAL_CATALOG_COMPARISON.json']:
+                for name in ['TEST_RESULTS.json', 'OFFICIAL_MC_AUDIT.json', 'OFFICIAL_CATALOG_COMPARISON.json', 'LIVE_PRACTICAL_RESULTS.json', 'LIVE_WORKFLOW_RESULTS.json']:
                     assert z.read(name) == (ROOT/name).read_bytes(), 'Stale bundled evidence: ' + name
                 report['filesVerified'] = len(names)
                 z.extractall(target)
@@ -56,9 +56,9 @@ def main():
                 result = subprocess.run([sys.executable, str(target/name)], cwd=target, text=True, capture_output=True, timeout=180)
                 report['tests'].append(dict(command=name, exitCode=result.returncode,
                     stdout=result.stdout[-4000:], stderr=result.stderr[-4000:]))
-            report['passed'] = len(report['tests']) == 4 and all(t['exitCode'] == 0 for t in report['tests'])
+            report['passed'] = len(report['tests']) == 5 and all(t['exitCode'] == 0 for t in report['tests'])
     finally:
         (DEST / 'ARTIFACT_VERIFICATION.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     assert report['passed'], report['tests']
-    print(f'PASS practice ZIP: {report["filesVerified"]} files, extraction/launcher/PC/offline/full observed match 4/4; SHA256 {checksum}')
+    print(f'PASS practice ZIP: {report["filesVerified"]} files, extraction/launcher/PC/offline/full observed match/continuous workflow 5/5; SHA256 {checksum}')
 if __name__ == '__main__': main()

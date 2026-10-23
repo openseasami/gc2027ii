@@ -1,0 +1,1029 @@
+{
+  "completion": false,
+  "passed": false,
+  "scope": "Explicit joint-planner constraints and local Gen9 damage/speed/order comparison, not policy optimality or official Champions certification",
+  "checks": [
+    {
+      "id": "1/full-board",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "じしん",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "サーフゴー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 4.2992616429074815,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "1/cleanup",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "じしん",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "サーフゴー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 8.687063574295784,
+        "generated": 10,
+        "covered": [
+          "ガオガエン",
+          "リキキリン"
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "1/trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "じしん",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "サーフゴー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 3.2992616429074806,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "1/tailwind",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "じしん",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "サーフゴー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 3.2992616429074806,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "1/screens",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "じしん",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "サーフゴー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 3.9822456010696277,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "1/protect-switch",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ガブリアス",
+            "move": "じしん",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "サーフゴー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 4.2992616429074815,
+        "generated": 12,
+        "protectedDamageCount": 0,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "2/full-board",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 3.9857232162474254,
+        "generated": 15,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "2/cleanup",
+      "passed": false,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "ウッドハンマー",
+            "target": "アシレーヌ",
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 5.8103696381310455,
+        "generated": 11,
+        "covered": [
+          "アシレーヌ"
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "2/trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "ウッドハンマー",
+            "target": "アシレーヌ",
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 4.104603303686938,
+        "generated": 14,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "2/tailwind",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "ウッドハンマー",
+            "target": "アシレーヌ",
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 4.104603303686938,
+        "generated": 15,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "2/screens",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 3.9857232162474254,
+        "generated": 15,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "2/protect-switch",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ゴリランダー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドラパルト",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 3.9857232162474254,
+        "generated": 15,
+        "protectedDamageCount": 0,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "3/full-board",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ペリッパー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ブリジュラス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 5.518936948555278,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "3/cleanup",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ペリッパー",
+            "move": "なみのり",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ブリジュラス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 8.627063574295784,
+        "generated": 10,
+        "covered": [
+          "ガオガエン",
+          "ニンフィア"
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "3/trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ペリッパー",
+            "move": "ウェザーボール",
+            "target": "ガオガエン",
+            "note": ""
+          },
+          {
+            "actor": "ブリジュラス",
+            "move": "ラスターカノン",
+            "target": "ニンフィア",
+            "note": "先手KO後の無駄打ち回避"
+          }
+        ],
+        "score": 7.278703554704418,
+        "generated": 11,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "3/tailwind",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ペリッパー",
+            "move": "ウェザーボール",
+            "target": "ガオガエン",
+            "note": ""
+          },
+          {
+            "actor": "ブリジュラス",
+            "move": "ラスターカノン",
+            "target": "ニンフィア",
+            "note": ""
+          }
+        ],
+        "score": 7.278703554704418,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "3/screens",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ペリッパー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ブリジュラス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 5.518936948555278,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "3/protect-switch",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ペリッパー",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ブリジュラス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 5.518936948555278,
+        "generated": 12,
+        "protectedDamageCount": 0,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "4/full-board",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "アシレーヌ",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ウルガモス",
+            "move": "かえんほうしゃ",
+            "target": "ドドゲザン",
+            "note": ""
+          }
+        ],
+        "score": 8.443871735780485,
+        "generated": 11,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "4/cleanup",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "アシレーヌ",
+            "move": "ハイパーボイス",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ウルガモス",
+            "move": "かえんほうしゃ",
+            "target": "ガブリアス",
+            "note": ""
+          }
+        ],
+        "score": 16.99905569081362,
+        "generated": 10,
+        "covered": [
+          "ドドゲザン",
+          "ガブリアス"
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "4/trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "アシレーヌ",
+            "move": "ムーンフォース",
+            "target": "ガブリアス",
+            "note": ""
+          },
+          {
+            "actor": "ウルガモス",
+            "move": "かえんほうしゃ",
+            "target": "ガブリアス",
+            "note": ""
+          }
+        ],
+        "score": 9.816562791857606,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "4/tailwind",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "アシレーヌ",
+            "move": "ムーンフォース",
+            "target": "ガブリアス",
+            "note": ""
+          },
+          {
+            "actor": "ウルガモス",
+            "move": "かえんほうしゃ",
+            "target": "ガブリアス",
+            "note": ""
+          }
+        ],
+        "score": 9.362272124129126,
+        "generated": 11,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "4/screens",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "アシレーヌ",
+            "move": "ムーンフォース",
+            "target": "ガブリアス",
+            "note": ""
+          },
+          {
+            "actor": "ウルガモス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.382570373807291,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "4/protect-switch",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "アシレーヌ",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ウルガモス",
+            "move": "かえんほうしゃ",
+            "target": "ドドゲザン",
+            "note": ""
+          }
+        ],
+        "score": 8.443871735780485,
+        "generated": 11,
+        "protectedDamageCount": 0,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "5/full-board",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ニンフィア",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドドゲザン",
+            "move": "ドゲザン",
+            "target": "ドラパルト",
+            "note": ""
+          }
+        ],
+        "score": 6.487626398334268,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "5/cleanup",
+      "passed": false,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ニンフィア",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドドゲザン",
+            "move": "ドゲザン",
+            "target": "ゴリランダー",
+            "note": ""
+          }
+        ],
+        "score": 6.155289981966427,
+        "generated": 10,
+        "covered": [
+          "ゴリランダー"
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "5/trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ニンフィア",
+            "move": "ムーンフォース",
+            "target": "ドラパルト",
+            "note": ""
+          },
+          {
+            "actor": "ドドゲザン",
+            "move": "ドゲザン",
+            "target": "ドラパルト",
+            "note": ""
+          }
+        ],
+        "score": 6.868352994515792,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "5/tailwind",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ニンフィア",
+            "move": "ムーンフォース",
+            "target": "ドラパルト",
+            "note": ""
+          },
+          {
+            "actor": "ドドゲザン",
+            "move": "ドゲザン",
+            "target": "ドラパルト",
+            "note": ""
+          }
+        ],
+        "score": 6.051475443887248,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "5/screens",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ニンフィア",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドドゲザン",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 5.518936948555278,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "5/protect-switch",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "ニンフィア",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          },
+          {
+            "actor": "ドドゲザン",
+            "move": "ドゲザン",
+            "target": "ドラパルト",
+            "note": ""
+          }
+        ],
+        "score": 6.487626398334268,
+        "generated": 12,
+        "protectedDamageCount": 0,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "6/full-board",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "オオニューラ",
+            "move": "インファイト",
+            "target": "ドドゲザン",
+            "note": ""
+          },
+          {
+            "actor": "ガブリアス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.021581428051429,
+        "generated": 11,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "6/cleanup",
+      "passed": false,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "オオニューラ",
+            "move": "インファイト",
+            "target": "ペリッパー",
+            "note": ""
+          },
+          {
+            "actor": "ガブリアス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.781646557560067,
+        "generated": 10,
+        "covered": [
+          "ペリッパー"
+        ],
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "6/trick-room",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "オオニューラ",
+            "move": "インファイト",
+            "target": "ドドゲザン",
+            "note": ""
+          },
+          {
+            "actor": "ガブリアス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.4715814280514286,
+        "generated": 12,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "6/tailwind",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "オオニューラ",
+            "move": "インファイト",
+            "target": "ドドゲザン",
+            "note": ""
+          },
+          {
+            "actor": "ガブリアス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.4715814280514286,
+        "generated": 11,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "6/screens",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "オオニューラ",
+            "move": "インファイト",
+            "target": "ドドゲザン",
+            "note": ""
+          },
+          {
+            "actor": "ガブリアス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.021581428051429,
+        "generated": 11,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "6/protect-switch",
+      "passed": true,
+      "evidence": {
+        "actions": [
+          {
+            "actor": "オオニューラ",
+            "move": "インファイト",
+            "target": "ドドゲザン",
+            "note": ""
+          },
+          {
+            "actor": "ガブリアス",
+            "move": "まもる",
+            "target": null,
+            "note": ""
+          }
+        ],
+        "score": 6.021581428051429,
+        "generated": 11,
+        "protectedDamageCount": 0,
+        "legal": true,
+        "readonly": true,
+        "damage": true
+      }
+    },
+    {
+      "id": "last-survivor-has-action",
+      "passed": false,
+      "evidence": {
+        "actions": null,
+        "text": "自分の先発を選択してください。"
+      }
+    },
+    {
+      "id": "one-foe-no-dead-target",
+      "passed": false,
+      "evidence": null
+    },
+    {
+      "id": "psychic-terrain-no-fake-out",
+      "passed": true,
+      "evidence": [
+        {
+          "actor": "ゴリランダー",
+          "move": "まもる",
+          "target": null,
+          "note": ""
+        },
+        {
+          "actor": "ドラパルト",
+          "move": "まもる",
+          "target": null,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "lethal-ally-spread-avoided",
+      "passed": true,
+      "evidence": [
+        {
+          "actor": "ガブリアス",
+          "move": "じしん",
+          "target": null,
+          "note": ""
+        },
+        {
+          "actor": "サーフゴー",
+          "move": "まもる",
+          "target": null,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "repeated-protect-remains-uncertain",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "perish-escape-not-protect",
+      "passed": true,
+      "evidence": [
+        {
+          "actor": "ガブリアス",
+          "kind": "switch",
+          "switchTo": "ミロカロス",
+          "move": "交代",
+          "target": null,
+          "note": "交代"
+        },
+        {
+          "actor": "サーフゴー",
+          "move": "まもる",
+          "target": null,
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "total": 42,
+  "successful": 37,
+  "differential": {
+    "completion": false,
+    "oracle": "pokemon-showdown@0.11.10",
+    "scenarios": 36,
+    "comparisons": 576,
+    "speedComparisons": 72,
+    "priorityComparisons": 36,
+    "orderComparisons": 72,
+    "failureCount": 0,
+    "failures": [],
+    "scope": "Actual page outgoing/incoming adapters with explicit raw stats; selected adoption-120 matchups. Not full AP/species data, legality, RNG or complete match certification."
+  },
+  "browserErrors": [],
+  "sourceSha256": {
+    "index.html": "7b23377c4f0d341ace3b70aca1552671b29130e0385cde18329dad85ea0b1bf7",
+    "live-practical-scenarios.js": "3093b7f41809055c6c3892d0fad6a2df39214583c16860ba5089bd9e20f0c9c5",
+    "live-practical-oracle.js": "500e1f508e274f565e4a24077327ebe7f5c263922caa6125007f340dac753a7f",
+    "browser_live_practical_test.py": "5df2ddf5100d7bbeb09c68ebfeceee1303083e366abaa7f89028f6c12551a4cb"
+  }
+}

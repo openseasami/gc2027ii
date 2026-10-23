@@ -1,61 +1,11 @@
-v2.9.13
-PC起動方法: PC_TRIAL_START.md / start-pc-trial.cmd
-開発途中です。完成判定はfalse。ローカル大会向け検査は123/123成功、大会仕様と実端末操作は未確認。
-大会向け条件/結果: TOURNAMENT_PRACTICAL_GATES.md / TOURNAMENT_PRACTICAL_RESULTS.json
-今回の実装・検証・残件: DEVELOPMENT_CHECKPOINT.md / COMPLETION_REPORT.md
-網羅性の5分類と元91件の監査: COVERAGE_AUDIT.md / ABILITY_UNSUPPORTED_REVIEW.json
-全テスト再実行: python run-development-checks.py（requirements-dev.txtとChromiumが必要）
-公開用一式: release/gc2027ii-v2.9.13-development.zip
-mainと公開サイトは変更していません。
-
-以下は過去の版の更新履歴です。検証範囲と完成判定の最新情報は上記レポートを参照してください。
-公開用ZIPにはHTML、全外部JSエンジン、Service Worker、manifest、アイコンを同梱します。完成版ではありません。
-ブラウザ版: https://openseasami.github.io/gc2027ii/
-今回の変更: ポイズンヒール、あめうけざら、アイスボディ、サンパワー、かんそうはだの天候・状態異常に起因するターン末HP影響を推奨予測に反映。観測HPを自動変更しません。
-検証: node verify-release.js と node test-residual.js
-実ブラウザでの検証は未実施。
-今回追加: 連続接触技の途中KOを反射ダメージ・状態異常リスクに概算反映。
-追加検証: node test-contact-ko.js
-
-今回追加: 実際の登場時特性・残ターン処理とターン確定の保存失敗/描画失敗ロールバック統合テスト。
-
-v2.0.9: KO後の登場時特性・天候競合・いかくの実関数テスト `node test-ko-entry-actual.js` を追加。
-
-v2.0.9: 同速登場時特性の再現性と45秒モードON/OFFの回帰テストを追加。戦闘ロジック変更なし。
-
-v2.0.9: 同速登場時特性の再現性と45秒モードON/OFFの回帰テストを追加。戦闘ロジック変更なし。
-
-v2.1.3: 既存28スクリプトの一括回帰検証・Chromium DOMスモークテスト追加。HTTPアクセス制限により公開URL・Service Worker・再読み込みE2Eは未検証。
-
-v2.1.3: フィールド接地判定を先制技・フィールドシード・ターン終了HP予測にも統合し、専用テスト10項目を追加。
-
-
-v2.1.3: 接地判定で固定特性「ふゆう」のメガガブリアスZ・メガマフォクシーを考慮。くろいてっきゅう例外は維持。テスト: node test-grounding-form.js。完成判定は未達。
-
-
-v2.1.3: コータスのふんか/しおふきのHP依存威力とボディプレスの防御参照を自分・相手の計算双方へ反映。専用テスト追加。未検証のあくび・クリアスモッグ・道具相互作用は完成扱いしない。
-
-v2.1.5: 45秒モードで相手のあくび・クリアスモッグを選択した際だけ、対象・命中・効果確認ボタンを表示。不明な場合は確定せずターンを進める。
-
-v2.1.6: 45秒モードの自分側であくび・クリアスモッグの命中対象をボタン確認可能。任意入力で進行停止を防止。
-
-v2.1.7: あくびの眠り移行直前にエレキ・ミストフィールドと接地状態を再判定。後からフィールドが変わった場合の誤睡眠を防止。
-
-v2.1.8: あくび命中時点のエレキ／ミストフィールドによる眠気付与防止を追加。眠り発生時だけの判定では取りこぼすケースを修正。
-
-v2.2.2: もくたん・ひのたまプレートのほのお技1.2倍、およびこだわりメガネ/ハチマキの攻撃実数値補正を自分/相手の主要ダメージ予測に追加。相手の所持品は確認済みの場合のみ適用。旧版のHTML・SW・READMEの不一致も修正。
-
-v2.2.2: ウェザーボールのタイプ・威力と「ノーてんき」「エアロック」の天候効果無効化を整合。天候表示は維持。テスト: node test-weather-ball-effective-weather.js。
-
-v2.2.4: 全体技・天候の補正を固定小数点のポケモン式端数処理へ変更。ランダム補正の切り捨ては維持。独立数値基準テストを追加。地形と一部能力補正の計算は引き続き推定。
-
-v2.5.1: 共通の戦闘計算カーネル battle-core.js を導入。Web版では必ず同ファイルも上書きしてください。採用率の判定は PRIORITY_POLICY.json / PRIORITY_SCOPE.md に記録。
-
-v2.8.4: 独立整数演算オラクルによるダメージモデル差分照合を追加 (45,005条件)。これは現行モデル内の整合性検証であり、実機仕様との完全一致を保証しません。
-
-
-v2.8.9: 出典・閾値・重複・既存データとの衝突を検査する採用率CSV一括取込（import-adoption-batch.py）を追加。外部取得やダメージ照合は未完了。
-
-v2.9.0: 統計ページの上位10内から未登録6種・技と特性75観測を出典付きで追加（計12/262種）。未掲載252ではなく未登録250種は未調査。実機照合・全262種収集は未完了。
-
-主要対面検証: MAIN_MATCHUP_VALIDATION.md / MAIN_MATCHUP_DIFFERENTIAL_RESULTS.json。PC実機操作はユーザー確認済み。UI維持。
+v2.9.14
+PC起動: PC_TRIAL_START.md / start-pc-trial.cmd（Python 3）
+大会前の練習・検証専用。全仕様completion:false。
+実戦操作・推奨の限定修正: LIVE_PRACTICAL_AUDIT.md
+検証結果・残件・再開: TEST_RESULTS.json / DEVELOPMENT_CHECKPOINT.md / COMPLETION_REPORT.md
+旧版v2.9.13 ZIPはバックアップとして維持する。
+公式一覧と大会規約の追加調査は対象外。対戦中の外部ツール利用許可は未確認。
+全回帰: work/test-venv/bin/python run-development-checks.py
+練習版判定: python evaluate-tournament-practical.py / python evaluate-practice-release.py
+配布: release/practice-v2.9.14/gc2027ii-v2.9.14-practice-verification.zip
+mainと公開サイトは変更しない。

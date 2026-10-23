@@ -1766,6 +1766,30 @@
         "duringMatchUseAuthorized": false,
         "completion": false
       }
+    },
+    {
+      "at": "2026-10-23T11:18:09.245233+00:00",
+      "commit": "c089a1937d7fccc34e2b26a25087496cecc9a982",
+      "reason": "v2.9.14限定操作/推奨修正。36盤面＋12制約、局所差分0不一致、142/142全回帰、4版移行、実ZIP展開5/5成功。UI/データ保持。公式調査は対象外、completion:false、main/公開サイト不変更。",
+      "completion": false,
+      "artifact": {
+        "version": "v2.9.14",
+        "archive": "release/practice-v2.9.14/gc2027ii-v2.9.14-practice-verification.zip",
+        "sha256": "a36b1119c6e08e20e35ac73131e963f2564dbdf30a2e60c8a9c187c072b91095",
+        "verification": "release/practice-v2.9.14/ARTIFACT_VERIFICATION.json",
+        "filesVerified": 49,
+        "extractedArchiveChecksPassed": 5,
+        "extractedArchiveChecksTotal": 5,
+        "sourceBaseCommit": "c089a1937d7fccc34e2b26a25087496cecc9a982",
+        "purpose": "pre-tournament-practice-and-verification-only",
+        "status": "practice-verification-only-pass",
+        "sash64d8d75Included": true,
+        "all18RegisteredResistBerriesIncluded": true,
+        "fullTournamentRulesCertified": false,
+        "duringMatchToolPermission": "unconfirmed",
+        "duringMatchUseAuthorized": false,
+        "completion": false
+      }
     }
   ],
   "foundation": {

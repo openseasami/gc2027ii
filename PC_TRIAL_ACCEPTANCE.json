@@ -4,8 +4,8 @@
   "readiness": "practice-verification-only-pass",
   "implementationCommit": "042aa330e1353f6d88756bd80e43c3569b13eb3b",
   "testCommands": {
-    "passed": 140,
-    "total": 140
+    "passed": 142,
+    "total": 142
   },
   "engine": "Linux Chromium 154.0.8037.57",
   "compatibilityProfiles": [
@@ -41,7 +41,7 @@
   },
   "uiPreservation": "UI_PRESERVATION_BASELINE.json",
   "mainMatchupValidation": "MAIN_MATCHUP_VALIDATION.md",
-  "runtimeVersion": "v2.9.13",
+  "runtimeVersion": "v2.9.14",
   "sourceBaseCommit": "3a4362fdf01968dc452b5b7f8b17206e2984b00b",
   "releaseDecision": "FINAL_PREZIP_AUDIT_RESULTS.json",
   "historicalRc1ArtifactVerification": "release/rc1/RC_ARTIFACT_VERIFICATION.json",
@@ -102,6 +102,25 @@
   },
   "currentTournamentZip": null,
   "practiceArtifact": {
+    "version": "v2.9.14",
+    "archive": "release/practice-v2.9.14/gc2027ii-v2.9.14-practice-verification.zip",
+    "sha256": "a36b1119c6e08e20e35ac73131e963f2564dbdf30a2e60c8a9c187c072b91095",
+    "verification": "release/practice-v2.9.14/ARTIFACT_VERIFICATION.json",
+    "filesVerified": 49,
+    "extractedArchiveChecksPassed": 5,
+    "extractedArchiveChecksTotal": 5,
+    "sourceBaseCommit": "c089a1937d7fccc34e2b26a25087496cecc9a982",
+    "purpose": "pre-tournament-practice-and-verification-only",
+    "status": "practice-verification-only-pass",
+    "sash64d8d75Included": true,
+    "all18RegisteredResistBerriesIncluded": true,
+    "fullTournamentRulesCertified": false,
+    "duringMatchToolPermission": "unconfirmed",
+    "duringMatchUseAuthorized": false,
+    "completion": false
+  },
+  "latestOfficialCatalogReview": "OFFICIAL_CATALOG_COMPARISON.json",
+  "previousPracticeArtifact": {
     "archive": "release/practice-v2.9.13/gc2027ii-v2.9.13-practice-verification.zip",
     "sha256": "a1113c059faada5cada8b28b57d44227e18ae1aeeeb3932069ed739335d298da",
     "verification": "release/practice-v2.9.13/ARTIFACT_VERIFICATION.json",
@@ -118,5 +137,10 @@
     "duringMatchUseAuthorized": false,
     "completion": false
   },
-  "latestOfficialCatalogReview": "OFFICIAL_CATALOG_COMPARISON.json"
+  "livePracticalAudit": {
+    "report": "LIVE_PRACTICAL_AUDIT.md",
+    "results": "LIVE_PRACTICAL_RESULTS.json",
+    "workflow": "LIVE_WORKFLOW_RESULTS.json",
+    "complete": false
+  }
 }

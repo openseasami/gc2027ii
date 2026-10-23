@@ -1,7 +1,7 @@
 {
   "completion": false,
   "scope": "Explicit tactical constraints on actual planner/scenario helpers, not game-theoretic optimality or opponent-prediction calibration",
-  "sourceSha256": "7b23377c4f0d341ace3b70aca1552671b29130e0385cde18329dad85ea0b1bf7",
+  "sourceSha256": "9baeb926a1cb632ed46a8035c47016a71ea318c3d6ab75cb3a8e451cc811d607",
   "total": 28,
   "passed": 28,
   "scenarios": [
@@ -168,18 +168,18 @@
               }
             ],
             "label": "attack",
-            "quick": 8.47247,
+            "quick": 9.94247,
             "values": [
-              17.415399999999998
+              21.6154
             ],
             "aggregate": {
-              "average": 17.415399999999998,
-              "worst": 17.415399999999998,
-              "best": 17.415399999999998,
+              "average": 21.6154,
+              "worst": 21.6154,
+              "best": 21.6154,
               "spread": 0,
-              "score": 17.415399999999998
+              "score": 21.6154
             },
-            "score": 17.415399999999998
+            "score": 21.6154
           },
           {
             "actions": [

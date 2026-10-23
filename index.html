@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Global Challenge 2027 II Support v2.9.13</title>
+<title>Global Challenge 2027 II Support v2.9.14</title>
 <style>
 :root{--bg:#f4f6f8;--panel:#fff;--line:#d8dee8;--text:#18202b;--muted:#667085;--accent:#2563eb;--accent2:#dbeafe;--danger:#b42318;--warn:#fff4cc;--ok:#eaf7ee;--chip:#f8fafc;--violet:#7c3aed}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}button,select{font:inherit}button{cursor:pointer}
@@ -3788,8 +3788,9 @@ function scoreOpponentPair(a,b){
 }
 function opponentPairPredictions(){
   const leads=leadData('opp');
-  if(leads.length<2)return [];
+  if(!leads.length)return [];
   const A=opponentChoicesFor(leads[0]);
+  if(leads.length===1)return A.map(a=>({a,b:null,score:scoreOpponentPair(a,null)})).slice(0,4);
   const B=opponentChoicesFor(leads[1]);
   const pairs=[];
   A.forEach(a=>B.forEach(b=>{
@@ -3802,11 +3803,11 @@ function opponentPairPredictions(){
   // A low-scoring Protect/switch is not forced into the forecast merely because
   // it is technically available: it must stay within eight points of the top.
   const best=pairs[0]?.score??0;
-  const hasKind=(pair,type)=>[pair.a,pair.b].some(a=>
+  const hasKind=(pair,type)=>type==='attack'?[pair.a,pair.b].filter(Boolean).every(a=>a.kind==='attack'):[pair.a,pair.b].some(a=>
     type==='protect' ? a?.kind==='support'&&PROTECT_MOVES.has(a.move)
                      : a?.kind==='switch'
   );
-  for(const type of ['protect','switch']){
+  for(const type of ['attack','protect','switch']){
     if(chosen.length>=4)break;
     if(chosen.some(p=>hasKind(p,type)))continue;
     const candidate=pairs.find(p=>!seen.has(p)&&hasKind(p,type)&&p.score>=best-8);
@@ -3819,6 +3820,7 @@ function opponentPairPredictions(){
   return chosen.sort((x,y)=>y.score-x.score);
 }
 function renderOpponentPredictionAction(a){
+  if(!a)return '';
   const actor=`<span class="opp-pred-actor">${spriteImgHtml(a.actor)}<span>${a.actor}</span></span>`;
   if(a.kind==='switch'){
     const dest=`<span class="opp-pred-switch">${spriteImgHtml(a.switchTo)}<span>${a.switchTo}</span></span>`;
@@ -4023,7 +4025,7 @@ function renderOpponentActions(){
   const box=$('oppActionPrediction');
   if(!box)return;
   const leads=leadData('opp');
-  if(leads.length<2){box.textContent=activeHasKO('opp')?'ターン終了後のKO交代待ち':'未入力';return}
+  if(!leads.length){box.textContent=activeHasKO('opp')?'ターン終了後のKO交代待ち':'未入力';return}
 
   let pairs=opponentPairPredictions();
 
@@ -4042,7 +4044,7 @@ function renderOpponentActions(){
 
   const shown=pairs.slice(0,4);
   box.innerHTML=(shown.map((p,i)=>
-    `<div class="opp-pred-line"><span class="opp-pred-rank">${i+1}</span>${renderOpponentPredictionAction(p.a)} <span style="color:#64748b">＋</span> ${renderOpponentPredictionAction(p.b)}</div>`
+    `<div class="opp-pred-line"><span class="opp-pred-rank">${i+1}</span>${renderOpponentPredictionAction(p.a)}${p.b?' <span style="color:#64748b">＋</span> '+renderOpponentPredictionAction(p.b):''}</div>`
   ).join('')||'予測不可')+
   (shown[0]?`<div class="reason-box"><b>理由：</b>${opponentPredictionReason(shown[0])}</div>`:'')+
   renderOpponentBacklineInference();
@@ -11915,6 +11917,13 @@ function planDamageInsight(actions,scenarioPair=null,turnSimulation=null){
     }
   });
 
+  // Two reliable single-target KOs deserve the same joint-pressure credit
+  // as a spread attack taking both slots. Otherwise a 90%-accurate spread
+  // could outrank two certain hits solely because its damage was double-counted.
+  const reliableSingles=actionSets.filter(x=>!DAMAGE_MOVES[x.action?.move]?.spread)
+    .flatMap(x=>x.insights).filter(d=>d.koChance>=1-1e-10&&(d.accuracy??1)>=1-1e-10&&!d.conditional);
+  if(new Set(reliableSingles.map(d=>d.target)).size>=2)score+=4.2;
+
   combined.forEach(c=>{
     if(c.koChance===1){
       score+=2.8;
@@ -12618,7 +12627,10 @@ function robustTurnAggregate(values,weights){
   const best=Math.max(...values);
   const spread=best-worst;
   // Reliability-biased: expected value + explicit worst-case protection.
-  const score=average*.68+worst*.32-spread*.07;
+  // Penalize downside below the mean, not an improved best-case outcome.
+  // A best-minus-worst penalty made better low-weight outcomes LOWER the score.
+  const downside=Math.max(0,average-worst);
+  const score=average*.68+worst*.32-downside*.07;
   return {average,worst,best,spread,score};
 }
 
@@ -12826,15 +12838,15 @@ function aggregateWinConditionSummary(scenarios,actions){
 
 function exhaustiveRobustTurnPlans(tc,primary,low,secondRead){
   const mine=leadData('my');
-  if(mine.length<2)return null;
+  if(!mine.length)return null;
 
   const A=myActionCandidatesFor(mine[0]);
-  const B=myActionCandidatesFor(mine[1]);
+  const B=mine[1]?myActionCandidatesFor(mine[1]):[null];
   const raw=[];
 
   A.forEach(a=>B.forEach(b=>{
-    if(!legalMyActionPair(a,b))return;
-    raw.push(normalizeGeneratedPlan([a,b],mine));
+    if(b?!legalMyActionPair(a,b):!recommendationActionIsLegal(a))return;
+    raw.push(normalizeGeneratedPlan([a,b].filter(Boolean),mine));
   }));
 
   // Remove duplicate joint plans created by later normalization.
@@ -12933,7 +12945,7 @@ function recommendationActionIsLegal(action){
   return true;
 }
 function recommendationPairIsLegal(actions){
-  if(!Array.isArray(actions)||actions.length!==2)return false;
+  if(!Array.isArray(actions)||!actions.length||actions.length!==leadData('my').length)return false;
   if(!actions.every(recommendationActionIsLegal)||new Set(actions.map(a=>a.actor)).size!==actions.length)return false;
   const sw=actions.filter(a=>a.switchTo).map(a=>a.switchTo);
   return new Set(sw).size===sw.length;
@@ -12943,8 +12955,9 @@ function sanitizeRecommendationPlan(plan,fallback){
   if(fallback&&recommendationPairIsLegal(fallback.actions))return fallback;
   const mine=leadData('my');
   const pools=mine.map(myActionCandidatesFor);
-  for(const a of pools[0]||[])for(const b of pools[1]||[]){
-    if(recommendationPairIsLegal([a,b]))return {key:'stable',label:'有効候補',actions:[a,b]};
+  for(const a of pools[0]||[])for(const b of pools[1]||(mine.length===1?[null]:[])){
+    const actions=[a,b].filter(Boolean);
+    if(recommendationPairIsLegal(actions))return {key:'stable',label:'有効候補',actions};
   }
   return {key:'stable',label:'候補なし',actions:[],unavailable:true};
 }
@@ -13070,7 +13083,7 @@ function renderMyRecommendations(){
  }
 
  const mine=leadData('my'),threats=threatInfo(),primary=threats[0],low=leadData('opp').slice().sort((a,b)=>(a.d.hp??100)-(b.d.hp??100))[0];
- if(mine.length<2){box.textContent='自分の先発を選択してください。';return}
+ if(!mine.length){box.textContent='行動できる自分のポケモンがいません。';return}
  const tc=temporalContext();
  let stable,attack,read;
  if(tc.mode==='stall'){
@@ -14768,7 +14781,13 @@ function markObservedEffectReviewed(side,idx,targetIdx,confirmed){
 }
 function guideStepDone(key){
   const side=key.startsWith('opp')?'opp':'my',slot=key.endsWith('1')?0:1;
-  if(tacticalActionNeedsInput(side,turnOriginIndex(side,slot)))return false;
+  const idx=turnOriginIndex(side,slot);
+  if(idx==null||!state[side+'Team']?.[idx])return false;
+  const start=guide45TurnStartSnapshot?.turn===battleTurnNumber?guide45TurnStartSnapshot.state?.[side]?.[idx]:null;
+  // A slot already fainted before this turn needs no repeated HP/action entry.
+  // A KO observed DURING this turn still needs its action outcome recorded.
+  if(start?.hp===0&&(state[side]?.[idx]?.hp??100)<=0)return true;
+  if(tacticalActionNeedsInput(side,idx))return false;
   if(pendingObservedTargetEffect(side,turnOriginIndex(side,slot)))return false;
   const node=guide45State[key];
   return !!node&&Object.values(node).every(Boolean);
