@@ -1,0 +1,35 @@
+{
+  "completion": false,
+  "passed": true,
+  "archive": "release/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zip",
+  "archiveSha256": "3cc7b8d9ca186e3a543f8aa0b514e094b253f90d119e716aef2229b6d7d95a90",
+  "verifiedAt": "2026-10-23T05:08:34.280028+00:00",
+  "tests": [
+    {
+      "command": "test-pc-launcher.py",
+      "exitCode": 0,
+      "stdout": "PASS shipped Python launcher serves trial and external engine at stable localhost origin\n",
+      "stderr": ""
+    },
+    {
+      "command": "browser_pc_trial_test.py",
+      "exitCode": 0,
+      "stdout": "PASS PC Chromium Chrome/Edge UA profiles: 8 layouts, dual targets, real 45s turn/switch/HP/save/undo/JSON restore\n",
+      "stderr": ""
+    },
+    {
+      "command": "browser_full_match_test.py",
+      "exitCode": 0,
+      "stdout": "PASS complete observed 4-vs-4 match UI: three turns, KO replacements, undo/replay, reload, win record; no state injection\n",
+      "stderr": ""
+    }
+  ],
+  "nativeWindowsVerified": false,
+  "fileHashesVerified": 35,
+  "runtimeFilesFrozen": 15,
+  "limitations": [
+    "Linux Chromium/Windows UA; not native Windows Chrome/Edge certification",
+    "Complete observed UI match, not a full battle oracle",
+    "Old-release migration verified by bundled source-suite results; extracted ZIP runtime hashes match those tested sources"
+  ]
+}

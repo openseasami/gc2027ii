@@ -1,11 +1,11 @@
 {
   "completion": false,
   "pcEquivalentTrialPassed": true,
-  "readiness": "development-three-attack-audit",
+  "readiness": "frozen-v2.9.13-limited-tournament-trial",
   "implementationCommit": "042aa330e1353f6d88756bd80e43c3569b13eb3b",
   "testCommands": {
-    "passed": 134,
-    "total": 134
+    "passed": 136,
+    "total": 136
   },
   "engine": "Linux Chromium 154.0.8037.57",
   "compatibilityProfiles": [
@@ -14,8 +14,8 @@
   ],
   "viewportChecks": 8,
   "automatedTurnSeconds": [
-    5.004,
-    5.432
+    5.452,
+    4.94
   ],
   "clicksPerTurn": [
     6,
@@ -32,7 +32,7 @@
     "Displayed KO rates are conditional on non-critical strikes; random mixed critical outcomes are not combined",
     "Official event/Champions/AP and native Windows version certification remain outside this task"
   ],
-  "trialArchive": "release/gc2027ii-v2.9.13-development.zip",
+  "trialArchive": "release/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zip",
   "startup": "PC_TRIAL_START.md",
   "userReportedPcOperation": {
     "confirmed": true,
@@ -42,17 +42,20 @@
   "uiPreservation": "UI_PRESERVATION_BASELINE.json",
   "mainMatchupValidation": "MAIN_MATCHUP_VALIDATION.md",
   "runtimeVersion": "v2.9.13",
-  "sourceBaseCommit": "90a5292a9187dd04c72d6ff0a743323712390e9a",
-  "releaseDecision": "THREE_ATTACKS_AUDIT_RESULTS.json",
+  "sourceBaseCommit": "3a4362fdf01968dc452b5b7f8b17206e2984b00b",
+  "releaseDecision": "TOURNAMENT_BASELINE_RESULTS.json",
   "historicalRc1ArtifactVerification": "release/rc1/RC_ARTIFACT_VERIFICATION.json",
-  "artifactVerification": "release/DEVELOPMENT_ARTIFACT_VERIFICATION.json",
+  "artifactVerification": "release/tournament-v2.9.13/ARTIFACT_VERIFICATION.json",
   "trialArtifact": {
-    "archive": "release/gc2027ii-v2.9.13-development.zip",
-    "sha256": "5cadd865e0a7fc85e59130edbd794d7c62178b232f321b4c05996875ea51fd1e",
-    "verification": "release/DEVELOPMENT_ARTIFACT_VERIFICATION.json",
+    "archive": "release/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zip",
+    "sha256": "3cc7b8d9ca186e3a543f8aa0b514e094b253f90d119e716aef2229b6d7d95a90",
+    "verification": "release/tournament-v2.9.13/ARTIFACT_VERIFICATION.json",
     "extractedArchiveChecksPassed": 3,
     "extractedArchiveChecksTotal": 3,
+    "filesVerified": 35,
+    "status": "finalized-limited-trial",
     "completion": false
   },
-  "targetedThreeMoveViewportChecks": 4
+  "targetedThreeMoveViewportChecks": 4,
+  "frozen": true
 }

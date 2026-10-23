@@ -72,8 +72,8 @@
     }
   },
   "testCommands": {
-    "passed": 134,
-    "total": 134
+    "passed": 136,
+    "total": 136
   },
   "externalDifferentialFailures": 0,
   "differentialComparisons": {
@@ -163,7 +163,7 @@
   },
   "finalTacticalAudit": "FINAL_TACTICAL_AUDIT_RESULTS.json",
   "releaseCandidate": {
-    "verdict": "superseded-by-v2.9.13-three-attack-audit",
+    "verdict": "historical-rc1-superseded-by-frozen-v2.9.13-trial",
     "sourceBaseCommit": "3fc189b8d77ed15fd4dc7552408c8417a3c45edf",
     "archive": "release/rc1/gc2027ii-v2.9.10-tournament-rc1.zip",
     "archiveSha256": "6d5155a328319c3153e23472cdfadd38e5faebefcf8e2650208b652698e6635a",
@@ -197,14 +197,14 @@
       "scenarios": 1440,
       "damageComparisons": 16320,
       "accuracyComparisons": 5100,
-      "totalDistributionComparisons": 2066,
+      "totalDistributionComparisons": 2106,
       "conditionComparisons": 1440,
       "byMove": {
         "ツインビーム": {
           "cases": 240,
           "damageComparisons": 3840,
           "accuracyComparisons": 1200,
-          "totalDistributionComparisons": 933,
+          "totalDistributionComparisons": 973,
           "failures": 0
         },
         "ダブルウイング": {
@@ -249,11 +249,13 @@
     "historicalScopeOnly": true
   },
   "trialArtifact": {
-    "archive": "release/gc2027ii-v2.9.13-development.zip",
-    "sha256": "5cadd865e0a7fc85e59130edbd794d7c62178b232f321b4c05996875ea51fd1e",
-    "verification": "release/DEVELOPMENT_ARTIFACT_VERIFICATION.json",
+    "archive": "release/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zip",
+    "sha256": "3cc7b8d9ca186e3a543f8aa0b514e094b253f90d119e716aef2229b6d7d95a90",
+    "verification": "release/tournament-v2.9.13/ARTIFACT_VERIFICATION.json",
     "extractedArchiveChecksPassed": 3,
     "extractedArchiveChecksTotal": 3,
+    "filesVerified": 35,
+    "status": "finalized-limited-trial",
     "completion": false
   },
   "previousPendingTwentyCounts": {
@@ -300,6 +302,15 @@
     },
     "accuracyBoundaryComparisons": 4056,
     "otherElevenExcluded": true,
+    "completion": false
+  },
+  "frozenBaseline": {
+    "version": "v2.9.13",
+    "sourceCommit": "3a4362fdf01968dc452b5b7f8b17206e2984b00b",
+    "manifest": "FROZEN_BASELINE.json",
+    "assessment": "TOURNAMENT_BASELINE_RESULTS.json",
+    "additionalFeaturesStopped": true,
+    "runtimeFilesChanged": 0,
     "completion": false
   }
 }

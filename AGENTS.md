@@ -1,5 +1,11 @@
 # 継続開発契約
 
+## v2.9.13 大会基準版の固定（最新ユーザー指示）
+
+追加機能・候補網羅・他11技の監査を停止する。FROZEN_BASELINE.jsonのsourceCommitとruntimeSha256が基準。168技の明示条件の基本計算、344種類の種族値、現在のPC UI、固定欄、保存/旧版移行だけを最終回帰する。一般planのグループはclaimしない。新たな実装依頼または再現した重大不具合なしに実行ファイルを変更しない。
+
+配布物はrelease/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zipの1つを使用し、旧development ZIP/RC1は履歴として保持する。再検証は固定全回帰→evaluate-tournament-practical.py→build-frozen-trial.py→verify-frozen-trial.py。既存のbuild-development-release.pyによる別の候補ZIP生成/バックログ再生成は今回不要。TOURNAMENT_BASELINE_RESULTS.jsonの限定試用合格と全仕様completion:false、公式大会適合の未確認を混同しない。ZIP自体のSHAは同じフォルダーのSHA256SUMS.txt、内部はSHA256SUMS_CONTENTS.txtを参照する。
+
 作業ブランチは `codex-development` のみ。`main`、公開サイト、デプロイ、定期実行の有効化を操作しない。completion:falseを維持する。
 
 「開発チェックポイントから未完了作業を再開し、実行可能な範囲で連続実装・検証・保存してください。」という指示で以下の全工程を実行する。

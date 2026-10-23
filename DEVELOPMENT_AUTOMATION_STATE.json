@@ -21,7 +21,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.358101+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "c6ec58092fded147d41a": {
       "id": "c6ec58092fded147d41a",
@@ -73,7 +73,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.373244+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "4cdd26c48d18d85516d5": {
       "id": "4cdd26c48d18d85516d5",
@@ -156,7 +156,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.391244+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "a7645d5e98d33ff95348": {
       "id": "a7645d5e98d33ff95348",
@@ -177,7 +177,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.398032+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "755c302b279b774e0d71": {
       "id": "755c302b279b774e0d71",
@@ -260,7 +260,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.417117+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "f3f0af3408875b6b8160": {
       "id": "f3f0af3408875b6b8160",
@@ -281,7 +281,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.422860+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "c203c46cfe28b0187327": {
       "id": "c203c46cfe28b0187327",
@@ -302,7 +302,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.429500+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "2eaed3a36630cc720b28": {
       "id": "2eaed3a36630cc720b28",
@@ -323,7 +323,7 @@
       "attempts": 1,
       "inputFingerprint": "ce2f09337dba219f7dbbe018bcf0e1c5bf79a67009b9c53a11705d97471e4310",
       "claimedAt": "2026-10-22T12:13:02.437071+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "b37a0257d19cf9dac15c": {
       "id": "b37a0257d19cf9dac15c",
@@ -564,7 +564,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.514358+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "183a33aa10cf52c58370": {
       "id": "183a33aa10cf52c58370",
@@ -588,7 +588,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.520880+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "9cc3a192f19087a6e947": {
       "id": "9cc3a192f19087a6e947",
@@ -646,7 +646,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.533025+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "95638be5ab42322ca19b": {
       "id": "95638be5ab42322ca19b",
@@ -670,7 +670,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.539865+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "cbc2d35ecb3f3c45466f": {
       "id": "cbc2d35ecb3f3c45466f",
@@ -694,7 +694,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.545963+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "14d5c32aad02f6b43a31": {
       "id": "14d5c32aad02f6b43a31",
@@ -752,7 +752,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.559326+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "d22286d3b73de3947583": {
       "id": "d22286d3b73de3947583",
@@ -810,7 +810,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.570972+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "dd644d04cd354d402fce": {
       "id": "dd644d04cd354d402fce",
@@ -834,7 +834,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.576533+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "3e75742e20fb726ee16d": {
       "id": "3e75742e20fb726ee16d",
@@ -858,7 +858,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.582623+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "d102a3f989c96d7f59a7": {
       "id": "d102a3f989c96d7f59a7",
@@ -882,7 +882,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.588139+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "7309b430760de39bb92e": {
       "id": "7309b430760de39bb92e",
@@ -906,7 +906,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.594232+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "e5936f53ec393309f269": {
       "id": "e5936f53ec393309f269",
@@ -964,7 +964,7 @@
       "attempts": 1,
       "inputFingerprint": "2f4bf644d77a597acbc8db38767eb3b6db60250ac13e70f62dd35071ae21b72f",
       "claimedAt": "2026-10-22T12:19:16.605470+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "4010978cf055a3690296": {
       "id": "4010978cf055a3690296",
@@ -988,7 +988,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.411790+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "be4c6c5707b0f5785e63": {
       "id": "be4c6c5707b0f5785e63",
@@ -1012,7 +1012,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.418598+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "e7c77b0adc9ef389b21d": {
       "id": "e7c77b0adc9ef389b21d",
@@ -1036,7 +1036,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.424490+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "6d85b0dc6a7e7eaace3c": {
       "id": "6d85b0dc6a7e7eaace3c",
@@ -1093,7 +1093,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.436189+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "19828986ddfa724aa88f": {
       "id": "19828986ddfa724aa88f",
@@ -1117,7 +1117,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.442032+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "f263bd4c6d8f738da9c2": {
       "id": "f263bd4c6d8f738da9c2",
@@ -1141,7 +1141,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.447430+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "ecee1dbccea3847642e3": {
       "id": "ecee1dbccea3847642e3",
@@ -1165,7 +1165,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.453564+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "c741478fbd05734100f7": {
       "id": "c741478fbd05734100f7",
@@ -1189,7 +1189,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.458992+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "b9effd125968c2f8e5bf": {
       "id": "b9effd125968c2f8e5bf",
@@ -1213,7 +1213,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.464952+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "e0c9136928e105f5cf33": {
       "id": "e0c9136928e105f5cf33",
@@ -1237,7 +1237,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.470844+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "cd16fc6644082e51004d": {
       "id": "cd16fc6644082e51004d",
@@ -1261,7 +1261,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.476996+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "5622383394b6fcd0fd31": {
       "id": "5622383394b6fcd0fd31",
@@ -1285,7 +1285,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.482825+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "4e57a2f7d8c654b4a616": {
       "id": "4e57a2f7d8c654b4a616",
@@ -1309,7 +1309,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.489289+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "66c1c1a571fb62c86c2d": {
       "id": "66c1c1a571fb62c86c2d",
@@ -1366,7 +1366,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.501200+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "649aaad790bd86febd46": {
       "id": "649aaad790bd86febd46",
@@ -1390,7 +1390,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.510941+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "7faa8dbd7fd190e982dc": {
       "id": "7faa8dbd7fd190e982dc",
@@ -1414,7 +1414,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.517286+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     },
     "fcd5f30daa3ab8f7f502": {
       "id": "fcd5f30daa3ab8f7f502",
@@ -1438,7 +1438,7 @@
       "attempts": 1,
       "inputFingerprint": "1ccb1457d305a3ddeaa7213821948b85d264db3d4a70513811d0e6a996ccbc4a",
       "claimedAt": "2026-10-22T12:46:11.522665+00:00",
-      "resumeNote": "大会向けスプリント中は候補網羅を保留。上位120プロフィールの重大な計算/行動順/45秒不具合との関連を確認してから再開。TOURNAMENT_PRACTICAL_GATES.jsonを優先。"
+      "resumeNote": "v2.9.13基準版固定により追加実装を停止。一般planをclaimしない。再現した重大不具合か明示的な追加指示がある場合のみ別途判断。"
     }
   },
   "failures": [
@@ -1704,6 +1704,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-23T05:08:33.973548+00:00",
+      "commit": "3a4362fdf01968dc452b5b7f8b17206e2984b00b",
+      "reason": "v2.9.13基準版固定。追加機能停止、136/136回帰成功、168技の限定基本計算・344種族値・PC固定欄・旧版3版移行を確認。completion:false、main/公開サイト変更なし。",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {
@@ -1734,7 +1747,14 @@
     "statsMovesAudit": "STATS_MOVES_AUDIT_RESULTS.json",
     "excludedTournamentItems": [
       "こだわりハチマキ"
-    ]
+    ],
+    "frozenBaseline": {
+      "version": "v2.9.13",
+      "manifest": "FROZEN_BASELINE.json",
+      "additionalImplementationStopped": true,
+      "reason": "Latest user request: freeze v2.9.13 and perform final regressions; no new candidates",
+      "completion": false
+    }
   },
   "validationIncidents": [
     {

@@ -209,6 +209,5 @@
     "Mixed accuracy/evasion ranks follow the pinned Showdown repeated-hit path (including its integer-event behavior), not officially certified game rounding. These are reference estimates and cannot produce certain KO.",
     "Mid-strike contact recoil, ability/type changes and recovery berries are not fully simulated; recognized conditions withhold certain KO.",
     "Critical damage is checked explicitly; routine displayed KO probabilities are conditional on non-critical strikes, not a mixture of random critical outcomes."
-  ],
-  "implementationCommit": "042aa330e1353f6d88756bd80e43c3569b13eb3b"
+  ]
 }

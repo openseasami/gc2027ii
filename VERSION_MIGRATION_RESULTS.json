@@ -1,0 +1,66 @@
+{
+  "completion": false,
+  "passed": true,
+  "versions": [
+    {
+      "version": "v2.9.1",
+      "archiveSha256": "85879925027a26e0ebee8a54bda1dfc43245cf25c120cb45e58ee4d003fff52b",
+      "backupSha256": "77ec3c2db48f9244671b6d8cdefe46cfa218e367ac6841e5c0dc13ff52631aaf",
+      "sameOriginUpgrade": true,
+      "jsonRestoreFreshProfile": true,
+      "saveReload": true,
+      "undo": true,
+      "teams": true,
+      "moves": true,
+      "profiles": true,
+      "hp": true,
+      "turnLog": true,
+      "history": true,
+      "nonDefaultWeatherAndTailwind": true,
+      "allPersistedValuesRetained": true,
+      "errors": []
+    },
+    {
+      "version": "v2.9.10",
+      "archiveSha256": "af326cf0452c7b295ae66aa9483f2c62cd03dcfadaaca584b713a9d70dc46491",
+      "backupSha256": "ebe6f2d30bec7dc22486898e6f9e88f885eac18e914ecfff0499050fae26cf7b",
+      "sameOriginUpgrade": true,
+      "jsonRestoreFreshProfile": true,
+      "saveReload": true,
+      "undo": true,
+      "teams": true,
+      "moves": true,
+      "profiles": true,
+      "hp": true,
+      "turnLog": true,
+      "history": true,
+      "nonDefaultWeatherAndTailwind": true,
+      "allPersistedValuesRetained": true,
+      "errors": []
+    },
+    {
+      "version": "v2.9.12",
+      "archiveSha256": "715e8ae69615d4dafa3d8b248fa7f72dabb7f4abc79b3384d4cf87886fb776c4",
+      "backupSha256": "73995bebf0ddd958729cf78385771cc04e883711c3c034cb69de0655e161cf5c",
+      "sameOriginUpgrade": true,
+      "jsonRestoreFreshProfile": true,
+      "saveReload": true,
+      "undo": true,
+      "teams": true,
+      "moves": true,
+      "profiles": true,
+      "hp": true,
+      "turnLog": true,
+      "history": true,
+      "nonDefaultWeatherAndTailwind": true,
+      "allPersistedValuesRetained": true,
+      "errors": []
+    }
+  ],
+  "limitations": [
+    "Synthetic, valid old-release fixtures; not every user save or pre-v2.9.1 format",
+    "Legacy history-only JSON is not a full backup and is not supported by JSON restore",
+    "Browser/host/port/profile changes require JSON; browser settings/private browsing are not portable"
+  ],
+  "chromiumVersion": "154.0.8037.57"
+}

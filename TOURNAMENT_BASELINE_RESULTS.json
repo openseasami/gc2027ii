@@ -1,0 +1,126 @@
+{
+  "version": "v2.9.13",
+  "completion": false,
+  "frozen": true,
+  "limitedTrialAccepted": true,
+  "verdict": "pass-with-explicit-scope-and-limitations",
+  "sourceCommit": "3a4362fdf01968dc452b5b7f8b17206e2984b00b",
+  "implementationCommit": "042aa330e1353f6d88756bd80e43c3569b13eb3b",
+  "branch": "codex-development",
+  "generatedAt": "2026-10-23T05:08:33.930728+00:00",
+  "additionalFeaturesImplemented": 0,
+  "runtimeFilesChanged": 0,
+  "criticalDefectsFound": 0,
+  "meaning": "Final regression of frozen runtime. A limited tournament trial baseline, not full mechanics or official tournament legality certification.",
+  "checks": {
+    "allRegressionCommands": true,
+    "currentTestSourceHashes": true,
+    "frozenRuntimeBytes": true,
+    "attack168ScopedCalculation": true,
+    "species344TwoSourceStats": true,
+    "pcCompatibilityAndDualTargetRail": true,
+    "realSaveRestoreUndo": true,
+    "oldVersionMigration": true,
+    "observedFullMatch": true,
+    "uiPreserved": true,
+    "existingCatalogsAndAdoptionPreserved": true,
+    "noKnownCriticalDefectInScope": true
+  },
+  "testCommands": {
+    "passed": 136,
+    "total": 136
+  },
+  "counts": {
+    "verifiedAttackMoves": 168,
+    "majorAttacks": 179,
+    "excludedUnverifiedAttackMoves": 11,
+    "attackMetadataVerified": 207,
+    "targetSpeciesVerified": 344,
+    "targetMegaVerified": 82,
+    "targetStatValuesVerified": 2064,
+    "targetSpeciesUnconfirmed": 0,
+    "targetStatsMismatched": 0,
+    "catalogOutsideTargetSecondSourceUnconfirmed": 5
+  },
+  "damageDifferential": {
+    "scenarios": 12316,
+    "damageComparisons": 307200,
+    "failures": 0,
+    "primary": "PRIMARY_MOVE_DIFFERENTIAL_RESULTS.json",
+    "pendingSix": "PENDING_TWENTY_AUDIT_RESULTS.json",
+    "three": "THREE_ATTACKS_AUDIT_RESULTS.json"
+  },
+  "pc": {
+    "report": "PC_BROWSER_RESULTS.json",
+    "chromiumVersion": "154.0.8037.57",
+    "nativeWindowsVerified": false,
+    "compatibilityUAProfiles": 2,
+    "viewportChecks": 8,
+    "fixedRailWidth": 300,
+    "rows": 4,
+    "opponentTargets": 2,
+    "automatedTurnSeconds": [
+      5.452,
+      4.94
+    ],
+    "userReportedPcOperation": true
+  },
+  "migration": {
+    "report": "VERSION_MIGRATION_RESULTS.json",
+    "passed": true,
+    "versions": [
+      "v2.9.1",
+      "v2.9.10",
+      "v2.9.12"
+    ],
+    "sameOriginUpgrade": true,
+    "freshProfileJsonRestore": true,
+    "saveReload": true,
+    "undo": true,
+    "nonDefaultWeatherAndTailwind": true,
+    "allPersistedValuesRetained": true
+  },
+  "scopeExcluded": [
+    "Other eleven unverified attacks",
+    "Complete secondary effects",
+    "Recommendation optimality and multi-turn optimization",
+    "Full battle engine parity",
+    "Official C/M-C and Mega legality certification",
+    "Native Windows Chrome/Edge version certification",
+    "All historical user saves or reverse migration"
+  ],
+  "knownCriticalDefectsInTestedScope": [],
+  "unverifiedConditions": "UNCONFIRMED_CONDITIONS.md",
+  "startup": "PC_TRIAL_START.md",
+  "backup": "JSON_BACKUP.md",
+  "artifact": "release/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zip",
+  "archiveVerification": "release/tournament-v2.9.13/ARTIFACT_VERIFICATION.json",
+  "runtimeSha256": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "battle-core.js": "9a43bd7f018fdeea2239bb7ae34125b01c30908e11c3059c28fe00824927e713",
+    "critical-effects.js": "83d54bd9fb80c307c8fdcb399fa0d11fbd7a27722bbf0b340407ba8417f4c72c",
+    "effect-engine.js": "06e5fd3ba720d83316fa32a9b4e79bd8c3c729b57d3e9326049c2375481d6e78",
+    "icon-192.png": "269f2adbba00855bf883fd0a284cf2bc5d3aa87dcdea67bc2484aa11204b1502",
+    "icon-512.png": "3ab233c4b30a924ec0e12ae0e737abfdc465cd339bf92b043fd81e42babaa4f8",
+    "index.html": "facc2db0bc5d28dc3fa0960d59b18319a1b7e5839e3a445f7e737b2ee9f0c372",
+    "launch-pc-trial.py": "c4cc5092cb846e71311ca1a7f26facae52b508847abc2c846baff401528d1575",
+    "manifest.webmanifest": "ba634d04f244146555591b6db7e3bc82550ae06623d8dac25dea74a132c3936c",
+    "priority-engine.js": "1c7fb953de596fc7b0da6f9def31a818f06f615c69f69db871310751abbabffb",
+    "rank-effects.js": "f9b217183a9b079178c3c7c51171310cbc1ecc0774abee93df0d88fe10d0a2ce",
+    "start-pc-trial.cmd": "ccbe4c2c28ddec7356806d0501b683d3f395577a618bd40e4033adf6a1f9f64a",
+    "sw.js": "970d16a54be7df740978ae9788de26b21a45d10c156009888b9b19f7d06d38ca",
+    "three-attack-effects.js": "cbef315088b116446588ecaec77db9f71aa243dc369eccb589996f4c19919773",
+    "turn-order-effects.js": "f0b4cda295774f7e9e47ddd321d23599d68a2c070d2c99d185b2e24f313518e4"
+  },
+  "evidenceSha256": {
+    "TEST_RESULTS.json": "913dd101bfe805532a69d1f5d24156671fec009651c27babd8a1070a59773cd5",
+    "STATS_MOVES_AUDIT_RESULTS.json": "e7b881a9c982578dcade148c1e268eff8b80b27b8eafe282e781a3b147736f9e",
+    "PRIMARY_MOVE_DIFFERENTIAL_RESULTS.json": "746e596021581bf688154dbcd65cc5c773a272ae04ac8a79f839456044ad7057",
+    "PENDING_TWENTY_AUDIT_RESULTS.json": "ad5a82f04d031f4ef3e327a4cc6de662c9b60d71515c98d550ef72ac1dd07cf7",
+    "THREE_ATTACKS_AUDIT_RESULTS.json": "0531ee49e1ef82c1196d676639c88cf4ec03a8bd8ccb750782708cbe24ffb772",
+    "PC_BROWSER_RESULTS.json": "46d7b3c0629275cca59b912fe4d6fe308930321e6f6dc4cd39ffeee03c2652d9",
+    "VERSION_MIGRATION_RESULTS.json": "55a2c016f741a846704d39fc0d13934ebd31a6740119bb3eb7605a3c7db43a06",
+    "FULL_MATCH_E2E_RESULTS.json": "b3378c913a025d329a8ccff220a58671c26d093c0b2c96009940010e43b8739f"
+  },
+  "fullTournamentRulesCertified": false
+}

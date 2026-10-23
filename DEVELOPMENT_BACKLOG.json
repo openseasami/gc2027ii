@@ -50878,10 +50878,10 @@
     "レシーバー"
   ],
   "criticalWork": [
-    "Maintain the three requested attack calculations only; other eleven major attacks are excluded until the user changes scope",
-    "Keep unknown Temper Flare history as dual 75/150 references; preserve switch reset, persistent save and undo",
-    "Keep mixed-rank repeated accuracy and unsupported mid-hit contact/recovery reactions reference-only; do not certify certain KO or full mechanics",
-    "Preserve PC UI, target stats and adoption-120 data; retain completion false and never modify main/public deployment"
+    "Keep v2.9.13 frozen; do not claim general implementation groups or expand candidate audits",
+    "Revalidate only frozen 168/344/PC/save-migration scope when required; change runtime only for reproduced critical defects",
+    "Preserve unverified conditions and provisional recommendation labels; no global completion or official-rule certification",
+    "Use only release/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zip for this baseline; retain older artifacts as history"
   ],
   "outOfCatalogEvidence": [
     {
@@ -50951,6 +50951,21 @@
       "Critical damage is checked explicitly; routine displayed KO probabilities are conditional on non-critical strikes, not a mixture of random critical outcomes."
     ],
     "resume": "Read DEVELOPMENT_CHECKPOINT.md and THREE_ATTACKS_AUDIT.md. Limit any further changes to these three moves unless the user changes scope. Do not replace unknown results with certain predictions.",
+    "completion": false
+  },
+  "frozenBaseline": {
+    "version": "v2.9.13",
+    "sourceCommit": "3a4362fdf01968dc452b5b7f8b17206e2984b00b",
+    "runtimeManifest": "FROZEN_BASELINE.json",
+    "additionalFeaturesStopped": true,
+    "candidateExpansionPaused": true,
+    "verificationScope": [
+      "168 explicitly verified basic attack calculations",
+      "344 selectable species base stats incl 82 Mega",
+      "Preserved PC UI and dual-target fixed rail",
+      "Save/reload/undo and old-release migration"
+    ],
+    "outsideScopeUnverifiedMoves": 11,
     "completion": false
   }
 }

@@ -2,6 +2,12 @@
 
 **開発途中です。完成判定は false。** 開発ブランチは `codex-development`。
 
+**大会基準版はv2.9.13に固定し、追加機能を停止しました。** 指定ZIPは
+[gc2027ii-v2.9.13-tournament-trial.zip](release/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zip)
+の1つです。[最終回帰判定](TOURNAMENT_BASELINE_REPORT.md)、
+[SHA-256](release/tournament-v2.9.13/SHA256SUMS.txt)、[JSONバックアップ/移行](JSON_BACKUP.md)、
+[未確認条件](UNCONFIRMED_CONDITIONS.md)を参照してください。旧ZIP/RC1は履歴用です。
+
 現在の実装内容・制約・再開手順は [DEVELOPMENT_CHECKPOINT.md](DEVELOPMENT_CHECKPOINT.md)、
 PC試用版の起動は [PC_TRIAL_START.md](PC_TRIAL_START.md)、判定は [PC_TRIAL_ACCEPTANCE.json](PC_TRIAL_ACCEPTANCE.json)。
 完成条件の評価は [COMPLETION_REPORT.md](COMPLETION_REPORT.md) を参照してください。
@@ -24,10 +30,14 @@ work/test-venv/bin/python -m pip install -r requirements-dev.txt
 npm ci --ignore-scripts --cache work/npm-cache
 work/test-venv/bin/python run-development-checks.py
 python evaluate-tournament-practical.py
-python build-development-release.py
+python build-frozen-trial.py
+work/test-venv/bin/python verify-frozen-trial.py
 ```
 
 テスト成功だけでは、対象大会の使用可否、全効果の実装、公式ゲームとの一致を保証しません。
+
+確定ZIPを理由なく上書きしないでください。再生成には現在の成功結果と
+TOURNAMENT_BASELINE_RESULTS.jsonの更新が必要です。固定対象はFROZEN_BASELINE.jsonに記録しています。
 ブラウザー検証はローカルHTTPを使用します。実行範囲の詳細は完成判定レポートに記録しています。
 
 ## 公開用ファイル
