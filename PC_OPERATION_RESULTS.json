@@ -1,0 +1,1696 @@
+{
+  "completion": false,
+  "passed": true,
+  "baselineCommit": "3e85b0506e0bb36249150eb8df480d709b2c4cd1",
+  "before": {
+    "samples": 3,
+    "clicks": 24,
+    "inputs": 12,
+    "explicitWheelCommands": 0,
+    "scrollEvents": 24,
+    "automatedSeconds": 12.2344,
+    "panelRenderCalls": 50,
+    "refreshCalls": 18,
+    "updateMedianMs": 609.6,
+    "updateMaxMs": 915.9
+  },
+  "after": {
+    "samples": 3,
+    "clicks": 23,
+    "inputs": 12,
+    "explicitWheelCommands": 0,
+    "scrollEvents": 24,
+    "automatedSeconds": 11.1805,
+    "panelRenderCalls": 19,
+    "refreshCalls": 17,
+    "updateMedianMs": 591.3,
+    "updateMaxMs": 791.5
+  },
+  "measurements": {
+    "completion": false,
+    "passed": true,
+    "runtime": "/workspace/gc2027ii",
+    "samples": [
+      {
+        "sample": 0,
+        "actions": [
+          {
+            "phase": "registration",
+            "label": "register ゴリランダー",
+            "kind": "fill",
+            "seconds": 0.089,
+            "scrollEvents": 0,
+            "calls": {},
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.0967,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register サーフゴー",
+            "kind": "fill",
+            "seconds": 0.0804,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.0825,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register ガブリアス",
+            "kind": "fill",
+            "seconds": 0.0792,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.0833,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register リキキリン",
+            "kind": "fill",
+            "seconds": 0.0812,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.0823,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register ドラパルト",
+            "kind": "fill",
+            "seconds": 0.0817,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.1153,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register ドドゲザン",
+            "kind": "fill",
+            "seconds": 0.0661,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.1153,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "opponent lead",
+            "kind": "click",
+            "seconds": 0.0823,
+            "scrollEvents": 1,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "opponent lead",
+            "kind": "click",
+            "seconds": 0.0817,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0656,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0654,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0654,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0651,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "start",
+            "kind": "click",
+            "seconds": 0.9502,
+            "scrollEvents": 4,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              777.8999999761581
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "mistaken opponent HP",
+            "kind": "click",
+            "seconds": 1.1152,
+            "scrollEvents": 19,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              639.7000000178814
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "correct opponent HP",
+            "kind": "click",
+            "seconds": 0.7514,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              651.3999999761581
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "observed move/effect",
+            "kind": "click",
+            "seconds": 0.6459,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              591.3000000119209
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.7213,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              612.8999999761581
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "opponent switch",
+            "kind": "click",
+            "seconds": 0.7908,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              634.2999999821186
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "mistaken own HP",
+            "kind": "click",
+            "seconds": 0.7984,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              675.6999999880791
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "return to own HP",
+            "kind": "click",
+            "seconds": 0.7008,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              612.5
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "correct own HP",
+            "kind": "click",
+            "seconds": 0.6967,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              582.3999999761581
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.5828,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              472.30000001192093
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "next result input",
+            "kind": "click",
+            "seconds": 0.0686,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 0,
+              "renderMyRecommendations": 0,
+              "renderDamageOutput": 0,
+              "fixed45Render": 2
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "koTurn",
+            "label": "observed KO",
+            "kind": "click",
+            "seconds": 0.1645,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              41.5
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.1476,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              43.900000005960464
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "observed move/effect",
+            "kind": "click",
+            "seconds": 0.0969,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              19
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.1311,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              32.30000001192093
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.114,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              31.80000001192093
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "forced replacement",
+            "kind": "click",
+            "seconds": 0.9134,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 2,
+              "refresh": 2,
+              "renderMyRecommendations": 2,
+              "renderDamageOutput": 2,
+              "fixed45Render": 2
+            },
+            "updateMs": [
+              791.5,
+              791.5
+            ]
+          }
+        ],
+        "phases": {
+          "registration": 1.0708,
+          "leads": 1.3842,
+          "firstTurn": 6.9606,
+          "koTurn": 1.8492
+        },
+        "corrections": {
+          "opponentHp": true,
+          "ownHp": true
+        },
+        "updateChecks": [],
+        "automatedSeconds": 11.2649,
+        "clicks": 23,
+        "inputs": 12,
+        "scrollEvents": 24,
+        "refreshCalls": 17,
+        "panelRenderCalls": 19,
+        "updateMs": [
+          777.8999999761581,
+          639.7000000178814,
+          651.3999999761581,
+          591.3000000119209,
+          612.8999999761581,
+          634.2999999821186,
+          675.6999999880791,
+          612.5,
+          582.3999999761581,
+          472.30000001192093,
+          41.5,
+          43.900000005960464,
+          19,
+          32.30000001192093,
+          31.80000001192093,
+          791.5,
+          791.5
+        ],
+        "finalState": {
+          "turn": 3,
+          "my": [
+            0,
+            1
+          ],
+          "opp": [
+            0,
+            1
+          ],
+          "myHp": [
+            90,
+            90
+          ],
+          "oppHp": [
+            100,
+            90
+          ],
+          "log": 2
+        },
+        "browserErrors": []
+      },
+      {
+        "sample": 1,
+        "actions": [
+          {
+            "phase": "registration",
+            "label": "register ゴリランダー",
+            "kind": "fill",
+            "seconds": 0.0818,
+            "scrollEvents": 0,
+            "calls": {},
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.0794,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register サーフゴー",
+            "kind": "fill",
+            "seconds": 0.0663,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.081,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register ガブリアス",
+            "kind": "fill",
+            "seconds": 0.071,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.0954,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register リキキリン",
+            "kind": "fill",
+            "seconds": 0.0652,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.0828,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register ドラパルト",
+            "kind": "fill",
+            "seconds": 0.081,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.1173,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register ドドゲザン",
+            "kind": "fill",
+            "seconds": 0.0808,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.0991,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "opponent lead",
+            "kind": "click",
+            "seconds": 0.0767,
+            "scrollEvents": 1,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "opponent lead",
+            "kind": "click",
+            "seconds": 0.0829,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0657,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0651,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0654,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0652,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "start",
+            "kind": "click",
+            "seconds": 0.8683,
+            "scrollEvents": 3,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              701.1999999880791
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "mistaken opponent HP",
+            "kind": "click",
+            "seconds": 1.1141,
+            "scrollEvents": 20,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              637.8999999761581
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "correct opponent HP",
+            "kind": "click",
+            "seconds": 0.804,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              689.2000000178814
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "observed move/effect",
+            "kind": "click",
+            "seconds": 0.6374,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              569.9000000059605
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.7686,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              657.5999999940395
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "opponent switch",
+            "kind": "click",
+            "seconds": 0.732,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              616.7999999821186
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "mistaken own HP",
+            "kind": "click",
+            "seconds": 0.7325,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              615.9000000059605
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "return to own HP",
+            "kind": "click",
+            "seconds": 0.6315,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              555.7000000178814
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "correct own HP",
+            "kind": "click",
+            "seconds": 0.6654,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              556.5
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.6508,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              512.7999999821186
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "next result input",
+            "kind": "click",
+            "seconds": 0.0667,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 0,
+              "renderMyRecommendations": 0,
+              "renderDamageOutput": 0,
+              "fixed45Render": 2
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "koTurn",
+            "label": "observed KO",
+            "kind": "click",
+            "seconds": 0.1829,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              40.79999998211861
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.1486,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              43.70000001788139
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "observed move/effect",
+            "kind": "click",
+            "seconds": 0.0935,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              17.69999998807907
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.1805,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              31.099999994039536
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.1754,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              33.79999998211861
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "forced replacement",
+            "kind": "click",
+            "seconds": 0.9013,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 2,
+              "refresh": 2,
+              "renderMyRecommendations": 2,
+              "renderDamageOutput": 2,
+              "fixed45Render": 2
+            },
+            "updateMs": [
+              789.6999999880791,
+              789.6999999880791
+            ]
+          }
+        ],
+        "phases": {
+          "registration": 1.0174,
+          "leads": 1.3023,
+          "firstTurn": 6.8956,
+          "koTurn": 1.9652
+        },
+        "corrections": {
+          "opponentHp": true,
+          "ownHp": true
+        },
+        "updateChecks": [],
+        "automatedSeconds": 11.1805,
+        "clicks": 23,
+        "inputs": 12,
+        "scrollEvents": 24,
+        "refreshCalls": 17,
+        "panelRenderCalls": 19,
+        "updateMs": [
+          701.1999999880791,
+          637.8999999761581,
+          689.2000000178814,
+          569.9000000059605,
+          657.5999999940395,
+          616.7999999821186,
+          615.9000000059605,
+          555.7000000178814,
+          556.5,
+          512.7999999821186,
+          40.79999998211861,
+          43.70000001788139,
+          17.69999998807907,
+          31.099999994039536,
+          33.79999998211861,
+          789.6999999880791,
+          789.6999999880791
+        ],
+        "finalState": {
+          "turn": 3,
+          "my": [
+            0,
+            1
+          ],
+          "opp": [
+            0,
+            1
+          ],
+          "myHp": [
+            90,
+            90
+          ],
+          "oppHp": [
+            100,
+            90
+          ],
+          "log": 2
+        },
+        "browserErrors": []
+      },
+      {
+        "sample": 2,
+        "actions": [
+          {
+            "phase": "registration",
+            "label": "register ゴリランダー",
+            "kind": "fill",
+            "seconds": 0.1008,
+            "scrollEvents": 0,
+            "calls": {},
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.0814,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register サーフゴー",
+            "kind": "fill",
+            "seconds": 0.0826,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.0832,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register ガブリアス",
+            "kind": "fill",
+            "seconds": 0.0651,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.0842,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register リキキリン",
+            "kind": "fill",
+            "seconds": 0.0641,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.0858,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register ドラパルト",
+            "kind": "fill",
+            "seconds": 0.0782,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.1333,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "register ドドゲザン",
+            "kind": "fill",
+            "seconds": 0.0874,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "registration",
+            "label": "confirm roster",
+            "kind": "Enter",
+            "seconds": 0.1332,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "opponent lead",
+            "kind": "click",
+            "seconds": 0.0822,
+            "scrollEvents": 1,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "opponent lead",
+            "kind": "click",
+            "seconds": 0.0652,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0661,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0656,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0655,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0654,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "start",
+            "kind": "click",
+            "seconds": 0.9165,
+            "scrollEvents": 5,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              712.6000000238419
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "mistaken opponent HP",
+            "kind": "click",
+            "seconds": 1.1142,
+            "scrollEvents": 17,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              648.9000000059605
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "correct opponent HP",
+            "kind": "click",
+            "seconds": 0.704,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              593.9000000059605
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "observed move/effect",
+            "kind": "click",
+            "seconds": 0.6263,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              546.2000000178814
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.6863,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              567.0999999940395
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "opponent switch",
+            "kind": "click",
+            "seconds": 0.7351,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              603.7000000178814
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "mistaken own HP",
+            "kind": "click",
+            "seconds": 0.7451,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              622
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "return to own HP",
+            "kind": "click",
+            "seconds": 0.6988,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              607.9000000059605
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "correct own HP",
+            "kind": "click",
+            "seconds": 0.6805,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              569.3999999761581
+            ]
+          },
+          {
+            "phase": "firstTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.5656,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              439.40000000596046
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "next result input",
+            "kind": "click",
+            "seconds": 0.0697,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 0,
+              "renderMyRecommendations": 0,
+              "renderDamageOutput": 0,
+              "fixed45Render": 2
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "koTurn",
+            "label": "observed KO",
+            "kind": "click",
+            "seconds": 0.1821,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              42
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.1967,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              44.5
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "observed move/effect",
+            "kind": "click",
+            "seconds": 0.0856,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              21.30000001192093
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.1793,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              34.30000001192093
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "HP",
+            "kind": "click",
+            "seconds": 0.1948,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 1,
+              "refresh": 1,
+              "renderMyRecommendations": 1,
+              "renderDamageOutput": 1,
+              "fixed45Render": 1
+            },
+            "updateMs": [
+              37.80000001192093
+            ]
+          },
+          {
+            "phase": "koTurn",
+            "label": "forced replacement",
+            "kind": "click",
+            "seconds": 0.8533,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 2,
+              "refresh": 2,
+              "renderMyRecommendations": 2,
+              "renderDamageOutput": 2,
+              "fixed45Render": 2
+            },
+            "updateMs": [
+              747,
+              747
+            ]
+          }
+        ],
+        "phases": {
+          "registration": 1.1203,
+          "leads": 1.3339,
+          "firstTurn": 6.7282,
+          "koTurn": 1.9843
+        },
+        "corrections": {
+          "opponentHp": true,
+          "ownHp": true
+        },
+        "updateChecks": [],
+        "automatedSeconds": 11.1667,
+        "clicks": 23,
+        "inputs": 12,
+        "scrollEvents": 23,
+        "refreshCalls": 17,
+        "panelRenderCalls": 19,
+        "updateMs": [
+          712.6000000238419,
+          648.9000000059605,
+          593.9000000059605,
+          546.2000000178814,
+          567.0999999940395,
+          603.7000000178814,
+          622,
+          607.9000000059605,
+          569.3999999761581,
+          439.40000000596046,
+          42,
+          44.5,
+          21.30000001192093,
+          34.30000001192093,
+          37.80000001192093,
+          747,
+          747
+        ],
+        "finalState": {
+          "turn": 3,
+          "my": [
+            0,
+            1
+          ],
+          "opp": [
+            0,
+            1
+          ],
+          "myHp": [
+            90,
+            90
+          ],
+          "oppHp": [
+            100,
+            90
+          ],
+          "log": 2
+        },
+        "browserErrors": []
+      }
+    ],
+    "stateInjection": false,
+    "nativeWindowsVerified": false,
+    "definitions": {
+      "clicks": "Explicit DOM click commands, including disclosure and correction",
+      "inputs": "fill and Enter commands",
+      "scrollEvents": "Captured browser scroll events including automatic scrolling; not human gestures",
+      "explicitWheelCommands": 0,
+      "updateLatency": "DOM event to next requestAnimationFrame after synchronous refresh; milliseconds",
+      "automatedSeconds": "Playwright controls plus assertions; excludes human reading/thinking and launch"
+    }
+  },
+  "beforeEvidenceSha256": "7d0fd1db2b775e5a37d9b1adcdabf404a8ab0864596d224da66a269cba717ba5",
+  "sourceSha256": {
+    "index.html": "0cd0a632397b4726a7345534a7f1afa4b7cfc9e0954c7d2eba600cdf3e098bcf",
+    "pc_operation_benchmark.py": "4ab3ec40f83824f67f461aaf774ca190091131171a0a109ea415706a6c659904",
+    "browser_pc_operations_test.py": "dfc19cd48b2b5cb7020712f1b35ab95b2481fdbbb54c02e8f66b0b606f773f81"
+  },
+  "limitations": [
+    "Automated controls/assertions; excludes human reading and decision time; no human 45-second certification",
+    "Scroll event count includes browser automatic scrolling, is not a count of human wheel gestures and varies with layout/timing",
+    "Three samples per version in the same Linux Chromium/Windows UA environment; timing is descriptive, not a statistical performance guarantee",
+    "30-match combat regression is separate from this UI workload; no official/rules research"
+  ]
+}

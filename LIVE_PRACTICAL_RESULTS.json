@@ -4719,7 +4719,7 @@
   },
   "browserErrors": [],
   "sourceSha256": {
-    "index.html": "9aae100cdeabfc3f25a497f7cd70ee9f07dc0ee4062c859f095d612ae8834c99",
+    "index.html": "0cd0a632397b4726a7345534a7f1afa4b7cfc9e0954c7d2eba600cdf3e098bcf",
     "live-practical-scenarios.js": "a6b8ab27d2474ed899fecccdc966a2da9af1d21303a6d6ee4b2b4d55ab82b1e7",
     "live-practical-oracle.js": "9262cb758e4ef68bbc86dd886bf964c7125bf72122d313853cc35d0e6e871827",
     "browser_live_practical_test.py": "5df2ddf5100d7bbeb09c68ebfeceee1303083e366abaa7f89028f6c12551a4cb"

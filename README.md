@@ -1,3 +1,7 @@
+# v2.9.16 PC操作改善版
+
+基点3e85b05。PC_OPERATION_AUDIT.mdに改善前後の測定、PRACTICE_RELEASE_REPORT.mdに最終検証と配布情報を記録します。固定ダメージ欄・45秒モード・通常スクロール・保存互換性を維持し、入力済みHPの訂正と重複描画を改善。固定欄にも参考推定の推奨を短く表示します。全仕様completion:false。人間の判断込み45秒や最適推奨を認定しません。main/公開サイトは変更しません。
+
 # Global Challenge 2027 II 支援サイト — v2.9.15
 
 **開発途中です。完成判定は false。** 開発ブランチは `codex-development`。

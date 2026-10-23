@@ -1,3 +1,9 @@
+# v2.9.16 PC操作改善（最新ユーザー指示）
+
+基点3e85b05。PC_OPERATION_AUDIT.md/PC_OPERATION_RESULTS.jsonを読む。限定的な訂正操作・入力更新・固定参考推奨表示の改善だけを許可。168技/344形態/採用120データ・保存形式・既存UI骨格を維持する。UI_PRESERVATION_BASELINE.jsonのoperationAmendmentに一致する追加だけを許可。旧全固定規則より最新指示を優先する。未確認推奨は参考推定。公式一覧・規約の追加調査なし。completion:false。
+
+同一DOM手順で基準v2.9.15とv2.9.16を各3回測定。クリック/入力/自動スクロールイベント/自動操作時間/イベントから次フレームの更新遅延を別記し、人間の判断込み45秒達成へ読み替えない。30試合218ターンの既存トレースを再利用し、152全回帰→evaluate-series-matches.py→evaluate-tournament-practical.py→evaluate-practice-release.py→build-practice-release.py→verify-practice-release.py。実ZIP展開後8試験を要する。保存移行6版（v2.9.15追加）。配布はrelease/practice-v2.9.16/だけ。旧v2.9.15以前ZIPを上書きしない。開発ブランチのみcommit/push、main/公開サイト/デプロイ/スケジュールは操作しない。
+
 # v2.9.15 連続模擬対戦監査（最新ユーザー指示）
 
 436cc4e基準。SERIES_MATCH_AUDIT.md、SERIES_MATCH_RESULTS.json、SERIES_MATCH_INCIDENTS.jsonを読む。6体から4体の独立Showdown完全試合を30試合実行し、実ページへ観測入力として再現する。HP/status/二次効果の観測入力と自動場/能力処理の検証を混同しない。推奨は合法性・消失・参考推定を確認し、最適方策は認定しない。新機能/UI再設計/データ変更/公式一覧・規約調査は行わない。

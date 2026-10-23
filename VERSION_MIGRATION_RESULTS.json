@@ -5,7 +5,7 @@
     {
       "version": "v2.9.1",
       "archiveSha256": "85879925027a26e0ebee8a54bda1dfc43245cf25c120cb45e58ee4d003fff52b",
-      "backupSha256": "96d1e09e1419ca2244fd2023e92ae46f5ef11e95610b2377e4ef60084c8c316c",
+      "backupSha256": "31a15cb13ffe40a3785c9e7bf3f24199ef7a3797713178727ef77b9293e586c7",
       "sameOriginUpgrade": true,
       "jsonRestoreFreshProfile": true,
       "saveReload": true,
@@ -23,7 +23,7 @@
     {
       "version": "v2.9.10",
       "archiveSha256": "af326cf0452c7b295ae66aa9483f2c62cd03dcfadaaca584b713a9d70dc46491",
-      "backupSha256": "1065cfb437bcd78abb4850bf60c9b27758d774de53e0570ca2f077fa60edf19b",
+      "backupSha256": "faa1efc8ad893bf87e7014466d76f502f17df64ce8ae2a196ad0f10f9b6f03e5",
       "sameOriginUpgrade": true,
       "jsonRestoreFreshProfile": true,
       "saveReload": true,
@@ -41,7 +41,7 @@
     {
       "version": "v2.9.12",
       "archiveSha256": "715e8ae69615d4dafa3d8b248fa7f72dabb7f4abc79b3384d4cf87886fb776c4",
-      "backupSha256": "5d3d579d27e38e7eda0e2e491aad39ea8c70df010ae7911a787661caca8dc37c",
+      "backupSha256": "9f32acbf48c2e2c1e56af4a9d929080a1a0bfb9026a28d8f3967852f60b5bcf7",
       "sameOriginUpgrade": true,
       "jsonRestoreFreshProfile": true,
       "saveReload": true,
@@ -59,7 +59,7 @@
     {
       "version": "v2.9.13",
       "archiveSha256": "a1113c059faada5cada8b28b57d44227e18ae1aeeeb3932069ed739335d298da",
-      "backupSha256": "a691e729ee4bfabff1cc8a950621141ced8949186c4be7209b6ff99537e1ed22",
+      "backupSha256": "54be8e3897a576031179e64c7bd4081e6ff0bca80c785296a6f6e06d3a5a2bdb",
       "sameOriginUpgrade": true,
       "jsonRestoreFreshProfile": true,
       "saveReload": true,
@@ -77,7 +77,25 @@
     {
       "version": "v2.9.14",
       "archiveSha256": "a36b1119c6e08e20e35ac73131e963f2564dbdf30a2e60c8a9c187c072b91095",
-      "backupSha256": "b991a2d540aff974a283ca084ea5ea93f8c0509b2cca5d69ea7c4c8c2b1c4bca",
+      "backupSha256": "e371fef29d6fe2a358dd7432d9aa7c0de1c6dfab05af112fed21e4d1d0e0d8b9",
+      "sameOriginUpgrade": true,
+      "jsonRestoreFreshProfile": true,
+      "saveReload": true,
+      "undo": true,
+      "teams": true,
+      "moves": true,
+      "profiles": true,
+      "hp": true,
+      "turnLog": true,
+      "history": true,
+      "nonDefaultWeatherAndTailwind": true,
+      "allPersistedValuesRetained": true,
+      "errors": []
+    },
+    {
+      "version": "v2.9.15",
+      "archiveSha256": "455aa0c934386b0d12528f117b7497bcd9173377832c5bff0cdb3e5b3a442522",
+      "backupSha256": "5cc60fa5a49dcd581cbc31b9daa37058c3ec495701ab088438c78718ee9fa528",
       "sameOriginUpgrade": true,
       "jsonRestoreFreshProfile": true,
       "saveReload": true,

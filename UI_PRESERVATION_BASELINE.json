@@ -6,5 +6,13 @@
     "scope": "PCブラウザ版の実機操作に問題がないとユーザーが確認。OS/ブラウザ詳細と判断時間の個別計測は報告なし。"
   },
   "styles": "c0d886703c87240a54033706664d7afa07c2a582039397fe9988ec824fdc64fd",
-  "markup": "ec702d66ab62bc3d4c2d2de40f038c93c497c92541b21847ad3d767e3ec9a672"
+  "markup": "ec702d66ab62bc3d4c2d2de40f038c93c497c92541b21847ad3d767e3ec9a672",
+  "operationAmendment": {
+    "version": "v2.9.16",
+    "baseCommit": "3e85b0506e0bb36249150eb8df480d709b2c4cd1",
+    "reason": "Latest user explicitly authorizes limited operation improvements; one compact reference recommendation inside the existing rail, PC completed HP open by default. No redesign.",
+    "addedCss": "/* v2.9.16: keep a compact advisory beside damage while the inputs scroll. */\n#pcLiveRecommendation{display:none}\n@media(min-width:981px){\n body.mode45 #pcLiveRecommendation{display:block;flex:none;border-top:1px solid #cbd5e1;\n  padding:5px 0 0;font-size:11px;line-height:1.35;max-height:132px;overflow:auto;color:#0f172a;background:#fff}\n #pcLiveRecommendation p{margin:2px 0;overflow-wrap:anywhere}\n}\n",
+    "addedMarkup": "<div id=\"pcLiveRecommendation\" role=\"status\" aria-live=\"polite\"></div>",
+    "featureScope": "Operation display only; damage and battle data unchanged"
+  }
 }

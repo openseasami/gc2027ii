@@ -140,4 +140,4 @@ try:
 finally:
     server.shutdown()
     (ROOT/'VERSION_MIGRATION_RESULTS.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-print('PASS old-release real saves: four versions including c089a19 v2.9.13, same-origin upgrade + fresh-profile JSON, save/reload, history, undo')
+print('PASS old-release real saves: six versions including v2.9.15, same-origin upgrade + fresh-profile JSON, save/reload, history, undo')

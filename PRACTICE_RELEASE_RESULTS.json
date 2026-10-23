@@ -1,18 +1,46 @@
 {
   "completion": false,
-  "generatedAt": "2026-10-23T16:42:18.264555+00:00",
-  "version": "v2.9.15",
+  "version": "v2.9.16",
   "branch": "codex-development",
-  "sourceBaseCommit": "436cc4e1a474bdebeb865161314f3c73331eca1d",
+  "sourceBaseCommit": "3e85b0506e0bb36249150eb8df480d709b2c4cd1",
+  "generatedAt": "2026-10-23T23:51:09.660035+00:00",
   "practicePackageAccepted": true,
   "fullTournamentRulesCertified": false,
-  "duringMatchToolPermission": "unconfirmed",
   "duringMatchUseAuthorized": false,
+  "duringMatchToolPermission": "unconfirmed",
   "officialResearchPerformedThisIteration": false,
   "testCommands": {
-    "passed": 148,
-    "total": 148
+    "passed": 152,
+    "total": 152
   },
+  "operationComparison": {
+    "before": {
+      "samples": 3,
+      "clicks": 24,
+      "inputs": 12,
+      "explicitWheelCommands": 0,
+      "scrollEvents": 24,
+      "automatedSeconds": 12.2344,
+      "panelRenderCalls": 50,
+      "refreshCalls": 18,
+      "updateMedianMs": 609.6,
+      "updateMaxMs": 915.9
+    },
+    "after": {
+      "samples": 3,
+      "clicks": 23,
+      "inputs": 12,
+      "explicitWheelCommands": 0,
+      "scrollEvents": 24,
+      "automatedSeconds": 11.1805,
+      "panelRenderCalls": 19,
+      "refreshCalls": 17,
+      "updateMedianMs": 591.3,
+      "updateMaxMs": 791.5
+    }
+  },
+  "dataBaselinePreserved": true,
+  "limitedPcUiAmendment": true,
   "seriesValidation": {
     "completeMatches": 30,
     "nativeTurns": 218,
@@ -37,35 +65,35 @@
       "failureCount": 0
     }
   },
-  "runtimeChanges": [
-    "index.html: Speed Boost timing, same field duration, sequential ordinary-switch entry effects, release title",
-    "sw.js: v2.9.15 namespace"
-  ],
-  "dataAndUiPreserved": true,
-  "readiness": "PRACTICE_RELEASE_READINESS.json",
-  "audit": "SERIES_MATCH_AUDIT.md",
   "artifact": {
-    "archive": "release/practice-v2.9.15/gc2027ii-v2.9.15-practice-verification.zip",
-    "sha256": "455aa0c934386b0d12528f117b7497bcd9173377832c5bff0cdb3e5b3a442522",
-    "filesVerified": 58,
+    "archive": "release/practice-v2.9.16/gc2027ii-v2.9.16-practice-verification.zip",
+    "sha256": "16376cfdd58adc63be1859d9bc38089ed7f558bde5d9a59c11e6885b256be62a",
+    "filesVerified": 62,
     "passed": true
   },
-  "artifactTests": 6,
+  "artifactTests": 8,
+  "audit": "PC_OPERATION_AUDIT.md",
   "unresolved": [
+    "Automated controls/assertions; excludes human reading and decision time; no human 45-second certification",
+    "Scroll event count includes browser automatic scrolling, is not a count of human wheel gestures and varies with layout/timing",
+    "Three samples per version in the same Linux Chromium/Windows UA environment; timing is descriptive, not a statistical performance guarantee",
+    "30-match combat regression is separate from this UI workload; no official/rules research",
     "Custom Gen9 fixtures, not official Champions full-engine parity or event legality",
     "HP/status and secondary rank/item outcomes are observations; not claimed as auto-applied",
     "Recommendations checked for existence, legal actions and uncertainty, not optimal multi-turn policy",
     "Linux Chromium with Windows UA, not native Windows Chrome/Edge certification",
     "Terminal victory can interrupt residuals: final HP/status/items/actives checked; final automatic field/stage residual comparison explicitly excluded",
-    "11 major moves remain unconfirmed; full specification incomplete",
-    "Official catalogs/rules excluded; during-match permission unconfirmed"
+    "11 major moves and full mechanics remain unconfirmed",
+    "Official catalogs/rules and during-match tool permission unconfirmed"
   ],
   "evidenceSha256": {
-    "TEST_RESULTS.json": "86f84214066f121f9a40fc8aaa9e9fa29865e755ae1024162788c966f0219265",
-    "SERIES_MATCH_RESULTS.json": "04997934eddef5cd9dba1d512555f4c995c7351734256d49cf5ac4532aa2e174",
-    "SERIES_MATCH_INCIDENTS.json": "4c05aec807318319270166b1ebbaf70ac913699aae2dc5ceec68fa3f430a2444",
-    "FROZEN_BASELINE.json": "bba9c9a4b5e52e02e6e9eca82756f11b6238dd54f2683ae7d80437c69feccce4",
-    "PRACTICE_RELEASE_READINESS.json": "83be134f3e62bf8469d18b02bd8cca70100b2533bbafff62339b598d42f07167",
-    "release/practice-v2.9.15/ARTIFACT_VERIFICATION.json": "8516b6ebabd3ca3ac4729af5b578921199213c158680f726856c4eee3ea3adb6"
+    "TEST_RESULTS.json": "1a0f10bf0b0c20050d5f8f4b3ce4f968ab59ca86f94c554fb9052bb2c896b973",
+    "PC_OPERATION_BEFORE.json": "7d0fd1db2b775e5a37d9b1adcdabf404a8ab0864596d224da66a269cba717ba5",
+    "PC_OPERATION_RESULTS.json": "24d5dec38e6cbdef12dc4f63f914ea317b9429efa35657eff0ce2cde1c08cc8d",
+    "PC_OPERATION_LAYOUT_RESULTS.json": "2567451cd644e47e2003853a660b12203fa6fea47956119e92a9359431975e6b",
+    "SERIES_MATCH_RESULTS.json": "e02bf5c1e2091620d742195fec9c6777a7b03842abed63c5843189de83f64c41",
+    "FROZEN_BASELINE.json": "9e22db1eab6af0dc6844a73d1dbd711889ddcadcc078fc17dd61c98df7822842",
+    "PRACTICE_RELEASE_READINESS.json": "5b426b095a5fddb3b01294f160085ef59fd60f4c08fc624fca5526b3b4270888",
+    "release/practice-v2.9.16/ARTIFACT_VERIFICATION.json": "34680fc039aa0a8170919eba2e75e98f648bd1abe5f7b780e631717d8fc55330"
   }
 }

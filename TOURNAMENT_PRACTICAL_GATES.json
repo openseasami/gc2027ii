@@ -51,7 +51,11 @@
     "test-pc-launcher.py",
     "browser_main_matchups_test.py",
     "test-ui-preservation.py",
-    "test-veil-screen-effects.js"
+    "test-veil-screen-effects.js",
+    "test-pc-input-batching.js",
+    "test-series-golden-traces.py",
+    "browser_pc_operations_test.py",
+    "browser_pc_operation_layout_test.py"
   ],
   "forbidden": [
     "main modifications",

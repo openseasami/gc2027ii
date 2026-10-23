@@ -6,9 +6,9 @@ from hashlib import sha256
 from datetime import datetime, timezone
 import json, shutil, subprocess, sys, zipfile
 ROOT = Path(__file__).resolve().parent
-DEST = ROOT / 'release/practice-v2.9.15'
-ARCHIVE = 'gc2027ii-v2.9.15-practice-verification.zip'
-TESTS = ['test-pc-launcher.py', 'browser_pc_trial_test.py', 'browser_prezip_test.py', 'browser_full_match_test.py', 'browser_live_workflow_test.py', 'browser_series_0_test.py']
+DEST = ROOT / 'release/practice-v2.9.16'
+ARCHIVE = 'gc2027ii-v2.9.16-practice-verification.zip'
+TESTS = ['test-pc-launcher.py', 'browser_pc_trial_test.py', 'browser_prezip_test.py', 'browser_full_match_test.py', 'browser_live_workflow_test.py', 'browser_series_0_test.py', 'browser_pc_operations_test.py', 'browser_pc_operation_layout_test.py']
 
 def digest(data): return sha256(data).hexdigest()
 def main():
@@ -20,7 +20,7 @@ def main():
         duringMatchToolPermission='unconfirmed', duringMatchUseAuthorized=False,
         checkedAt=datetime.now(timezone.utc).isoformat(), archive=archive.relative_to(ROOT).as_posix(),
         sha256=checksum, tests=[], runtimeSha256=baseline['runtimeSha256'],
-        testSourceSha256={n:digest((ROOT/n).read_bytes()) for n in ['verify-practice-release.py','series-match-reference.js','series-match-replay.js','series_match_harness.py','live-practical-oracle.js'] + TESTS})
+        testSourceSha256={n:digest((ROOT/n).read_bytes()) for n in ['verify-practice-release.py','pc_operation_benchmark.py','series-match-reference.js','series-match-replay.js','series_match_harness.py','live-practical-oracle.js'] + TESTS})
     try:
         with TemporaryDirectory(prefix='practice-final-', dir=ROOT / 'work') as folder:
             target = Path(folder)
@@ -51,7 +51,7 @@ def main():
             shutil.copy2(ROOT / 'reference-data/stats-moves/showdown-normalized.json', refs / 'showdown-normalized.json')
             # Test helpers are copied only AFTER verifying exact archive membership.
             # They are not required to start or use the extracted application.
-            for name in ['series-match-reference.js','series-match-replay.js','series_match_harness.py','live-practical-oracle.js']:
+            for name in ['pc_operation_benchmark.py','series-match-reference.js','series-match-replay.js','series_match_harness.py','live-practical-oracle.js']:
                 shutil.copy2(ROOT/name,target/name)
             (target/'work/oracle').mkdir(parents=True,exist_ok=True)
             (target/'work/oracle/node_modules').symlink_to(ROOT/'work/oracle/node_modules',target_is_directory=True)
@@ -60,9 +60,9 @@ def main():
                 result = subprocess.run([sys.executable, str(target/name)], cwd=target, text=True, capture_output=True, timeout=600 if name.startswith('browser_series_') else 180)
                 report['tests'].append(dict(command=name, exitCode=result.returncode,
                     stdout=result.stdout[-4000:], stderr=result.stderr[-4000:]))
-            report['passed'] = len(report['tests']) == 6 and all(t['exitCode'] == 0 for t in report['tests'])
+            report['passed'] = len(report['tests']) == 8 and all(t['exitCode'] == 0 for t in report['tests'])
     finally:
         (DEST / 'ARTIFACT_VERIFICATION.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     assert report['passed'], report['tests']
-    print(f'PASS practice ZIP: {report["filesVerified"]} files, extraction/launcher/PC/offline/full observed match/continuous workflow + 10 native/observed matches 6/6; SHA256 {checksum}')
+    print(f'PASS practice ZIP: {report["filesVerified"]} files, extraction/launcher/PC/offline/full observed match/continuous workflow + 10 native/observed matches + PC operation benchmark/layout 8/8; SHA256 {checksum}')
 if __name__ == '__main__': main()

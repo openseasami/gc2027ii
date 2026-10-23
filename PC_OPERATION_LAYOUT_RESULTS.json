@@ -1,0 +1,408 @@
+{
+  "completion": false,
+  "passed": true,
+  "layouts": [
+    {
+      "stage": "before input",
+      "label": "第一推奨・参考推定ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）オオニューラ: 交代 → ガオガエン交代候補 （交代）注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開",
+      "turn": "1",
+      "verified": "false",
+      "expectedTurn": 1,
+      "lines": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）",
+        "注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開"
+      ],
+      "expected": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）"
+      ],
+      "top": 971.78125,
+      "bottom": 1060,
+      "height": 88.21875,
+      "clipped": false,
+      "outputBottom": 971.78125,
+      "viewport": [
+        1920,
+        1080
+      ],
+      "rows": [
+        {
+          "visible": true,
+          "bottom": 189.140625
+        },
+        {
+          "visible": true,
+          "bottom": 251.71875
+        },
+        {
+          "visible": true,
+          "bottom": 351.6875
+        },
+        {
+          "visible": true,
+          "bottom": 414.265625
+        }
+      ],
+      "panelPosition": "static"
+    },
+    {
+      "stage": "after document scroll",
+      "label": "第一推奨・参考推定ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）オオニューラ: 交代 → ガオガエン交代候補 （交代）注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開",
+      "turn": "1",
+      "verified": "false",
+      "expectedTurn": 1,
+      "lines": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）",
+        "注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開"
+      ],
+      "expected": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）"
+      ],
+      "top": 971.78125,
+      "bottom": 1060,
+      "height": 88.21875,
+      "clipped": false,
+      "outputBottom": 971.78125,
+      "viewport": [
+        1920,
+        1080
+      ],
+      "rows": [
+        {
+          "visible": true,
+          "bottom": 189.140625
+        },
+        {
+          "visible": true,
+          "bottom": 251.71875
+        },
+        {
+          "visible": true,
+          "bottom": 351.6875
+        },
+        {
+          "visible": true,
+          "bottom": 414.265625
+        }
+      ],
+      "panelPosition": "static"
+    },
+    {
+      "stage": "before input",
+      "label": "第一推奨・参考推定ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）オオニューラ: 交代 → ガオガエン交代候補 （交代）注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開",
+      "turn": "1",
+      "verified": "false",
+      "expectedTurn": 1,
+      "lines": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）",
+        "注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開"
+      ],
+      "expected": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）"
+      ],
+      "top": 659.78125,
+      "bottom": 748,
+      "height": 88.21875,
+      "clipped": false,
+      "outputBottom": 659.78125,
+      "viewport": [
+        1366,
+        768
+      ],
+      "rows": [
+        {
+          "visible": true,
+          "bottom": 189.140625
+        },
+        {
+          "visible": true,
+          "bottom": 251.71875
+        },
+        {
+          "visible": true,
+          "bottom": 351.6875
+        },
+        {
+          "visible": true,
+          "bottom": 414.265625
+        }
+      ],
+      "panelPosition": "static"
+    },
+    {
+      "stage": "after document scroll",
+      "label": "第一推奨・参考推定ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）オオニューラ: 交代 → ガオガエン交代候補 （交代）注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開",
+      "turn": "1",
+      "verified": "false",
+      "expectedTurn": 1,
+      "lines": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）",
+        "注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開"
+      ],
+      "expected": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）"
+      ],
+      "top": 659.78125,
+      "bottom": 748,
+      "height": 88.21875,
+      "clipped": false,
+      "outputBottom": 659.78125,
+      "viewport": [
+        1366,
+        768
+      ],
+      "rows": [
+        {
+          "visible": true,
+          "bottom": 189.140625
+        },
+        {
+          "visible": true,
+          "bottom": 251.71875
+        },
+        {
+          "visible": true,
+          "bottom": 351.6875
+        },
+        {
+          "visible": true,
+          "bottom": 414.265625
+        }
+      ],
+      "panelPosition": "static"
+    },
+    {
+      "stage": "before input",
+      "label": "第一推奨・参考推定ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）オオニューラ: 交代 → ガオガエン交代候補 （交代）注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開",
+      "turn": "1",
+      "verified": "false",
+      "expectedTurn": 1,
+      "lines": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）",
+        "注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開"
+      ],
+      "expected": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）"
+      ],
+      "top": 611.78125,
+      "bottom": 700,
+      "height": 88.21875,
+      "clipped": false,
+      "outputBottom": 611.78125,
+      "viewport": [
+        1280,
+        720
+      ],
+      "rows": [
+        {
+          "visible": true,
+          "bottom": 189.140625
+        },
+        {
+          "visible": true,
+          "bottom": 251.71875
+        },
+        {
+          "visible": true,
+          "bottom": 351.6875
+        },
+        {
+          "visible": true,
+          "bottom": 414.265625
+        }
+      ],
+      "panelPosition": "static"
+    },
+    {
+      "stage": "after document scroll",
+      "label": "第一推奨・参考推定ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）オオニューラ: 交代 → ガオガエン交代候補 （交代）注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開",
+      "turn": "1",
+      "verified": "false",
+      "expectedTurn": 1,
+      "lines": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）",
+        "注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開"
+      ],
+      "expected": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）"
+      ],
+      "top": 611.78125,
+      "bottom": 700,
+      "height": 88.21875,
+      "clipped": false,
+      "outputBottom": 611.78125,
+      "viewport": [
+        1280,
+        720
+      ],
+      "rows": [
+        {
+          "visible": true,
+          "bottom": 189.140625
+        },
+        {
+          "visible": true,
+          "bottom": 251.71875
+        },
+        {
+          "visible": true,
+          "bottom": 351.6875
+        },
+        {
+          "visible": true,
+          "bottom": 414.265625
+        }
+      ],
+      "panelPosition": "static"
+    },
+    {
+      "stage": "before input",
+      "label": "第一推奨・参考推定ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）オオニューラ: 交代 → ガオガエン交代候補 （交代）注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開",
+      "turn": "1",
+      "verified": "false",
+      "expectedTurn": 1,
+      "lines": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）",
+        "注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開"
+      ],
+      "expected": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）"
+      ],
+      "top": 505.78125,
+      "bottom": 594,
+      "height": 88.21875,
+      "clipped": false,
+      "outputBottom": 505.78125,
+      "viewport": [
+        1093,
+        614
+      ],
+      "rows": [
+        {
+          "visible": true,
+          "bottom": 189.140625
+        },
+        {
+          "visible": true,
+          "bottom": 251.71875
+        },
+        {
+          "visible": true,
+          "bottom": 351.6875
+        },
+        {
+          "visible": true,
+          "bottom": 414.265625
+        }
+      ],
+      "panelPosition": "static"
+    },
+    {
+      "stage": "after document scroll",
+      "label": "第一推奨・参考推定ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）オオニューラ: 交代 → ガオガエン交代候補 （交代）注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開",
+      "turn": "1",
+      "verified": "false",
+      "expectedTurn": 1,
+      "lines": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）",
+        "注意：2手先：ゴリランダー→メガボーマンダ：いかく再展開"
+      ],
+      "expected": [
+        "ゴリランダー: 交代 → メガボーマンダ交代候補 （交代）",
+        "オオニューラ: 交代 → ガオガエン交代候補 （交代）"
+      ],
+      "top": 505.78125,
+      "bottom": 594,
+      "height": 88.21875,
+      "clipped": false,
+      "outputBottom": 505.78125,
+      "viewport": [
+        1093,
+        614
+      ],
+      "rows": [
+        {
+          "visible": true,
+          "bottom": 189.140625
+        },
+        {
+          "visible": true,
+          "bottom": 251.71875
+        },
+        {
+          "visible": true,
+          "bottom": 351.6875
+        },
+        {
+          "visible": true,
+          "bottom": 414.265625
+        }
+      ],
+      "panelPosition": "static"
+    },
+    {
+      "stage": "immediate corrected HP",
+      "label": "第一推奨・参考推定ゴリランダー: 交代 → ガオガエン交代候補 （交代）オオニューラ: フェイタルクロー → ゴリランダー注意：2手先：ゴリランダー→ガオガエン：次ターン弱点打点",
+      "turn": "1",
+      "verified": "false",
+      "expectedTurn": 1,
+      "lines": [
+        "ゴリランダー: 交代 → ガオガエン交代候補 （交代）",
+        "オオニューラ: フェイタルクロー → ゴリランダー",
+        "注意：2手先：ゴリランダー→ガオガエン：次ターン弱点打点"
+      ],
+      "expected": [
+        "ゴリランダー: 交代 → ガオガエン交代候補 （交代）",
+        "オオニューラ: フェイタルクロー → ゴリランダー"
+      ],
+      "top": 659.78125,
+      "bottom": 748,
+      "height": 88.21875,
+      "clipped": false,
+      "outputBottom": 659.78125,
+      "viewport": [
+        1366,
+        768
+      ],
+      "rows": [
+        {
+          "visible": true,
+          "bottom": 189.140625
+        },
+        {
+          "visible": true,
+          "bottom": 251.71875
+        },
+        {
+          "visible": true,
+          "bottom": 351.6875
+        },
+        {
+          "visible": true,
+          "bottom": 414.265625
+        }
+      ],
+      "panelPosition": "static"
+    }
+  ],
+  "stateInjection": false,
+  "checks": [
+    "HP correction exposed with no disclosure click; summary matches current authoritative recommendation",
+    "narrow screen summary hidden; original mobile layout retained"
+  ],
+  "browserErrors": []
+}

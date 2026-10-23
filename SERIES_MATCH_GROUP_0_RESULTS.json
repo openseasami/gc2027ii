@@ -342,7 +342,7 @@
   "traceSha256": "a8b38edfe3a3842989eed395da7fc09ce5bbf2fbcaf225322661b2b5d6f82ff4",
   "traceFile": "reference-data/series-matches/group-0.json",
   "sourceSha256": {
-    "index.html": "9aae100cdeabfc3f25a497f7cd70ee9f07dc0ee4062c859f095d612ae8834c99",
+    "index.html": "0cd0a632397b4726a7345534a7f1afa4b7cfc9e0954c7d2eba600cdf3e098bcf",
     "series-match-reference.js": "71bea24bb6573ff3318fca19124c0f3b749aed69f5ac56dab739be88f5d0ac88",
     "series-match-replay.js": "1604159a049fc875477c2e1205de36a936db9e55f98b5525e63f6e9d9a710f7b",
     "series_match_harness.py": "1abc83ecc96c8916db3d3d183a64ffc3d8175a8ae042272ccf557dff1759b1a7",

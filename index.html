@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Global Challenge 2027 II Support v2.9.15</title>
+<title>Global Challenge 2027 II Support v2.9.16</title>
 <style>
 :root{--bg:#f4f6f8;--panel:#fff;--line:#d8dee8;--text:#18202b;--muted:#667085;--accent:#2563eb;--accent2:#dbeafe;--danger:#b42318;--warn:#fff4cc;--ok:#eaf7ee;--chip:#f8fafc;--violet:#7c3aed}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}button,select{font:inherit}button{cursor:pointer}
@@ -1987,6 +1987,13 @@ body.mode45 #fixed45Panel .fixed45-head{position:static!important}
 #battleArea .damage-follow-rail #damageOutput{
  flex:1;min-height:0;max-height:none!important;overflow:auto!important;
 }
+/* v2.9.16: keep a compact advisory beside damage while the inputs scroll. */
+#pcLiveRecommendation{display:none}
+@media(min-width:981px){
+ body.mode45 #pcLiveRecommendation{display:block;flex:none;border-top:1px solid #cbd5e1;
+  padding:5px 0 0;font-size:11px;line-height:1.35;max-height:132px;overflow:auto;color:#0f172a;background:#fff}
+ #pcLiveRecommendation p{margin:2px 0;overflow-wrap:anywhere}
+}
 @media(max-width:980px){
  #battleArea{padding-right:0;padding-bottom:calc(52dvh + 24px)}
  #battleArea .damage-follow-rail{
@@ -2206,7 +2213,7 @@ body.mode45 #fixed45Panel .fixed45-head{position:static!important}
 <aside class="damage-follow-rail" aria-label="瞬時ダメージ計算">
 <div class="ai-box damage-box" id="damageBox"><div class="ai-label"><span>瞬時ダメージ計算</span><button id="damageToggleBtn" class="damage-toggle" type="button">閉じる</button></div>
 <div id="damageOutput" class="ai-text">対戦開始後に自動計算します。</div>
-
+<div id="pcLiveRecommendation" role="status" aria-live="polite"></div>
 </div>
 </aside>
 </div>
@@ -13375,6 +13382,7 @@ function refresh(){
     renderOpponentActions();
     renderMyRecommendations();
     renderDamageOutput();
+    renderPcLiveRecommendation();
 
   }finally{
     REFRESH_MEMO=null;
@@ -14864,7 +14872,7 @@ function guide45TargetElement(step){
   if(step==='recommend')return $('myRecommendation');
   return null;
 }
-function updateGuide45(){
+function updateGuide45(renderPanel=true){
   if(!document.body.classList.contains('mode45'))return;
   document.querySelectorAll('.guide-focus').forEach(el=>el.classList.remove('guide-focus'));
   const next=currentGuideStep();
@@ -14876,7 +14884,42 @@ function updateGuide45(){
   });
   const target=guide45TargetElement(next);
   if(target)target.classList.add('guide-focus');
-  fixed45Render();
+  if(renderPanel)fixed45Render();
+}
+
+// Batch one observed input without changing the transactional turn/undo gate.
+// Other callers retain markGuide45's immediate update/save behavior.
+function applyFixed45Input(key,parts,redrawCards=false){
+  const turn=battleTurnNumber;
+  for(const part of parts){
+    if(part==='hp')state.turnHpInputs={...(state.turnHpInputs||{}),[key]:true};
+    if(guide45State[key]&&part in guide45State[key])guide45State[key][part]=true;
+  }
+  updateGuide45(false);
+  // Finalization already renders and saves the committed next-turn state.
+  if(battleTurnNumber!==turn)return;
+  if(redrawCards)renderCards();
+  refresh();save();
+}
+
+function renderPcLiveRecommendation(){
+  const box=$('pcLiveRecommendation'),source=$('myRecommendation');
+  if(!box||!source)return;
+  box.replaceChildren();
+  const title=document.createElement('strong');
+  title.textContent='第一推奨・参考推定';box.appendChild(title);
+  const lines=[...source.querySelectorAll('.primary-rec-actions .rec-line')];
+  if(!lines.length){
+    const pending=document.createElement('p');
+    pending.textContent=source.querySelector('.primary-rec-reason')?.textContent||source.textContent;
+    box.appendChild(pending);
+  }else for(const line of lines){
+    const p=document.createElement('p');p.textContent=line.textContent;box.appendChild(p);
+  }
+  const warning=source.querySelector('.primary-warning');
+  if(warning){const p=document.createElement('p');p.textContent=warning.textContent;box.appendChild(p);}
+  box.dataset.predictionVerified='false';
+  box.dataset.turn=String(battleTurnNumber);
 }
 
 
@@ -14893,7 +14936,6 @@ function fixed45Back(){
   if(cur==='replaceKO'){
     guide45State.my2.hp=false;
     updateGuide45();
-    fixed45Render();
     return;
   }
 
@@ -14904,8 +14946,7 @@ function fixed45Back(){
     guide45State.opp1.hp=false;
     guide45State.opp1.action=false;
     renderCards();renderRosterHp();refresh();save();
-    updateGuide45();
-    fixed45Render();
+    updateGuide45(false);
     return;
   }
 
@@ -14920,9 +14961,8 @@ function fixed45Back(){
   }else{
     guide45State[prev].hp=false;
   }
-  updateGuide45();
+  updateGuide45(false);
   refresh();save();
-  fixed45Render();
 }
 
 
@@ -14998,7 +15038,6 @@ function fixed45RenderForcedSwitch(cur,e,body){
       renderRosterHp();
       refresh();
       save();
-      fixed45Render();
     };
     sw.appendChild(b);
   });
@@ -15157,9 +15196,7 @@ function fixed45Render(){
     if(Number(e.d.hp)===v)b.classList.add('active');
     b.onclick=()=>{
       setObservedBattleHp(cur.side,e.idx,v);
-      markGuide45(cur.key,'hp');
-      renderCards();renderRosterHp();refresh();save();
-      fixed45Render();
+      applyFixed45Input(cur.key,['hp'],true);
     };
     hpBtns.appendChild(b);
   });
@@ -15167,6 +15204,8 @@ function fixed45Render(){
   if(hpDone && cur.side==='opp'){
     const compact=document.createElement('details');
     compact.className='fixed45-completed-hp';
+    // PC correction stays one click; narrow screens keep progressive disclosure.
+    compact.open=window.matchMedia('(min-width:981px)').matches;
     const summary=document.createElement('summary');
     summary.textContent=`① HP ✓ ${Number(e.d.hp)===0?'KO':e.d.hp+'%'}　変更する`; 
     compact.appendChild(summary);
@@ -15200,8 +15239,7 @@ function fixed45Render(){
         confirmObservedOpponentMove(e.idx,e.name,move);
         if(fixed45FailArmed[cur.key])setCurrentTurnMoveFailed('opp',e.idx,e.name,true);
         fixed45FailArmed[cur.key]=false;
-        markGuide45(cur.key,'action');
-        refresh();save();fixed45Render();
+        applyFixed45Input(cur.key,['action']);
       };
       acts.appendChild(b);
     });
@@ -15216,8 +15254,8 @@ function fixed45Render(){
       other.append(title,searchableButtonChoices(extraMoves,e.d.currentTurnAction?.move,move=>{
         confirmObservedOpponentMove(e.idx,e.name,move);
         if(fixed45FailArmed[cur.key])setCurrentTurnMoveFailed('opp',e.idx,e.name,true);
-        fixed45FailArmed[cur.key]=false;markGuide45(cur.key,'action');
-        renderCards();refresh();save();fixed45Render();
+        fixed45FailArmed[cur.key]=false;
+        applyFixed45Input(cur.key,['action'],true);
       },'技'));
       extraWrap.appendChild(other);
       actionSec.appendChild(extraWrap);
@@ -15232,9 +15270,7 @@ function fixed45Render(){
       fixed45FailArmed[cur.key]=false;
       e.d.hp=0;
       setCurrentTurnFaintedBeforeAction('opp',e.idx,e.name);
-      markGuide45(cur.key,'hp');
-      markGuide45(cur.key,'action');
-      renderCards();renderRosterHp();refresh();save();fixed45Render();
+      applyFixed45Input(cur.key,['hp','action'],true);
     };
     acts.appendChild(koBtn);
 
@@ -15248,8 +15284,7 @@ function fixed45Render(){
       b.onclick=()=>{
         if(!recordSwitchForSlot('opp',cur.slot,pi))return;
         fixed45FailArmed[cur.key]=false;
-        markGuide45(cur.key,'action');
-        renderCards();renderRosterHp();refresh();save();fixed45Render();
+        applyFixed45Input(cur.key,['action'],true);
       };
       sw.appendChild(b);
     });
@@ -15271,13 +15306,13 @@ function fixed45Render(){
         const btn=document.createElement('button');btn.type='button';
         btn.textContent=targetName+'に命中・効果を確認';
         if(observed.effectReviewed&&observed.hitConfirmed&&observed.targetIdx===targetIdx)btn.classList.add('active');
-        btn.onclick=()=>{if(!markObservedEffectReviewed(cur.side,e.idx,targetIdx,true))return;refresh();save();fixed45Render();};
+        btn.onclick=()=>{if(!markObservedEffectReviewed(cur.side,e.idx,targetIdx,true))return;refresh();save();};
         buttons.appendChild(btn);
       });
       const unknown=document.createElement('button');unknown.type='button';
       unknown.textContent='不明・外れ・効果なし';
       if(observed.effectReviewed&&!observed.hitConfirmed)unknown.classList.add('active');
-      unknown.onclick=()=>{if(!markObservedEffectReviewed(cur.side,e.idx,null,false))return;refresh();save();fixed45Render();};
+      unknown.onclick=()=>{if(!markObservedEffectReviewed(cur.side,e.idx,null,false))return;refresh();save();};
       buttons.appendChild(unknown);effect.appendChild(buttons);actionSec.appendChild(effect);
     }
     body.appendChild(actionSec);
@@ -15297,7 +15332,7 @@ function fixed45Render(){
           }else{
             setCurrentTurnMove('my',e.idx,e.name,move);
           }
-          refresh();save();fixed45Render();
+          refresh();save();
         };
         acts.appendChild(b);
       });
@@ -15318,13 +15353,13 @@ function fixed45Render(){
         const btn=document.createElement('button');btn.type='button';
         btn.textContent=targetName+'に命中・効果を確認';
         if(ownAction.effectReviewed&&ownAction.hitConfirmed&&ownAction.targetIdx===targetIdx)btn.classList.add('active');
-        btn.onclick=()=>{if(!markObservedEffectReviewed('my',e.idx,targetIdx,true))return;refresh();save();fixed45Render();};
+        btn.onclick=()=>{if(!markObservedEffectReviewed('my',e.idx,targetIdx,true))return;refresh();save();};
         buttons.appendChild(btn);
       });
       const unknown=document.createElement('button');unknown.type='button';
       unknown.textContent='不明・外れ・効果なし';
       if(ownAction.effectReviewed&&!ownAction.hitConfirmed)unknown.classList.add('active');
-      unknown.onclick=()=>{if(!markObservedEffectReviewed('my',e.idx,null,false))return;refresh();save();fixed45Render();};
+      unknown.onclick=()=>{if(!markObservedEffectReviewed('my',e.idx,null,false))return;refresh();save();};
       buttons.appendChild(unknown);effect.appendChild(buttons);body.appendChild(effect);
     }
   }

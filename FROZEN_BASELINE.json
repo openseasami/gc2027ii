@@ -4,7 +4,7 @@
   "branch": "codex-development",
   "sourceCommit": "3a4362fdf01968dc452b5b7f8b17206e2984b00b",
   "implementationCommit": "042aa330e1353f6d88756bd80e43c3569b13eb3b",
-  "policy": "v2.9.13 data/UI preserved; v2.9.15 complete observed-match regressions and three critical entry/field timing corrections; completion:false.",
+  "policy": "Immutable v2.9.13 data; user-authorized v2.9.16 limited PC operation improvements on v2.9.15; no combat features added; completion:false.",
   "runtimeSha256": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "battle-core.js": "02815420ea1c334481fa8378f25ede32387749308e9cf3ce3803863871e6df51",
@@ -12,13 +12,13 @@
     "effect-engine.js": "06e5fd3ba720d83316fa32a9b4e79bd8c3c729b57d3e9326049c2375481d6e78",
     "icon-192.png": "269f2adbba00855bf883fd0a284cf2bc5d3aa87dcdea67bc2484aa11204b1502",
     "icon-512.png": "3ab233c4b30a924ec0e12ae0e737abfdc465cd339bf92b043fd81e42babaa4f8",
-    "index.html": "9aae100cdeabfc3f25a497f7cd70ee9f07dc0ee4062c859f095d612ae8834c99",
+    "index.html": "0cd0a632397b4726a7345534a7f1afa4b7cfc9e0954c7d2eba600cdf3e098bcf",
     "launch-pc-trial.py": "c4cc5092cb846e71311ca1a7f26facae52b508847abc2c846baff401528d1575",
     "manifest.webmanifest": "ba634d04f244146555591b6db7e3bc82550ae06623d8dac25dea74a132c3936c",
     "priority-engine.js": "1c7fb953de596fc7b0da6f9def31a818f06f615c69f69db871310751abbabffb",
     "rank-effects.js": "f9b217183a9b079178c3c7c51171310cbc1ecc0774abee93df0d88fe10d0a2ce",
     "start-pc-trial.cmd": "ccbe4c2c28ddec7356806d0501b683d3f395577a618bd40e4033adf6a1f9f64a",
-    "sw.js": "f4e2e37684d54aec7ae07052a86918ebcc9e726bb1e4269fb0d4718fa0e79452",
+    "sw.js": "1275a601b704598bc32edfb204f6ec6c83b7d53984e2d448acbbd62c910df8e8",
     "three-attack-effects.js": "cbef315088b116446588ecaec77db9f71aa243dc369eccb589996f4c19919773",
     "turn-order-effects.js": "f0b4cda295774f7e9e47ddd321d23599d68a2c070d2c99d185b2e24f313518e4"
   },
@@ -557,7 +557,8 @@
     "v2.9.10": "af326cf0452c7b295ae66aa9483f2c62cd03dcfadaaca584b713a9d70dc46491",
     "v2.9.12": "715e8ae69615d4dafa3d8b248fa7f72dabb7f4abc79b3384d4cf87886fb776c4",
     "v2.9.13": "a1113c059faada5cada8b28b57d44227e18ae1aeeeb3932069ed739335d298da",
-    "v2.9.14": "a36b1119c6e08e20e35ac73131e963f2564dbdf30a2e60c8a9c187c072b91095"
+    "v2.9.14": "a36b1119c6e08e20e35ac73131e963f2564dbdf30a2e60c8a9c187c072b91095",
+    "v2.9.15": "455aa0c934386b0d12528f117b7497bcd9173377832c5bff0cdb3e5b3a442522"
   },
   "originalRuntimeSha256": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -584,11 +585,12 @@
       "featureAdded": false,
       "evidence": "KO_BOUNDARY_AUDIT_RESULTS.json",
       "originalSha256": "facc2db0bc5d28dc3fa0960d59b18319a1b7e5839e3a445f7e737b2ee9f0c372",
-      "correctedSha256": "9aae100cdeabfc3f25a497f7cd70ee9f07dc0ee4062c859f095d612ae8834c99",
+      "correctedSha256": "0cd0a632397b4726a7345534a7f1afa4b7cfc9e0954c7d2eba600cdf3e098bcf",
       "previousCorrectedSha256": "60c610d0c6e318b1fb4f912d2c61015525c38073f66ae09191a728d85d3ed584",
       "prezipResistBerryFix": "Registered resist berries beyond Chople/Colbur were silently excluded; adapter now consults the same shared type table. The 64d8d75 Focus Sash fix is retained.",
       "v2914Reason": "User-authorized endgame recommendation/45s dead-slot corrections, monotone scenario scoring and release version/cache metadata",
-      "v2915Reason": "Full-match critical corrections: Speed Boost entry timing, matching field duration, sequential ordinary-switch entry abilities; title metadata"
+      "v2915Reason": "Full-match critical corrections: Speed Boost entry timing, matching field duration, sequential ordinary-switch entry abilities; title metadata",
+      "v2916Scope": "PC input batching, open completed HP, advisory summary and release/cache version; no combat/data features added."
     },
     {
       "file": "battle-core.js",
@@ -606,15 +608,17 @@
       "file": "sw.js",
       "originalSha256": "970d16a54be7df740978ae9788de26b21a45d10c156009888b9b19f7d06d38ca",
       "featureAdded": false,
-      "correctedSha256": "f4e2e37684d54aec7ae07052a86918ebcc9e726bb1e4269fb0d4718fa0e79452",
+      "correctedSha256": "1275a601b704598bc32edfb204f6ec6c83b7d53984e2d448acbbd62c910df8e8",
       "v2914Reason": "v2.9.14 cache namespace, preserving offline shell",
-      "v2915Reason": "v2.9.15 cache namespace; offline shell preserved"
+      "v2915Reason": "v2.9.15 cache namespace; offline shell preserved",
+      "v2916Scope": "PC input batching, open completed HP, advisory summary and release/cache version; no combat/data features added."
     }
   ],
-  "currentRuntimeVersion": "v2.9.15",
-  "currentSourceBaseCommit": "436cc4e1a474bdebeb865161314f3c73331eca1d",
+  "currentRuntimeVersion": "v2.9.16",
+  "currentSourceBaseCommit": "3e85b0506e0bb36249150eb8df480d709b2c4cd1",
   "migrationArchivePaths": {
     "v2.9.13": "release/practice-v2.9.13/gc2027ii-v2.9.13-practice-verification.zip",
-    "v2.9.14": "release/practice-v2.9.14/gc2027ii-v2.9.14-practice-verification.zip"
+    "v2.9.14": "release/practice-v2.9.14/gc2027ii-v2.9.14-practice-verification.zip",
+    "v2.9.15": "release/practice-v2.9.15/gc2027ii-v2.9.15-practice-verification.zip"
   }
 }

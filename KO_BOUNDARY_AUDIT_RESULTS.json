@@ -621,7 +621,7 @@
     "sturdy": 240
   },
   "scope": "Controlled no-effect ability matchups isolate AP/nature/items/type/weather/screens/target count; known Sturdy/Sash fixtures included. Existing real-ability 16-matchup suite remains separate. AP equivalent EVs certify arithmetic only, not official AP rules or a standard EV-budget conversion.",
-  "elapsedSeconds": 96.758,
+  "elapsedSeconds": 86.93,
   "species": 344,
   "megaSpecies": 82,
   "apValues": [
@@ -662,9 +662,9 @@
   "natureCount": 15,
   "profilePointLimit": 66,
   "sourceSha256": {
-    "index.html": "9aae100cdeabfc3f25a497f7cd70ee9f07dc0ee4062c859f095d612ae8834c99",
+    "index.html": "0cd0a632397b4726a7345534a7f1afa4b7cfc9e0954c7d2eba600cdf3e098bcf",
     "battle-core.js": "02815420ea1c334481fa8378f25ede32387749308e9cf3ce3803863871e6df51",
-    "browser_ko_boundary_test.py": "540adb3efe97785b40f917904ed28e9c73ed254e921fa1b38279ccabf55fada0",
+    "browser_ko_boundary_test.py": "b6c55b0222827b9df639949ab5916dc055b8435c187d20b21d6e0e249d8c5a87",
     "ko-boundary-oracle.js": "2e520b4a810af0c97cac0ac50bc0477f4eb81e6891cc2b15b50faddf19a67399",
     "ADOPTION_120_NORMALIZED.json": "4eda15a0810d74d3124aeace37cf51d75eadd36a37e9ff2ab10377d697e3bd47",
     "reference-data/stats-moves/showdown-normalized.json": "547c7a2070efb6bdf4bda1866dbe31773fdc517ba14fc8f8995d888ddd2711d9"
@@ -674,7 +674,7 @@
     "random": "乱数1発"
   },
   "browserErrors": [],
-  "baselineVersion": "v2.9.15",
+  "baselineVersion": "v2.9.16",
   "limitations": [
     "AP numeric equivalence at Lv50/IV31; official AP rules, standard EV budget and different IVs/levels not certified",
     "120 stored profiles are historical tournament 30 plus ranked fallback 90, not current event measured top 120",
