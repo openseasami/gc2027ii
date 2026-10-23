@@ -1,0 +1,76 @@
+{
+  "completion": false,
+  "acquiredDateJST": "2026-10-23",
+  "repositories": {
+    "pokeapi": {
+      "sha": "2bf639e5572812a67d2b94903fdcb9d095f5aeb2",
+      "date": "2026-10-20T12:46:04Z"
+    },
+    "showdown": {
+      "sha": "1636bf6d0848fb3c9330576963a647d4e179d278",
+      "date": "2026-10-22T21:08:17Z"
+    }
+  },
+  "scope": "Community-maintained external references, not official event legality. General species data and Champions numeric move overrides are distinguished.",
+  "files": {
+    "pokemon.csv": {
+      "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/2bf639e5572812a67d2b94903fdcb9d095f5aeb2/data/v2/csv/pokemon.csv",
+      "repository": "PokeAPI/pokeapi",
+      "commit": "2bf639e5572812a67d2b94903fdcb9d095f5aeb2",
+      "savedSha256": "ba0ab405aa66dcbda52e2b1a5e1db775113262365da858092a01dc3be6fc63da"
+    },
+    "pokemon_stats.csv": {
+      "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/2bf639e5572812a67d2b94903fdcb9d095f5aeb2/data/v2/csv/pokemon_stats.csv",
+      "repository": "PokeAPI/pokeapi",
+      "commit": "2bf639e5572812a67d2b94903fdcb9d095f5aeb2",
+      "savedSha256": "19cae073dd58f784bb6dcaded779731456f9d650a550c2f9d2a86e6922f56b2a"
+    },
+    "pokemon_forms.csv": {
+      "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/2bf639e5572812a67d2b94903fdcb9d095f5aeb2/data/v2/csv/pokemon_forms.csv",
+      "repository": "PokeAPI/pokeapi",
+      "commit": "2bf639e5572812a67d2b94903fdcb9d095f5aeb2",
+      "savedSha256": "429ddb0f3ff424c6bcbaf89d27c44d4efca6be1e3cdc26e0c6ce844a5b18afb8"
+    },
+    "moves.csv": {
+      "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/2bf639e5572812a67d2b94903fdcb9d095f5aeb2/data/v2/csv/moves.csv",
+      "repository": "PokeAPI/pokeapi",
+      "commit": "2bf639e5572812a67d2b94903fdcb9d095f5aeb2",
+      "savedSha256": "f2bd794fd99eb9e5c6716e5efc2395325d390d8051d3b285459635465802cac4"
+    },
+    "showdown-pokedex.ts": {
+      "url": "https://github.com/smogon/pokemon-showdown/blob/1636bf6d0848fb3c9330576963a647d4e179d278/data/pokedex.ts",
+      "repository": "smogon/pokemon-showdown",
+      "commit": "1636bf6d0848fb3c9330576963a647d4e179d278",
+      "savedSha256": "b36aaf543f8698733b68aa2972bd9f8b5607d3c04de5f143d977f5dbbe1acddd"
+    },
+    "showdown-moves.ts": {
+      "url": "https://github.com/smogon/pokemon-showdown/blob/1636bf6d0848fb3c9330576963a647d4e179d278/data/moves.ts",
+      "repository": "smogon/pokemon-showdown",
+      "commit": "1636bf6d0848fb3c9330576963a647d4e179d278",
+      "savedSha256": "e60222f11cdd907c14f1ea2f024b50ddc0fb7dcae0c8e9d3026bc48bb0427b0d"
+    },
+    "showdown-champions-moves.ts": {
+      "url": "https://github.com/smogon/pokemon-showdown/blob/1636bf6d0848fb3c9330576963a647d4e179d278/data/mods/champions/moves.ts",
+      "repository": "smogon/pokemon-showdown",
+      "commit": "1636bf6d0848fb3c9330576963a647d4e179d278",
+      "savedSha256": "454484ca17637f69b38e8abd3957c09f25776d576054de8b22fc4237e0b13951"
+    },
+    "showdown-normalized.json": {
+      "derivedFrom": [
+        "showdown-pokedex.ts",
+        "showdown-moves.ts",
+        "showdown-champions-moves.ts"
+      ],
+      "generator": "prepare-data-audit-references.js",
+      "savedSha256": "547c7a2070efb6bdf4bda1866dbe31773fdc517ba14fc8f8995d888ddd2711d9"
+    },
+    "pokeapi-identity-map.json": {
+      "derivedFrom": [
+        "pokemon.csv",
+        "pokemon_forms.csv"
+      ],
+      "meaning": "Explicit form identifiers / gender aliases only; five unrepresented forms are not assigned a guessed identity.",
+      "savedSha256": "4211d679f905549bb31e0ddec762ad3313c3a2dcea0154ed5c25d47196c7ae12"
+    }
+  }
+}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Global Challenge 2027 II Support v2.9.10</title>
+<title>Global Challenge 2027 II Support v2.9.11</title>
 <style>
 :root{--bg:#f4f6f8;--panel:#fff;--line:#d8dee8;--text:#18202b;--muted:#667085;--accent:#2563eb;--accent2:#dbeafe;--danger:#b42318;--warn:#fff4cc;--ok:#eaf7ee;--chip:#f8fafc;--violet:#7c3aed}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}button,select{font:inherit}button{cursor:pointer}
@@ -8813,7 +8813,7 @@ Object.assign(DAMAGE_MOVES,{
 'ねっぷう':{power:95,type:'ほのお',cat:'spec',spread:true},
 'ばかぢから':{power:120,type:'かくとう',cat:'phys'},
 'はどうだん':{power:80,type:'かくとう',cat:'spec'},
-'ふくろだたき':{power:40,type:'あく',cat:'phys'},
+'ふくろだたき':{power:0,type:'あく',cat:'phys',catalogOnly:true},
 'ふぶき':{power:110,type:'こおり',cat:'spec',spread:true},
 'ほのおのキバ':{power:65,type:'ほのお',cat:'phys'},
 'みわくのボイス':{power:80,type:'フェアリー',cat:'spec'},
@@ -9038,6 +9038,14 @@ function resolveMoveForDamage(side,idx,name,moveName,mv,defenderSide=null,defend
     }
   }
 
+  if(moveName==='だいちのはどう'&&isGroundedPokemon(effectiveName,side,idx)){
+    const terrainType={グラス:'くさ',サイコ:'エスパー',エレキ:'でんき',ミスト:'フェアリー'}[$('terrain')?.value];
+    if(terrainType){moveType=terrainType;power=100;condition='接地した使用者のフィールド';}
+  }
+  const expandingForce=moveName==='ワイドフォース'&&$('terrain')?.value==='サイコ'&&isGroundedPokemon(effectiveName,side,idx);
+  if(expandingForce){abilityMod*=1.5;condition='接地・サイコフィールド';}
+  if(moveName==='ソーラービーム'&&['雨','砂','雪'].includes(effectiveWeatherForDamage()))abilityMod*=.5;
+  if(moveName==='どくばりセンボン'&&['どく','もうどく'].includes(state[defenderSide]?.[defenderIdx]?.status))power*=2;
   if(moveName==='アクロバット'&&attackerKnownItemless(side,idx)){
     power=110;
     condition='持ち物なし';
@@ -9094,7 +9102,7 @@ function resolveMoveForDamage(side,idx,name,moveName,mv,defenderSide=null,defend
   }
 
   return {
-    moveType,power,abilityMod,effectiveName,condition,useDefenderAttack,useOwnDefense,assumption
+    moveType,power,abilityMod,effectiveName,condition,useDefenderAttack,useOwnDefense,assumption,spread:moveName==='ワイドフォース'?expandingForce:!!mv.spread
   };
 }
 // Read-only calculation effects: no inferred ability commits a battle event.
@@ -9115,7 +9123,8 @@ function activeKnownAbilityEntries(){
 function abilityBypassed(attackerSide,attackerIdx,attackerName,ability){
  return !!ABILITY_ENGINE_DATA.breakable[ability]&&attackerIgnoresDefensiveAbilities(attackerSide,attackerIdx,attackerName);
 }
-function abilityTypeEffect(side,idx,name,type,types){
+function abilityTypeEffect(side,idx,name,type,types,moveName=''){
+ if(moveName==='フリーズドライ'&&(types||[]).includes('みず'))return typeEffect(type,types)*4;
  const ab=knownBattleAbility(side,idx,name);
  if(['きもったま','しんがん'].includes(ab)&&['ノーマル','かくとう'].includes(type))return typeEffect(type,(types||[]).filter(t=>t!=='ゴースト'));
  return typeEffect(type,types);
@@ -9125,7 +9134,7 @@ function sharedAbilityDamageModifiers(as,ai,an,ds,di,dn,move,mv,type,power,eff){
  const da=abilityBypassed(as,ai,an,rawDA)?'':rawDA;
  const ad=state[as]?.[ai]||{},dd=state[ds]?.[di]||{},f=abilityMoveTraits(move);
  const phys=mv.cat==='phys',w=typeof effectiveWeatherForDamage==='function'?effectiveWeatherForDamage():$('weather')?.value||'なし';
- const out={attack:1,defense:1,power:1,final:1,ignoreBurn:aa==='こんじょう',ignoreAttackStage:da==='てんねん',ignoreDefenseStage:aa==='てんねん'};
+ const out={attack:1,defense:1,power:1,final:1,ignoreBurn:aa==='こんじょう',ignoreAttackStage:da==='てんねん',ignoreDefenseStage:aa==='てんねん'||['DDラリアット','せいなるつるぎ','なしくずし'].includes(String(move).normalize('NFKC'))};
  const status=ad.status&&ad.status!=='なし';
  if(phys&&['ちからもち','ヨガパワー'].includes(aa))out.attack*=2;
  if(phys&&aa==='はりきり')out.attack*=1.5;
@@ -9342,7 +9351,7 @@ function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderB
  const critical=!!criticalProfile&&!criticalProfile.blocked&&(criticalRequest===true||criticalProfile.chance===1)&&!resolved.useOwnDefense&&!resolved.useDefenderAttack;
  if(power<=0)return {critical,criticalProfile,text:'現在HP不明・計算不可',ko:'',chance:''};
 
- const mods=sharedAbilityDamageModifiers('my',attackerIdx,attackerName,defenderSide,defenderIdx,defenderName,moveName,mv,moveType,power,abilityTypeEffect('my',attackerIdx,attackerName,moveType,d.types));
+ const mods=sharedAbilityDamageModifiers('my',attackerIdx,attackerName,defenderSide,defenderIdx,defenderName,moveName,mv,moveType,power,abilityTypeEffect('my',attackerIdx,attackerName,moveType,d.types,moveName));
  const prof={...(savedMyProfiles[attackerIdx]||{nature:'まじめ',hp:0,atk:32,def:0,spa:32,spd:0,spe:2}),item:heldItemFor('my',attackerIdx)};
  const battleState=state.my?.[attackerIdx]||{};
  let atk;
@@ -9365,22 +9374,23 @@ function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderB
  const attackHeld=prof.item;
  const choiceAtk=(mv.cat==='spec'&&attackHeld==='こだわりメガネ')||(mv.cat==='phys'&&!resolved.useOwnDefense&&!resolved.useDefenderAttack&&attackHeld==='こだわりハチマキ')?1.5:1;
  atk=Math.max(1,Math.floor(atk*(resolved.useDefenderAttack?1:mods.attack)*choiceAtk));
+ const usePhysicalDefense=mv.cat==='phys'||['サイコショック','サイコブレイク','しんぴのつるぎ'].includes(moveName);
  const ds=defenderSide==='my'?{...(savedMyProfiles[defenderIdx]||{}),nature:savedMyProfiles[defenderIdx]?.nature||'まじめ'}:defenderSpreadForBulk(defenderBulk||'neutral');
- const rawDef=mv.cat==='phys'
+ const rawDef=usePhysicalDefense
    ?calcRealStat(d.def,ds.def||0,ds.nature,'def')
    :calcRealStat(d.spd,ds.spd||0,ds.nature,'spd');
  const defenderState=defenderIdx==null?null:state[defenderSide]?.[defenderIdx];
- const defStage=mv.cat==='phys'?(defenderState?.defStage||0):(defenderState?.spdStage||0);
+ const defStage=usePhysicalDefense?(defenderState?.defStage||0):(defenderState?.spdStage||0);
  let def=applyStage(rawDef,mods.ignoreDefenseStage?0:critical?Math.min(0,defStage):defStage);
  def=Math.max(1,Math.floor(def*mods.defense));
- def=Math.max(1,Math.floor(def*weatherDefenseMod(effectiveDefender,mv.cat)));
+ def=Math.max(1,Math.floor(def*weatherDefenseMod(effectiveDefender,usePhysicalDefense?'phys':'spec')));
  const hp=calcRealHP(d.hp,ds.hp||0);
  // KO odds use observed remaining HP, while displayed damage percentage stays based on max HP.
  const observedHp=defenderState?.hp;
  const currentHp=(defenderIdx!=null && Number.isFinite(Number(observedHp)))
    ? Math.max(0,Math.min(hp,Math.ceil(hp*Number(observedHp)/100))) : hp;
 
- const eff=abilityTypeEffect('my',attackerIdx,attackerName,moveType,d.types);
+ const eff=abilityTypeEffect('my',attackerIdx,attackerName,moveType,d.types,moveName);
  const immunity=defenderIdx==null?'':abilityDamageImmunity(
    'my',attackerIdx,attackerName,defenderSide,defenderIdx,defenderName,moveType,moveName
  );
@@ -9394,7 +9404,7 @@ function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderB
  const heldMod=itemDamageMod(effectiveAttacker,moveType,prof.item);
  const terrainMod=terrainDamageMod(effectiveAttacker,moveType,effectiveDefender,moveName,'my',attackerIdx,defenderSide,defenderIdx);
  const modifiedPower=typeof estimatedModifiedPower==='function'?estimatedModifiedPower(power,[mods.power,abilityMod,heldMod===1.2?heldMod:1,terrainMod]):power*mods.power;
- let base=battleBaseDamage(modifiedPower,atk,def,mv.spread && (leadData('opp').length+(typeof ALLY_HIT_MOVES!=='undefined'&&ALLY_HIT_MOVES.has(moveName)?Math.max(0,leadData('my').length-1):0))>=2,moveType,1);
+ let base=battleBaseDamage(modifiedPower,atk,def,(resolved.spread??mv.spread) && (leadData('opp').length+(typeof ALLY_HIT_MOVES!=='undefined'&&ALLY_HIT_MOVES.has(moveName)?Math.max(0,leadData('my').length-1):0))>=2,moveType,1);
 
  if(critical)base=Math.floor(base*1.5);
  const stab=damageStabMod('my',attackerIdx,attackerName,effectiveAttacker,moveType);
@@ -9638,7 +9648,8 @@ function accuracyStageMultiplier(rank){
 function effectiveMoveAccuracy(moveName,side='my',attackerIdx=null,defenderSide=null,defenderIdx=null){
  const move=DAMAGE_MOVES[moveName];
  const alwaysHit=new Set(['ドゲザン','はどうだん','つばめがえし']);
- if(alwaysHit.has(moveName))return {accuracy:1,base:1,assumption:'必中技'};
+ const metadata=typeof REGULATION_MC!=='undefined'?REGULATION_MC.moveDetails?.[moveName.normalize('NFKC')]:null;
+ if(alwaysHit.has(moveName)||metadata?.alwaysHit)return {accuracy:1,base:1,assumption:'必中技'};
  const knownAccuracy=Object.prototype.hasOwnProperty.call(MOVE_BASE_ACCURACY,moveName);
  const base=knownAccuracy?MOVE_BASE_ACCURACY[moveName]:1;
  const targetSide=defenderSide|| (side==='my'?'opp':'my');
@@ -9651,8 +9662,12 @@ function effectiveMoveAccuracy(moveName,side='my',attackerIdx=null,defenderSide=
  const atkItem=attackerIdx==null?'':heldItemFor(side,attackerIdx);
  const modifiers=[];
  const ignorePositiveEvasion=['するどいめ','はっこう','しんがん'].includes(atkAbility);
- const targetEvasion=ignorePositiveEvasion?Math.min(0,defData.evaStage||0):(defData.evaStage||0);
- let multiplier=accuracyStageMultiplier(atkData.accStage||0)/accuracyStageMultiplier(targetEvasion);
+ const ignoreEvasion=['DDラリアット','せいなるつるぎ','なしくずし'].includes(moveName.normalize('NFKC'));
+ const targetEvasion=ignoreEvasion?0:ignorePositiveEvasion?Math.min(0,defData.evaStage||0):(defData.evaStage||0);
+ const currentWeather=typeof effectiveWeatherForDamage==='function'?effectiveWeatherForDamage():$('weather')?.value;
+ const weatherBase=['かみなり','ぼうふう'].includes(moveName)&&currentWeather==='晴れ'?.5:base;
+ const rankedAccuracy=Math.floor(weatherBase*100*accuracyStageMultiplier((atkData.accStage||0)-targetEvasion));
+ let multiplier=1;
  if((atkData.accStage||0)||(defData.evaStage||0))modifiers.push('命中/回避ランク');
  const effectiveWeather=typeof effectiveWeatherForDamage==='function'?effectiveWeatherForDamage():$('weather')?.value;
  if((defAbility==='すながくれ'&&effectiveWeather==='砂')||(defAbility==='ゆきがくれ'&&effectiveWeather==='雪')){multiplier*=.8;modifiers.push(defAbility)}
@@ -9670,8 +9685,8 @@ function effectiveMoveAccuracy(moveName,side='my',attackerIdx=null,defenderSide=
  const weather=typeof effectiveWeatherForDamage==='function'?effectiveWeatherForDamage():typeof $==='function' ? $('weather')?.value : null;
  if(['かみなり','ぼうふう'].includes(moveName)&&weather==='雨')return {accuracy:1,base,assumption:'雨で必中'};
  if(moveName==='ふぶき'&&weather==='雪')return {accuracy:1,base,assumption:'雪で必中'};
- if(['かみなり','ぼうふう'].includes(moveName)&&weather==='晴れ'){multiplier*=.5/base;modifiers.push('晴れ：基本命中率50％')}
- return {accuracy:Math.min(1,Math.max(0,base*multiplier)),base,knownAccuracy,assumption:(!knownAccuracy?'命中率未登録：暫定100％（要確認）':(modifiers.join('・')||'基本命中率'))};
+ if(['かみなり','ぼうふう'].includes(moveName)&&weather==='晴れ')modifiers.push('晴れ：基本命中率50％');
+ return {accuracy:Math.min(1,Math.max(0,Math.floor(rankedAccuracy*multiplier)/100)),base,knownAccuracy,assumption:(!knownAccuracy?'命中率未登録：暫定100％（要確認）':(modifiers.join('・')||'基本命中率'))};
 }
 // v1.78.0: one accuracy-aware KO probability interface for both single and multi-hit moves.
 function predictedMoveKO(attackerName,moveName,defenderName,attackerIdx,defenderIdx,bulk=null){
@@ -10886,7 +10901,7 @@ function opponentDamageEstimateAgainstMy(action,targetEntry,powerOverride=null,c
   const criticalProfile=typeof criticalProfileForDamage==='function'?criticalProfileForDamage('opp',attacker.idx,attacker.name,'my',targetEntry.idx,targetEntry.name,moveName):null;
   const critical=!!criticalProfile&&!criticalProfile.blocked&&(criticalRequest===true||criticalProfile.chance===1)&&!resolved.useOwnDefense&&!resolved.useDefenderAttack;
 
-  const mods=sharedAbilityDamageModifiers('opp',attacker.idx,attacker.name,'my',targetEntry.idx,targetEntry.name,moveName,mv,moveType,power,abilityTypeEffect('opp',attacker.idx,attacker.name,moveType,d.types));
+  const mods=sharedAbilityDamageModifiers('opp',attacker.idx,attacker.name,'my',targetEntry.idx,targetEntry.name,moveName,mv,moveType,power,abilityTypeEffect('opp',attacker.idx,attacker.name,moveType,d.types,moveName));
   // Unknown opponent spread: deliberately high offensive prior.
   const offNature=mv.cat==='phys'?'いじっぱり':'ひかえめ';
   let atk;
@@ -10909,17 +10924,18 @@ function opponentDamageEstimateAgainstMy(action,targetEntry,powerOverride=null,c
  const choiceAtk=(mv.cat==='spec'&&confirmedOpponentItem==='こだわりメガネ')||(mv.cat==='phys'&&!resolved.useOwnDefense&&!resolved.useDefenderAttack&&confirmedOpponentItem==='こだわりハチマキ')?1.5:1;
  atk=Math.max(1,Math.floor(atk*(resolved.useDefenderAttack?1:mods.attack)*choiceAtk));
   const prof=savedMyProfiles[targetEntry.idx]||{};
-  const rawDef=mv.cat==='phys'
+  const usePhysicalDefense=mv.cat==='phys'||['サイコショック','サイコブレイク','しんぴのつるぎ'].includes(moveName);
+  const rawDef=usePhysicalDefense
     ?calcRealStat(d.def,Number(prof.def)||0,prof.nature||'まじめ','def')
     :calcRealStat(d.spd,Number(prof.spd)||0,prof.nature||'まじめ','spd');
-  const defStage=mv.cat==='phys'?(targetEntry.d.defStage||0):(targetEntry.d.spdStage||0);
+  const defStage=usePhysicalDefense?(targetEntry.d.defStage||0):(targetEntry.d.spdStage||0);
   let def=applyStage(rawDef,mods.ignoreDefenseStage?0:critical?Math.min(0,defStage):defStage);
   def=Math.max(1,Math.floor(def*mods.defense));
-  def=Math.max(1,Math.floor(def*weatherDefenseMod(defenderName,mv.cat)));
+  def=Math.max(1,Math.floor(def*weatherDefenseMod(defenderName,usePhysicalDefense?'phys':'spec')));
   const fullHp=calcRealHP(d.hp,Number(prof.hp)||0);
   const currentHp=Math.max(1,Math.ceil(fullHp*Math.max(0,Math.min(100,targetEntry.d.hp??100))/100));
 
-  const eff=abilityTypeEffect('opp',attacker.idx,attacker.name,moveType,d.types||[]);
+  const eff=abilityTypeEffect('opp',attacker.idx,attacker.name,moveType,d.types||[],moveName);
   const immunity=abilityDamageImmunity(
     'opp',attacker.idx,attacker.name,'my',targetEntry.idx,targetEntry.name,moveType,moveName
   );
@@ -10933,7 +10949,7 @@ function opponentDamageEstimateAgainstMy(action,targetEntry,powerOverride=null,c
   const heldMod=attacker.d.itemConfirmed?itemDamageMod(attackerName,moveType,heldItemFor('opp',attacker.idx)):1;
   const terrainMod=terrainDamageMod(attackerName,moveType,defenderName,moveName,'opp',attacker.idx,'my',targetEntry.idx);
   const modifiedPower=typeof estimatedModifiedPower==='function'?estimatedModifiedPower(power,[mods.power,abilityMod,heldMod===1.2?heldMod:1,terrainMod]):power*mods.power;
-  let base=battleBaseDamage(modifiedPower,atk,def,(mv.spread||action.spread)&&(leadData('my').length+(typeof ALLY_HIT_MOVES!=='undefined'&&ALLY_HIT_MOVES.has(moveName)?Math.max(0,leadData('opp').length-1):0))>=2,moveType,1);
+  let base=battleBaseDamage(modifiedPower,atk,def,(resolved.spread??(mv.spread||action.spread))&&(leadData('my').length+(typeof ALLY_HIT_MOVES!=='undefined'&&ALLY_HIT_MOVES.has(moveName)?Math.max(0,leadData('opp').length-1):0))>=2,moveType,1);
 
   if(critical)base=Math.floor(base*1.5);
   const stab=damageStabMod('opp',attacker.idx,attacker.name,attackerName,moveType);

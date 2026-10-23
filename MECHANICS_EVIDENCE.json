@@ -1078,5 +1078,28 @@
     ],
     "scope": "Critical ally-hit joint cost, same-side raw-stat damage with profiles/screens, Telepathy/flying/Levitate, Protect chain, switch entrant and short Perish horizon. No general policy-optimality or opponent probability certification.",
     "report": "FINAL_TACTICAL_AUDIT_RESULTS.json"
+  },
+  "statsAndPrimaryDamageAudit": {
+    "completion": false,
+    "requestedScope": [
+      "Primary attack metadata and basic damage/modifiers for stored adoption-120 profiles",
+      "All catalog and target six-base-stat comparisons including Mega forms"
+    ],
+    "sources": "reference-data/stats-moves/PROVENANCE.json",
+    "unitTests": [
+      "test-primary-accuracy.js"
+    ],
+    "integrationTests": [
+      "browser_stats_moves_test.py"
+    ],
+    "paths": [
+      "index.html:effectiveMoveAccuracy",
+      "index.html:resolveMoveForDamage",
+      "index.html:abilityTypeEffect",
+      "index.html:damageEstimate",
+      "index.html:opponentDamageEstimateAgainstMy"
+    ],
+    "scope": "General and Champions move metadata distinguished. 344 target forms / 82 target Mega forms have two-source species stats; 5 extended non-target forms remain second-source unconfirmed. Special damage cases are listed, not certified. Choice Band excluded from tournament scope as user clarified. Secondary effects and action recommendation completeness excluded.",
+    "results": "STATS_MOVES_AUDIT_RESULTS.json"
   }
 }

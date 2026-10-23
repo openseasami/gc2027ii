@@ -11,7 +11,7 @@ try:
    break
   except OSError:time.sleep(.1)
  else:raise AssertionError('Local launcher did not start')
- assert 'v2.9.10' in html
+ assert 'v2.9.11' in html
  with urllib.request.urlopen('http://127.0.0.1:8765/critical-effects.js',timeout=1) as response:assert 'CriticalEffects' in response.read().decode()
  print('PASS shipped Python launcher serves trial and external engine at stable localhost origin')
 finally:process.terminate();process.wait(timeout=5)
