@@ -12,7 +12,7 @@ const spread=(b,base,profile)=>{
 };
 const out={completion:false,passed:false,oracle:'pokemon-showdown@0.11.10, spreadModify/natureModify/getDamage/HitStepAccuracy/Damage events',
  statComparisons:0,damageScenarios:input.damageRows.length,damageComparisons:0,hpBoundaryCases:0,koComparisons:0,accuracyComparisons:0,
- certainOnHitCases:0,randomOnHitCases:0,oneOfSixteenCases:0,fifteenOfSixteenCases:0,fullHpSurvivalCases:0,
+ certainOnHitCases:0,randomOnHitCases:0,certainTwoHitCases:0,randomTwoHitCases:0,oneOfSixteenCases:0,fifteenOfSixteenCases:0,fullHpSurvivalCases:0,
  failureCount:0,failures:[],failureByRole:{},failureByActor:{},boundaryExamples:[],actors:{},types:{},items:{},weathers:{},screens:{},paths:{},spreadTargets:{},modes:{}};
 function fail(row,role,expected,actual,extra={}){out.failureCount++;out.failureByRole[role]=(out.failureByRole[role]||0)+1;out.failureByActor[row.actor||row.name]=(out.failureByActor[row.actor||row.name]||0)+1;if(out.failures.length<50)out.failures.push({id:row.id||row.name,role,expected,actual,...extra});}
 const sb=new ps.Battle({formatid:'gen9doublescustomgame',seed:[1,2,3,4]});
@@ -88,6 +88,14 @@ for(const row of input.damageRows){
     else if(onHit===1){out.certainOnHitCases++;if(label!=='確定1発')fail(row,'certain-ohko-label','確定1発',label,{hp});}
     else if(onHit>0){out.randomOnHitCases++;if(label!=='乱数1発')fail(row,'random-ohko-label','乱数1発',label,{hp});}
     else if(label==='確定1発'||label==='乱数1発')fail(row,'non-ohko-label','not OHKO',label,{hp});
+    const lo=Math.min(...expected.raw),hi=Math.max(...expected.raw);
+    if(hp>hi&&lo>0){
+     const fewest=Math.ceil(hp/hi),most=Math.ceil(hp/lo);
+     const expectedLabel=fewest===most?`確定${fewest}発`:`乱数${fewest}〜${most}発`;
+     if(label!==expectedLabel)fail(row,'damage-conditional-hit-count-label',expectedLabel,label,{hp});
+     if(fewest===2&&most===2)out.certainTwoHitCases++;
+     else if(fewest===2)out.randomTwoHitCases++;
+    }
     if(onHit===1/16)out.oneOfSixteenCases++;
     if(onHit===15/16)out.fifteenOfSixteenCases++;
     if(check.prediction){

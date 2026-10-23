@@ -2,7 +2,9 @@
 
 **開発途中です。完成判定は false。** 開発ブランチは `codex-development`。
 
-最新の[ダメージ・種族値・KO境界監査](FINAL_DAMAGE_KO_AUDIT.md)で、小数HPの被ダメージ計算時のタスキ判定を1件修正しました。新機能/UI/検証済みデータは変更していません。修正は開発ブランチのソースに含まれます。下記の元の固定ZIPは未更新で、この修正を含みません。修正を使う場合は本監査コミットの一式を取得し、ルートのstart-pc-trial.cmdから起動してください。
+最新の[最終ZIP前一括監査](FINAL_PREZIP_AUDIT.md)は技術面で合格（全140回帰＋展開検査4/4）です。`64d8d75`のタスキ修正に加え、登録済み半減実の除外漏れを修正しました。公式一覧の全件照合・独立ツール利用許可が未確認のため、新しい大会用ZIPは作成していません。旧ZIPはバックアップで、最新補正を含みません。修正済みソースの起動は[PC_TRIAL_START.md](PC_TRIAL_START.md)、判定は[FINAL_PREZIP_AUDIT_RESULTS.json](FINAL_PREZIP_AUDIT_RESULTS.json)を参照してください。
+
+前回の[ダメージ・種族値・KO境界監査](FINAL_DAMAGE_KO_AUDIT.md)で、小数HPの被ダメージ計算時のタスキ判定を1件修正しました。新機能/UI/検証済みデータは変更していません。修正は開発ブランチのソースに含まれます。下記の元の固定ZIPは未更新で、この修正を含みません。修正を使う場合は本監査コミットの一式を取得し、ルートのstart-pc-trial.cmdから起動してください。
 
 **大会基準版はv2.9.13に固定し、追加機能を停止しました。** 指定ZIPは
 [gc2027ii-v2.9.13-tournament-trial.zip](release/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zip)

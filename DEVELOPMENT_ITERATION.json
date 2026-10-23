@@ -27,10 +27,10 @@
     "total": 1149,
     "categories": {
       "未実装": 54,
-      "部分実装": 204,
+      "部分実装": 220,
       "別経路で実装済み": 10,
       "仕様対象外": 0,
-      "要調査": 881
+      "要調査": 865
     },
     "fullyImplemented": 0,
     "fullyUnverified": 1149,
@@ -56,10 +56,10 @@
     },
     "items": {
       "registered": 166,
-      "partialEffect": 17,
-      "requiresReview": 149,
-      "unitTestsDefined": 12,
-      "integrationTestsDefined": 17,
+      "partialEffect": 33,
+      "requiresReview": 133,
+      "unitTestsDefined": 28,
+      "integrationTestsDefined": 33,
       "authoritativelyVerified": 0
     },
     "mega": {
@@ -72,8 +72,8 @@
     }
   },
   "testCommands": {
-    "passed": 137,
-    "total": 137
+    "passed": 140,
+    "total": 140
   },
   "externalDifferentialFailures": 0,
   "differentialComparisons": {
@@ -256,7 +256,9 @@
     "extractedArchiveChecksTotal": 3,
     "filesVerified": 35,
     "status": "finalized-limited-trial",
-    "completion": false
+    "completion": false,
+    "historicalBackupOnly": true,
+    "containsCurrentCorrections": false
   },
   "previousPendingTwentyCounts": {
     "pendingTwentyVerified": 6,
@@ -270,10 +272,10 @@
     "differential": {
       "completion": false,
       "oracle": "pokemon-showdown@0.11.10 Gen9 actual callbacks, getDamage, hitStepAccuracy and hitStepMoveHitLoop",
-      "scenarios": 2608,
-      "damageComparisons": 158592,
-      "totalComparisons": 47891,
-      "probabilityComparisons": 690,
+      "scenarios": 2624,
+      "damageComparisons": 160256,
+      "totalComparisons": 49423,
+      "probabilityComparisons": 720,
       "byMove": {
         "やけっぱち": {
           "cases": 1280,
@@ -283,17 +285,17 @@
           "failures": 0
         },
         "トリプルアクセル": {
-          "cases": 664,
-          "damageComparisons": 31872,
-          "totalComparisons": 11567,
-          "probabilityComparisons": 184,
+          "cases": 672,
+          "damageComparisons": 32256,
+          "totalComparisons": 11839,
+          "probabilityComparisons": 192,
           "failures": 0
         },
         "ネズミざん": {
-          "cases": 664,
-          "damageComparisons": 106240,
-          "totalComparisons": 36324,
-          "probabilityComparisons": 506,
+          "cases": 672,
+          "damageComparisons": 107520,
+          "totalComparisons": 37584,
+          "probabilityComparisons": 528,
           "failures": 0
         }
       },
@@ -310,7 +312,7 @@
     "manifest": "FROZEN_BASELINE.json",
     "assessment": "TOURNAMENT_BASELINE_RESULTS.json",
     "additionalFeaturesStopped": true,
-    "runtimeFilesChanged": 1,
+    "runtimeFilesChanged": 2,
     "completion": false
   },
   "finalDamageKoAudit": {
@@ -326,6 +328,31 @@
     "sourceRuntimeDiffersFromOriginalFrozenZip": true,
     "originalZipUnchanged": true,
     "correctionIncludedInOriginalZip": false,
+    "completion": false
+  },
+  "finalPrezipAudit": {
+    "report": "FINAL_PREZIP_AUDIT.md",
+    "results": "FINAL_PREZIP_AUDIT_RESULTS.json",
+    "officialReview": "OFFICIAL_MC_AUDIT.json",
+    "technicalChecksPassed": true,
+    "tournamentPackageAllowed": false,
+    "releaseZipCreated": false,
+    "blockingChecks": [
+      "eligibleRosterFullyCompared",
+      "heldItemListFullyCompared",
+      "independentToolUsePermissionVerified"
+    ],
+    "testCommands": {
+      "passed": 140,
+      "total": 140
+    },
+    "temporaryArchiveChecks": {
+      "passed": 4,
+      "total": 4
+    },
+    "sash64d8d75Included": true,
+    "criticalCalculationFixesThisAudit": 1,
+    "newFeatures": 0,
     "completion": false
   }
 }

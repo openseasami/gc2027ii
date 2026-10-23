@@ -41,5 +41,32 @@
     "correctionIncludedInOriginalZip": false,
     "completion": false
   },
-  "artifactIsOriginalFrozenPayload": true
+  "artifactIsOriginalFrozenPayload": true,
+  "finalPrezipAudit": {
+    "report": "FINAL_PREZIP_AUDIT.md",
+    "results": "FINAL_PREZIP_AUDIT_RESULTS.json",
+    "officialReview": "OFFICIAL_MC_AUDIT.json",
+    "technicalChecksPassed": true,
+    "tournamentPackageAllowed": false,
+    "releaseZipCreated": false,
+    "blockingChecks": [
+      "eligibleRosterFullyCompared",
+      "heldItemListFullyCompared",
+      "independentToolUsePermissionVerified"
+    ],
+    "testCommands": {
+      "passed": 140,
+      "total": 140
+    },
+    "temporaryArchiveChecks": {
+      "passed": 4,
+      "total": 4
+    },
+    "sash64d8d75Included": true,
+    "criticalCalculationFixesThisAudit": 1,
+    "newFeatures": 0,
+    "completion": false
+  },
+  "currentTournamentZip": null,
+  "tournamentPackageAllowed": false
 }

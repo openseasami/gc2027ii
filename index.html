@@ -9342,7 +9342,7 @@ function koSurvivalAssessment(side,idx,currentHp,fullHp){
 // Forecast only: observing a move never consumes a real held item.
 function defensiveBerryForDamage(as,ai,an,ds,di,dn,move,type,eff){
  const known=knownHeldItemState(ds,di),item=known.known?heldItemFor(ds,di):'';
- if(!['ヨプのみ','ナモのみ'].includes(item))return {factor:1,consume:false,uncertain:false};
+ if(!BattleCore.RESIST_BERRY_TYPES[item])return {factor:1,consume:false,uncertain:false};
  const active=activeKnownAbilityEntries();
  const blocked=active.some(x=>x.side!==ds&&x.ability==='きんちょうかん');
  const d=state[ds]?.[di];

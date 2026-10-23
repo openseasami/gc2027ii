@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T07:11:14.112Z",
+  "generatedAt": "2026-10-23T07:51:26.095Z",
   "conditionalMoveProjections": {
     "total": 0,
     "entries": [],
@@ -985,12 +985,13 @@
     "status": "partial; no full-match authoritative E2E oracle"
   },
   "tests": {
-    "availableFiles": 107,
+    "availableFiles": 108,
     "files": [
       "test-ability-received-hit-guards.js",
       "test-accuracy-protection.js",
       "test-adoption-priority-mechanics.js",
       "test-adoption-priority.js",
+      "test-all-resist-berries.js",
       "test-ally-hit-targets.js",
       "test-battle-rounding-reference.js",
       "test-cloak-mirror.js",
@@ -40269,28 +40270,46 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": [
             4051
           ]
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -40307,26 +40326,44 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": []
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -40538,28 +40575,46 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": [
             4051
           ]
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -40876,26 +40931,44 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": []
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -41834,28 +41907,46 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": [
             4051
           ]
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -42196,28 +42287,46 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": [
             4051
           ]
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -42306,26 +42415,44 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": []
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -42635,41 +42762,45 @@
             "battle-core.js:resistBerry",
             "index.html:defensiveBerryForDamage",
             "index.html:commitConfirmedBerryConsumption",
-            "index.html:sequentialFocusDamage"
+            "index.html:sequentialFocusDamage",
+            "index.html:multiHitKOEstimate"
           ],
           "candidateSourceLines": [
             2283,
-            4051,
-            9345
+            4051
           ]
         },
         "unitVerification": {
           "status": "scoped-tests-defined",
           "tests": [
-            "test-priority-resist-berries.js"
+            "test-priority-resist-berries.js",
+            "test-all-resist-berries.js"
           ]
         },
         "integrationVerification": {
           "status": "scoped-tests-defined",
           "tests": [
             "test-priority-resist-berries.js",
-            "browser_priority_berries_test.py"
+            "browser_priority_berries_test.py",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py"
           ]
         },
         "authoritativeVerification": "unverified",
         "limitations": [
-          "Only Chople/Colbur: 16,384 general Gen9 damage/consumption comparisons, Unnerve/Ripen/Substitute/bypass/consumed, screens and Life Orb. Actual browser focus consumes only once; forecast read-only, confirmed hit consumption and undo/reload. Unknown opponent Unnerve leaves reduction unapplied. Other berries and whole battle oracle unverified."
+          "Only Chople/Colbur: 16,384 general Gen9 damage/consumption comparisons, Unnerve/Ripen/Substitute/bypass/consumed, screens and Life Orb. Actual browser focus consumes only once; forecast read-only, confirmed hit consumption and undo/reload. Unknown opponent Unnerve leaves reduction unapplied. Other berries and whole battle oracle unverified.",
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
         ],
         "coverage": {
           "classification": "部分実装",
-          "assessmentScope": "Only Chople/Colbur: 16,384 general Gen9 damage/consumption comparisons, Unnerve/Ripen/Substitute/bypass/consumed, screens and Life Orb. Actual browser focus consumes only once; forecast read-only, confirmed hit consumption and undo/reload. Unknown opponent Unnerve leaves reduction unapplied. Other berries and whole battle oracle unverified.",
-          "executableReferences": [
-            "index.html:defensiveBerryForDamage:9345",
-            "battle-core.js:resistBerry:49"
-          ],
+          "assessmentScope": "Only Chople/Colbur: 16,384 general Gen9 damage/consumption comparisons, Unnerve/Ripen/Substitute/bypass/consumed, screens and Life Orb. Actual browser focus consumes only once; forecast read-only, confirmed hit consumption and undo/reload. Unknown opponent Unnerve leaves reduction unapplied. Other berries and whole battle oracle unverified. Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
+          "executableReferences": [],
           "tests": [
             "test-priority-resist-berries.js",
-            "browser_priority_berries_test.py"
+            "test-all-resist-berries.js",
+            "browser_priority_berries_test.py",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py"
           ],
           "scopedTestsPassed": true,
           "fullMechanicVerified": false,
@@ -42832,28 +42963,46 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": [
             4051
           ]
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -42906,28 +43055,46 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": [
             4051
           ]
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -43052,26 +43219,44 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": []
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -43547,26 +43732,46 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": []
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
-          "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
+          "executableReferences": [
+            "battle-core.js:resistBerry:57"
+          ],
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -44043,28 +44248,46 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": [
             4051
           ]
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -44230,40 +44453,44 @@
             "battle-core.js:resistBerry",
             "index.html:defensiveBerryForDamage",
             "index.html:commitConfirmedBerryConsumption",
-            "index.html:sequentialFocusDamage"
+            "index.html:sequentialFocusDamage",
+            "index.html:multiHitKOEstimate"
           ],
           "candidateSourceLines": [
-            4051,
-            9345
+            4051
           ]
         },
         "unitVerification": {
           "status": "scoped-tests-defined",
           "tests": [
-            "test-priority-resist-berries.js"
+            "test-priority-resist-berries.js",
+            "test-all-resist-berries.js"
           ]
         },
         "integrationVerification": {
           "status": "scoped-tests-defined",
           "tests": [
             "test-priority-resist-berries.js",
-            "browser_priority_berries_test.py"
+            "browser_priority_berries_test.py",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py"
           ]
         },
         "authoritativeVerification": "unverified",
         "limitations": [
-          "Only Chople/Colbur: 16,384 general Gen9 damage/consumption comparisons, Unnerve/Ripen/Substitute/bypass/consumed, screens and Life Orb. Actual browser focus consumes only once; forecast read-only, confirmed hit consumption and undo/reload. Unknown opponent Unnerve leaves reduction unapplied. Other berries and whole battle oracle unverified."
+          "Only Chople/Colbur: 16,384 general Gen9 damage/consumption comparisons, Unnerve/Ripen/Substitute/bypass/consumed, screens and Life Orb. Actual browser focus consumes only once; forecast read-only, confirmed hit consumption and undo/reload. Unknown opponent Unnerve leaves reduction unapplied. Other berries and whole battle oracle unverified.",
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
         ],
         "coverage": {
           "classification": "部分実装",
-          "assessmentScope": "Only Chople/Colbur: 16,384 general Gen9 damage/consumption comparisons, Unnerve/Ripen/Substitute/bypass/consumed, screens and Life Orb. Actual browser focus consumes only once; forecast read-only, confirmed hit consumption and undo/reload. Unknown opponent Unnerve leaves reduction unapplied. Other berries and whole battle oracle unverified.",
-          "executableReferences": [
-            "index.html:defensiveBerryForDamage:9345",
-            "battle-core.js:resistBerry:49"
-          ],
+          "assessmentScope": "Only Chople/Colbur: 16,384 general Gen9 damage/consumption comparisons, Unnerve/Ripen/Substitute/bypass/consumed, screens and Life Orb. Actual browser focus consumes only once; forecast read-only, confirmed hit consumption and undo/reload. Unknown opponent Unnerve leaves reduction unapplied. Other berries and whole battle oracle unverified. Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
+          "executableReferences": [],
           "tests": [
             "test-priority-resist-berries.js",
-            "browser_priority_berries_test.py"
+            "test-all-resist-berries.js",
+            "browser_priority_berries_test.py",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py"
           ],
           "scopedTestsPassed": true,
           "fullMechanicVerified": false,
@@ -44282,26 +44509,44 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": []
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -44594,26 +44839,44 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": []
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -44630,28 +44893,46 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": [
             4051
           ]
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -44812,28 +45093,46 @@
           "source": "REGULATION_MC.items"
         },
         "effect": {
-          "status": "requires-review",
-          "paths": [],
+          "status": "partial",
+          "paths": [
+            "battle-core.js:resistBerry",
+            "index.html:defensiveBerryForDamage",
+            "index.html:commitConfirmedBerryConsumption",
+            "index.html:multiHitKOEstimate"
+          ],
           "candidateSourceLines": [
             4051
           ]
         },
         "unitVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "test-all-resist-berries.js"
+          ]
         },
         "integrationVerification": {
-          "status": "unverified",
-          "tests": []
+          "status": "scoped-tests-defined",
+          "tests": [
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ]
         },
         "authoritativeVerification": "unverified",
-        "limitations": [],
+        "limitations": [
+          "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+        ],
         "coverage": {
-          "classification": "要調査",
-          "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
+          "classification": "部分実装",
+          "assessmentScope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified.",
           "executableReferences": [],
-          "tests": [],
-          "scopedTestsPassed": false,
+          "tests": [
+            "test-all-resist-berries.js",
+            "browser_all_berries_test.py",
+            "browser_three_attacks_test.py",
+            "browser_priority_berries_test.py"
+          ],
+          "scopedTestsPassed": true,
           "fullMechanicVerified": false,
           "remaining": "全発動条件・持続・相互作用・大会固有仕様の網羅検証は未完了。"
         }
@@ -48907,10 +49206,10 @@
     },
     "items": {
       "registered": 166,
-      "partialEffect": 17,
-      "requiresReview": 149,
-      "unitTestsDefined": 12,
-      "integrationTestsDefined": 17,
+      "partialEffect": 33,
+      "requiresReview": 133,
+      "unitTestsDefined": 28,
+      "integrationTestsDefined": 33,
       "authoritativelyVerified": 0
     },
     "mega": {
@@ -48926,10 +49225,10 @@
     "total": 1149,
     "categories": {
       "未実装": 54,
-      "部分実装": 204,
+      "部分実装": 220,
       "別経路で実装済み": 10,
       "仕様対象外": 0,
-      "要調査": 881
+      "要調査": 865
     },
     "fullyImplemented": 0,
     "fullyUnverified": 1149,

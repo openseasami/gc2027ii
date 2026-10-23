@@ -1,0 +1,3144 @@
+{
+  "completion": false,
+  "passed": true,
+  "nativeWindowsVerified": false,
+  "limitations": [
+    "Linux Chromium; direct state fixtures check form data references, not official form-change trigger rules",
+    "Offline requires a successful first HTTP load and intact browser cache; cold install offline is not certified",
+    "Local/public separation tested using distinct loopback origins, without contacting or changing the public site"
+  ],
+  "formReferences": {
+    "megaForms": 82,
+    "megaBeforeAfter": 164,
+    "otherFormSelections": 6,
+    "rows": [
+      {
+        "kind": "mega",
+        "name": "メガフシギバナ",
+        "phase": "before",
+        "effective": "フシギバナ",
+        "id": "venusaur",
+        "stats": {
+          "hp": 80,
+          "atk": 82,
+          "def": 83,
+          "spa": 100,
+          "spd": 100,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガフシギバナ",
+        "phase": "after",
+        "effective": "メガフシギバナ",
+        "id": "venusaurmega",
+        "stats": {
+          "hp": 80,
+          "atk": 100,
+          "def": 123,
+          "spa": 122,
+          "spd": 120,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガリザードンX",
+        "phase": "before",
+        "effective": "リザードン",
+        "id": "charizard",
+        "stats": {
+          "hp": 78,
+          "atk": 84,
+          "def": 78,
+          "spa": 109,
+          "spd": 85,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガリザードンX",
+        "phase": "after",
+        "effective": "メガリザードンX",
+        "id": "charizardmegax",
+        "stats": {
+          "hp": 78,
+          "atk": 130,
+          "def": 111,
+          "spa": 130,
+          "spd": 85,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガリザードンY",
+        "phase": "before",
+        "effective": "リザードン",
+        "id": "charizard",
+        "stats": {
+          "hp": 78,
+          "atk": 84,
+          "def": 78,
+          "spa": 109,
+          "spd": 85,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガリザードンY",
+        "phase": "after",
+        "effective": "メガリザードンY",
+        "id": "charizardmegay",
+        "stats": {
+          "hp": 78,
+          "atk": 104,
+          "def": 78,
+          "spa": 159,
+          "spd": 115,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガカメックス",
+        "phase": "before",
+        "effective": "カメックス",
+        "id": "blastoise",
+        "stats": {
+          "hp": 79,
+          "atk": 83,
+          "def": 100,
+          "spa": 85,
+          "spd": 105,
+          "spe": 78
+        },
+        "speed": 98
+      },
+      {
+        "kind": "mega",
+        "name": "メガカメックス",
+        "phase": "after",
+        "effective": "メガカメックス",
+        "id": "blastoisemega",
+        "stats": {
+          "hp": 79,
+          "atk": 103,
+          "def": 120,
+          "spa": 135,
+          "spd": 115,
+          "spe": 78
+        },
+        "speed": 98
+      },
+      {
+        "kind": "mega",
+        "name": "メガスピアー",
+        "phase": "before",
+        "effective": "スピアー",
+        "id": "beedrill",
+        "stats": {
+          "hp": 65,
+          "atk": 90,
+          "def": 40,
+          "spa": 45,
+          "spd": 80,
+          "spe": 75
+        },
+        "speed": 95
+      },
+      {
+        "kind": "mega",
+        "name": "メガスピアー",
+        "phase": "after",
+        "effective": "メガスピアー",
+        "id": "beedrillmega",
+        "stats": {
+          "hp": 65,
+          "atk": 150,
+          "def": 40,
+          "spa": 15,
+          "spd": 80,
+          "spe": 145
+        },
+        "speed": 165
+      },
+      {
+        "kind": "mega",
+        "name": "メガピジョット",
+        "phase": "before",
+        "effective": "ピジョット",
+        "id": "pidgeot",
+        "stats": {
+          "hp": 83,
+          "atk": 80,
+          "def": 75,
+          "spa": 70,
+          "spd": 70,
+          "spe": 101
+        },
+        "speed": 121
+      },
+      {
+        "kind": "mega",
+        "name": "メガピジョット",
+        "phase": "after",
+        "effective": "メガピジョット",
+        "id": "pidgeotmega",
+        "stats": {
+          "hp": 83,
+          "atk": 80,
+          "def": 80,
+          "spa": 135,
+          "spd": 80,
+          "spe": 121
+        },
+        "speed": 141
+      },
+      {
+        "kind": "mega",
+        "name": "メガライチュウX",
+        "phase": "before",
+        "effective": "ライチュウ",
+        "id": "raichu",
+        "stats": {
+          "hp": 60,
+          "atk": 90,
+          "def": 55,
+          "spa": 90,
+          "spd": 80,
+          "spe": 110
+        },
+        "speed": 130
+      },
+      {
+        "kind": "mega",
+        "name": "メガライチュウX",
+        "phase": "after",
+        "effective": "メガライチュウX",
+        "id": "raichumegax",
+        "stats": {
+          "hp": 60,
+          "atk": 135,
+          "def": 95,
+          "spa": 90,
+          "spd": 95,
+          "spe": 110
+        },
+        "speed": 130
+      },
+      {
+        "kind": "mega",
+        "name": "メガライチュウY",
+        "phase": "before",
+        "effective": "ライチュウ",
+        "id": "raichu",
+        "stats": {
+          "hp": 60,
+          "atk": 90,
+          "def": 55,
+          "spa": 90,
+          "spd": 80,
+          "spe": 110
+        },
+        "speed": 130
+      },
+      {
+        "kind": "mega",
+        "name": "メガライチュウY",
+        "phase": "after",
+        "effective": "メガライチュウY",
+        "id": "raichumegay",
+        "stats": {
+          "hp": 60,
+          "atk": 100,
+          "def": 55,
+          "spa": 160,
+          "spd": 80,
+          "spe": 130
+        },
+        "speed": 150
+      },
+      {
+        "kind": "mega",
+        "name": "メガピクシー",
+        "phase": "before",
+        "effective": "ピクシー",
+        "id": "clefable",
+        "stats": {
+          "hp": 95,
+          "atk": 70,
+          "def": 73,
+          "spa": 95,
+          "spd": 90,
+          "spe": 60
+        },
+        "speed": 80
+      },
+      {
+        "kind": "mega",
+        "name": "メガピクシー",
+        "phase": "after",
+        "effective": "メガピクシー",
+        "id": "clefablemega",
+        "stats": {
+          "hp": 95,
+          "atk": 80,
+          "def": 93,
+          "spa": 135,
+          "spd": 110,
+          "spe": 70
+        },
+        "speed": 90
+      },
+      {
+        "kind": "mega",
+        "name": "メガフーディン",
+        "phase": "before",
+        "effective": "フーディン",
+        "id": "alakazam",
+        "stats": {
+          "hp": 55,
+          "atk": 50,
+          "def": 45,
+          "spa": 135,
+          "spd": 95,
+          "spe": 120
+        },
+        "speed": 140
+      },
+      {
+        "kind": "mega",
+        "name": "メガフーディン",
+        "phase": "after",
+        "effective": "メガフーディン",
+        "id": "alakazammega",
+        "stats": {
+          "hp": 55,
+          "atk": 50,
+          "def": 65,
+          "spa": 175,
+          "spd": 105,
+          "spe": 150
+        },
+        "speed": 170
+      },
+      {
+        "kind": "mega",
+        "name": "メガウツボット",
+        "phase": "before",
+        "effective": "ウツボット",
+        "id": "victreebel",
+        "stats": {
+          "hp": 80,
+          "atk": 105,
+          "def": 65,
+          "spa": 100,
+          "spd": 70,
+          "spe": 70
+        },
+        "speed": 90
+      },
+      {
+        "kind": "mega",
+        "name": "メガウツボット",
+        "phase": "after",
+        "effective": "メガウツボット",
+        "id": "victreebelmega",
+        "stats": {
+          "hp": 80,
+          "atk": 125,
+          "def": 85,
+          "spa": 135,
+          "spd": 95,
+          "spe": 70
+        },
+        "speed": 90
+      },
+      {
+        "kind": "mega",
+        "name": "メガヤドラン",
+        "phase": "before",
+        "effective": "ヤドラン",
+        "id": "slowbro",
+        "stats": {
+          "hp": 95,
+          "atk": 75,
+          "def": 110,
+          "spa": 100,
+          "spd": 80,
+          "spe": 30
+        },
+        "speed": 50
+      },
+      {
+        "kind": "mega",
+        "name": "メガヤドラン",
+        "phase": "after",
+        "effective": "メガヤドラン",
+        "id": "slowbromega",
+        "stats": {
+          "hp": 95,
+          "atk": 75,
+          "def": 180,
+          "spa": 130,
+          "spd": 80,
+          "spe": 30
+        },
+        "speed": 50
+      },
+      {
+        "kind": "mega",
+        "name": "メガゲンガー",
+        "phase": "before",
+        "effective": "ゲンガー",
+        "id": "gengar",
+        "stats": {
+          "hp": 60,
+          "atk": 65,
+          "def": 60,
+          "spa": 130,
+          "spd": 75,
+          "spe": 110
+        },
+        "speed": 130
+      },
+      {
+        "kind": "mega",
+        "name": "メガゲンガー",
+        "phase": "after",
+        "effective": "メガゲンガー",
+        "id": "gengarmega",
+        "stats": {
+          "hp": 60,
+          "atk": 65,
+          "def": 80,
+          "spa": 170,
+          "spd": 95,
+          "spe": 130
+        },
+        "speed": 150
+      },
+      {
+        "kind": "mega",
+        "name": "メガガルーラ",
+        "phase": "before",
+        "effective": "ガルーラ",
+        "id": "kangaskhan",
+        "stats": {
+          "hp": 105,
+          "atk": 95,
+          "def": 80,
+          "spa": 40,
+          "spd": 80,
+          "spe": 90
+        },
+        "speed": 110
+      },
+      {
+        "kind": "mega",
+        "name": "メガガルーラ",
+        "phase": "after",
+        "effective": "メガガルーラ",
+        "id": "kangaskhanmega",
+        "stats": {
+          "hp": 105,
+          "atk": 125,
+          "def": 100,
+          "spa": 60,
+          "spd": 100,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガスターミー",
+        "phase": "before",
+        "effective": "スターミー",
+        "id": "starmie",
+        "stats": {
+          "hp": 60,
+          "atk": 75,
+          "def": 85,
+          "spa": 100,
+          "spd": 85,
+          "spe": 115
+        },
+        "speed": 135
+      },
+      {
+        "kind": "mega",
+        "name": "メガスターミー",
+        "phase": "after",
+        "effective": "メガスターミー",
+        "id": "starmiemega",
+        "stats": {
+          "hp": 60,
+          "atk": 100,
+          "def": 105,
+          "spa": 130,
+          "spd": 105,
+          "spe": 120
+        },
+        "speed": 140
+      },
+      {
+        "kind": "mega",
+        "name": "メガカイロス",
+        "phase": "before",
+        "effective": "カイロス",
+        "id": "pinsir",
+        "stats": {
+          "hp": 65,
+          "atk": 125,
+          "def": 100,
+          "spa": 55,
+          "spd": 70,
+          "spe": 85
+        },
+        "speed": 105
+      },
+      {
+        "kind": "mega",
+        "name": "メガカイロス",
+        "phase": "after",
+        "effective": "メガカイロス",
+        "id": "pinsirmega",
+        "stats": {
+          "hp": 65,
+          "atk": 155,
+          "def": 120,
+          "spa": 65,
+          "spd": 90,
+          "spe": 105
+        },
+        "speed": 125
+      },
+      {
+        "kind": "mega",
+        "name": "メガギャラドス",
+        "phase": "before",
+        "effective": "ギャラドス",
+        "id": "gyarados",
+        "stats": {
+          "hp": 95,
+          "atk": 125,
+          "def": 79,
+          "spa": 60,
+          "spd": 100,
+          "spe": 81
+        },
+        "speed": 101
+      },
+      {
+        "kind": "mega",
+        "name": "メガギャラドス",
+        "phase": "after",
+        "effective": "メガギャラドス",
+        "id": "gyaradosmega",
+        "stats": {
+          "hp": 95,
+          "atk": 155,
+          "def": 109,
+          "spa": 70,
+          "spd": 130,
+          "spe": 81
+        },
+        "speed": 101
+      },
+      {
+        "kind": "mega",
+        "name": "メガプテラ",
+        "phase": "before",
+        "effective": "プテラ",
+        "id": "aerodactyl",
+        "stats": {
+          "hp": 80,
+          "atk": 105,
+          "def": 65,
+          "spa": 60,
+          "spd": 75,
+          "spe": 130
+        },
+        "speed": 150
+      },
+      {
+        "kind": "mega",
+        "name": "メガプテラ",
+        "phase": "after",
+        "effective": "メガプテラ",
+        "id": "aerodactylmega",
+        "stats": {
+          "hp": 80,
+          "atk": 135,
+          "def": 85,
+          "spa": 70,
+          "spd": 95,
+          "spe": 150
+        },
+        "speed": 170
+      },
+      {
+        "kind": "mega",
+        "name": "メガカイリュー",
+        "phase": "before",
+        "effective": "カイリュー",
+        "id": "dragonite",
+        "stats": {
+          "hp": 91,
+          "atk": 134,
+          "def": 95,
+          "spa": 100,
+          "spd": 100,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガカイリュー",
+        "phase": "after",
+        "effective": "メガカイリュー",
+        "id": "dragonitemega",
+        "stats": {
+          "hp": 91,
+          "atk": 124,
+          "def": 115,
+          "spa": 145,
+          "spd": 125,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガメガニウム",
+        "phase": "before",
+        "effective": "メガニウム",
+        "id": "meganium",
+        "stats": {
+          "hp": 80,
+          "atk": 82,
+          "def": 100,
+          "spa": 83,
+          "spd": 100,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガメガニウム",
+        "phase": "after",
+        "effective": "メガメガニウム",
+        "id": "meganiummega",
+        "stats": {
+          "hp": 80,
+          "atk": 92,
+          "def": 115,
+          "spa": 143,
+          "spd": 115,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガオーダイル",
+        "phase": "before",
+        "effective": "オーダイル",
+        "id": "feraligatr",
+        "stats": {
+          "hp": 85,
+          "atk": 105,
+          "def": 100,
+          "spa": 79,
+          "spd": 83,
+          "spe": 78
+        },
+        "speed": 98
+      },
+      {
+        "kind": "mega",
+        "name": "メガオーダイル",
+        "phase": "after",
+        "effective": "メガオーダイル",
+        "id": "feraligatrmega",
+        "stats": {
+          "hp": 85,
+          "atk": 160,
+          "def": 125,
+          "spa": 89,
+          "spd": 93,
+          "spe": 78
+        },
+        "speed": 98
+      },
+      {
+        "kind": "mega",
+        "name": "メガデンリュウ",
+        "phase": "before",
+        "effective": "デンリュウ",
+        "id": "ampharos",
+        "stats": {
+          "hp": 90,
+          "atk": 75,
+          "def": 85,
+          "spa": 115,
+          "spd": 90,
+          "spe": 55
+        },
+        "speed": 75
+      },
+      {
+        "kind": "mega",
+        "name": "メガデンリュウ",
+        "phase": "after",
+        "effective": "メガデンリュウ",
+        "id": "ampharosmega",
+        "stats": {
+          "hp": 90,
+          "atk": 95,
+          "def": 105,
+          "spa": 165,
+          "spd": 110,
+          "spe": 45
+        },
+        "speed": 65
+      },
+      {
+        "kind": "mega",
+        "name": "メガハガネール",
+        "phase": "before",
+        "effective": "ハガネール",
+        "id": "steelix",
+        "stats": {
+          "hp": 75,
+          "atk": 85,
+          "def": 200,
+          "spa": 55,
+          "spd": 65,
+          "spe": 30
+        },
+        "speed": 50
+      },
+      {
+        "kind": "mega",
+        "name": "メガハガネール",
+        "phase": "after",
+        "effective": "メガハガネール",
+        "id": "steelixmega",
+        "stats": {
+          "hp": 75,
+          "atk": 125,
+          "def": 230,
+          "spa": 55,
+          "spd": 95,
+          "spe": 30
+        },
+        "speed": 50
+      },
+      {
+        "kind": "mega",
+        "name": "メガハッサム",
+        "phase": "before",
+        "effective": "ハッサム",
+        "id": "scizor",
+        "stats": {
+          "hp": 70,
+          "atk": 130,
+          "def": 100,
+          "spa": 55,
+          "spd": 80,
+          "spe": 65
+        },
+        "speed": 85
+      },
+      {
+        "kind": "mega",
+        "name": "メガハッサム",
+        "phase": "after",
+        "effective": "メガハッサム",
+        "id": "scizormega",
+        "stats": {
+          "hp": 70,
+          "atk": 150,
+          "def": 140,
+          "spa": 65,
+          "spd": 100,
+          "spe": 75
+        },
+        "speed": 95
+      },
+      {
+        "kind": "mega",
+        "name": "メガヘラクロス",
+        "phase": "before",
+        "effective": "ヘラクロス",
+        "id": "heracross",
+        "stats": {
+          "hp": 80,
+          "atk": 125,
+          "def": 75,
+          "spa": 40,
+          "spd": 95,
+          "spe": 85
+        },
+        "speed": 105
+      },
+      {
+        "kind": "mega",
+        "name": "メガヘラクロス",
+        "phase": "after",
+        "effective": "メガヘラクロス",
+        "id": "heracrossmega",
+        "stats": {
+          "hp": 80,
+          "atk": 185,
+          "def": 115,
+          "spa": 40,
+          "spd": 105,
+          "spe": 75
+        },
+        "speed": 95
+      },
+      {
+        "kind": "mega",
+        "name": "メガエアームド",
+        "phase": "before",
+        "effective": "エアームド",
+        "id": "skarmory",
+        "stats": {
+          "hp": 65,
+          "atk": 80,
+          "def": 140,
+          "spa": 40,
+          "spd": 70,
+          "spe": 70
+        },
+        "speed": 90
+      },
+      {
+        "kind": "mega",
+        "name": "メガエアームド",
+        "phase": "after",
+        "effective": "メガエアームド",
+        "id": "skarmorymega",
+        "stats": {
+          "hp": 65,
+          "atk": 140,
+          "def": 110,
+          "spa": 40,
+          "spd": 100,
+          "spe": 110
+        },
+        "speed": 130
+      },
+      {
+        "kind": "mega",
+        "name": "メガヘルガー",
+        "phase": "before",
+        "effective": "ヘルガー",
+        "id": "houndoom",
+        "stats": {
+          "hp": 75,
+          "atk": 90,
+          "def": 50,
+          "spa": 110,
+          "spd": 80,
+          "spe": 95
+        },
+        "speed": 115
+      },
+      {
+        "kind": "mega",
+        "name": "メガヘルガー",
+        "phase": "after",
+        "effective": "メガヘルガー",
+        "id": "houndoommega",
+        "stats": {
+          "hp": 75,
+          "atk": 90,
+          "def": 90,
+          "spa": 140,
+          "spd": 90,
+          "spe": 115
+        },
+        "speed": 135
+      },
+      {
+        "kind": "mega",
+        "name": "メガバンギラス",
+        "phase": "before",
+        "effective": "バンギラス",
+        "id": "tyranitar",
+        "stats": {
+          "hp": 100,
+          "atk": 134,
+          "def": 110,
+          "spa": 95,
+          "spd": 100,
+          "spe": 61
+        },
+        "speed": 81
+      },
+      {
+        "kind": "mega",
+        "name": "メガバンギラス",
+        "phase": "after",
+        "effective": "メガバンギラス",
+        "id": "tyranitarmega",
+        "stats": {
+          "hp": 100,
+          "atk": 164,
+          "def": 150,
+          "spa": 95,
+          "spd": 120,
+          "spe": 71
+        },
+        "speed": 91
+      },
+      {
+        "kind": "mega",
+        "name": "メガジュカイン",
+        "phase": "before",
+        "effective": "ジュカイン",
+        "id": "sceptile",
+        "stats": {
+          "hp": 70,
+          "atk": 85,
+          "def": 65,
+          "spa": 105,
+          "spd": 85,
+          "spe": 120
+        },
+        "speed": 140
+      },
+      {
+        "kind": "mega",
+        "name": "メガジュカイン",
+        "phase": "after",
+        "effective": "メガジュカイン",
+        "id": "sceptilemega",
+        "stats": {
+          "hp": 70,
+          "atk": 110,
+          "def": 75,
+          "spa": 145,
+          "spd": 85,
+          "spe": 145
+        },
+        "speed": 165
+      },
+      {
+        "kind": "mega",
+        "name": "メガバシャーモ",
+        "phase": "before",
+        "effective": "バシャーモ",
+        "id": "blaziken",
+        "stats": {
+          "hp": 80,
+          "atk": 120,
+          "def": 70,
+          "spa": 110,
+          "spd": 70,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガバシャーモ",
+        "phase": "after",
+        "effective": "メガバシャーモ",
+        "id": "blazikenmega",
+        "stats": {
+          "hp": 80,
+          "atk": 160,
+          "def": 80,
+          "spa": 130,
+          "spd": 80,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガラグラージ",
+        "phase": "before",
+        "effective": "ラグラージ",
+        "id": "swampert",
+        "stats": {
+          "hp": 100,
+          "atk": 110,
+          "def": 90,
+          "spa": 85,
+          "spd": 90,
+          "spe": 60
+        },
+        "speed": 80
+      },
+      {
+        "kind": "mega",
+        "name": "メガラグラージ",
+        "phase": "after",
+        "effective": "メガラグラージ",
+        "id": "swampertmega",
+        "stats": {
+          "hp": 100,
+          "atk": 150,
+          "def": 110,
+          "spa": 95,
+          "spd": 110,
+          "spe": 70
+        },
+        "speed": 90
+      },
+      {
+        "kind": "mega",
+        "name": "メガサーナイト",
+        "phase": "before",
+        "effective": "サーナイト",
+        "id": "gardevoir",
+        "stats": {
+          "hp": 68,
+          "atk": 65,
+          "def": 65,
+          "spa": 125,
+          "spd": 115,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガサーナイト",
+        "phase": "after",
+        "effective": "メガサーナイト",
+        "id": "gardevoirmega",
+        "stats": {
+          "hp": 68,
+          "atk": 85,
+          "def": 65,
+          "spa": 165,
+          "spd": 135,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガヤミラミ",
+        "phase": "before",
+        "effective": "ヤミラミ",
+        "id": "sableye",
+        "stats": {
+          "hp": 50,
+          "atk": 75,
+          "def": 75,
+          "spa": 65,
+          "spd": 65,
+          "spe": 50
+        },
+        "speed": 70
+      },
+      {
+        "kind": "mega",
+        "name": "メガヤミラミ",
+        "phase": "after",
+        "effective": "メガヤミラミ",
+        "id": "sableyemega",
+        "stats": {
+          "hp": 50,
+          "atk": 85,
+          "def": 125,
+          "spa": 85,
+          "spd": 115,
+          "spe": 20
+        },
+        "speed": 40
+      },
+      {
+        "kind": "mega",
+        "name": "メガクチート",
+        "phase": "before",
+        "effective": "クチート",
+        "id": "mawile",
+        "stats": {
+          "hp": 50,
+          "atk": 85,
+          "def": 85,
+          "spa": 55,
+          "spd": 55,
+          "spe": 50
+        },
+        "speed": 70
+      },
+      {
+        "kind": "mega",
+        "name": "メガクチート",
+        "phase": "after",
+        "effective": "メガクチート",
+        "id": "mawilemega",
+        "stats": {
+          "hp": 50,
+          "atk": 105,
+          "def": 125,
+          "spa": 55,
+          "spd": 95,
+          "spe": 50
+        },
+        "speed": 70
+      },
+      {
+        "kind": "mega",
+        "name": "メガボスゴドラ",
+        "phase": "before",
+        "effective": "ボスゴドラ",
+        "id": "aggron",
+        "stats": {
+          "hp": 70,
+          "atk": 110,
+          "def": 180,
+          "spa": 60,
+          "spd": 60,
+          "spe": 50
+        },
+        "speed": 70
+      },
+      {
+        "kind": "mega",
+        "name": "メガボスゴドラ",
+        "phase": "after",
+        "effective": "メガボスゴドラ",
+        "id": "aggronmega",
+        "stats": {
+          "hp": 70,
+          "atk": 140,
+          "def": 230,
+          "spa": 60,
+          "spd": 80,
+          "spe": 50
+        },
+        "speed": 70
+      },
+      {
+        "kind": "mega",
+        "name": "メガチャーレム",
+        "phase": "before",
+        "effective": "チャーレム",
+        "id": "medicham",
+        "stats": {
+          "hp": 60,
+          "atk": 60,
+          "def": 75,
+          "spa": 60,
+          "spd": 75,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガチャーレム",
+        "phase": "after",
+        "effective": "メガチャーレム",
+        "id": "medichammega",
+        "stats": {
+          "hp": 60,
+          "atk": 100,
+          "def": 85,
+          "spa": 80,
+          "spd": 85,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガライボルト",
+        "phase": "before",
+        "effective": "ライボルト",
+        "id": "manectric",
+        "stats": {
+          "hp": 70,
+          "atk": 75,
+          "def": 60,
+          "spa": 105,
+          "spd": 60,
+          "spe": 105
+        },
+        "speed": 125
+      },
+      {
+        "kind": "mega",
+        "name": "メガライボルト",
+        "phase": "after",
+        "effective": "メガライボルト",
+        "id": "manectricmega",
+        "stats": {
+          "hp": 70,
+          "atk": 75,
+          "def": 80,
+          "spa": 135,
+          "spd": 80,
+          "spe": 135
+        },
+        "speed": 155
+      },
+      {
+        "kind": "mega",
+        "name": "メガサメハダー",
+        "phase": "before",
+        "effective": "サメハダー",
+        "id": "sharpedo",
+        "stats": {
+          "hp": 70,
+          "atk": 120,
+          "def": 40,
+          "spa": 95,
+          "spd": 40,
+          "spe": 95
+        },
+        "speed": 115
+      },
+      {
+        "kind": "mega",
+        "name": "メガサメハダー",
+        "phase": "after",
+        "effective": "メガサメハダー",
+        "id": "sharpedomega",
+        "stats": {
+          "hp": 70,
+          "atk": 140,
+          "def": 70,
+          "spa": 110,
+          "spd": 65,
+          "spe": 105
+        },
+        "speed": 125
+      },
+      {
+        "kind": "mega",
+        "name": "メガバクーダ",
+        "phase": "before",
+        "effective": "バクーダ",
+        "id": "camerupt",
+        "stats": {
+          "hp": 70,
+          "atk": 100,
+          "def": 70,
+          "spa": 105,
+          "spd": 75,
+          "spe": 40
+        },
+        "speed": 60
+      },
+      {
+        "kind": "mega",
+        "name": "メガバクーダ",
+        "phase": "after",
+        "effective": "メガバクーダ",
+        "id": "cameruptmega",
+        "stats": {
+          "hp": 70,
+          "atk": 120,
+          "def": 100,
+          "spa": 145,
+          "spd": 105,
+          "spe": 20
+        },
+        "speed": 40
+      },
+      {
+        "kind": "mega",
+        "name": "メガチルタリス",
+        "phase": "before",
+        "effective": "チルタリス",
+        "id": "altaria",
+        "stats": {
+          "hp": 75,
+          "atk": 70,
+          "def": 90,
+          "spa": 70,
+          "spd": 105,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガチルタリス",
+        "phase": "after",
+        "effective": "メガチルタリス",
+        "id": "altariamega",
+        "stats": {
+          "hp": 75,
+          "atk": 110,
+          "def": 110,
+          "spa": 110,
+          "spd": 105,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガジュペッタ",
+        "phase": "before",
+        "effective": "ジュペッタ",
+        "id": "banette",
+        "stats": {
+          "hp": 64,
+          "atk": 115,
+          "def": 65,
+          "spa": 83,
+          "spd": 63,
+          "spe": 65
+        },
+        "speed": 85
+      },
+      {
+        "kind": "mega",
+        "name": "メガジュペッタ",
+        "phase": "after",
+        "effective": "メガジュペッタ",
+        "id": "banettemega",
+        "stats": {
+          "hp": 64,
+          "atk": 165,
+          "def": 75,
+          "spa": 93,
+          "spd": 83,
+          "spe": 75
+        },
+        "speed": 95
+      },
+      {
+        "kind": "mega",
+        "name": "メガチリーン",
+        "phase": "before",
+        "effective": "チリーン",
+        "id": "chimecho",
+        "stats": {
+          "hp": 75,
+          "atk": 50,
+          "def": 80,
+          "spa": 95,
+          "spd": 90,
+          "spe": 65
+        },
+        "speed": 85
+      },
+      {
+        "kind": "mega",
+        "name": "メガチリーン",
+        "phase": "after",
+        "effective": "メガチリーン",
+        "id": "chimechomega",
+        "stats": {
+          "hp": 75,
+          "atk": 50,
+          "def": 110,
+          "spa": 135,
+          "spd": 120,
+          "spe": 65
+        },
+        "speed": 85
+      },
+      {
+        "kind": "mega",
+        "name": "メガアブソル",
+        "phase": "before",
+        "effective": "アブソル",
+        "id": "absol",
+        "stats": {
+          "hp": 65,
+          "atk": 130,
+          "def": 60,
+          "spa": 75,
+          "spd": 60,
+          "spe": 75
+        },
+        "speed": 95
+      },
+      {
+        "kind": "mega",
+        "name": "メガアブソル",
+        "phase": "after",
+        "effective": "メガアブソル",
+        "id": "absolmega",
+        "stats": {
+          "hp": 65,
+          "atk": 150,
+          "def": 60,
+          "spa": 115,
+          "spd": 60,
+          "spe": 115
+        },
+        "speed": 135
+      },
+      {
+        "kind": "mega",
+        "name": "メガアブソルZ",
+        "phase": "before",
+        "effective": "アブソル",
+        "id": "absol",
+        "stats": {
+          "hp": 65,
+          "atk": 130,
+          "def": 60,
+          "spa": 75,
+          "spd": 60,
+          "spe": 75
+        },
+        "speed": 95
+      },
+      {
+        "kind": "mega",
+        "name": "メガアブソルZ",
+        "phase": "after",
+        "effective": "メガアブソルZ",
+        "id": "absolmegaz",
+        "stats": {
+          "hp": 65,
+          "atk": 154,
+          "def": 60,
+          "spa": 75,
+          "spd": 60,
+          "spe": 151
+        },
+        "speed": 171
+      },
+      {
+        "kind": "mega",
+        "name": "メガオニゴーリ",
+        "phase": "before",
+        "effective": "オニゴーリ",
+        "id": "glalie",
+        "stats": {
+          "hp": 80,
+          "atk": 80,
+          "def": 80,
+          "spa": 80,
+          "spd": 80,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガオニゴーリ",
+        "phase": "after",
+        "effective": "メガオニゴーリ",
+        "id": "glaliemega",
+        "stats": {
+          "hp": 80,
+          "atk": 120,
+          "def": 80,
+          "spa": 120,
+          "spd": 80,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガボーマンダ",
+        "phase": "before",
+        "effective": "ボーマンダ",
+        "id": "salamence",
+        "stats": {
+          "hp": 95,
+          "atk": 135,
+          "def": 80,
+          "spa": 110,
+          "spd": 80,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガボーマンダ",
+        "phase": "after",
+        "effective": "メガボーマンダ",
+        "id": "salamencemega",
+        "stats": {
+          "hp": 95,
+          "atk": 145,
+          "def": 130,
+          "spa": 120,
+          "spd": 90,
+          "spe": 120
+        },
+        "speed": 140
+      },
+      {
+        "kind": "mega",
+        "name": "メガメタグロス",
+        "phase": "before",
+        "effective": "メタグロス",
+        "id": "metagross",
+        "stats": {
+          "hp": 80,
+          "atk": 135,
+          "def": 130,
+          "spa": 95,
+          "spd": 90,
+          "spe": 70
+        },
+        "speed": 90
+      },
+      {
+        "kind": "mega",
+        "name": "メガメタグロス",
+        "phase": "after",
+        "effective": "メガメタグロス",
+        "id": "metagrossmega",
+        "stats": {
+          "hp": 80,
+          "atk": 145,
+          "def": 150,
+          "spa": 105,
+          "spd": 110,
+          "spe": 110
+        },
+        "speed": 130
+      },
+      {
+        "kind": "mega",
+        "name": "メガムクホーク",
+        "phase": "before",
+        "effective": "ムクホーク",
+        "id": "staraptor",
+        "stats": {
+          "hp": 85,
+          "atk": 120,
+          "def": 70,
+          "spa": 50,
+          "spd": 60,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガムクホーク",
+        "phase": "after",
+        "effective": "メガムクホーク",
+        "id": "staraptormega",
+        "stats": {
+          "hp": 85,
+          "atk": 140,
+          "def": 100,
+          "spa": 60,
+          "spd": 90,
+          "spe": 110
+        },
+        "speed": 130
+      },
+      {
+        "kind": "mega",
+        "name": "メガミミロップ",
+        "phase": "before",
+        "effective": "ミミロップ",
+        "id": "lopunny",
+        "stats": {
+          "hp": 65,
+          "atk": 76,
+          "def": 84,
+          "spa": 54,
+          "spd": 96,
+          "spe": 105
+        },
+        "speed": 125
+      },
+      {
+        "kind": "mega",
+        "name": "メガミミロップ",
+        "phase": "after",
+        "effective": "メガミミロップ",
+        "id": "lopunnymega",
+        "stats": {
+          "hp": 65,
+          "atk": 136,
+          "def": 94,
+          "spa": 54,
+          "spd": 96,
+          "spe": 135
+        },
+        "speed": 155
+      },
+      {
+        "kind": "mega",
+        "name": "メガガブリアス",
+        "phase": "before",
+        "effective": "ガブリアス",
+        "id": "garchomp",
+        "stats": {
+          "hp": 108,
+          "atk": 130,
+          "def": 95,
+          "spa": 80,
+          "spd": 85,
+          "spe": 102
+        },
+        "speed": 122
+      },
+      {
+        "kind": "mega",
+        "name": "メガガブリアス",
+        "phase": "after",
+        "effective": "メガガブリアス",
+        "id": "garchompmega",
+        "stats": {
+          "hp": 108,
+          "atk": 170,
+          "def": 115,
+          "spa": 120,
+          "spd": 95,
+          "spe": 92
+        },
+        "speed": 112
+      },
+      {
+        "kind": "mega",
+        "name": "メガガブリアスZ",
+        "phase": "before",
+        "effective": "ガブリアス",
+        "id": "garchomp",
+        "stats": {
+          "hp": 108,
+          "atk": 130,
+          "def": 95,
+          "spa": 80,
+          "spd": 85,
+          "spe": 102
+        },
+        "speed": 122
+      },
+      {
+        "kind": "mega",
+        "name": "メガガブリアスZ",
+        "phase": "after",
+        "effective": "メガガブリアスZ",
+        "id": "garchompmegaz",
+        "stats": {
+          "hp": 108,
+          "atk": 130,
+          "def": 85,
+          "spa": 141,
+          "spd": 85,
+          "spe": 151
+        },
+        "speed": 171
+      },
+      {
+        "kind": "mega",
+        "name": "メガルカリオ",
+        "phase": "before",
+        "effective": "ルカリオ",
+        "id": "lucario",
+        "stats": {
+          "hp": 70,
+          "atk": 110,
+          "def": 70,
+          "spa": 115,
+          "spd": 70,
+          "spe": 90
+        },
+        "speed": 110
+      },
+      {
+        "kind": "mega",
+        "name": "メガルカリオ",
+        "phase": "after",
+        "effective": "メガルカリオ",
+        "id": "lucariomega",
+        "stats": {
+          "hp": 70,
+          "atk": 145,
+          "def": 88,
+          "spa": 140,
+          "spd": 70,
+          "spe": 112
+        },
+        "speed": 132
+      },
+      {
+        "kind": "mega",
+        "name": "メガルカリオZ",
+        "phase": "before",
+        "effective": "ルカリオ",
+        "id": "lucario",
+        "stats": {
+          "hp": 70,
+          "atk": 110,
+          "def": 70,
+          "spa": 115,
+          "spd": 70,
+          "spe": 90
+        },
+        "speed": 110
+      },
+      {
+        "kind": "mega",
+        "name": "メガルカリオZ",
+        "phase": "after",
+        "effective": "メガルカリオZ",
+        "id": "lucariomegaz",
+        "stats": {
+          "hp": 70,
+          "atk": 100,
+          "def": 70,
+          "spa": 164,
+          "spd": 70,
+          "spe": 151
+        },
+        "speed": 171
+      },
+      {
+        "kind": "mega",
+        "name": "メガユキノオー",
+        "phase": "before",
+        "effective": "ユキノオー",
+        "id": "abomasnow",
+        "stats": {
+          "hp": 90,
+          "atk": 92,
+          "def": 75,
+          "spa": 92,
+          "spd": 85,
+          "spe": 60
+        },
+        "speed": 80
+      },
+      {
+        "kind": "mega",
+        "name": "メガユキノオー",
+        "phase": "after",
+        "effective": "メガユキノオー",
+        "id": "abomasnowmega",
+        "stats": {
+          "hp": 90,
+          "atk": 132,
+          "def": 105,
+          "spa": 132,
+          "spd": 105,
+          "spe": 30
+        },
+        "speed": 50
+      },
+      {
+        "kind": "mega",
+        "name": "メガエルレイド",
+        "phase": "before",
+        "effective": "エルレイド",
+        "id": "gallade",
+        "stats": {
+          "hp": 68,
+          "atk": 125,
+          "def": 65,
+          "spa": 65,
+          "spd": 115,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガエルレイド",
+        "phase": "after",
+        "effective": "メガエルレイド",
+        "id": "gallademega",
+        "stats": {
+          "hp": 68,
+          "atk": 165,
+          "def": 95,
+          "spa": 65,
+          "spd": 115,
+          "spe": 110
+        },
+        "speed": 130
+      },
+      {
+        "kind": "mega",
+        "name": "メガユキメノコ",
+        "phase": "before",
+        "effective": "ユキメノコ",
+        "id": "froslass",
+        "stats": {
+          "hp": 70,
+          "atk": 80,
+          "def": 70,
+          "spa": 80,
+          "spd": 70,
+          "spe": 110
+        },
+        "speed": 130
+      },
+      {
+        "kind": "mega",
+        "name": "メガユキメノコ",
+        "phase": "after",
+        "effective": "メガユキメノコ",
+        "id": "froslassmega",
+        "stats": {
+          "hp": 70,
+          "atk": 80,
+          "def": 70,
+          "spa": 140,
+          "spd": 100,
+          "spe": 120
+        },
+        "speed": 140
+      },
+      {
+        "kind": "mega",
+        "name": "メガエンブオー",
+        "phase": "before",
+        "effective": "エンブオー",
+        "id": "emboar",
+        "stats": {
+          "hp": 110,
+          "atk": 123,
+          "def": 65,
+          "spa": 100,
+          "spd": 65,
+          "spe": 65
+        },
+        "speed": 85
+      },
+      {
+        "kind": "mega",
+        "name": "メガエンブオー",
+        "phase": "after",
+        "effective": "メガエンブオー",
+        "id": "emboarmega",
+        "stats": {
+          "hp": 110,
+          "atk": 148,
+          "def": 75,
+          "spa": 110,
+          "spd": 110,
+          "spe": 75
+        },
+        "speed": 95
+      },
+      {
+        "kind": "mega",
+        "name": "メガドリュウズ",
+        "phase": "before",
+        "effective": "ドリュウズ",
+        "id": "excadrill",
+        "stats": {
+          "hp": 110,
+          "atk": 135,
+          "def": 60,
+          "spa": 50,
+          "spd": 65,
+          "spe": 88
+        },
+        "speed": 108
+      },
+      {
+        "kind": "mega",
+        "name": "メガドリュウズ",
+        "phase": "after",
+        "effective": "メガドリュウズ",
+        "id": "excadrillmega",
+        "stats": {
+          "hp": 110,
+          "atk": 165,
+          "def": 100,
+          "spa": 65,
+          "spd": 65,
+          "spe": 103
+        },
+        "speed": 123
+      },
+      {
+        "kind": "mega",
+        "name": "メガタブンネ",
+        "phase": "before",
+        "effective": "タブンネ",
+        "id": "audino",
+        "stats": {
+          "hp": 103,
+          "atk": 60,
+          "def": 86,
+          "spa": 60,
+          "spd": 86,
+          "spe": 50
+        },
+        "speed": 70
+      },
+      {
+        "kind": "mega",
+        "name": "メガタブンネ",
+        "phase": "after",
+        "effective": "メガタブンネ",
+        "id": "audinomega",
+        "stats": {
+          "hp": 103,
+          "atk": 60,
+          "def": 126,
+          "spa": 80,
+          "spd": 126,
+          "spe": 50
+        },
+        "speed": 70
+      },
+      {
+        "kind": "mega",
+        "name": "メガペンドラー",
+        "phase": "before",
+        "effective": "ペンドラー",
+        "id": "scolipede",
+        "stats": {
+          "hp": 60,
+          "atk": 100,
+          "def": 89,
+          "spa": 55,
+          "spd": 69,
+          "spe": 112
+        },
+        "speed": 132
+      },
+      {
+        "kind": "mega",
+        "name": "メガペンドラー",
+        "phase": "after",
+        "effective": "メガペンドラー",
+        "id": "scolipedemega",
+        "stats": {
+          "hp": 60,
+          "atk": 140,
+          "def": 149,
+          "spa": 75,
+          "spd": 99,
+          "spe": 62
+        },
+        "speed": 82
+      },
+      {
+        "kind": "mega",
+        "name": "メガズルズキン",
+        "phase": "before",
+        "effective": "ズルズキン",
+        "id": "scrafty",
+        "stats": {
+          "hp": 65,
+          "atk": 90,
+          "def": 115,
+          "spa": 45,
+          "spd": 115,
+          "spe": 58
+        },
+        "speed": 78
+      },
+      {
+        "kind": "mega",
+        "name": "メガズルズキン",
+        "phase": "after",
+        "effective": "メガズルズキン",
+        "id": "scraftymega",
+        "stats": {
+          "hp": 65,
+          "atk": 130,
+          "def": 135,
+          "spa": 55,
+          "spd": 135,
+          "spe": 68
+        },
+        "speed": 88
+      },
+      {
+        "kind": "mega",
+        "name": "メガシビルドン",
+        "phase": "before",
+        "effective": "シビルドン",
+        "id": "eelektross",
+        "stats": {
+          "hp": 85,
+          "atk": 115,
+          "def": 80,
+          "spa": 105,
+          "spd": 80,
+          "spe": 50
+        },
+        "speed": 70
+      },
+      {
+        "kind": "mega",
+        "name": "メガシビルドン",
+        "phase": "after",
+        "effective": "メガシビルドン",
+        "id": "eelektrossmega",
+        "stats": {
+          "hp": 85,
+          "atk": 145,
+          "def": 80,
+          "spa": 135,
+          "spd": 90,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガシャンデラ",
+        "phase": "before",
+        "effective": "シャンデラ",
+        "id": "chandelure",
+        "stats": {
+          "hp": 60,
+          "atk": 55,
+          "def": 90,
+          "spa": 145,
+          "spd": 90,
+          "spe": 80
+        },
+        "speed": 100
+      },
+      {
+        "kind": "mega",
+        "name": "メガシャンデラ",
+        "phase": "after",
+        "effective": "メガシャンデラ",
+        "id": "chandeluremega",
+        "stats": {
+          "hp": 60,
+          "atk": 75,
+          "def": 110,
+          "spa": 175,
+          "spd": 110,
+          "spe": 90
+        },
+        "speed": 110
+      },
+      {
+        "kind": "mega",
+        "name": "メガゴルーグ",
+        "phase": "before",
+        "effective": "ゴルーグ",
+        "id": "golurk",
+        "stats": {
+          "hp": 89,
+          "atk": 124,
+          "def": 80,
+          "spa": 55,
+          "spd": 80,
+          "spe": 55
+        },
+        "speed": 75
+      },
+      {
+        "kind": "mega",
+        "name": "メガゴルーグ",
+        "phase": "after",
+        "effective": "メガゴルーグ",
+        "id": "golurkmega",
+        "stats": {
+          "hp": 89,
+          "atk": 159,
+          "def": 105,
+          "spa": 70,
+          "spd": 105,
+          "spe": 55
+        },
+        "speed": 75
+      },
+      {
+        "kind": "mega",
+        "name": "メガブリガロン",
+        "phase": "before",
+        "effective": "ブリガロン",
+        "id": "chesnaught",
+        "stats": {
+          "hp": 88,
+          "atk": 107,
+          "def": 122,
+          "spa": 74,
+          "spd": 75,
+          "spe": 64
+        },
+        "speed": 84
+      },
+      {
+        "kind": "mega",
+        "name": "メガブリガロン",
+        "phase": "after",
+        "effective": "メガブリガロン",
+        "id": "chesnaughtmega",
+        "stats": {
+          "hp": 88,
+          "atk": 137,
+          "def": 172,
+          "spa": 74,
+          "spd": 115,
+          "spe": 44
+        },
+        "speed": 64
+      },
+      {
+        "kind": "mega",
+        "name": "メガマフォクシー",
+        "phase": "before",
+        "effective": "マフォクシー",
+        "id": "delphox",
+        "stats": {
+          "hp": 75,
+          "atk": 69,
+          "def": 72,
+          "spa": 114,
+          "spd": 100,
+          "spe": 104
+        },
+        "speed": 124
+      },
+      {
+        "kind": "mega",
+        "name": "メガマフォクシー",
+        "phase": "after",
+        "effective": "メガマフォクシー",
+        "id": "delphoxmega",
+        "stats": {
+          "hp": 75,
+          "atk": 69,
+          "def": 72,
+          "spa": 159,
+          "spd": 125,
+          "spe": 134
+        },
+        "speed": 154
+      },
+      {
+        "kind": "mega",
+        "name": "メガゲッコウガ",
+        "phase": "before",
+        "effective": "ゲッコウガ",
+        "id": "greninja",
+        "stats": {
+          "hp": 72,
+          "atk": 95,
+          "def": 67,
+          "spa": 103,
+          "spd": 71,
+          "spe": 122
+        },
+        "speed": 142
+      },
+      {
+        "kind": "mega",
+        "name": "メガゲッコウガ",
+        "phase": "after",
+        "effective": "メガゲッコウガ",
+        "id": "greninjamega",
+        "stats": {
+          "hp": 72,
+          "atk": 125,
+          "def": 77,
+          "spa": 133,
+          "spd": 81,
+          "spe": 142
+        },
+        "speed": 162
+      },
+      {
+        "kind": "mega",
+        "name": "メガカエンジシ",
+        "phase": "before",
+        "effective": "カエンジシ",
+        "id": "pyroar",
+        "stats": {
+          "hp": 86,
+          "atk": 68,
+          "def": 72,
+          "spa": 109,
+          "spd": 66,
+          "spe": 106
+        },
+        "speed": 126
+      },
+      {
+        "kind": "mega",
+        "name": "メガカエンジシ",
+        "phase": "after",
+        "effective": "メガカエンジシ",
+        "id": "pyroarmega",
+        "stats": {
+          "hp": 86,
+          "atk": 88,
+          "def": 92,
+          "spa": 129,
+          "spd": 86,
+          "spe": 126
+        },
+        "speed": 146
+      },
+      {
+        "kind": "mega",
+        "name": "メガフラエッテ",
+        "phase": "before",
+        "effective": "フラエッテ(えいえんのはな)",
+        "id": "floetteeternal",
+        "stats": {
+          "hp": 74,
+          "atk": 65,
+          "def": 67,
+          "spa": 125,
+          "spd": 128,
+          "spe": 92
+        },
+        "speed": 112
+      },
+      {
+        "kind": "mega",
+        "name": "メガフラエッテ",
+        "phase": "after",
+        "effective": "メガフラエッテ",
+        "id": "floettemega",
+        "stats": {
+          "hp": 74,
+          "atk": 85,
+          "def": 87,
+          "spa": 155,
+          "spd": 148,
+          "spe": 102
+        },
+        "speed": 122
+      },
+      {
+        "kind": "mega",
+        "name": "メガニャオニクス(オス)",
+        "phase": "before",
+        "effective": "ニャオニクス",
+        "id": "meowstic",
+        "stats": {
+          "hp": 74,
+          "atk": 48,
+          "def": 76,
+          "spa": 83,
+          "spd": 81,
+          "spe": 104
+        },
+        "speed": 124
+      },
+      {
+        "kind": "mega",
+        "name": "メガニャオニクス(オス)",
+        "phase": "after",
+        "effective": "メガニャオニクス(オス)",
+        "id": "meowsticmmega",
+        "stats": {
+          "hp": 74,
+          "atk": 48,
+          "def": 76,
+          "spa": 143,
+          "spd": 101,
+          "spe": 124
+        },
+        "speed": 144
+      },
+      {
+        "kind": "mega",
+        "name": "メガニャオニクス(メス)",
+        "phase": "before",
+        "effective": "ニャオニクス(メス)",
+        "id": "meowsticf",
+        "stats": {
+          "hp": 74,
+          "atk": 48,
+          "def": 76,
+          "spa": 83,
+          "spd": 81,
+          "spe": 104
+        },
+        "speed": 124
+      },
+      {
+        "kind": "mega",
+        "name": "メガニャオニクス(メス)",
+        "phase": "after",
+        "effective": "メガニャオニクス(メス)",
+        "id": "meowsticfmega",
+        "stats": {
+          "hp": 74,
+          "atk": 48,
+          "def": 76,
+          "spa": 143,
+          "spd": 101,
+          "spe": 124
+        },
+        "speed": 144
+      },
+      {
+        "kind": "mega",
+        "name": "メガカラマネロ",
+        "phase": "before",
+        "effective": "カラマネロ",
+        "id": "malamar",
+        "stats": {
+          "hp": 86,
+          "atk": 92,
+          "def": 88,
+          "spa": 68,
+          "spd": 75,
+          "spe": 73
+        },
+        "speed": 93
+      },
+      {
+        "kind": "mega",
+        "name": "メガカラマネロ",
+        "phase": "after",
+        "effective": "メガカラマネロ",
+        "id": "malamarmega",
+        "stats": {
+          "hp": 86,
+          "atk": 102,
+          "def": 88,
+          "spa": 98,
+          "spd": 120,
+          "spe": 88
+        },
+        "speed": 108
+      },
+      {
+        "kind": "mega",
+        "name": "メガガメノデス",
+        "phase": "before",
+        "effective": "ガメノデス",
+        "id": "barbaracle",
+        "stats": {
+          "hp": 72,
+          "atk": 105,
+          "def": 115,
+          "spa": 54,
+          "spd": 86,
+          "spe": 68
+        },
+        "speed": 88
+      },
+      {
+        "kind": "mega",
+        "name": "メガガメノデス",
+        "phase": "after",
+        "effective": "メガガメノデス",
+        "id": "barbaraclemega",
+        "stats": {
+          "hp": 72,
+          "atk": 140,
+          "def": 130,
+          "spa": 64,
+          "spd": 106,
+          "spe": 88
+        },
+        "speed": 108
+      },
+      {
+        "kind": "mega",
+        "name": "メガドラミドロ",
+        "phase": "before",
+        "effective": "ドラミドロ",
+        "id": "dragalge",
+        "stats": {
+          "hp": 65,
+          "atk": 75,
+          "def": 90,
+          "spa": 97,
+          "spd": 123,
+          "spe": 44
+        },
+        "speed": 64
+      },
+      {
+        "kind": "mega",
+        "name": "メガドラミドロ",
+        "phase": "after",
+        "effective": "メガドラミドロ",
+        "id": "dragalgemega",
+        "stats": {
+          "hp": 65,
+          "atk": 85,
+          "def": 105,
+          "spa": 132,
+          "spd": 163,
+          "spe": 44
+        },
+        "speed": 64
+      },
+      {
+        "kind": "mega",
+        "name": "メガルチャブル",
+        "phase": "before",
+        "effective": "ルチャブル",
+        "id": "hawlucha",
+        "stats": {
+          "hp": 78,
+          "atk": 92,
+          "def": 75,
+          "spa": 74,
+          "spd": 63,
+          "spe": 118
+        },
+        "speed": 138
+      },
+      {
+        "kind": "mega",
+        "name": "メガルチャブル",
+        "phase": "after",
+        "effective": "メガルチャブル",
+        "id": "hawluchamega",
+        "stats": {
+          "hp": 78,
+          "atk": 137,
+          "def": 100,
+          "spa": 74,
+          "spd": 93,
+          "spe": 118
+        },
+        "speed": 138
+      },
+      {
+        "kind": "mega",
+        "name": "メガケケンカニ",
+        "phase": "before",
+        "effective": "ケケンカニ",
+        "id": "crabominable",
+        "stats": {
+          "hp": 97,
+          "atk": 132,
+          "def": 77,
+          "spa": 62,
+          "spd": 67,
+          "spe": 43
+        },
+        "speed": 63
+      },
+      {
+        "kind": "mega",
+        "name": "メガケケンカニ",
+        "phase": "after",
+        "effective": "メガケケンカニ",
+        "id": "crabominablemega",
+        "stats": {
+          "hp": 97,
+          "atk": 157,
+          "def": 122,
+          "spa": 62,
+          "spd": 107,
+          "spe": 33
+        },
+        "speed": 53
+      },
+      {
+        "kind": "mega",
+        "name": "メガグソクムシャ",
+        "phase": "before",
+        "effective": "グソクムシャ",
+        "id": "golisopod",
+        "stats": {
+          "hp": 75,
+          "atk": 125,
+          "def": 140,
+          "spa": 60,
+          "spd": 90,
+          "spe": 40
+        },
+        "speed": 60
+      },
+      {
+        "kind": "mega",
+        "name": "メガグソクムシャ",
+        "phase": "after",
+        "effective": "メガグソクムシャ",
+        "id": "golisopodmega",
+        "stats": {
+          "hp": 75,
+          "atk": 150,
+          "def": 175,
+          "spa": 70,
+          "spd": 120,
+          "spe": 40
+        },
+        "speed": 60
+      },
+      {
+        "kind": "mega",
+        "name": "メガジジーロン",
+        "phase": "before",
+        "effective": "ジジーロン",
+        "id": "drampa",
+        "stats": {
+          "hp": 78,
+          "atk": 60,
+          "def": 85,
+          "spa": 135,
+          "spd": 91,
+          "spe": 36
+        },
+        "speed": 56
+      },
+      {
+        "kind": "mega",
+        "name": "メガジジーロン",
+        "phase": "after",
+        "effective": "メガジジーロン",
+        "id": "drampamega",
+        "stats": {
+          "hp": 78,
+          "atk": 85,
+          "def": 110,
+          "spa": 160,
+          "spd": 116,
+          "spe": 36
+        },
+        "speed": 56
+      },
+      {
+        "kind": "mega",
+        "name": "メガタイレーツ",
+        "phase": "before",
+        "effective": "タイレーツ",
+        "id": "falinks",
+        "stats": {
+          "hp": 65,
+          "atk": 100,
+          "def": 100,
+          "spa": 70,
+          "spd": 60,
+          "spe": 75
+        },
+        "speed": 95
+      },
+      {
+        "kind": "mega",
+        "name": "メガタイレーツ",
+        "phase": "after",
+        "effective": "メガタイレーツ",
+        "id": "falinksmega",
+        "stats": {
+          "hp": 65,
+          "atk": 135,
+          "def": 135,
+          "spa": 70,
+          "spd": 65,
+          "spe": 100
+        },
+        "speed": 120
+      },
+      {
+        "kind": "mega",
+        "name": "メガスコヴィラン",
+        "phase": "before",
+        "effective": "スコヴィラン",
+        "id": "scovillain",
+        "stats": {
+          "hp": 65,
+          "atk": 108,
+          "def": 65,
+          "spa": 108,
+          "spd": 65,
+          "spe": 75
+        },
+        "speed": 95
+      },
+      {
+        "kind": "mega",
+        "name": "メガスコヴィラン",
+        "phase": "after",
+        "effective": "メガスコヴィラン",
+        "id": "scovillainmega",
+        "stats": {
+          "hp": 65,
+          "atk": 138,
+          "def": 85,
+          "spa": 138,
+          "spd": 85,
+          "spe": 75
+        },
+        "speed": 95
+      },
+      {
+        "kind": "mega",
+        "name": "メガキラフロル",
+        "phase": "before",
+        "effective": "キラフロル",
+        "id": "glimmora",
+        "stats": {
+          "hp": 83,
+          "atk": 55,
+          "def": 90,
+          "spa": 130,
+          "spd": 81,
+          "spe": 86
+        },
+        "speed": 106
+      },
+      {
+        "kind": "mega",
+        "name": "メガキラフロル",
+        "phase": "after",
+        "effective": "メガキラフロル",
+        "id": "glimmoramega",
+        "stats": {
+          "hp": 83,
+          "atk": 90,
+          "def": 105,
+          "spa": 150,
+          "spd": 96,
+          "spe": 101
+        },
+        "speed": 121
+      },
+      {
+        "kind": "mega",
+        "name": "メガセグレイブ",
+        "phase": "before",
+        "effective": "セグレイブ",
+        "id": "baxcalibur",
+        "stats": {
+          "hp": 115,
+          "atk": 145,
+          "def": 92,
+          "spa": 75,
+          "spd": 86,
+          "spe": 87
+        },
+        "speed": 107
+      },
+      {
+        "kind": "mega",
+        "name": "メガセグレイブ",
+        "phase": "after",
+        "effective": "メガセグレイブ",
+        "id": "baxcaliburmega",
+        "stats": {
+          "hp": 115,
+          "atk": 175,
+          "def": 117,
+          "spa": 105,
+          "spd": 101,
+          "spe": 87
+        },
+        "speed": 107
+      },
+      {
+        "kind": "form-selection",
+        "name": "ロトム(ウォッシュロトム)",
+        "effective": "ロトム(ウォッシュロトム)",
+        "id": "rotomwash",
+        "stats": {
+          "hp": 50,
+          "atk": 65,
+          "def": 107,
+          "spa": 105,
+          "spd": 107,
+          "spe": 86
+        },
+        "speed": 106
+      },
+      {
+        "kind": "form-selection",
+        "name": "ロトム(ヒートロトム)",
+        "effective": "ロトム(ヒートロトム)",
+        "id": "rotomheat",
+        "stats": {
+          "hp": 50,
+          "atk": 65,
+          "def": 107,
+          "spa": 105,
+          "spd": 107,
+          "spe": 86
+        },
+        "speed": 106
+      },
+      {
+        "kind": "form-selection",
+        "name": "イダイトウ",
+        "effective": "イダイトウ",
+        "id": "basculegion",
+        "stats": {
+          "hp": 120,
+          "atk": 112,
+          "def": 65,
+          "spa": 80,
+          "spd": 75,
+          "spe": 78
+        },
+        "speed": 98
+      },
+      {
+        "kind": "form-selection",
+        "name": "イダイトウ♀",
+        "effective": "イダイトウ♀",
+        "id": "basculegionf",
+        "stats": {
+          "hp": 120,
+          "atk": 92,
+          "def": 65,
+          "spa": 100,
+          "spd": 75,
+          "spe": 78
+        },
+        "speed": 98
+      },
+      {
+        "kind": "form-selection",
+        "name": "ギルガルド",
+        "effective": "ギルガルド",
+        "id": "aegislash",
+        "stats": {
+          "hp": 60,
+          "atk": 50,
+          "def": 140,
+          "spa": 50,
+          "spd": 140,
+          "spe": 60
+        },
+        "speed": 80
+      },
+      {
+        "kind": "form-selection",
+        "name": "ギルガルド(ブレードフォルム)",
+        "effective": "ギルガルド(ブレードフォルム)",
+        "id": "aegislashblade",
+        "stats": {
+          "hp": 60,
+          "atk": 140,
+          "def": 50,
+          "spa": 140,
+          "spd": 50,
+          "spe": 60
+        },
+        "speed": 80
+      }
+    ]
+  },
+  "hpRecalculation": {
+    "changedOnHpInput": true,
+    "restoredOnReset": true,
+    "provisional": true
+  },
+  "fixedRailContrast": [
+    {
+      "text": "相手1：ゴリランダー",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "ウッドハンマー：53.1–62.9%",
+      "fg": [
+        15,
+        23,
+        42
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 17.062933971317335
+    },
+    {
+      "text": "計算上2発（推定）",
+      "fg": [
+        15,
+        23,
+        42
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 17.062933971317335
+    },
+    {
+      "text": "相手2：オオニューラ",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "ウッドハンマー：81.9–96.8%",
+      "fg": [
+        15,
+        23,
+        42
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 17.062933971317335
+    },
+    {
+      "text": "計算上2発（推定）",
+      "fg": [
+        15,
+        23,
+        42
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 17.062933971317335
+    },
+    {
+      "text": "相手1：ゴリランダー",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "インファイト：64.0–76.0%",
+      "fg": [
+        15,
+        23,
+        42
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 17.062933971317335
+    },
+    {
+      "text": "計算上2発（推定）",
+      "fg": [
+        15,
+        23,
+        42
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 17.062933971317335
+    },
+    {
+      "text": "相手2：オオニューラ",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "インファイト：49.7–58.7%",
+      "fg": [
+        15,
+        23,
+        42
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 17.062933971317335
+    },
+    {
+      "text": "乱数2〜3発",
+      "fg": [
+        15,
+        23,
+        42
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 17.062933971317335
+    },
+    {
+      "text": "ゴリランダー",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "オオニューラ",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "ゴリランダー",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "オオニューラ",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "ゴリランダー",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "オオニューラ",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "ゴリランダー",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "オオニューラ",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "ゴリランダー",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "オオニューラ",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "ゴリランダー",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "オオニューラ",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "ゴリランダー",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "オオニューラ",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "ゴリランダー",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    },
+    {
+      "text": "オオニューラ",
+      "fg": [
+        185,
+        28,
+        28
+      ],
+      "bg": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.183880663671718
+    }
+  ],
+  "offline": {
+    "cachedCorrectedRuntime": true,
+    "allRuntimeScripts": true,
+    "matchRestore": true,
+    "hpRecalculate": true,
+    "saveReload": true
+  },
+  "originIsolation": {
+    "separateHostnameStores": true,
+    "sourceMatchUnaffected": true,
+    "publicSiteContacted": false
+  },
+  "errors": [],
+  "chromiumVersion": "154.0.8037.57"
+}

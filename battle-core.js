@@ -44,10 +44,17 @@
     damage=pokeRound(damage,chainModifiers([screenFixed,otherFinal,sniper,itemFixed,berry]));
     return Math.max(1,damage);
   }
-  // Prioritized defensive berries only. Unknown inputs never become a protection fact.
+  const RESIST_BERRY_TYPES=Object.freeze({
+    'ホズのみ':'ノーマル','オッカのみ':'ほのお','イトケのみ':'みず','ソクノのみ':'でんき',
+    'リンドのみ':'くさ','ヤチェのみ':'こおり','ヨプのみ':'かくとう','ビアーのみ':'どく',
+    'シュカのみ':'じめん','バコウのみ':'ひこう','ウタンのみ':'エスパー','タンガのみ':'むし',
+    'ヨロギのみ':'いわ','カシブのみ':'ゴースト','ハバンのみ':'ドラゴン','ナモのみ':'あく',
+    'リリバのみ':'はがね','ロゼルのみ':'フェアリー'
+  });
+  // Registered resistance berries; Chilan also applies to neutral/resisted Normal hits.
+  // Unknown inputs never become a protection fact.
   function resistBerry({item,type,effectiveness,substitute=false,bypassSubstitute=false,blocked=false,ripen=false}={}){
-    const types={'ヨプのみ':'かくとう','ナモのみ':'あく'};
-    if(!types[item]||types[item]!==type||!(effectiveness>1)||blocked||substitute&&!bypassSubstitute)return {factor:1,consume:false};
+    if(!RESIST_BERRY_TYPES[item]||RESIST_BERRY_TYPES[item]!==type||!(effectiveness>0)||(item!=='ホズのみ'&&!(effectiveness>1))||blocked||substitute&&!bypassSubstitute)return {factor:1,consume:false};
     return {factor:ripen?.25:.5,consume:true};
   }
   // Poison Touch: conditional risk only, never auto-confirms a status effect.
@@ -120,5 +127,5 @@
     if(kind==='move')return rate>=10;
     throw Error('Unknown usage category');
   }
-  return Object.freeze({pokeRound,chainModifiers,resistBerry,stageStat,baseDamage,damageRoll,poisonTouchRisk,contactStatusRisk,contactStatusType,statusTypeImmune,assessedContactStatusRisk,unburdenSpeed,usageEligible,weatherEntryTurns,fieldTurnsAfterTurn,version:'2.5.4'});
+  return Object.freeze({pokeRound,chainModifiers,RESIST_BERRY_TYPES,resistBerry,stageStat,baseDamage,damageRoll,poisonTouchRisk,contactStatusRisk,contactStatusType,statusTypeImmune,assessedContactStatusRisk,unburdenSpeed,usageEligible,weatherEntryTurns,fieldTurnsAfterTurn,version:'2.5.4'});
 });

@@ -1,0 +1,61 @@
+{
+  "completion": false,
+  "passed": true,
+  "kind": "temporary engineering archive, not a tournament release",
+  "checkedAt": "2026-10-23T07:49:18.782742+00:00",
+  "archiveRetained": false,
+  "tests": [
+    {
+      "command": "test-pc-launcher.py",
+      "exitCode": 0,
+      "stdout": "PASS shipped Python launcher serves trial and external engine at stable localhost origin\n",
+      "stderr": ""
+    },
+    {
+      "command": "browser_pc_trial_test.py",
+      "exitCode": 0,
+      "stdout": "PASS PC Chromium Chrome/Edge UA profiles: 8 layouts, dual targets, real 45s turn/switch/HP/save/undo/JSON restore\n",
+      "stderr": ""
+    },
+    {
+      "command": "browser_prezip_test.py",
+      "exitCode": 0,
+      "stdout": "PASS pre-ZIP: 82 Mega pre/post references, selected forms, HP recalc, rail contrast, corrected offline cache/save, origin isolation\n",
+      "stderr": ""
+    },
+    {
+      "command": "browser_full_match_test.py",
+      "exitCode": 0,
+      "stdout": "PASS complete observed 4-vs-4 match UI: three turns, KO replacements, undo/replay, reload, win record; no state injection\n",
+      "stderr": ""
+    }
+  ],
+  "runtimeSha256": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "battle-core.js": "02815420ea1c334481fa8378f25ede32387749308e9cf3ce3803863871e6df51",
+    "critical-effects.js": "83d54bd9fb80c307c8fdcb399fa0d11fbd7a27722bbf0b340407ba8417f4c72c",
+    "effect-engine.js": "06e5fd3ba720d83316fa32a9b4e79bd8c3c729b57d3e9326049c2375481d6e78",
+    "icon-192.png": "269f2adbba00855bf883fd0a284cf2bc5d3aa87dcdea67bc2484aa11204b1502",
+    "icon-512.png": "3ab233c4b30a924ec0e12ae0e737abfdc465cd339bf92b043fd81e42babaa4f8",
+    "index.html": "7b23377c4f0d341ace3b70aca1552671b29130e0385cde18329dad85ea0b1bf7",
+    "launch-pc-trial.py": "c4cc5092cb846e71311ca1a7f26facae52b508847abc2c846baff401528d1575",
+    "manifest.webmanifest": "ba634d04f244146555591b6db7e3bc82550ae06623d8dac25dea74a132c3936c",
+    "priority-engine.js": "1c7fb953de596fc7b0da6f9def31a818f06f615c69f69db871310751abbabffb",
+    "rank-effects.js": "f9b217183a9b079178c3c7c51171310cbc1ecc0774abee93df0d88fe10d0a2ce",
+    "start-pc-trial.cmd": "ccbe4c2c28ddec7356806d0501b683d3f395577a618bd40e4033adf6a1f9f64a",
+    "sw.js": "970d16a54be7df740978ae9788de26b21a45d10c156009888b9b19f7d06d38ca",
+    "three-attack-effects.js": "cbef315088b116446588ecaec77db9f71aa243dc369eccb589996f4c19919773",
+    "turn-order-effects.js": "f0b4cda295774f7e9e47ddd321d23599d68a2c070d2c99d185b2e24f313518e4"
+  },
+  "testSourceSha256": {
+    "verify-prezip-staging.py": "e67d42d86c9f8c00c194bd9ff16e13041cfd7b07bfc4f961a358fd88535b52dd",
+    "test-pc-launcher.py": "76c8478c6c4be89a447514c22e8bcff41608d83ec35a3efc3bfa00135561dd4a",
+    "browser_pc_trial_test.py": "a9cfd5e121907683d8c83a9831e93f63f1759f3ff78fb5a49313250be8543428",
+    "browser_prezip_test.py": "866f0e155040faa11b80c378a712cb65498b231453bc756f83147bc09eaf4076",
+    "browser_full_match_test.py": "b1f0933fc87b2bf0f66cefa60c6d2a70a0fcfbe5e0dc2851a9918860fc6452b1"
+  },
+  "temporaryArchiveSha256": "d77666e5f620a85857fb233e7c443a7b9e2a1d7fa4a0cb05f03728df04001943",
+  "runtimeFilesVerified": 15,
+  "sash64d8d75Included": true,
+  "resistanceBerryCorrectionIncluded": true
+}

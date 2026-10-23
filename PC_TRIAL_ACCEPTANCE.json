@@ -1,11 +1,11 @@
 {
   "completion": false,
   "pcEquivalentTrialPassed": true,
-  "readiness": "audited-v2.9.13-source-one-ko-boundary-fix",
+  "readiness": "local-technical-pass-tournament-zip-held",
   "implementationCommit": "042aa330e1353f6d88756bd80e43c3569b13eb3b",
   "testCommands": {
-    "passed": 137,
-    "total": 137
+    "passed": 140,
+    "total": 140
   },
   "engine": "Linux Chromium 154.0.8037.57",
   "compatibilityProfiles": [
@@ -43,7 +43,7 @@
   "mainMatchupValidation": "MAIN_MATCHUP_VALIDATION.md",
   "runtimeVersion": "v2.9.13",
   "sourceBaseCommit": "3a4362fdf01968dc452b5b7f8b17206e2984b00b",
-  "releaseDecision": "FINAL_DAMAGE_KO_AUDIT.md",
+  "releaseDecision": "FINAL_PREZIP_AUDIT_RESULTS.json",
   "historicalRc1ArtifactVerification": "release/rc1/RC_ARTIFACT_VERIFICATION.json",
   "artifactVerification": "release/tournament-v2.9.13/ARTIFACT_VERIFICATION.json",
   "trialArtifact": {
@@ -54,7 +54,9 @@
     "extractedArchiveChecksTotal": 3,
     "filesVerified": 35,
     "status": "finalized-limited-trial",
-    "completion": false
+    "completion": false,
+    "historicalBackupOnly": true,
+    "containsCurrentCorrections": false
   },
   "targetedThreeMoveViewportChecks": 4,
   "frozen": true,
@@ -72,5 +74,31 @@
     "originalZipUnchanged": true,
     "correctionIncludedInOriginalZip": false,
     "completion": false
-  }
+  },
+  "finalPrezipAudit": {
+    "report": "FINAL_PREZIP_AUDIT.md",
+    "results": "FINAL_PREZIP_AUDIT_RESULTS.json",
+    "officialReview": "OFFICIAL_MC_AUDIT.json",
+    "technicalChecksPassed": true,
+    "tournamentPackageAllowed": false,
+    "releaseZipCreated": false,
+    "blockingChecks": [
+      "eligibleRosterFullyCompared",
+      "heldItemListFullyCompared",
+      "independentToolUsePermissionVerified"
+    ],
+    "testCommands": {
+      "passed": 140,
+      "total": 140
+    },
+    "temporaryArchiveChecks": {
+      "passed": 4,
+      "total": 4
+    },
+    "sash64d8d75Included": true,
+    "criticalCalculationFixesThisAudit": 1,
+    "newFeatures": 0,
+    "completion": false
+  },
+  "currentTournamentZip": null
 }

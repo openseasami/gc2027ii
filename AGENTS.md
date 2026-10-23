@@ -2,6 +2,8 @@
 
 ## v2.9.13 大会基準版の固定（最新ユーザー指示）
 
+最新の一括監査はFINAL_PREZIP_AUDIT.md/FINAL_PREZIP_AUDIT_RESULTS.jsonを先に読む。64d8d75のタスキ修正を保持し、登録済み半減実18種の除外漏れという重大な計算差を最小修正した。全140回帰＋一時ZIP展開4/4は成功。公式ポケモン/持ち物一覧の本体と独立ツール利用許可が未確認のため、新大会用ZIPは合格未達で未作成。旧ZIPをバックアップとして保持し、修正済みと混同しない。一時検証ZIPは削除済み。公式根拠が揃うまでは一般実装へ戻らず、古いpackagerでバックアップを上書きしない。
+
 最終KO監査で再現した小数HP/タスキの不一致1件を修正済み。FINAL_DAMAGE_KO_AUDIT.mdとKO_BOUNDARY_AUDIT_INCIDENTS.jsonを先に読む。FROZEN_BASELINE.jsonは元の指紋をoriginalRuntimeSha256へ保持し、auditAmendmentsでこの修正だけを許可する。元の固定ZIPは上書きせず、修正済みソースと同一とは扱わない。旧ZIP用の合格記録からbuild-frozen-trial.pyで再生成しない。本監査は新ZIPを作らず開発ブランチへ修正/検証記録を保存した。
 
 追加機能・候補網羅・他11技の監査を停止する。FROZEN_BASELINE.jsonのsourceCommitとruntimeSha256が基準。168技の明示条件の基本計算、344種類の種族値、現在のPC UI、固定欄、保存/旧版移行だけを最終回帰する。一般planのグループはclaimしない。新たな実装依頼または再現した重大不具合なしに実行ファイルを変更しない。

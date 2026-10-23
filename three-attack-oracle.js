@@ -7,7 +7,7 @@ for(const row of rows){const b=new ps.Battle({formatid:'gen9doublescustomgame',s
  const entry=byMove[row.name]??={cases:0,damageComparisons:0,totalComparisons:0,probabilityComparisons:0,failures:0};entry.cases++;
  const fail=(role,expected,actual)=>{entry.failures++;if(failures.length<80)failures.push({id:row.id,role,expected,actual});};
  const active=hit=>{const m=b.dex.getActiveMove(row.move);m.hit=hit;m.willCrit=!!row.critical;m.spreadHit=false;b.setActiveMove(m,a,d);b.singleEvent('ModifyMove',m,null,a,d,m,m);b.runEvent('ModifyMove',a,d,m,m);return m;};
- const calc=(hit,roll)=>{b.randomizer=n=>Math.floor(n*roll/100);const m=active(hit);return !d.runImmunity(m.type)?0:b.actions.getDamage(a,d,m,true);};
+ const calc=(hit,roll)=>{d.setItem(row.targetItem||'');b.randomizer=n=>Math.floor(n*roll/100);const m=active(hit);return !d.runImmunity(m.type)?0:b.actions.getDamage(a,d,m,true);};
  const expectedByHit=[];for(let hit=1;hit<=row.strikes.length;hit++){const values=[];for(let roll=85;roll<=100;roll++){const expected=calc(hit,roll);values.push(expected);damageComparisons++;entry.damageComparisons++;if(expected!==row.strikes[hit-1][roll-85])fail('hit/'+hit+'/roll/'+roll,expected,row.strikes[hit-1][roll-85]);}expectedByHit.push(values);}
  if(row.totals){
   // Independent HP-state convolution of PS per-strike rolls. State-sensitive

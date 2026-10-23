@@ -1,0 +1,333 @@
+{
+  "completion": false,
+  "passed": true,
+  "scope": "Controlled actual-page damage adapters; independent full berry callbacks in ALL_RESIST_BERRY_RESULTS.json. No legality certification.",
+  "berries": 18,
+  "directions": 2,
+  "checks": [
+    {
+      "item": "ホズのみ",
+      "side": "my",
+      "activeMax": 16,
+      "consumedMax": 32,
+      "blockedMax": 32,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ホズのみ",
+      "side": "opp",
+      "activeMax": 21,
+      "consumedMax": 43,
+      "blockedMax": 43,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "オッカのみ",
+      "side": "my",
+      "activeMax": 94,
+      "consumedMax": 188,
+      "blockedMax": 188,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "オッカのみ",
+      "side": "opp",
+      "activeMax": 128,
+      "consumedMax": 256,
+      "blockedMax": 256,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "イトケのみ",
+      "side": "my",
+      "activeMax": 35,
+      "consumedMax": 70,
+      "blockedMax": 70,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "イトケのみ",
+      "side": "opp",
+      "activeMax": 48,
+      "consumedMax": 96,
+      "blockedMax": 96,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ソクノのみ",
+      "side": "my",
+      "activeMax": 82,
+      "consumedMax": 164,
+      "blockedMax": 164,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ソクノのみ",
+      "side": "opp",
+      "activeMax": 114,
+      "consumedMax": 228,
+      "blockedMax": 228,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "リンドのみ",
+      "side": "my",
+      "activeMax": 90,
+      "consumedMax": 180,
+      "blockedMax": 180,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "リンドのみ",
+      "side": "opp",
+      "activeMax": 124,
+      "consumedMax": 248,
+      "blockedMax": 248,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ヤチェのみ",
+      "side": "my",
+      "activeMax": 94,
+      "consumedMax": 188,
+      "blockedMax": 188,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ヤチェのみ",
+      "side": "opp",
+      "activeMax": 128,
+      "consumedMax": 256,
+      "blockedMax": 256,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ヨプのみ",
+      "side": "my",
+      "activeMax": 100,
+      "consumedMax": 200,
+      "blockedMax": 200,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ヨプのみ",
+      "side": "opp",
+      "activeMax": 138,
+      "consumedMax": 276,
+      "blockedMax": 276,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ビアーのみ",
+      "side": "my",
+      "activeMax": 104,
+      "consumedMax": 208,
+      "blockedMax": 208,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ビアーのみ",
+      "side": "opp",
+      "activeMax": 142,
+      "consumedMax": 284,
+      "blockedMax": 284,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "シュカのみ",
+      "side": "my",
+      "activeMax": 62,
+      "consumedMax": 124,
+      "blockedMax": 124,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "シュカのみ",
+      "side": "opp",
+      "activeMax": 84,
+      "consumedMax": 168,
+      "blockedMax": 168,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "バコウのみ",
+      "side": "my",
+      "activeMax": 102,
+      "consumedMax": 204,
+      "blockedMax": 204,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "バコウのみ",
+      "side": "opp",
+      "activeMax": 140,
+      "consumedMax": 280,
+      "blockedMax": 280,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ウタンのみ",
+      "side": "my",
+      "activeMax": 170,
+      "consumedMax": 340,
+      "blockedMax": 340,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ウタンのみ",
+      "side": "opp",
+      "activeMax": 236,
+      "consumedMax": 472,
+      "blockedMax": 472,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "タンガのみ",
+      "side": "my",
+      "activeMax": 104,
+      "consumedMax": 208,
+      "blockedMax": 208,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "タンガのみ",
+      "side": "opp",
+      "activeMax": 142,
+      "consumedMax": 284,
+      "blockedMax": 284,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ヨロギのみ",
+      "side": "my",
+      "activeMax": 70,
+      "consumedMax": 140,
+      "blockedMax": 140,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ヨロギのみ",
+      "side": "opp",
+      "activeMax": 98,
+      "consumedMax": 196,
+      "blockedMax": 196,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "カシブのみ",
+      "side": "my",
+      "activeMax": 37,
+      "consumedMax": 74,
+      "blockedMax": 74,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "カシブのみ",
+      "side": "opp",
+      "activeMax": 50,
+      "consumedMax": 100,
+      "blockedMax": 100,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ハバンのみ",
+      "side": "my",
+      "activeMax": 44,
+      "consumedMax": 88,
+      "blockedMax": 88,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ハバンのみ",
+      "side": "opp",
+      "activeMax": 61,
+      "consumedMax": 122,
+      "blockedMax": 122,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ナモのみ",
+      "side": "my",
+      "activeMax": 38,
+      "consumedMax": 76,
+      "blockedMax": 76,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ナモのみ",
+      "side": "opp",
+      "activeMax": 53,
+      "consumedMax": 106,
+      "blockedMax": 106,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "リリバのみ",
+      "side": "my",
+      "activeMax": 74,
+      "consumedMax": 148,
+      "blockedMax": 148,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "リリバのみ",
+      "side": "opp",
+      "activeMax": 100,
+      "consumedMax": 200,
+      "blockedMax": 200,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ロゼルのみ",
+      "side": "my",
+      "activeMax": 94,
+      "consumedMax": 188,
+      "blockedMax": 188,
+      "unknownGuarded": true,
+      "readOnly": true
+    },
+    {
+      "item": "ロゼルのみ",
+      "side": "opp",
+      "activeMax": 130,
+      "consumedMax": 260,
+      "blockedMax": 260,
+      "unknownGuarded": true,
+      "readOnly": true
+    }
+  ]
+}

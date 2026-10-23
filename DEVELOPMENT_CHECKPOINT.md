@@ -1,15 +1,17 @@
-# v2.9.13 最終ダメージ/KO監査チェックポイント
+# v2.9.13 最終ZIP前監査 — 技術合格・大会ZIP保留
 
-completion:false。基点ee6a7cc98f464d39c414cfc1eb7330e19000d122。新機能/候補網羅/他11技の追加監査は停止。今回のユーザー指示で独立照合の不一致だけを修正した。
+completion:false。基点64d8d75bc6a7466c788a35327f6f0f7c84e415f6のタスキKO修正を保持。今回、登録済み半減実がヨプ/ナモ以外は無視される重大な計算差を修正した。18種の共通表へ入口と補正を集約し、ホズの例外を含め既存の消費/連続打撃経路を再利用。UI/種族値/採用データ/操作機能は変更していない。
 
-全137/137回帰成功。KO_BOUNDARY_AUDIT_RESULTS.json：120プロフィール、4,320条件、ダメージ523,312比較、HP境界28,387、KO42,539比較、不一致0。能力値1,073,520比較も一致。対象344/メガ82の種族値2,064値は二資料一致、対象内未確認0。PC固定欄/45秒/保存復元/巻き戻し/3旧版移行も成功。
+全140/140回帰成功、別途一時ZIP展開の起動/PC/オフライン/完全観測試合4/4成功。最新監査FINAL_PREZIP_AUDIT.md、機械判定FINAL_PREZIP_AUDIT_RESULTS.json、公式根拠OFFICIAL_MC_AUDIT.json。168技の限定基本計算・344種族値・82メガ前後164参照・6別形態・16乱数/確定1発と乱数1発/確定2発・18半減実・3指定攻撃技・PC保存/巻き戻し/旧3版移行を確認した。全仕様の完成にはしない。
 
-修正1件：被ダメージのタスキ判定だけがHP％>=100を使い、整数換算で満タンになる小数HP境界のKO確率が1だった。整数満タン条件へ統一して独立PSの0と一致。index.htmlのこの2行だけを変更し、UI/CSS/種族値/採用データは維持。FROZEN_BASELINE.jsonは元の指紋をoriginalRuntimeSha256へ保持し、auditAmendmentsで再現した不具合修正を例外として記録。
+## 現在の未達条件
 
-詳細FINAL_DAMAGE_KO_AUDIT.md、失敗原因/検体訂正KO_BOUNDARY_AUDIT_INCIDENTS.json、全回帰TEST_RESULTS.json。確定1発/乱数1発は全16乱数の生存判定で分け、命中率込み確率と命中時確率を分離。APは既存の0〜32/合計66。標準EVとの対応は個別能力の数値照合で公式AP/合計EV/合法性認定ではない。未知配分/追加効果/全特性・アイテム/公式規則/最適推奨などは未確認のまま参考推定とする。
+公式ニュースと大会詳細は取得でき、M-Cダブル、選出4、メガ1回、持ち物重複禁止、20分/7分/45秒/90秒を確認。しかし公式ポケモン/持ち物の一覧本体は見出しだけで全件照合未完。独立ブラウザツールの利用許可も未確認。規約違反と断定せず、許諾も推測しない。これら3条件が未達のため新大会用ZIPは作成していない。一時的な検証用ZIPは削除済み。
 
-## 元の固定ZIPと再開
+元のrelease/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zipはバックアップとして保持し上書きしない。旧ZIPには今回と64d8d75の補正が含まれない。修正済みソースはこの開発ブランチの監査コミット一式を取得し、ルートのstart-pc-trial.cmdから起動する。初回は127.0.0.1:8765へHTTPで開いてキャッシュを用意。同じURL/プロフィールで保存し、JSON_BACKUP.mdに従い更新前/移行先を先にJSON出力する。大会での利用可否は未確定。
 
-release/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zipは上書きせず元のSHAを維持。**そのZIPには今回の補正は含まれない。** 使用するなら本監査の開発コミットを取得し、ルートのstart-pc-trial.cmdから起動。同じURL/プロフィールを使い、先にJSON出力しておく。今回の依頼は監査/開発ブランチ保存であり、新ZIP生成は行っていない。
+## 次回
 
-再開時も新機能へ進まない。明示された追加監査か再現した不一致だけを扱う。work/test-venv/bin/python browser_ko_boundary_test.py→全回帰→evaluate-tournament-practical.py。元ZIPを修正済みソースの検証証拠に流用しない。main/公開サイトは変更せずcodex-developmentへ保存。completion:falseを維持する。
+新機能・一般候補網羅・他11技の実装を開始しない。未確認の公式一覧とツール利用可否の根拠を揃えて照合し、work/test-venv/bin/python run-development-checks.py→python evaluate-tournament-practical.py→work/test-venv/bin/python verify-prezip-staging.py→python evaluate-prezip-audit.py。根拠のない公式チェックをtrueにしない。新ZIPの合格条件を満たしたときだけ旧ZIPと別の場所へ作り、全結果/未確認条件/起動/JSONバックアップ/ファイルSHAを同梱し、ZIP自体のSHAを外付けする。古いbuild-frozen-trial.pyの歴史的判定で旧ZIPを上書きしない。
+
+main/公開サイトは変更せず、codex-developmentへ通常commit/push。全仕様completion:falseを維持する。

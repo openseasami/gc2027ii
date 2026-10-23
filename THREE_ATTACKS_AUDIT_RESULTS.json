@@ -2,11 +2,11 @@
   "completion": false,
   "metadataVerified": 3,
   "calculationVerified": 3,
-  "sourceSha256": "60c610d0c6e318b1fb4f912d2c61015525c38073f66ae09191a728d85d3ed584",
+  "sourceSha256": "7b23377c4f0d341ace3b70aca1552671b29130e0385cde18329dad85ea0b1bf7",
   "evidenceSha256": {
     "three-attack-effects.js": "cbef315088b116446588ecaec77db9f71aa243dc369eccb589996f4c19919773",
-    "three-attack-oracle.js": "1c8b4ed145cbd9d833d40c4a622f7d9e8deb01aef3484f3ad7a05086a20c528f",
-    "browser_three_attacks_test.py": "a0e779184a6c0936027d1806cc228465d4aeeeec12ad4f4425983317ff4feb90",
+    "three-attack-oracle.js": "8c8cd3d4cfab774a7669ddae060b468e7cdcab3a16da15b215dfc9d38a644809",
+    "browser_three_attacks_test.py": "cd9456ef2d49e78d19059fc8e7928966578dee7f684261e324af249937127dde",
     "reference-data/three-attacks/PROVENANCE.json": "d202376a7a58b49094af43c3b3c57acee825a01a78c7cc7674702ba764a3ebaa"
   },
   "moves": [
@@ -26,10 +26,10 @@
   "differential": {
     "completion": false,
     "oracle": "pokemon-showdown@0.11.10 Gen9 actual callbacks, getDamage, hitStepAccuracy and hitStepMoveHitLoop",
-    "scenarios": 2608,
-    "damageComparisons": 158592,
-    "totalComparisons": 47891,
-    "probabilityComparisons": 690,
+    "scenarios": 2624,
+    "damageComparisons": 160256,
+    "totalComparisons": 49423,
+    "probabilityComparisons": 720,
     "byMove": {
       "やけっぱち": {
         "cases": 1280,
@@ -39,17 +39,17 @@
         "failures": 0
       },
       "トリプルアクセル": {
-        "cases": 664,
-        "damageComparisons": 31872,
-        "totalComparisons": 11567,
-        "probabilityComparisons": 184,
+        "cases": 672,
+        "damageComparisons": 32256,
+        "totalComparisons": 11839,
+        "probabilityComparisons": 192,
         "failures": 0
       },
       "ネズミざん": {
-        "cases": 664,
-        "damageComparisons": 106240,
-        "totalComparisons": 36324,
-        "probabilityComparisons": 506,
+        "cases": 672,
+        "damageComparisons": 107520,
+        "totalComparisons": 37584,
+        "probabilityComparisons": 528,
         "failures": 0
       }
     },

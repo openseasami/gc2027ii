@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T07:11:13.992006+00:00",
+  "generatedAt": "2026-10-23T07:51:25.982241+00:00",
   "complete": false,
   "completion": false,
   "limitations": [
@@ -7,7 +7,7 @@
   ],
   "sourceSha256": {
     "three-attack-effects.js": "cbef315088b116446588ecaec77db9f71aa243dc369eccb589996f4c19919773",
-    "three-attack-oracle.js": "1c8b4ed145cbd9d833d40c4a622f7d9e8deb01aef3484f3ad7a05086a20c528f",
+    "three-attack-oracle.js": "8c8cd3d4cfab774a7669ddae060b468e7cdcab3a16da15b215dfc9d38a644809",
     "pending-move-oracle.js": "ad87b2f15be569ebab63205af5a3fc46b326efa3c256a3e6f9766a57a4503974",
     "audit-stats-moves.py": "3737bed58b3a1310b75c9e04b366e5108cf61ffa2d4914aee220f7fc4b4d9468",
     "prepare-data-audit-references.js": "fc689cd8fa62e14de78cde65f9beebcd58604a28474f9b0dd7b701393a969dd0",
@@ -21,14 +21,14 @@
     "TOURNAMENT_PRACTICAL_GATES.json": "799f143bdb4bf24d21c5d80206b55a1bac76856d2dfff895c9c5ed0c4281ab14",
     "critical-effects.js": "83d54bd9fb80c307c8fdcb399fa0d11fbd7a27722bbf0b340407ba8417f4c72c",
     "rank-effects.js": "f9b217183a9b079178c3c7c51171310cbc1ecc0774abee93df0d88fe10d0a2ce",
-    "index.html": "60c610d0c6e318b1fb4f912d2c61015525c38073f66ae09191a728d85d3ed584",
+    "index.html": "7b23377c4f0d341ace3b70aca1552671b29130e0385cde18329dad85ea0b1bf7",
     "sw.js": "970d16a54be7df740978ae9788de26b21a45d10c156009888b9b19f7d06d38ca",
-    "battle-core.js": "9a43bd7f018fdeea2239bb7ae34125b01c30908e11c3059c28fe00824927e713",
+    "battle-core.js": "02815420ea1c334481fa8378f25ede32387749308e9cf3ce3803863871e6df51",
     "effect-engine.js": "06e5fd3ba720d83316fa32a9b4e79bd8c3c729b57d3e9326049c2375481d6e78",
     "priority-engine.js": "1c7fb953de596fc7b0da6f9def31a818f06f615c69f69db871310751abbabffb",
     "turn-order-effects.js": "f0b4cda295774f7e9e47ddd321d23599d68a2c070d2c99d185b2e24f313518e4",
     "implementation-ledger.js": "8a67b2d030f6971aae9feebe5fc9fa5c4f5f39a0add5c83d6b2d8f10e7b0a0a0",
-    "MECHANICS_EVIDENCE.json": "067d407afa4c6c35cf4e3b30b5313b91c64101e772f74b40f71bb6feca609556",
+    "MECHANICS_EVIDENCE.json": "aca1f45aee7c0befba3647ec3956791ad9bb85054549ead7e28c8841c1d39832",
     "coverage-assessment.js": "52436236a5ed540b187bb8344eb992467884b5d7af834f661eff5243816faf25",
     "COVERAGE_REVIEW_PLAN.json": "afe50fe2a92cdafdf74f9e315dbcf19a815e12da8e5b17d9f36396f781c43f8f",
     "ABILITY_REVIEW_BASELINE.json": "bc76c32470d3013ad2384e7fab5a35e46ce23d37f3acf50b68b89ac8ef3ca277",
@@ -36,8 +36,8 @@
     "reference-ability-audit.js": "a92153dd8650bdccce3f618dec39ccb49b2d89533c36358ab063fc9756a374ec",
     "development-automation.py": "aebbbe0a108e1dbfc539e24fdb0c0eced7133eecc755e3bb60f995cb4a289cd3",
     "DEVELOPMENT_AUTOMATION_POLICY.json": "f3b4c3488ea27c4aefda970cc753d5e8c6da09b26384d8df099d5475d876a4a6",
-    "ko-boundary-oracle.js": "733c35f58f5eebc9691cd7c9912a4d29f415e40859b7f965e1b65fe08044ea95",
-    "FROZEN_BASELINE.json": "27fbb2a8a847c7a35555854dbab53424a6e0b1bd7d80bc79591873551e557db3",
+    "ko-boundary-oracle.js": "2e520b4a810af0c97cac0ac50bc0477f4eb81e6891cc2b15b50faddf19a67399",
+    "FROZEN_BASELINE.json": "2f59241c46277641191c00c572d40502cf21c029ec052c3bebdd57b83bbef4fb",
     "build-frozen-trial.py": "dc2e282508d8f4f73f189815c942ec6b6bbcba4a56ce221f583d675031b152a3",
     "verify-frozen-trial.py": "7eae3080420c045f1db8b1bebc2bcf3e203032149e59155f42edff31fb563d52",
     "run-development-checks.py": "0995b9945484ef7c24e33f3e4827699e5e02ae4d2b00b7de47362e717db20916",
@@ -56,6 +56,7 @@
     "reference-data/three-attacks/showdown-battle-actions.ts": "9d477a6296f8916cbbbfc36ae18bb0729dfda0646e4ee1c00ccb4199661c56d4",
     "reference-data/three-attacks/showdown-items.ts": "6a9c7eeb9cfda861d9fb22084b10af46d03da4729981424ff155399907b66ed4",
     "reference-data/three-attacks/showdown-pokemon.ts": "42ebab9dcfc823b032d40dabb8aafc9e76276030f89bd9a0e98b5e7fb54cb607",
+    "browser_all_berries_test.py": "8cf903e8c4dc996f48aff91af0a7850100dc212ad3df511a79021c0ac4ccbd6e",
     "browser_dom_test.py": "50ce0dc8a3551076d43d92c9b06493305c47444c9c208ba0b10206d566b822dd",
     "browser_final_tactical_test.py": "e0c7d8e36bb5f8dd12bdba784b670a5c65d759564e132a433c77f6d9f28ee542",
     "browser_full_match_test.py": "b1f0933fc87b2bf0f66cefa60c6d2a70a0fcfbe5e0dc2851a9918860fc6452b1",
@@ -66,12 +67,13 @@
     "browser_mechanics_regression_test.py": "90494652a0a65a98dc5c6ef4d10ee2d729af93934c2ac2edd967a9f2f2b43df8",
     "browser_pc_trial_test.py": "a9cfd5e121907683d8c83a9831e93f63f1759f3ff78fb5a49313250be8543428",
     "browser_pending_twenty_test.py": "9ae3355cd171655157ad5dbb34a7319109f6f3e722bf889e7b90e2ce27017322",
+    "browser_prezip_test.py": "866f0e155040faa11b80c378a712cb65498b231453bc756f83147bc09eaf4076",
     "browser_priority_berries_test.py": "d8f8bb3104e1cafdbbc9716d6d0ee9263729eeb804bc535cbb4927561d4c4809",
     "browser_recommendation_strategy_test.py": "e79e9f7ff128b2e039395886c6e7e8c982f1197172e97a48689f12f8690cb9a8",
     "browser_smoke_portable.py": "d7234a5b749055c8049a302516a6b217cdd19cfa9a71ee43f9308176c5b2be33",
     "browser_state_test.py": "3f56c12d38559518a90163b2d755a40a09d59c62a89ca9be5fe7d6f438239f7b",
     "browser_stats_moves_test.py": "1b2eeec1f19bbad2e7e57f41459d7dcc1acdd64fc0b12b77536d788ac39abaaa",
-    "browser_three_attacks_test.py": "a0e779184a6c0936027d1806cc228465d4aeeeec12ad4f4425983317ff4feb90",
+    "browser_three_attacks_test.py": "cd9456ef2d49e78d19059fc8e7928966578dee7f684261e324af249937127dde",
     "browser_tournament_practical_test.py": "d9372d32e58d873e2c051459fb9aa1ae468c3a515bb2bcb37193bc8b2618e19e",
     "browser_version_migration_test.py": "06c3ff9889b5f7dfe67bb1fa7c5a27e796d141688338098f60a033fbcacdea00",
     "test-ability-received-hit-guards.js": "78b520c9f2b6738abbb9b907dca047aa2a6992b2f45ca97bbf4ff7241c2e8351",
@@ -81,6 +83,7 @@
     "test-adoption-normalization.py": "05adbfae320676f93dd855d32d6a0ffb56beea87ded2ea12a992c0d1b0f7db75",
     "test-adoption-priority-mechanics.js": "ecf3d25d42734ff5218db960227e9cad8423efc123547a4fd60efef007cb3a6b",
     "test-adoption-priority.js": "4536e4a087a68b691c41223a236b1fb05e695106d71a98b736138182c5eb72a0",
+    "test-all-resist-berries.js": "298236fcc167dfaf902a96013b9ec9ac165ac1029178b82bc4aee198564a8273",
     "test-ally-hit-targets.js": "fd50c7d1216f3c4b37aa5b748629bffc0ab58e0673203320a64112e6640e2076",
     "test-battle-rounding-reference.js": "ad25a8094c09c427a5ae72cd19da0399e746d8c6708f15d2af794810f2f0addd",
     "test-browser-snapshot.py": "090345e82c5ff4fbe471e61aae4ae69c1a5fa97036fc35faaace2b9de27fc48a",
@@ -193,8 +196,8 @@
     "test-weather-ball-effective-weather.js": "35af9ea192f117e3d6cb973cbdea4f52f993668571f4c75855726ba4a4c497c6",
     "test-weather-item-consistency.js": "1b43ad670d88f6d363995e497c48dbc4ce3c048b66e5f71c5ea3c4f572c39aca"
   },
-  "total": 137,
-  "passed": 137,
+  "total": 140,
+  "passed": 140,
   "results": [
     {
       "command": [
@@ -202,7 +205,7 @@
         "test-ability-received-hit-guards.js"
       ],
       "exitCode": 0,
-      "seconds": 0.07,
+      "seconds": 0.095,
       "stdout": "On-hit activation guards and unmodeled HP-cost guard PASS\n",
       "stderr": ""
     },
@@ -212,7 +215,7 @@
         "test-accuracy-protection.js"
       ],
       "exitCode": 0,
-      "seconds": 0.078,
+      "seconds": 0.063,
       "stdout": "PASS positive evasion ignores and effective-weather accuracy consistency\n",
       "stderr": ""
     },
@@ -222,7 +225,7 @@
         "test-adoption-priority-mechanics.js"
       ],
       "exitCode": 0,
-      "seconds": 0.658,
+      "seconds": 0.799,
       "stdout": "PASS 10 real Showdown Liquid Voice type cases; 13 effective-weather defense regressions\n",
       "stderr": ""
     },
@@ -232,8 +235,18 @@
         "test-adoption-priority.js"
       ],
       "exitCode": 0,
-      "seconds": 0.081,
+      "seconds": 0.092,
       "stdout": "1491 adoption policy values checked across 120 species\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "test-all-resist-berries.js"
+      ],
+      "exitCode": 0,
+      "seconds": 3.972,
+      "stdout": "PASS 18432 damage and 18432 consumption comparisons for all 18 registered resist berries\n",
       "stderr": ""
     },
     {
@@ -242,7 +255,7 @@
         "test-ally-hit-targets.js"
       ],
       "exitCode": 0,
-      "seconds": 1.005,
+      "seconds": 0.902,
       "stdout": "PASS 10 ally-hitting target definitions vs pinned Showdown\n",
       "stderr": ""
     },
@@ -252,7 +265,7 @@
         "test-battle-rounding-reference.js"
       ],
       "exitCode": 0,
-      "seconds": 0.114,
+      "seconds": 0.157,
       "stdout": "1664 fixed-point rounding references passed; 9 cases changed from old floor method\n",
       "stderr": ""
     },
@@ -262,7 +275,7 @@
         "test-cloak-mirror.js"
       ],
       "exitCode": 0,
-      "seconds": 0.181,
+      "seconds": 0.25,
       "stdout": "29 cloak and mirror checks passed\n",
       "stderr": ""
     },
@@ -272,7 +285,7 @@
         "test-common-secondary.js"
       ],
       "exitCode": 0,
-      "seconds": 0.105,
+      "seconds": 0.191,
       "stdout": "18 common secondary forecast checks passed\n",
       "stderr": ""
     },
@@ -282,7 +295,7 @@
         "test-confirmed-ability-residual-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.194,
+      "seconds": 0.16,
       "stdout": "Confirmed ability and residual transaction integration: PASS\n",
       "stderr": ""
     },
@@ -292,7 +305,7 @@
         "test-contact-assessed-batch.js"
       ],
       "exitCode": 0,
-      "seconds": 0.073,
+      "seconds": 0.097,
       "stdout": "PASS 33 assessed contact status cases\n",
       "stderr": ""
     },
@@ -302,7 +315,7 @@
         "test-contact-ko.js"
       ],
       "exitCode": 0,
-      "seconds": 0.118,
+      "seconds": 0.198,
       "stdout": "PASS four strikes stop at two-hit KO\nPASS four strikes against healthy target\nPASS KO at first strike\nPASS static status probability respects two contacts\nPASS weighted damage rolls\nPASS missing hp keeps existing assumption\n6 KO-limited contact tests passed\n",
       "stderr": ""
     },
@@ -312,7 +325,7 @@
         "test-contact-status-batch.js"
       ],
       "exitCode": 0,
-      "seconds": 0.188,
+      "seconds": 0.201,
       "stdout": "55 grouped contact status cases passed\n",
       "stderr": ""
     },
@@ -322,7 +335,7 @@
         "test-contact.js"
       ],
       "exitCode": 0,
-      "seconds": 0.098,
+      "seconds": 0.118,
       "stdout": "PASS rough skin fixed reflection\nPASS iron barbs fixed reflection\nPASS no contact\nPASS long reach\nPASS magic guard prevents reflection\nPASS static 30% conditional status\nPASS flame body 30% conditional status\nPASS protect excludes contact\nPASS multi-hit rough skin expectation\nPASS multi-hit static cumulative probability\nPASS single hit unchanged after multi-hit\n11 contact prediction tests passed\n",
       "stderr": ""
     },
@@ -332,7 +345,7 @@
         "test-continuous-effects-batch.js"
       ],
       "exitCode": 0,
-      "seconds": 0.099,
+      "seconds": 0.171,
       "stdout": "continuous effects validated\n",
       "stderr": ""
     },
@@ -342,7 +355,7 @@
         "test-coverage-assessment.js"
       ],
       "exitCode": 0,
-      "seconds": 0.119,
+      "seconds": 0.195,
       "stdout": "PASS all 1149 candidates classified, all original 91 labels reviewed, exact references cannot certify full coverage\n",
       "stderr": ""
     },
@@ -352,7 +365,7 @@
         "test-critical-engine-differential.js"
       ],
       "exitCode": 0,
-      "seconds": 1.119,
+      "seconds": 1.124,
       "stdout": "PASS 432 critical rate and 1152 real engine critical damage cases\n",
       "stderr": ""
     },
@@ -362,7 +375,7 @@
         "test-effect-coverage-expansion.js"
       ],
       "exitCode": 0,
-      "seconds": 0.16,
+      "seconds": 0.1,
       "stdout": "PASS expanded effects and conditional safety\n",
       "stderr": ""
     },
@@ -372,7 +385,7 @@
         "test-effect-engine-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.108,
+      "seconds": 0.154,
       "stdout": "Effect registry integration: PASS\n",
       "stderr": ""
     },
@@ -382,7 +395,7 @@
         "test-effect-engine.js"
       ],
       "exitCode": 0,
-      "seconds": 0.117,
+      "seconds": 0.111,
       "stdout": "Effect engine: event and boundary checks passed\n",
       "stderr": ""
     },
@@ -392,7 +405,7 @@
         "test-endturn-residual-confirmed.js"
       ],
       "exitCode": 0,
-      "seconds": 0.107,
+      "seconds": 0.192,
       "stdout": "End-turn projections conditional & confirmation test: PASS\n",
       "stderr": ""
     },
@@ -402,7 +415,7 @@
         "test-engine-real-functions.js"
       ],
       "exitCode": 0,
-      "seconds": 0.206,
+      "seconds": 0.189,
       "stdout": "15 real-function integrated assertions passed\n",
       "stderr": ""
     },
@@ -412,7 +425,7 @@
         "test-entry-field-real-functions.js"
       ],
       "exitCode": 0,
-      "seconds": 0.11,
+      "seconds": 0.125,
       "stdout": "17 actual entry/field integration assertions passed\n",
       "stderr": ""
     },
@@ -422,7 +435,7 @@
         "test-entry-focus-state.js"
       ],
       "exitCode": 0,
-      "seconds": 0.877,
+      "seconds": 1.218,
       "stdout": "PASS 50 real entry rank reset cases and Focus Energy save/reset/Baton state\n",
       "stderr": ""
     },
@@ -432,7 +445,7 @@
         "test-entry-rollback-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.207,
+      "seconds": 0.275,
       "stdout": "13 actual entry/end-turn/transaction integration assertions passed\n",
       "stderr": ""
     },
@@ -442,7 +455,7 @@
         "test-entry-screens-syrup.js"
       ],
       "exitCode": 0,
-      "seconds": 0.812,
+      "seconds": 1.03,
       "stdout": "PASS entry screens removal both sides, Syrup once per battle, Defiant and save/reload persistence\nPASS 31 real Showdown entry comparison scenarios\n",
       "stderr": ""
     },
@@ -452,7 +465,7 @@
         "test-entry-tie-replay.js"
       ],
       "exitCode": 0,
-      "seconds": 0.25,
+      "seconds": 0.11,
       "stdout": "8 entry tie replay assertions passed\n",
       "stderr": ""
     },
@@ -462,7 +475,7 @@
         "test-external-rule-corrections.js"
       ],
       "exitCode": 0,
-      "seconds": 0.251,
+      "seconds": 0.148,
       "stdout": "External rules corrections 8 checks passed\n",
       "stderr": ""
     },
@@ -472,7 +485,7 @@
         "test-field-items-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.192,
+      "seconds": 0.119,
       "stdout": "PASS 24 field/item integration scenarios; no full item-ability parity claim\nPASS Contrary terrain-seed activation boundaries\nPASS queued KO replacement resolves before seed activation\n",
       "stderr": ""
     },
@@ -482,7 +495,7 @@
         "test-field-lifecycle-shared.js"
       ],
       "exitCode": 0,
-      "seconds": 0.203,
+      "seconds": 0.11,
       "stdout": "31 shared field lifecycle checks passed\n",
       "stderr": ""
     },
@@ -492,7 +505,7 @@
         "test-final-modifier-separation.js"
       ],
       "exitCode": 0,
-      "seconds": 0.827,
+      "seconds": 0.689,
       "stdout": "46080 modifier chains checked, 2280 combined-rounding differences detected\n",
       "stderr": ""
     },
@@ -502,7 +515,7 @@
         "test-four-phase-final-audit.js"
       ],
       "exitCode": 0,
-      "seconds": 0.106,
+      "seconds": 0.245,
       "stdout": "Four-phase extension regression PASS\n",
       "stderr": ""
     },
@@ -512,7 +525,7 @@
         "test-gale-wings-differential.js"
       ],
       "exitCode": 0,
-      "seconds": 0.898,
+      "seconds": 0.97,
       "stdout": "PASS 48 real Showdown Gale Wings full/injured HP priority cases and unknown/switch guards\n",
       "stderr": ""
     },
@@ -522,7 +535,7 @@
         "test-generated-matrix.js"
       ],
       "exitCode": 0,
-      "seconds": 0.145,
+      "seconds": 0.094,
       "stdout": "Generated matrix: 163/163 passed\n",
       "stderr": ""
     },
@@ -532,7 +545,7 @@
         "test-grounding-form.js"
       ],
       "exitCode": 0,
-      "seconds": 0.102,
+      "seconds": 0.159,
       "stdout": "7 grounded form cases passed\n",
       "stderr": ""
     },
@@ -542,7 +555,7 @@
         "test-grounding-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.2,
+      "seconds": 0.175,
       "stdout": "10 grounded priority tests passed\n",
       "stderr": ""
     },
@@ -552,7 +565,7 @@
         "test-guaranteed-stat-drops.js"
       ],
       "exitCode": 0,
-      "seconds": 0.116,
+      "seconds": 0.113,
       "stdout": "14 guaranteed stat-drop regression checks passed\n",
       "stderr": ""
     },
@@ -562,7 +575,7 @@
         "test-hit-event-multiturn.js"
       ],
       "exitCode": 0,
-      "seconds": 0.706,
+      "seconds": 1.078,
       "stdout": "PASS four-turn real doubles engine / confirmed-hit rank checkpoints, type/unknown/KO guards and Illuminate rank scope\nPASS hit gating, substitute immunity, per-hit repetition and rank cap\n",
       "stderr": ""
     },
@@ -572,7 +585,7 @@
         "test-implementation-ledger.js"
       ],
       "exitCode": 0,
-      "seconds": 3.726,
+      "seconds": 2.709,
       "stdout": "{\"abilityProjection\":18,\"abilityTotal\":203,\"moveProjection\":64,\"moveTotal\":698,\"markedUnsupported\":58,\"releaseComplete\":false}\nPASS implementation ledger and conservative confirmed move projection\nPASS four-stage inventories and conservative evidence classification\n",
       "stderr": ""
     },
@@ -582,7 +595,7 @@
         "test-independent-damage-audit.js"
       ],
       "exitCode": 0,
-      "seconds": 0.368,
+      "seconds": 0.324,
       "stdout": "45005 independent arithmetic-model differential checks passed (seed 0x2048ab19). External battle simulator parity NOT verified.\n",
       "stderr": ""
     },
@@ -592,7 +605,7 @@
         "test-independent-turn-order-audit.js"
       ],
       "exitCode": 0,
-      "seconds": 0.371,
+      "seconds": 0.385,
       "stdout": "Independent turn-order oracle: 113540 definite comparisons; 6460 uncertainty pairs; 512 guard cases passed.\n",
       "stderr": ""
     },
@@ -602,7 +615,7 @@
         "test-integrated-projected-boosts.js"
       ],
       "exitCode": 0,
-      "seconds": 0.155,
+      "seconds": 0.184,
       "stdout": "Integrated registered self boosts: PASS\n",
       "stderr": ""
     },
@@ -612,7 +625,7 @@
         "test-item-differential.js"
       ],
       "exitCode": 0,
-      "seconds": 1.001,
+      "seconds": 0.876,
       "stdout": "PASS 60 real Showdown White Herb/Simple/Contrary/Klutz/Magic Room differential cases\n",
       "stderr": ""
     },
@@ -622,7 +635,7 @@
         "test-item-lifecycle.js"
       ],
       "exitCode": 0,
-      "seconds": 0.103,
+      "seconds": 0.187,
       "stdout": "PASS 24 item lifecycle, self-drop moves, suppression and Magic Room integration scenarios\n",
       "stderr": ""
     },
@@ -632,7 +645,7 @@
         "test-ko-entry-actual.js"
       ],
       "exitCode": 0,
-      "seconds": 0.15,
+      "seconds": 0.093,
       "stdout": "10 actual post-KO entry assertions passed\n",
       "stderr": ""
     },
@@ -642,7 +655,7 @@
         "test-ko-replacement-real.js"
       ],
       "exitCode": 0,
-      "seconds": 0.091,
+      "seconds": 0.133,
       "stdout": "12 actual forced-KO replacement assertions passed\n",
       "stderr": ""
     },
@@ -652,7 +665,7 @@
         "test-mega-transactions.js"
       ],
       "exitCode": 0,
-      "seconds": 0.13,
+      "seconds": 0.317,
       "stdout": "PASS 574 generic Mega transaction scenarios across 82 catalog forms; external form rules unverified\n",
       "stderr": ""
     },
@@ -662,7 +675,7 @@
         "test-mode45-fixed.js"
       ],
       "exitCode": 0,
-      "seconds": 0.204,
+      "seconds": 0.215,
       "stdout": "8 fixed 45 mode assertions passed\n",
       "stderr": ""
     },
@@ -672,7 +685,7 @@
         "test-mode45-reload.js"
       ],
       "exitCode": 0,
-      "seconds": 0.106,
+      "seconds": 0.185,
       "stdout": "9 mode45 reload assertions passed\n",
       "stderr": ""
     },
@@ -682,7 +695,7 @@
         "test-moldbreaker-secondary.js"
       ],
       "exitCode": 0,
-      "seconds": 0.098,
+      "seconds": 0.172,
       "stdout": "62 Mold Breaker secondary interactions passed\n",
       "stderr": ""
     },
@@ -692,7 +705,7 @@
         "test-multihit-flinch.js"
       ],
       "exitCode": 0,
-      "seconds": 0.143,
+      "seconds": 0.192,
       "stdout": "7 multi-strike flinch forecast checks passed\n",
       "stderr": ""
     },
@@ -702,7 +715,7 @@
         "test-order-effect-groups.js"
       ],
       "exitCode": 0,
-      "seconds": 0.266,
+      "seconds": 0.228,
       "stdout": "Order effects registry: 12 checks pass\n",
       "stderr": ""
     },
@@ -712,7 +725,7 @@
         "test-pending-move-conditions.js"
       ],
       "exitCode": 0,
-      "seconds": 0.056,
+      "seconds": 0.062,
       "stdout": "PASS four shared conditional damage routes: rank extremes, all statuses, Comatose, four terrains, known/unknown/empty items and read-only evaluation\n",
       "stderr": ""
     },
@@ -722,7 +735,7 @@
         "test-phase1-4-batch.js"
       ],
       "exitCode": 0,
-      "seconds": 0.075,
+      "seconds": 0.157,
       "stdout": "Phase 1-4 deterministic event batch passed\n",
       "stderr": ""
     },
@@ -732,7 +745,7 @@
         "test-poison-touch-risk.js"
       ],
       "exitCode": 0,
-      "seconds": 0.035,
+      "seconds": 0.091,
       "stdout": "9 poison-touch conditional risk cases passed (not auto-status application)\n",
       "stderr": ""
     },
@@ -742,7 +755,7 @@
         "test-primary-accuracy.js"
       ],
       "exitCode": 0,
-      "seconds": 0.179,
+      "seconds": 0.289,
       "stdout": "PASS net accuracy/evasion rank, integer percentage, intrinsic sure-hit and evasion-ignore boundaries\n",
       "stderr": ""
     },
@@ -752,7 +765,7 @@
         "test-priority-boundaries.js"
       ],
       "exitCode": 0,
-      "seconds": 0.11,
+      "seconds": 0.123,
       "stdout": "14 priority boundary tests passed\n",
       "stderr": ""
     },
@@ -762,7 +775,7 @@
         "test-priority-resist-berries.js"
       ],
       "exitCode": 0,
-      "seconds": 4.517,
+      "seconds": 4.092,
       "stdout": "PASS 16384 prioritized resist berry damage/consumption comparisons and real adapter guards\n",
       "stderr": ""
     },
@@ -772,7 +785,7 @@
         "test-protection-weight-differential.js"
       ],
       "exitCode": 0,
-      "seconds": 0.801,
+      "seconds": 0.705,
       "stdout": "PASS 42 weight, 27 Flower Veil rank, 9 Yawn real engine cases and temporal/unknown/KO guards\n",
       "stderr": ""
     },
@@ -782,7 +795,7 @@
         "test-pwa-navigation-fallback.js"
       ],
       "exitCode": 0,
-      "seconds": 0.058,
+      "seconds": 0.104,
       "stdout": "PWA navigation fallback URL validated\n",
       "stderr": ""
     },
@@ -792,7 +805,7 @@
         "test-quick-claw-guard.js"
       ],
       "exitCode": 0,
-      "seconds": 0.181,
+      "seconds": 0.188,
       "stdout": "Quick Claw guard timing: 9 cases pass\n",
       "stderr": ""
     },
@@ -802,7 +815,7 @@
         "test-rank-differential.js"
       ],
       "exitCode": 0,
-      "seconds": 1.409,
+      "seconds": 1.195,
       "stdout": "PASS 2880 real Showdown rank differential cases, version 0.11.10\n",
       "stderr": ""
     },
@@ -812,7 +825,7 @@
         "test-rank-effects.js"
       ],
       "exitCode": 0,
-      "seconds": 0.107,
+      "seconds": 0.112,
       "stdout": "PASS 33 source-aware rank rules plus unknown/invalid guards\n",
       "stderr": ""
     },
@@ -822,7 +835,7 @@
         "test-recommendation-denial-order.js"
       ],
       "exitCode": 0,
-      "seconds": 0.18,
+      "seconds": 0.109,
       "stdout": "PASS 11 denial timing/priority/tie/TR/guard/switch boundaries (actual event generation covered in browser)\n",
       "stderr": ""
     },
@@ -832,7 +845,7 @@
         "test-registered-setup-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.194,
+      "seconds": 0.176,
       "stdout": "PASS 30 registered setup integration scenarios (recording, failure, side, cap)\nPASS confirmed Contrary/Simple self-rank deltas, caps and ordinary fallback\n",
       "stderr": ""
     },
@@ -842,7 +855,7 @@
         "test-residual.js"
       ],
       "exitCode": 0,
-      "seconds": 0.227,
+      "seconds": 0.111,
       "stdout": "11 residual prediction tests passed.\n",
       "stderr": ""
     },
@@ -852,7 +865,7 @@
         "test-secondary-block.js"
       ],
       "exitCode": 0,
-      "seconds": 0.19,
+      "seconds": 0.17,
       "stdout": "26 secondary-effect defensive ability checks passed\n",
       "stderr": ""
     },
@@ -862,7 +875,7 @@
         "test-secondary-field-substitute.js"
       ],
       "exitCode": 0,
-      "seconds": 0.202,
+      "seconds": 0.16,
       "stdout": "14 secondary terrain/substitute checks passed\n",
       "stderr": ""
     },
@@ -872,7 +885,7 @@
         "test-secondary-grounded.js"
       ],
       "exitCode": 0,
-      "seconds": 0.084,
+      "seconds": 0.15,
       "stdout": "8 forecast grounded checks passed\n",
       "stderr": ""
     },
@@ -882,7 +895,7 @@
         "test-secondary-immunity-abilities.js"
       ],
       "exitCode": 0,
-      "seconds": 0.119,
+      "seconds": 0.137,
       "stdout": "13 additional status-immunity checks passed\nPASS poison/freeze immunity and Mold Breaker forecasting regressions\n",
       "stderr": ""
     },
@@ -892,7 +905,7 @@
         "test-secondary-multihit-kernel.js"
       ],
       "exitCode": 0,
-      "seconds": 0.202,
+      "seconds": 0.189,
       "stdout": "12 multi-strike secondary probability checks passed\n",
       "stderr": ""
     },
@@ -902,7 +915,7 @@
         "test-shared-battle-core.js"
       ],
       "exitCode": 0,
-      "seconds": 0.262,
+      "seconds": 0.286,
       "stdout": "2264 shared-kernel parity checks passed\n",
       "stderr": ""
     },
@@ -912,7 +925,7 @@
         "test-stalwart-targeting.js"
       ],
       "exitCode": 0,
-      "seconds": 0.081,
+      "seconds": 0.174,
       "stdout": "PASS Stalwart recommendation redirection bypass, unknown guards and spread targeting\n",
       "stderr": ""
     },
@@ -922,7 +935,7 @@
         "test-status-type-batch.js"
       ],
       "exitCode": 0,
-      "seconds": 0.05,
+      "seconds": 0.12,
       "stdout": "shared status type immunity 33 checks passed\n",
       "stderr": ""
     },
@@ -932,7 +945,7 @@
         "test-substitute-bypass.js"
       ],
       "exitCode": 0,
-      "seconds": 0.214,
+      "seconds": 0.094,
       "stdout": "14 Substitute bypass checks passed\n",
       "stderr": ""
     },
@@ -942,7 +955,7 @@
         "test-substitute-contact.js"
       ],
       "exitCode": 0,
-      "seconds": 0.091,
+      "seconds": 0.18,
       "stdout": "PASS [4,20,100,0]\nPASS [4,20,35,0]\nPASS [4,20,100,30]\nPASS [4,20,35,30]\nPASS [2,20,100,40]\nPASS [1,20,100,10]\nPASS [4,20,15,20]\nPASS [4,20,100,null]\n8 Substitute/contact forecast checks passed\n",
       "stderr": ""
     },
@@ -952,7 +965,7 @@
         "test-substitute-create.js"
       ],
       "exitCode": 0,
-      "seconds": 0.22,
+      "seconds": 0.171,
       "stdout": "11 Substitute creation checks passed\n",
       "stderr": ""
     },
@@ -962,7 +975,7 @@
         "test-substitute-state.js"
       ],
       "exitCode": 0,
-      "seconds": 0.084,
+      "seconds": 0.053,
       "stdout": "12 substitute state assertions passed\n",
       "stderr": ""
     },
@@ -972,7 +985,7 @@
         "test-substitute-strikes.js"
       ],
       "exitCode": 0,
-      "seconds": 0.083,
+      "seconds": 0.154,
       "stdout": "10 Substitute-hit integration checks passed\n",
       "stderr": ""
     },
@@ -982,7 +995,7 @@
         "test-target-ranks-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.256,
+      "seconds": 0.186,
       "stdout": "PASS 213 explicit doubles targets, rank reactions, Intimidate and unknown-outcome integration scenarios\nPASS actual gain propagation preserves Opportunist on reactions and Contrary Intimidate\nPASS reflected rank change source-item protection and unknown guards\nPASS Good as Gold blocks targeted status ranks unless ignored by Mold Breaker\n",
       "stderr": ""
     },
@@ -992,7 +1005,7 @@
         "test-terrain-damage-grounding.js"
       ],
       "exitCode": 0,
-      "seconds": 0.088,
+      "seconds": 0.078,
       "stdout": "9 terrain damage grounded checks passed\n",
       "stderr": ""
     },
@@ -1002,7 +1015,7 @@
         "test-three-attack-accuracy-differential.js"
       ],
       "exitCode": 0,
-      "seconds": 2.276,
+      "seconds": 2.448,
       "stdout": "PASS 4056 first/repeated accuracy comparisons across all 13x13 rank pairs and six item/ability conditions\n",
       "stderr": ""
     },
@@ -1012,7 +1025,7 @@
         "test-three-attack-effects.js"
       ],
       "exitCode": 0,
-      "seconds": 0.036,
+      "seconds": 0.093,
       "stdout": "PASS per-strike powers, stamped failure/success/unknown/switch history, geometric stopping, Dice 4..10 and fixed-point accuracy\n",
       "stderr": ""
     },
@@ -1022,7 +1035,7 @@
         "test-torkoal-clear-smog.js"
       ],
       "exitCode": 0,
-      "seconds": 0.177,
+      "seconds": 0.212,
       "stdout": "PASS confirmed clear smog: safe targeting, 7 stages, substitute, miss and ambiguity\n",
       "stderr": ""
     },
@@ -1032,7 +1045,7 @@
         "test-torkoal-core.js"
       ],
       "exitCode": 0,
-      "seconds": 0.138,
+      "seconds": 0.217,
       "stdout": "17 Torkoal variable-power and Body Press checks passed\n",
       "stderr": ""
     },
@@ -1042,7 +1055,7 @@
         "test-torkoal-damage-base.js"
       ],
       "exitCode": 0,
-      "seconds": 0.193,
+      "seconds": 0.126,
       "stdout": "972 numeric shared damage-base checks passed; real adapter routing covered by browser_stats_moves_test.py\n",
       "stderr": ""
     },
@@ -1052,7 +1065,7 @@
         "test-torkoal-damage-items.js"
       ],
       "exitCode": 0,
-      "seconds": 0.183,
+      "seconds": 0.191,
       "stdout": "8 Torkoal held-item damage checks passed\n",
       "stderr": ""
     },
@@ -1062,7 +1075,7 @@
         "test-torkoal-effect-ui.js"
       ],
       "exitCode": 0,
-      "seconds": 0.195,
+      "seconds": 0.116,
       "stdout": "PASS observed-effect UI state, explicit target, uncertain no effect, failed move\n",
       "stderr": ""
     },
@@ -1072,7 +1085,7 @@
         "test-torkoal-own-effect-ui.js"
       ],
       "exitCode": 0,
-      "seconds": 0.202,
+      "seconds": 0.209,
       "stdout": "PASS own side Yawn/Clear Smog manual confirmation\n",
       "stderr": ""
     },
@@ -1082,7 +1095,7 @@
         "test-torkoal-weather-rock.js"
       ],
       "exitCode": 0,
-      "seconds": 0.207,
+      "seconds": 0.085,
       "stdout": "14 weather-rock checks passed\n",
       "stderr": ""
     },
@@ -1092,7 +1105,7 @@
         "test-torkoal-yawn-initial-terrain.js"
       ],
       "exitCode": 0,
-      "seconds": 0.211,
+      "seconds": 0.11,
       "stdout": "PASS initial and delayed Yawn terrain immunity: 11 checks\n",
       "stderr": ""
     },
@@ -1102,7 +1115,7 @@
         "test-torkoal-yawn-terrain.js"
       ],
       "exitCode": 0,
-      "seconds": 0.22,
+      "seconds": 0.217,
       "stdout": "PASS delayed Yawn resolution terrain: Misty/Electric grounded, airborne, Grassy\n",
       "stderr": ""
     },
@@ -1112,7 +1125,7 @@
         "test-torkoal-yawn.js"
       ],
       "exitCode": 0,
-      "seconds": 0.204,
+      "seconds": 0.154,
       "stdout": "PASS confirmed Yawn: target, guards, delayed sleep, status precedence, active-only\n",
       "stderr": ""
     },
@@ -1122,7 +1135,7 @@
         "test-tournament-damage-differential.js"
       ],
       "exitCode": 0,
-      "seconds": 15.282,
+      "seconds": 14.117,
       "stdout": "PASS 331776 real damage comparisons in 10368 common-modifier scenarios\n",
       "stderr": ""
     },
@@ -1132,7 +1145,7 @@
         "test-tournament-speed-differential.js"
       ],
       "exitCode": 0,
-      "seconds": 3.474,
+      "seconds": 3.402,
       "stdout": "PASS 40320 Showdown speed comparisons across 120 adoption profiles\n",
       "stderr": ""
     },
@@ -1142,7 +1155,7 @@
         "test-turn-order-effects.js"
       ],
       "exitCode": 0,
-      "seconds": 0.091,
+      "seconds": 0.214,
       "stdout": "turn order group effects 13 assertions passed\n",
       "stderr": ""
     },
@@ -1152,7 +1165,7 @@
         "test-turn-sequence.js"
       ],
       "exitCode": 0,
-      "seconds": 0.103,
+      "seconds": 0.191,
       "stdout": "23 multi-turn scenario assertions passed\n",
       "stderr": ""
     },
@@ -1162,7 +1175,7 @@
         "test-turn-transaction.js"
       ],
       "exitCode": 0,
-      "seconds": 0.11,
+      "seconds": 0.242,
       "stdout": "12 turn-transaction integration assertions passed\n",
       "stderr": ""
     },
@@ -1172,7 +1185,7 @@
         "test-unburden-live-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.102,
+      "seconds": 0.088,
       "stdout": "6 live Unburden integration cases passed\n",
       "stderr": ""
     },
@@ -1182,7 +1195,7 @@
         "test-unburden-usage.js"
       ],
       "exitCode": 0,
-      "seconds": 0.034,
+      "seconds": 0.042,
       "stdout": "14 unburden/usage cases passed\n",
       "stderr": ""
     },
@@ -1192,7 +1205,7 @@
         "test-unknown-speed-order.js"
       ],
       "exitCode": 0,
-      "seconds": 0.125,
+      "seconds": 0.251,
       "stdout": "5 unknown-speed / Trick Room order checks passed\n",
       "stderr": ""
     },
@@ -1202,7 +1215,7 @@
         "test-v28-entry-integration.js"
       ],
       "exitCode": 0,
-      "seconds": 0.14,
+      "seconds": 0.127,
       "stdout": "v2.8 entry event registry + UI integration: PASS\n",
       "stderr": ""
     },
@@ -1212,7 +1225,7 @@
         "test-v281-event-pipeline.js"
       ],
       "exitCode": 0,
-      "seconds": 0.145,
+      "seconds": 0.112,
       "stdout": "Event pipeline: hit/move/end-turn and UI integration passed\n",
       "stderr": ""
     },
@@ -1222,7 +1235,7 @@
         "test-v282-move-field-registry.js"
       ],
       "exitCode": 0,
-      "seconds": 0.103,
+      "seconds": 0.203,
       "stdout": "v2.8.2: 12 field/screen move events, confirmation gates, UI hookup PASS\n",
       "stderr": ""
     },
@@ -1232,7 +1245,7 @@
         "test-v283-simulation-move-events.js"
       ],
       "exitCode": 0,
-      "seconds": 0.103,
+      "seconds": 0.173,
       "stdout": "v2.8.3: simulation dispatch shares all 12 canonical move definitions PASS\n",
       "stderr": ""
     },
@@ -1242,7 +1255,7 @@
         "test-veil-screen-effects.js"
       ],
       "exitCode": 0,
-      "seconds": 0.064,
+      "seconds": 0.205,
       "stdout": "PASS 32 screen/veil category/stack boundaries, old-save default and success/failure projection\n",
       "stderr": ""
     },
@@ -1252,7 +1265,7 @@
         "test-weather-ball-effective-weather.js"
       ],
       "exitCode": 0,
-      "seconds": 0.146,
+      "seconds": 0.089,
       "stdout": "40 weather ball checks passed\n",
       "stderr": ""
     },
@@ -1262,7 +1275,7 @@
         "test-weather-item-consistency.js"
       ],
       "exitCode": 0,
-      "seconds": 0.141,
+      "seconds": 0.099,
       "stdout": "PASS 9 shared weather suppression and active-item residual scenarios\nPASS Solar Power / Sand Force damage suppression and displayed-weather persistence\n",
       "stderr": ""
     },
@@ -1272,7 +1285,7 @@
         "test-adoption-import.py"
       ],
       "exitCode": 0,
-      "seconds": 0.314,
+      "seconds": 0.257,
       "stdout": "",
       "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK\n"
     },
@@ -1282,9 +1295,9 @@
         "test-adoption-mixed.py"
       ],
       "exitCode": 0,
-      "seconds": 0.355,
+      "seconds": 0.301,
       "stdout": "",
-      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.005s\n\nOK\n"
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.013s\n\nOK\n"
     },
     {
       "command": [
@@ -1292,9 +1305,9 @@
         "test-adoption-normalization.py"
       ],
       "exitCode": 0,
-      "seconds": 0.314,
+      "seconds": 0.278,
       "stdout": "",
-      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.050s\n\nOK\n"
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.014s\n\nOK\n"
     },
     {
       "command": [
@@ -1302,9 +1315,9 @@
         "test-browser-snapshot.py"
       ],
       "exitCode": 0,
-      "seconds": 0.325,
+      "seconds": 0.498,
       "stdout": "",
-      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.035s\n\nOK\n"
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.002s\n\nOK\n"
     },
     {
       "command": [
@@ -1312,9 +1325,9 @@
         "test-collect-120-source.py"
       ],
       "exitCode": 0,
-      "seconds": 0.519,
+      "seconds": 0.397,
       "stdout": "",
-      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.047s\n\nOK\n"
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.008s\n\nOK\n"
     },
     {
       "command": [
@@ -1322,9 +1335,9 @@
         "test-development-automation.py"
       ],
       "exitCode": 0,
-      "seconds": 0.296,
+      "seconds": 0.498,
       "stdout": "{\"completion\": false, \"command\": \"claim\", \"tasks\": 2}\n{\"completion\": false, \"command\": \"claim\", \"tasks\": 2}\n{\"completion\": false, \"command\": \"checkpoint\", \"tasks\": 2}\n{\"completion\": false, \"command\": \"claim\", \"tasks\": 2}\n{\"completion\": false, \"command\": \"claim\", \"tasks\": 2}\n{\"completion\": false, \"command\": \"claim\", \"tasks\": 2}\n{\"completion\": false, \"command\": \"claim\", \"tasks\": 2}\n{\"completion\": false, \"command\": \"claim\", \"tasks\": 2}\n{\"completion\": false, \"command\": \"claim\", \"tasks\": 2}\n{\"completion\": false, \"command\": \"claim\", \"tasks\": 2}\n{\"completion\": false, \"command\": \"claim\", \"tasks\": 2}\n",
-      "stderr": "...Group unavailable or dependency blocked\n...[Errno 17] File exists: '/tmp/tmpthel0z46/.development-automation.lock'\n....\n----------------------------------------------------------------------\nRan 10 tests in 0.181s\n\nOK\n"
+      "stderr": "...Group unavailable or dependency blocked\n...[Errno 17] File exists: '/tmp/tmpgnrow1pz/.development-automation.lock'\n....\n----------------------------------------------------------------------\nRan 10 tests in 0.221s\n\nOK\n"
     },
     {
       "command": [
@@ -1332,7 +1345,7 @@
         "test-frozen-baseline.py"
       ],
       "exitCode": 0,
-      "seconds": 0.214,
+      "seconds": 0.218,
       "stdout": "PASS frozen v2.9.13 runtime bytes, 168 verified attack identities, 344 species/82 Mega, immutable migration archives\n",
       "stderr": ""
     },
@@ -1342,7 +1355,7 @@
         "test-pc-launcher.py"
       ],
       "exitCode": 0,
-      "seconds": 0.499,
+      "seconds": 0.401,
       "stdout": "PASS shipped Python launcher serves trial and external engine at stable localhost origin\n",
       "stderr": ""
     },
@@ -1352,9 +1365,9 @@
         "test-snapshot-120.py"
       ],
       "exitCode": 0,
-      "seconds": 0.198,
+      "seconds": 0.16,
       "stdout": "",
-      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.003s\n\nOK\n"
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.029s\n\nOK\n"
     },
     {
       "command": [
@@ -1362,9 +1375,9 @@
         "test-tournament-practical-gates.py"
       ],
       "exitCode": 0,
-      "seconds": 0.289,
+      "seconds": 0.209,
       "stdout": "",
-      "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.038s\n\nOK\n"
+      "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.041s\n\nOK\n"
     },
     {
       "command": [
@@ -1372,7 +1385,7 @@
         "test-ui-preservation.py"
       ],
       "exitCode": 0,
-      "seconds": 0.163,
+      "seconds": 0.143,
       "stdout": "PASS user-confirmed PC UI markup and CSS unchanged (version excluded)\n",
       "stderr": ""
     },
@@ -1382,7 +1395,7 @@
         "verify-release.js"
       ],
       "exitCode": 0,
-      "seconds": 0.15,
+      "seconds": 0.158,
       "stdout": "PASS HTML inline scripts compile\nPASS shared engine ships offline\nPASS service worker compiles and navigation fallback points to correct URL\nPASS offline shell files are included\nPASS manifest icons exist\nPASS HTML, cache and README versions agree\nPASS national dex entries have usable structure\nPASS ability coverage matches listed abilities\nPASS move catalog populated\nPASS status selection consistent with save validation\n10 release integrity checks passed. This does not replace browser or battle-engine runtime tests.\n",
       "stderr": ""
     },
@@ -1392,8 +1405,18 @@
         "browser_three_attacks_test.py"
       ],
       "exitCode": 0,
-      "seconds": 32.645,
-      "stdout": "{\"completion\": false, \"oracle\": \"pokemon-showdown@0.11.10 Gen9 actual callbacks, getDamage, hitStepAccuracy and hitStepMoveHitLoop\", \"scenarios\": 2608, \"damageComparisons\": 158592, \"totalComparisons\": 47891, \"probabilityComparisons\": 690, \"byMove\": {\"やけっぱち\": {\"cases\": 1280, \"damageComparisons\": 20480, \"totalComparisons\": 0, \"probabilityComparisons\": 0, \"failures\": 0}, \"トリプルアクセル\": {\"cases\": 664, \"damageComparisons\": 31872, \"totalComparisons\": 11567, \"probabilityComparisons\": 184, \"failures\": 0}, \"ネズミざん\": {\"cases\": 664, \"damageComparisons\": 106240, \"totalComparisons\": 36324, \"probabilityComparisons\": 506, \"failures\": 0}}, \"failureCount\": 0, \"failures\": []}\n",
+      "seconds": 33.339,
+      "stdout": "{\"completion\": false, \"oracle\": \"pokemon-showdown@0.11.10 Gen9 actual callbacks, getDamage, hitStepAccuracy and hitStepMoveHitLoop\", \"scenarios\": 2624, \"damageComparisons\": 160256, \"totalComparisons\": 49423, \"probabilityComparisons\": 720, \"byMove\": {\"やけっぱち\": {\"cases\": 1280, \"damageComparisons\": 20480, \"totalComparisons\": 0, \"probabilityComparisons\": 0, \"failures\": 0}, \"トリプルアクセル\": {\"cases\": 672, \"damageComparisons\": 32256, \"totalComparisons\": 11839, \"probabilityComparisons\": 192, \"failures\": 0}, \"ネズミざん\": {\"cases\": 672, \"damageComparisons\": 107520, \"totalComparisons\": 37584, \"probabilityComparisons\": 528, \"failures\": 0}}, \"failureCount\": 0, \"failures\": []}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/gc2027ii/work/test-venv/bin/python",
+        "browser_all_berries_test.py"
+      ],
+      "exitCode": 0,
+      "seconds": 2.351,
+      "stdout": "PASS 18 registered berries in both actual damage adapters: active/consumed/Unnerve/unknown; forecast stays read-only\n",
       "stderr": ""
     },
     {
@@ -1402,7 +1425,7 @@
         "browser_dom_test.py"
       ],
       "exitCode": 0,
-      "seconds": 3.619,
+      "seconds": 3.689,
       "stdout": "PASS: Chromium inline scripts, initial 45s mode, exit, re-entry, no uncaught errors\nLIMIT: about:blank cannot verify persistence, HTTP navigation blocked by environment\n",
       "stderr": ""
     },
@@ -1412,8 +1435,8 @@
         "browser_final_tactical_test.py"
       ],
       "exitCode": 0,
-      "seconds": 3.24,
-      "stdout": "{\n  \"completion\": false,\n  \"sourceSha256\": \"60c610d0c6e318b1fb4f912d2c61015525c38073f66ae09191a728d85d3ed584\",\n  \"total\": 17,\n  \"passed\": 17,\n  \"checks\": [\n    {\n      \"id\": \"earthquake-lethal-ally-cost\",\n      \"passed\": true,\n      \"evidence\": {\n        \"penalty\": 15,\n        \"notes\": [\n          \"じしん：味方サーフゴーにも被害・KO危険（参考推定）\"\n        ],\n        \"entries\": [\n          {\n            \"actor\": \"ガブリアス\",\n            \"target\": \"サーフゴー\",\n            \"move\": \"じしん\",\n            \"avg\": 2,\n            \"lethal\": 1,\n            \"open\": 1,\n            \"rolls\": [\n              110,\n              110,\n              114,\n              114,\n              116,\n              116,\n              120,\n              120,\n              120,\n              122,\n              122,\n              126,\n              126,\n              128,\n              128,\n              132\n            ],\n            \"fullHp\": 162,\n            \"currentHp\": 2,\n            \"conditional\": true\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"ally-protect-removes-damage\",\n      \"passed\": true,\n      \"evidence\": {\n        \"penalty\": 0,\n        \"notes\": [],\n        \"entries\": []\n      }\n    },\n    {\n      \"id\": \"consecutive-protect-not-assured\",\n      \"passed\": true,\n      \"evidence\": 10.000000000000002\n    },\n    {\n      \"id\": \"switch-to-flying-ally-safe\",\n      \"passed\": true,\n      \"evidence\": {\n        \"penalty\": 0,\n        \"notes\": [],\n        \"entries\": [\n          {\n            \"actor\": \"ガブリアス\",\n            \"target\": \"ペリッパー\",\n            \"move\": \"じしん\",\n            \"avg\": 0,\n            \"lethal\": 0,\n            \"open\": 1,\n            \"rolls\": [\n              0\n            ],\n            \"fullHp\": 135,\n            \"currentHp\": 135,\n            \"conditional\": true\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"telepathy-allied-hit-immunity\",\n      \"passed\": true,\n      \"evidence\": {\n        \"penalty\": 0,\n        \"notes\": [],\n        \"entries\": [\n          {\n            \"actor\": \"ガブリアス\",\n            \"target\": \"サーフゴー\",\n            \"move\": \"じしん\",\n            \"avg\": 0,\n            \"lethal\": 0,\n            \"open\": 1,\n            \"rolls\": [\n              0\n            ],\n            \"fullHp\": 162,\n            \"currentHp\": 2,\n            \"conditional\": true\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"levitate-allied-earthquake-immunity\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"rock-slide-does-not-hit-ally\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"earthquake-single-foe-plus-ally-retains-spread-reduction\",\n      \"passed\": true,\n      \"evidence\": {\n        \"three\": [\n          116,\n          116,\n          120,\n          120,\n          120,\n          122,\n          122,\n          126,\n          126,\n          128,\n          128,\n          132,\n          132,\n          134,\n          134,\n          138\n        ],\n        \"two\": [\n          116,\n          116,\n          120,\n          120,\n          120,\n          122,\n          122,\n          126,\n          126,\n          128,\n          128,\n          132,\n          132,\n          134,\n          134,\n          138\n        ]\n      }\n    },\n    {\n      \"id\": \"incoming-single-foe-plus-ally-retains-spread-reduction\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"first-plan-preserves-partner-with-safe-terminal-line\",\n      \"passed\": true,\n      \"evidence\": [\n        {\n          \"actor\": \"ガブリアス\",\n          \"move\": \"ドラゴンクロー\",\n          \"target\": \"リキキリン\",\n          \"note\": \"\"\n        },\n        {\n          \"actor\": \"サーフゴー\",\n          \"move\": \"シャドーボール\",\n          \"target\": \"ガオガエン\",\n          \"note\": \"\"\n        }\n      ]\n    },\n    {\n      \"id\": \"perish-two-turn-loss-projected\",\n      \"passed\": true,\n      \"evidence\": {\n        \"first\": 1,\n        \"hp\": 0\n      }\n    },\n    {\n      \"id\": \"projection-does-not-mutate-battle\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"multi-turn-win-condition-switch-over-protect\",\n      \"passed\": true,\n      \"evidence\": {\n        \"escape\": {\n          \"score\": 8,\n          \"notes\": [\n            \"サーフゴー：滅び回避の交代\"\n          ]\n        },\n        \"protect\": {\n          \"score\": -22,\n          \"notes\": [\n            \"サーフゴー：滅び1、まもる・バトンでは回避不可\"\n          ]\n        }\n      }\n    },\n    {\n      \"id\": \"next-turn-fake-out-no-credit-in-psychic-terrain\",\n      \"passed\": true,\n      \"evidence\": {\n        \"fresh\": {\n          \"score\": 1.7,\n          \"reasons\": [\n            \"次ターンねこだまし成立時の参考推定\"\n          ]\n        },\n        \"blocked\": {\n          \"score\": 0,\n          \"reasons\": []\n        }\n      }\n    },\n    {\n      \"id\": \"opponent-repeat-protect-not-assured\",\n      \"passed\": true,\n      \"evidence\": {\n        \"firstProtect\": 0,\n        \"repeatProtect\": 0.6666666666666667\n      }\n    },\n    {\n      \"id\": \"own-repeat-protect-keeps-ko-risk\",\n      \"passed\": true,\n      \"evidence\": {\n        \"first\": 0,\n        \"repeat\": -0.43\n      }\n    },\n    {\n      \"id\": \"unknown-predictions-labelled\",\n      \"passed\": true,\n      \"evidence\": \"参考推定：ダメージ・素早さ・推奨は未検証条件を含みます。相手行動・交代・複数ターンの展開は未確定です。未確認の特性・持ち物・配分で結果が変わります。推定KO\"\n    }\n  ],\n  \"allyDamageDifferential\": {\n    \"completion\": false,\n    \"oracle\": \"pokemon-showdown@0.11.10\",\n    \"cases\": 16,\n    \"comparisons\": 256,\n    \"failures\": [],\n    \"scope\": \"Same-side direct damage with explicit app raw stats and known profiles; no complete battle oracle.\"\n  }\n}\n",
+      "seconds": 2.812,
+      "stdout": "{\n  \"completion\": false,\n  \"sourceSha256\": \"7b23377c4f0d341ace3b70aca1552671b29130e0385cde18329dad85ea0b1bf7\",\n  \"total\": 17,\n  \"passed\": 17,\n  \"checks\": [\n    {\n      \"id\": \"earthquake-lethal-ally-cost\",\n      \"passed\": true,\n      \"evidence\": {\n        \"penalty\": 15,\n        \"notes\": [\n          \"じしん：味方サーフゴーにも被害・KO危険（参考推定）\"\n        ],\n        \"entries\": [\n          {\n            \"actor\": \"ガブリアス\",\n            \"target\": \"サーフゴー\",\n            \"move\": \"じしん\",\n            \"avg\": 2,\n            \"lethal\": 1,\n            \"open\": 1,\n            \"rolls\": [\n              110,\n              110,\n              114,\n              114,\n              116,\n              116,\n              120,\n              120,\n              120,\n              122,\n              122,\n              126,\n              126,\n              128,\n              128,\n              132\n            ],\n            \"fullHp\": 162,\n            \"currentHp\": 2,\n            \"conditional\": true\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"ally-protect-removes-damage\",\n      \"passed\": true,\n      \"evidence\": {\n        \"penalty\": 0,\n        \"notes\": [],\n        \"entries\": []\n      }\n    },\n    {\n      \"id\": \"consecutive-protect-not-assured\",\n      \"passed\": true,\n      \"evidence\": 10.000000000000002\n    },\n    {\n      \"id\": \"switch-to-flying-ally-safe\",\n      \"passed\": true,\n      \"evidence\": {\n        \"penalty\": 0,\n        \"notes\": [],\n        \"entries\": [\n          {\n            \"actor\": \"ガブリアス\",\n            \"target\": \"ペリッパー\",\n            \"move\": \"じしん\",\n            \"avg\": 0,\n            \"lethal\": 0,\n            \"open\": 1,\n            \"rolls\": [\n              0\n            ],\n            \"fullHp\": 135,\n            \"currentHp\": 135,\n            \"conditional\": true\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"telepathy-allied-hit-immunity\",\n      \"passed\": true,\n      \"evidence\": {\n        \"penalty\": 0,\n        \"notes\": [],\n        \"entries\": [\n          {\n            \"actor\": \"ガブリアス\",\n            \"target\": \"サーフゴー\",\n            \"move\": \"じしん\",\n            \"avg\": 0,\n            \"lethal\": 0,\n            \"open\": 1,\n            \"rolls\": [\n              0\n            ],\n            \"fullHp\": 162,\n            \"currentHp\": 2,\n            \"conditional\": true\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"levitate-allied-earthquake-immunity\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"rock-slide-does-not-hit-ally\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"earthquake-single-foe-plus-ally-retains-spread-reduction\",\n      \"passed\": true,\n      \"evidence\": {\n        \"three\": [\n          116,\n          116,\n          120,\n          120,\n          120,\n          122,\n          122,\n          126,\n          126,\n          128,\n          128,\n          132,\n          132,\n          134,\n          134,\n          138\n        ],\n        \"two\": [\n          116,\n          116,\n          120,\n          120,\n          120,\n          122,\n          122,\n          126,\n          126,\n          128,\n          128,\n          132,\n          132,\n          134,\n          134,\n          138\n        ]\n      }\n    },\n    {\n      \"id\": \"incoming-single-foe-plus-ally-retains-spread-reduction\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"first-plan-preserves-partner-with-safe-terminal-line\",\n      \"passed\": true,\n      \"evidence\": [\n        {\n          \"actor\": \"ガブリアス\",\n          \"move\": \"ドラゴンクロー\",\n          \"target\": \"リキキリン\",\n          \"note\": \"\"\n        },\n        {\n          \"actor\": \"サーフゴー\",\n          \"move\": \"シャドーボール\",\n          \"target\": \"ガオガエン\",\n          \"note\": \"\"\n        }\n      ]\n    },\n    {\n      \"id\": \"perish-two-turn-loss-projected\",\n      \"passed\": true,\n      \"evidence\": {\n        \"first\": 1,\n        \"hp\": 0\n      }\n    },\n    {\n      \"id\": \"projection-does-not-mutate-battle\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"multi-turn-win-condition-switch-over-protect\",\n      \"passed\": true,\n      \"evidence\": {\n        \"escape\": {\n          \"score\": 8,\n          \"notes\": [\n            \"サーフゴー：滅び回避の交代\"\n          ]\n        },\n        \"protect\": {\n          \"score\": -22,\n          \"notes\": [\n            \"サーフゴー：滅び1、まもる・バトンでは回避不可\"\n          ]\n        }\n      }\n    },\n    {\n      \"id\": \"next-turn-fake-out-no-credit-in-psychic-terrain\",\n      \"passed\": true,\n      \"evidence\": {\n        \"fresh\": {\n          \"score\": 1.7,\n          \"reasons\": [\n            \"次ターンねこだまし成立時の参考推定\"\n          ]\n        },\n        \"blocked\": {\n          \"score\": 0,\n          \"reasons\": []\n        }\n      }\n    },\n    {\n      \"id\": \"opponent-repeat-protect-not-assured\",\n      \"passed\": true,\n      \"evidence\": {\n        \"firstProtect\": 0,\n        \"repeatProtect\": 0.6666666666666667\n      }\n    },\n    {\n      \"id\": \"own-repeat-protect-keeps-ko-risk\",\n      \"passed\": true,\n      \"evidence\": {\n        \"first\": 0,\n        \"repeat\": -0.43\n      }\n    },\n    {\n      \"id\": \"unknown-predictions-labelled\",\n      \"passed\": true,\n      \"evidence\": \"参考推定：ダメージ・素早さ・推奨は未検証条件を含みます。相手行動・交代・複数ターンの展開は未確定です。未確認の特性・持ち物・配分で結果が変わります。推定KO\"\n    }\n  ],\n  \"allyDamageDifferential\": {\n    \"completion\": false,\n    \"oracle\": \"pokemon-showdown@0.11.10\",\n    \"cases\": 16,\n    \"comparisons\": 256,\n    \"failures\": [],\n    \"scope\": \"Same-side direct damage with explicit app raw stats and known profiles; no complete battle oracle.\"\n  }\n}\n",
       "stderr": ""
     },
     {
@@ -1422,7 +1445,7 @@
         "browser_full_match_test.py"
       ],
       "exitCode": 0,
-      "seconds": 19.931,
+      "seconds": 20.284,
       "stdout": "PASS complete observed 4-vs-4 match UI: three turns, KO replacements, undo/replay, reload, win record; no state injection\n",
       "stderr": ""
     },
@@ -1432,7 +1455,7 @@
         "browser_http_release_test.py"
       ],
       "exitCode": 0,
-      "seconds": 9.664,
+      "seconds": 9.698,
       "stdout": "PASS Chromium HTTP launch, real localStorage reload, mode45 on/off, external engines, mobile viewport, no JS exceptions\n",
       "stderr": ""
     },
@@ -1442,7 +1465,7 @@
         "browser_ko_boundary_test.py"
       ],
       "exitCode": 0,
-      "seconds": 93.653,
+      "seconds": 93.864,
       "stdout": "PASS KO/stat boundary audit: 1073520 stats, 523312 damage rolls, 28387 HP boundaries, 120 actors; no mismatch\n",
       "stderr": ""
     },
@@ -1452,7 +1475,7 @@
         "browser_layout_regression_test.py"
       ],
       "exitCode": 0,
-      "seconds": 14.02,
+      "seconds": 14.619,
       "stdout": "PASS normal input scrolling and fixed narrower/taller damage panel at five viewport sizes\nPASS real team save/start/reload and preserved active slots\nPASS observed-action fixture: real turn commit, save/reload, undo, and history save deduplication\nPASS offline HTTP reload with all external engines cached; no uncaught browser exceptions\n",
       "stderr": ""
     },
@@ -1462,7 +1485,7 @@
         "browser_main_matchups_test.py"
       ],
       "exitCode": 0,
-      "seconds": 18.645,
+      "seconds": 18.448,
       "stdout": "PASS 46080 actual browser-adapter comparisons over 16 adoption-120 matchups\n",
       "stderr": ""
     },
@@ -1472,7 +1495,7 @@
         "browser_mechanics_regression_test.py"
       ],
       "exitCode": 0,
-      "seconds": 10.845,
+      "seconds": 10.935,
       "stdout": "PASS Magic Room changes real damage rolls and survives HTTP save/reload\nPASS actual target-confirmation button and turn commit change only the selected doubles target\nPASS Shell Smash + White Herb real commit/reload and historical Magic Room isolation\n",
       "stderr": ""
     },
@@ -1482,7 +1505,7 @@
         "browser_pc_trial_test.py"
       ],
       "exitCode": 0,
-      "seconds": 32.607,
+      "seconds": 34.196,
       "stdout": "PASS PC Chromium Chrome/Edge UA profiles: 8 layouts, dual targets, real 45s turn/switch/HP/save/undo/JSON restore\n",
       "stderr": ""
     },
@@ -1492,8 +1515,18 @@
         "browser_pending_twenty_test.py"
       ],
       "exitCode": 0,
-      "seconds": 6.58,
+      "seconds": 7.09,
       "stdout": "{\"total\": 20, \"metadataVerified\": 20, \"calculationVerified\": 6, \"calculationUnverified\": 14} {\"completion\": false, \"oracle\": \"pokemon-showdown@0.11.10; pinned upstream Champions numeric metadata only\", \"scenarios\": 1440, \"damageComparisons\": 16320, \"accuracyComparisons\": 5100, \"totalDistributionComparisons\": 2106, \"conditionComparisons\": 1440, \"byMove\": {\"ツインビーム\": {\"cases\": 240, \"damageComparisons\": 3840, \"accuracyComparisons\": 1200, \"totalDistributionComparisons\": 973, \"failures\": 0}, \"ダブルウイング\": {\"cases\": 240, \"damageComparisons\": 3840, \"accuracyComparisons\": 1200, \"totalDistributionComparisons\": 1133, \"failures\": 0}, \"アイアンローラー\": {\"cases\": 240, \"damageComparisons\": 768, \"accuracyComparisons\": 240, \"totalDistributionComparisons\": 0, \"failures\": 0}, \"つけあがる\": {\"cases\": 240, \"damageComparisons\": 3840, \"accuracyComparisons\": 1200, \"totalDistributionComparisons\": 0, \"failures\": 0}, \"ポルターガイスト\": {\"cases\": 240, \"damageComparisons\": 192, \"accuracyComparisons\": 60, \"totalDistributionComparisons\": 0, \"failures\": 0}, \"ひゃっきやこう\": {\"cases\": 240, \"damageComparisons\": 3840, \"accuracyComparisons\": 1200, \"totalDistributionComparisons\": 0, \"failures\": 0}}, \"failureCount\": 0, \"failures\": []}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/gc2027ii/work/test-venv/bin/python",
+        "browser_prezip_test.py"
+      ],
+      "exitCode": 0,
+      "seconds": 11.883,
+      "stdout": "PASS pre-ZIP: 82 Mega pre/post references, selected forms, HP recalc, rail contrast, corrected offline cache/save, origin isolation\n",
       "stderr": ""
     },
     {
@@ -1502,7 +1535,7 @@
         "browser_priority_berries_test.py"
       ],
       "exitCode": 0,
-      "seconds": 5.03,
+      "seconds": 5.474,
       "stdout": "PASS prioritized berries: outgoing damage, one-use focused attacks, confirmed consumption, undo/reload, unknown/Unnerve guards\n",
       "stderr": ""
     },
@@ -1512,8 +1545,8 @@
         "browser_recommendation_strategy_test.py"
       ],
       "exitCode": 0,
-      "seconds": 3.014,
-      "stdout": "{\n  \"completion\": false,\n  \"scope\": \"Explicit tactical constraints on actual planner/scenario helpers, not game-theoretic optimality or opponent-prediction calibration\",\n  \"sourceSha256\": \"60c610d0c6e318b1fb4f912d2c61015525c38073f66ae09191a728d85d3ed584\",\n  \"total\": 28,\n  \"passed\": 28,\n  \"scenarios\": [\n    {\n      \"id\": \"fake-out-valid-first-turn\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"fake-out-blocked-せいしんりょく\",\n      \"passed\": true,\n      \"evidence\": \"せいしんりょく\"\n    },\n    {\n      \"id\": \"fake-out-blocked-りんぷん\",\n      \"passed\": true,\n      \"evidence\": \"りんぷん\"\n    },\n    {\n      \"id\": \"fake-out-blocked-テイルアーマー\",\n      \"passed\": true,\n      \"evidence\": \"テイルアーマー\"\n    },\n    {\n      \"id\": \"fake-out-covert-cloak\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"fake-out-psychic-terrain\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"fake-out-not-entry-turn\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"taunt-after-tailwind-no-denial\",\n      \"passed\": true,\n      \"evidence\": {\n        \"fast\": 0.65,\n        \"late\": 0\n      }\n    },\n    {\n      \"id\": \"trick-room-reverses-denial-order\",\n      \"passed\": true,\n      \"evidence\": 0.65\n    },\n    {\n      \"id\": \"taunt-blocked-どんかん\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"taunt-blocked-おうごんのからだ\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"taunt-blocked-マジックミラー\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"taunt-blocked-アロマベール\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"taunt-mental-herb-no-turn-denial\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"taunt-bypasses-substitute\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"substitute-stops-fake-out-flinch\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"ally-aroma-veil-blocks-taunt\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"protect-stops-targeted-denial\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"late-ko-does-not-prevent-setup\",\n      \"passed\": true,\n      \"evidence\": {\n        \"earlyKO\": 0.9,\n        \"lateKO\": 0\n      }\n    },\n    {\n      \"id\": \"known-switch-targets-entrant\",\n      \"passed\": true,\n      \"evidence\": \"サーフゴー\"\n    },\n    {\n      \"id\": \"switch-immunity-not-outgoing-damage\",\n      \"passed\": true,\n      \"evidence\": [\n        {\n          \"target\": \"サーフゴー\",\n          \"avg\": 0\n        }\n      ]\n    },\n    {\n      \"id\": \"unknown-switch-not-assured-ko\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"wide-guard-blocks-spread\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"full-planner-finishes-two-low-hp-foes\",\n      \"passed\": true,\n      \"evidence\": {\n        \"actions\": [\n          {\n            \"actor\": \"ゴリランダー\",\n            \"move\": \"ウッドハンマー\",\n            \"target\": \"ガブリアス\",\n            \"note\": \"\"\n          },\n          {\n            \"actor\": \"ドラパルト\",\n            \"move\": \"りゅうのはどう\",\n            \"target\": \"リキキリン\",\n            \"note\": \"\"\n          }\n        ],\n        \"scenarios\": 1,\n        \"generated\": 7,\n        \"alternatives\": [\n          {\n            \"actions\": [\n              {\n                \"actor\": \"ゴリランダー\",\n                \"move\": \"ウッドハンマー\",\n                \"target\": \"リキキリン\",\n                \"note\": \"\"\n              },\n              {\n                \"actor\": \"ドラパルト\",\n                \"move\": \"りゅうのはどう\",\n                \"target\": \"ガブリアス\",\n                \"note\": \"先手KO後の無駄打ち回避\"\n              }\n            ],\n            \"label\": \"attack\",\n            \"quick\": 8.47247,\n            \"values\": [\n              17.415399999999998\n            ],\n            \"aggregate\": {\n              \"average\": 17.415399999999998,\n              \"worst\": 17.415399999999998,\n              \"best\": 17.415399999999998,\n              \"spread\": 0,\n              \"score\": 17.415399999999998\n            },\n            \"score\": 17.415399999999998\n          },\n          {\n            \"actions\": [\n              {\n                \"actor\": \"ゴリランダー\",\n                \"move\": \"まもる\",\n                \"target\": null,\n                \"note\": \"\"\n              },\n              {\n                \"actor\": \"ドラパルト\",\n                \"move\": \"りゅうのはどう\",\n                \"target\": \"リキキリン\",\n                \"note\": \"\"\n              }\n            ],\n            \"label\": \"stable\",\n            \"quick\": 6.452263599999999,\n            \"values\": [\n              17.347752\n            ],\n            \"aggregate\": {\n              \"average\": 17.347752,\n              \"worst\": 17.347752,\n              \"best\": 17.347752,\n              \"spread\": 0,\n              \"score\": 17.347752\n            },\n            \"score\": 17.347752\n          },\n          {\n            \"actions\": [\n              {\n                \"actor\": \"ゴリランダー\",\n                \"move\": \"まもる\",\n                \"target\": null,\n                \"note\": \"\"\n              },\n              {\n                \"actor\": \"ドラパルト\",\n                \"move\": \"りゅうのはどう\",\n                \"target\": \"ガブリアス\",\n                \"note\": \"\"\n              }\n            ],\n            \"label\": \"stable\",\n            \"quick\": 5.8107359999999995,\n            \"values\": [\n              15.999519999999999\n            ],\n            \"aggregate\": {\n              \"average\": 15.999519999999999,\n              \"worst\": 15.999519999999999,\n              \"best\": 15.999519999999999,\n              \"spread\": 0,\n              \"score\": 15.99952\n            },\n            \"score\": 15.99952\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"full-planner-terminal-trick-room\",\n      \"passed\": true,\n      \"evidence\": {\n        \"actions\": [\n          {\n            \"actor\": \"ゴリランダー\",\n            \"move\": \"ウッドハンマー\",\n            \"target\": \"リキキリン\",\n            \"note\": \"\"\n          },\n          {\n            \"actor\": \"ドラパルト\",\n            \"move\": \"りゅうのはどう\",\n            \"target\": \"ガブリアス\",\n            \"note\": \"先手KO後の無駄打ち回避\"\n          }\n        ],\n        \"covered\": [\n          \"リキキリン\",\n          \"ガブリアス\"\n        ],\n        \"scenarios\": 1\n      }\n    },\n    {\n      \"id\": \"full-planner-terminal-spread\",\n      \"passed\": true,\n      \"evidence\": {\n        \"actions\": [\n          {\n            \"actor\": \"ゴリランダー\",\n            \"move\": \"まもる\",\n            \"target\": null,\n            \"note\": \"\"\n          },\n          {\n            \"actor\": \"ドラパルト\",\n            \"move\": \"なみのり\",\n            \"target\": null,\n            \"note\": \"\"\n          }\n        ],\n        \"covered\": [\n          \"リキキリン\",\n          \"ガブリアス\"\n        ],\n        \"scenarios\": 1\n      }\n    },\n    {\n      \"id\": \"full-planner-focus-needed-for-ko\",\n      \"passed\": true,\n      \"evidence\": {\n        \"targetHp\": 39,\n        \"maxSingle\": 30,\n        \"sumMin\": 49,\n        \"actions\": [\n          {\n            \"actor\": \"ゴリランダー\",\n            \"move\": \"たいあたり\",\n            \"target\": \"リキキリン\",\n            \"note\": \"\"\n          },\n          {\n            \"actor\": \"ドラパルト\",\n            \"move\": \"たいあたり\",\n            \"target\": \"リキキリン\",\n            \"note\": \"\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"protect-favored-against-focus-scenario\",\n      \"passed\": true,\n      \"evidence\": {\n        \"guard\": 2.7,\n        \"attack\": 0\n      }\n    }\n  ],\n  \"previousDenialOnly\": false\n}\n",
+      "seconds": 3.039,
+      "stdout": "{\n  \"completion\": false,\n  \"scope\": \"Explicit tactical constraints on actual planner/scenario helpers, not game-theoretic optimality or opponent-prediction calibration\",\n  \"sourceSha256\": \"7b23377c4f0d341ace3b70aca1552671b29130e0385cde18329dad85ea0b1bf7\",\n  \"total\": 28,\n  \"passed\": 28,\n  \"scenarios\": [\n    {\n      \"id\": \"fake-out-valid-first-turn\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"fake-out-blocked-せいしんりょく\",\n      \"passed\": true,\n      \"evidence\": \"せいしんりょく\"\n    },\n    {\n      \"id\": \"fake-out-blocked-りんぷん\",\n      \"passed\": true,\n      \"evidence\": \"りんぷん\"\n    },\n    {\n      \"id\": \"fake-out-blocked-テイルアーマー\",\n      \"passed\": true,\n      \"evidence\": \"テイルアーマー\"\n    },\n    {\n      \"id\": \"fake-out-covert-cloak\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"fake-out-psychic-terrain\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"fake-out-not-entry-turn\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"taunt-after-tailwind-no-denial\",\n      \"passed\": true,\n      \"evidence\": {\n        \"fast\": 0.65,\n        \"late\": 0\n      }\n    },\n    {\n      \"id\": \"trick-room-reverses-denial-order\",\n      \"passed\": true,\n      \"evidence\": 0.65\n    },\n    {\n      \"id\": \"taunt-blocked-どんかん\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"taunt-blocked-おうごんのからだ\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"taunt-blocked-マジックミラー\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"taunt-blocked-アロマベール\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"taunt-mental-herb-no-turn-denial\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"taunt-bypasses-substitute\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"substitute-stops-fake-out-flinch\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"ally-aroma-veil-blocks-taunt\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"protect-stops-targeted-denial\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"late-ko-does-not-prevent-setup\",\n      \"passed\": true,\n      \"evidence\": {\n        \"earlyKO\": 0.9,\n        \"lateKO\": 0\n      }\n    },\n    {\n      \"id\": \"known-switch-targets-entrant\",\n      \"passed\": true,\n      \"evidence\": \"サーフゴー\"\n    },\n    {\n      \"id\": \"switch-immunity-not-outgoing-damage\",\n      \"passed\": true,\n      \"evidence\": [\n        {\n          \"target\": \"サーフゴー\",\n          \"avg\": 0\n        }\n      ]\n    },\n    {\n      \"id\": \"unknown-switch-not-assured-ko\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"wide-guard-blocks-spread\",\n      \"passed\": true,\n      \"evidence\": null\n    },\n    {\n      \"id\": \"full-planner-finishes-two-low-hp-foes\",\n      \"passed\": true,\n      \"evidence\": {\n        \"actions\": [\n          {\n            \"actor\": \"ゴリランダー\",\n            \"move\": \"ウッドハンマー\",\n            \"target\": \"ガブリアス\",\n            \"note\": \"\"\n          },\n          {\n            \"actor\": \"ドラパルト\",\n            \"move\": \"りゅうのはどう\",\n            \"target\": \"リキキリン\",\n            \"note\": \"\"\n          }\n        ],\n        \"scenarios\": 1,\n        \"generated\": 7,\n        \"alternatives\": [\n          {\n            \"actions\": [\n              {\n                \"actor\": \"ゴリランダー\",\n                \"move\": \"ウッドハンマー\",\n                \"target\": \"リキキリン\",\n                \"note\": \"\"\n              },\n              {\n                \"actor\": \"ドラパルト\",\n                \"move\": \"りゅうのはどう\",\n                \"target\": \"ガブリアス\",\n                \"note\": \"先手KO後の無駄打ち回避\"\n              }\n            ],\n            \"label\": \"attack\",\n            \"quick\": 8.47247,\n            \"values\": [\n              17.415399999999998\n            ],\n            \"aggregate\": {\n              \"average\": 17.415399999999998,\n              \"worst\": 17.415399999999998,\n              \"best\": 17.415399999999998,\n              \"spread\": 0,\n              \"score\": 17.415399999999998\n            },\n            \"score\": 17.415399999999998\n          },\n          {\n            \"actions\": [\n              {\n                \"actor\": \"ゴリランダー\",\n                \"move\": \"まもる\",\n                \"target\": null,\n                \"note\": \"\"\n              },\n              {\n                \"actor\": \"ドラパルト\",\n                \"move\": \"りゅうのはどう\",\n                \"target\": \"リキキリン\",\n                \"note\": \"\"\n              }\n            ],\n            \"label\": \"stable\",\n            \"quick\": 6.452263599999999,\n            \"values\": [\n              17.347752\n            ],\n            \"aggregate\": {\n              \"average\": 17.347752,\n              \"worst\": 17.347752,\n              \"best\": 17.347752,\n              \"spread\": 0,\n              \"score\": 17.347752\n            },\n            \"score\": 17.347752\n          },\n          {\n            \"actions\": [\n              {\n                \"actor\": \"ゴリランダー\",\n                \"move\": \"まもる\",\n                \"target\": null,\n                \"note\": \"\"\n              },\n              {\n                \"actor\": \"ドラパルト\",\n                \"move\": \"りゅうのはどう\",\n                \"target\": \"ガブリアス\",\n                \"note\": \"\"\n              }\n            ],\n            \"label\": \"stable\",\n            \"quick\": 5.8107359999999995,\n            \"values\": [\n              15.999519999999999\n            ],\n            \"aggregate\": {\n              \"average\": 15.999519999999999,\n              \"worst\": 15.999519999999999,\n              \"best\": 15.999519999999999,\n              \"spread\": 0,\n              \"score\": 15.99952\n            },\n            \"score\": 15.99952\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"full-planner-terminal-trick-room\",\n      \"passed\": true,\n      \"evidence\": {\n        \"actions\": [\n          {\n            \"actor\": \"ゴリランダー\",\n            \"move\": \"ウッドハンマー\",\n            \"target\": \"リキキリン\",\n            \"note\": \"\"\n          },\n          {\n            \"actor\": \"ドラパルト\",\n            \"move\": \"りゅうのはどう\",\n            \"target\": \"ガブリアス\",\n            \"note\": \"先手KO後の無駄打ち回避\"\n          }\n        ],\n        \"covered\": [\n          \"リキキリン\",\n          \"ガブリアス\"\n        ],\n        \"scenarios\": 1\n      }\n    },\n    {\n      \"id\": \"full-planner-terminal-spread\",\n      \"passed\": true,\n      \"evidence\": {\n        \"actions\": [\n          {\n            \"actor\": \"ゴリランダー\",\n            \"move\": \"まもる\",\n            \"target\": null,\n            \"note\": \"\"\n          },\n          {\n            \"actor\": \"ドラパルト\",\n            \"move\": \"なみのり\",\n            \"target\": null,\n            \"note\": \"\"\n          }\n        ],\n        \"covered\": [\n          \"リキキリン\",\n          \"ガブリアス\"\n        ],\n        \"scenarios\": 1\n      }\n    },\n    {\n      \"id\": \"full-planner-focus-needed-for-ko\",\n      \"passed\": true,\n      \"evidence\": {\n        \"targetHp\": 39,\n        \"maxSingle\": 30,\n        \"sumMin\": 49,\n        \"actions\": [\n          {\n            \"actor\": \"ゴリランダー\",\n            \"move\": \"たいあたり\",\n            \"target\": \"リキキリン\",\n            \"note\": \"\"\n          },\n          {\n            \"actor\": \"ドラパルト\",\n            \"move\": \"たいあたり\",\n            \"target\": \"リキキリン\",\n            \"note\": \"\"\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"protect-favored-against-focus-scenario\",\n      \"passed\": true,\n      \"evidence\": {\n        \"guard\": 2.7,\n        \"attack\": 0\n      }\n    }\n  ],\n  \"previousDenialOnly\": false\n}\n",
       "stderr": ""
     },
     {
@@ -1522,7 +1555,7 @@
         "browser_state_test.py"
       ],
       "exitCode": 0,
-      "seconds": 8.955,
+      "seconds": 9.737,
       "stdout": "PASS first-visit default ON and label\nPASS exit OFF persists 0 in simulated storage\nPASS new-document restore OFF\nPASS new-document restore ON\nPASS preexisting OFF preference restored\nLIMIT document-level tests use an in-memory localStorage double; network navigation, genuine disk persistence, service worker and deployment remain unverified\n",
       "stderr": ""
     },
@@ -1532,7 +1565,7 @@
         "browser_stats_moves_test.py"
       ],
       "exitCode": 0,
-      "seconds": 30.009,
+      "seconds": 32.907,
       "stdout": "{\n  \"scopeCompletion\": {\n    \"speciesTargetTwoSourceAudit\": true,\n    \"majorMoveData\": true,\n    \"majorMoveCalculationAllVerified\": false\n  },\n  \"speciesSummary\": {\n    \"targets\": 344,\n    \"targetVerified\": 344,\n    \"targetUnconfirmed\": 0,\n    \"targetMega\": 82,\n    \"targetStatValues\": 2064,\n    \"catalog\": 1380,\n    \"catalogTwoSourceVerified\": 1375,\n    \"catalogSecondSourceUnconfirmed\": 5,\n    \"catalogShowdownMatched\": 1380,\n    \"catalogMega\": 97,\n    \"megaTwoSourceVerified\": 97,\n    \"placeholderExcluded\": [\n      \"その他\"\n    ]\n  },\n  \"moveSummary\": {\n    \"adoptionProfiles\": 120,\n    \"recordedAttackMoves\": 207,\n    \"metadataVerified\": 207,\n    \"majorAttackMoves\": 179,\n    \"majorCalculationVerified\": 168,\n    \"majorCalculationUnverified\": 11,\n    \"majorThreshold\": \"At least one stored adoption-120 profile records >=10%; all recorded attacks also receive metadata audit.\"\n  },\n  \"errors\": []\n}\n\nPASS primary move damage 132288 accuracy 41340 all target/catalog species; failures 0\n",
       "stderr": ""
     },
@@ -1542,7 +1575,7 @@
         "browser_tournament_practical_test.py"
       ],
       "exitCode": 0,
-      "seconds": 19.562,
+      "seconds": 26.133,
       "stdout": "PASS provisional predictions, critical confirmed/blocked/unknown, Focus Energy persistence, desktop/mobile 45s refresh <5s\n",
       "stderr": ""
     },
@@ -1552,7 +1585,7 @@
         "browser_version_migration_test.py"
       ],
       "exitCode": 0,
-      "seconds": 66.864,
+      "seconds": 80.521,
       "stdout": "PASS old-release real saves: three versions, same-origin upgrade + fresh-profile JSON, save/reload, history, undo\n",
       "stderr": ""
     },
@@ -1562,7 +1595,7 @@
         "browser_smoke_portable.py"
       ],
       "exitCode": 0,
-      "seconds": 7.02,
+      "seconds": 6.764,
       "stdout": "PASS default mode45 enabled\nPASS exit action and localStorage stub writes OFF\nPASS reload-equivalent fresh document restores OFF\nPASS re-enable action persists ON\nPASS reload-equivalent fresh document restores ON\nLIMITATIONS: mocked storage, set_content document, no full battle E2E or deployed-site check\n",
       "stderr": ""
     }

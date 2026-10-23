@@ -1,0 +1,65 @@
+{
+  "completion": false,
+  "oracle": "pokemon-showdown@0.11.10 real resistance-berry item callbacks",
+  "berries": 18,
+  "comparisons": 18432,
+  "consumptionComparisons": 18432,
+  "byBerry": {
+    "ホズのみ": {
+      "comparisons": 1024
+    },
+    "オッカのみ": {
+      "comparisons": 1024
+    },
+    "イトケのみ": {
+      "comparisons": 1024
+    },
+    "ソクノのみ": {
+      "comparisons": 1024
+    },
+    "リンドのみ": {
+      "comparisons": 1024
+    },
+    "ヤチェのみ": {
+      "comparisons": 1024
+    },
+    "ヨプのみ": {
+      "comparisons": 1024
+    },
+    "ビアーのみ": {
+      "comparisons": 1024
+    },
+    "シュカのみ": {
+      "comparisons": 1024
+    },
+    "バコウのみ": {
+      "comparisons": 1024
+    },
+    "ウタンのみ": {
+      "comparisons": 1024
+    },
+    "タンガのみ": {
+      "comparisons": 1024
+    },
+    "ヨロギのみ": {
+      "comparisons": 1024
+    },
+    "カシブのみ": {
+      "comparisons": 1024
+    },
+    "ハバンのみ": {
+      "comparisons": 1024
+    },
+    "ナモのみ": {
+      "comparisons": 1024
+    },
+    "リリバのみ": {
+      "comparisons": 1024
+    },
+    "ロゼルのみ": {
+      "comparisons": 1024
+    }
+  },
+  "failures": [],
+  "scope": "Registered type-resist berries; physical/special, all 16 rolls, active/consumed, Unnerve, Ripen, Substitute/bypass. Controlled damage, not official item eligibility."
+}

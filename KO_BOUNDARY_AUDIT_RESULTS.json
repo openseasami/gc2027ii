@@ -10,6 +10,8 @@
   "accuracyComparisons": 4320,
   "certainOnHitCases": 3434,
   "randomOnHitCases": 6809,
+  "certainTwoHitCases": 1387,
+  "randomTwoHitCases": 273,
   "oneOfSixteenCases": 767,
   "fifteenOfSixteenCases": 394,
   "fullHpSurvivalCases": 80,
@@ -619,7 +621,7 @@
     "sturdy": 240
   },
   "scope": "Controlled no-effect ability matchups isolate AP/nature/items/type/weather/screens/target count; known Sturdy/Sash fixtures included. Existing real-ability 16-matchup suite remains separate. AP equivalent EVs certify arithmetic only, not official AP rules or a standard EV-budget conversion.",
-  "elapsedSeconds": 93.125,
+  "elapsedSeconds": 93.177,
   "species": 344,
   "megaSpecies": 82,
   "apValues": [
@@ -660,10 +662,10 @@
   "natureCount": 15,
   "profilePointLimit": 66,
   "sourceSha256": {
-    "index.html": "60c610d0c6e318b1fb4f912d2c61015525c38073f66ae09191a728d85d3ed584",
-    "battle-core.js": "9a43bd7f018fdeea2239bb7ae34125b01c30908e11c3059c28fe00824927e713",
+    "index.html": "7b23377c4f0d341ace3b70aca1552671b29130e0385cde18329dad85ea0b1bf7",
+    "battle-core.js": "02815420ea1c334481fa8378f25ede32387749308e9cf3ce3803863871e6df51",
     "browser_ko_boundary_test.py": "ed6d1cac84aa03c873b1873856f5c70f6d6cb836e4d4b92f69116128f4231a4a",
-    "ko-boundary-oracle.js": "733c35f58f5eebc9691cd7c9912a4d29f415e40859b7f965e1b65fe08044ea95",
+    "ko-boundary-oracle.js": "2e520b4a810af0c97cac0ac50bc0477f4eb81e6891cc2b15b50faddf19a67399",
     "ADOPTION_120_NORMALIZED.json": "4eda15a0810d74d3124aeace37cf51d75eadd36a37e9ff2ab10377d697e3bd47",
     "reference-data/stats-moves/showdown-normalized.json": "547c7a2070efb6bdf4bda1866dbe31773fdc517ba14fc8f8995d888ddd2711d9"
   },

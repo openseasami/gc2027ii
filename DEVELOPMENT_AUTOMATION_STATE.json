@@ -1730,6 +1730,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-23T07:56:23.915976+00:00",
+      "commit": "64d8d75bc6a7466c788a35327f6f0f7c84e415f6",
+      "reason": "最終ZIP前監査。140/140＋一時ZIP展開4/4成功。64d8d75保持、半減実の重大計算差を修正。公式一覧/独立ツール利用可否の3条件未確認のため大会ZIP未作成。旧ZIP保持、completion:false。",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {
@@ -1766,6 +1779,13 @@
       "manifest": "FROZEN_BASELINE.json",
       "additionalImplementationStopped": true,
       "reason": "Latest user request: freeze v2.9.13 and perform final regressions; no new candidates",
+      "completion": false
+    },
+    "finalPrezipAudit": {
+      "results": "FINAL_PREZIP_AUDIT_RESULTS.json",
+      "additionalFeaturesStopped": true,
+      "tournamentPackageAllowed": false,
+      "next": "Obtain missing official roster/item and tool-use evidence; do not claim broad implementation groups",
       "completion": false
     }
   },

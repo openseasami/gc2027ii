@@ -144,5 +144,6 @@
     "verdict": "pass-with-explicit-scope-and-limitations",
     "meaning": "Original frozen payload evaluation, before the later KO-boundary audit"
   },
-  "packagingHoldReason": "Current source has an audited fix absent from the immutable original ZIP. No new archive/release decision requested; do not overwrite the frozen archive from this historical assessment."
+  "packagingHoldReason": "Latest technical audit passed, but official roster/item lists and independent tool permission remain unconfirmed. Original archive is backup only and does not include the 64d8d75 or resist-berry corrections.",
+  "latestPrezipAudit": "FINAL_PREZIP_AUDIT_RESULTS.json"
 }

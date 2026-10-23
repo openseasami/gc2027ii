@@ -1,0 +1,57 @@
+{
+  "completion": false,
+  "version": "v2.9.13",
+  "sourceBaseCommit": "64d8d75bc6a7466c788a35327f6f0f7c84e415f6",
+  "generatedAt": "2026-10-23T07:57:38.054675+00:00",
+  "localTechnicalChecksPassed": true,
+  "tournamentPackageAllowed": false,
+  "technicalChecks": {
+    "developmentBranch": true,
+    "requiredSashCommitAncestor": true,
+    "allRegressionCommands": true,
+    "testSourceHashesCurrent": true,
+    "fixedRuntimeHashes": true,
+    "major168BasicDamage": true,
+    "species344BaseStats": true,
+    "apNatureRanksRandom16": true,
+    "oneAndTwoHitLabels": true,
+    "resistBerries18": true,
+    "threeNamedAttacks": true,
+    "megaAndFormReferences": true,
+    "pc45sFixedDualTargets": true,
+    "contrastAndFreshCalculations": true,
+    "uncertaintyDisplay": true,
+    "offlineSaveRestore": true,
+    "localOriginIsolation": true,
+    "oldSaveMigration": true,
+    "temporaryZipExtractAndRun": true,
+    "oldZipRetained": true,
+    "globalCompletionFalse": true
+  },
+  "officialChecks": {
+    "officialMCDoublesAndTimers": true,
+    "newOfficialMegaExamplesPresent": true,
+    "eligibleRosterFullyCompared": false,
+    "heldItemListFullyCompared": false,
+    "independentToolUsePermissionVerified": false
+  },
+  "blockingChecks": [
+    "eligibleRosterFullyCompared",
+    "heldItemListFullyCompared",
+    "independentToolUsePermissionVerified"
+  ],
+  "releaseZipCreated": false,
+  "releaseArchive": null,
+  "originalZipPreserved": true,
+  "evidenceSha256": {
+    "TEST_RESULTS.json": "e5bd74bce6d367c7bc6d08c02cfa9430153fe5e12cb8c4e7a0642621978724c6",
+    "OFFICIAL_MC_AUDIT.json": "ba1798557021d0a06769d98fe7fafb9ccbaf0306822238f021205c20eeb2a239",
+    "PREZIP_EXTRACTION_RESULTS.json": "1d0c1bc54ec5d2cd9bf93d681b8717d78f2135be3e70a17bb48c895e936c95df",
+    "KO_BOUNDARY_AUDIT_RESULTS.json": "da34da07a52e279eb04527eca45328b7e7a958cc272ece2d75ed134c6d5cdae4",
+    "ALL_RESIST_BERRY_RESULTS.json": "48488d99ca0ac3111b716e5f2570b956e41ad746677215b85caf97d861cd713b",
+    "ALL_BERRY_BROWSER_RESULTS.json": "0103306624b58d5e50af2b40246cc3bbeae03f73a9514afdd7017604e7e685a4",
+    "PREZIP_BROWSER_RESULTS.json": "deaf640172d608f407936bb4567a48f192b60a8b3cc57424e8e2021d05cda862",
+    "evaluate-prezip-audit.py": "04e188787bcdd96b4ba2598a0f317d5781904b204fa5dcd7806f5886eed38cfe"
+  },
+  "meaning": "A tournament ZIP requires local checks plus the requested official roster/item and tool-use confirmation. Unknown is not a passing rule check. Temporary engineering archive is destroyed and is not a released tournament ZIP."
+}
