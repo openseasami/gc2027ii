@@ -1,11 +1,11 @@
 {
   "completion": false,
   "pcEquivalentTrialPassed": true,
-  "readiness": "development-stats-primary-damage-audit",
-  "implementationCommit": "cf8418b593660912afe5b8b948e39763c53b472f",
+  "readiness": "development-pending-twenty-damage-audit",
+  "implementationCommit": null,
   "testCommands": {
-    "passed": 129,
-    "total": 129
+    "passed": 131,
+    "total": 131
   },
   "engine": "Linux Chromium 154.0.8037.57",
   "compatibilityProfiles": [
@@ -14,8 +14,8 @@
   ],
   "viewportChecks": 8,
   "automatedTurnSeconds": [
-    5.587,
-    5.21
+    5.14,
+    5.069
   ],
   "clicksPerTurn": [
     6,
@@ -25,12 +25,12 @@
   "nativeChromeEdgeVerified": false,
   "human45SecondTimingVerified": false,
   "unresolved": [
-    "Twenty major special/multihit calculations remain outside this explicit single-hit verification matrix",
+    "Fourteen major special/history/multihit damage calculations remain unverified; six of the previous twenty passed explicit scoped comparison",
     "Five non-target forms have only one species-stat reference",
     "Official event eligibility/AP and full rule parity unconfirmed",
     "Native Windows product/version and human 45-second timing not separately certified"
   ],
-  "trialArchive": "release/gc2027ii-v2.9.11-development.zip",
+  "trialArchive": "release/gc2027ii-v2.9.12-development.zip",
   "startup": "PC_TRIAL_START.md",
   "userReportedPcOperation": {
     "confirmed": true,
@@ -39,9 +39,9 @@
   },
   "uiPreservation": "UI_PRESERVATION_BASELINE.json",
   "mainMatchupValidation": "MAIN_MATCHUP_VALIDATION.md",
-  "runtimeVersion": "v2.9.11",
-  "sourceBaseCommit": "98d1739eae1a8179fd5f4bdfb0af32084a8a7986",
-  "releaseDecision": "STATS_MOVES_AUDIT_RESULTS.json",
+  "runtimeVersion": "v2.9.12",
+  "sourceBaseCommit": "63c00636be95da872325e5828c37477edaab3f79",
+  "releaseDecision": "PENDING_TWENTY_AUDIT_RESULTS.json",
   "historicalRc1ArtifactVerification": "release/rc1/RC_ARTIFACT_VERIFICATION.json",
-  "artifactVerification": null
+  "artifactVerification": "release/DEVELOPMENT_ARTIFACT_VERIFICATION.json"
 }

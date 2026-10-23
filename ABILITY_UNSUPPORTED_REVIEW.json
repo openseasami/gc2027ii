@@ -53,7 +53,7 @@
       "assessmentScope": "共通の行動順経路で後攻化・攻撃技限定の確率先制を扱う。表示だけが未対応だった。",
       "executableReferences": [
         "index.html:activeOrderCaveats:8163",
-        "index.html:orderEffectProfile:10768",
+        "index.html:orderEffectProfile:10785",
         "turn-order-effects.js:analyse:14"
       ],
       "tests": [
@@ -218,7 +218,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通接触ダメージ予測で接触ペナルティを除外する。",
       "executableReferences": [
-        "index.html:projectedContactPunishmentForAction:11500"
+        "index.html:projectedContactPunishmentForAction:11517"
       ],
       "tests": [
         "test-contact.js"
@@ -256,7 +256,7 @@
       "assessmentScope": "相手対象ランク技の確定適用を阻止し、かたやぶり時は適用する。",
       "executableReferences": [
         "index.html:applyConfirmedTargetRanks:6608",
-        "index.html:disruptionCanAffect:12668"
+        "index.html:disruptionCanAffect:12685"
       ],
       "tests": [
         "test-target-ranks-integration.js"
@@ -666,7 +666,7 @@
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
         "index.html:confirmedSleepProtection:6480",
-        "index.html:forecastCommonSecondaryStatus:11390"
+        "index.html:forecastCommonSecondaryStatus:11407"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"
@@ -703,7 +703,7 @@
       "classification": "部分実装",
       "assessmentScope": "Only block/double reduction of Chople/Colbur predictions and confirmed hit adapter. No all berry eating/healing/recycle/ability-change handlers or full battle certification.",
       "executableReferences": [
-        "index.html:defensiveBerryForDamage:9315"
+        "index.html:defensiveBerryForDamage:9332"
       ],
       "tests": [
         "test-priority-resist-berries.js",
@@ -997,7 +997,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11385"
+        "index.html:forecastCommonSecondaryStatus:11402"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -1037,7 +1037,7 @@
       "classification": "部分実装",
       "assessmentScope": "Only block/double reduction of Chople/Colbur predictions and confirmed hit adapter. No all berry eating/healing/recycle/ability-change handlers or full battle certification.",
       "executableReferences": [
-        "index.html:defensiveBerryForDamage:9319"
+        "index.html:defensiveBerryForDamage:9336"
       ],
       "tests": [
         "test-priority-resist-berries.js",
@@ -1171,10 +1171,10 @@
       "assessmentScope": "確認済み命中の共通みがわり迂回経路が存在し、両陣営の適用を検証。",
       "executableReferences": [
         "index.html:substituteBlocksConfirmedHit:5843",
-        "index.html:defensiveBerryForDamage:9318",
-        "index.html:damageEstimate:9412",
-        "index.html:opponentDamageEstimateAgainstMy:10957",
-        "index.html:disruptionCanAffect:12658"
+        "index.html:defensiveBerryForDamage:9335",
+        "index.html:damageEstimate:9429",
+        "index.html:opponentDamageEstimateAgainstMy:10974",
+        "index.html:disruptionCanAffect:12675"
       ],
       "tests": [
         "test-substitute-bypass.js",
@@ -1472,7 +1472,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11389"
+        "index.html:forecastCommonSecondaryStatus:11406"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"
@@ -1574,7 +1574,7 @@
       "classification": "部分実装",
       "assessmentScope": "Accuracy reduction immunity for external rank changes, self changes and ability bypass; evasion ignoring and full event legality remain unverified. Ignore positive target evasion stages in accuracy forecast. Existing rank protection separate; all accuracy interactions and full-game parity unverified.",
       "executableReferences": [
-        "index.html:effectiveMoveAccuracy:9664"
+        "index.html:effectiveMoveAccuracy:9681"
       ],
       "tests": [
         "test-hit-event-multiturn.js",
@@ -1640,7 +1640,7 @@
       "classification": "部分実装",
       "assessmentScope": "確認済み特性かつ観測HP満タン時のひこう技優先度+1。攻撃技・変化技とHP減少時を実Showdown48ケースで比較。",
       "executableReferences": [
-        "index.html:movePriorityForActor:10761"
+        "index.html:movePriorityForActor:10778"
       ],
       "tests": [
         "test-gale-wings-differential.js"
@@ -1842,7 +1842,7 @@
       "classification": "部分実装",
       "assessmentScope": "Poison secondary forecast type-immunity bypass only; independent trySetStatus comparison. Damage immunity, hazards and direct status action pipeline remain separate/incomplete.",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11383"
+        "index.html:forecastCommonSecondaryStatus:11400"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2012,7 +2012,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11388"
+        "index.html:forecastCommonSecondaryStatus:11405"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -2319,7 +2319,7 @@
       "assessmentScope": "共通の行動順経路で後攻化・攻撃技限定の確率先制を扱う。表示だけが未対応だった。",
       "executableReferences": [
         "index.html:activeOrderCaveats:8163",
-        "index.html:orderEffectProfile:10770",
+        "index.html:orderEffectProfile:10787",
         "turn-order-effects.js:analyse:20"
       ],
       "tests": [
@@ -2650,7 +2650,7 @@
         "index.html:applyConfirmedTargetRanks:6609",
         "index.html:receiveIntimidate:7345",
         "index.html:triggerEntryAbility:7400",
-        "index.html:planCommonSecondaryForecast:11472"
+        "index.html:planCommonSecondaryForecast:11489"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2828,7 +2828,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11387"
+        "index.html:forecastCommonSecondaryStatus:11404"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -3060,7 +3060,7 @@
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
         "index.html:confirmedSleepProtection:6480",
-        "index.html:forecastCommonSecondaryStatus:11391"
+        "index.html:forecastCommonSecondaryStatus:11408"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"

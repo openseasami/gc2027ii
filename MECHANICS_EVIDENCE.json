@@ -1015,6 +1015,46 @@
         "browser_main_matchups_test.py"
       ],
       "scope": "Known Infiltrator ignores Reflect/Light Screen/Aurora Veil in both damage adapters on selected 120-profile matchups. Other bypassed effects and unknown ability confirmation not fully certified."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "つけあがる",
+        "ひゃっきやこう",
+        "アイアンローラー",
+        "ポルターガイスト"
+      ],
+      "paths": [
+        "index.html:resolveMoveForDamage",
+        "index.html:damageEstimate",
+        "index.html:opponentDamageEstimateAgainstMy",
+        "index.html:multiHitKOEstimate"
+      ],
+      "unitTests": [
+        "test-pending-move-conditions.js"
+      ],
+      "integrationTests": [
+        "browser_pending_twenty_test.py"
+      ],
+      "scope": "Pinned Gen9 damage core with independent Champions numeric metadata: explicit stats, both per-hit directions, positive/negative/capped ranks, status/Comatose, four terrains, known/no/unknown/consumed target item, burn/screens/Life Orb, immunities, one/two active targets. Outgoing fixed-two-hit clipped total distributions only for Twin Beam and Dual Wingbeat. No secondary effects, opponent uncertainty resolution, incoming multihit totals, history-dependent moves or recommendations certified."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "ツインビーム",
+        "ダブルウイング"
+      ],
+      "paths": [
+        "index.html:resolveMoveForDamage",
+        "index.html:damageEstimate",
+        "index.html:opponentDamageEstimateAgainstMy",
+        "index.html:multiHitKOEstimate"
+      ],
+      "unitTests": [],
+      "integrationTests": [
+        "browser_pending_twenty_test.py"
+      ],
+      "scope": "Existing fixed-two-hit path reused. Real-page outgoing/incoming per-strike damage and outgoing two-hit clipped total distribution independently matched. No new unit handler; no certification of incoming total or all item/ability interactions."
     }
   ],
   "outOfCatalogEvidence": [

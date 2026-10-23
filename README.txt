@@ -1,11 +1,11 @@
-v2.9.11
+v2.9.12
 PC起動方法: PC_TRIAL_START.md / start-pc-trial.cmd
 開発途中です。完成判定はfalse。ローカル大会向け検査は123/123成功、大会仕様と実端末操作は未確認。
 大会向け条件/結果: TOURNAMENT_PRACTICAL_GATES.md / TOURNAMENT_PRACTICAL_RESULTS.json
 今回の実装・検証・残件: DEVELOPMENT_CHECKPOINT.md / COMPLETION_REPORT.md
 網羅性の5分類と元91件の監査: COVERAGE_AUDIT.md / ABILITY_UNSUPPORTED_REVIEW.json
 全テスト再実行: python run-development-checks.py（requirements-dev.txtとChromiumが必要）
-公開用一式: release/gc2027ii-v2.9.11-development.zip
+公開用一式: release/gc2027ii-v2.9.12-development.zip
 mainと公開サイトは変更していません。
 
 以下は過去の版の更新履歴です。検証範囲と完成判定の最新情報は上記レポートを参照してください。

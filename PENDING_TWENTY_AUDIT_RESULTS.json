@@ -1,0 +1,1011 @@
+{
+  "completion": false,
+  "baseCommit": "63c00636be95da872325e5828c37477edaab3f79",
+  "sourceSha256": "5f0123fd7ee1d4097d96454b2e6f2a341fdade6da27301a84755a323c16ed408",
+  "evidenceSha256": {
+    "pending-move-oracle.js": "ad87b2f15be569ebab63205af5a3fc46b326efa3c256a3e6f9766a57a4503974",
+    "browser_pending_twenty_test.py": "a5759c89636acad32927542ad086d6634f26f9d1eb8c237c7b767b0a48df01e0",
+    "reference-data/stats-moves/PROVENANCE.json": "f8c809428b7da7cf505d1a7064edd5d397a332047728084cd7dabbcc75b53373",
+    "reference-data/stats-moves/showdown-normalized.json": "547c7a2070efb6bdf4bda1866dbe31773fdc517ba14fc8f8995d888ddd2711d9"
+  },
+  "total": 20,
+  "metadataVerified": 20,
+  "calculationVerified": 6,
+  "calculationUnverified": 14,
+  "newDamageHandlers": 4,
+  "reusedDamageHandlers": 2,
+  "moves": [
+    {
+      "name": "ツインビーム",
+      "id": "twinbeam",
+      "initialReasonCategory": "existing-multihit-path",
+      "initialReason": "既存2連続処理が通常1発マトリクスから除外されていた",
+      "metadataVerified": true,
+      "general": {
+        "power": 40,
+        "type": "エスパー",
+        "cat": "spec",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "multihit": 2,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 40,
+        "type": "エスパー",
+        "cat": "spec",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "multihit": 2,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 40,
+        "type": "エスパー",
+        "cat": "spec",
+        "spread": false
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "verified-scoped",
+      "remaining": null,
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": {
+        "cases": 240,
+        "damageComparisons": 3840,
+        "accuracyComparisons": 1200,
+        "totalDistributionComparisons": 933,
+        "failures": 0
+      },
+      "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
+    },
+    {
+      "name": "ダブルウイング",
+      "id": "dualwingbeat",
+      "initialReasonCategory": "existing-multihit-path",
+      "initialReason": "既存2連続処理が通常1発マトリクスから除外されていた",
+      "metadataVerified": true,
+      "general": {
+        "power": 40,
+        "type": "ひこう",
+        "cat": "phys",
+        "accuracy": 0.9,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "multihit": 2,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 40,
+        "type": "ひこう",
+        "cat": "phys",
+        "accuracy": 0.9,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "multihit": 2,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 40,
+        "type": "ひこう",
+        "cat": "phys",
+        "spread": false
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "verified-scoped",
+      "remaining": null,
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": {
+        "cases": 240,
+        "damageComparisons": 3840,
+        "accuracyComparisons": 1200,
+        "totalDistributionComparisons": 1133,
+        "failures": 0
+      },
+      "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
+    },
+    {
+      "name": "いのちがけ",
+      "id": "finalgambit",
+      "initialReasonCategory": "special-damage",
+      "initialReason": "使用者の正確な現在HPを使う固定ダメージ経路が未実装。通常式では計算不可",
+      "metadataVerified": true,
+      "general": {
+        "power": 0,
+        "type": "かくとう",
+        "cat": "spec",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "willCrit": false,
+        "damageCallback": true
+      },
+      "champions": {
+        "power": 0,
+        "type": "かくとう",
+        "cat": "spec",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "willCrit": false,
+        "damageCallback": true
+      },
+      "runtime": {
+        "power": 0,
+        "type": "かくとう",
+        "cat": "spec",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "使用者の正確な現在HPを使う固定ダメージ経路が未実装。通常式では計算不可",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "アイアンローラー",
+      "id": "steelroller",
+      "initialReasonCategory": "field-condition",
+      "initialReason": "フィールド有無による成立判定が未接続",
+      "metadataVerified": true,
+      "general": {
+        "power": 130,
+        "type": "はがね",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 130,
+        "type": "はがね",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 130,
+        "type": "はがね",
+        "cat": "phys",
+        "spread": false
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "verified-scoped",
+      "remaining": null,
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": {
+        "cases": 240,
+        "damageComparisons": 768,
+        "accuracyComparisons": 240,
+        "totalDistributionComparisons": 0,
+        "failures": 0
+      },
+      "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
+    },
+    {
+      "name": "つけあがる",
+      "id": "powertrip",
+      "initialReasonCategory": "variable-power",
+      "initialReason": "正の全7能力ランク合計からの威力計算が未接続",
+      "metadataVerified": true,
+      "general": {
+        "power": 20,
+        "type": "あく",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 20,
+        "type": "あく",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 20,
+        "type": "あく",
+        "cat": "phys",
+        "spread": false
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "verified-scoped",
+      "remaining": null,
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": {
+        "cases": 240,
+        "damageComparisons": 3840,
+        "accuracyComparisons": 1200,
+        "totalDistributionComparisons": 0,
+        "failures": 0
+      },
+      "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
+    },
+    {
+      "name": "ふんどのこぶし",
+      "id": "ragefist",
+      "initialReasonCategory": "missing-history",
+      "initialReason": "交代をまたいだ被命中回数が必要。ランクや現在HPから推測不可",
+      "metadataVerified": true,
+      "general": {
+        "power": 50,
+        "type": "ゴースト",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 50,
+        "type": "ゴースト",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 0,
+        "type": "ゴースト",
+        "cat": "phys",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "交代をまたいだ被命中回数が必要。ランクや現在HPから推測不可",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "ドラゴンアロー",
+      "id": "dragondarts",
+      "initialReasonCategory": "multitarget-multihit",
+      "initialReason": "2体への振り分け/無効・守る時の再配分が未実装。範囲0.75倍ではない",
+      "metadataVerified": true,
+      "general": {
+        "power": 50,
+        "type": "ドラゴン",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "multihit": 2,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 50,
+        "type": "ドラゴン",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "multihit": 2,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 0,
+        "type": "ドラゴン",
+        "cat": "phys",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "2体への振り分け/無効・守る時の再配分が未実装。範囲0.75倍ではない",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "ネズミざん",
+      "id": "populationbomb",
+      "initialReasonCategory": "per-hit-accuracy",
+      "initialReason": "各打撃の命中/中断と最大10回・ダイスの回数分布が未実装",
+      "metadataVerified": true,
+      "general": {
+        "power": 20,
+        "type": "ノーマル",
+        "cat": "phys",
+        "accuracy": 0.9,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "multihit": 10,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 20,
+        "type": "ノーマル",
+        "cat": "phys",
+        "accuracy": 0.9,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "multihit": 10,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 0,
+        "type": "ノーマル",
+        "cat": "phys",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "各打撃の命中/中断と最大10回・ダイスの回数分布が未実装",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "いかりのまえば",
+      "id": "superfang",
+      "initialReasonCategory": "special-damage",
+      "initialReason": "対象の正確な現在HPの半分を使う特殊ダメージ経路が未実装",
+      "metadataVerified": true,
+      "general": {
+        "power": 0,
+        "type": "ノーマル",
+        "cat": "phys",
+        "accuracy": 0.9,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "willCrit": false,
+        "damageCallback": true
+      },
+      "champions": {
+        "power": 0,
+        "type": "ノーマル",
+        "cat": "phys",
+        "accuracy": 0.9,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "willCrit": false,
+        "damageCallback": true
+      },
+      "runtime": {
+        "power": 0,
+        "type": "ノーマル",
+        "cat": "phys",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "対象の正確な現在HPの半分を使う特殊ダメージ経路が未実装",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "ふくろだたき",
+      "id": "beatup",
+      "initialReasonCategory": "party-dependent",
+      "initialReason": "参加可能な非瀕死/非状態異常の各味方の種族攻撃値から1発ずつ算定する経路が未実装",
+      "metadataVerified": true,
+      "general": {
+        "power": 0,
+        "type": "あく",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 0,
+        "type": "あく",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 0,
+        "type": "あく",
+        "cat": "phys",
+        "catalogOnly": true,
+        "spread": false
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "参加可能な非瀕死/非状態異常の各味方の種族攻撃値から1発ずつ算定する経路が未実装",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "ポルターガイスト",
+      "id": "poltergeist",
+      "initialReasonCategory": "item-condition",
+      "initialReason": "持ち物所持の成立条件が未接続。相手持ち物未確認時は計算保留",
+      "metadataVerified": true,
+      "general": {
+        "power": 110,
+        "type": "ゴースト",
+        "cat": "phys",
+        "accuracy": 0.9,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 110,
+        "type": "ゴースト",
+        "cat": "phys",
+        "accuracy": 0.9,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 110,
+        "type": "ゴースト",
+        "cat": "phys",
+        "spread": false
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "verified-scoped",
+      "remaining": null,
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": {
+        "cases": 240,
+        "damageComparisons": 192,
+        "accuracyComparisons": 60,
+        "totalDistributionComparisons": 0,
+        "failures": 0
+      },
+      "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
+    },
+    {
+      "name": "ひゃっきやこう",
+      "id": "infernalparade",
+      "initialReasonCategory": "status-condition",
+      "initialReason": "状態異常/ぜったいねむりによる倍威力が未接続",
+      "metadataVerified": true,
+      "general": {
+        "power": 60,
+        "type": "ゴースト",
+        "cat": "spec",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 65,
+        "type": "ゴースト",
+        "cat": "spec",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 65,
+        "type": "ゴースト",
+        "cat": "spec",
+        "spread": false
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "verified-scoped",
+      "remaining": null,
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": {
+        "cases": 240,
+        "damageComparisons": 3840,
+        "accuracyComparisons": 1200,
+        "totalDistributionComparisons": 0,
+        "failures": 0
+      },
+      "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
+    },
+    {
+      "name": "トリプルアクセル",
+      "id": "tripleaxel",
+      "initialReasonCategory": "per-hit-power-accuracy",
+      "initialReason": "20/40/60の威力推移、各打撃命中と中断が未実装",
+      "metadataVerified": true,
+      "general": {
+        "power": 20,
+        "type": "こおり",
+        "cat": "phys",
+        "accuracy": 0.9,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "multihit": 3,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 20,
+        "type": "こおり",
+        "cat": "phys",
+        "accuracy": 0.9,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "multihit": 3,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 0,
+        "type": "こおり",
+        "cat": "phys",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "20/40/60の威力推移、各打撃命中と中断が未実装",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "しっぺがえし",
+      "id": "payback",
+      "initialReasonCategory": "same-turn-order",
+      "initialReason": "対象の当該ターン行動済み情報と交代扱いが必要。単なる素早さ比較で代用不可",
+      "metadataVerified": true,
+      "general": {
+        "power": 50,
+        "type": "あく",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 50,
+        "type": "あく",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 0,
+        "type": "あく",
+        "cat": "phys",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "対象の当該ターン行動済み情報と交代扱いが必要。単なる素早さ比較で代用不可",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "とっておき",
+      "id": "lastresort",
+      "initialReasonCategory": "missing-history",
+      "initialReason": "実際の4技構成と他の全技使用履歴による成立判定が未実装",
+      "metadataVerified": true,
+      "general": {
+        "power": 140,
+        "type": "ノーマル",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 140,
+        "type": "ノーマル",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 0,
+        "type": "ノーマル",
+        "cat": "phys",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "実際の4技構成と他の全技使用履歴による成立判定が未実装",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "みずしゅりけん",
+      "id": "watershuriken",
+      "initialReasonCategory": "variable-multihit",
+      "initialReason": "2〜5打撃と特定形態/特性の例外を含む集計が未接続",
+      "metadataVerified": true,
+      "general": {
+        "power": 15,
+        "type": "みず",
+        "cat": "spec",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "multihit": [
+          2,
+          5
+        ],
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 15,
+        "type": "みず",
+        "cat": "spec",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "multihit": [
+          2,
+          5
+        ],
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 0,
+        "type": "みず",
+        "cat": "spec",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "2〜5打撃と特定形態/特性の例外を含む集計が未接続",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "やけっぱち",
+      "id": "temperflare",
+      "initialReasonCategory": "missing-history",
+      "initialReason": "前ターンの失敗/行動不能/交代の区別と保存履歴が未接続",
+      "metadataVerified": true,
+      "general": {
+        "power": 75,
+        "type": "ほのお",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 75,
+        "type": "ほのお",
+        "cat": "phys",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 0,
+        "type": "ほのお",
+        "cat": "phys",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "前ターンの失敗/行動不能/交代の区別と保存履歴が未接続",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "じわれ",
+      "id": "fissure",
+      "initialReasonCategory": "ohko",
+      "initialReason": "通常ダメージ式の対象外。レベル条件/地面無効/がんじょう/一撃必殺命中の専用経路が未実装",
+      "metadataVerified": true,
+      "general": {
+        "power": 0,
+        "type": "じめん",
+        "cat": "phys",
+        "accuracy": 0.3,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "ohko": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 0,
+        "type": "じめん",
+        "cat": "phys",
+        "accuracy": 0.3,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "ohko": true,
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 0,
+        "type": "じめん",
+        "cat": "phys",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "通常ダメージ式の対象外。レベル条件/地面無効/がんじょう/一撃必殺命中の専用経路が未実装",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "ミラーコート",
+      "id": "mirrorcoat",
+      "initialReasonCategory": "received-damage",
+      "initialReason": "当該ターンに受けた特殊ダメージ/攻撃者/対象指定の専用経路が未実装",
+      "metadataVerified": true,
+      "general": {
+        "power": 0,
+        "type": "エスパー",
+        "cat": "spec",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "scripted",
+        "variable": false,
+        "willCrit": false,
+        "damageCallback": true
+      },
+      "champions": {
+        "power": 0,
+        "type": "エスパー",
+        "cat": "spec",
+        "accuracy": 1,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "scripted",
+        "variable": false,
+        "willCrit": false,
+        "damageCallback": true
+      },
+      "runtime": {
+        "power": 0,
+        "type": "エスパー",
+        "cat": "spec",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "当該ターンに受けた特殊ダメージ/攻撃者/対象指定の専用経路が未実装",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    },
+    {
+      "name": "ぜったいれいど",
+      "id": "sheercold",
+      "initialReasonCategory": "ohko",
+      "initialReason": "通常式の対象外。レベル/氷タイプ使用者の命中差・氷対象無効等の専用経路が未実装",
+      "metadataVerified": true,
+      "general": {
+        "power": 0,
+        "type": "こおり",
+        "cat": "spec",
+        "accuracy": 0.3,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "ohko": "Ice",
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "champions": {
+        "power": 0,
+        "type": "こおり",
+        "cat": "spec",
+        "accuracy": 0.3,
+        "alwaysHit": false,
+        "spread": false,
+        "target": "normal",
+        "variable": false,
+        "ohko": "Ice",
+        "willCrit": false,
+        "damageCallback": false
+      },
+      "runtime": {
+        "power": 0,
+        "type": "こおり",
+        "cat": "spec",
+        "spread": false,
+        "catalogOnly": true
+      },
+      "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+      "calculationStatus": "unverified",
+      "remaining": "通常式の対象外。レベル/氷タイプ使用者の命中差・氷対象無効等の専用経路が未実装",
+      "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+      "independentCalculationEvidence": null,
+      "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+    }
+  ],
+  "differential": {
+    "completion": false,
+    "oracle": "pokemon-showdown@0.11.10; pinned upstream Champions numeric metadata only",
+    "scenarios": 1440,
+    "damageComparisons": 16320,
+    "accuracyComparisons": 5100,
+    "totalDistributionComparisons": 2066,
+    "conditionComparisons": 1440,
+    "byMove": {
+      "ツインビーム": {
+        "cases": 240,
+        "damageComparisons": 3840,
+        "accuracyComparisons": 1200,
+        "totalDistributionComparisons": 933,
+        "failures": 0
+      },
+      "ダブルウイング": {
+        "cases": 240,
+        "damageComparisons": 3840,
+        "accuracyComparisons": 1200,
+        "totalDistributionComparisons": 1133,
+        "failures": 0
+      },
+      "アイアンローラー": {
+        "cases": 240,
+        "damageComparisons": 768,
+        "accuracyComparisons": 240,
+        "totalDistributionComparisons": 0,
+        "failures": 0
+      },
+      "つけあがる": {
+        "cases": 240,
+        "damageComparisons": 3840,
+        "accuracyComparisons": 1200,
+        "totalDistributionComparisons": 0,
+        "failures": 0
+      },
+      "ポルターガイスト": {
+        "cases": 240,
+        "damageComparisons": 192,
+        "accuracyComparisons": 60,
+        "totalDistributionComparisons": 0,
+        "failures": 0
+      },
+      "ひゃっきやこう": {
+        "cases": 240,
+        "damageComparisons": 3840,
+        "accuracyComparisons": 1200,
+        "totalDistributionComparisons": 0,
+        "failures": 0
+      }
+    },
+    "failureCount": 0,
+    "failures": []
+  },
+  "limitations": [
+    "No official Champions engine certification. Numeric metadata comes from pinned Champions source; behavioral callbacks from pinned general Gen9 engine.",
+    "Unsupported mechanics have independent metadata/spec sources but no implemented, independently tested runtime damage route.",
+    "No Choice Band/Choice Specs, UI changes, species stat changes, secondary effects or recommendation redesign."
+  ]
+}

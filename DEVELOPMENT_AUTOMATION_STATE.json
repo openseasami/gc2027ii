@@ -1652,6 +1652,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-23T02:42:33.997983+00:00",
+      "commit": "63c00636be95da872325e5828c37477edaab3f79",
+      "reason": "User-narrowed twenty-move audit: 4 conditional damage handlers, 2 existing multihit paths independently checked; 14 explicitly unverified; 131 regression commands passed; no broad claims or deployment.",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {

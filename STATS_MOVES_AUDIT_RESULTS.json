@@ -5,7 +5,7 @@
     "majorMoveData": true,
     "majorMoveCalculationAllVerified": false
   },
-  "sourceSha256": "9b7306fed5dcc5ab63dc6c74646d601508f428956681fae2d3d351857d7acc9d",
+  "sourceSha256": "5f0123fd7ee1d4097d96454b2e6f2a341fdade6da27301a84755a323c16ed408",
   "referenceProvenance": "reference-data/stats-moves/PROVENANCE.json",
   "speciesSummary": {
     "targets": 344,
@@ -28,8 +28,8 @@
     "recordedAttackMoves": 207,
     "metadataVerified": 207,
     "majorAttackMoves": 179,
-    "majorCalculationVerified": 159,
-    "majorCalculationUnverified": 20,
+    "majorCalculationVerified": 165,
+    "majorCalculationUnverified": 14,
     "majorThreshold": "At least one stored adoption-120 profile records >=10%; all recorded attacks also receive metadata audit."
   },
   "errors": [],
@@ -61,18 +61,12 @@
     }
   ],
   "unverifiedMajorMoves": [
-    "ツインビーム",
-    "ダブルウイング",
     "いのちがけ",
-    "アイアンローラー",
-    "つけあがる",
     "ふんどのこぶし",
     "ドラゴンアロー",
     "ネズミざん",
     "いかりのまえば",
     "ふくろだたき",
-    "ポルターガイスト",
-    "ひゃっきやこう",
     "トリプルアクセル",
     "しっぺがえし",
     "とっておき",
@@ -63544,6 +63538,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -63652,6 +63647,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -63712,6 +63708,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -63784,6 +63781,7 @@
       },
       "accuracy": 0.95,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -63880,6 +63878,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -63976,6 +63975,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -64028,6 +64028,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -64105,6 +64106,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -64165,6 +64167,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -64281,6 +64284,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -64333,6 +64337,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -64457,6 +64462,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -64541,6 +64547,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -64601,6 +64608,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -64653,6 +64661,7 @@
       },
       "accuracy": 0.95,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -64721,6 +64730,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -64789,6 +64799,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -64841,6 +64852,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -64929,6 +64941,7 @@
       },
       "accuracy": 0.95,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65022,6 +65035,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65106,6 +65120,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65226,6 +65241,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65283,6 +65299,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65391,6 +65408,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65487,6 +65505,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65583,6 +65602,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65639,6 +65659,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65699,6 +65720,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65759,6 +65781,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65843,6 +65866,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65895,6 +65919,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -65991,6 +66016,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -66091,6 +66117,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -66163,6 +66190,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -66232,6 +66260,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -66285,6 +66314,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -66334,6 +66364,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -66385,6 +66416,7 @@
       },
       "accuracy": 0.3,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -66481,6 +66513,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -66545,6 +66578,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -66613,6 +66647,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -66721,6 +66756,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -66773,6 +66809,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -66853,6 +66890,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -66933,6 +66971,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67033,6 +67072,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67122,6 +67162,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67178,6 +67219,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67238,6 +67280,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67310,6 +67353,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67378,6 +67422,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67454,6 +67499,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67526,6 +67572,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67591,6 +67638,7 @@
       },
       "accuracy": 0.95,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67647,6 +67695,7 @@
       },
       "accuracy": 0.8,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67716,6 +67765,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67773,6 +67823,7 @@
           0.95
         ]
       },
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67885,6 +67936,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -67957,6 +68009,7 @@
       },
       "accuracy": 0.7,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68045,6 +68098,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68125,6 +68179,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68189,6 +68244,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68253,6 +68309,7 @@
       },
       "accuracy": 0.7,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68305,6 +68362,7 @@
       },
       "accuracy": 0.95,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68361,6 +68419,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68422,6 +68481,7 @@
           100
         ]
       },
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68483,6 +68543,7 @@
       },
       "accuracy": 0.95,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68535,6 +68596,7 @@
       },
       "accuracy": 0.5,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68611,6 +68673,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68664,6 +68727,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -68724,6 +68788,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68780,6 +68845,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -68888,6 +68954,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -68972,6 +69039,7 @@
       },
       "accuracy": 0.85,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -69037,6 +69105,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -69101,6 +69170,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -69185,6 +69255,7 @@
       },
       "accuracy": 0.95,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -69239,9 +69310,60 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
-      "basicCalculation": "not-verified-in-this-matrix",
+      "pendingTwentyEvidence": {
+        "name": "ツインビーム",
+        "id": "twinbeam",
+        "initialReasonCategory": "existing-multihit-path",
+        "initialReason": "既存2連続処理が通常1発マトリクスから除外されていた",
+        "metadataVerified": true,
+        "general": {
+          "power": 40,
+          "type": "エスパー",
+          "cat": "spec",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "multihit": 2,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 40,
+          "type": "エスパー",
+          "cat": "spec",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "multihit": 2,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 40,
+          "type": "エスパー",
+          "cat": "spec",
+          "spread": false
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "verified-scoped",
+        "remaining": null,
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": {
+          "cases": 240,
+          "damageComparisons": 3840,
+          "accuracyComparisons": 1200,
+          "totalDistributionComparisons": 933,
+          "failures": 0
+        },
+        "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
+      },
+      "basicCalculation": "verified-scoped-pending-twenty",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": null
     },
     {
       "name": "ワイドフォース",
@@ -69335,6 +69457,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -69387,6 +69510,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -69443,6 +69567,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -69519,6 +69644,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -69584,6 +69710,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -69654,9 +69781,60 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
-      "basicCalculation": "not-verified-in-this-matrix",
+      "pendingTwentyEvidence": {
+        "name": "ダブルウイング",
+        "id": "dualwingbeat",
+        "initialReasonCategory": "existing-multihit-path",
+        "initialReason": "既存2連続処理が通常1発マトリクスから除外されていた",
+        "metadataVerified": true,
+        "general": {
+          "power": 40,
+          "type": "ひこう",
+          "cat": "phys",
+          "accuracy": 0.9,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "multihit": 2,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 40,
+          "type": "ひこう",
+          "cat": "phys",
+          "accuracy": 0.9,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "multihit": 2,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 40,
+          "type": "ひこう",
+          "cat": "phys",
+          "spread": false
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "verified-scoped",
+        "remaining": null,
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": {
+          "cases": 240,
+          "damageComparisons": 3840,
+          "accuracyComparisons": 1200,
+          "totalDistributionComparisons": 1133,
+          "failures": 0
+        },
+        "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
+      },
+      "basicCalculation": "verified-scoped-pending-twenty",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": null
     },
     {
       "name": "いのちがけ",
@@ -69703,9 +69881,53 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "いのちがけ",
+        "id": "finalgambit",
+        "initialReasonCategory": "special-damage",
+        "initialReason": "使用者の正確な現在HPを使う固定ダメージ経路が未実装。通常式では計算不可",
+        "metadataVerified": true,
+        "general": {
+          "power": 0,
+          "type": "かくとう",
+          "cat": "spec",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "willCrit": false,
+          "damageCallback": true
+        },
+        "champions": {
+          "power": 0,
+          "type": "かくとう",
+          "cat": "spec",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "willCrit": false,
+          "damageCallback": true
+        },
+        "runtime": {
+          "power": 0,
+          "type": "かくとう",
+          "cat": "spec",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "使用者の正確な現在HPを使う固定ダメージ経路が未実装。通常式では計算不可",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "使用者の正確な現在HPを使う固定ダメージ経路が未実装。通常式では計算不可"
     },
     {
       "name": "ブレイズキック",
@@ -69756,6 +69978,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -69836,6 +70059,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -69893,6 +70117,7 @@
       },
       "accuracy": 0.8,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -69946,6 +70171,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -70010,6 +70236,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70094,6 +70321,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70150,6 +70378,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70202,6 +70431,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -70243,17 +70473,65 @@
       },
       "runtimeKey": "アイアンローラー",
       "runtimeMetadata": {
-        "power": 0,
+        "power": 130,
         "type": "はがね",
         "cat": "phys",
-        "spread": false,
-        "catalogOnly": true
+        "spread": false
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
-      "basicCalculation": "not-verified-in-this-matrix",
+      "pendingTwentyEvidence": {
+        "name": "アイアンローラー",
+        "id": "steelroller",
+        "initialReasonCategory": "field-condition",
+        "initialReason": "フィールド有無による成立判定が未接続",
+        "metadataVerified": true,
+        "general": {
+          "power": 130,
+          "type": "はがね",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 130,
+          "type": "はがね",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 130,
+          "type": "はがね",
+          "cat": "phys",
+          "spread": false
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "verified-scoped",
+        "remaining": null,
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": {
+          "cases": 240,
+          "damageComparisons": 768,
+          "accuracyComparisons": 240,
+          "totalDistributionComparisons": 0,
+          "failures": 0
+        },
+        "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
+      },
+      "basicCalculation": "verified-scoped-pending-twenty",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": null
     },
     {
       "name": "ボディプレス",
@@ -70315,6 +70593,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70372,6 +70651,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70425,6 +70705,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70477,6 +70758,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70530,6 +70812,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70618,6 +70901,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70674,6 +70958,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70729,6 +71014,7 @@
       },
       "accuracy": 0.3,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -70778,6 +71064,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70839,6 +71126,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70900,6 +71188,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -70957,6 +71246,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71038,6 +71328,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71094,6 +71385,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71147,6 +71439,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71207,6 +71500,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71259,6 +71553,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71323,6 +71618,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71376,6 +71672,7 @@
       },
       "accuracy": 0.95,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71445,6 +71742,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71509,6 +71807,7 @@
       },
       "accuracy": 0.7,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71585,6 +71884,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71658,6 +71958,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71715,6 +72016,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71776,6 +72078,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71841,6 +72144,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71894,6 +72198,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -71959,6 +72264,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -72016,6 +72322,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -72081,6 +72388,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -72130,6 +72438,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -72179,6 +72488,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -72220,17 +72530,65 @@
       },
       "runtimeKey": "つけあがる",
       "runtimeMetadata": {
-        "power": 0,
+        "power": 20,
         "type": "あく",
         "cat": "phys",
-        "spread": false,
-        "catalogOnly": true
+        "spread": false
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
-      "basicCalculation": "not-verified-in-this-matrix",
+      "pendingTwentyEvidence": {
+        "name": "つけあがる",
+        "id": "powertrip",
+        "initialReasonCategory": "variable-power",
+        "initialReason": "正の全7能力ランク合計からの威力計算が未接続",
+        "metadataVerified": true,
+        "general": {
+          "power": 20,
+          "type": "あく",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 20,
+          "type": "あく",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 20,
+          "type": "あく",
+          "cat": "phys",
+          "spread": false
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "verified-scoped",
+        "remaining": null,
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": {
+          "cases": 240,
+          "damageComparisons": 3840,
+          "accuracyComparisons": 1200,
+          "totalDistributionComparisons": 0,
+          "failures": 0
+        },
+        "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
+      },
+      "basicCalculation": "verified-scoped-pending-twenty",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": null
     },
     {
       "name": "サイコショック",
@@ -72276,6 +72634,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -72329,9 +72688,53 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "ふんどのこぶし",
+        "id": "ragefist",
+        "initialReasonCategory": "missing-history",
+        "initialReason": "交代をまたいだ被命中回数が必要。ランクや現在HPから推測不可",
+        "metadataVerified": true,
+        "general": {
+          "power": 50,
+          "type": "ゴースト",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 50,
+          "type": "ゴースト",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 0,
+          "type": "ゴースト",
+          "cat": "phys",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "交代をまたいだ被命中回数が必要。ランクや現在HPから推測不可",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "交代をまたいだ被命中回数が必要。ランクや現在HPから推測不可"
     },
     {
       "name": "シャドークロー",
@@ -72390,6 +72793,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -72442,6 +72846,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -72499,6 +72904,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -72552,6 +72958,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -72609,6 +73016,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -72678,6 +73086,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -72733,9 +73142,55 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "ドラゴンアロー",
+        "id": "dragondarts",
+        "initialReasonCategory": "multitarget-multihit",
+        "initialReason": "2体への振り分け/無効・守る時の再配分が未実装。範囲0.75倍ではない",
+        "metadataVerified": true,
+        "general": {
+          "power": 50,
+          "type": "ドラゴン",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "multihit": 2,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 50,
+          "type": "ドラゴン",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "multihit": 2,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 0,
+          "type": "ドラゴン",
+          "cat": "phys",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "2体への振り分け/無効・守る時の再配分が未実装。範囲0.75倍ではない",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "2体への振り分け/無効・守る時の再配分が未実装。範囲0.75倍ではない"
     },
     {
       "name": "ネズミざん",
@@ -72784,9 +73239,55 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "ネズミざん",
+        "id": "populationbomb",
+        "initialReasonCategory": "per-hit-accuracy",
+        "initialReason": "各打撃の命中/中断と最大10回・ダイスの回数分布が未実装",
+        "metadataVerified": true,
+        "general": {
+          "power": 20,
+          "type": "ノーマル",
+          "cat": "phys",
+          "accuracy": 0.9,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "multihit": 10,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 20,
+          "type": "ノーマル",
+          "cat": "phys",
+          "accuracy": 0.9,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "multihit": 10,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 0,
+          "type": "ノーマル",
+          "cat": "phys",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "各打撃の命中/中断と最大10回・ダイスの回数分布が未実装",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "各打撃の命中/中断と最大10回・ダイスの回数分布が未実装"
     },
     {
       "name": "いかりのまえば",
@@ -72833,9 +73334,53 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "いかりのまえば",
+        "id": "superfang",
+        "initialReasonCategory": "special-damage",
+        "initialReason": "対象の正確な現在HPの半分を使う特殊ダメージ経路が未実装",
+        "metadataVerified": true,
+        "general": {
+          "power": 0,
+          "type": "ノーマル",
+          "cat": "phys",
+          "accuracy": 0.9,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "willCrit": false,
+          "damageCallback": true
+        },
+        "champions": {
+          "power": 0,
+          "type": "ノーマル",
+          "cat": "phys",
+          "accuracy": 0.9,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "willCrit": false,
+          "damageCallback": true
+        },
+        "runtime": {
+          "power": 0,
+          "type": "ノーマル",
+          "cat": "phys",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "対象の正確な現在HPの半分を使う特殊ダメージ経路が未実装",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "対象の正確な現在HPの半分を使う特殊ダメージ経路が未実装"
     },
     {
       "name": "ふくろだたき",
@@ -72882,9 +73427,53 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "ふくろだたき",
+        "id": "beatup",
+        "initialReasonCategory": "party-dependent",
+        "initialReason": "参加可能な非瀕死/非状態異常の各味方の種族攻撃値から1発ずつ算定する経路が未実装",
+        "metadataVerified": true,
+        "general": {
+          "power": 0,
+          "type": "あく",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 0,
+          "type": "あく",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 0,
+          "type": "あく",
+          "cat": "phys",
+          "catalogOnly": true,
+          "spread": false
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "参加可能な非瀕死/非状態異常の各味方の種族攻撃値から1発ずつ算定する経路が未実装",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "参加可能な非瀕死/非状態異常の各味方の種族攻撃値から1発ずつ算定する経路が未実装"
     },
     {
       "name": "かみつく",
@@ -72931,6 +73520,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -72979,6 +73569,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73052,6 +73643,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73117,6 +73709,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73174,6 +73767,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73227,6 +73821,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -73276,6 +73871,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73341,6 +73937,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73390,17 +73987,65 @@
       },
       "runtimeKey": "ポルターガイスト",
       "runtimeMetadata": {
-        "power": 0,
+        "power": 110,
         "type": "ゴースト",
         "cat": "phys",
-        "spread": false,
-        "catalogOnly": true
+        "spread": false
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
-      "basicCalculation": "not-verified-in-this-matrix",
+      "pendingTwentyEvidence": {
+        "name": "ポルターガイスト",
+        "id": "poltergeist",
+        "initialReasonCategory": "item-condition",
+        "initialReason": "持ち物所持の成立条件が未接続。相手持ち物未確認時は計算保留",
+        "metadataVerified": true,
+        "general": {
+          "power": 110,
+          "type": "ゴースト",
+          "cat": "phys",
+          "accuracy": 0.9,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 110,
+          "type": "ゴースト",
+          "cat": "phys",
+          "accuracy": 0.9,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 110,
+          "type": "ゴースト",
+          "cat": "phys",
+          "spread": false
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "verified-scoped",
+        "remaining": null,
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": {
+          "cases": 240,
+          "damageComparisons": 192,
+          "accuracyComparisons": 60,
+          "totalDistributionComparisons": 0,
+          "failures": 0
+        },
+        "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
+      },
+      "basicCalculation": "verified-scoped-pending-twenty",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": null
     },
     {
       "name": "ひゃっきやこう",
@@ -73439,11 +74084,10 @@
       },
       "runtimeKey": "ひゃっきやこう",
       "runtimeMetadata": {
-        "power": 0,
+        "power": 65,
         "type": "ゴースト",
         "cat": "spec",
-        "spread": false,
-        "catalogOnly": true
+        "spread": false
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {
@@ -73452,9 +74096,58 @@
           65
         ]
       },
-      "basicCalculation": "not-verified-in-this-matrix",
+      "pendingTwentyEvidence": {
+        "name": "ひゃっきやこう",
+        "id": "infernalparade",
+        "initialReasonCategory": "status-condition",
+        "initialReason": "状態異常/ぜったいねむりによる倍威力が未接続",
+        "metadataVerified": true,
+        "general": {
+          "power": 60,
+          "type": "ゴースト",
+          "cat": "spec",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 65,
+          "type": "ゴースト",
+          "cat": "spec",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 65,
+          "type": "ゴースト",
+          "cat": "spec",
+          "spread": false
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "verified-scoped",
+        "remaining": null,
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": {
+          "cases": 240,
+          "damageComparisons": 3840,
+          "accuracyComparisons": 1200,
+          "totalDistributionComparisons": 0,
+          "failures": 0
+        },
+        "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
+      },
+      "basicCalculation": "verified-scoped-pending-twenty",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": null
     },
     {
       "name": "じゃれつく",
@@ -73516,6 +74209,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73568,6 +74262,7 @@
       },
       "accuracy": 0.95,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -73622,6 +74317,7 @@
           85
         ]
       },
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73675,6 +74371,7 @@
       },
       "accuracy": 0.95,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73736,6 +74433,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73793,6 +74491,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73846,6 +74545,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73899,6 +74599,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -73966,9 +74667,55 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "トリプルアクセル",
+        "id": "tripleaxel",
+        "initialReasonCategory": "per-hit-power-accuracy",
+        "initialReason": "20/40/60の威力推移、各打撃命中と中断が未実装",
+        "metadataVerified": true,
+        "general": {
+          "power": 20,
+          "type": "こおり",
+          "cat": "phys",
+          "accuracy": 0.9,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "multihit": 3,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 20,
+          "type": "こおり",
+          "cat": "phys",
+          "accuracy": 0.9,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "multihit": 3,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 0,
+          "type": "こおり",
+          "cat": "phys",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "20/40/60の威力推移、各打撃命中と中断が未実装",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "20/40/60の威力推移、各打撃命中と中断が未実装"
     },
     {
       "name": "スターアサルト",
@@ -74020,6 +74767,7 @@
           170
         ]
       },
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74076,6 +74824,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74128,6 +74877,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74185,6 +74935,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -74237,6 +74988,7 @@
       },
       "accuracy": 0.85,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74297,6 +75049,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74354,6 +75107,7 @@
           85
         ]
       },
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74415,6 +75169,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74483,6 +75238,7 @@
       },
       "accuracy": 0.8,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74552,6 +75308,7 @@
       },
       "accuracy": 0.95,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74617,6 +75374,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74673,6 +75431,7 @@
       },
       "accuracy": 0.7,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -74722,6 +75481,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74774,6 +75534,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -74823,6 +75584,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -74876,6 +75638,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74929,6 +75692,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -74982,9 +75746,53 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "しっぺがえし",
+        "id": "payback",
+        "initialReasonCategory": "same-turn-order",
+        "initialReason": "対象の当該ターン行動済み情報と交代扱いが必要。単なる素早さ比較で代用不可",
+        "metadataVerified": true,
+        "general": {
+          "power": 50,
+          "type": "あく",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 50,
+          "type": "あく",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 0,
+          "type": "あく",
+          "cat": "phys",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "対象の当該ターン行動済み情報と交代扱いが必要。単なる素早さ比較で代用不可",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "対象の当該ターン行動済み情報と交代扱いが必要。単なる素早さ比較で代用不可"
     },
     {
       "name": "むしくい",
@@ -75031,6 +75839,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -75084,6 +75893,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -75133,9 +75943,53 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "とっておき",
+        "id": "lastresort",
+        "initialReasonCategory": "missing-history",
+        "initialReason": "実際の4技構成と他の全技使用履歴による成立判定が未実装",
+        "metadataVerified": true,
+        "general": {
+          "power": 140,
+          "type": "ノーマル",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 140,
+          "type": "ノーマル",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 0,
+          "type": "ノーマル",
+          "cat": "phys",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "実際の4技構成と他の全技使用履歴による成立判定が未実装",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "実際の4技構成と他の全技使用履歴による成立判定が未実装"
     },
     {
       "name": "アームハンマー",
@@ -75182,6 +76036,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -75235,6 +76090,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -75288,6 +76144,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -75337,6 +76194,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -75389,6 +76247,7 @@
       },
       "accuracy": 0.8,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -75442,6 +76301,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -75495,6 +76355,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -75552,6 +76413,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -75608,6 +76470,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -75669,9 +76532,61 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "みずしゅりけん",
+        "id": "watershuriken",
+        "initialReasonCategory": "variable-multihit",
+        "initialReason": "2〜5打撃と特定形態/特性の例外を含む集計が未接続",
+        "metadataVerified": true,
+        "general": {
+          "power": 15,
+          "type": "みず",
+          "cat": "spec",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "multihit": [
+            2,
+            5
+          ],
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 15,
+          "type": "みず",
+          "cat": "spec",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "multihit": [
+            2,
+            5
+          ],
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 0,
+          "type": "みず",
+          "cat": "spec",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "2〜5打撃と特定形態/特性の例外を含む集計が未接続",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "2〜5打撃と特定形態/特性の例外を含む集計が未接続"
     },
     {
       "name": "やけっぱち",
@@ -75718,9 +76633,53 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "やけっぱち",
+        "id": "temperflare",
+        "initialReasonCategory": "missing-history",
+        "initialReason": "前ターンの失敗/行動不能/交代の区別と保存履歴が未接続",
+        "metadataVerified": true,
+        "general": {
+          "power": 75,
+          "type": "ほのお",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 75,
+          "type": "ほのお",
+          "cat": "phys",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 0,
+          "type": "ほのお",
+          "cat": "phys",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "前ターンの失敗/行動不能/交代の区別と保存履歴が未接続",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "前ターンの失敗/行動不能/交代の区別と保存履歴が未接続"
     },
     {
       "name": "じわれ",
@@ -75769,9 +76728,55 @@
       },
       "accuracy": 0.3,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "じわれ",
+        "id": "fissure",
+        "initialReasonCategory": "ohko",
+        "initialReason": "通常ダメージ式の対象外。レベル条件/地面無効/がんじょう/一撃必殺命中の専用経路が未実装",
+        "metadataVerified": true,
+        "general": {
+          "power": 0,
+          "type": "じめん",
+          "cat": "phys",
+          "accuracy": 0.3,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "ohko": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 0,
+          "type": "じめん",
+          "cat": "phys",
+          "accuracy": 0.3,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "ohko": true,
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 0,
+          "type": "じめん",
+          "cat": "phys",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "通常ダメージ式の対象外。レベル条件/地面無効/がんじょう/一撃必殺命中の専用経路が未実装",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "通常ダメージ式の対象外。レベル条件/地面無効/がんじょう/一撃必殺命中の専用経路が未実装"
     },
     {
       "name": "のしかかり",
@@ -75818,6 +76823,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -75871,6 +76877,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -75927,6 +76934,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -75980,6 +76988,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -76033,6 +77042,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -76086,6 +77096,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -76139,6 +77150,7 @@
       },
       "accuracy": 0.95,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -76192,6 +77204,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -76245,6 +77258,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -76298,6 +77312,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -76351,9 +77366,53 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "ミラーコート",
+        "id": "mirrorcoat",
+        "initialReasonCategory": "received-damage",
+        "initialReason": "当該ターンに受けた特殊ダメージ/攻撃者/対象指定の専用経路が未実装",
+        "metadataVerified": true,
+        "general": {
+          "power": 0,
+          "type": "エスパー",
+          "cat": "spec",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "scripted",
+          "variable": false,
+          "willCrit": false,
+          "damageCallback": true
+        },
+        "champions": {
+          "power": 0,
+          "type": "エスパー",
+          "cat": "spec",
+          "accuracy": 1,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "scripted",
+          "variable": false,
+          "willCrit": false,
+          "damageCallback": true
+        },
+        "runtime": {
+          "power": 0,
+          "type": "エスパー",
+          "cat": "spec",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "当該ターンに受けた特殊ダメージ/攻撃者/対象指定の専用経路が未実装",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "当該ターンに受けた特殊ダメージ/攻撃者/対象指定の専用経路が未実装"
     },
     {
       "name": "とびかかる",
@@ -76400,6 +77459,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -76449,6 +77509,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -76502,6 +77563,7 @@
       },
       "accuracy": 0.9,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
       "unverifiedReason": "Below 10% recorded adoption; metadata audited, calculation not in primary matrix"
@@ -76551,6 +77613,7 @@
       },
       "accuracy": 1,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": null,
       "basicCalculation": "verified-in-explicit-matrix",
       "differential": {
         "cases": 52,
@@ -76606,9 +77669,55 @@
       },
       "accuracy": 0.3,
       "differenceFromGeneralIsChampionsOverride": {},
+      "pendingTwentyEvidence": {
+        "name": "ぜったいれいど",
+        "id": "sheercold",
+        "initialReasonCategory": "ohko",
+        "initialReason": "通常式の対象外。レベル/氷タイプ使用者の命中差・氷対象無効等の専用経路が未実装",
+        "metadataVerified": true,
+        "general": {
+          "power": 0,
+          "type": "こおり",
+          "cat": "spec",
+          "accuracy": 0.3,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "ohko": "Ice",
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "champions": {
+          "power": 0,
+          "type": "こおり",
+          "cat": "spec",
+          "accuracy": 0.3,
+          "alwaysHit": false,
+          "spread": false,
+          "target": "normal",
+          "variable": false,
+          "ohko": "Ice",
+          "willCrit": false,
+          "damageCallback": false
+        },
+        "runtime": {
+          "power": 0,
+          "type": "こおり",
+          "cat": "spec",
+          "spread": false,
+          "catalogOnly": true
+        },
+        "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
+        "calculationStatus": "unverified",
+        "remaining": "通常式の対象外。レベル/氷タイプ使用者の命中差・氷対象無効等の専用経路が未実装",
+        "externalDataEvidence": "reference-data/stats-moves/PROVENANCE.json",
+        "independentCalculationEvidence": null,
+        "scope": "Metadata only. No successful runtime damage comparison; not counted as calculation-verified."
+      },
       "basicCalculation": "not-verified-in-this-matrix",
       "differential": null,
-      "unverifiedReason": "Special/variable or multihit total calculation is unimplemented or outside this single-hit audit; not counted as verified."
+      "unverifiedReason": "通常式の対象外。レベル/氷タイプ使用者の命中差・氷対象無効等の専用経路が未実装"
     }
   ],
   "differential": {

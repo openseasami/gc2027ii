@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Global Challenge 2027 II Support v2.9.11</title>
+<title>Global Challenge 2027 II Support v2.9.12</title>
 <style>
 :root{--bg:#f4f6f8;--panel:#fff;--line:#d8dee8;--text:#18202b;--muted:#667085;--accent:#2563eb;--accent2:#dbeafe;--danger:#b42318;--warn:#fff4cc;--ok:#eaf7ee;--chip:#f8fafc;--violet:#7c3aed}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}button,select{font:inherit}button{cursor:pointer}
@@ -9045,6 +9045,23 @@ function resolveMoveForDamage(side,idx,name,moveName,mv,defenderSide=null,defend
   const expandingForce=moveName==='ワイドフォース'&&$('terrain')?.value==='サイコ'&&isGroundedPokemon(effectiveName,side,idx);
   if(expandingForce){abilityMod*=1.5;condition='接地・サイコフィールド';}
   if(moveName==='ソーラービーム'&&['雨','砂','雪'].includes(effectiveWeatherForDamage()))abilityMod*=.5;
+  // Basic damage only: recorded conditions, without applying secondary effects.
+  if(moveName==='つけあがる'){
+    const boosts=BATTLE_STAGE_KEYS.reduce((n,k)=>n+Math.max(0,Math.min(6,Number(state[side]?.[idx]?.[k])||0)),0);
+    power=20+20*boosts;condition=`正の能力ランク合計 ${boosts}`;
+  }
+  if(moveName==='ひゃっきやこう'){
+    const status=state[defenderSide]?.[defenderIdx]?.status;
+    if(['やけど','どく','もうどく','まひ','ねむり','こおり'].includes(status)||knownBattleAbility(defenderSide,defenderIdx,defenderName)==='ぜったいねむり')power*=2;
+  }
+  if(moveName==='アイアンローラー'&&!['グラス','サイコ','エレキ','ミスト'].includes($('terrain')?.value)){
+    power=0;condition='フィールドなし・技不成立';
+  }
+  if(moveName==='ポルターガイスト'){
+    const held=defenderIdx==null?{known:false}:knownHeldItemState(defenderSide,defenderIdx);
+    if(!held.known){power=0;condition='対象の持ち物未確認・計算不可';}
+    else if(!held.item){power=0;condition='対象の持ち物なし・技不成立';}
+  }
   if(moveName==='どくばりセンボン'&&['どく','もうどく'].includes(state[defenderSide]?.[defenderIdx]?.status))power*=2;
   if(moveName==='アクロバット'&&attackerKnownItemless(side,idx)){
     power=110;
@@ -9349,7 +9366,7 @@ function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderB
  const moveType=resolved.moveType,power=perHitPower==null?resolved.power:perHitPower,abilityMod=resolved.abilityMod;
  const criticalProfile=typeof criticalProfileForDamage==='function'?criticalProfileForDamage('my',attackerIdx,attackerName,defenderSide,defenderIdx,defenderName,moveName):null;
  const critical=!!criticalProfile&&!criticalProfile.blocked&&(criticalRequest===true||criticalProfile.chance===1)&&!resolved.useOwnDefense&&!resolved.useDefenderAttack;
- if(power<=0)return {critical,criticalProfile,text:'現在HP不明・計算不可',ko:'',chance:''};
+ if(power<=0)return {critical,criticalProfile,text:resolved.condition||'条件未確認・計算不可',ko:'',chance:''};
 
  const mods=sharedAbilityDamageModifiers('my',attackerIdx,attackerName,defenderSide,defenderIdx,defenderName,moveName,mv,moveType,power,abilityTypeEffect('my',attackerIdx,attackerName,moveType,d.types,moveName));
  const prof={...(savedMyProfiles[attackerIdx]||{nature:'まじめ',hp:0,atk:32,def:0,spa:32,spd:0,spe:2}),item:heldItemFor('my',attackerIdx)};
@@ -14469,6 +14486,11 @@ function installRegulationMC(){
   const key=existingMoves.get(name.normalize('NFKC'))||name;const d=DAMAGE_MOVES[key];
   if(d){d.type=m.type;d.cat=m.cat;d.spread=m.spread;if(m.power>0&&!d.catalogOnly)d.power=m.power;}
   MOVE_BASE_ACCURACY[key]=m.accuracy;
+ }
+ // Enable only damage paths covered by the pending-twenty differential audit.
+ for(const name of ['つけあがる','ひゃっきやこう','アイアンローラー','ポルターガイスト']){
+  const d=DAMAGE_MOVES[name],meta=REGULATION_MC.moveDetails[name];
+  if(d&&meta){d.power=meta.power;delete d.catalogOnly;}
  }
  const allItems=REGULATION_MC.items.map(x=>x.name);
  for(const [name,d]of Object.entries(entries)){

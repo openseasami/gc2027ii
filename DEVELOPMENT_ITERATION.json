@@ -1,8 +1,8 @@
 {
-  "version": "v2.9.11",
-  "baseCommit": "98d1739eae1a8179fd5f4bdfb0af32084a8a7986",
+  "version": "v2.9.12",
+  "baseCommit": "63c00636be95da872325e5828c37477edaab3f79",
   "branch": "codex-development",
-  "implementationCommit": "cf8418b593660912afe5b8b948e39763c53b472f",
+  "implementationCommit": null,
   "completion": false,
   "counts": {
     "targetSpeciesVerified": 344,
@@ -12,18 +12,26 @@
     "catalogSecondSourceUnconfirmed": 5,
     "attackMetadataVerified": 207,
     "majorAttackMoves": 179,
-    "majorCalculationVerified": 159,
-    "majorCalculationUnverified": 20,
-    "notFullyVerifiedCandidates": 1149
+    "majorCalculationVerified": 165,
+    "majorCalculationUnverified": 14,
+    "notFullyVerifiedCandidates": 1149,
+    "adoptionProfiles": 120,
+    "recordedAttackMoves": 207,
+    "metadataVerified": 207,
+    "majorThreshold": "At least one stored adoption-120 profile records >=10%; all recorded attacks also receive metadata audit.",
+    "newDamageHandlers": 4,
+    "reusedDamageHandlers": 2,
+    "pendingTwentyVerified": 6,
+    "pendingTwentyUnverified": 14
   },
   "coverageSummary": {
     "total": 1149,
     "categories": {
       "未実装": 57,
-      "部分実装": 195,
+      "部分実装": 201,
       "別経路で実装済み": 10,
       "仕様対象外": 0,
-      "要調査": 887
+      "要調査": 881
     },
     "fullyImplemented": 0,
     "fullyUnverified": 1149,
@@ -41,10 +49,10 @@
     },
     "moves": {
       "registered": 698,
-      "partialEffect": 72,
-      "requiresReview": 626,
-      "unitTestsDefined": 47,
-      "integrationTestsDefined": 47,
+      "partialEffect": 78,
+      "requiresReview": 620,
+      "unitTestsDefined": 51,
+      "integrationTestsDefined": 53,
       "authoritativelyVerified": 0
     },
     "items": {
@@ -65,8 +73,8 @@
     }
   },
   "testCommands": {
-    "passed": 129,
-    "total": 129
+    "passed": 131,
+    "total": 131
   },
   "externalDifferentialFailures": 0,
   "differentialComparisons": {
@@ -156,7 +164,7 @@
   },
   "finalTacticalAudit": "FINAL_TACTICAL_AUDIT_RESULTS.json",
   "releaseCandidate": {
-    "verdict": "superseded-by-v2.9.11-data-audit",
+    "verdict": "superseded-by-v2.9.12-pending-twenty-audit",
     "sourceBaseCommit": "3fc189b8d77ed15fd4dc7552408c8417a3c45edf",
     "archive": "release/rc1/gc2027ii-v2.9.10-tournament-rc1.zip",
     "archiveSha256": "6d5155a328319c3153e23472cdfadd38e5faebefcf8e2650208b652698e6635a",
@@ -179,5 +187,65 @@
       "こだわりハチマキ"
     ],
     "catalogDataChanged": false
+  },
+  "pendingTwentyAudit": {
+    "report": "PENDING_TWENTY_AUDIT_RESULTS.json",
+    "scope": "Basic damage/metadata only. Secondary effects, recommendations and multi-turn optimization excluded.",
+    "completion": false,
+    "differential": {
+      "completion": false,
+      "oracle": "pokemon-showdown@0.11.10; pinned upstream Champions numeric metadata only",
+      "scenarios": 1440,
+      "damageComparisons": 16320,
+      "accuracyComparisons": 5100,
+      "totalDistributionComparisons": 2066,
+      "conditionComparisons": 1440,
+      "byMove": {
+        "ツインビーム": {
+          "cases": 240,
+          "damageComparisons": 3840,
+          "accuracyComparisons": 1200,
+          "totalDistributionComparisons": 933,
+          "failures": 0
+        },
+        "ダブルウイング": {
+          "cases": 240,
+          "damageComparisons": 3840,
+          "accuracyComparisons": 1200,
+          "totalDistributionComparisons": 1133,
+          "failures": 0
+        },
+        "アイアンローラー": {
+          "cases": 240,
+          "damageComparisons": 768,
+          "accuracyComparisons": 240,
+          "totalDistributionComparisons": 0,
+          "failures": 0
+        },
+        "つけあがる": {
+          "cases": 240,
+          "damageComparisons": 3840,
+          "accuracyComparisons": 1200,
+          "totalDistributionComparisons": 0,
+          "failures": 0
+        },
+        "ポルターガイスト": {
+          "cases": 240,
+          "damageComparisons": 192,
+          "accuracyComparisons": 60,
+          "totalDistributionComparisons": 0,
+          "failures": 0
+        },
+        "ひゃっきやこう": {
+          "cases": 240,
+          "damageComparisons": 3840,
+          "accuracyComparisons": 1200,
+          "totalDistributionComparisons": 0,
+          "failures": 0
+        }
+      },
+      "failureCount": 0,
+      "failures": []
+    }
   }
 }
