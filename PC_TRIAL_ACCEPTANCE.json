@@ -1,7 +1,7 @@
 {
   "completion": false,
   "pcEquivalentTrialPassed": true,
-  "readiness": "local-technical-pass-tournament-zip-held",
+  "readiness": "practice-verification-only-pass",
   "implementationCommit": "042aa330e1353f6d88756bd80e43c3569b13eb3b",
   "testCommands": {
     "passed": 140,
@@ -100,5 +100,23 @@
     "newFeatures": 0,
     "completion": false
   },
-  "currentTournamentZip": null
+  "currentTournamentZip": null,
+  "practiceArtifact": {
+    "archive": "release/practice-v2.9.13/gc2027ii-v2.9.13-practice-verification.zip",
+    "sha256": "a1113c059faada5cada8b28b57d44227e18ae1aeeeb3932069ed739335d298da",
+    "verification": "release/practice-v2.9.13/ARTIFACT_VERIFICATION.json",
+    "filesVerified": 46,
+    "extractedArchiveChecksPassed": 4,
+    "extractedArchiveChecksTotal": 4,
+    "sourceBaseCommit": "45cf64448234612268e0c7ba08bc5b3af7a5fe19",
+    "purpose": "pre-tournament-practice-and-verification-only",
+    "status": "practice-verification-only-pass",
+    "sash64d8d75Included": true,
+    "all18RegisteredResistBerriesIncluded": true,
+    "fullTournamentRulesCertified": false,
+    "duringMatchToolPermission": "unconfirmed",
+    "duringMatchUseAuthorized": false,
+    "completion": false
+  },
+  "latestOfficialCatalogReview": "OFFICIAL_CATALOG_COMPARISON.json"
 }

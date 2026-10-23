@@ -1743,6 +1743,29 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-23T10:07:42.292609+00:00",
+      "commit": "45cf64448234612268e0c7ba08bc5b3af7a5fe19",
+      "reason": "45cf644基準。一次資料の公式一覧本文未取得を個別未確認として保存。実行15ファイル/UI/データ不変、140/140回帰＋実配布ZIP展開4/4成功。大会前練習・検証専用ZIP作成。対戦中利用許可未確認、旧ZIP保持、completion:false。",
+      "completion": false,
+      "artifact": {
+        "archive": "release/practice-v2.9.13/gc2027ii-v2.9.13-practice-verification.zip",
+        "sha256": "a1113c059faada5cada8b28b57d44227e18ae1aeeeb3932069ed739335d298da",
+        "verification": "release/practice-v2.9.13/ARTIFACT_VERIFICATION.json",
+        "filesVerified": 46,
+        "extractedArchiveChecksPassed": 4,
+        "extractedArchiveChecksTotal": 4,
+        "sourceBaseCommit": "45cf64448234612268e0c7ba08bc5b3af7a5fe19",
+        "purpose": "pre-tournament-practice-and-verification-only",
+        "status": "practice-verification-only-pass",
+        "sash64d8d75Included": true,
+        "all18RegisteredResistBerriesIncluded": true,
+        "fullTournamentRulesCertified": false,
+        "duringMatchToolPermission": "unconfirmed",
+        "duringMatchUseAuthorized": false,
+        "completion": false
+      }
     }
   ],
   "foundation": {

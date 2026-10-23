@@ -1,0 +1,88 @@
+{
+  "completion": false,
+  "generatedAt": "2026-10-23T10:07:42.292609+00:00",
+  "version": "v2.9.13",
+  "branch": "codex-development",
+  "sourceBaseCommit": "45cf64448234612268e0c7ba08bc5b3af7a5fe19",
+  "practicePackageAccepted": true,
+  "fullTournamentRulesCertified": false,
+  "duringMatchToolPermission": "unconfirmed",
+  "duringMatchUseAuthorized": false,
+  "testCommands": {
+    "passed": 140,
+    "total": 140
+  },
+  "newRuntimeFixes": 0,
+  "newFeatures": 0,
+  "runtimeFilesPreserved": 15,
+  "officialEligibility": {
+    "pokemon": {
+      "localCandidates": 344,
+      "megaForms": 82,
+      "fullyCompared": 0,
+      "unconfirmed": 344,
+      "partialNewsNameEvidence": 6,
+      "officialCount": null,
+      "officialDifferenceCount": null
+    },
+    "moves": {
+      "localCandidates": 515,
+      "learnsetUnion": 510,
+      "metadataEntries": 515,
+      "metadataOnlyNames": [
+        "はたく",
+        "わるあがき",
+        "キノコのほうし",
+        "タマゴうみ",
+        "パワーシフト"
+      ],
+      "fullyCompared": 0,
+      "unconfirmed": 515,
+      "officialCount": null,
+      "officialDifferenceCount": null
+    },
+    "items": {
+      "localCandidates": 166,
+      "fullyCompared": 0,
+      "unconfirmed": 166,
+      "officialCount": null,
+      "officialDifferenceCount": null
+    }
+  },
+  "officialReview": "OFFICIAL_CATALOG_REVIEW.md",
+  "officialEvidence": "OFFICIAL_CATALOG_COMPARISON.json",
+  "readiness": "PRACTICE_RELEASE_READINESS.json",
+  "artifact": {
+    "archive": "release/practice-v2.9.13/gc2027ii-v2.9.13-practice-verification.zip",
+    "sha256": "a1113c059faada5cada8b28b57d44227e18ae1aeeeb3932069ed739335d298da",
+    "verification": "release/practice-v2.9.13/ARTIFACT_VERIFICATION.json",
+    "filesVerified": 46,
+    "extractedArchiveChecksPassed": 4,
+    "extractedArchiveChecksTotal": 4,
+    "sourceBaseCommit": "45cf64448234612268e0c7ba08bc5b3af7a5fe19",
+    "purpose": "pre-tournament-practice-and-verification-only",
+    "status": "practice-verification-only-pass",
+    "sash64d8d75Included": true,
+    "all18RegisteredResistBerriesIncluded": true,
+    "fullTournamentRulesCertified": false,
+    "duringMatchToolPermission": "unconfirmed",
+    "duringMatchUseAuthorized": false,
+    "completion": false
+  },
+  "unresolved": [
+    "Complete official Pokemon list unavailable",
+    "Complete official move list and Pokemon/move-pair eligibility unavailable",
+    "Complete official item list unavailable",
+    "In-match independent browser tool permission unconfirmed",
+    "Mechanics coverage limited to recorded conditions; eleven major attacks remain unverified/out of scope",
+    "Native Windows product-wide testing and human decision timing not established"
+  ],
+  "originalFrozenZipPreserved": true,
+  "originalFrozenZipSha256": "3cc7b8d9ca186e3a543f8aa0b514e094b253f90d119e716aef2229b6d7d95a90",
+  "evidenceSha256": {
+    "PRACTICE_RELEASE_READINESS.json": "2549e21eaf6ecf69a4420cc9303e6d6682ff75835ffff5771e99e96111c1db19",
+    "TEST_RESULTS.json": "b91ce8ef5f3268eac6a732e49ecd20a06ace6a44241670550b9ad10eb1779063",
+    "OFFICIAL_CATALOG_COMPARISON.json": "701323ab5d2082df93e4eef5614d0a4ff787f07a4bf1973d652df23f39125e5b",
+    "release/practice-v2.9.13/ARTIFACT_VERIFICATION.json": "5dfd6bc1bfa34718dc6c8819190bc6cc6bfbb964a0ee42f600ab9a11ca5b3e0d"
+  }
+}

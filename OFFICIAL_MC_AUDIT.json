@@ -1,6 +1,6 @@
 {
   "completion": false,
-  "checkedAt": "2026-10-23T07:42:49.351069+00:00",
+  "checkedAt": "2026-10-23T09:59:47.299882+00:00",
   "dateJST": "2026-10-23",
   "retrievalScope": "Official accessible text was reviewed through the web service. No claim of raw HTML capture; heading-only lists do not verify their unseen contents. Enforced executor HTTP policy lacks the official host, so no direct-request bypass was attempted.",
   "sources": [
@@ -132,7 +132,12 @@
     "itemsComparedCompletely": false,
     "officialRosterDifferences": null,
     "officialItemDifferences": null,
-    "timerScope": "Existing 45-second input guide matches official turn duration; app does not replace or enforce the official game total/player/preview clocks."
+    "timerScope": "Existing 45-second input guide matches official turn duration; app does not replace or enforce the official game total/player/preview clocks.",
+    "siteLearnsetMoveUnion": 510,
+    "siteMoveMetadata": 515,
+    "siteMoveCandidates": 515,
+    "movesComparedCompletely": false,
+    "officialMoveDifferences": null
   },
   "toolPermission": {
     "status": "unconfirmed",
@@ -143,8 +148,97 @@
   },
   "blockingForTournamentCertification": [
     "Complete eligible-roster comparison unavailable",
+    "Complete allowed-move and Pokemon/move-pair comparison unavailable",
     "Complete allowed-item comparison unavailable",
     "Independent browser-tool permission not established"
   ],
-  "catalogChanged": false
+  "catalogChanged": false,
+  "previousReviewCheckedAt": "2026-10-23T07:42:49.351069+00:00",
+  "latestReview": "OFFICIAL_CATALOG_COMPARISON.json",
+  "latestRetrievalAttempts": [
+    {
+      "url": "https://champions-news.pokemon-home.com/en/page/816.html",
+      "method": "open",
+      "status": "retrieved",
+      "claims": [
+        "M-C",
+        "Mega with stone once per battle",
+        "Six newly allowed Mega forms",
+        "No duplicate held items",
+        "20m/7m/45s/90s"
+      ]
+    },
+    {
+      "url": "https://champions-news.pokemon-home.com/ja/page/848.html",
+      "method": "open",
+      "status": "retrieved",
+      "claims": [
+        "M-C doubles",
+        "Event dates and official event/list links"
+      ]
+    },
+    {
+      "url": "https://web-view.app.pokemonchampions.jp/battle/pages/events/ic178955798491frplcz/ja/event.html",
+      "method": "open",
+      "status": "tool-access-failed",
+      "claims": []
+    },
+    {
+      "url": "https://web-view.app.pokemonchampions.jp/battle/pages/events/ic178955798491frplcz/ja/event.html",
+      "method": "official event news detail link click",
+      "status": "retrieved",
+      "claims": [
+        "Four selected Pokemon",
+        "Mega allowed",
+        "20m/7m/45s/90s",
+        "Unapproved software/technical methods on service mentioned; independent manual calculator permission not specified"
+      ]
+    },
+    {
+      "url": "https://web-view.app.pokemonchampions.jp/battle/pages/events/ic178955798491frplcz/ja/pokemon.html",
+      "method": "open",
+      "status": "tool-access-failed",
+      "claims": []
+    },
+    {
+      "url": "https://web-view.app.pokemonchampions.jp/battle/pages/events/ic178955798491frplcz/ja/pokemon.html",
+      "method": "official news list link click",
+      "status": "heading-only",
+      "extractedLines": 3,
+      "claims": []
+    },
+    {
+      "url": "https://web-view.app.pokemonchampions.jp/battle/pages/events/ic178955798491frplcz/ja/waza.html",
+      "method": "open and official event move-list link click",
+      "status": "heading-only",
+      "extractedLines": 3,
+      "claims": []
+    },
+    {
+      "url": "https://web-view.app.pokemonchampions.jp/battle/pages/events/ic178955798491frplcz/ja/item.html",
+      "method": "open",
+      "status": "tool-access-failed",
+      "claims": []
+    },
+    {
+      "url": "https://web-view.app.pokemonchampions.jp/battle/pages/events/ic178955798491frplcz/ja/item.html",
+      "method": "official event item-list link click",
+      "status": "heading-only",
+      "extractedLines": 3,
+      "claims": []
+    },
+    {
+      "url": "https://web-view.app.pokemonchampions.jp/battle/pages/events/rs178713870219xeaaio/en/pokemon.html",
+      "method": "M-C official news link click",
+      "status": "heading-only",
+      "extractedLines": 3,
+      "claims": []
+    }
+  ],
+  "practicePackagePolicy": {
+    "perLatestUserInstruction": true,
+    "purpose": "pre-tournament-practice-and-verification-only",
+    "officialUncertaintyMustBeDisclosed": true,
+    "impliesInMatchPermission": false
+  }
 }

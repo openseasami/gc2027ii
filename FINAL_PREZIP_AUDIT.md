@@ -1,3 +1,5 @@
+> 最新の45cf644基準監査はPRACTICE_RELEASE_REPORT.md/OFFICIAL_CATALOG_REVIEW.mdを参照。最新指示で大会前の練習・検証専用ZIPを作成済み。以下の大会用ZIP保留判定は履歴として保持し、練習専用配布や対戦中の利用許諾と混同しない。
+
 # v2.9.13 最終ZIP作成前の一括監査
 
 **技術監査：限定範囲で合格。大会用ZIP：作成保留。全仕様completion:false。**

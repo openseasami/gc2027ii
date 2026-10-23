@@ -15,9 +15,9 @@
   ],
   "finding": "C/M-C equivalence, target event allowed roster and Mega eligibility/stats remain unconfirmed; inherited catalogs unchanged. No exclusions or new Mega mechanics inferred.",
   "showdown": "0.11.10 is a general Gen 9 local mechanics oracle; not an official Champions rule source.",
-  "reviewedAt": "2026-10-22T11:47:59.603464+00:00",
+  "reviewedAt": "2026-10-23T09:59:47.299882+00:00",
   "currentPolicyReview": "Executor direct HTTP policy still excludes the official hosts. The web research service successfully retrieved the two official news pages and linked event detail; this confirms M-C doubles, one Mega, duplicate-item prohibition and 20m/7m/45s/90s. Linked roster/item bodies remain heading-only. No direct-policy bypass or third-party-tool permission claim.",
   "historicalAttemptRecord": true,
-  "latestReview": "OFFICIAL_MC_AUDIT.json",
-  "latestFinding": "M-C doubles, one Mega, duplicate item ban and all four timers confirmed from official news/event detail. Full roster/items and standalone-tool permission remain unconfirmed. Prior direct-fetch 403 records are historical."
+  "latestReview": "OFFICIAL_CATALOG_COMPARISON.json",
+  "latestFinding": "Official news and event detail retrieved; full Pokemon, move and item list bodies still unavailable (headings only via link clicks). No complete eligibility comparison or independent tool permission. Existing catalog preserved."
 }

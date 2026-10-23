@@ -621,7 +621,7 @@
     "sturdy": 240
   },
   "scope": "Controlled no-effect ability matchups isolate AP/nature/items/type/weather/screens/target count; known Sturdy/Sash fixtures included. Existing real-ability 16-matchup suite remains separate. AP equivalent EVs certify arithmetic only, not official AP rules or a standard EV-budget conversion.",
-  "elapsedSeconds": 93.177,
+  "elapsedSeconds": 90.851,
   "species": 344,
   "megaSpecies": 82,
   "apValues": [

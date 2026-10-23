@@ -51144,10 +51144,11 @@
     "レシーバー"
   ],
   "criticalWork": [
-    "Preserve v2.9.13 feature freeze and both audited calculation corrections; keep original ZIP as backup",
-    "Obtain complete official M-C roster and item entries for comparison; heading-only retrieval is not verification",
-    "Establish applicability/permission for an independent manual-input browser support tool from authoritative event guidance",
-    "Re-evaluate FINAL_PREZIP_AUDIT_RESULTS before any new tournament ZIP; do not call old packager to overwrite the backup"
+    "Preserve v2.9.13 runtime/UI/data byte-for-byte at 45cf644; no new features or broad mechanics work",
+    "Practice-only ZIP verified (140 regressions, actual extracted archive 4/4); preserve it and all historical backups",
+    "Official Pokemon, move/Pokemon-move-pair and item catalogs remain unconfirmed until complete primary-source bodies can be retrieved",
+    "Do not infer permission for independent browser support tools during official matches; no organizer messages authorized or sent",
+    "Do not run the old frozen packager or deploy; main and public site unchanged; completion:false"
   ],
   "outOfCatalogEvidence": [
     {
@@ -51273,5 +51274,26 @@
     "criticalCalculationFixesThisAudit": 1,
     "newFeatures": 0,
     "completion": false
+  },
+  "practiceRelease": {
+    "report": "PRACTICE_RELEASE_REPORT.md",
+    "results": "PRACTICE_RELEASE_RESULTS.json",
+    "artifact": {
+      "archive": "release/practice-v2.9.13/gc2027ii-v2.9.13-practice-verification.zip",
+      "sha256": "a1113c059faada5cada8b28b57d44227e18ae1aeeeb3932069ed739335d298da",
+      "verification": "release/practice-v2.9.13/ARTIFACT_VERIFICATION.json",
+      "filesVerified": 46,
+      "extractedArchiveChecksPassed": 4,
+      "extractedArchiveChecksTotal": 4,
+      "sourceBaseCommit": "45cf64448234612268e0c7ba08bc5b3af7a5fe19",
+      "purpose": "pre-tournament-practice-and-verification-only",
+      "status": "practice-verification-only-pass",
+      "sash64d8d75Included": true,
+      "all18RegisteredResistBerriesIncluded": true,
+      "fullTournamentRulesCertified": false,
+      "duringMatchToolPermission": "unconfirmed",
+      "duringMatchUseAuthorized": false,
+      "completion": false
+    }
   }
 }

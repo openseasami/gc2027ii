@@ -5,7 +5,7 @@
     {
       "version": "v2.9.1",
       "archiveSha256": "85879925027a26e0ebee8a54bda1dfc43245cf25c120cb45e58ee4d003fff52b",
-      "backupSha256": "374686a3ebab18a65c88d2eaaef66651ad586c0ab2ad2f8b71e4de4b29c701f4",
+      "backupSha256": "242e7420bbc23e8e1ccc5ad7a0c34a99f158db505656abdbaf596b587a668454",
       "sameOriginUpgrade": true,
       "jsonRestoreFreshProfile": true,
       "saveReload": true,
@@ -23,7 +23,7 @@
     {
       "version": "v2.9.10",
       "archiveSha256": "af326cf0452c7b295ae66aa9483f2c62cd03dcfadaaca584b713a9d70dc46491",
-      "backupSha256": "d3a85a6e214b1e3d977e4cb024b9b9b44adc91354a64846b7fb3f7fd28cabfd5",
+      "backupSha256": "8fcacb8925cbc4c0b6907c40b40c0a2112892e6b16dcbcb75d8799ba98e9aec4",
       "sameOriginUpgrade": true,
       "jsonRestoreFreshProfile": true,
       "saveReload": true,
@@ -41,7 +41,7 @@
     {
       "version": "v2.9.12",
       "archiveSha256": "715e8ae69615d4dafa3d8b248fa7f72dabb7f4abc79b3384d4cf87886fb776c4",
-      "backupSha256": "c00f6b9bd661fbea21f597bb521fb0c7520f0ef704a5a58c972c18947f1a4930",
+      "backupSha256": "463dfdfd8ba15421c08c21a7f1919ab1ada3ba4968bf6b06080260913807dbb9",
       "sameOriginUpgrade": true,
       "jsonRestoreFreshProfile": true,
       "saveReload": true,
