@@ -1,0 +1,962 @@
+{
+  "completion": false,
+  "passed": true,
+  "checks": {
+    "threeGroups": true,
+    "allPassed": true,
+    "thirtyDistinctCompleteMatches": true,
+    "undoReplayEveryMatch": true,
+    "jsonRestoreEveryMatch": true,
+    "reloadEveryMatch": true,
+    "bothOutcomes": true,
+    "threeFamilies": true,
+    "independentComparisons": true,
+    "noBrowserErrors": true,
+    "traceHashesCurrent": true,
+    "sourceHashesCurrent": true
+  },
+  "completeMatches": 30,
+  "nativeTurns": 218,
+  "countsIncludingUndoReplay": {
+    "turns": 248,
+    "fieldAssertions": 3262,
+    "stageAssertions": 21042,
+    "hpAssertions": 4208,
+    "speedAssertions": 830,
+    "recommendations": 218,
+    "forcedReplacements": 112,
+    "observedStatus": 36,
+    "observedItemConsumption": 22,
+    "observedSecondaryRanks": 21
+  },
+  "differential": {
+    "scenarios": 218,
+    "comparisons": 3488,
+    "speedComparisons": 436,
+    "priorityComparisons": 218,
+    "orderComparisons": 436,
+    "failureCount": 0
+  },
+  "games": [
+    {
+      "id": 1,
+      "family": "rain-tailwind",
+      "seed": [
+        1,
+        17,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 2,
+      "family": "terrain-seed",
+      "seed": [
+        2,
+        30,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 10,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 3,
+      "family": "room-boost",
+      "seed": [
+        3,
+        43,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 4,
+      "family": "rain-tailwind",
+      "seed": [
+        4,
+        56,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 5,
+      "complete": true,
+      "winner": "my",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 5,
+      "family": "terrain-seed",
+      "seed": [
+        5,
+        69,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "my",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 6,
+      "family": "room-boost",
+      "seed": [
+        6,
+        82,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 5,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 7,
+      "family": "rain-tailwind",
+      "seed": [
+        7,
+        95,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 8,
+      "family": "terrain-seed",
+      "seed": [
+        8,
+        108,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 14,
+      "complete": true,
+      "winner": "my",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 9,
+      "family": "room-boost",
+      "seed": [
+        9,
+        121,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 10,
+      "family": "rain-tailwind",
+      "seed": [
+        10,
+        134,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "my",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 11,
+      "family": "terrain-seed",
+      "seed": [
+        11,
+        147,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "my",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 12,
+      "family": "room-boost",
+      "seed": [
+        12,
+        160,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 13,
+      "family": "rain-tailwind",
+      "seed": [
+        13,
+        173,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 14,
+      "family": "terrain-seed",
+      "seed": [
+        14,
+        186,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 10,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 15,
+      "family": "room-boost",
+      "seed": [
+        15,
+        199,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 16,
+      "family": "rain-tailwind",
+      "seed": [
+        16,
+        212,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "my",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 17,
+      "family": "terrain-seed",
+      "seed": [
+        17,
+        225,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 18,
+      "family": "room-boost",
+      "seed": [
+        18,
+        238,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 19,
+      "family": "rain-tailwind",
+      "seed": [
+        19,
+        251,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 20,
+      "family": "terrain-seed",
+      "seed": [
+        20,
+        264,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 21,
+      "family": "room-boost",
+      "seed": [
+        21,
+        277,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 22,
+      "family": "rain-tailwind",
+      "seed": [
+        22,
+        290,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "my",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 23,
+      "family": "terrain-seed",
+      "seed": [
+        23,
+        303,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 24,
+      "family": "room-boost",
+      "seed": [
+        24,
+        316,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 5,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 25,
+      "family": "rain-tailwind",
+      "seed": [
+        25,
+        329,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 26,
+      "family": "terrain-seed",
+      "seed": [
+        26,
+        342,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 11,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 27,
+      "family": "room-boost",
+      "seed": [
+        27,
+        355,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 28,
+      "family": "rain-tailwind",
+      "seed": [
+        28,
+        368,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "my",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 29,
+      "family": "terrain-seed",
+      "seed": [
+        29,
+        381,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 30,
+      "family": "room-boost",
+      "seed": [
+        30,
+        394,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    }
+  ],
+  "groups": [
+    "SERIES_MATCH_GROUP_0_RESULTS.json",
+    "SERIES_MATCH_GROUP_1_RESULTS.json",
+    "SERIES_MATCH_GROUP_2_RESULTS.json"
+  ],
+  "limitations": [
+    "Custom Gen9 fixtures, not official Champions full-engine parity or event legality",
+    "HP/status and secondary rank/item outcomes are observations; not claimed as auto-applied",
+    "Recommendations checked for existence, legal actions and uncertainty, not optimal multi-turn policy",
+    "Linux Chromium with Windows UA, not native Windows Chrome/Edge certification",
+    "Terminal victory can interrupt residuals: final HP/status/items/actives checked; final automatic field/stage residual comparison explicitly excluded"
+  ],
+  "sourceSha256": {
+    "series-match-reference.js": "71bea24bb6573ff3318fca19124c0f3b749aed69f5ac56dab739be88f5d0ac88",
+    "series-match-replay.js": "1604159a049fc875477c2e1205de36a936db9e55f98b5525e63f6e9d9a710f7b",
+    "series_match_harness.py": "1abc83ecc96c8916db3d3d183a64ffc3d8175a8ae042272ccf557dff1759b1a7",
+    "live-practical-oracle.js": "9262cb758e4ef68bbc86dd886bf964c7125bf72122d313853cc35d0e6e871827",
+    "index.html": "9aae100cdeabfc3f25a497f7cd70ee9f07dc0ee4062c859f095d612ae8834c99",
+    "evaluate-series-matches.py": "ffda52daaf85af8ff574fdbb8f06a9489cbddb50f9487e721bed5f279a32adb7"
+  }
+}

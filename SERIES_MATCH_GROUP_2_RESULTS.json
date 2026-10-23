@@ -1,0 +1,351 @@
+{
+  "completion": false,
+  "passed": true,
+  "group": 2,
+  "oracle": "pokemon-showdown@0.11.10",
+  "format": "gen9doublescustomgame with explicit pickedTeamSize=4",
+  "games": [
+    {
+      "id": 21,
+      "family": "room-boost",
+      "seed": [
+        21,
+        277,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 22,
+      "family": "rain-tailwind",
+      "seed": [
+        22,
+        290,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "my",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 23,
+      "family": "terrain-seed",
+      "seed": [
+        23,
+        303,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 24,
+      "family": "room-boost",
+      "seed": [
+        24,
+        316,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 5,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 25,
+      "family": "rain-tailwind",
+      "seed": [
+        25,
+        329,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 26,
+      "family": "terrain-seed",
+      "seed": [
+        26,
+        342,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 11,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 27,
+      "family": "room-boost",
+      "seed": [
+        27,
+        355,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 28,
+      "family": "rain-tailwind",
+      "seed": [
+        28,
+        368,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "my",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 29,
+      "family": "terrain-seed",
+      "seed": [
+        29,
+        381,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          4,
+          5,
+          2,
+          3
+        ],
+        [
+          2,
+          4,
+          0,
+          5
+        ]
+      ],
+      "turns": 8,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    },
+    {
+      "id": 30,
+      "family": "room-boost",
+      "seed": [
+        30,
+        394,
+        29,
+        101
+      ],
+      "selected": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          1,
+          4
+        ]
+      ],
+      "turns": 6,
+      "complete": true,
+      "winner": "opp",
+      "undoReplay": true,
+      "jsonRestore": true,
+      "saveReload": true
+    }
+  ],
+  "limitations": [
+    "Custom Gen9 fixtures, not official Champions full-engine parity or event legality",
+    "HP/status and secondary rank/item outcomes are observations; not claimed as auto-applied",
+    "Recommendations checked for existence, legal actions and uncertainty, not optimal multi-turn policy",
+    "Linux Chromium with Windows UA, not native Windows Chrome/Edge certification",
+    "Terminal victory can interrupt residuals: final HP/status/items/actives checked; final automatic field/stage residual comparison explicitly excluded"
+  ],
+  "completedMatches": 10,
+  "counts": {
+    "turns": 80,
+    "fieldAssertions": 1050,
+    "stageAssertions": 7070,
+    "hpAssertions": 1360,
+    "speedAssertions": 269,
+    "recommendations": 70,
+    "forcedReplacements": 32,
+    "observedStatus": 11,
+    "observedItemConsumption": 8,
+    "observedSecondaryRanks": 10
+  },
+  "differential": {
+    "completion": false,
+    "oracle": "pokemon-showdown@0.11.10",
+    "scenarios": 70,
+    "comparisons": 1120,
+    "speedComparisons": 140,
+    "priorityComparisons": 70,
+    "orderComparisons": 140,
+    "failureCount": 0,
+    "failures": [],
+    "scope": "Actual page outgoing/incoming adapters with explicit raw stats; selected adoption-120 matchups. Not full AP/species data, legality, RNG or complete match certification."
+  },
+  "browserErrors": [],
+  "traceSha256": "49e95d61762b165c3fb4da6b2e4022709570e83af3b4eeaf20a052e954d5e980",
+  "traceFile": "reference-data/series-matches/group-2.json",
+  "sourceSha256": {
+    "index.html": "9aae100cdeabfc3f25a497f7cd70ee9f07dc0ee4062c859f095d612ae8834c99",
+    "series-match-reference.js": "71bea24bb6573ff3318fca19124c0f3b749aed69f5ac56dab739be88f5d0ac88",
+    "series-match-replay.js": "1604159a049fc875477c2e1205de36a936db9e55f98b5525e63f6e9d9a710f7b",
+    "series_match_harness.py": "1abc83ecc96c8916db3d3d183a64ffc3d8175a8ae042272ccf557dff1759b1a7",
+    "live-practical-oracle.js": "9262cb758e4ef68bbc86dd886bf964c7125bf72122d313853cc35d0e6e871827"
+  }
+}

@@ -1120,6 +1120,54 @@
         "browser_priority_berries_test.py"
       ],
       "scope": "Correction of already-registered resist berry damage inputs, not roster/item expansion. 18 type resist berries, 16-roll PS damage and actual consumption callbacks, physical/special, Unnerve/Ripen/Substitute/bypass/consumed; actual page outgoing/incoming, unknown source guards and read-only forecast. Chilan first-hit consumption in Population Bomb with PS HP-state totals. Full secondary effects, official item eligibility, all suppressed/switch/recovery interactions and multi-turn policy remain unverified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "かそく"
+      ],
+      "paths": [
+        "index.html:applyEndTurnAbilityEffects",
+        "index.html:commitTurnActions"
+      ],
+      "unitTests": [
+        "test-series-speed-boost.js"
+      ],
+      "integrationTests": [],
+      "scope": "Real-function unit regression: initial/full-turn resident boosts, mid-turn entry and pending post-turn replacement skip, unknown/KO skip; all full-game ability interactions not certified."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "あめふらし",
+        "ひでり",
+        "グラスメイカー",
+        "エレキメイカー"
+      ],
+      "paths": [
+        "index.html:commitEntryFieldEffect"
+      ],
+      "unitTests": [
+        "test-series-field-renewal.js"
+      ],
+      "integrationTests": [],
+      "scope": "Real shared adapter unit regression: matching weather/terrain retains duration; different/expired field activates; does not certify every named setter suppression/interaction."
+    },
+    {
+      "category": "abilities",
+      "names": [
+        "いかく"
+      ],
+      "paths": [
+        "index.html:commitTurnActions",
+        "index.html:resolveEntryEvents",
+        "index.html:triggerEntryAbility"
+      ],
+      "unitTests": [
+        "test-series-voluntary-switch-order.js"
+      ],
+      "integrationTests": [],
+      "scope": "Actual ordinary-switch/entry adapters vs native Showdown for faster/slower outgoing actors and normal/TR: correct Intimidate occupants. Preserve competing-field uncertainty; all unknown opponent speed/entry interactions remain unverified."
     }
   ],
   "outOfCatalogEvidence": [
@@ -1206,5 +1254,11 @@
     ],
     "scope": "General and Champions move metadata distinguished. 344 target forms / 82 target Mega forms have two-source species stats; 5 extended non-target forms remain second-source unconfirmed. Special damage cases are listed, not certified. Choice Band excluded from tournament scope as user clarified. Secondary effects and action recommendation completeness excluded.",
     "results": "STATS_MOVES_AUDIT_RESULTS.json"
+  },
+  "seriesMatchAudit": {
+    "completion": false,
+    "report": "SERIES_MATCH_RESULTS.json",
+    "incidents": "SERIES_MATCH_INCIDENTS.json",
+    "scope": "Explicit observed replay vs native Gen9 custom matches. Read current report for completed tests; neither fully automated app battle resolution nor optimal recommendation certification."
   }
 }

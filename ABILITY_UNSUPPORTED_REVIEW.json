@@ -52,8 +52,8 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通の行動順経路で後攻化・攻撃技限定の確率先制を扱う。表示だけが未対応だった。",
       "executableReferences": [
-        "index.html:activeOrderCaveats:8174",
-        "index.html:orderEffectProfile:10831",
+        "index.html:activeOrderCaveats:8179",
+        "index.html:orderEffectProfile:10836",
         "turn-order-effects.js:analyse:14"
       ],
       "tests": [
@@ -152,7 +152,7 @@
       "classification": "部分実装",
       "assessmentScope": "音フラグに基づく水タイプ化。実Showdown ModifyTypeとの10ケース比較、威力を上げないことを検証。",
       "executableReferences": [
-        "index.html:resolveMoveForDamage:9034"
+        "index.html:resolveMoveForDamage:9039"
       ],
       "tests": [
         "test-adoption-priority-mechanics.js"
@@ -218,7 +218,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通接触ダメージ予測で接触ペナルティを除外する。",
       "executableReferences": [
-        "index.html:projectedContactPunishmentForAction:11565"
+        "index.html:projectedContactPunishmentForAction:11570"
       ],
       "tests": [
         "test-contact.js"
@@ -256,7 +256,7 @@
       "assessmentScope": "相手対象ランク技の確定適用を阻止し、かたやぶり時は適用する。",
       "executableReferences": [
         "index.html:applyConfirmedTargetRanks:6618",
-        "index.html:disruptionCanAffect:12743"
+        "index.html:disruptionCanAffect:12748"
       ],
       "tests": [
         "test-target-ranks-integration.js"
@@ -389,7 +389,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed entry only: once per battle evasion drop, substitute and rank reactions; both-side Reflect/Light Screen/Aurora Veil removal. Full form changes and official rules remain unverified.",
       "executableReferences": [
-        "index.html:triggerEntryAbility:7402"
+        "index.html:triggerEntryAbility:7407"
       ],
       "tests": [
         "test-entry-screens-syrup.js"
@@ -524,7 +524,7 @@
       "classification": "部分実装",
       "assessmentScope": "50 real Showdown entry rank reset cases. Seven ranks on living ally only, not source/foe; Focus Energy preserved. Full suppression and switch scenarios unverified.",
       "executableReferences": [
-        "index.html:triggerEntryAbility:7391"
+        "index.html:triggerEntryAbility:7396"
       ],
       "tests": [
         "test-entry-focus-state.js",
@@ -666,7 +666,7 @@
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
         "index.html:confirmedSleepProtection:6490",
-        "index.html:forecastCommonSecondaryStatus:11455"
+        "index.html:forecastCommonSecondaryStatus:11460"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"
@@ -703,7 +703,7 @@
       "classification": "部分実装",
       "assessmentScope": "Only block/double reduction of Chople/Colbur predictions and confirmed hit adapter. No all berry eating/healing/recycle/ability-change handlers or full battle certification.",
       "executableReferences": [
-        "index.html:defensiveBerryForDamage:9349"
+        "index.html:defensiveBerryForDamage:9354"
       ],
       "tests": [
         "test-priority-resist-berries.js",
@@ -867,7 +867,7 @@
       "classification": "要調査",
       "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
       "executableReferences": [
-        "index.html:multiHitOutcomeDistribution:9767"
+        "index.html:multiHitOutcomeDistribution:9772"
       ],
       "tests": [],
       "scopedTestsPassed": false,
@@ -999,7 +999,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11450"
+        "index.html:forecastCommonSecondaryStatus:11455"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -1039,7 +1039,7 @@
       "classification": "部分実装",
       "assessmentScope": "Only block/double reduction of Chople/Colbur predictions and confirmed hit adapter. No all berry eating/healing/recycle/ability-change handlers or full battle certification.",
       "executableReferences": [
-        "index.html:defensiveBerryForDamage:9353"
+        "index.html:defensiveBerryForDamage:9358"
       ],
       "tests": [
         "test-priority-resist-berries.js",
@@ -1173,10 +1173,10 @@
       "assessmentScope": "確認済み命中の共通みがわり迂回経路が存在し、両陣営の適用を検証。",
       "executableReferences": [
         "index.html:substituteBlocksConfirmedHit:5845",
-        "index.html:defensiveBerryForDamage:9352",
-        "index.html:damageEstimate:9450",
-        "index.html:opponentDamageEstimateAgainstMy:11021",
-        "index.html:disruptionCanAffect:12733"
+        "index.html:defensiveBerryForDamage:9357",
+        "index.html:damageEstimate:9455",
+        "index.html:opponentDamageEstimateAgainstMy:11026",
+        "index.html:disruptionCanAffect:12738"
       ],
       "tests": [
         "test-substitute-bypass.js",
@@ -1474,7 +1474,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11454"
+        "index.html:forecastCommonSecondaryStatus:11459"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"
@@ -1576,7 +1576,7 @@
       "classification": "部分実装",
       "assessmentScope": "Accuracy reduction immunity for external rank changes, self changes and ability bypass; evasion ignoring and full event legality remain unverified. Ignore positive target evasion stages in accuracy forecast. Existing rank protection separate; all accuracy interactions and full-game parity unverified.",
       "executableReferences": [
-        "index.html:effectiveMoveAccuracy:9706"
+        "index.html:effectiveMoveAccuracy:9711"
       ],
       "tests": [
         "test-hit-event-multiturn.js",
@@ -1642,7 +1642,7 @@
       "classification": "部分実装",
       "assessmentScope": "確認済み特性かつ観測HP満タン時のひこう技優先度+1。攻撃技・変化技とHP減少時を実Showdown48ケースで比較。",
       "executableReferences": [
-        "index.html:movePriorityForActor:10824"
+        "index.html:movePriorityForActor:10829"
       ],
       "tests": [
         "test-gale-wings-differential.js"
@@ -1844,7 +1844,7 @@
       "classification": "部分実装",
       "assessmentScope": "Poison secondary forecast type-immunity bypass only; independent trySetStatus comparison. Damage immunity, hazards and direct status action pipeline remain separate/incomplete.",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11448"
+        "index.html:forecastCommonSecondaryStatus:11453"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -1949,7 +1949,7 @@
       "classification": "要調査",
       "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
       "executableReferences": [
-        "index.html:multiHitOutcomeDistribution:9767"
+        "index.html:multiHitOutcomeDistribution:9772"
       ],
       "tests": [],
       "scopedTestsPassed": false,
@@ -2016,7 +2016,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11453"
+        "index.html:forecastCommonSecondaryStatus:11458"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -2322,8 +2322,8 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通の行動順経路で後攻化・攻撃技限定の確率先制を扱う。表示だけが未対応だった。",
       "executableReferences": [
-        "index.html:activeOrderCaveats:8174",
-        "index.html:orderEffectProfile:10833",
+        "index.html:activeOrderCaveats:8179",
+        "index.html:orderEffectProfile:10838",
         "turn-order-effects.js:analyse:20"
       ],
       "tests": [
@@ -2503,7 +2503,7 @@
       "classification": "要調査",
       "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
       "executableReferences": [
-        "index.html:abilityDamageImmunity:8908"
+        "index.html:abilityDamageImmunity:8913"
       ],
       "tests": [],
       "scopedTestsPassed": false,
@@ -2611,7 +2611,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed entry only: once per battle evasion drop, substitute and rank reactions; both-side Reflect/Light Screen/Aurora Veil removal. Full form changes and official rules remain unverified.",
       "executableReferences": [
-        "index.html:triggerEntryAbility:7398"
+        "index.html:triggerEntryAbility:7403"
       ],
       "tests": [
         "test-entry-screens-syrup.js"
@@ -2652,9 +2652,9 @@
       "executableReferences": [
         "index.html:confirmedSleepProtection:6489",
         "index.html:applyConfirmedTargetRanks:6619",
-        "index.html:receiveIntimidate:7356",
-        "index.html:triggerEntryAbility:7411",
-        "index.html:planCommonSecondaryForecast:11537"
+        "index.html:receiveIntimidate:7358",
+        "index.html:triggerEntryAbility:7416",
+        "index.html:planCommonSecondaryForecast:11542"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2754,7 +2754,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed defender ability weight for Low Kick/Grass Knot, minimum weight and threshold rounding. Float Stone, Autotomize, Heavy Slam/Heat Crash and full damage unverified.",
       "executableReferences": [
-        "index.html:weightBasedMovePower:8948"
+        "index.html:weightBasedMovePower:8953"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2832,7 +2832,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11452"
+        "index.html:forecastCommonSecondaryStatus:11457"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -2899,7 +2899,7 @@
       "classification": "要調査",
       "assessmentScope": "登録や参照だけでは効果実装を確定できない。",
       "executableReferences": [
-        "index.html:multiHitOutcomeDistribution:9767"
+        "index.html:multiHitOutcomeDistribution:9772"
       ],
       "tests": [],
       "scopedTestsPassed": false,
@@ -2996,7 +2996,7 @@
       "classification": "部分実装",
       "assessmentScope": "Confirmed defender ability weight for Low Kick/Grass Knot, minimum weight and threshold rounding. Float Stone, Autotomize, Heavy Slam/Heat Crash and full damage unverified.",
       "executableReferences": [
-        "index.html:weightBasedMovePower:8949"
+        "index.html:weightBasedMovePower:8954"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -3066,7 +3066,7 @@
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
         "index.html:confirmedSleepProtection:6490",
-        "index.html:forecastCommonSecondaryStatus:11456"
+        "index.html:forecastCommonSecondaryStatus:11461"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"

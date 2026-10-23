@@ -1,0 +1,88 @@
+{
+  "completion": false,
+  "incidents": [
+    {
+      "id": "speed-boost-switch-in-turn",
+      "baseCommit": "436cc4e",
+      "reproduction": {
+        "game": 1,
+        "turn": 3,
+        "species": "バシャーモ",
+        "observedAppSpeedStage": 1,
+        "nativeShowdownSpeedStage": 0
+      },
+      "failure": "Page.evaluate: Error: after 1/3 stage my2 spe [1,0]\n    at assert (eval at evaluate (:311:30), <anonymous>:9:46)\n    at eval (eval at evaluate (:311:30), <anonymous>:19:89)\n    at Array.forEach (<anonymous>)\n    at compare (eval at evaluate (:311:30), <anonymous>:16:13)\n    at Object.observe (eval at evaluate (:311:30), <anonymous>:95:23)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:16)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "independentEvidence": "pokemon-showdown@0.11.10 dist/data/abilities.js speedboost.onResidual gates pokemon.activeTurns",
+      "cause": "commitTurnActions clears enteredBySwitchThisTurn before end-turn ability; freshEntry still identifies the just-entered occupant",
+      "fix": "Skip end-turn Speed Boost for freshEntry/pendingPostTurnEntry; full-turn resident including initial leads still boosts after commit",
+      "status": "corrected-and-revalidated",
+      "verification": [
+        "test-series-speed-boost.js",
+        "test-series-field-renewal.js",
+        "test-series-voluntary-switch-order.js",
+        "SERIES_MATCH_RESULTS.json",
+        "TEST_RESULTS.json"
+      ]
+    },
+    {
+      "id": "same-weather-entry-renews-duration",
+      "reproduction": {
+        "game": 1,
+        "turn": 5,
+        "species": "ペリッパー",
+        "appRainTurns": 8,
+        "nativeRainTurns": 3
+      },
+      "failure": "Page.evaluate: Error: next 1/5 field weatherTurns [\"8\",3]\n    at assert (eval at evaluate (:311:30), <anonymous>:9:46)\n    at compare (eval at evaluate (:311:30), <anonymous>:15:73)\n    at Object.observe (eval at evaluate (:311:30), <anonymous>:99:23)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:16)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "independentEvidence": "pokemon-showdown@0.11.10 sim/field.js setWeather: same weather returns false in gen >5; setTerrain: same terrain returns false",
+      "cause": "commitEntryFieldEffect reset duration even when the current field already matched",
+      "fix": "Confirmed re-entry preserves current matching weather/terrain and duration; a different field or expired field still activates",
+      "status": "corrected-and-revalidated",
+      "verification": [
+        "test-series-speed-boost.js",
+        "test-series-field-renewal.js",
+        "test-series-voluntary-switch-order.js",
+        "SERIES_MATCH_RESULTS.json",
+        "TEST_RESULTS.json"
+      ]
+    },
+    {
+      "id": "ordinary-switch-intimidate-order",
+      "reproduction": {
+        "game": 23,
+        "turn": 3,
+        "myOutgoing": "まひ/おいかぜ下のゴリランダー (S105)",
+        "opponentOutgoing": "ガブリアス (S169)",
+        "incoming": "バシャーモ",
+        "observedAppAttackStage": -1,
+        "nativeShowdownAttackStage": 0
+      },
+      "independentEvidence": "Native Showdown log switches Incineroar first, Intimidate hits outgoing Rillaboom/Whimsicott; Blaziken enters afterwards and has no Attack drop",
+      "cause": "Consecutive voluntary switches replaced every occupant before any entry ability",
+      "fix": "Resolve each ordinary switch and its entry ability in outgoing action order; retain batch resolution for simultaneous initial/forced entries and the competing-field uncertainty gate",
+      "status": "corrected-and-revalidated",
+      "verification": [
+        "test-series-speed-boost.js",
+        "test-series-field-renewal.js",
+        "test-series-voluntary-switch-order.js",
+        "SERIES_MATCH_RESULTS.json",
+        "TEST_RESULTS.json"
+      ]
+    }
+  ],
+  "harnessCorrections": [
+    {
+      "kind": "observation-order",
+      "reproduction": "game 21 turn 3: Pelipper switches in, then Flash Cannon lowers SpD; observed -1 was written before production switch reset and erased",
+      "cause": "Replay adapter applied a new-stay secondary rank to the old bench stay before committing the switch",
+      "correction": "Apply explicit secondary-rank observations after production action/switch commit and before comparing/resnapshotting; refresh recommendations afterwards",
+      "applicationRuntimeChanged": false,
+      "verification": "All 3 series suites re-run; other 144 commands retained only after verifying their source hashes did not change"
+    },
+    {
+      "kind": "oracle-fixture-semantics",
+      "correction": "Match the documented opponent max-speed prior; carry source/target status into the oracle; normalize Showdown immune=false and app singleton zero into the same deterministic zero damage across 16 rolls",
+      "applicationRuntimeChanged": false
+    }
+  ]
+}

@@ -9,10 +9,11 @@ from hashlib import sha256
 from datetime import datetime, timezone
 import json, subprocess, zipfile
 ROOT = Path(__file__).resolve().parent
-DEST = ROOT / 'release/practice-v2.9.14'
-ARCHIVE = 'gc2027ii-v2.9.14-practice-verification.zip'
-BASE = 'c089a1937d7fccc34e2b26a25087496cecc9a982'
-REPORTS = [
+DEST = ROOT / 'release/practice-v2.9.15'
+ARCHIVE = 'gc2027ii-v2.9.15-practice-verification.zip'
+BASE = '436cc4e1a474bdebeb865161314f3c73331eca1d'
+REPORTS = ['reference-data/series-matches/group-0.json','reference-data/series-matches/group-1.json','reference-data/series-matches/group-2.json',
+    'SERIES_MATCH_RESULTS.json','SERIES_MATCH_INCIDENTS.json','SERIES_MATCH_GROUP_0_RESULTS.json','SERIES_MATCH_GROUP_1_RESULTS.json','SERIES_MATCH_GROUP_2_RESULTS.json',
     'TEST_RESULTS.json', 'FROZEN_BASELINE.json', 'OFFICIAL_MC_AUDIT.json',
     'OFFICIAL_CATALOG_COMPARISON.json', 'PRACTICE_RELEASE_READINESS.json',
     'STATS_MOVES_AUDIT_RESULTS.json', 'PRIMARY_MOVE_DIFFERENTIAL_RESULTS.json',
@@ -23,7 +24,7 @@ REPORTS = [
     'VERSION_MIGRATION_RESULTS.json', 'FULL_MATCH_E2E_RESULTS.json',
     'TOURNAMENT_PRACTICAL_RESULTS.json', 'LIVE_PRACTICAL_RESULTS.json', 'LIVE_WORKFLOW_RESULTS.json',
 ]
-DOCS = ['LIVE_PRACTICAL_AUDIT.md', 'PRACTICE_RELEASE_REPORT.md', 'OFFICIAL_CATALOG_REVIEW.md', 'PC_TRIAL_START.md',
+DOCS = ['SERIES_MATCH_AUDIT.md','LIVE_PRACTICAL_AUDIT.md', 'PRACTICE_RELEASE_REPORT.md', 'OFFICIAL_CATALOG_REVIEW.md', 'PC_TRIAL_START.md',
         'JSON_BACKUP.md', 'UNCONFIRMED_CONDITIONS.md', 'STATS_MOVES_AUDIT.md',
         'THREE_ATTACKS_AUDIT.md', 'FINAL_DAMAGE_KO_AUDIT.md']
 
@@ -39,7 +40,7 @@ def main():
     for commit in [BASE, '64d8d75']:
         subprocess.run(['git', 'merge-base', '--is-ancestor', commit, 'HEAD'], cwd=ROOT, check=True)
     tests = load('TEST_RESULTS.json'); baseline = load('FROZEN_BASELINE.json')
-    assert tests['total'] >= 142 and tests['passed'] == tests['total'] == len(tests['results'])
+    assert tests['total'] >= 148 and tests['passed'] == tests['total'] == len(tests['results'])
     assert all(r['exitCode'] == 0 for r in tests['results'])
     current(tests['sourceSha256']); current(baseline['runtimeSha256'])
     assert baseline['completion'] is False and load('IMPLEMENTATION_LEDGER.json')['completion'] is False
@@ -57,6 +58,8 @@ def main():
     for name in ['PC_BROWSER_RESULTS.json', 'PREZIP_BROWSER_RESULTS.json',
                  'VERSION_MIGRATION_RESULTS.json', 'FULL_MATCH_E2E_RESULTS.json']:
         assert load(name)['passed'] is True, name
+    assert load('SERIES_MATCH_RESULTS.json')['passed'] is True
+    assert load('SERIES_MATCH_RESULTS.json')['completeMatches'] >= 30
     assert load('LIVE_PRACTICAL_RESULTS.json')['passed'] is True
     assert load('LIVE_PRACTICAL_RESULTS.json')['total'] >= 30
     assert load('LIVE_WORKFLOW_RESULTS.json')['passed'] is True
@@ -66,7 +69,7 @@ def main():
         'reference-data/stats-moves/PROVENANCE.json', 'reference-data/three-attacks/PROVENANCE.json']))
     content = {name: (ROOT / name).read_bytes() for name in names}
     content['START_HERE.txt'] = ('''大会前の練習・検証専用 / PRACTICE AND VERIFICATION ONLY
-v2.9.14 / baseline c089a19 + 最終実戦操作/推奨修正 (タスキ・18半減実修正を保持)
+v2.9.15 / baseline 436cc4e + 30試合連続観測・状態管理検証 (タスキ・18半減実修正を保持)
 公式ポケモン・技・持ち物一覧の全件適合は未確認です。
 対戦中の外部ツール利用許可は確認されていません。許可の証明ではありません。
 全仕様 completion:false。計算は記録された検証条件内に限ります。
@@ -76,7 +79,7 @@ URL: http://127.0.0.1:8765/index.html (公開サイトとは別の保存領域)
 起動前に旧版と移行先の両方でJSONバックアップを保存してください。
 ZIP自身のSHA-256は隣接するSHA256SUMS.txt、内部ファイルはSHA256SUMS_CONTENTS.txt。
 ''').encode()
-    manifest = dict(version='v2.9.14', branch='codex-development', completion=False,
+    manifest = dict(version='v2.9.15', branch='codex-development', completion=False,
         purpose='pre-tournament-practice-and-verification-only', sourceBaseCommit=BASE,
         generatedAt=datetime.now(timezone.utc).isoformat(), runtimeUnchangedSinceBase=False, dataAndUiBaselinePreserved=True,
         practiceTechnicalChecksPassed=True, fullTournamentRulesCertified=False,

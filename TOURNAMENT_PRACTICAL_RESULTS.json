@@ -1,6 +1,6 @@
 {
   "completion": false,
-  "generatedAt": "2026-10-23T11:15:32.333250+00:00",
+  "generatedAt": "2026-10-23T16:33:02.306499+00:00",
   "localChecksPassed": true,
   "checks": {
     "developmentBranch": true,
@@ -28,13 +28,13 @@
     "Native Windows Chrome/Edge products and human decision time remain unverified; Chromium Windows-UA profiles are compatibility tests only."
   ],
   "testCommands": {
-    "passed": 142,
-    "total": 142
+    "passed": 148,
+    "total": 148
   },
   "speedComparisons": 40320,
   "damageComparisons": 331776,
   "criticalComparisons": 1584,
   "priorityBerryComparisons": 16384,
-  "maxRefreshMs": 651.5,
-  "sourceCommit": "c089a1937d7fccc34e2b26a25087496cecc9a982"
+  "maxRefreshMs": 759.2,
+  "sourceCommit": "436cc4e1a474bdebeb865161314f3c73331eca1d"
 }

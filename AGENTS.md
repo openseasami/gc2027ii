@@ -1,3 +1,9 @@
+# v2.9.15 連続模擬対戦監査（最新ユーザー指示）
+
+436cc4e基準。SERIES_MATCH_AUDIT.md、SERIES_MATCH_RESULTS.json、SERIES_MATCH_INCIDENTS.jsonを読む。6体から4体の独立Showdown完全試合を30試合実行し、実ページへ観測入力として再現する。HP/status/二次効果の観測入力と自動場/能力処理の検証を混同しない。推奨は合法性・消失・参考推定を確認し、最適方策は認定しない。新機能/UI再設計/データ変更/公式一覧・規約調査は行わない。
+
+再検証はrun-development-checks.py（各10試合の3ケースは600秒上限、他は180秒）→evaluate-series-matches.py→evaluate-tournament-practical.py→evaluate-practice-release.py。全成功時だけbuild-practice-release.py→verify-practice-release.py。新規ZIPはrelease/practice-v2.9.15/だけ。v2.9.14とv2.9.13の確定ZIPを上書きしない。codex-developmentのみ、completion:false、main/公開サイト不変更。
+
 # 継続開発契約
 
 ## 最新：c089a19基準のv2.9.14最終操作・推奨修正

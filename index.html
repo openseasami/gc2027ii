@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Global Challenge 2027 II Support v2.9.14</title>
+<title>Global Challenge 2027 II Support v2.9.15</title>
 <style>
 :root{--bg:#f4f6f8;--panel:#fff;--line:#d8dee8;--text:#18202b;--muted:#667085;--accent:#2563eb;--accent2:#dbeafe;--danger:#b42318;--warn:#fff4cc;--ok:#eaf7ee;--chip:#f8fafc;--violet:#7c3aed}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}button,select{font:inherit}button{cursor:pointer}
@@ -7155,16 +7155,14 @@ function commitTurnActions(){
   const fieldTimeline=[];
   const linkedHits=new Set();
 
-  // v1.80.3: Record both sides of each switch phase.
-  // v1.75.6: Commit each consecutive switch phase together. An Intimidate or
-  // weather/terrain setter must see the new occupants, not outgoing Pokémon.
-  // Non-switch actions remain in their existing event order.
+  // Ordinary switches resolve in action order. Each entrant's ability acts
+  // before the next switch, so Intimidate must see the current occupants.
+  // Initial/forced simultaneous entries still use resolveEntryEvents as a batch.
   const commitSwitchBatch=batch=>{
-    // Preserve the actual pre-switch board before any slot is replaced.
-    const beforeSwitch=typeof captureTurnAttackState==='function'?captureTurnAttackState():null;
-    const beforeField={weather:$('weather')?.value||'なし',terrain:$('terrain')?.value||'なし'};
     const entering=[];
     batch.forEach(ev=>{
+      const beforeSwitch=typeof captureTurnAttackState==='function'?captureTurnAttackState():null;
+      const beforeField={weather:$('weather')?.value||'なし',terrain:$('terrain')?.value||'なし'};
       const {side,idx,actor:name,action:a}=ev;
       const team=side==='my'?state.myTeam:state.oppTeam;
       const active=side==='my'?state.myActive:state.oppActive;
@@ -7173,27 +7171,31 @@ function commitTurnActions(){
       let slot=(start||[]).indexOf(idx);
       if(slot<0)slot=(active||[]).indexOf(idx);
       if(toIdx<0||slot<0)return;
-      const outgoing=ensureBattleEntry(side,idx,name);
       applySwitchOutAbility(side,idx,name);
       resetEntryStages(side,idx,name);
       active[slot]=toIdx;
       const incoming=ensureBattleEntry(side,toIdx,a.to);
-      incoming.freshEntry=true;
-      incoming.enteredBySwitchThisTurn=true;
-      entering.push({side,idx:toIdx,name:a.to});
-    });
-    if(entering.length){
-      resolveEntryEvents(entering);
-      if(typeof turnFieldCheckpoint==='function')entering.forEach(e=>{
-        const point=turnFieldCheckpoint('switch',e.side,e.name);
-        // Entry abilities resolve only after all simultaneous replacements.
-        // Retain both sides of that transition for audit and replay.
+      incoming.freshEntry=true;incoming.enteredBySwitchThisTurn=true;
+      const entry={side,idx:toIdx,name:a.to};entering.push(entry);
+      resolveEntryEvents([entry]);
+      if(typeof turnFieldCheckpoint==='function'){
+        const point=turnFieldCheckpoint('switch',side,a.to);
         if(beforeSwitch)point.beforeCombat=beforeSwitch;
         point.beforeField={...beforeField};
         point.afterCombat=typeof captureTurnAttackState==='function'?captureTurnAttackState():null;
         fieldTimeline.push(point);
-      });
+      }
+    });
+    // A max-speed opponent prior cannot certify competing setter order.
+    // Preserve the existing uncertainty gate across the sequential transitions.
+    const uncertain=typeof uncertainEntryFieldKinds==='function'?uncertainEntryFieldKinds(entering):{};
+    for(const kind of ['weather','terrain'])if(uncertain[kind]){
+      if(!state.entryFieldUncertainty)state.entryFieldUncertainty={};
+      state.entryFieldUncertainty[kind]=uncertain[kind];
+      if($(kind))$(kind).value='なし';
+      const turns=kind==='weather'?'weatherTurns':'terrainTurns';if($(turns))$(turns).value='0';
     }
+    if(typeof showEntryFieldUncertainty==='function')showEntryFieldUncertainty();
   };
   let switchBatch=[];
   const flushSwitchBatch=()=>{if(switchBatch.length){commitSwitchBatch(switchBatch);switchBatch=[];}};
@@ -7373,11 +7375,14 @@ function commitEntryFieldEffect(side,idx,name){
   const ev=confirmedEntryEffect(side,idx,name);
   if(!ev)return false;
   if(ev.kind==='weather'){
+    // Re-entering the same weather setter does not renew an existing weather.
+    if($('weather')?.value===ev.weather)return false;
     if($('weather'))$('weather').value=ev.weather;
     if($('weatherTurns'))$('weatherTurns').value=String(ev.turns==null?5:ev.turns);
     return true;
   }
   if(ev.kind==='terrain'){
+    if($('terrain')?.value===ev.terrain)return false;
     setTerrainState(ev.terrain,ev.turns);
     return true;
   }
@@ -14144,6 +14149,9 @@ function applyEndTurnAbilityEffects(){
     if(!name||!d||(d.hp??100)<=0)continue;
     // Only a confirmed ability may change observed state. The registry is
     // responsible for choosing the end-of-turn effect; legacy fallback is removed.
+    // Speed Boost requires a full turn on the field. commitTurnActions keeps
+    // freshEntry for a mid-turn switch; initial leads become residents there.
+    if(d.freshEntry||d.pendingPostTurnEntry)continue;
     const ability=confirmedAbilityIs(side,idx,name,'かそく')?'かそく':null;
     if(!ability||typeof EffectEngine==='undefined')continue;
     const result=EffectEngine.evaluate('on_turn_end',{source:{ability}});

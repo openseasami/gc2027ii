@@ -1,0 +1,115 @@
+{
+  "completion": false,
+  "passed": false,
+  "meaning": "After observation-order harness correction; native game 23 exposed a genuine ordinary-switch Intimidate runtime bug. Not counted as a successful 30-match run.",
+  "runtimeSha256": "291c1632302fca0f2a190df222bca41bc6f8a727a5fab50b766adb280a76192d",
+  "replayHelperSha256": "1604159a049fc875477c2e1205de36a936db9e55f98b5525e63f6e9d9a710f7b",
+  "groupEvidence": {
+    "completion": false,
+    "passed": false,
+    "group": 2,
+    "oracle": "pokemon-showdown@0.11.10",
+    "format": "gen9doublescustomgame with explicit pickedTeamSize=4",
+    "games": [
+      {
+        "id": 21,
+        "family": "room-boost",
+        "seed": [
+          21,
+          277,
+          29,
+          101
+        ],
+        "selected": [
+          [
+            3,
+            2,
+            0,
+            4
+          ],
+          [
+            5,
+            3,
+            1,
+            4
+          ]
+        ],
+        "turns": 6,
+        "complete": true,
+        "winner": "opp",
+        "undoReplay": true,
+        "jsonRestore": true,
+        "saveReload": true
+      },
+      {
+        "id": 22,
+        "family": "rain-tailwind",
+        "seed": [
+          22,
+          290,
+          29,
+          101
+        ],
+        "selected": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "turns": 6,
+        "complete": true,
+        "winner": "my",
+        "undoReplay": true,
+        "jsonRestore": true,
+        "saveReload": true
+      },
+      {
+        "id": 23,
+        "family": "terrain-seed",
+        "seed": [
+          23,
+          303,
+          29,
+          101
+        ],
+        "selected": [
+          [
+            4,
+            5,
+            2,
+            3
+          ],
+          [
+            2,
+            4,
+            0,
+            5
+          ]
+        ],
+        "turns": 2,
+        "complete": false,
+        "winner": "opp",
+        "undoReplay": true,
+        "jsonRestore": false,
+        "saveReload": false
+      }
+    ],
+    "limitations": [
+      "Custom Gen9 fixtures, not official Champions full-engine parity or event legality",
+      "HP/status and secondary rank/item outcomes are observations; not claimed as auto-applied",
+      "Recommendations checked for existence, legal actions and uncertainty, not optimal multi-turn policy",
+      "Linux Chromium with Windows UA, not native Windows Chrome/Edge certification",
+      "Terminal victory can interrupt residuals: final HP/status/items/actives checked; final automatic field/stage residual comparison explicitly excluded"
+    ],
+    "completedMatches": 2,
+    "error": "Page.evaluate: Error: after 23/3 stage my2 atk [-1,0]\n    at assert (eval at evaluate (:311:30), <anonymous>:9:46)\n    at eval (eval at evaluate (:311:30), <anonymous>:20:100)\n    at Array.forEach (<anonymous>)\n    at compare (eval at evaluate (:311:30), <anonymous>:16:13)\n    at Object.observe (eval at evaluate (:311:30), <anonymous>:101:3)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:16)\n    at UtilityScript.evaluate (<anonymous>:318:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+  }
+}

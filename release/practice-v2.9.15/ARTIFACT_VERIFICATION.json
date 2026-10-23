@@ -1,0 +1,81 @@
+{
+  "completion": false,
+  "passed": true,
+  "purpose": "pre-tournament-practice-and-verification-only",
+  "duringMatchToolPermission": "unconfirmed",
+  "duringMatchUseAuthorized": false,
+  "checkedAt": "2026-10-23T16:33:14.426847+00:00",
+  "archive": "release/practice-v2.9.15/gc2027ii-v2.9.15-practice-verification.zip",
+  "sha256": "455aa0c934386b0d12528f117b7497bcd9173377832c5bff0cdb3e5b3a442522",
+  "tests": [
+    {
+      "command": "test-pc-launcher.py",
+      "exitCode": 0,
+      "stdout": "PASS shipped Python launcher serves trial and external engine at stable localhost origin\n",
+      "stderr": ""
+    },
+    {
+      "command": "browser_pc_trial_test.py",
+      "exitCode": 0,
+      "stdout": "PASS PC Chromium Chrome/Edge UA profiles: 8 layouts, dual targets, real 45s turn/switch/HP/save/undo/JSON restore\n",
+      "stderr": ""
+    },
+    {
+      "command": "browser_prezip_test.py",
+      "exitCode": 0,
+      "stdout": "PASS pre-ZIP: 82 Mega pre/post references, selected forms, HP recalc, rail contrast, corrected offline cache/save, origin isolation\n",
+      "stderr": ""
+    },
+    {
+      "command": "browser_full_match_test.py",
+      "exitCode": 0,
+      "stdout": "PASS complete observed 4-vs-4 match UI: three turns, KO replacements, undo/replay, reload, win record; no state injection\n",
+      "stderr": ""
+    },
+    {
+      "command": "browser_live_workflow_test.py",
+      "exitCode": 0,
+      "stdout": "PASS continuous PC workflow: manual six, leads, HP/switch, fields/TR/Tailwind/Protect, KO replacement, undo/replay, JSON; automated registration-to-recommendation <45s\n",
+      "stderr": ""
+    },
+    {
+      "command": "browser_series_0_test.py",
+      "exitCode": 0,
+      "stdout": "Completed native/observed match 1 8 opp\nCompleted native/observed match 2 10 opp\nCompleted native/observed match 3 6 opp\nCompleted native/observed match 4 5 my\nCompleted native/observed match 5 8 my\nCompleted native/observed match 6 5 opp\nCompleted native/observed match 7 8 opp\nCompleted native/observed match 8 14 my\nCompleted native/observed match 9 6 opp\nCompleted native/observed match 10 6 my\nPASS complete native/observed series 0 10 {'turns': 86, 'fieldAssertions': 1134, 'stageAssertions': 7056, 'hpAssertions': 1456, 'speedAssertions': 285, 'recommendations': 76, 'forcedReplacements': 41, 'observedStatus': 16, 'observedItemConsumption': 7, 'observedSecondaryRanks': 7}\n",
+      "stderr": ""
+    }
+  ],
+  "runtimeSha256": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "battle-core.js": "02815420ea1c334481fa8378f25ede32387749308e9cf3ce3803863871e6df51",
+    "critical-effects.js": "83d54bd9fb80c307c8fdcb399fa0d11fbd7a27722bbf0b340407ba8417f4c72c",
+    "effect-engine.js": "06e5fd3ba720d83316fa32a9b4e79bd8c3c729b57d3e9326049c2375481d6e78",
+    "icon-192.png": "269f2adbba00855bf883fd0a284cf2bc5d3aa87dcdea67bc2484aa11204b1502",
+    "icon-512.png": "3ab233c4b30a924ec0e12ae0e737abfdc465cd339bf92b043fd81e42babaa4f8",
+    "index.html": "9aae100cdeabfc3f25a497f7cd70ee9f07dc0ee4062c859f095d612ae8834c99",
+    "launch-pc-trial.py": "c4cc5092cb846e71311ca1a7f26facae52b508847abc2c846baff401528d1575",
+    "manifest.webmanifest": "ba634d04f244146555591b6db7e3bc82550ae06623d8dac25dea74a132c3936c",
+    "priority-engine.js": "1c7fb953de596fc7b0da6f9def31a818f06f615c69f69db871310751abbabffb",
+    "rank-effects.js": "f9b217183a9b079178c3c7c51171310cbc1ecc0774abee93df0d88fe10d0a2ce",
+    "start-pc-trial.cmd": "ccbe4c2c28ddec7356806d0501b683d3f395577a618bd40e4033adf6a1f9f64a",
+    "sw.js": "f4e2e37684d54aec7ae07052a86918ebcc9e726bb1e4269fb0d4718fa0e79452",
+    "three-attack-effects.js": "cbef315088b116446588ecaec77db9f71aa243dc369eccb589996f4c19919773",
+    "turn-order-effects.js": "f0b4cda295774f7e9e47ddd321d23599d68a2c070d2c99d185b2e24f313518e4"
+  },
+  "testSourceSha256": {
+    "verify-practice-release.py": "747e32e855eee4df5c7542ab425648a3364d66f773d8e352274c4cabc9c3fa80",
+    "series-match-reference.js": "71bea24bb6573ff3318fca19124c0f3b749aed69f5ac56dab739be88f5d0ac88",
+    "series-match-replay.js": "1604159a049fc875477c2e1205de36a936db9e55f98b5525e63f6e9d9a710f7b",
+    "series_match_harness.py": "1abc83ecc96c8916db3d3d183a64ffc3d8175a8ae042272ccf557dff1759b1a7",
+    "live-practical-oracle.js": "9262cb758e4ef68bbc86dd886bf964c7125bf72122d313853cc35d0e6e871827",
+    "test-pc-launcher.py": "d93f326b03e24ae370b58022e095d48af309982cb88e76f34a43520f9ef1eb41",
+    "browser_pc_trial_test.py": "a9cfd5e121907683d8c83a9831e93f63f1759f3ff78fb5a49313250be8543428",
+    "browser_prezip_test.py": "c333877de9b28d4562d907ea8ea85649d0d2fd8bdb2ab1454ed3c65e0c39a41e",
+    "browser_full_match_test.py": "b1f0933fc87b2bf0f66cefa60c6d2a70a0fcfbe5e0dc2851a9918860fc6452b1",
+    "browser_live_workflow_test.py": "67d1aea60fb6bcb7c221446406851c3512e02452f5ac124a1654a6f19ca47b6e",
+    "browser_series_0_test.py": "e24d05cc94b11917f2f74ab7f0a3dea83a0176783255cd11e4cc8f34516c0053"
+  },
+  "filesVerified": 58,
+  "sash64d8d75Included": true,
+  "all18RegisteredResistBerriesIncluded": true
+}

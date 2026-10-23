@@ -80,7 +80,7 @@ try:
   page.evaluate('navigator.serviceWorker.ready')
   if not page.evaluate('!!navigator.serviceWorker.controller'):page.reload(wait_until='networkidle')
   await_cache=page.evaluate('''async()=>{
-   const names=await caches.keys(),name=names.find(x=>x.endsWith('v2.9.14'));const c=await caches.open(name);
+   const names=await caches.keys(),name=names.find(x=>x.endsWith('v2.9.15'));const c=await caches.open(name);
    const response=await c.match(new URL('./index.html',location.href).href);return {text:await response.text(),urls:(await c.keys()).map(x=>new URL(x.url).pathname.split('/').pop())};
   }''')
   assert sha256(await_cache['text'].encode()).hexdigest()==sha256((ROOT/'index.html').read_bytes()).hexdigest()

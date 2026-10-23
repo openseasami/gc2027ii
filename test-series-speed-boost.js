@@ -1,0 +1,8 @@
+// Regression extracted from the real turn-end function, not a duplicate engine.
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const html=fs.readFileSync(__dirname+'/index.html','utf8'),source=html.slice(html.indexOf('function applyEndTurnAbilityEffects(){'),html.indexOf('// Expose advisory end-turn residuals'));
+const state={myTeam:['Blaziken','Blaziken'],oppTeam:['Blaziken','Blaziken'],myActive:[0,1],oppActive:[0,1],my:[{hp:100,speStage:0},{hp:100,speStage:0,freshEntry:true}],opp:[{hp:100,speStage:0,pendingPostTurnEntry:true},{hp:100,speStage:0}]};
+const ctx={state,EffectEngine:require('./effect-engine.js'),confirmedAbilityIs:(side,i)=>!(side==='opp'&&i===1),applyBattleBoost:(s,i,b)=>{state[s][i].speStage+=b.speStage}};vm.createContext(ctx);vm.runInContext(source,ctx);
+ctx.applyEndTurnAbilityEffects();assert.equal(state.my[0].speStage,1,'resident/initial lead after action commit');assert.equal(state.my[1].speStage,0,'ordinary/move switch entrant cannot boost immediately');assert.equal(state.opp[0].speStage,0,'post-turn KO replacement cannot boost immediately');assert.equal(state.opp[1].speStage,0,'unconfirmed ability never mutates observed state');
+state.my[1].freshEntry=false;state.opp[0].pendingPostTurnEntry=false;ctx.applyEndTurnAbilityEffects();assert.equal(state.my[1].speStage,1,'resident next turn boosts');assert.equal(state.opp[0].speStage,1,'replacement after full turn boosts');state.my[0].hp=0;ctx.applyEndTurnAbilityEffects();assert.equal(state.my[0].speStage,2,'fainted never boosts');
+console.log('PASS real Speed Boost turn-end: resident, mid-turn entry, post-turn replacement, next turn, unknown and KO');

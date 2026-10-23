@@ -5,7 +5,7 @@ for(const row of rows){
  const b=new ps.Battle({formatid:'gen9doublescustomgame',seed:[1,2,3,4]});
  try{
   for(const [side,species,ability,item]of [['p1',row.sourceId,row.aa,row.sourceItem],['p2',row.targetId,row.da,row.targetItem]])b.setPlayer(side,{team:[{species,ability,item,level:50,moves:['splash']},{species:'Eevee',ability:'Run Away',level:50,moves:['splash']}]});
-  b.makeChoices('team 12','team 12');const a=b.p1.active[0],d=b.p2.active[0];a.storedStats={...row.aStats};d.storedStats={...row.dStats};a.status=row.burn?'brn':'';a.boosts={...a.boosts,...row.aBoosts};d.boosts={...d.boosts,...row.dBoosts};a.maxhp=a.baseMaxhp=a.hp=row.aHp;d.maxhp=d.baseMaxhp=d.hp=row.dHp;
+  b.makeChoices('team 12','team 12');const a=b.p1.active[0],d=b.p2.active[0];a.storedStats={...row.aStats};d.storedStats={...row.dStats};a.status=row.sourceStatus||(row.burn?'brn':'');d.status=row.targetStatus||'';a.boosts={...a.boosts,...row.aBoosts};d.boosts={...d.boosts,...row.dBoosts};a.maxhp=a.baseMaxhp=a.hp=row.aHp;d.maxhp=d.baseMaxhp=d.hp=row.dHp;
   b.field.clearWeather();b.field.clearTerrain();if(row.weatherId)b.field.setWeather(row.weatherId,a);if(row.terrainId)b.field.setTerrain(row.terrainId,a);
   for(const side of b.sides){side.removeSideCondition('reflect');side.removeSideCondition('lightscreen');side.removeSideCondition('auroraveil');}
   if(row.sourceTW)b.p1.addSideCondition('tailwind',a);if(row.targetTW)b.p2.addSideCondition('tailwind',d);
@@ -20,7 +20,7 @@ for(const row of rows){
   }b.field.removePseudoWeather('trickroom');
   for(let roll=85;roll<=100;roll++){
    b.sendUpdates();d.setItem(row.targetItem);b.randomizer=n=>Math.floor(n*roll/100);const move=b.dex.getActiveMove(row.moveId);b.setActiveMove(move,a,d);b.singleEvent('ModifyType',move,null,a,d,move,move);b.singleEvent('ModifyMove',move,null,a,d,move,move);b.runEvent('ModifyType',a,d,move,move);b.runEvent('ModifyMove',a,d,move,move);move.willCrit=false;move.spreadHit=!!row.spread;
-   const expected=b.actions.getDamage(a,d,move,true),actual=row.rolls[roll-85];comparisons++;
+   const rawExpected=b.actions.getDamage(a,d,move,true),expected=rawExpected===false?0:rawExpected,actual=row.rolls[roll-85];comparisons++;
    if(actual!==expected){failureCount++;if(failures.length<30)failures.push({id:row.id,path:row.path,roll,expected,actual});}
   }
  }finally{b.destroy();}

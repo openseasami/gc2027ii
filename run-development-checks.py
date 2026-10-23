@@ -10,10 +10,10 @@ ROOT=Path(__file__).resolve().parent
 def run(command):
     started=time.monotonic()
     try:
-        result=subprocess.run(command,cwd=ROOT,text=True,capture_output=True,timeout=180)
+        result=subprocess.run(command,cwd=ROOT,text=True,capture_output=True,timeout=600 if any(str(x).startswith('browser_series_') for x in command) else 180)
         return dict(command=command,exitCode=result.returncode,seconds=round(time.monotonic()-started,3),stdout=result.stdout[-18000:],stderr=result.stderr[-18000:])
     except subprocess.TimeoutExpired as e:
-        return dict(command=command,exitCode=124,seconds=round(time.monotonic()-started,3),stdout=str(e.stdout or '')[-18000:],stderr='Timed out after 180 seconds')
+        return dict(command=command,exitCode=124,seconds=round(time.monotonic()-started,3),stdout=str(e.stdout or '')[-18000:],stderr='Timed out at command-specific bound (series: 600s; others: 180s)')
 
 def main():
     commands=[['node',p.name] for p in sorted(ROOT.glob('test-*.js'))]
@@ -26,7 +26,7 @@ def main():
         results.append(run([sys.executable,file.name]))
     results.append(run([sys.executable,'browser_smoke_portable.py']))
     files=['three-attack-effects.js','three-attack-oracle.js','pending-move-oracle.js','audit-stats-moves.py','prepare-data-audit-references.js','primary-move-oracle.js','ally-damage-oracle.js','main-matchup-oracle.js','UI_PRESERVATION_BASELINE.json','launch-pc-trial.py','start-pc-trial.cmd','evaluate-tournament-practical.py','TOURNAMENT_PRACTICAL_GATES.json','critical-effects.js','rank-effects.js','index.html','sw.js','battle-core.js','effect-engine.js','priority-engine.js','turn-order-effects.js','implementation-ledger.js','MECHANICS_EVIDENCE.json','coverage-assessment.js','COVERAGE_REVIEW_PLAN.json','ABILITY_REVIEW_BASELINE.json','ABILITY_REFERENCE_HOOKS.json','reference-ability-audit.js','development-automation.py','DEVELOPMENT_AUTOMATION_POLICY.json']
-    files += ['README.txt','live-practical-scenarios.js','live-practical-oracle.js','evaluate-practice-release.py','build-practice-release.py','verify-practice-release.py','ko-boundary-oracle.js','FROZEN_BASELINE.json','build-frozen-trial.py','verify-frozen-trial.py','run-development-checks.py']
+    files += ['series-match-reference.js','series-match-replay.js','series_match_harness.py','evaluate-series-matches.py','README.txt','live-practical-scenarios.js','live-practical-oracle.js','evaluate-practice-release.py','build-practice-release.py','verify-practice-release.py','ko-boundary-oracle.js','FROZEN_BASELINE.json','build-frozen-trial.py','verify-frozen-trial.py','run-development-checks.py']
     files += sorted(p.relative_to(ROOT).as_posix() for folder in ['reference-data/stats-moves','reference-data/three-attacks'] for p in (ROOT/folder).glob('*') if p.is_file())
     files += sorted({p.name for pattern in ['test-*.js','test-*.py','browser_*.py'] for p in ROOT.glob(pattern)})
     report=dict(generatedAt=datetime.now(timezone.utc).isoformat(),complete=False,completion=False,

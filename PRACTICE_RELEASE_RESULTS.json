@@ -1,76 +1,71 @@
 {
   "completion": false,
-  "generatedAt": "2026-10-23T11:18:09.245233+00:00",
-  "version": "v2.9.14",
+  "generatedAt": "2026-10-23T16:42:18.264555+00:00",
+  "version": "v2.9.15",
   "branch": "codex-development",
-  "sourceBaseCommit": "c089a1937d7fccc34e2b26a25087496cecc9a982",
+  "sourceBaseCommit": "436cc4e1a474bdebeb865161314f3c73331eca1d",
   "practicePackageAccepted": true,
   "fullTournamentRulesCertified": false,
   "duringMatchToolPermission": "unconfirmed",
   "duringMatchUseAuthorized": false,
   "officialResearchPerformedThisIteration": false,
   "testCommands": {
-    "passed": 142,
-    "total": 142,
-    "existing": 140,
-    "added": 2
+    "passed": 148,
+    "total": 148
   },
-  "liveValidation": {
-    "boards": 36,
-    "constraints": 12,
-    "passed": 48,
-    "total": 48,
-    "differential": {
-      "completion": false,
-      "oracle": "pokemon-showdown@0.11.10",
-      "scenarios": 36,
-      "comparisons": 576,
-      "speedComparisons": 72,
-      "priorityComparisons": 36,
-      "orderComparisons": 72,
-      "failureCount": 0,
-      "failures": [],
-      "scope": "Actual page outgoing/incoming adapters with explicit raw stats; selected adoption-120 matchups. Not full AP/species data, legality, RNG or complete match certification."
+  "seriesValidation": {
+    "completeMatches": 30,
+    "nativeTurns": 218,
+    "countsIncludingUndoReplay": {
+      "turns": 248,
+      "fieldAssertions": 3262,
+      "stageAssertions": 21042,
+      "hpAssertions": 4208,
+      "speedAssertions": 830,
+      "recommendations": 218,
+      "forcedReplacements": 112,
+      "observedStatus": 36,
+      "observedItemConsumption": 22,
+      "observedSecondaryRanks": 21
     },
-    "automatedRegistrationToRecommendationSeconds": 9.464
+    "differential": {
+      "scenarios": 218,
+      "comparisons": 3488,
+      "speedComparisons": 436,
+      "priorityComparisons": 218,
+      "orderComparisons": 436,
+      "failureCount": 0
+    }
   },
   "runtimeChanges": [
-    "index.html: limited operational and recommendation corrections + title",
-    "sw.js: v2.9.14 cache namespace"
+    "index.html: Speed Boost timing, same field duration, sequential ordinary-switch entry effects, release title",
+    "sw.js: v2.9.15 namespace"
   ],
   "dataAndUiPreserved": true,
   "readiness": "PRACTICE_RELEASE_READINESS.json",
-  "audit": "LIVE_PRACTICAL_AUDIT.md",
+  "audit": "SERIES_MATCH_AUDIT.md",
   "artifact": {
-    "version": "v2.9.14",
-    "archive": "release/practice-v2.9.14/gc2027ii-v2.9.14-practice-verification.zip",
-    "sha256": "a36b1119c6e08e20e35ac73131e963f2564dbdf30a2e60c8a9c187c072b91095",
-    "verification": "release/practice-v2.9.14/ARTIFACT_VERIFICATION.json",
-    "filesVerified": 49,
-    "extractedArchiveChecksPassed": 5,
-    "extractedArchiveChecksTotal": 5,
-    "sourceBaseCommit": "c089a1937d7fccc34e2b26a25087496cecc9a982",
-    "purpose": "pre-tournament-practice-and-verification-only",
-    "status": "practice-verification-only-pass",
-    "sash64d8d75Included": true,
-    "all18RegisteredResistBerriesIncluded": true,
-    "fullTournamentRulesCertified": false,
-    "duringMatchToolPermission": "unconfirmed",
-    "duringMatchUseAuthorized": false,
-    "completion": false
+    "archive": "release/practice-v2.9.15/gc2027ii-v2.9.15-practice-verification.zip",
+    "sha256": "455aa0c934386b0d12528f117b7497bcd9173377832c5bff0cdb3e5b3a442522",
+    "filesVerified": 58,
+    "passed": true
   },
+  "artifactTests": 6,
   "unresolved": [
-    "Reference estimates only: optimal recommendations, opponent-action probabilities and full multi-turn policy unverified",
-    "Eleven major moves and full mechanics combinations outside verified scope",
-    "Official catalog eligibility and independent in-match tool permission inherited unconfirmed; no new research requested",
-    "Linux Chromium Windows UA tests, not native Windows product-wide or human-thinking-time certification"
+    "Custom Gen9 fixtures, not official Champions full-engine parity or event legality",
+    "HP/status and secondary rank/item outcomes are observations; not claimed as auto-applied",
+    "Recommendations checked for existence, legal actions and uncertainty, not optimal multi-turn policy",
+    "Linux Chromium with Windows UA, not native Windows Chrome/Edge certification",
+    "Terminal victory can interrupt residuals: final HP/status/items/actives checked; final automatic field/stage residual comparison explicitly excluded",
+    "11 major moves remain unconfirmed; full specification incomplete",
+    "Official catalogs/rules excluded; during-match permission unconfirmed"
   ],
   "evidenceSha256": {
-    "TEST_RESULTS.json": "7d295e3640c8ff520969fb45ba506ad48dca9b9a5a11823b5c2991de2deda656",
-    "PRACTICE_RELEASE_READINESS.json": "f330a4ef2b71748c15f08775869263dbd9253df6acf6be2b7467f1c406fe33eb",
-    "LIVE_PRACTICAL_RESULTS.json": "4bae6f7ad1c5361e898d0d0f176104030112de3b8f44db14d3883622285005ea",
-    "LIVE_WORKFLOW_RESULTS.json": "8312d245b6762a770cfb2874358738b1bde9a68f453a822c62c916b62c445b12",
-    "VERSION_MIGRATION_RESULTS.json": "c4828abf8d6c06fda06c104fc2365b82e8721449a5b9536649ccda898759c489",
-    "release/practice-v2.9.14/ARTIFACT_VERIFICATION.json": "879a5c2196b7434526263f93417a7cf076b7741df7be4f605496e80b025f4573"
+    "TEST_RESULTS.json": "86f84214066f121f9a40fc8aaa9e9fa29865e755ae1024162788c966f0219265",
+    "SERIES_MATCH_RESULTS.json": "04997934eddef5cd9dba1d512555f4c995c7351734256d49cf5ac4532aa2e174",
+    "SERIES_MATCH_INCIDENTS.json": "4c05aec807318319270166b1ebbaf70ac913699aae2dc5ceec68fa3f430a2444",
+    "FROZEN_BASELINE.json": "bba9c9a4b5e52e02e6e9eca82756f11b6238dd54f2683ae7d80437c69feccce4",
+    "PRACTICE_RELEASE_READINESS.json": "83be134f3e62bf8469d18b02bd8cca70100b2533bbafff62339b598d42f07167",
+    "release/practice-v2.9.15/ARTIFACT_VERIFICATION.json": "8516b6ebabd3ca3ac4729af5b578921199213c158680f726856c4eee3ea3adb6"
   }
 }
