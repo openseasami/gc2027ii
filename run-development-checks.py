@@ -22,11 +22,11 @@ def main():
         results=list(pool.map(run,commands))
     results.append(run(['node','verify-release.js']))
     # Browser cases execute sequentially to avoid resource contention.
-    for file in sorted(ROOT.glob('browser_*test.py')):
+    for file in sorted(ROOT.glob('browser_*test.py'),key=lambda p:(p.name!='browser_three_attacks_test.py',p.name)):
         results.append(run([sys.executable,file.name]))
     results.append(run([sys.executable,'browser_smoke_portable.py']))
-    files=['pending-move-oracle.js','audit-stats-moves.py','prepare-data-audit-references.js','primary-move-oracle.js','ally-damage-oracle.js','main-matchup-oracle.js','UI_PRESERVATION_BASELINE.json','launch-pc-trial.py','start-pc-trial.cmd','evaluate-tournament-practical.py','TOURNAMENT_PRACTICAL_GATES.json','critical-effects.js','rank-effects.js','index.html','sw.js','battle-core.js','effect-engine.js','priority-engine.js','turn-order-effects.js','implementation-ledger.js','MECHANICS_EVIDENCE.json','coverage-assessment.js','COVERAGE_REVIEW_PLAN.json','ABILITY_REVIEW_BASELINE.json','ABILITY_REFERENCE_HOOKS.json','reference-ability-audit.js','development-automation.py','DEVELOPMENT_AUTOMATION_POLICY.json']
-    files += sorted(p.relative_to(ROOT).as_posix() for p in (ROOT/'reference-data/stats-moves').glob('*') if p.is_file())
+    files=['three-attack-effects.js','three-attack-oracle.js','pending-move-oracle.js','audit-stats-moves.py','prepare-data-audit-references.js','primary-move-oracle.js','ally-damage-oracle.js','main-matchup-oracle.js','UI_PRESERVATION_BASELINE.json','launch-pc-trial.py','start-pc-trial.cmd','evaluate-tournament-practical.py','TOURNAMENT_PRACTICAL_GATES.json','critical-effects.js','rank-effects.js','index.html','sw.js','battle-core.js','effect-engine.js','priority-engine.js','turn-order-effects.js','implementation-ledger.js','MECHANICS_EVIDENCE.json','coverage-assessment.js','COVERAGE_REVIEW_PLAN.json','ABILITY_REVIEW_BASELINE.json','ABILITY_REFERENCE_HOOKS.json','reference-ability-audit.js','development-automation.py','DEVELOPMENT_AUTOMATION_POLICY.json']
+    files += sorted(p.relative_to(ROOT).as_posix() for folder in ['reference-data/stats-moves','reference-data/three-attacks'] for p in (ROOT/folder).glob('*') if p.is_file())
     files += sorted({p.name for pattern in ['test-*.js','test-*.py','browser_*.py'] for p in ROOT.glob(pattern)})
     report=dict(generatedAt=datetime.now(timezone.utc).isoformat(),complete=False,completion=False,
         limitations=['Passing scenarios do not certify full mechanics, event legality, official-game parity, mobile usability or deployed-site equivalence.'],

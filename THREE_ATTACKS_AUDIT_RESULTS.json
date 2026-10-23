@@ -1,0 +1,213 @@
+{
+  "completion": false,
+  "metadataVerified": 3,
+  "calculationVerified": 3,
+  "sourceSha256": "facc2db0bc5d28dc3fa0960d59b18319a1b7e5839e3a445f7e737b2ee9f0c372",
+  "evidenceSha256": {
+    "three-attack-effects.js": "cbef315088b116446588ecaec77db9f71aa243dc369eccb589996f4c19919773",
+    "three-attack-oracle.js": "1c8b4ed145cbd9d833d40c4a622f7d9e8deb01aef3484f3ad7a05086a20c528f",
+    "browser_three_attacks_test.py": "a0e779184a6c0936027d1806cc228465d4aeeeec12ad4f4425983317ff4feb90",
+    "reference-data/three-attacks/PROVENANCE.json": "d202376a7a58b49094af43c3b3c57acee825a01a78c7cc7674702ba764a3ebaa"
+  },
+  "moves": [
+    {
+      "name": "やけっぱち",
+      "basicCalculationVerified": true
+    },
+    {
+      "name": "トリプルアクセル",
+      "basicCalculationVerified": true
+    },
+    {
+      "name": "ネズミざん",
+      "basicCalculationVerified": true
+    }
+  ],
+  "differential": {
+    "completion": false,
+    "oracle": "pokemon-showdown@0.11.10 Gen9 actual callbacks, getDamage, hitStepAccuracy and hitStepMoveHitLoop",
+    "scenarios": 2608,
+    "damageComparisons": 158592,
+    "totalComparisons": 47891,
+    "probabilityComparisons": 690,
+    "byMove": {
+      "やけっぱち": {
+        "cases": 1280,
+        "damageComparisons": 20480,
+        "totalComparisons": 0,
+        "probabilityComparisons": 0,
+        "failures": 0
+      },
+      "トリプルアクセル": {
+        "cases": 664,
+        "damageComparisons": 31872,
+        "totalComparisons": 11567,
+        "probabilityComparisons": 184,
+        "failures": 0
+      },
+      "ネズミざん": {
+        "cases": 664,
+        "damageComparisons": 106240,
+        "totalComparisons": 36324,
+        "probabilityComparisons": 506,
+        "failures": 0
+      }
+    },
+    "failureCount": 0,
+    "failures": []
+  },
+  "browserChecks": [
+    "unknown-dual-power",
+    "unknown-dual-power",
+    "unknown-dual-power",
+    "incoming-unknown-dual-reference-no-auto-apply",
+    "history-failed",
+    "history-success",
+    "history-other",
+    "transaction-history-undo",
+    "real-commit-history-save",
+    "real-dom-all-hit-counts-and-both-temper-powers",
+    "unsupported-reaction-reference-only",
+    "real-local-storage-save-load-history",
+    "observed-ten-hit-record-and-cap",
+    "real-switch-clears-failure-current-and-next-turn"
+  ],
+  "pcLayouts": [
+    {
+      "viewport": [
+        1366,
+        768
+      ],
+      "width": 300,
+      "top": 12,
+      "bottom": 756,
+      "horizontal": false,
+      "rows": [
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手1：ミュウやけっぱち：参考推定 威力75: 17.1–20.6% ／ 威力150: 34.3–40.6%KO未評価"
+        },
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手2：バンギラスやけっぱち：参考推定 威力75: 8.0–9.7% ／ 威力150: 16.0–18.9%KO未評価"
+        },
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手1：ミュウトリプルアクセル：9.1–68.0% (合計・命中時)KO不可（命中率込み）"
+        },
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手2：バンギラストリプルアクセル：9.1–62.9% (合計・命中時)KO不可（命中率込み）"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "width": 300,
+      "top": 12,
+      "bottom": 1068,
+      "horizontal": false,
+      "rows": [
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手1：ミュウやけっぱち：参考推定 威力75: 17.1–20.6% ／ 威力150: 34.3–40.6%KO未評価"
+        },
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手2：バンギラスやけっぱち：参考推定 威力75: 8.0–9.7% ／ 威力150: 16.0–18.9%KO未評価"
+        },
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手1：ミュウトリプルアクセル：9.1–68.0% (合計・命中時)KO不可（命中率込み）"
+        },
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手2：バンギラストリプルアクセル：9.1–62.9% (合計・命中時)KO不可（命中率込み）"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "width": 300,
+      "top": 12,
+      "bottom": 708,
+      "horizontal": false,
+      "rows": [
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手1：ミュウやけっぱち：参考推定 威力75: 17.1–20.6% ／ 威力150: 34.3–40.6%KO未評価"
+        },
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手2：バンギラスやけっぱち：参考推定 威力75: 8.0–9.7% ／ 威力150: 16.0–18.9%KO未評価"
+        },
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手1：ミュウトリプルアクセル：9.1–68.0% (合計・命中時)KO不可（命中率込み）"
+        },
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手2：バンギラストリプルアクセル：9.1–62.9% (合計・命中時)KO不可（命中率込み）"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        1093,
+        614
+      ],
+      "width": 300,
+      "top": 12,
+      "bottom": 602,
+      "horizontal": false,
+      "rows": [
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手1：ミュウやけっぱち：参考推定 威力75: 17.1–20.6% ／ 威力150: 34.3–40.6%KO未評価"
+        },
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手2：バンギラスやけっぱち：参考推定 威力75: 8.0–9.7% ／ 威力150: 16.0–18.9%KO未評価"
+        },
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手1：ミュウトリプルアクセル：9.1–68.0% (合計・命中時)KO不可（命中率込み）"
+        },
+        {
+          "visible": true,
+          "overflow": false,
+          "text": "相手2：バンギラストリプルアクセル：9.1–62.9% (合計・命中時)KO不可（命中率込み）"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Gen9 community engine; not an official Champions simulator certification.",
+    "Unknown Temper Flare history shows 75/150 reference scenarios and is withheld from automatic incoming prediction.",
+    "Other eleven unverified attacks excluded from this audit.",
+    "Mixed accuracy/evasion ranks follow the pinned Showdown repeated-hit path (including its integer-event behavior), not officially certified game rounding. These are reference estimates and cannot produce certain KO.",
+    "Mid-strike contact recoil, ability/type changes and recovery berries are not fully simulated; recognized conditions withhold certain KO.",
+    "Critical damage is checked explicitly; routine displayed KO probabilities are conditional on non-critical strikes, not a mixture of random critical outcomes."
+  ]
+}

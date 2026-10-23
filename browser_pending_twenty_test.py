@@ -59,7 +59,7 @@ try:
     const unknown=name==='ポルターガイスト'&&mode==='unknown-item',valid=name==='アイアンローラー'?$('terrain').value!=='なし':name==='ポルターガイスト'?mode==='item':true;
     rows.push({id:[path,name,target,mode].join('/'),name,move:NATIONAL_MOVES[name].id,sourceId:NATIONAL_DEX[actor].id,targetId:NATIONAL_DEX[target].id,aTypes:BATTLE_DATA[actor].types.map(t=>types[t]),dTypes:BATTLE_DATA[target].types.map(t=>types[t]),aStats:stats(actor,aProfile),dStats:stats(target,ds==='my'?savedMyProfiles[0]:{}),aHp:calcRealHP(BATTLE_DATA[actor].hp,0),dHp:r?.fullHp||r?.hp||calcRealHP(BATTLE_DATA[target].hp,0),aBoosts,dBoosts,burn:mode==='burn',status:{poison:'psn',paralysis:'par',sleep:'slp',freeze:'frz'}[mode]||'',comatose:mode==='comatose',terrain:{grass:'grassyterrain',psychic:'psychicterrain',electric:'electricterrain',mist:'mistyterrain'}[mode]||'',item:mode==='orb'?'lifeorb':'',targetItem:mode==='item'?'lifeorb':'',screen:mode==='screens'?DAMAGE_MOVES[name].cat==='phys'?'reflect':'lightscreen':'',singleTarget:mode==='one-target',valid,unknown,rolls:r?.rolls?.length===1?Array(16).fill(r.rolls[0]):r?.rolls,accuracy,totalDistribution:total?.damageDistribution});
    }
-   for(const n of names.filter(n=>!enabled.includes(n))){const r=damageEstimate('ミュウ',n,'イーブイ',0,'neutral',0);if(r?.rolls?.length)throw Error('Unsupported move silently calculated '+n);}
+   for(const n of names.filter(n=>!enabled.includes(n)&&!['やけっぱち','トリプルアクセル','ネズミざん'].includes(n))){const r=damageEstimate('ミュウ',n,'イーブイ',0,'neutral',0);if(r?.rolls?.length)throw Error('Unsupported move silently calculated '+n);}
    return {rows,metadata};
   }''',NAMES);browser.close()
  oracle=json.loads(subprocess.check_output(['node','pending-move-oracle.js'],input=json.dumps(data['rows']),text=True,cwd=root))

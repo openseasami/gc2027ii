@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Global Challenge 2027 II Support v2.9.12</title>
+<title>Global Challenge 2027 II Support v2.9.13</title>
 <style>
 :root{--bg:#f4f6f8;--panel:#fff;--line:#d8dee8;--text:#18202b;--muted:#667085;--accent:#2563eb;--accent2:#dbeafe;--danger:#b42318;--warn:#fff4cc;--ok:#eaf7ee;--chip:#f8fafc;--violet:#7c3aed}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}button,select{font:inherit}button{cursor:pointer}
@@ -2016,7 +2016,7 @@ body.mode45 #fixed45Panel .fixed45-head{position:static!important}
 <link rel="apple-touch-icon" href="./icon-192.png">
 <script src="./turn-order-effects.js"></script>
 <script src="./rank-effects.js"></script>
-<script src="./critical-effects.js"></script>
+<script src="./critical-effects.js"></script><script src="./three-attack-effects.js"></script>
 </head>
 <body>
 <header class="topbar"><div><h1>Global Challenge 2027 II</h1></div><div class="top-actions"><button id="saveBtn">試合を保存</button><button id="newMatchBtn">新しい対戦</button></div></header>
@@ -5947,7 +5947,7 @@ function recordStaminaHits(side,idx,name,hits=1){
   const team=side==='my'?state.myTeam:state.oppTeam;
   const active=side==='my'?state.myActive:state.oppActive;
   const count=Number(hits);
-  if(!Number.isInteger(count)||count<1||count>5)return 0;
+  if(!Number.isInteger(count)||count<1||count>10)return 0;
   if(!team||team[idx]!==name||!active?.includes(idx))return 0;
   const d=ensureBattleEntry(side,idx,name);
   if((d.hp??100)<=0||abilityOf(side,idx,name)!=='じきゅうりょく')return 0;
@@ -5960,8 +5960,11 @@ function recordStaminaHits(side,idx,name,hits=1){
 const MULTI_HIT_SPECS={
   'ダブルウイング':{power:40,min:2,max:2},
   'ツインビーム':{power:40,min:2,max:2},
-  'スケイルショット':{power:25,min:2,max:5}
+  'スケイルショット':{power:25,min:2,max:5},
+  'トリプルアクセル':{power:20,min:1,max:3,multiaccuracy:true},
+  'ネズミざん':{power:20,min:1,max:10,multiaccuracy:true}
 };
+function multiHitStrikePower(moveName,hit){const spec=MULTI_HIT_SPECS[moveName];return spec?ThreeAttackEffects.strikePower(moveName,hit,spec.power):null;}
 // Apply hits in order. Each surviving hit updates the target's Defense stage
 // before estimating the next strike. Returns full trace for inspection.
 function resolveHitSurvival(side,idx,name,damage,currentHp,fullHp){
@@ -6116,7 +6119,7 @@ function applyConfirmedMultiHit(attackerIdx,moveName,defenderIdx,hitCount=2,roll
      trace.push({hit:i+1,damage:result.damage,remainingHp:target.hp,ability:result.ability,defBefore:target.defStage||0,defAfter:target.defStage||0,before:strikeBefore,after:captureConfirmedStrikeState()});
      if(target.hp<=0)break;continue;
     }
-    const estimate=damageEstimate(attacker,moveName,defender,ai,target.bulk,di,spec.power);
+    const estimate=damageEstimate(attacker,moveName,defender,ai,target.bulk,di,multiHitStrikePower(moveName,i+1));
     if(!estimate.rolls?.length||!Number.isFinite(estimate.hp)||estimate.hp<=0){
       Object.keys(state).forEach(k=>delete state[k]);
       Object.assign(state,before);
@@ -6254,7 +6257,7 @@ function applyConfirmedIncomingHit(defenderIdx,observedHp,hitCount=1){
   const di=Number(defenderIdx),hp=Number(observedHp),hits=Number(hitCount);
   if(!Number.isInteger(di)||!state.myActive?.includes(di))return {ok:false,reason:'自分の場にいるポケモンを選んでください'};
   if(!Number.isFinite(hp)||!Number.isInteger(hp)||hp<0||hp>100)return {ok:false,reason:'残りHPを0～100％で入力してください'};
-  if(!Number.isInteger(hits)||hits<1||hits>5)return {ok:false,reason:'命中回数は1～5回で指定してください'};
+  if(!Number.isInteger(hits)||hits<1||hits>10)return {ok:false,reason:'命中回数は1～10回で指定してください'};
   const defender=state.myTeam?.[di];
   if(!defender)return {ok:false,reason:'対象ポケモンが未設定です'};
   const target=ensureBattleEntry('my',di,defender);
@@ -6281,6 +6284,10 @@ function previewIncomingDamage(attackerIdx,moveName,defenderIdx){
   if(MULTI_HIT_SPECS[moveName])return {ok:false,reason:'連続技は実際のHPと命中回数を入力してください'};
   const defenderEntry=leadData('my').find(e=>e.idx===di);
   if(!defenderEntry||(defenderEntry.d.hp??100)<=0)return {ok:false,reason:'対象がすでにKOしています'};
+  if(moveName==='やけっぱち'&&!ThreeAttackEffects.temperPower(state.opp?.[ai]?.damagePreviousTurn,battleTurnNumber).known){
+    const scenarios=[75,150].map(power=>({power,result:opponentDamageEstimateAgainstMy({kind:'attack',actor:attacker,move:moveName},defenderEntry,power)}));
+    return {ok:false,uncertainPower:true,scenarios,reason:'参考推定 '+scenarios.map(s=>`威力${s.power}: ${s.result?s.result.min+'～'+s.result.max+' HP':'計算不可'}`).join(' ／ ')+'（前ターン未確認・HPへ自動適用しません）'};
+  }
   const result=opponentDamageEstimateAgainstMy({kind:'attack',actor:attacker,actorIdx:ai,move:moveName,spread:!!move.spread},defenderEntry);
   if(!result?.rolls?.length||!Number.isFinite(result.fullHp)||result.fullHp<=0)return {ok:false,reason:'ダメージ推定不可'};
   return {ok:true,attacker,defender,moveName,...result,estimated:true};
@@ -6321,7 +6328,7 @@ function previewIncomingMultiHit(attackerIdx,moveName,defenderIdx,hitCount=2,rol
      if(target.hp<=0)break;continue;
     }
     const entry=leadData('my').find(e=>e.idx===di);
-    const estimate=opponentDamageEstimateAgainstMy({kind:'attack',actor:attacker,actorIdx:ai,move:moveName,spread:false},entry,spec.power);
+    const estimate=opponentDamageEstimateAgainstMy({kind:'attack',actor:attacker,actorIdx:ai,move:moveName,spread:false},entry,multiHitStrikePower(moveName,i+1));
     if(!estimate?.rolls?.length||!Number.isFinite(estimate.fullHp)||estimate.fullHp<=0){restore();return {ok:false,reason:'ダメージ推定不可'}}
     const rolls=estimate.rolls;
     const damage=rollChoice==='minimum'?Math.min(...rolls):rollChoice==='maximum'?Math.max(...rolls):rolls[Math.floor(rolls.length/2)];
@@ -6397,6 +6404,7 @@ function undoConfirmedSingleHit(){
 }
 function resetEntryStages(side,idx,name){
   const d=ensureBattleEntry(side,idx,name);
+  if(typeof ThreeAttackEffects!=='undefined'&&typeof battleTurnNumber!=='undefined')d.damagePreviousTurn={turn:battleTurnNumber,result:'other'};
   d.atkStage=0;d.defStage=0;d.spaStage=0;d.spdStage=0;d.speStage=0;
   d.accStage=0;d.evaStage=0;
   d.yawnTurns=null;d.criticalFocus=0;
@@ -7066,11 +7074,11 @@ function estimateHistoricalStrikeDamage(eventIndex,hitIndex,targetIdx){
     if(!spec)return {warning:'連続技の威力情報がありません'};
     if(side==='my'){
       const defender=state.opp?.[targetIdx]||{};
-      return damageEstimate(event.actor,event.move,name,actorIdx,defender.bulk||'neutral',targetIdx,spec.power);
+      return damageEstimate(event.actor,event.move,name,actorIdx,defender.bulk||'neutral',targetIdx,multiHitStrikePower(event.move,hitIndex+1));
     }
     const target=activeEntryByName('my',name);
     if(!target)return {warning:'命中時点の対象が場にいません'};
-    return opponentDamageEstimateAgainstMy({kind:'attack',actor:event.actor,move:event.move},target,spec.power);
+    return opponentDamageEstimateAgainstMy({kind:'attack',actor:event.actor,move:event.move},target,multiHitStrikePower(event.move,hitIndex+1));
   }));
 }
 function renderHistoricalStrikeEstimate(eventIndex,hitIndex,targetIdx,output){
@@ -7237,6 +7245,7 @@ function commitTurnActions(){
     (team||[]).forEach((name,idx)=>{
       const d=state[side]?.[idx];
       if(!d)return;
+      if(typeof ThreeAttackEffects!=='undefined')d.damagePreviousTurn=ThreeAttackEffects.previousTurn(d.currentTurnAction,(state[side+'Active']||[]).includes(idx)&&!d.enteredBySwitchThisTurn,battleTurnNumber);
       if(d.currentTurnAction){
         d.lastAction={...d.currentTurnAction};
         d.actionHistory.push({...d.currentTurnAction});
@@ -7798,7 +7807,7 @@ if(side==='my'){
   hpInput.value=String(d.hp??100);hpInput.setAttribute('aria-label','被弾後の残りHP（％）');
   hpInput.style.cssText='width:112px;max-width:100%;padding:7px;border:1px solid #cbd5e1;border-radius:8px';
   const hitSelect=document.createElement('select');hitSelect.setAttribute('aria-label','実際の命中回数');
-  for(let n=1;n<=5;n++){const o=document.createElement('option');o.value=n;o.textContent=n===1?'1回命中':`${n}回命中`;hitSelect.appendChild(o)}
+  for(let n=1;n<=10;n++){const o=document.createElement('option');o.value=n;o.textContent=n===1?'1回命中':`${n}回命中`;hitSelect.appendChild(o)}
   const record=document.createElement('button');record.type='button';record.className='chip';record.textContent='被弾確定・反映';
   const revert=document.createElement('button');revert.type='button';revert.className='chip';revert.textContent='直前の命中を戻す';
   const attackSelect=document.createElement('select');attackSelect.setAttribute('aria-label','攻撃した相手のポケモン');
@@ -9017,6 +9026,7 @@ function resolveMoveForDamage(side,idx,name,moveName,mv,defenderSide=null,defend
   let useDefenderAttack=false;
   let useOwnDefense=false;
   let assumption='';
+  let powerUnknown=false;
 
   const attackAbility=knownBattleAbility(side,idx,name);
   if(attackAbility==='うるおいボイス'&&abilityMoveTraits(moveName).sound)moveType='みず';
@@ -9046,6 +9056,11 @@ function resolveMoveForDamage(side,idx,name,moveName,mv,defenderSide=null,defend
   if(expandingForce){abilityMod*=1.5;condition='接地・サイコフィールド';}
   if(moveName==='ソーラービーム'&&['雨','砂','雪'].includes(effectiveWeatherForDamage()))abilityMod*=.5;
   // Basic damage only: recorded conditions, without applying secondary effects.
+  if(moveName==='やけっぱち'){
+    const previous=ThreeAttackEffects.temperPower(state[side]?.[idx]?.damagePreviousTurn,battleTurnNumber);
+    power=previous.power;powerUnknown=!previous.known;
+    condition=powerUnknown?'前ターンの結果未確認（威力75/150）':power===150?'前ターンの技失敗：威力150':'前ターン失敗条件なし：威力75';
+  }
   if(moveName==='つけあがる'){
     const boosts=BATTLE_STAGE_KEYS.reduce((n,k)=>n+Math.max(0,Math.min(6,Number(state[side]?.[idx]?.[k])||0)),0);
     power=20+20*boosts;condition=`正の能力ランク合計 ${boosts}`;
@@ -9119,7 +9134,7 @@ function resolveMoveForDamage(side,idx,name,moveName,mv,defenderSide=null,defend
   }
 
   return {
-    moveType,power,abilityMod,effectiveName,condition,useDefenderAttack,useOwnDefense,assumption,spread:moveName==='ワイドフォース'?expandingForce:!!mv.spread
+    moveType,power,abilityMod,effectiveName,condition,useDefenderAttack,useOwnDefense,assumption,powerUnknown,spread:moveName==='ワイドフォース'?expandingForce:!!mv.spread
   };
 }
 // Read-only calculation effects: no inferred ability commits a battle event.
@@ -9363,6 +9378,10 @@ function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderB
  if(!mv||!a||!d||mv.cat==='status'||!mv.power)return {text:'補助技',ko:'',chance:''};
 
  const resolved=resolveMoveForDamage('my',attackerIdx,attackerName,moveName,mv,defenderSide,defenderIdx,defenderName);
+ if(resolved.powerUnknown&&perHitPower==null){
+  const scenarios=[75,150].map(power=>({power,result:damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx,power,criticalRequest,defenderSide)}));
+  return {uncertainPower:true,scenarios,text:'参考推定 '+scenarios.map(s=>`威力${s.power}: ${s.result.text}`).join(' ／ '),ko:'',chance:'',koChance:null};
+ }
  const moveType=resolved.moveType,power=perHitPower==null?resolved.power:perHitPower,abilityMod=resolved.abilityMod;
  const criticalProfile=typeof criticalProfileForDamage==='function'?criticalProfileForDamage('my',attackerIdx,attackerName,defenderSide,defenderIdx,defenderName,moveName):null;
  const critical=!!criticalProfile&&!criticalProfile.blocked&&(criticalRequest===true||criticalProfile.chance===1)&&!resolved.useOwnDefense&&!resolved.useDefenderAttack;
@@ -9480,42 +9499,44 @@ function damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderB
 // Each strike uses all 16 random rolls. HP, Defense boosts and one-time
 // survival effects are carried into the next strike. Accuracy and hit-count
 // distribution are deliberately excluded.
-function multiHitKOEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx,hitCount){
+function multiHitKOEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx,hitCount,options={}){
  const spec=MULTI_HIT_SPECS[moveName],count=Number(hitCount);
  if(!spec||!Number.isInteger(count)||count<spec.min||count>spec.max||defenderIdx==null)return null;
- const d=state.opp?.[defenderIdx];
+ const attackerSide=options.side||'my',defenderSide=attackerSide==='my'?'opp':'my';
+ const d=state[defenderSide]?.[defenderIdx];
+ const estimateStrike=power=>attackerSide==='my'?damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx,power,!!options.critical):opponentDamageEstimateAgainstMy({kind:'attack',actor:attackerName,move:moveName},{name:defenderName,idx:defenderIdx,d},power,!!options.critical);
  if(!d||!(Number(d.hp)>0))return null;
  const original={hp:d.hp,defStage:d.defStage,itemConsumed:d.itemConsumed,disguiseBroken:d.disguiseBroken};
- const knownAbility=d.abilityConfirmed===true ? abilityOf('opp',defenderIdx,defenderName):'';
- const knownItem=d.itemConfirmed===true ? heldItemFor('opp',defenderIdx):'';
+ const knownAbility=(defenderSide==='my'||d.abilityConfirmed===true) ? abilityOf(defenderSide,defenderIdx,defenderName):'';
+ const knownItem=(defenderSide==='my'||d.itemConfirmed===true) ? heldItemFor(defenderSide,defenderIdx):'';
  const uncertain=[];
- if(!d.itemConfirmed&&!d.itemConsumed)uncertain.push('タスキ未確認');
- if(!d.abilityConfirmed)uncertain.push('がんじょう未確認');
- const fullHealth=()=>{const r=damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx,spec.power);return r?.hp||0};
+ if(defenderSide==='opp'&&!d.itemConfirmed&&!d.itemConsumed)uncertain.push('タスキ未確認');
+ if(defenderSide==='opp'&&!d.abilityConfirmed)uncertain.push('がんじょう未確認');
+ const fullHealth=()=>{const r=estimateStrike(spec.power);return r?.fullHp||r?.hp||0};
  try{
    const fullHp=fullHealth();if(fullHp<=0)return null;
    const initialHp=Math.min(fullHp,Math.max(0,Math.ceil(fullHp*Number(original.hp)/100)));
    const stamina=knownAbility==='じきゅうりょく';
    let states=new Map([[`${initialHp}|${original.defStage||0}|${original.itemConsumed?1:0}`,{hp:initialHp,stage:original.defStage||0,consumed:!!original.itemConsumed,broken:!!original.disguiseBroken,weight:1}]]);
-   const rollsCache=new Map();
+   const rollsCache=new Map(),byCount=[];
    for(let hit=0;hit<count;hit++){
      const next=new Map();
      for(const st of states.values()){
        if(st.hp===0){const key=`0|${st.stage}|${st.consumed?1:0}|${st.broken?1:0}`;const prior=next.get(key);if(prior)prior.weight+=st.weight;else next.set(key,{...st});continue}
        const full=st.hp>=fullHp;
-       const cacheKey=`${st.stage}|${full?1:0}|${st.consumed?1:0}|${st.broken?1:0}`;
+       const cacheKey=`${multiHitStrikePower(moveName,hit+1)}|${st.stage}|${full?1:0}|${st.consumed?1:0}|${st.broken?1:0}`;
        let cached=rollsCache.get(cacheKey),rolls=cached?.rolls,berryConsumed=cached?.berryConsumed;
        if(!rolls){
          d.hp=full?100:Math.min(99,Math.max(1,Math.floor(st.hp/fullHp*100)));
          d.defStage=st.stage;d.itemConsumed=st.consumed;d.disguiseBroken=st.broken;
-         const r=damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx,spec.power);
-         rolls=r?.rolls?.length===16?r.rolls:null;
+         const r=estimateStrike(multiHitStrikePower(moveName,hit+1));
+         rolls=r?.rolls?.length===16?r.rolls:r?.rolls?.length===1?Array(16).fill(r.rolls[0]):null;
          if(!rolls)return null;
          berryConsumed=!!r.berry?.consume;rollsCache.set(cacheKey,{rolls,berryConsumed});
        }
-       const disguise=knownAbility==='ばけのかわ'&&defenderName==='ミミッキュ'&&!st.broken&&!abilityBypassed('my',attackerIdx,attackerName,'ばけのかわ');
+       const disguise=knownAbility==='ばけのかわ'&&defenderName==='ミミッキュ'&&!st.broken&&!abilityBypassed(attackerSide,attackerIdx,attackerName,'ばけのかわ');
        for(const damage of rolls){
-         const protection=!disguise&&damage>=st.hp&&full&&((knownItem==='きあいのタスキ'&&!st.consumed)||(knownAbility==='がんじょう'&&!abilityBypassed('my',attackerIdx,attackerName,'がんじょう')));
+         const protection=!disguise&&damage>=st.hp&&full&&((knownItem==='きあいのタスキ'&&!st.consumed)||(knownAbility==='がんじょう'&&!abilityBypassed(attackerSide,attackerIdx,attackerName,'がんじょう')));
          const sash=protection&&knownItem==='きあいのタスキ'&&!st.consumed;
          const remain=protection?1:Math.max(0,st.hp-damage);
          const stage=remain>0&&damage>0&&stamina?Math.min(6,st.stage+1):st.stage;
@@ -9528,12 +9549,14 @@ function multiHitKOEstimate(attackerName,moveName,defenderName,attackerIdx,defen
        }
      }
      states=next;
-   }
    const dead=[...states.values()].filter(x=>x.hp===0).reduce((a,x)=>a+x.weight,0);
    const koChance=Math.min(1,Math.max(0,dead));
    const label=koChance>=1-1e-10?'確定KO':koChance<=1e-10?'KO不可':`乱数KO ${(koChance*100).toFixed(1)}%`;
    const damageDistribution=[...states.values()].map(x=>({damage:initialHp-x.hp,weight:x.weight}));
-   return {koChance,label,hits:count,damageDistribution,minDamage:initialHp-Math.max(...[...states.values()].map(x=>x.hp)),maxDamage:initialHp-Math.min(...[...states.values()].map(x=>x.hp)),uncertain,conditional:uncertain.length>0,accuracyExcluded:true};
+   byCount.push({koChance,label,hits:hit+1,damageDistribution,minDamage:initialHp-Math.max(...[...states.values()].map(x=>x.hp)),maxDamage:initialHp-Math.min(...[...states.values()].map(x=>x.hp)),uncertain,conditional:uncertain.length>0,accuracyExcluded:true});
+   }
+   return {...byCount[byCount.length-1],byCount};
+
  }finally{
    d.hp=original.hp;d.defStage=original.defStage;d.itemConsumed=original.itemConsumed;if(original.disguiseBroken===undefined)delete d.disguiseBroken;else d.disguiseBroken=original.disguiseBroken;
  }
@@ -9662,7 +9685,7 @@ function accuracyStageMultiplier(rank){
  const n=Math.max(-6,Math.min(6,Number(rank)||0));
  return n>=0?(3+n)/3:3/(3-n);
 }
-function effectiveMoveAccuracy(moveName,side='my',attackerIdx=null,defenderSide=null,defenderIdx=null){
+function effectiveMoveAccuracy(moveName,side='my',attackerIdx=null,defenderSide=null,defenderIdx=null,strike=1){
  const move=DAMAGE_MOVES[moveName];
  const alwaysHit=new Set(['ドゲザン','はどうだん','つばめがえし']);
  const metadata=typeof REGULATION_MC!=='undefined'?REGULATION_MC.moveDetails?.[moveName.normalize('NFKC')]:null;
@@ -9703,6 +9726,15 @@ function effectiveMoveAccuracy(moveName,side='my',attackerIdx=null,defenderSide=
  if(['かみなり','ぼうふう'].includes(moveName)&&weather==='雨')return {accuracy:1,base,assumption:'雨で必中'};
  if(moveName==='ふぶき'&&weather==='雪')return {accuracy:1,base,assumption:'雪で必中'};
  if(['かみなり','ぼうふう'].includes(moveName)&&weather==='晴れ')modifiers.push('晴れ：基本命中率50％');
+ if(['やけっぱち','トリプルアクセル','ネズミざん'].includes(moveName)){
+  const mods=[];
+  if((defAbility==='すながくれ'&&effectiveWeather==='砂')||(defAbility==='ゆきがくれ'&&effectiveWeather==='雪'))mods.push(3277);
+  if(atkAbility==='ふくがん')mods.push(5325);
+  if(atkAbility==='はりきり'&&move?.cat==='phys')mods.push(3277);
+  if(atkItem==='こうかくレンズ')mods.push(4505);
+  if(atkItem==='フォーカスレンズ'&&$('focusLensOrder')?.value==='after')mods.push(4915);
+  return {accuracy:ThreeAttackEffects.accuracy(base,atkData.accStage||0,targetEvasion,mods,strike>1),base,knownAccuracy,assumption:(modifiers.join('・')||'基本命中率')+(strike>1?'・各打撃判定':'')};
+ }
  return {accuracy:Math.min(1,Math.max(0,Math.floor(rankedAccuracy*multiplier)/100)),base,knownAccuracy,assumption:(!knownAccuracy?'命中率未登録：暫定100％（要確認）':(modifiers.join('・')||'基本命中率'))};
 }
 // v1.78.0: one accuracy-aware KO probability interface for both single and multi-hit moves.
@@ -9719,10 +9751,23 @@ function predictedMoveKO(attackerName,moveName,defenderName,attackerIdx,defender
    : 0;
  return {koChance:accuracy*conditional,conditionalOnHit:conditional,accuracy,assumption:accuracyInfo.assumption,multiHit:false};
 }
-function multiHitOutcomeDistribution(moveName,attackerIdx,defenderIdx=null){
+function multiHitOutcomeDistribution(moveName,attackerIdx,defenderIdx=null,side='my'){
  const spec=MULTI_HIT_SPECS[moveName];if(!spec)return null;
- const hit=effectiveMoveAccuracy(moveName,'my',attackerIdx,'opp',defenderIdx);
+ const other=side==='my'?'opp':'my';
+ const hit=effectiveMoveAccuracy(moveName,side,attackerIdx,other,defenderIdx);
  const accuracy=hit.accuracy;
+ if(spec.multiaccuracy){
+  const actor=state[side+'Team']?.[attackerIdx]||'';
+  const ability=knownBattleAbility(side,attackerIdx,actor),item=heldItemFor(side,attackerIdx);
+  const dice=item==='いかさまダイス',singleCheck=dice||ability==='スキルリンク';
+  const repeat=effectiveMoveAccuracy(moveName,side,attackerIdx,other,defenderIdx,2).accuracy;
+  const targetName=state[other+'Team']?.[defenderIdx]||'',targetAbility=knownBattleAbility(other,defenderIdx,targetName),targetItem=heldItemFor(other,defenderIdx);
+  const unsupportedAbility=['くだけるよろい','さめはだ','てつのトゲ','ほのおのからだ','ほうし','ミイラ','とれないにおい','さまようたましい','へんしょく','いかりのこうら'].includes(targetAbility)&&!abilityBypassed(side,attackerIdx,actor,targetAbility);
+  const unsupportedItem=['オボンのみ','オレンのみ','アッキのみ','ナゾのみ','フィラのみ','ウイのみ','マゴのみ','バンジのみ','イアのみ','ゴツゴツメット'].includes(targetItem);
+  const referenceReason=unsupportedAbility||unsupportedItem?'途中の接触反応・回復等は未検証':(!singleCheck&&ability!=='ノーガード'&&targetAbility!=='ノーガード'&&((state[side]?.[attackerIdx]?.accStage||0)||(state[other]?.[defenderIdx]?.evaStage||0)))?'命中ランク併用時の各打撃判定はShowdown参考値':'';
+
+  return {...ThreeAttackEffects.hitDistribution(spec.max,accuracy,repeat,{singleCheck,dice}),repeatAccuracy:repeat,referenceOnly:!!referenceReason,referenceReason,assumption:hit.assumption+'／非急所条件'+(dice?'／いかさまダイス':ability==='スキルリンク'?'／スキルリンク':'／各打撃で命中・失敗時終了')};
+ }
  if(spec.min===spec.max)return {accuracy,distribution:[[spec.min,1]],assumption:hit.assumption};
  const actor=state.myTeam?.[attackerIdx]||'';
  const ability=abilityOf('my',attackerIdx,actor);
@@ -9737,26 +9782,23 @@ function weightedMultiHitOutcome(byCount,moveName,attackerIdx,defenderIdx=null){
  const byHits=new Map(byCount.map(x=>[x.hits,x]));
  const hitConditional=meta.distribution.reduce((a,[n,p])=>a+p*(byHits.get(n)?.koChance||0),0);
  const chance=meta.accuracy*hitConditional;
- return {koChance:chance,conditionalOnHit:hitConditional,accuracy:meta.accuracy,assumption:meta.assumption,
-  label:chance>=1-1e-10?'確定KO':chance<=1e-10?'KO不可':`KO率 ${(chance*100).toFixed(1)}%`};
+ return {koChance:meta.referenceOnly?null:chance,referenceKoChance:meta.referenceOnly?chance:null,referenceReason:meta.referenceReason||'',conditionalOnHit:hitConditional,accuracy:meta.accuracy,assumption:meta.assumption,
+  label:meta.referenceOnly?`参考推定 KO率 ${(chance*100).toFixed(1)}%`:chance>=1-1e-10?'確定KO':chance<=1e-10?'KO不可':`KO率 ${(chance*100).toFixed(1)}%`};
 }
 function damageEstimateForDisplay(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx){
  const single=damageEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx);
  const spec=MULTI_HIT_SPECS[moveName];
  if(!spec||!single.rolls?.length||!Number.isFinite(single.hp)||single.currentHp<=0)return single;
- const byCount=[];
- for(let n=spec.min;n<=spec.max;n++){
-   const r=multiHitKOEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx,n);
-   if(r)byCount.push(r);
- }
+ const complete=multiHitKOEstimate(attackerName,moveName,defenderName,attackerIdx,defenderBulk,defenderIdx,spec.max);
+ const byCount=(complete?.byCount||[]).filter(r=>r.hits>=spec.min);
  if(!byCount.length)return single;
  const first=byCount[0],last=byCount[byCount.length-1];
  const variable=spec.min!==spec.max;
- const text=variable?`${spec.min}～${spec.max}回: ${first.label} ～ ${last.label}`:`${spec.min}回: ${first.label}`;
+ const text=spec.multiaccuracy?byCount.map(r=>`${r.hits}回 ${(r.minDamage/single.hp*100).toFixed(1)}～${(r.maxDamage/single.hp*100).toFixed(1)}%`).join(' / '):variable?`${spec.min}～${spec.max}回: ${first.label} ～ ${last.label}`:`${spec.min}回: ${first.label}`;
  const conditional=byCount.some(x=>x.conditional);
  const weighted=weightedMultiHitOutcome(byCount,moveName,attackerIdx,defenderIdx);
  const koLabel=weighted?`${weighted.label}（命中率込み・${weighted.assumption}） / ${text}`:text;
- return {...single,text:`${(first.minDamage/single.hp*100).toFixed(1)}–${(last.maxDamage/single.hp*100).toFixed(1)}% (合計・命中時)`,ko:`${conditional?'条件付き ':''}${koLabel}`,chance:'',koChance:weighted?.koChance??null,multiHit:byCount,weightedMultiHit:weighted,rawKo:single.ko};
+ return {...single,text:(weighted?.referenceReason?'参考推定（'+weighted.referenceReason+'） ':'')+`${(first.minDamage/single.hp*100).toFixed(1)}–${(last.maxDamage/single.hp*100).toFixed(1)}% (合計・命中時)`,ko:`${conditional?'条件付き ':''}${koLabel}`,chance:'',koChance:weighted?.koChance??null,multiHit:byCount,weightedMultiHit:weighted,rawKo:single.ko};
 }
 // Scenario calculations are read-only: temporary selectors are restored even
 // when a damage evaluator throws. Never turn hypothetical weather into fact.
@@ -10047,8 +10089,8 @@ function renderDamageOutput(force=false){
      const best=candidates.find(c=>c.targetIdx===target.idx);
      quick+=`<div class="damage-quick-target" data-target-slot="${slot}" data-target-idx="${target.idx}"><div class="opp-name">相手${slot+1}：${target.name}</div>`;
      if(best){
-       const label=best.r.ko||'KO未評価';
-       const damageText=String(best.r.text||'計算未対応').split(' ／ ')[0];
+       const label=MULTI_HIT_SPECS[best.move]?.multiaccuracy?(best.r.weightedMultiHit?.label||'KO未評価')+'（命中率込み）':best.r.ko||'KO未評価';
+       const damageText=best.r.uncertainPower?best.r.text:String(best.r.text||'計算未対応').split(' ／ ')[0];
        quick+=`<div class="damage-quick-line">${best.move}：${damageText}</div><div class="damage-quick-ko">${label}${best.r.chance&&best.r.ko==='乱数1発'?` (${best.r.chance})`:''}</div>`;
      }else quick+='<div class="damage-quick-line">攻撃技未登録・計算不可</div>';
      quick+='</div>';
@@ -10571,7 +10613,9 @@ function sequentialFocusDamage(insights){
       for(const d of order){
         const attacker=activeEntryByName('my',d.actor);if(!attacker)return null;
         const spec=MULTI_HIT_SPECS[d.move];
-        const distribution=spec?multiHitOutcomeDistribution(d.move,attacker.idx,idx).distribution:[[1,1]];
+        const hitMeta=spec?multiHitOutcomeDistribution(d.move,attacker.idx,idx):null;
+        if(hitMeta?.referenceOnly)return null;
+        const distribution=hitMeta?.distribution||[[1,1]];
         const accuracy=Math.max(0,Math.min(1,d.accuracy??1));
         const afterMove=new Map();
         for(const start of states.values()){
@@ -10584,12 +10628,12 @@ function sequentialFocusDamage(insights){
               for(const st of strikes.values()){
                 if(st.hp===0){add(next,st,st.weight);continue;}
                 const full=st.hp===fullHp;
-                const key=[attacker.idx,d.move,st.stage,full,st.consumed,st.broken].join('|');
+                const key=[attacker.idx,d.move,hit,st.stage,full,st.consumed,st.broken].join('|');
                 let cached=rollsCache.get(key),rolls=cached?.rolls,berryConsumed=cached?.berryConsumed;
                 if(!rolls){
                   temporary.hp=full?100:Math.min(99,st.hp/fullHp*100);
                   temporary.defStage=st.stage;temporary.itemConsumed=st.consumed;temporary.disguiseBroken=st.broken;
-                  const result=damageEstimate(d.actor,d.move,target,attacker.idx,original.bulk,idx,spec?spec.power:null);
+                  const result=damageEstimate(d.actor,d.move,target,attacker.idx,original.bulk,idx,spec?multiHitStrikePower(d.move,hit+1):null);
                   rolls=result?.rolls;
                   if(!rolls?.length)return null;
                   berryConsumed=!!result.berry?.consume;rollsCache.set(key,{rolls,berryConsumed});
@@ -10913,6 +10957,7 @@ function opponentDamageEstimateAgainstMy(action,targetEntry,powerOverride=null,c
   if(!a||!d)return null;
 
   const resolved=resolveMoveForDamage('opp',attacker.idx,attacker.name,moveName,mv,'my',targetEntry.idx,targetEntry.name);
+  if(resolved.powerUnknown&&powerOverride===null)return null; // Unknown history is withheld; display scenarios through explicit power requests.
   const moveType=resolved.moveType,power=powerOverride===null?resolved.power:Number(powerOverride),abilityMod=resolved.abilityMod;
   if(power<=0)return null;
   const criticalProfile=typeof criticalProfileForDamage==='function'?criticalProfileForDamage('opp',attacker.idx,attacker.name,'my',targetEntry.idx,targetEntry.name,moveName):null;
@@ -14488,7 +14533,7 @@ function installRegulationMC(){
   MOVE_BASE_ACCURACY[key]=m.accuracy;
  }
  // Enable only damage paths covered by the pending-twenty differential audit.
- for(const name of ['つけあがる','ひゃっきやこう','アイアンローラー','ポルターガイスト']){
+ for(const name of ['つけあがる','ひゃっきやこう','アイアンローラー','ポルターガイスト','やけっぱち','トリプルアクセル','ネズミざん']){
   const d=DAMAGE_MOVES[name],meta=REGULATION_MC.moveDetails[name];
   if(d&&meta){d.power=meta.power;delete d.catalogOnly;}
  }

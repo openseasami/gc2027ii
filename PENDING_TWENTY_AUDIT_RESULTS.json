@@ -1,10 +1,10 @@
 {
   "completion": false,
   "baseCommit": "63c00636be95da872325e5828c37477edaab3f79",
-  "sourceSha256": "5f0123fd7ee1d4097d96454b2e6f2a341fdade6da27301a84755a323c16ed408",
+  "sourceSha256": "facc2db0bc5d28dc3fa0960d59b18319a1b7e5839e3a445f7e737b2ee9f0c372",
   "evidenceSha256": {
     "pending-move-oracle.js": "ad87b2f15be569ebab63205af5a3fc46b326efa3c256a3e6f9766a57a4503974",
-    "browser_pending_twenty_test.py": "a5759c89636acad32927542ad086d6634f26f9d1eb8c237c7b767b0a48df01e0",
+    "browser_pending_twenty_test.py": "9ae3355cd171655157ad5dbb34a7319109f6f3e722bf889e7b90e2ce27017322",
     "reference-data/stats-moves/PROVENANCE.json": "f8c809428b7da7cf505d1a7064edd5d397a332047728084cd7dabbcc75b53373",
     "reference-data/stats-moves/showdown-normalized.json": "547c7a2070efb6bdf4bda1866dbe31773fdc517ba14fc8f8995d888ddd2711d9"
   },
@@ -61,7 +61,7 @@
         "cases": 240,
         "damageComparisons": 3840,
         "accuracyComparisons": 1200,
-        "totalDistributionComparisons": 933,
+        "totalDistributionComparisons": 973,
         "failures": 0
       },
       "scope": "Explicit outgoing/incoming per-hit calculation; outgoing two-hit clipped total distribution for Twin Beam/Dual Wingbeat; successful-hit conditions only. No secondaries/recommendations."
@@ -382,11 +382,10 @@
         "damageCallback": false
       },
       "runtime": {
-        "power": 0,
+        "power": 20,
         "type": "ノーマル",
         "cat": "phys",
-        "spread": false,
-        "catalogOnly": true
+        "spread": false
       },
       "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
       "calculationStatus": "unverified",
@@ -614,11 +613,10 @@
         "damageCallback": false
       },
       "runtime": {
-        "power": 0,
+        "power": 20,
         "type": "こおり",
         "cat": "phys",
-        "spread": false,
-        "catalogOnly": true
+        "spread": false
       },
       "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
       "calculationStatus": "unverified",
@@ -798,11 +796,10 @@
         "damageCallback": false
       },
       "runtime": {
-        "power": 0,
+        "power": 75,
         "type": "ほのお",
         "cat": "phys",
-        "spread": false,
-        "catalogOnly": true
+        "spread": false
       },
       "targetModifier": "1.0 per target; no 0.75 spread reduction (Dragon Darts split is a separate unresolved route)",
       "calculationStatus": "unverified",
@@ -954,14 +951,14 @@
     "scenarios": 1440,
     "damageComparisons": 16320,
     "accuracyComparisons": 5100,
-    "totalDistributionComparisons": 2066,
+    "totalDistributionComparisons": 2106,
     "conditionComparisons": 1440,
     "byMove": {
       "ツインビーム": {
         "cases": 240,
         "damageComparisons": 3840,
         "accuracyComparisons": 1200,
-        "totalDistributionComparisons": 933,
+        "totalDistributionComparisons": 973,
         "failures": 0
       },
       "ダブルウイング": {

@@ -1678,6 +1678,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-23T04:47:25.503777+00:00",
+      "commit": "90a5292a9187dd04c72d6ff0a743323712390e9a",
+      "reason": "Only three requested attacks implemented and scoped-verified: 2608 cases, 158592 damage rolls, 47891 total-distribution points, 690 hit-count probabilities and 4056 accuracy boundaries. Real switch history, 10-hit observation, save/load/undo and four PC layouts passed; 134 regressions passed. Other eleven excluded; completion false.",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {

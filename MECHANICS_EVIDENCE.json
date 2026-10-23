@@ -1055,6 +1055,33 @@
         "browser_pending_twenty_test.py"
       ],
       "scope": "Existing fixed-two-hit path reused. Real-page outgoing/incoming per-strike damage and outgoing two-hit clipped total distribution independently matched. No new unit handler; no certification of incoming total or all item/ability interactions."
+    },
+    {
+      "category": "moves",
+      "names": [
+        "やけっぱち",
+        "トリプルアクセル",
+        "ネズミざん"
+      ],
+      "paths": [
+        "three-attack-effects.js",
+        "index.html:commitTurnActions",
+        "index.html:resolveMoveForDamage",
+        "index.html:multiHitStrikePower",
+        "index.html:multiHitKOEstimate",
+        "index.html:effectiveMoveAccuracy",
+        "index.html:multiHitOutcomeDistribution",
+        "index.html:previewIncomingDamage",
+        "index.html:resetEntryStages"
+      ],
+      "unitTests": [
+        "test-three-attack-effects.js",
+        "test-three-attack-accuracy-differential.js"
+      ],
+      "integrationTests": [
+        "browser_three_attacks_test.py"
+      ],
+      "scope": "Only three requested attacks. Temper Flare stamped previous-turn failure/success/unknown with dual 75/150 reference scenarios, explicit unknown incoming preview, save/load and transaction undo. Triple Axel 20/40/60 and Population Bomb 20 per strike use existing 16-roll engine and exact prefix HP-state distributions in both directions, forced normal/critical damage, STAB/types/stages/burn/screens, Technician/Life Orb, Sash/Sturdy/Stamina. Independent actual Showdown first/repeated accuracy and Loaded Dice/Skill Link control flow. Displayed KO probabilities are non-critical conditions; mixed-rank repeated accuracy and recognized unsupported contact/recovery reactions are reference-only and cannot certify KO. Other eleven residual moves and full secondary/recommendation/event legality outside scope. Observed incoming count accepts 1..10 and Stamina caps at +6; no new UI control. Compact PC results show both unknown Temper powers and all four target rows at four desktop viewports. Real switch resets move-result history on entry/exit; failed historical actions on the bench do not boost the next Temper Flare."
     }
   ],
   "outOfCatalogEvidence": [

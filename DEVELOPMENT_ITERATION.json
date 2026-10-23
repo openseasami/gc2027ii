@@ -1,8 +1,8 @@
 {
-  "version": "v2.9.12",
-  "baseCommit": "63c00636be95da872325e5828c37477edaab3f79",
+  "version": "v2.9.13",
+  "baseCommit": "90a5292a9187dd04c72d6ff0a743323712390e9a",
   "branch": "codex-development",
-  "implementationCommit": "c3d1bd3c2b8541255c3da9e3e91066e96630e74e",
+  "implementationCommit": null,
   "completion": false,
   "counts": {
     "targetSpeciesVerified": 344,
@@ -12,23 +12,22 @@
     "catalogSecondSourceUnconfirmed": 5,
     "attackMetadataVerified": 207,
     "majorAttackMoves": 179,
-    "majorCalculationVerified": 165,
-    "majorCalculationUnverified": 14,
+    "majorCalculationVerified": 168,
+    "majorCalculationUnverified": 11,
     "notFullyVerifiedCandidates": 1149,
     "adoptionProfiles": 120,
     "recordedAttackMoves": 207,
     "metadataVerified": 207,
     "majorThreshold": "At least one stored adoption-120 profile records >=10%; all recorded attacks also receive metadata audit.",
-    "newDamageHandlers": 4,
-    "reusedDamageHandlers": 2,
-    "pendingTwentyVerified": 6,
-    "pendingTwentyUnverified": 14
+    "requestedAttacks": 3,
+    "requestedAttacksScopedVerified": 3,
+    "remainingMajorMovesOutsideCurrentScope": 11
   },
   "coverageSummary": {
     "total": 1149,
     "categories": {
-      "未実装": 57,
-      "部分実装": 201,
+      "未実装": 54,
+      "部分実装": 204,
       "別経路で実装済み": 10,
       "仕様対象外": 0,
       "要調査": 881
@@ -49,10 +48,10 @@
     },
     "moves": {
       "registered": 698,
-      "partialEffect": 78,
-      "requiresReview": 620,
-      "unitTestsDefined": 51,
-      "integrationTestsDefined": 53,
+      "partialEffect": 81,
+      "requiresReview": 617,
+      "unitTestsDefined": 54,
+      "integrationTestsDefined": 56,
       "authoritativelyVerified": 0
     },
     "items": {
@@ -73,8 +72,8 @@
     }
   },
   "testCommands": {
-    "passed": 131,
-    "total": 131
+    "passed": 134,
+    "total": 134
   },
   "externalDifferentialFailures": 0,
   "differentialComparisons": {
@@ -164,7 +163,7 @@
   },
   "finalTacticalAudit": "FINAL_TACTICAL_AUDIT_RESULTS.json",
   "releaseCandidate": {
-    "verdict": "superseded-by-v2.9.12-pending-twenty-audit",
+    "verdict": "superseded-by-v2.9.13-three-attack-audit",
     "sourceBaseCommit": "3fc189b8d77ed15fd4dc7552408c8417a3c45edf",
     "archive": "release/rc1/gc2027ii-v2.9.10-tournament-rc1.zip",
     "archiveSha256": "6d5155a328319c3153e23472cdfadd38e5faebefcf8e2650208b652698e6635a",
@@ -246,14 +245,54 @@
       },
       "failureCount": 0,
       "failures": []
-    }
+    },
+    "historicalScopeOnly": true
   },
-  "trialArtifact": {
-    "archive": "release/gc2027ii-v2.9.12-development.zip",
-    "sha256": "715e8ae69615d4dafa3d8b248fa7f72dabb7f4abc79b3384d4cf87886fb776c4",
-    "verification": "release/DEVELOPMENT_ARTIFACT_VERIFICATION.json",
-    "extractedArchiveChecksPassed": 3,
-    "extractedArchiveChecksTotal": 3,
+  "trialArtifact": null,
+  "previousPendingTwentyCounts": {
+    "pendingTwentyVerified": 6,
+    "pendingTwentyUnverified": 14,
+    "newDamageHandlers": 4,
+    "reusedDamageHandlers": 2
+  },
+  "threeAttackAudit": {
+    "report": "THREE_ATTACKS_AUDIT_RESULTS.json",
+    "scope": "Only Temper Flare, Triple Axel, Population Bomb. Known basic calculations verified; unobserved history and unsupported interactions remain reference-only.",
+    "differential": {
+      "completion": false,
+      "oracle": "pokemon-showdown@0.11.10 Gen9 actual callbacks, getDamage, hitStepAccuracy and hitStepMoveHitLoop",
+      "scenarios": 2608,
+      "damageComparisons": 158592,
+      "totalComparisons": 47891,
+      "probabilityComparisons": 690,
+      "byMove": {
+        "やけっぱち": {
+          "cases": 1280,
+          "damageComparisons": 20480,
+          "totalComparisons": 0,
+          "probabilityComparisons": 0,
+          "failures": 0
+        },
+        "トリプルアクセル": {
+          "cases": 664,
+          "damageComparisons": 31872,
+          "totalComparisons": 11567,
+          "probabilityComparisons": 184,
+          "failures": 0
+        },
+        "ネズミざん": {
+          "cases": 664,
+          "damageComparisons": 106240,
+          "totalComparisons": 36324,
+          "probabilityComparisons": 506,
+          "failures": 0
+        }
+      },
+      "failureCount": 0,
+      "failures": []
+    },
+    "accuracyBoundaryComparisons": 4056,
+    "otherElevenExcluded": true,
     "completion": false
   }
 }
