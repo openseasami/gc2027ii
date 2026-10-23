@@ -1,11 +1,11 @@
 {
   "completion": false,
   "pcEquivalentTrialPassed": true,
-  "readiness": "conditional-reference-release-candidate",
-  "implementationCommit": "4e762ae4399661eceab000741efdf14189edcf81",
+  "readiness": "development-stats-primary-damage-audit",
+  "implementationCommit": "cf8418b593660912afe5b8b948e39763c53b472f",
   "testCommands": {
-    "passed": 127,
-    "total": 127
+    "passed": 129,
+    "total": 129
   },
   "engine": "Linux Chromium 154.0.8037.57",
   "compatibilityProfiles": [
@@ -25,11 +25,12 @@
   "nativeChromeEdgeVerified": false,
   "human45SecondTimingVerified": false,
   "unresolved": [
-    "Official C/M-C/Mega permissions and AP/base stats unconfirmed",
-    "All matchups, general multi-turn optimality, exact joint KO order and all ally-hit secondary combinations unverified",
-    "Native Windows product/version and human 45-second decision timing unverified; user reported PC operation without problems"
+    "Twenty major special/multihit calculations remain outside this explicit single-hit verification matrix",
+    "Five non-target forms have only one species-stat reference",
+    "Official event eligibility/AP and full rule parity unconfirmed",
+    "Native Windows product/version and human 45-second timing not separately certified"
   ],
-  "trialArchive": "release/rc1/gc2027ii-v2.9.10-tournament-rc1.zip",
+  "trialArchive": "release/gc2027ii-v2.9.11-development.zip",
   "startup": "PC_TRIAL_START.md",
   "userReportedPcOperation": {
     "confirmed": true,
@@ -38,8 +39,9 @@
   },
   "uiPreservation": "UI_PRESERVATION_BASELINE.json",
   "mainMatchupValidation": "MAIN_MATCHUP_VALIDATION.md",
-  "runtimeVersion": "v2.9.10",
-  "sourceBaseCommit": "3fc189b8d77ed15fd4dc7552408c8417a3c45edf",
-  "artifactVerification": "release/rc1/RC_ARTIFACT_VERIFICATION.json",
-  "releaseDecision": "RELEASE_CANDIDATE_RESULTS.json"
+  "runtimeVersion": "v2.9.11",
+  "sourceBaseCommit": "98d1739eae1a8179fd5f4bdfb0af32084a8a7986",
+  "releaseDecision": "STATS_MOVES_AUDIT_RESULTS.json",
+  "historicalRc1ArtifactVerification": "release/rc1/RC_ARTIFACT_VERIFICATION.json",
+  "artifactVerification": null
 }

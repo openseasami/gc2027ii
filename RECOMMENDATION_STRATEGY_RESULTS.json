@@ -1,7 +1,7 @@
 {
   "completion": false,
   "scope": "Explicit tactical constraints on actual planner/scenario helpers, not game-theoretic optimality or opponent-prediction calibration",
-  "sourceSha256": "4315acabc6cfbeab4392d03e0d5a6de2e7eef85c01e1f91da97dc1c398613982",
+  "sourceSha256": "9b7306fed5dcc5ab63dc6c74646d601508f428956681fae2d3d351857d7acc9d",
   "total": 28,
   "passed": 28,
   "scenarios": [

@@ -1,3 +1,5 @@
+> 更新：旧RC1の記録です。v2.9.11の基本計算修正は含まれないため、現行候補の認定から外しました。現在の結果はSTATS_MOVES_AUDIT.mdとSTATS_MOVES_AUDIT_RESULTS.jsonを参照してください。旧ZIPは変更していません。
+
 # 大会実用版リリース候補 rc1 — v2.9.10
 
 **判定：限定した参考用途について条件付き合格。全仕様のcompletion:falseを維持。**

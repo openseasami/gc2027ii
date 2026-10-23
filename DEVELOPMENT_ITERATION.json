@@ -1,16 +1,20 @@
 {
-  "version": "v2.9.10",
-  "baseCommit": "6259c6595515c5cd9ef06343648b35057d27d218",
+  "version": "v2.9.11",
+  "baseCommit": "98d1739eae1a8179fd5f4bdfb0af32084a8a7986",
   "branch": "codex-development",
-  "implementationCommit": "4e762ae4399661eceab000741efdf14189edcf81",
+  "implementationCommit": "cf8418b593660912afe5b8b948e39763c53b472f",
   "completion": false,
   "counts": {
-    "finalTacticalScenarios": 17,
-    "sameSideDamageComparisons": 256,
-    "allyHitTargetDefinitions": 10,
-    "previousRecommendationScenarios": 28,
-    "notFullyVerifiedCandidates": 1149,
-    "inProgressTasks": 37
+    "targetSpeciesVerified": 344,
+    "targetMegaVerified": 82,
+    "targetStatValues": 2064,
+    "catalogSpeciesTwoSourceVerified": 1375,
+    "catalogSecondSourceUnconfirmed": 5,
+    "attackMetadataVerified": 207,
+    "majorAttackMoves": 179,
+    "majorCalculationVerified": 159,
+    "majorCalculationUnverified": 20,
+    "notFullyVerifiedCandidates": 1149
   },
   "coverageSummary": {
     "total": 1149,
@@ -61,8 +65,8 @@
     }
   },
   "testCommands": {
-    "passed": 127,
-    "total": 127
+    "passed": 129,
+    "total": 129
   },
   "externalDifferentialFailures": 0,
   "differentialComparisons": {
@@ -143,20 +147,37 @@
     "Ally-hit damage cost is conservative; exact joint KO order, all secondaries and activation combinations unverified"
   ],
   "previousTacticalCounts": {
-    "recommendationScenarios": 28,
-    "fullPlannerAcceptanceScenarios": 4,
-    "denialOrderBoundaries": 11,
-    "reproducedPreviousDenialFailures": 9,
-    "inProgressTasks": 37,
-    "notFullyVerifiedCandidates": 1149
+    "finalTacticalScenarios": 17,
+    "sameSideDamageComparisons": 256,
+    "allyHitTargetDefinitions": 10,
+    "previousRecommendationScenarios": 28,
+    "notFullyVerifiedCandidates": 1149,
+    "inProgressTasks": 37
   },
   "finalTacticalAudit": "FINAL_TACTICAL_AUDIT_RESULTS.json",
   "releaseCandidate": {
-    "verdict": "conditional-pass-for-limited-reference-use",
+    "verdict": "superseded-by-v2.9.11-data-audit",
     "sourceBaseCommit": "3fc189b8d77ed15fd4dc7552408c8417a3c45edf",
     "archive": "release/rc1/gc2027ii-v2.9.10-tournament-rc1.zip",
     "archiveSha256": "6d5155a328319c3153e23472cdfadd38e5faebefcf8e2650208b652698e6635a",
     "assessment": "RELEASE_CANDIDATE_RESULTS.json",
     "completion": false
+  },
+  "statsAndPrimaryDamageAudit": {
+    "report": "STATS_MOVES_AUDIT_RESULTS.json",
+    "scopeCompletion": {
+      "speciesTargetTwoSourceAudit": true,
+      "majorMoveData": true,
+      "majorMoveCalculationAllVerified": false
+    },
+    "completion": false,
+    "excludedFromCurrentCompletion": [
+      "Secondary effects",
+      "Complete action recommendation implementation"
+    ],
+    "excludedTournamentItems": [
+      "こだわりハチマキ"
+    ],
+    "catalogDataChanged": false
   }
 }

@@ -6,8 +6,8 @@
   "sourceBaseCommit": "3fc189b8d77ed15fd4dc7552408c8417a3c45edf",
   "runtimeVersion": "v2.9.10",
   "candidate": "rc1",
-  "verdict": "conditional-pass-for-limited-reference-use",
-  "candidateAccepted": true,
+  "verdict": "superseded-after-stats-and-primary-damage-audit",
+  "candidateAccepted": false,
   "officialTournamentRulesCertified": false,
   "fullSpecificationCompleted": false,
   "knownCriticalDefectsInAcceptedScope": [],
@@ -69,5 +69,8 @@
   "artifactVerification": "release/rc1/RC_ARTIFACT_VERIFICATION.json",
   "scopeDocument": "RELEASE_CANDIDATE_DECISION.md",
   "mainBaseline": "7390232ef3cdf6202fc934f99828ea9055a46fdf",
-  "publicDeploymentPerformed": false
+  "publicDeploymentPerformed": false,
+  "supersededBy": "v2.9.11",
+  "supersessionReason": "Primary damage/accuracy fixes are absent from frozen RC1. Historical ZIP and exact-archive evidence retained, not current-development certification.",
+  "currentAudit": "STATS_MOVES_AUDIT_RESULTS.json"
 }

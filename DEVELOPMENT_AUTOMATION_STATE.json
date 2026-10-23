@@ -1639,6 +1639,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-23T02:18:12.968147+00:00",
+      "commit": "cf8418b593660912afe5b8b948e39763c53b472f",
+      "reason": "Two requested scopes audited: 344 target species/82 Mega verified, 207 attack metadata; 159 primary calculations match, 20 unverified, 5 extended forms second-source unconfirmed; all 129 checks pass",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {
@@ -1657,14 +1670,27 @@
     }
   },
   "workPolicy": {
-    "mode": "pc-limited-release-candidate",
+    "mode": "stats-and-primary-damage-only",
     "coverageExpansionPaused": true,
     "gates": "TOURNAMENT_PRACTICAL_GATES.json",
-    "reason": "Existing runtime frozen; limited manual-reference RC accepted after all regression and exact-archive browser verification. Broad coverage remains paused.",
+    "reason": "User narrowed development to major attack metadata/basic damage and full six-stat external audit. Secondary and recommendation completion excluded.",
     "userReportedPcOperation": true,
     "uiPreservation": "UI_PRESERVATION_BASELINE.json",
     "recommendationValidation": "RECOMMENDATION_STRATEGY_RESULTS.json",
     "finalTacticalAudit": "FINAL_TACTICAL_AUDIT_RESULTS.json",
-    "releaseDecision": "RELEASE_CANDIDATE_RESULTS.json"
-  }
+    "releaseDecision": "RELEASE_CANDIDATE_RESULTS.json",
+    "statsMovesAudit": "STATS_MOVES_AUDIT_RESULTS.json",
+    "excludedTournamentItems": [
+      "こだわりハチマキ"
+    ]
+  },
+  "validationIncidents": [
+    {
+      "scope": "v2.9.11 stats/primary-damage audit",
+      "initialResult": "128/129",
+      "test": "test-torkoal-damage-base.js",
+      "reason": "Obsolete source-text assertion expected direct mv.spread rather than resolved conditional spread; numeric checks retained and actual adapter routing verified in browser.",
+      "resolvedResult": "129/129"
+    }
+  ]
 }

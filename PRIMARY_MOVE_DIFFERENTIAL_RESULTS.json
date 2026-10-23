@@ -1,0 +1,807 @@
+{
+  "completion": false,
+  "oracle": "pokemon-showdown@0.11.10 damage core; pinned upstream Champions numeric metadata overrides",
+  "scenarios": 8268,
+  "comparisons": 132288,
+  "accuracyComparisons": 41340,
+  "byMove": {
+    "グラススライダー": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ねこだまし": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ウッドハンマー": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "10まんばりき": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "とんぼがえり": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "インファイト": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "フェイタルクロー": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "いわなだれ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "じごくづき": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "フレアドライブ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "DDラリアット": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ハイパーボイス": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "りゅうせいぐん": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "かえんほうしゃ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "すてみタックル": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ねっぷう": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "じしん": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ドラゴンクロー": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "パワージェム": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "じだんだ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "だいちのちから": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "りゅうのはどう": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ドゲザン": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ふいうち": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "アイアンヘッド": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "けたぐり": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "サイコキネシス": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "だいちのはどう": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "エレクトロビーム": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ラスターカノン": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "はどうだん": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "バークアウト": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "おはかまいり": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ウェーブタックル": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "アクアジェット": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "クイックターン": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ゴールドラッシュ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "シャドーボール": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ウェザーボール": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ソーラービーム": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "げんしのちから": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ぼうふう": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "エアスラッシュ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "きゅうけつ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "であいがしら": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "アクアブレイク": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ドリルライナー": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "でんじほう": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "きあいだま": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ボルトチェンジ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "れいとうビーム": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "だくりゅう": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ねっとう": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "こごえるかぜ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "10まんボルト": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ワイドフォース": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "はかいこうせん": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "でんこうせっか": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "マジカルフレイム": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ブレイブバード": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "はたきおとす": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "れいとうパンチ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ムーンフォース": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "もろはのずつき": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "しんそく": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "サイコファング": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ボディプレス": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "バレットパンチ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "コメットパンチ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "シャカシャカほう": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "アーマーキャノン": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "マジカルシャイン": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "はめつのひかり": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ドレインキッス": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "むしのていこう": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "オーバーヒート": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ギガドレイン": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "むしのさざめき": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ほのおのまい": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ふんか": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ソウルクラッシュ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "あくのはどう": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "てっていこうせん": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ふぶき": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ヘドロばくだん": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "フリーズドライ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "リーフストーム": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "きょけんとつげき": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "こおりのつぶて": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "つららおとし": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "イカサマ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "こおりのキバ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ヘドロウェーブ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "サイコショック": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ドレインパンチ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ゴーストダイブ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "シャドークロー": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "しおふき": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "でんこうそうげき": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "フェイント": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "スケイルノイズ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "しんくうは": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "つじぎり": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "サイコカッター": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "アクロバット": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "むねんのつるぎ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "かげうち": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "じんつうりき": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "じゃれつく": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ねらいうち": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "エアカッター": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "せいなるつるぎ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "リーフブレード": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "うらみつらみ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "トリックフラワー": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "かわらわり": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "かふんだんご": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "スターアサルト": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ルミナコリジョン": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "パワーウィップ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "とびひざげり": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "トロピカルキック": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ハイドロポンプ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "エレキネット": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ほうでん": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "エナジーボール": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "がんせきアックス": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "シザークロス": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "なみのり": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "アイススピナー": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "やまあらし": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "マッハパンチ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ばかぢから": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "むしくい": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ライジングボルト": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "アームハンマー": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "まとわりつく": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "かえんボール": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ダストシュート": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "オーバードライブ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ばくおんぱ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "サイコノイズ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "たきのぼり": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "かみくだく": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "のしかかり": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "じばく": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "みわくのボイス": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "どくばりセンボン": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "どくづき": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ひけん・ちえなみ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "アクアカッター": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "シェルブレード": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "パラボラチャージ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "かみなりパンチ": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "ねっさのだいち": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "デカハンマー": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "アクセルロック": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "しねんのずつき": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    },
+    "みずのはどう": {
+      "cases": 52,
+      "comparisons": 832,
+      "failures": 0
+    }
+  },
+  "failureCount": 0,
+  "failures": [],
+  "scope": "Successful single hit, known explicit stats and no effect abilities. Not secondaries, recommendations, full battle or official event certification."
+}
