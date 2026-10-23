@@ -1717,6 +1717,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-23T07:14:01.696749+00:00",
+      "commit": "ee6a7cc98f464d39c414cfc1eb7330e19000d122",
+      "reason": "v2.9.13最終ダメージ/種族値/KO監査。137/137成功、120プロフィール・523312ダメージ比較・28387HP境界で不一致0。小数HPタスキ判定1件のみ修正。元ZIPは未更新、completion:false、main/公開サイト変更なし。",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {

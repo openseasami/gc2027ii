@@ -13,7 +13,12 @@ assert len(baseline['unverifiedMovesOutsideScope'])==11
 for name,digest in baseline['runtimeSha256'].items():
     assert sha256((root/name).read_bytes()).hexdigest()==digest, 'Frozen runtime changed: '+name
     original=subprocess.run(['git','show',baseline['sourceCommit']+':'+name],cwd=root,check=True,capture_output=True).stdout
-    assert sha256(original).hexdigest()==digest, 'Baseline differs from original commit: '+name
+    old=baseline.get('originalRuntimeSha256',baseline['runtimeSha256'])[name]
+    assert sha256(original).hexdigest()==old, 'Original baseline provenance changed: '+name
+    if digest!=old:
+        amendments=[x for x in baseline.get('auditAmendments',[]) if x['file']==name]
+        assert len(amendments)==1 and amendments[0]['featureAdded'] is False
+        assert amendments[0]['originalSha256']==old and amendments[0]['correctedSha256']==digest
 audit=json.loads((root/'STATS_MOVES_AUDIT_RESULTS.json').read_text())
 assert sorted(x['name'] for x in audit['moves'] if x['major'] and x['basicCalculation'].startswith('verified-'))==baseline['verifiedAttackMoves']
 assert sorted(x['name'] for x in audit['species'] if x['target'])==baseline['targetSpecies']

@@ -1,5 +1,7 @@
 # 大会基準版 v2.9.13 の起動
 
+最終KO監査の補正（小数HPの被ダメージ時タスキ判定）は開発ブランチのソースだけに含まれます。元の固定ZIPには含まれません。補正を使う場合は本監査コミットのリポジトリ一式を取得し、そのルートのstart-pc-trial.cmdから起動します。URL・Python3要件・JSONバックアップ手順は以下と同じです。詳細FINAL_DAMAGE_KO_AUDIT.md。
+
 追加機能の開発を停止した固定試用版です。全仕様completion:false。対象168技の明示条件での基本計算と対象344種類の種族値を検証します。全追加効果・最適推奨・公式大会規則は保証しません。TOURNAMENT_BASELINE_REPORT.mdとUNCONFIRMED_CONDITIONS.mdを参照してください。
 
 1. 確定するZIPは **gc2027ii-v2.9.13-tournament-trial.zip** の1つです。リポジトリではrelease/tournament-v2.9.13/にあります。過去のdevelopment.zipやRC1は履歴用です。

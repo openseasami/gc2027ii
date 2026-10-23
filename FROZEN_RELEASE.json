@@ -25,5 +25,21 @@
   },
   "results": "TOURNAMENT_BASELINE_RESULTS.json",
   "frozenRuntime": "FROZEN_BASELINE.json",
-  "previousArchives": "Historical only; not the designated tournament baseline"
+  "previousArchives": "Historical only; not the designated tournament baseline",
+  "finalDamageKoAudit": {
+    "report": "FINAL_DAMAGE_KO_AUDIT.md",
+    "results": "KO_BOUNDARY_AUDIT_RESULTS.json",
+    "incidents": "KO_BOUNDARY_AUDIT_INCIDENTS.json",
+    "runtimeFixes": 1,
+    "newFeatures": 0,
+    "testCommands": {
+      "passed": 137,
+      "total": 137
+    },
+    "sourceRuntimeDiffersFromOriginalFrozenZip": true,
+    "originalZipUnchanged": true,
+    "correctionIncludedInOriginalZip": false,
+    "completion": false
+  },
+  "artifactIsOriginalFrozenPayload": true
 }

@@ -1,0 +1,37 @@
+{
+  "completion": false,
+  "runtimeVersion": "v2.9.13",
+  "baselineCommit": "ee6a7cc98f464d39c414cfc1eb7330e19000d122",
+  "originalRuntimeSha256": "facc2db0bc5d28dc3fa0960d59b18319a1b7e5839e3a445f7e737b2ee9f0c372",
+  "correctedRuntimeSha256": "60c610d0c6e318b1fb4f912d2c61015525c38073f66ae09191a728d85d3ed584",
+  "confirmedRuntimeDefects": [
+    {
+      "id": "incoming-sash-rounded-full-hp",
+      "rootCause": "Incoming damage rounds absolute HP upward, but confirmedFocusSash checked raw HP percent >=100. Fractional storage encoding near 100% therefore disagreed with the outgoing calculator and PS Damage event.",
+      "example": {
+        "attacker": "オオニューラ",
+        "move": "インファイト",
+        "target": "ドドゲザン",
+        "targetMaxHp": 175,
+        "targetPercent": 99.85714285714286,
+        "roundedCurrentHp": 175,
+        "knownItem": "きあいのタスキ",
+        "beforeConditionalKoChance": 1,
+        "showdownConditionalKoChance": 0,
+        "afterConditionalKoChance": 0
+      },
+      "fix": "Evaluate known active Focus Sash against the same absolute fullHpAtHit condition used by incoming damage and Sturdy. No stat or raw damage change.",
+      "regression": "browser_ko_boundary_test.py: sash/incoming full-HP integer boundary and chipped states"
+    }
+  ],
+  "fixtureCorrections": [
+    "HP=0 targets were excluded because fainted Pokemon are not legal targets and spread victim count changes; no product fix made for that invalid fixture.",
+    "Outgoing Foul Play uses the existing explicit neutral/uninvested opponent Attack prior independently of the selected defensive bulk preset; the independent oracle now models that documented assumption.",
+    "Immunity branches expose no KO probability property; the harness explicitly normalizes their zero damage to zero KO probability and rejects non-finite ordinary KO probabilities."
+  ],
+  "remaining": [
+    "Fractional percent storage is converted by ceil(maxHP*percent/100), not an exact observed integer HP oracle",
+    "Official AP/EV equivalence and regulations unconfirmed",
+    "Original frozen tournament ZIP is not overwritten and does not contain this source correction"
+  ]
+}

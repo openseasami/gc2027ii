@@ -182,7 +182,7 @@
         }
       ],
       "clicks": 6,
-      "automatedTurnSeconds": 5.452,
+      "automatedTurnSeconds": 4.804,
       "switch": true,
       "hpInput": true,
       "turn": true,
@@ -368,7 +368,7 @@
         }
       ],
       "clicks": 6,
-      "automatedTurnSeconds": 4.94,
+      "automatedTurnSeconds": 5.415,
       "switch": true,
       "hpInput": true,
       "turn": true,

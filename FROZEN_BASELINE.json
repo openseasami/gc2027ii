@@ -4,7 +4,7 @@
   "branch": "codex-development",
   "sourceCommit": "3a4362fdf01968dc452b5b7f8b17206e2984b00b",
   "implementationCommit": "042aa330e1353f6d88756bd80e43c3569b13eb3b",
-  "policy": "Feature development stopped; runtime bytes frozen. Only final regression, evidence, packaging and documentation.",
+  "policy": "v2.9.13 feature freeze; one reproduced KO-boundary fix authorized by final-audit request. Original ZIP remains immutable; amended runtime hashes record the corrected source.",
   "runtimeSha256": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "battle-core.js": "9a43bd7f018fdeea2239bb7ae34125b01c30908e11c3059c28fe00824927e713",
@@ -12,7 +12,7 @@
     "effect-engine.js": "06e5fd3ba720d83316fa32a9b4e79bd8c3c729b57d3e9326049c2375481d6e78",
     "icon-192.png": "269f2adbba00855bf883fd0a284cf2bc5d3aa87dcdea67bc2484aa11204b1502",
     "icon-512.png": "3ab233c4b30a924ec0e12ae0e737abfdc465cd339bf92b043fd81e42babaa4f8",
-    "index.html": "facc2db0bc5d28dc3fa0960d59b18319a1b7e5839e3a445f7e737b2ee9f0c372",
+    "index.html": "60c610d0c6e318b1fb4f912d2c61015525c38073f66ae09191a728d85d3ed584",
     "launch-pc-trial.py": "c4cc5092cb846e71311ca1a7f26facae52b508847abc2c846baff401528d1575",
     "manifest.webmanifest": "ba634d04f244146555591b6db7e3bc82550ae06623d8dac25dea74a132c3936c",
     "priority-engine.js": "1c7fb953de596fc7b0da6f9def31a818f06f615c69f69db871310751abbabffb",
@@ -556,5 +556,33 @@
     "v2.9.1": "85879925027a26e0ebee8a54bda1dfc43245cf25c120cb45e58ee4d003fff52b",
     "v2.9.10": "af326cf0452c7b295ae66aa9483f2c62cd03dcfadaaca584b713a9d70dc46491",
     "v2.9.12": "715e8ae69615d4dafa3d8b248fa7f72dabb7f4abc79b3384d4cf87886fb776c4"
-  }
+  },
+  "originalRuntimeSha256": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "battle-core.js": "9a43bd7f018fdeea2239bb7ae34125b01c30908e11c3059c28fe00824927e713",
+    "critical-effects.js": "83d54bd9fb80c307c8fdcb399fa0d11fbd7a27722bbf0b340407ba8417f4c72c",
+    "effect-engine.js": "06e5fd3ba720d83316fa32a9b4e79bd8c3c729b57d3e9326049c2375481d6e78",
+    "icon-192.png": "269f2adbba00855bf883fd0a284cf2bc5d3aa87dcdea67bc2484aa11204b1502",
+    "icon-512.png": "3ab233c4b30a924ec0e12ae0e737abfdc465cd339bf92b043fd81e42babaa4f8",
+    "index.html": "facc2db0bc5d28dc3fa0960d59b18319a1b7e5839e3a445f7e737b2ee9f0c372",
+    "launch-pc-trial.py": "c4cc5092cb846e71311ca1a7f26facae52b508847abc2c846baff401528d1575",
+    "manifest.webmanifest": "ba634d04f244146555591b6db7e3bc82550ae06623d8dac25dea74a132c3936c",
+    "priority-engine.js": "1c7fb953de596fc7b0da6f9def31a818f06f615c69f69db871310751abbabffb",
+    "rank-effects.js": "f9b217183a9b079178c3c7c51171310cbc1ecc0774abee93df0d88fe10d0a2ce",
+    "start-pc-trial.cmd": "ccbe4c2c28ddec7356806d0501b683d3f395577a618bd40e4033adf6a1f9f64a",
+    "sw.js": "970d16a54be7df740978ae9788de26b21a45d10c156009888b9b19f7d06d38ca",
+    "three-attack-effects.js": "cbef315088b116446588ecaec77db9f71aa243dc369eccb589996f4c19919773",
+    "turn-order-effects.js": "f0b4cda295774f7e9e47ddd321d23599d68a2c070d2c99d185b2e24f313518e4"
+  },
+  "auditAmendments": [
+    {
+      "request": "Final audit: fix only reproduced mismatches, preserve UI and verified data",
+      "file": "index.html",
+      "reason": "Incoming Focus Sash KO calculation used percentage >=100 while damage used ceil(maxHP*percentage/100). Reuse absolute full-HP condition so a fractional stored HP encoding of full HP cannot report lethal through a known active Sash.",
+      "featureAdded": false,
+      "evidence": "KO_BOUNDARY_AUDIT_RESULTS.json",
+      "originalSha256": "facc2db0bc5d28dc3fa0960d59b18319a1b7e5839e3a445f7e737b2ee9f0c372",
+      "correctedSha256": "60c610d0c6e318b1fb4f912d2c61015525c38073f66ae09191a728d85d3ed584"
+    }
+  ]
 }

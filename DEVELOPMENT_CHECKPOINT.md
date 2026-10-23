@@ -1,15 +1,15 @@
-# 大会基準版固定 — v2.9.13
+# v2.9.13 最終ダメージ/KO監査チェックポイント
 
-completion:false。最新ユーザー方針により追加実装・候補網羅・他11技の調査を停止する。一般planの作業をclaimしない。基準コミット3a4362fdf01968dc452b5b7f8b17206e2984b00b、実装コミット042aa330e1353f6d88756bd80e43c3569b13eb3b。codex-developmentのみ、main/公開サイトは変更しない。
+completion:false。基点ee6a7cc98f464d39c414cfc1eb7330e19000d122。新機能/候補網羅/他11技の追加監査は停止。今回のユーザー指示で独立照合の不一致だけを修正した。
 
-FROZEN_BASELINE.jsonが固定実行ファイル15個、対象168技、対象344種類の名前/ハッシュを定義する。実行ファイル・UI・種族値・データは変更0。最終回帰136/136成功。対象168技の限定基本計算に不一致0、対象344/メガ82の2,064種族値に不一致/未確認0。PC互換2プロフィール×4画面の固定欄・45秒・保存復元と旧版3版×2経路の移行・巻き戻しが成功。詳細TOURNAMENT_BASELINE_REPORT.md/RESULTS.json、TEST_RESULTS.json、VERSION_MIGRATION_RESULTS.json。
+全137/137回帰成功。KO_BOUNDARY_AUDIT_RESULTS.json：120プロフィール、4,320条件、ダメージ523,312比較、HP境界28,387、KO42,539比較、不一致0。能力値1,073,520比較も一致。対象344/メガ82の種族値2,064値は二資料一致、対象内未確認0。PC固定欄/45秒/保存復元/巻き戻し/3旧版移行も成功。
 
-残る11技と168技内の未確認条件はUNCONFIRMED_CONDITIONS.md。追加効果・最適推奨・完全試合オラクル・公式大会規則/AP・Windows製品版自体の認定は未完。PC実機操作はユーザー報告の範囲で維持。全1,149候補の台帳状態を完了へ昇格しない。
+修正1件：被ダメージのタスキ判定だけがHP％>=100を使い、整数換算で満タンになる小数HP境界のKO確率が1だった。整数満タン条件へ統一して独立PSの0と一致。index.htmlのこの2行だけを変更し、UI/CSS/種族値/採用データは維持。FROZEN_BASELINE.jsonは元の指紋をoriginalRuntimeSha256へ保持し、auditAmendmentsで再現した不具合修正を例外として記録。
 
-指定試用版はrelease/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zipの1つ。隣のSHA256SUMS.txtでZIP自体、内部のSHA256SUMS_CONTENTS.txtで各ファイルを照合する。旧development ZIP/RC1は履歴。起動PC_TRIAL_START.md、バックアップ/移行JSON_BACKUP.md。
+詳細FINAL_DAMAGE_KO_AUDIT.md、失敗原因/検体訂正KO_BOUNDARY_AUDIT_INCIDENTS.json、全回帰TEST_RESULTS.json。確定1発/乱数1発は全16乱数の生存判定で分け、命中率込み確率と命中時確率を分離。APは既存の0〜32/合計66。標準EVとの対応は個別能力の数値照合で公式AP/合計EV/合法性認定ではない。未知配分/追加効果/全特性・アイテム/公式規則/最適推奨などは未確認のまま参考推定とする。
 
-## 再開時
+## 元の固定ZIPと再開
 
-追加実装を自動再開しない。明示的な新依頼または再現した重大不具合がある場合だけ範囲を確認する。基準版を再検証する場合はwork/test-venv/bin/python run-development-checks.py→python evaluate-tournament-practical.py。配布物を再生成する必要がある場合はレポートを更新し、python build-frozen-trial.py→work/test-venv/bin/python verify-frozen-trial.py。再生成すればSHAが変わるため別の検証記録を残す。今回確定したZIPを理由なく上書きしない。旧build-development-release.pyは別候補ZIP/バックログを生成するので今回使用しない。通常commit/pushはcodex-developmentのみ。全仕様completion:falseを維持する。
+release/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zipは上書きせず元のSHAを維持。**そのZIPには今回の補正は含まれない。** 使用するなら本監査の開発コミットを取得し、ルートのstart-pc-trial.cmdから起動。同じURL/プロフィールを使い、先にJSON出力しておく。今回の依頼は監査/開発ブランチ保存であり、新ZIP生成は行っていない。
 
-最終ZIP展開検査：3/3成功、35同梱ハッシュ一致、固定実行ファイル15個一致。確定SHA-256：3cc7b8d9ca186e3a543f8aa0b514e094b253f90d119e716aef2229b6d7d95a90。単一指定配布物はFROZEN_RELEASE.jsonを参照。
+再開時も新機能へ進まない。明示された追加監査か再現した不一致だけを扱う。work/test-venv/bin/python browser_ko_boundary_test.py→全回帰→evaluate-tournament-practical.py。元ZIPを修正済みソースの検証証拠に流用しない。main/公開サイトは変更せずcodex-developmentへ保存。completion:falseを維持する。

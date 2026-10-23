@@ -11032,7 +11032,8 @@ function opponentDamageEstimateAgainstMy(action,targetEntry,powerOverride=null,c
   const min=Math.min(...rolls),max=Math.max(...rolls);
   const avg=rolls.reduce((sum,x)=>sum+x,0)/rolls.length;
   const sturdyActive=fullHpAtHit && defensiveAbility==='がんじょう'&&!abilityBypassed('opp',attacker.idx,attacker.name,'がんじょう');
-  const koChance=(confirmedFocusSash('my',targetEntry.idx)||sturdyActive)?0:rolls.filter(x=>x>=currentHp).length/rolls.length;
+  const sashActive=fullHpAtHit&&!targetEntry.d.itemConsumed&&heldItemFor('my',targetEntry.idx)==='きあいのタスキ';
+  const koChance=(sashActive||sturdyActive)?0:rolls.filter(x=>x>=currentHp).length/rolls.length;
   return {critical,criticalProfile,berry,koChance,min,max,avg,currentHp,fullHp,eff,rolls};
 }
 

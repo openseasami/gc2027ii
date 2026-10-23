@@ -72,8 +72,8 @@
     }
   },
   "testCommands": {
-    "passed": 136,
-    "total": 136
+    "passed": 137,
+    "total": 137
   },
   "externalDifferentialFailures": 0,
   "differentialComparisons": {
@@ -310,7 +310,22 @@
     "manifest": "FROZEN_BASELINE.json",
     "assessment": "TOURNAMENT_BASELINE_RESULTS.json",
     "additionalFeaturesStopped": true,
-    "runtimeFilesChanged": 0,
+    "runtimeFilesChanged": 1,
+    "completion": false
+  },
+  "finalDamageKoAudit": {
+    "report": "FINAL_DAMAGE_KO_AUDIT.md",
+    "results": "KO_BOUNDARY_AUDIT_RESULTS.json",
+    "incidents": "KO_BOUNDARY_AUDIT_INCIDENTS.json",
+    "runtimeFixes": 1,
+    "newFeatures": 0,
+    "testCommands": {
+      "passed": 137,
+      "total": 137
+    },
+    "sourceRuntimeDiffersFromOriginalFrozenZip": true,
+    "originalZipUnchanged": true,
+    "correctionIncludedInOriginalZip": false,
     "completion": false
   }
 }

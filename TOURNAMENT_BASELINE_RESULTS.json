@@ -2,8 +2,8 @@
   "version": "v2.9.13",
   "completion": false,
   "frozen": true,
-  "limitedTrialAccepted": true,
-  "verdict": "pass-with-explicit-scope-and-limitations",
+  "limitedTrialAccepted": false,
+  "verdict": "historical-payload-only-not-approval-to-regenerate-current-source",
   "sourceCommit": "3a4362fdf01968dc452b5b7f8b17206e2984b00b",
   "implementationCommit": "042aa330e1353f6d88756bd80e43c3569b13eb3b",
   "branch": "codex-development",
@@ -122,5 +122,27 @@
     "VERSION_MIGRATION_RESULTS.json": "55a2c016f741a846704d39fc0d13934ebd31a6740119bb3eb7605a3c7db43a06",
     "FULL_MATCH_E2E_RESULTS.json": "b3378c913a025d329a8ccff220a58671c26d093c0b2c96009940010e43b8739f"
   },
-  "fullTournamentRulesCertified": false
+  "fullTournamentRulesCertified": false,
+  "historicalFrozenArtifactAssessment": true,
+  "currentSourceAudit": {
+    "report": "FINAL_DAMAGE_KO_AUDIT.md",
+    "results": "KO_BOUNDARY_AUDIT_RESULTS.json",
+    "incidents": "KO_BOUNDARY_AUDIT_INCIDENTS.json",
+    "runtimeFixes": 1,
+    "newFeatures": 0,
+    "testCommands": {
+      "passed": 137,
+      "total": 137
+    },
+    "sourceRuntimeDiffersFromOriginalFrozenZip": true,
+    "originalZipUnchanged": true,
+    "correctionIncludedInOriginalZip": false,
+    "completion": false
+  },
+  "originalAcceptance": {
+    "limitedTrialAccepted": true,
+    "verdict": "pass-with-explicit-scope-and-limitations",
+    "meaning": "Original frozen payload evaluation, before the later KO-boundary audit"
+  },
+  "packagingHoldReason": "Current source has an audited fix absent from the immutable original ZIP. No new archive/release decision requested; do not overwrite the frozen archive from this historical assessment."
 }

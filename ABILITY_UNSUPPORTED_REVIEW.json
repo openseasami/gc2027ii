@@ -218,7 +218,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通接触ダメージ予測で接触ペナルティを除外する。",
       "executableReferences": [
-        "index.html:projectedContactPunishmentForAction:11562"
+        "index.html:projectedContactPunishmentForAction:11563"
       ],
       "tests": [
         "test-contact.js"
@@ -256,7 +256,7 @@
       "assessmentScope": "相手対象ランク技の確定適用を阻止し、かたやぶり時は適用する。",
       "executableReferences": [
         "index.html:applyConfirmedTargetRanks:6616",
-        "index.html:disruptionCanAffect:12730"
+        "index.html:disruptionCanAffect:12731"
       ],
       "tests": [
         "test-target-ranks-integration.js"
@@ -666,7 +666,7 @@
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
         "index.html:confirmedSleepProtection:6488",
-        "index.html:forecastCommonSecondaryStatus:11452"
+        "index.html:forecastCommonSecondaryStatus:11453"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"
@@ -999,7 +999,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11447"
+        "index.html:forecastCommonSecondaryStatus:11448"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -1176,7 +1176,7 @@
         "index.html:defensiveBerryForDamage:9350",
         "index.html:damageEstimate:9448",
         "index.html:opponentDamageEstimateAgainstMy:11019",
-        "index.html:disruptionCanAffect:12720"
+        "index.html:disruptionCanAffect:12721"
       ],
       "tests": [
         "test-substitute-bypass.js",
@@ -1474,7 +1474,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11451"
+        "index.html:forecastCommonSecondaryStatus:11452"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"
@@ -1844,7 +1844,7 @@
       "classification": "部分実装",
       "assessmentScope": "Poison secondary forecast type-immunity bypass only; independent trySetStatus comparison. Damage immunity, hazards and direct status action pipeline remain separate/incomplete.",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11445"
+        "index.html:forecastCommonSecondaryStatus:11446"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2016,7 +2016,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11450"
+        "index.html:forecastCommonSecondaryStatus:11451"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -2654,7 +2654,7 @@
         "index.html:applyConfirmedTargetRanks:6617",
         "index.html:receiveIntimidate:7354",
         "index.html:triggerEntryAbility:7409",
-        "index.html:planCommonSecondaryForecast:11534"
+        "index.html:planCommonSecondaryForecast:11535"
       ],
       "tests": [
         "test-protection-weight-differential.js"
@@ -2832,7 +2832,7 @@
       "classification": "別経路で実装済み",
       "assessmentScope": "共通追加状態異常予測で麻痺・毒・凍りの免疫を適用する。",
       "executableReferences": [
-        "index.html:forecastCommonSecondaryStatus:11449"
+        "index.html:forecastCommonSecondaryStatus:11450"
       ],
       "tests": [
         "test-common-secondary.js",
@@ -3066,7 +3066,7 @@
       "assessmentScope": "共通追加状態異常予測で免疫・晴れ条件・かたやぶりを検証。",
       "executableReferences": [
         "index.html:confirmedSleepProtection:6488",
-        "index.html:forecastCommonSecondaryStatus:11453"
+        "index.html:forecastCommonSecondaryStatus:11454"
       ],
       "tests": [
         "test-secondary-immunity-abilities.js"

@@ -2,6 +2,8 @@
 
 ## v2.9.13 大会基準版の固定（最新ユーザー指示）
 
+最終KO監査で再現した小数HP/タスキの不一致1件を修正済み。FINAL_DAMAGE_KO_AUDIT.mdとKO_BOUNDARY_AUDIT_INCIDENTS.jsonを先に読む。FROZEN_BASELINE.jsonは元の指紋をoriginalRuntimeSha256へ保持し、auditAmendmentsでこの修正だけを許可する。元の固定ZIPは上書きせず、修正済みソースと同一とは扱わない。旧ZIP用の合格記録からbuild-frozen-trial.pyで再生成しない。本監査は新ZIPを作らず開発ブランチへ修正/検証記録を保存した。
+
 追加機能・候補網羅・他11技の監査を停止する。FROZEN_BASELINE.jsonのsourceCommitとruntimeSha256が基準。168技の明示条件の基本計算、344種類の種族値、現在のPC UI、固定欄、保存/旧版移行だけを最終回帰する。一般planのグループはclaimしない。新たな実装依頼または再現した重大不具合なしに実行ファイルを変更しない。
 
 配布物はrelease/tournament-v2.9.13/gc2027ii-v2.9.13-tournament-trial.zipの1つを使用し、旧development ZIP/RC1は履歴として保持する。再検証は固定全回帰→evaluate-tournament-practical.py→build-frozen-trial.py→verify-frozen-trial.py。既存のbuild-development-release.pyによる別の候補ZIP生成/バックログ再生成は今回不要。TOURNAMENT_BASELINE_RESULTS.jsonの限定試用合格と全仕様completion:false、公式大会適合の未確認を混同しない。ZIP自体のSHAは同じフォルダーのSHA256SUMS.txt、内部はSHA256SUMS_CONTENTS.txtを参照する。

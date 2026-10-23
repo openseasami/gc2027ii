@@ -1,11 +1,11 @@
 {
   "completion": false,
   "pcEquivalentTrialPassed": true,
-  "readiness": "frozen-v2.9.13-limited-tournament-trial",
+  "readiness": "audited-v2.9.13-source-one-ko-boundary-fix",
   "implementationCommit": "042aa330e1353f6d88756bd80e43c3569b13eb3b",
   "testCommands": {
-    "passed": 136,
-    "total": 136
+    "passed": 137,
+    "total": 137
   },
   "engine": "Linux Chromium 154.0.8037.57",
   "compatibilityProfiles": [
@@ -14,8 +14,8 @@
   ],
   "viewportChecks": 8,
   "automatedTurnSeconds": [
-    5.452,
-    4.94
+    4.804,
+    5.415
   ],
   "clicksPerTurn": [
     6,
@@ -43,7 +43,7 @@
   "mainMatchupValidation": "MAIN_MATCHUP_VALIDATION.md",
   "runtimeVersion": "v2.9.13",
   "sourceBaseCommit": "3a4362fdf01968dc452b5b7f8b17206e2984b00b",
-  "releaseDecision": "TOURNAMENT_BASELINE_RESULTS.json",
+  "releaseDecision": "FINAL_DAMAGE_KO_AUDIT.md",
   "historicalRc1ArtifactVerification": "release/rc1/RC_ARTIFACT_VERIFICATION.json",
   "artifactVerification": "release/tournament-v2.9.13/ARTIFACT_VERIFICATION.json",
   "trialArtifact": {
@@ -57,5 +57,20 @@
     "completion": false
   },
   "targetedThreeMoveViewportChecks": 4,
-  "frozen": true
+  "frozen": true,
+  "finalDamageKoAudit": {
+    "report": "FINAL_DAMAGE_KO_AUDIT.md",
+    "results": "KO_BOUNDARY_AUDIT_RESULTS.json",
+    "incidents": "KO_BOUNDARY_AUDIT_INCIDENTS.json",
+    "runtimeFixes": 1,
+    "newFeatures": 0,
+    "testCommands": {
+      "passed": 137,
+      "total": 137
+    },
+    "sourceRuntimeDiffersFromOriginalFrozenZip": true,
+    "originalZipUnchanged": true,
+    "correctionIncludedInOriginalZip": false,
+    "completion": false
+  }
 }
