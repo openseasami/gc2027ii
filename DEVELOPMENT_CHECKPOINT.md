@@ -1,6 +1,6 @@
 # 未確認20技監査チェックポイント — v2.9.12
 
-completion:false。基点63c00636be95da872325e5828c37477edaab3f79、codex-development。main・公開サイトは変更しない。
+completion:false。基点63c00636be95da872325e5828c37477edaab3f79、実装c3d1bd3c2b8541255c3da9e3e91066e96630e74e、codex-development。main・公開サイトは変更しない。
 
 最新依頼は主要179技中の未確認20技のデータ・基本計算・対象数補正の集中監査。追加効果、行動推奨、複数ターン最適化は対象外。一般候補1,149件の網羅や新規の戦術実装へ戻らない。
 
@@ -17,3 +17,5 @@ completion:false。基点63c00636be95da872325e5828c37477edaab3f79、codex-develo
 次回はPENDING_TWENTY_AUDIT.mdとJSONの14技別の必要状態/専用処理から再開。単純な多段登録だけでドラゴンアロー・ネズミざん・トリプルアクセルを通常の固定連続技へ混ぜない。公式Championsエンジン/使用可能範囲/AP/一部形態は引き続き未確定。追加効果/行動推奨はユーザーの新規指示があるまで対象外。
 
 再検証：node test-pending-move-conditions.js → work/test-venv/bin/python browser_pending_twenty_test.py → work/test-venv/bin/python browser_stats_moves_test.py。全回帰→evaluate-tournament-practical.py→build-development-release.py→ZIP展開操作確認→devコミット/push。最新ソースと照合器/原文SHAが一致し、不一致0の限定証拠だけを台帳へ取り込む。
+
+試用版ZIPの展開検査3/3成功：Pythonローカル起動、PC Chrome/Edge UA操作、観測4対4の完全試合フロー。15同梱ファイルのハッシュ一致、ZIP SHA-256：715e8ae69615d4dafa3d8b248fa7f72dabb7f4abc79b3384d4cf87886fb776c4。Windows製品版の追加実機認定ではない。

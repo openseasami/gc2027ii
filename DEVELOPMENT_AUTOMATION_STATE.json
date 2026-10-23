@@ -1665,6 +1665,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-23T02:44:40.004096+00:00",
+      "commit": "c3d1bd3c2b8541255c3da9e3e91066e96630e74e",
+      "reason": "Verified v2.9.12 development ZIP: 15 file hashes and 3 extracted-artifact checks passed; all 131 source regressions passed; twenty-move audit 6 scoped verified/14 explicitly unverified. Completion false.",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {

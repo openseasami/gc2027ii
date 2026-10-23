@@ -1,0 +1,422 @@
+{
+  "completion": false,
+  "archive": "release/gc2027ii-v2.9.12-development.zip",
+  "archiveSha256": "715e8ae69615d4dafa3d8b248fa7f72dabb7f4abc79b3384d4cf87886fb776c4",
+  "verifiedAt": "2026-10-23T02:42:58.441259+00:00",
+  "tests": [
+    {
+      "command": "test-pc-launcher.py",
+      "exitCode": 0,
+      "stdout": "PASS shipped Python launcher serves trial and external engine at stable localhost origin\n",
+      "stderr": ""
+    },
+    {
+      "command": "browser_pc_trial_test.py",
+      "exitCode": 0,
+      "stdout": "PASS PC Chromium Chrome/Edge UA profiles: 8 layouts, dual targets, real 45s turn/switch/HP/save/undo/JSON restore\n",
+      "stderr": ""
+    },
+    {
+      "command": "browser_full_match_test.py",
+      "exitCode": 0,
+      "stdout": "PASS complete observed 4-vs-4 match UI: three turns, KO replacements, undo/replay, reload, win record; no state injection\n",
+      "stderr": ""
+    }
+  ],
+  "passed": true,
+  "nativeWindowsVerified": false,
+  "fileHashesVerified": 15,
+  "implementationCommit": "c3d1bd3c2b8541255c3da9e3e91066e96630e74e",
+  "limitations": [
+    "Linux Chromium with Windows Chrome/Edge UA; not native Windows certification.",
+    "Real UI observed-match workflow; not complete battle-engine parity.",
+    "Fourteen major attack calculations remain unverified."
+  ],
+  "PC_BROWSER_RESULTS.json": {
+    "completion": false,
+    "passed": true,
+    "hostPlatform": "Linux",
+    "nativeWindowsVerified": false,
+    "nativeChromeEdgeVerified": false,
+    "profiles": [
+      {
+        "compatibilityUA": "Chrome",
+        "layouts": [
+          {
+            "viewport": [
+              1366,
+              768
+            ],
+            "width": 300,
+            "top": 12,
+            "bottom": 756,
+            "left": 1054,
+            "inputRight": 1030,
+            "rows": [
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーウッドハンマー：53.1–62.9%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラウッドハンマー：81.9–96.8%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーインファイト：64.0–76.0%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラインファイト：49.7–58.7%乱数2〜3発",
+                "visible": true,
+                "overflow": false
+              }
+            ],
+            "horizontal": false,
+            "position": "fixed"
+          },
+          {
+            "viewport": [
+              1920,
+              1080
+            ],
+            "width": 300,
+            "top": 12,
+            "bottom": 1068,
+            "left": 1608,
+            "inputRight": 1584,
+            "rows": [
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーウッドハンマー：53.1–62.9%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラウッドハンマー：81.9–96.8%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーインファイト：64.0–76.0%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラインファイト：49.7–58.7%乱数2〜3発",
+                "visible": true,
+                "overflow": false
+              }
+            ],
+            "horizontal": false,
+            "position": "fixed"
+          },
+          {
+            "viewport": [
+              1280,
+              720
+            ],
+            "width": 300,
+            "top": 12,
+            "bottom": 708,
+            "left": 968,
+            "inputRight": 944,
+            "rows": [
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーウッドハンマー：53.1–62.9%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラウッドハンマー：81.9–96.8%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーインファイト：64.0–76.0%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラインファイト：49.7–58.7%乱数2〜3発",
+                "visible": true,
+                "overflow": false
+              }
+            ],
+            "horizontal": false,
+            "position": "fixed"
+          },
+          {
+            "viewport": [
+              1093,
+              614
+            ],
+            "width": 300,
+            "top": 12,
+            "bottom": 602,
+            "left": 781,
+            "inputRight": 757,
+            "rows": [
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーウッドハンマー：53.1–62.9%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラウッドハンマー：81.9–96.8%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーインファイト：64.0–76.0%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラインファイト：49.7–58.7%乱数2〜3発",
+                "visible": true,
+                "overflow": false
+              }
+            ],
+            "horizontal": false,
+            "position": "fixed"
+          }
+        ],
+        "clicks": 6,
+        "automatedTurnSeconds": 5.262,
+        "switch": true,
+        "hpInput": true,
+        "turn": true,
+        "saveReload": true,
+        "undo": true,
+        "jsonRestore": true,
+        "errors": []
+      },
+      {
+        "compatibilityUA": "Edge",
+        "layouts": [
+          {
+            "viewport": [
+              1366,
+              768
+            ],
+            "width": 300,
+            "top": 12,
+            "bottom": 756,
+            "left": 1054,
+            "inputRight": 1030,
+            "rows": [
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーウッドハンマー：53.1–62.9%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラウッドハンマー：81.9–96.8%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーインファイト：64.0–76.0%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラインファイト：49.7–58.7%乱数2〜3発",
+                "visible": true,
+                "overflow": false
+              }
+            ],
+            "horizontal": false,
+            "position": "fixed"
+          },
+          {
+            "viewport": [
+              1920,
+              1080
+            ],
+            "width": 300,
+            "top": 12,
+            "bottom": 1068,
+            "left": 1608,
+            "inputRight": 1584,
+            "rows": [
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーウッドハンマー：53.1–62.9%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラウッドハンマー：81.9–96.8%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーインファイト：64.0–76.0%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラインファイト：49.7–58.7%乱数2〜3発",
+                "visible": true,
+                "overflow": false
+              }
+            ],
+            "horizontal": false,
+            "position": "fixed"
+          },
+          {
+            "viewport": [
+              1280,
+              720
+            ],
+            "width": 300,
+            "top": 12,
+            "bottom": 708,
+            "left": 968,
+            "inputRight": 944,
+            "rows": [
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーウッドハンマー：53.1–62.9%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラウッドハンマー：81.9–96.8%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーインファイト：64.0–76.0%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラインファイト：49.7–58.7%乱数2〜3発",
+                "visible": true,
+                "overflow": false
+              }
+            ],
+            "horizontal": false,
+            "position": "fixed"
+          },
+          {
+            "viewport": [
+              1093,
+              614
+            ],
+            "width": 300,
+            "top": 12,
+            "bottom": 602,
+            "left": 781,
+            "inputRight": 757,
+            "rows": [
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーウッドハンマー：53.1–62.9%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラウッドハンマー：81.9–96.8%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "0",
+                "idx": "0",
+                "text": "相手1：ゴリランダーインファイト：64.0–76.0%計算上2発（推定）",
+                "visible": true,
+                "overflow": false
+              },
+              {
+                "slot": "1",
+                "idx": "1",
+                "text": "相手2：オオニューラインファイト：49.7–58.7%乱数2〜3発",
+                "visible": true,
+                "overflow": false
+              }
+            ],
+            "horizontal": false,
+            "position": "fixed"
+          }
+        ],
+        "clicks": 6,
+        "automatedTurnSeconds": 5.221,
+        "switch": true,
+        "hpInput": true,
+        "turn": true,
+        "saveReload": true,
+        "undo": true,
+        "jsonRestore": true,
+        "errors": []
+      }
+    ],
+    "limitations": [
+      "Linux Chromium with Windows Chrome/Edge UA compatibility profiles; not native Windows/browser distributions",
+      "Automated input timing excludes human decision time",
+      "Observed match workflow, not full battle oracle"
+    ],
+    "chromiumVersion": "154.0.8037.57"
+  }
+}

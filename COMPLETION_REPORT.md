@@ -17,3 +17,7 @@
 全131/131回帰成功。PC UI、保存/復元/履歴/巻き戻し、採用120データ・種族値・技/規則カタログの指紋を維持。PC自動試験はLinux ChromiumのWindows Chrome/Edge UA互換で、以前のユーザー実機確認とは区別する。公式大会/Champions全仕様の認定ではない。
 
 大会試用版release/gc2027ii-v2.9.12-development.zip、起動手順PC_TRIAL_START.md、配布物の展開検査release/DEVELOPMENT_ARTIFACT_VERIFICATION.json。保存先codex-development。main/公開サイト/旧RC1は変更しない。
+
+実装コミット：c3d1bd3c2b8541255c3da9e3e91066e96630e74e。配布・検証記録を含む保存HEADは開発ブランチの最新コミットを参照。
+
+試用版ZIPの展開検査3/3成功：Pythonローカル起動、PC Chrome/Edge UA操作、観測4対4の完全試合フロー。15同梱ファイルのハッシュ一致、ZIP SHA-256：715e8ae69615d4dafa3d8b248fa7f72dabb7f4abc79b3384d4cf87886fb776c4。Windows製品版の追加実機認定ではない。

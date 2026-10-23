@@ -2,7 +2,7 @@
   "completion": false,
   "pcEquivalentTrialPassed": true,
   "readiness": "development-pending-twenty-damage-audit",
-  "implementationCommit": null,
+  "implementationCommit": "c3d1bd3c2b8541255c3da9e3e91066e96630e74e",
   "testCommands": {
     "passed": 131,
     "total": 131
@@ -43,5 +43,13 @@
   "sourceBaseCommit": "63c00636be95da872325e5828c37477edaab3f79",
   "releaseDecision": "PENDING_TWENTY_AUDIT_RESULTS.json",
   "historicalRc1ArtifactVerification": "release/rc1/RC_ARTIFACT_VERIFICATION.json",
-  "artifactVerification": "release/DEVELOPMENT_ARTIFACT_VERIFICATION.json"
+  "artifactVerification": "release/DEVELOPMENT_ARTIFACT_VERIFICATION.json",
+  "trialArtifact": {
+    "archive": "release/gc2027ii-v2.9.12-development.zip",
+    "sha256": "715e8ae69615d4dafa3d8b248fa7f72dabb7f4abc79b3384d4cf87886fb776c4",
+    "verification": "release/DEVELOPMENT_ARTIFACT_VERIFICATION.json",
+    "extractedArchiveChecksPassed": 3,
+    "extractedArchiveChecksTotal": 3,
+    "completion": false
+  }
 }
