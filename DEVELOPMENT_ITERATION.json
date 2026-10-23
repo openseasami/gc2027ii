@@ -2,7 +2,7 @@
   "version": "v2.9.13",
   "baseCommit": "90a5292a9187dd04c72d6ff0a743323712390e9a",
   "branch": "codex-development",
-  "implementationCommit": null,
+  "implementationCommit": "042aa330e1353f6d88756bd80e43c3569b13eb3b",
   "completion": false,
   "counts": {
     "targetSpeciesVerified": 344,
@@ -248,7 +248,14 @@
     },
     "historicalScopeOnly": true
   },
-  "trialArtifact": null,
+  "trialArtifact": {
+    "archive": "release/gc2027ii-v2.9.13-development.zip",
+    "sha256": "5cadd865e0a7fc85e59130edbd794d7c62178b232f321b4c05996875ea51fd1e",
+    "verification": "release/DEVELOPMENT_ARTIFACT_VERIFICATION.json",
+    "extractedArchiveChecksPassed": 3,
+    "extractedArchiveChecksTotal": 3,
+    "completion": false
+  },
   "previousPendingTwentyCounts": {
     "pendingTwentyVerified": 6,
     "pendingTwentyUnverified": 14,

@@ -19,3 +19,7 @@ completion:false。基点90a5292a9187dd04c72d6ff0a743323712390e9a、codex-develo
 試用版release/gc2027ii-v2.9.13-development.zip。PC_TRIAL_START.mdに従いPython3のstart-pc-trial.cmdからChrome/Edgeでhttp://127.0.0.1:8765/index.htmlを開く。旧RC1は変更しない。ZIP展開後の起動/PC/完全観測試合フローの結果はrelease/DEVELOPMENT_ARTIFACT_VERIFICATION.json。
 
 次回もユーザーの対象3技に限定する。他11技へ進むには対象変更の指示が必要。未確認反応/命中ランクの公式根拠がなければ、参考推定を確定表示へ昇格させない。再実行はnode test-three-attack-effects.js、node test-three-attack-accuracy-differential.js、work/test-venv/bin/python browser_three_attacks_test.py。全回帰→evaluate-tournament-practical.py→build-development-release.py→ZIP展開確認→開発ブランチへ通常pushする。
+
+実装コミット：042aa330e1353f6d88756bd80e43c3569b13eb3b。配布物/検証記録を含む保存HEADは開発ブランチの最新コミットを参照。
+
+試用版ZIP展開検査3/3成功（ローカル起動、PC操作、完全観測試合フロー）。16同梱ファイルのSHA一致。ZIP SHA-256：5cadd865e0a7fc85e59130edbd794d7c62178b232f321b4c05996875ea51fd1e。追加のWindows実機認定ではない。

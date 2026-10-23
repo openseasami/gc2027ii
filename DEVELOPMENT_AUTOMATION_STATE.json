@@ -1691,6 +1691,19 @@
         "blocked": 0,
         "pending": 0
       }
+    },
+    {
+      "at": "2026-10-23T04:50:09.223523+00:00",
+      "commit": "042aa330e1353f6d88756bd80e43c3569b13eb3b",
+      "reason": "Saved v2.9.13 trial: 134 regressions and 3 extracted ZIP checks passed, 16 runtime hashes verified. Three requested attacks scoped-verified with reference-only unconfirmed conditions; other eleven excluded. No main/public deployment.",
+      "completion": false,
+      "counts": {
+        "verified-scope": 18,
+        "in-progress": 37,
+        "retry-needed": 0,
+        "blocked": 0,
+        "pending": 0
+      }
     }
   ],
   "foundation": {

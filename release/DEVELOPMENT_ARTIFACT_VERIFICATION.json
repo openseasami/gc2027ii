@@ -1,8 +1,8 @@
 {
   "completion": false,
-  "archive": "release/gc2027ii-v2.9.12-development.zip",
-  "archiveSha256": "715e8ae69615d4dafa3d8b248fa7f72dabb7f4abc79b3384d4cf87886fb776c4",
-  "verifiedAt": "2026-10-23T02:42:58.441259+00:00",
+  "archive": "release/gc2027ii-v2.9.13-development.zip",
+  "archiveSha256": "5cadd865e0a7fc85e59130edbd794d7c62178b232f321b4c05996875ea51fd1e",
+  "verifiedAt": "2026-10-23T04:47:54.358022+00:00",
   "tests": [
     {
       "command": "test-pc-launcher.py",
@@ -25,12 +25,12 @@
   ],
   "passed": true,
   "nativeWindowsVerified": false,
-  "fileHashesVerified": 15,
-  "implementationCommit": "c3d1bd3c2b8541255c3da9e3e91066e96630e74e",
+  "fileHashesVerified": 16,
+  "implementationCommit": "042aa330e1353f6d88756bd80e43c3569b13eb3b",
   "limitations": [
     "Linux Chromium with Windows Chrome/Edge UA; not native Windows certification.",
     "Real UI observed-match workflow; not complete battle-engine parity.",
-    "Fourteen major attack calculations remain unverified."
+    "Only the three requested attacks were newly implemented; eleven other major attacks remain outside scope."
   ],
   "PC_BROWSER_RESULTS.json": {
     "completion": false,
@@ -216,7 +216,7 @@
           }
         ],
         "clicks": 6,
-        "automatedTurnSeconds": 5.262,
+        "automatedTurnSeconds": 5.145,
         "switch": true,
         "hpInput": true,
         "turn": true,
@@ -402,7 +402,7 @@
           }
         ],
         "clicks": 6,
-        "automatedTurnSeconds": 5.221,
+        "automatedTurnSeconds": 5.002,
         "switch": true,
         "hpInput": true,
         "turn": true,
