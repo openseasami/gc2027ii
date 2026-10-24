@@ -1,12 +1,10 @@
-v2.9.16
-PC起動: PC_TRIAL_START.md / start-pc-trial.cmd（Python 3）
-大会前の練習・検証専用。全仕様completion:false。
-連続模擬対戦・状態管理の最終検証: SERIES_MATCH_AUDIT.md / SERIES_MATCH_RESULTS.json
-検証結果・残件・再開: TEST_RESULTS.json / DEVELOPMENT_CHECKPOINT.md / COMPLETION_REPORT.md
-旧版v2.9.15/v2.9.14/v2.9.13 ZIPはバックアップとして維持する。
-公式一覧と大会規約の追加調査は対象外。対戦中の外部ツール利用許可は未確認。
-全回帰: work/test-venv/bin/python run-development-checks.py
-練習版判定: python evaluate-series-matches.py / python evaluate-tournament-practical.py / python evaluate-practice-release.py
-配布: release/practice-v2.9.16/gc2027ii-v2.9.16-practice-verification.zip
-mainと公開サイトは変更しない。
-PC操作改善の測定: PC_OPERATION_AUDIT.md / PC_OPERATION_RESULTS.json（自動操作のみ、人間45秒認定なし）
+v2.9.17
+最終の大会前練習・検証専用版。計画開発工程は今回で終了。全仕様completion:false。
+起動: PC_TRIAL_START.md / start-pc-trial.cmd（Python 3）
+データ移行: JSON_BACKUP.md（移行前後にJSONを保管）
+最終判定・制約: FINAL_PRACTICE_CONFIRMATION.md / COMPLETION_REPORT.md
+検証: TEST_RESULTS.json / SERIES_MATCH_RESULTS.json / VERSION_MIGRATION_RESULTS.json
+旧ZIPを保持。対戦中の外部ツール利用許可は未確認。公式一覧・規約の追加調査なし。
+配布: release/practice-v2.9.17/gc2027ii-v2.9.17-practice-verification.zip
+再検証用: python run-development-checks.py → evaluate-series-matches.py → evaluate-tournament-practical.py → evaluate-practice-release.py
+mainと公開サイトは変更しない。新しい計画開発段階を追加しない。

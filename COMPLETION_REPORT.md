@@ -1,20 +1,20 @@
-# v2.9.16 完了判定（全仕様未完成）
+# 最終確定 — v2.9.17 大会前練習・検証版
 
-基点3e85b05。全仕様completion:false。PC操作の限定改善を実装し、全152/152回帰、既存30試合218ターン、Showdown差分、PC E2E、6版保存移行を確認しました。詳細はPC_OPERATION_AUDIT.md / PC_OPERATION_RESULTS.json / SERIES_MATCH_RESULTS.json / TEST_RESULTS.json。
+全153/153回帰、30試合218ターン、Showdown差分不一致0、PC E2E、過去6版とv2.9.16の計7版からの移行、実ZIP展開後8/8試験に成功しました。指定検証範囲に重大な既知不具合はありません。今回で計画開発を終了し、新しい段階を追加しません。全仕様completion:falseを維持します。
 
-- 誤入力訂正を含む同一手順: 24→23クリック、36→35操作、入力パネル描画50→19回。
-- 各3回の自動操作中央値: 12.2344→11.1805秒。更新遅延中央値609.6→591.3ms、最大915.9→791.5ms。自動スクロールイベント24→24、明示ホイール0→0。人間の判断込み45秒達成や他PCの性能保証ではありません。
-- 固定欄の推奨は「参考推定」。通常スクロール/固定ダメージ幅300px/2対面4行を維持。HP訂正、入力更新の重複削減、短い固定推奨以外のUIを保持。計算核/168技/344形態/採用120/保存形式は変更なし。
-- 30試合差分: 218盤面、3488乱数、436素早さ、218優先度、436行動順、不一致0。観測支援の再現であり、HP/状態/二次効果等を全部自動計算するエンジンの認定ではありません。
+配布: release/practice-v2.9.17/gc2027ii-v2.9.17-practice-verification.zip
 
-配布予定先はrelease/practice-v2.9.16/gc2027ii-v2.9.16-practice-verification.zipの1つ。実ZIPの最終検証合否/SHAは同じフォルダーのARTIFACT_VERIFICATION.json/SHA256SUMS.txtを正とします。ZIP自身のSHAは自己参照のため外部サイドカー、内部ファイルSHAと結果/未確認/起動/バックアップ手順は同梱。旧v2.9.15以前の確定ZIPを維持。
+SHA-256: `80f84e56aa16f2faa654bbcfab6f1bcf2aec8a48c8d70a39327735149a0b4d91`
 
-起動: 全展開→Python3のあるPCでstart-pc-trial.cmd（またはpy -3 launch-pc-trial.py）→Chrome/Edgeでhttp://127.0.0.1:8765/index.html。移行前に旧版と移行先で「対戦履歴・統計・データ出力」→JSON出力。JSONから復元は既存データを置き換えるため、双方のバックアップを保管してください。PC_TRIAL_START.md/JSON_BACKUP.mdを参照。
+基点: fe26ed5fec5a165909c2f4d6979df7ca27d8cb92。保存コミットは `git log -1 --format=%H codex-development` とソース指紋で特定。詳細はFINAL_PRACTICE_CONFIRMATION.md、TEST_RESULTS.json、release/practice-v2.9.17/FINAL_CONFIRMATION.json / ARTIFACT_VERIFICATION.json。起動・移行はPC_TRIAL_START.md/JSON_BACKUP.mdを同梱しました。旧ZIPを保持し、main/公開サイト/デプロイ/定期実行を操作していません。
 
-未知11技・全相互作用・最適推奨・未知相手配分・Windows製品全組合せ・人間の判断時間は未検証。公式一覧/規約追加調査は行わず、対戦中の外部ツール使用許可を認定しません。main/公開サイトは変更しません。
+検証対象外/制約:
 
-## 確定成果物・再開
-
-実ZIP展開後 **8/8成功**。62ファイル。SHA-256: `16376cfdd58adc63be1859d9bc38089ed7f558bde5d9a59c11e6885b256be62a`。
-
-再開時はPC_OPERATION_AUDIT.md・PC_OPERATION_RESULTS.json・TEST_RESULTS.json・本書を読み、限定した操作/重大な再現不具合だけを扱ってください。全回帰→evaluate-series-matches.py→evaluate-tournament-practical.py→evaluate-practice-release.pyで再検証。確定ZIPを上書きしません。保存コミットは `git log -1 --format=%H codex-development` と各ソースSHAで特定します。main/公開サイト/デプロイ/スケジュールを操作していません。
+- 自動操作時間は人間の読解/判断や実ゲーム操作を含まず、人間の45秒達成を保証しない。
+- Linux ChromiumとWindows Chrome/Edge UAによる互換試験。Windows製品版全構成の実機認定ではない。
+- 推奨は参考推定。最適方策や全複数ターン勝ち筋を今回の完成条件に含めない。
+- 全戦闘仕様は未完成。11主要技、全特性/持ち物/追加効果、未知の相手配分、Champions全エンジン一致は未確認。
+- 30試合のHP/status/残余HP/二次ランク/一部持ち物は観測入力。全戦闘処理の自動一致を認定しない。決着時の自動場/能力残余は照合対象外。
+- 既に旧版の途中試合へ記録された誤状態を推測で遡及補正しない。未試験の全旧保存形式/破損データまで互換性を保証しない。
+- 公式一覧/大会規約の追加調査なし。対戦中の外部ツール使用許可を認定しない。
+- オフラインは正常な初回HTTP読込/キャッシュ後の基本動作。初回未キャッシュ、破損キャッシュ、file://直接起動は未確認。

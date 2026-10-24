@@ -6,8 +6,8 @@ from hashlib import sha256
 from datetime import datetime, timezone
 import json, shutil, subprocess, sys, zipfile
 ROOT = Path(__file__).resolve().parent
-DEST = ROOT / 'release/practice-v2.9.16'
-ARCHIVE = 'gc2027ii-v2.9.16-practice-verification.zip'
+DEST = ROOT / 'release/practice-v2.9.17'
+ARCHIVE = 'gc2027ii-v2.9.17-practice-verification.zip'
 TESTS = ['test-pc-launcher.py', 'browser_pc_trial_test.py', 'browser_prezip_test.py', 'browser_full_match_test.py', 'browser_live_workflow_test.py', 'browser_series_0_test.py', 'browser_pc_operations_test.py', 'browser_pc_operation_layout_test.py']
 
 def digest(data): return sha256(data).hexdigest()

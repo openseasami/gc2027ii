@@ -19,12 +19,12 @@
     "clicks": 23,
     "inputs": 12,
     "explicitWheelCommands": 0,
-    "scrollEvents": 24,
-    "automatedSeconds": 11.1805,
+    "scrollEvents": 23,
+    "automatedSeconds": 12.5963,
     "panelRenderCalls": 19,
     "refreshCalls": 17,
-    "updateMedianMs": 591.3,
-    "updateMaxMs": 791.5
+    "updateMedianMs": 634.2,
+    "updateMaxMs": 949.6
   },
   "measurements": {
     "completion": false,
@@ -38,7 +38,7 @@
             "phase": "registration",
             "label": "register ゴリランダー",
             "kind": "fill",
-            "seconds": 0.089,
+            "seconds": 0.1152,
             "scrollEvents": 0,
             "calls": {},
             "updateMs": []
@@ -47,7 +47,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.0967,
+            "seconds": 0.086,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -58,7 +58,7 @@
             "phase": "registration",
             "label": "register サーフゴー",
             "kind": "fill",
-            "seconds": 0.0804,
+            "seconds": 0.0825,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -69,7 +69,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.0825,
+            "seconds": 0.099,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -80,7 +80,7 @@
             "phase": "registration",
             "label": "register ガブリアス",
             "kind": "fill",
-            "seconds": 0.0792,
+            "seconds": 0.0819,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -91,7 +91,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.0833,
+            "seconds": 0.099,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -102,7 +102,7 @@
             "phase": "registration",
             "label": "register リキキリン",
             "kind": "fill",
-            "seconds": 0.0812,
+            "seconds": 0.084,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -113,7 +113,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.0823,
+            "seconds": 0.0952,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -124,7 +124,7 @@
             "phase": "registration",
             "label": "register ドラパルト",
             "kind": "fill",
-            "seconds": 0.0817,
+            "seconds": 0.0819,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -135,7 +135,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.1153,
+            "seconds": 0.1496,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -146,7 +146,7 @@
             "phase": "registration",
             "label": "register ドドゲザン",
             "kind": "fill",
-            "seconds": 0.0661,
+            "seconds": 0.1172,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -157,7 +157,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.1153,
+            "seconds": 0.1486,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -168,7 +168,7 @@
             "phase": "leads",
             "label": "opponent lead",
             "kind": "click",
-            "seconds": 0.0823,
+            "seconds": 0.0789,
             "scrollEvents": 1,
             "calls": {
               "save": 0
@@ -179,7 +179,7 @@
             "phase": "leads",
             "label": "opponent lead",
             "kind": "click",
-            "seconds": 0.0817,
+            "seconds": 0.0845,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -190,7 +190,18 @@
             "phase": "leads",
             "label": "own selection",
             "kind": "click",
-            "seconds": 0.0656,
+            "seconds": 0.0632,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0659,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -212,18 +223,7 @@
             "phase": "leads",
             "label": "own selection",
             "kind": "click",
-            "seconds": 0.0654,
-            "scrollEvents": 0,
-            "calls": {
-              "save": 0
-            },
-            "updateMs": []
-          },
-          {
-            "phase": "leads",
-            "label": "own selection",
-            "kind": "click",
-            "seconds": 0.0651,
+            "seconds": 0.066,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -234,8 +234,8 @@
             "phase": "leads",
             "label": "start",
             "kind": "click",
-            "seconds": 0.9502,
-            "scrollEvents": 4,
+            "seconds": 1.0121,
+            "scrollEvents": 3,
             "calls": {
               "save": 1,
               "refresh": 1,
@@ -244,14 +244,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              777.8999999761581
+              840.3000000119209
             ]
           },
           {
             "phase": "firstTurn",
             "label": "mistaken opponent HP",
             "kind": "click",
-            "seconds": 1.1152,
+            "seconds": 1.2236,
             "scrollEvents": 19,
             "calls": {
               "save": 1,
@@ -261,14 +261,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              639.7000000178814
+              724.5999999940395
             ]
           },
           {
             "phase": "firstTurn",
             "label": "correct opponent HP",
             "kind": "click",
-            "seconds": 0.7514,
+            "seconds": 0.77,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -278,14 +278,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              651.3999999761581
+              648.4000000059605
             ]
           },
           {
             "phase": "firstTurn",
             "label": "observed move/effect",
             "kind": "click",
-            "seconds": 0.6459,
+            "seconds": 0.7614,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -295,14 +295,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              591.3000000119209
+              682.6000000238419
             ]
           },
           {
             "phase": "firstTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.7213,
+            "seconds": 0.7896,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -312,14 +312,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              612.8999999761581
+              668.6000000238419
             ]
           },
           {
             "phase": "firstTurn",
             "label": "opponent switch",
             "kind": "click",
-            "seconds": 0.7908,
+            "seconds": 0.783,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -329,14 +329,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              634.2999999821186
+              649.1999999880791
             ]
           },
           {
             "phase": "firstTurn",
             "label": "mistaken own HP",
             "kind": "click",
-            "seconds": 0.7984,
+            "seconds": 0.8312,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -346,14 +346,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              675.6999999880791
+              682.8000000119209
             ]
           },
           {
             "phase": "firstTurn",
             "label": "return to own HP",
             "kind": "click",
-            "seconds": 0.7008,
+            "seconds": 0.7675,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -363,14 +363,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              612.5
+              674.4000000059605
             ]
           },
           {
             "phase": "firstTurn",
             "label": "correct own HP",
             "kind": "click",
-            "seconds": 0.6967,
+            "seconds": 0.9936,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -380,14 +380,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              582.3999999761581
+              814.6999999880791
             ]
           },
           {
             "phase": "firstTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.5828,
+            "seconds": 0.6484,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -397,14 +397,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              472.30000001192093
+              521.5999999940395
             ]
           },
           {
             "phase": "koTurn",
             "label": "next result input",
             "kind": "click",
-            "seconds": 0.0686,
+            "seconds": 0.0678,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -419,7 +419,7 @@
             "phase": "koTurn",
             "label": "observed KO",
             "kind": "click",
-            "seconds": 0.1645,
+            "seconds": 0.1794,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -429,14 +429,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              41.5
+              43.599999994039536
             ]
           },
           {
             "phase": "koTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.1476,
+            "seconds": 0.1938,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -446,14 +446,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              43.900000005960464
+              53.599999994039536
             ]
           },
           {
             "phase": "koTurn",
             "label": "observed move/effect",
             "kind": "click",
-            "seconds": 0.0969,
+            "seconds": 0.1034,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -463,14 +463,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              19
+              19.69999998807907
             ]
           },
           {
             "phase": "koTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.1311,
+            "seconds": 0.174,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -480,14 +480,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              32.30000001192093
+              34.60000002384186
             ]
           },
           {
             "phase": "koTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.114,
+            "seconds": 0.1751,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -497,14 +497,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              31.80000001192093
+              37.5
             ]
           },
           {
             "phase": "koTurn",
             "label": "forced replacement",
             "kind": "click",
-            "seconds": 0.9134,
+            "seconds": 0.9514,
             "scrollEvents": 0,
             "calls": {
               "save": 2,
@@ -514,46 +514,46 @@
               "fixed45Render": 2
             },
             "updateMs": [
-              791.5,
-              791.5
+              837.5,
+              837.5
             ]
           }
         ],
         "phases": {
-          "registration": 1.0708,
-          "leads": 1.3842,
-          "firstTurn": 6.9606,
-          "koTurn": 1.8492
+          "registration": 1.2861,
+          "leads": 1.4449,
+          "firstTurn": 7.7846,
+          "koTurn": 2.0807
         },
         "corrections": {
           "opponentHp": true,
           "ownHp": true
         },
         "updateChecks": [],
-        "automatedSeconds": 11.2649,
+        "automatedSeconds": 12.5963,
         "clicks": 23,
         "inputs": 12,
-        "scrollEvents": 24,
+        "scrollEvents": 23,
         "refreshCalls": 17,
         "panelRenderCalls": 19,
         "updateMs": [
-          777.8999999761581,
-          639.7000000178814,
-          651.3999999761581,
-          591.3000000119209,
-          612.8999999761581,
-          634.2999999821186,
-          675.6999999880791,
-          612.5,
-          582.3999999761581,
-          472.30000001192093,
-          41.5,
-          43.900000005960464,
-          19,
-          32.30000001192093,
-          31.80000001192093,
-          791.5,
-          791.5
+          840.3000000119209,
+          724.5999999940395,
+          648.4000000059605,
+          682.6000000238419,
+          668.6000000238419,
+          649.1999999880791,
+          682.8000000119209,
+          674.4000000059605,
+          814.6999999880791,
+          521.5999999940395,
+          43.599999994039536,
+          53.599999994039536,
+          19.69999998807907,
+          34.60000002384186,
+          37.5,
+          837.5,
+          837.5
         ],
         "finalState": {
           "turn": 3,
@@ -584,7 +584,7 @@
             "phase": "registration",
             "label": "register ゴリランダー",
             "kind": "fill",
-            "seconds": 0.0818,
+            "seconds": 0.0921,
             "scrollEvents": 0,
             "calls": {},
             "updateMs": []
@@ -593,7 +593,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.0794,
+            "seconds": 0.083,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -604,7 +604,7 @@
             "phase": "registration",
             "label": "register サーフゴー",
             "kind": "fill",
-            "seconds": 0.0663,
+            "seconds": 0.0817,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -615,7 +615,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.081,
+            "seconds": 0.0985,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -626,7 +626,7 @@
             "phase": "registration",
             "label": "register ガブリアス",
             "kind": "fill",
-            "seconds": 0.071,
+            "seconds": 0.0651,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -637,7 +637,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.0954,
+            "seconds": 0.0833,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -648,7 +648,7 @@
             "phase": "registration",
             "label": "register リキキリン",
             "kind": "fill",
-            "seconds": 0.0652,
+            "seconds": 0.0809,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -659,7 +659,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.0828,
+            "seconds": 0.0993,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -670,7 +670,7 @@
             "phase": "registration",
             "label": "register ドラパルト",
             "kind": "fill",
-            "seconds": 0.081,
+            "seconds": 0.0814,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -681,7 +681,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.1173,
+            "seconds": 0.1177,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -692,7 +692,7 @@
             "phase": "registration",
             "label": "register ドドゲザン",
             "kind": "fill",
-            "seconds": 0.0808,
+            "seconds": 0.0806,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -703,7 +703,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.0991,
+            "seconds": 0.1324,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -714,7 +714,7 @@
             "phase": "leads",
             "label": "opponent lead",
             "kind": "click",
-            "seconds": 0.0767,
+            "seconds": 0.0824,
             "scrollEvents": 1,
             "calls": {
               "save": 0
@@ -725,7 +725,7 @@
             "phase": "leads",
             "label": "opponent lead",
             "kind": "click",
-            "seconds": 0.0829,
+            "seconds": 0.0824,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -736,29 +736,7 @@
             "phase": "leads",
             "label": "own selection",
             "kind": "click",
-            "seconds": 0.0657,
-            "scrollEvents": 0,
-            "calls": {
-              "save": 0
-            },
-            "updateMs": []
-          },
-          {
-            "phase": "leads",
-            "label": "own selection",
-            "kind": "click",
-            "seconds": 0.0651,
-            "scrollEvents": 0,
-            "calls": {
-              "save": 0
-            },
-            "updateMs": []
-          },
-          {
-            "phase": "leads",
-            "label": "own selection",
-            "kind": "click",
-            "seconds": 0.0654,
+            "seconds": 0.0642,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -778,10 +756,32 @@
           },
           {
             "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0665,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.065,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
             "label": "start",
             "kind": "click",
-            "seconds": 0.8683,
-            "scrollEvents": 3,
+            "seconds": 0.9842,
+            "scrollEvents": 4,
             "calls": {
               "save": 1,
               "refresh": 1,
@@ -790,15 +790,15 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              701.1999999880791
+              793.6000000238419
             ]
           },
           {
             "phase": "firstTurn",
             "label": "mistaken opponent HP",
             "kind": "click",
-            "seconds": 1.1141,
-            "scrollEvents": 20,
+            "seconds": 1.1607,
+            "scrollEvents": 18,
             "calls": {
               "save": 1,
               "refresh": 1,
@@ -807,14 +807,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              637.8999999761581
+              677
             ]
           },
           {
             "phase": "firstTurn",
             "label": "correct opponent HP",
             "kind": "click",
-            "seconds": 0.804,
+            "seconds": 0.6711,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -824,14 +824,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              689.2000000178814
+              562.0999999940395
             ]
           },
           {
             "phase": "firstTurn",
             "label": "observed move/effect",
             "kind": "click",
-            "seconds": 0.6374,
+            "seconds": 0.6397,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -841,14 +841,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              569.9000000059605
+              567.4000000059605
             ]
           },
           {
             "phase": "firstTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.7686,
+            "seconds": 0.7156,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -858,14 +858,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              657.5999999940395
+              579.8000000119209
             ]
           },
           {
             "phase": "firstTurn",
             "label": "opponent switch",
             "kind": "click",
-            "seconds": 0.732,
+            "seconds": 0.7152,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -875,14 +875,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              616.7999999821186
+              573.3000000119209
             ]
           },
           {
             "phase": "firstTurn",
             "label": "mistaken own HP",
             "kind": "click",
-            "seconds": 0.7325,
+            "seconds": 0.7969,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -892,14 +892,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              615.9000000059605
+              644.3000000119209
             ]
           },
           {
             "phase": "firstTurn",
             "label": "return to own HP",
             "kind": "click",
-            "seconds": 0.6315,
+            "seconds": 0.7123,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -909,14 +909,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              555.7000000178814
+              622.8999999761581
             ]
           },
           {
             "phase": "firstTurn",
             "label": "correct own HP",
             "kind": "click",
-            "seconds": 0.6654,
+            "seconds": 0.7817,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -926,14 +926,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              556.5
+              626.9000000059605
             ]
           },
           {
             "phase": "firstTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.6508,
+            "seconds": 0.6489,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -943,14 +943,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              512.7999999821186
+              488.09999999403954
             ]
           },
           {
             "phase": "koTurn",
             "label": "next result input",
             "kind": "click",
-            "seconds": 0.0667,
+            "seconds": 0.1129,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -965,7 +965,7 @@
             "phase": "koTurn",
             "label": "observed KO",
             "kind": "click",
-            "seconds": 0.1829,
+            "seconds": 0.3158,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -975,14 +975,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              40.79999998211861
+              45.19999998807907
             ]
           },
           {
             "phase": "koTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.1486,
+            "seconds": 0.1956,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -992,14 +992,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              43.70000001788139
+              43.099999994039536
             ]
           },
           {
             "phase": "koTurn",
             "label": "observed move/effect",
             "kind": "click",
-            "seconds": 0.0935,
+            "seconds": 0.1086,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1009,14 +1009,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              17.69999998807907
+              22.299999982118607
             ]
           },
           {
             "phase": "koTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.1805,
+            "seconds": 0.2131,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1026,14 +1026,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              31.099999994039536
+              31.799999982118607
             ]
           },
           {
             "phase": "koTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.1754,
+            "seconds": 0.2005,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1043,14 +1043,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              33.79999998211861
+              39.39999997615814
             ]
           },
           {
             "phase": "koTurn",
             "label": "forced replacement",
             "kind": "click",
-            "seconds": 0.9013,
+            "seconds": 0.9665,
             "scrollEvents": 0,
             "calls": {
               "save": 2,
@@ -1060,46 +1060,46 @@
               "fixed45Render": 2
             },
             "updateMs": [
-              789.6999999880791,
-              789.6999999880791
+              800.1999999880791,
+              800.1999999880791
             ]
           }
         ],
         "phases": {
-          "registration": 1.0174,
-          "leads": 1.3023,
-          "firstTurn": 6.8956,
-          "koTurn": 1.9652
+          "registration": 1.1103,
+          "leads": 1.4196,
+          "firstTurn": 7.0657,
+          "koTurn": 2.4274
         },
         "corrections": {
           "opponentHp": true,
           "ownHp": true
         },
         "updateChecks": [],
-        "automatedSeconds": 11.1805,
+        "automatedSeconds": 12.0231,
         "clicks": 23,
         "inputs": 12,
-        "scrollEvents": 24,
+        "scrollEvents": 23,
         "refreshCalls": 17,
         "panelRenderCalls": 19,
         "updateMs": [
-          701.1999999880791,
-          637.8999999761581,
-          689.2000000178814,
-          569.9000000059605,
-          657.5999999940395,
-          616.7999999821186,
-          615.9000000059605,
-          555.7000000178814,
-          556.5,
-          512.7999999821186,
-          40.79999998211861,
-          43.70000001788139,
-          17.69999998807907,
-          31.099999994039536,
-          33.79999998211861,
-          789.6999999880791,
-          789.6999999880791
+          793.6000000238419,
+          677,
+          562.0999999940395,
+          567.4000000059605,
+          579.8000000119209,
+          573.3000000119209,
+          644.3000000119209,
+          622.8999999761581,
+          626.9000000059605,
+          488.09999999403954,
+          45.19999998807907,
+          43.099999994039536,
+          22.299999982118607,
+          31.799999982118607,
+          39.39999997615814,
+          800.1999999880791,
+          800.1999999880791
         ],
         "finalState": {
           "turn": 3,
@@ -1130,7 +1130,7 @@
             "phase": "registration",
             "label": "register ゴリランダー",
             "kind": "fill",
-            "seconds": 0.1008,
+            "seconds": 0.0852,
             "scrollEvents": 0,
             "calls": {},
             "updateMs": []
@@ -1139,7 +1139,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.0814,
+            "seconds": 0.0827,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -1150,7 +1150,7 @@
             "phase": "registration",
             "label": "register サーフゴー",
             "kind": "fill",
-            "seconds": 0.0826,
+            "seconds": 0.0815,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -1161,7 +1161,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.0832,
+            "seconds": 0.116,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -1172,7 +1172,7 @@
             "phase": "registration",
             "label": "register ガブリアス",
             "kind": "fill",
-            "seconds": 0.0651,
+            "seconds": 0.0989,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -1183,7 +1183,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.0842,
+            "seconds": 0.1142,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -1194,7 +1194,7 @@
             "phase": "registration",
             "label": "register リキキリン",
             "kind": "fill",
-            "seconds": 0.0641,
+            "seconds": 0.0819,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -1205,7 +1205,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.0858,
+            "seconds": 0.1181,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -1216,7 +1216,7 @@
             "phase": "registration",
             "label": "register ドラパルト",
             "kind": "fill",
-            "seconds": 0.0782,
+            "seconds": 0.0937,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -1227,7 +1227,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.1333,
+            "seconds": 0.152,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -1238,7 +1238,7 @@
             "phase": "registration",
             "label": "register ドドゲザン",
             "kind": "fill",
-            "seconds": 0.0874,
+            "seconds": 0.0956,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -1249,7 +1249,7 @@
             "phase": "registration",
             "label": "confirm roster",
             "kind": "Enter",
-            "seconds": 0.1332,
+            "seconds": 0.1503,
             "scrollEvents": 0,
             "calls": {
               "save": 1
@@ -1260,7 +1260,7 @@
             "phase": "leads",
             "label": "opponent lead",
             "kind": "click",
-            "seconds": 0.0822,
+            "seconds": 0.0794,
             "scrollEvents": 1,
             "calls": {
               "save": 0
@@ -1271,7 +1271,7 @@
             "phase": "leads",
             "label": "opponent lead",
             "kind": "click",
-            "seconds": 0.0652,
+            "seconds": 0.082,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -1282,29 +1282,7 @@
             "phase": "leads",
             "label": "own selection",
             "kind": "click",
-            "seconds": 0.0661,
-            "scrollEvents": 0,
-            "calls": {
-              "save": 0
-            },
-            "updateMs": []
-          },
-          {
-            "phase": "leads",
-            "label": "own selection",
-            "kind": "click",
-            "seconds": 0.0656,
-            "scrollEvents": 0,
-            "calls": {
-              "save": 0
-            },
-            "updateMs": []
-          },
-          {
-            "phase": "leads",
-            "label": "own selection",
-            "kind": "click",
-            "seconds": 0.0655,
+            "seconds": 0.0663,
             "scrollEvents": 0,
             "calls": {
               "save": 0
@@ -1324,10 +1302,32 @@
           },
           {
             "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0876,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
+            "label": "own selection",
+            "kind": "click",
+            "seconds": 0.0761,
+            "scrollEvents": 0,
+            "calls": {
+              "save": 0
+            },
+            "updateMs": []
+          },
+          {
+            "phase": "leads",
             "label": "start",
             "kind": "click",
-            "seconds": 0.9165,
-            "scrollEvents": 5,
+            "seconds": 1.1354,
+            "scrollEvents": 4,
             "calls": {
               "save": 1,
               "refresh": 1,
@@ -1336,15 +1336,15 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              712.6000000238419
+              949.5999999940395
             ]
           },
           {
             "phase": "firstTurn",
             "label": "mistaken opponent HP",
             "kind": "click",
-            "seconds": 1.1142,
-            "scrollEvents": 17,
+            "seconds": 1.2602,
+            "scrollEvents": 19,
             "calls": {
               "save": 1,
               "refresh": 1,
@@ -1353,14 +1353,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              648.9000000059605
+              775.0999999940395
             ]
           },
           {
             "phase": "firstTurn",
             "label": "correct opponent HP",
             "kind": "click",
-            "seconds": 0.704,
+            "seconds": 0.8838,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1370,14 +1370,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              593.9000000059605
+              730.2999999821186
             ]
           },
           {
             "phase": "firstTurn",
             "label": "observed move/effect",
             "kind": "click",
-            "seconds": 0.6263,
+            "seconds": 0.7124,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1387,14 +1387,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              546.2000000178814
+              623.7999999821186
             ]
           },
           {
             "phase": "firstTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.6863,
+            "seconds": 0.7685,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1404,14 +1404,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              567.0999999940395
+              653.4000000059605
             ]
           },
           {
             "phase": "firstTurn",
             "label": "opponent switch",
             "kind": "click",
-            "seconds": 0.7351,
+            "seconds": 0.8154,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1421,14 +1421,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              603.7000000178814
+              687.6999999880791
             ]
           },
           {
             "phase": "firstTurn",
             "label": "mistaken own HP",
             "kind": "click",
-            "seconds": 0.7451,
+            "seconds": 0.8332,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1438,14 +1438,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              622
+              673.5999999940395
             ]
           },
           {
             "phase": "firstTurn",
             "label": "return to own HP",
             "kind": "click",
-            "seconds": 0.6988,
+            "seconds": 0.7983,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1455,14 +1455,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              607.9000000059605
+              702.8000000119209
             ]
           },
           {
             "phase": "firstTurn",
             "label": "correct own HP",
             "kind": "click",
-            "seconds": 0.6805,
+            "seconds": 0.7644,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1472,14 +1472,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              569.3999999761581
+              634.2000000178814
             ]
           },
           {
             "phase": "firstTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.5656,
+            "seconds": 0.5984,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1489,14 +1489,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              439.40000000596046
+              475.30000001192093
             ]
           },
           {
             "phase": "koTurn",
             "label": "next result input",
             "kind": "click",
-            "seconds": 0.0697,
+            "seconds": 0.0668,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1511,7 +1511,7 @@
             "phase": "koTurn",
             "label": "observed KO",
             "kind": "click",
-            "seconds": 0.1821,
+            "seconds": 0.1978,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1521,14 +1521,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              42
+              47
             ]
           },
           {
             "phase": "koTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.1967,
+            "seconds": 0.224,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1538,14 +1538,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              44.5
+              49.80000001192093
             ]
           },
           {
             "phase": "koTurn",
             "label": "observed move/effect",
             "kind": "click",
-            "seconds": 0.0856,
+            "seconds": 0.1043,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1555,14 +1555,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              21.30000001192093
+              22.400000005960464
             ]
           },
           {
             "phase": "koTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.1793,
+            "seconds": 0.1965,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1572,14 +1572,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              34.30000001192093
+              35.79999998211861
             ]
           },
           {
             "phase": "koTurn",
             "label": "HP",
             "kind": "click",
-            "seconds": 0.1948,
+            "seconds": 0.1747,
             "scrollEvents": 0,
             "calls": {
               "save": 1,
@@ -1589,14 +1589,14 @@
               "fixed45Render": 1
             },
             "updateMs": [
-              37.80000001192093
+              32.900000005960464
             ]
           },
           {
             "phase": "koTurn",
             "label": "forced replacement",
             "kind": "click",
-            "seconds": 0.8533,
+            "seconds": 0.9542,
             "scrollEvents": 0,
             "calls": {
               "save": 2,
@@ -1606,46 +1606,46 @@
               "fixed45Render": 2
             },
             "updateMs": [
-              747,
-              747
+              835.5999999940395,
+              835.5999999940395
             ]
           }
         ],
         "phases": {
-          "registration": 1.1203,
-          "leads": 1.3339,
-          "firstTurn": 6.7282,
-          "koTurn": 1.9843
+          "registration": 1.2885,
+          "leads": 1.6029,
+          "firstTurn": 7.6439,
+          "koTurn": 2.1977
         },
         "corrections": {
           "opponentHp": true,
           "ownHp": true
         },
         "updateChecks": [],
-        "automatedSeconds": 11.1667,
+        "automatedSeconds": 12.733,
         "clicks": 23,
         "inputs": 12,
-        "scrollEvents": 23,
+        "scrollEvents": 24,
         "refreshCalls": 17,
         "panelRenderCalls": 19,
         "updateMs": [
-          712.6000000238419,
-          648.9000000059605,
-          593.9000000059605,
-          546.2000000178814,
-          567.0999999940395,
-          603.7000000178814,
-          622,
-          607.9000000059605,
-          569.3999999761581,
-          439.40000000596046,
-          42,
-          44.5,
-          21.30000001192093,
-          34.30000001192093,
-          37.80000001192093,
-          747,
-          747
+          949.5999999940395,
+          775.0999999940395,
+          730.2999999821186,
+          623.7999999821186,
+          653.4000000059605,
+          687.6999999880791,
+          673.5999999940395,
+          702.8000000119209,
+          634.2000000178814,
+          475.30000001192093,
+          47,
+          49.80000001192093,
+          22.400000005960464,
+          35.79999998211861,
+          32.900000005960464,
+          835.5999999940395,
+          835.5999999940395
         ],
         "finalState": {
           "turn": 3,
@@ -1683,7 +1683,7 @@
   },
   "beforeEvidenceSha256": "7d0fd1db2b775e5a37d9b1adcdabf404a8ab0864596d224da66a269cba717ba5",
   "sourceSha256": {
-    "index.html": "0cd0a632397b4726a7345534a7f1afa4b7cfc9e0954c7d2eba600cdf3e098bcf",
+    "index.html": "a5df95f6f82db416fe1b5d9cec7bd8137a59f409c9a6daf84701d255158094ee",
     "pc_operation_benchmark.py": "4ab3ec40f83824f67f461aaf774ca190091131171a0a109ea415706a6c659904",
     "browser_pc_operations_test.py": "dfc19cd48b2b5cb7020712f1b35ab95b2481fdbbb54c02e8f66b0b606f773f81"
   },

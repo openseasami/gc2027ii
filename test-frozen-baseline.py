@@ -7,9 +7,9 @@ root=Path(__file__).resolve().parent
 baseline=json.loads((root/'FROZEN_BASELINE.json').read_text())
 assert baseline['version']=='v2.9.13' and baseline['completion'] is False
 assert baseline['branch']=='codex-development'
-assert baseline['currentRuntimeVersion']=='v2.9.16'
-assert 'Support v2.9.16' in (root/'index.html').read_text()
-assert "'v2.9.16'" in (root/'sw.js').read_text()
+assert baseline['currentRuntimeVersion']=='v2.9.17'
+assert 'Support v2.9.17' in (root/'index.html').read_text()
+assert "'v2.9.17'" in (root/'sw.js').read_text()
 assert len(set(baseline['verifiedAttackMoves']))==168
 assert len(set(baseline['targetSpecies']))==344
 assert len(baseline['unverifiedMovesOutsideScope'])==11
@@ -30,4 +30,4 @@ assert audit['speciesSummary']['targetMega']==82
 assert audit['unverifiedMajorMoves']==baseline['unverifiedMovesOutsideScope']
 for version,digest in baseline['migrationArchives'].items():
     assert sha256((root/baseline.get('migrationArchivePaths',{}).get(version,f'release/gc2027ii-{version}-development.zip')).read_bytes()).hexdigest()==digest
-print('PASS scoped v2.9.16 runtime bytes on immutable v2.9.13 data baseline, 168 verified attack identities, 344 species/82 Mega, immutable migration archives')
+print('PASS scoped v2.9.17 runtime bytes on immutable v2.9.13 data baseline, 168 verified attack identities, 344 species/82 Mega, immutable migration archives')

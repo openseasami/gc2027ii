@@ -5,7 +5,7 @@
     "majorMoveData": true,
     "majorMoveCalculationAllVerified": false
   },
-  "sourceSha256": "0cd0a632397b4726a7345534a7f1afa4b7cfc9e0954c7d2eba600cdf3e098bcf",
+  "sourceSha256": "a5df95f6f82db416fe1b5d9cec7bd8137a59f409c9a6daf84701d255158094ee",
   "referenceProvenance": "reference-data/stats-moves/PROVENANCE.json",
   "speciesSummary": {
     "targets": 344,

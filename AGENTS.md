@@ -1,3 +1,11 @@
+# v2.9.17 最後の計画開発工程（最新指示）
+
+基点fe26ed5。新しい開発段階・候補実装を追加しない。指定された全152以上/30試合218ターン/差分/PC/保存互換性の最終検証と、発見した重大不具合だけを扱う。test-final-practice-freeze.pyで基点の全実行ファイル・UI・計算核の一致を検査（タイトル/キャッシュ名だけ除外）。公式一覧・規約調査なし。全仕様completion:false。過去6版の移行を維持し、直前v2.9.16も追加照合する。
+
+全回帰→evaluate-series-matches.py→evaluate-tournament-practical.py→evaluate-practice-release.py。全成功時のみv2.9.17 ZIPを1つ作成→verify-practice-release.pyで実展開8試験。FINAL_PRACTICE_CONFIRMATION.mdに「最終確定」または「確定保留」を記録。確定は最終ソース/全試験/実ZIP検証の成功と重大既知不具合なしを要する。旧ZIPを上書きしない。codex-developmentへcommit/push、main/公開サイト/デプロイ/定期実行を変更しない。今回の完了後は計画開発を終了し、次工程を提案/自動追加しない。
+
+以下は過去の開発契約の記録。最新方針を優先する。
+
 # v2.9.16 PC操作改善（最新ユーザー指示）
 
 基点3e85b05。PC_OPERATION_AUDIT.md/PC_OPERATION_RESULTS.jsonを読む。限定的な訂正操作・入力更新・固定参考推奨表示の改善だけを許可。168技/344形態/採用120データ・保存形式・既存UI骨格を維持する。UI_PRESERVATION_BASELINE.jsonのoperationAmendmentに一致する追加だけを許可。旧全固定規則より最新指示を優先する。未確認推奨は参考推定。公式一覧・規約の追加調査なし。completion:false。

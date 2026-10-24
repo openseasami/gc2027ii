@@ -1,0 +1,73 @@
+{
+  "version": "v2.9.17",
+  "branch": "codex-development",
+  "practicePackageAccepted": true,
+  "completion": false,
+  "decision": "最終確定",
+  "scope": "pre-tournament-practice-and-verification-only",
+  "plannedDevelopmentClosed": true,
+  "newPlannedStagesAdded": false,
+  "sourceBaseCommit": "fe26ed5fec5a165909c2f4d6979df7ca27d8cb92",
+  "generatedAt": "2026-10-24T00:59:28.991519+00:00",
+  "majorKnownDefectsInVerifiedScope": [],
+  "runtimeChanges": [
+    "release title v2.9.17",
+    "cache namespace v2.9.17"
+  ],
+  "uiAndDataAndEngineAndSaveFormatPreserved": true,
+  "testCommands": {
+    "passed": 153,
+    "total": 153
+  },
+  "series": {
+    "completeMatches": 30,
+    "nativeTurns": 218,
+    "differential": {
+      "scenarios": 218,
+      "comparisons": 3488,
+      "speedComparisons": 436,
+      "priorityComparisons": 218,
+      "orderComparisons": 436,
+      "failureCount": 0
+    }
+  },
+  "migrationVersions": [
+    "v2.9.1",
+    "v2.9.10",
+    "v2.9.12",
+    "v2.9.13",
+    "v2.9.14",
+    "v2.9.15",
+    "v2.9.16"
+  ],
+  "artifact": {
+    "archive": "release/practice-v2.9.17/gc2027ii-v2.9.17-practice-verification.zip",
+    "sha256": "80f84e56aa16f2faa654bbcfab6f1bcf2aec8a48c8d70a39327735149a0b4d91",
+    "filesVerified": 63,
+    "passed": true
+  },
+  "artifactTests": 8,
+  "human45SecondGuarantee": false,
+  "nativeWindowsCertified": false,
+  "officialResearchPerformed": false,
+  "duringMatchUseAuthorized": false,
+  "fullTournamentRulesCertified": false,
+  "technicalLimitations": [
+    "自動操作時間は人間の読解/判断や実ゲーム操作を含まず、人間の45秒達成を保証しない。",
+    "Linux ChromiumとWindows Chrome/Edge UAによる互換試験。Windows製品版全構成の実機認定ではない。",
+    "推奨は参考推定。最適方策や全複数ターン勝ち筋を今回の完成条件に含めない。",
+    "全戦闘仕様は未完成。11主要技、全特性/持ち物/追加効果、未知の相手配分、Champions全エンジン一致は未確認。",
+    "30試合のHP/status/残余HP/二次ランク/一部持ち物は観測入力。全戦闘処理の自動一致を認定しない。決着時の自動場/能力残余は照合対象外。",
+    "既に旧版の途中試合へ記録された誤状態を推測で遡及補正しない。未試験の全旧保存形式/破損データまで互換性を保証しない。",
+    "公式一覧/大会規約の追加調査なし。対戦中の外部ツール使用許可を認定しない。",
+    "オフラインは正常な初回HTTP読込/キャッシュ後の基本動作。初回未キャッシュ、破損キャッシュ、file://直接起動は未確認。"
+  ],
+  "evidenceSha256": {
+    "TEST_RESULTS.json": "786f0c4752cac78d6c747b214c456e55d8b3f701910f3bf7926212b1894d911d",
+    "SERIES_MATCH_RESULTS.json": "20c034df36a214ef0b5ad459aa6ecc2789474a9a4eb5daee7af4da1566848afb",
+    "VERSION_MIGRATION_RESULTS.json": "108d774ddf6729075864aa9a55fb1523536f34c013be611b47b550a435a8002d",
+    "FROZEN_BASELINE.json": "79e7ac6997e6e6449bd3fff9ea170f712be71332e973e6d8ed3ac9d9bed5cd89",
+    "PRACTICE_RELEASE_READINESS.json": "82e7c893c39b7ce2716ce45668cbfad531fba251e2d201172df233b1c4a71e9f",
+    "release/practice-v2.9.17/ARTIFACT_VERIFICATION.json": "9f8bcd6e26b485eb81b26108427e91cbaca7b5a9e0e41f0751f128115c60c7e1"
+  }
+}

@@ -1,3 +1,9 @@
+# v2.9.17 最終練習・検証版
+
+今回が最後の計画開発工程です。基点fe26ed5から機能・UI・計算・保存形式を変えず、指定の最終検証を行います。最終判定と配布情報はFINAL_PRACTICE_CONFIRMATION.md、起動/移行はPC_TRIAL_START.md/JSON_BACKUP.md。全仕様completion:false、main/公開サイト不変更。以降へ新しい計画開発段階を追加しません。
+
+以下は過去の開発履歴です。
+
 # v2.9.16 PC操作改善版
 
 基点3e85b05。PC_OPERATION_AUDIT.mdに改善前後の測定、PRACTICE_RELEASE_REPORT.mdに最終検証と配布情報を記録します。固定ダメージ欄・45秒モード・通常スクロール・保存互換性を維持し、入力済みHPの訂正と重複描画を改善。固定欄にも参考推定の推奨を短く表示します。全仕様completion:false。人間の判断込み45秒や最適推奨を認定しません。main/公開サイトは変更しません。

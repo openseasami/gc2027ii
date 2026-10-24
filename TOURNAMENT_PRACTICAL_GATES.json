@@ -55,7 +55,8 @@
     "test-pc-input-batching.js",
     "test-series-golden-traces.py",
     "browser_pc_operations_test.py",
-    "browser_pc_operation_layout_test.py"
+    "browser_pc_operation_layout_test.py",
+    "test-final-practice-freeze.py"
   ],
   "forbidden": [
     "main modifications",
