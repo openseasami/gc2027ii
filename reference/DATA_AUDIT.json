@@ -1,0 +1,1837 @@
+{
+  "completion": false,
+  "officialCatalogConfirmed": false,
+  "sourceCount": 386,
+  "registered": 386,
+  "mega": 82,
+  "cosmeticLabelsInEnglish": 24,
+  "omitted": [],
+  "checks": [
+    {
+      "id": "venusaur",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "venusaurmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "charizard",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "charizardmegax",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "charizardmegay",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "blastoise",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "blastoisemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "beedrill",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "beedrillmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "pidgeot",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "pidgeotmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "arbok",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "pikachu",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "raichu",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "raichualola",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "raichumegax",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "raichumegay",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "clefable",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "clefablemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "ninetales",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "ninetalesalola",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "wigglytuff",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "vileplume",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "persian",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "persianalola",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "arcanine",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "arcaninehisui",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "alakazam",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "alakazammega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "machamp",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "victreebel",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "victreebelmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "slowbro",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "slowbromega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "slowbrogalar",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "farfetchd",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gengar",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gengarmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "kangaskhan",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "kangaskhanmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "starmie",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "starmiemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "mrmime",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "pinsir",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "pinsirmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "tauros",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "taurospaldeacombat",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "taurospaldeablaze",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "taurospaldeaaqua",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gyarados",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gyaradosmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "ditto",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "vaporeon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "jolteon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "flareon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "aerodactyl",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "aerodactylmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "snorlax",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "dragonite",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "dragonitemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "meganium",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "meganiummega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "typhlosion",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "typhlosionhisui",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "feraligatr",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "feraligatrmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "ariados",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "ampharos",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "ampharosmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "azumarill",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "politoed",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "espeon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "umbreon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "slowking",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "slowkinggalar",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "forretress",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "steelix",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "steelixmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "qwilfish",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "scizor",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "scizormega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "heracross",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "heracrossmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "skarmory",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "skarmorymega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "houndoom",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "houndoommega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "tyranitar",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "tyranitarmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "sceptile",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "sceptilemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "blaziken",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "blazikenmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "swampert",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "swampertmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "pelipper",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gardevoir",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gardevoirmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "sableye",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "sableyemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "mawile",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "mawilemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "aggron",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "aggronmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "medicham",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "medichammega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "manectric",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "manectricmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "swalot",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "sharpedo",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "sharpedomega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "camerupt",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "cameruptmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "torkoal",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "altaria",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "altariamega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "milotic",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "castform",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "castformsunny",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "castformrainy",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "castformsnowy",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "banette",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "banettemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "chimecho",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "chimechomega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "absol",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "absolmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "absolmegaz",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "glalie",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "glaliemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "salamence",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "salamencemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "metagross",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "metagrossmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "torterra",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "infernape",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "empoleon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "staraptor",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "staraptormega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "luxray",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "roserade",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "rampardos",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "bastiodon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "lopunny",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "lopunnymega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "spiritomb",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "garchomp",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "garchompmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "garchompmegaz",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "lucario",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "lucariomega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "lucariomegaz",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "hippowdon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "toxicroak",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "abomasnow",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "abomasnowmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "weavile",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "rhyperior",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "leafeon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "glaceon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gliscor",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "mamoswine",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gallade",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gallademega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "froslass",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "froslassmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "rotom",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "rotomheat",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "rotomwash",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "rotomfrost",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "rotomfan",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "rotommow",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "serperior",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "emboar",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "emboarmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "samurott",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "samurotthisui",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "watchog",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "liepard",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "simisage",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "simisear",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "simipour",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "musharna",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "excadrill",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "excadrillmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "audino",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "audinomega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "conkeldurr",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "scolipede",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "scolipedemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "whimsicott",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "krookodile",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "scrafty",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "scraftymega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "cofagrigus",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "garbodor",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "zoroark",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "zoroarkhisui",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "reuniclus",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "vanilluxe",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "emolga",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "eelektross",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "eelektrossmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "chandelure",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "chandeluremega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "beartic",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "stunfisk",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "stunfiskgalar",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "golurk",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "golurkmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "hydreigon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "volcarona",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "chesnaught",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "chesnaughtmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "delphox",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "delphoxmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "greninja",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "greninjamega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "diggersby",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "talonflame",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "vivillon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "vivillonfancy",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "vivillonpokeball",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "pyroar",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "pyroarmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "floetteeternal",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "floettemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "florges",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gogoat",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "pangoro",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "furfrou",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "meowstic",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "meowsticf",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "meowsticmmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "meowsticfmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "aegislashblade",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "aromatisse",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "slurpuff",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "malamar",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "malamarmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "barbaracle",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "barbaraclemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "dragalge",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "dragalgemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "clawitzer",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "heliolisk",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "tyrantrum",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "aurorus",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "sylveon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "hawlucha",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "hawluchamega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "dedenne",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "goodra",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "goodrahisui",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "klefki",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "trevenant",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gourgeist",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gourgeistsmall",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gourgeistlarge",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gourgeistsuper",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "avalugg",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "avalugghisui",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "noivern",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "decidueye",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "decidueyehisui",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "incineroar",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "primarina",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "toucannon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "crabominable",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "crabominablemega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "lycanroc",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "lycanrocmidnight",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "lycanrocdusk",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "toxapex",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "mudsdale",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "araquanid",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "salazzle",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "tsareena",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "oranguru",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "passimian",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "golisopod",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "golisopodmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "mimikyu",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "mimikyubusted",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "drampa",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "drampamega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "kommoo",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "rillaboom",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "cinderace",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "inteleon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "corviknight",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "thievul",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "flapple",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "appletun",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "sandaconda",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "toxtricity",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "toxtricitylowkey",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "grapploct",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "polteageist",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "polteageistantique",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "hatterene",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "grimmsnarl",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "perrserker",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "sirfetchd",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "mrrime",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "runerigus",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "alcremie",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "falinks",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "falinksmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "pincurchin",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "indeedee",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "indeedeef",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "morpeko",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "morpekohangry",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "dragapult",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "wyrdeer",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "kleavor",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "basculegion",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "basculegionf",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "sneasler",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "overqwil",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "meowscarada",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "skeledirge",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "quaquaval",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "pawmot",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "maushold",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "mausholdfour",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "arboliva",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "squawkabilly",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "squawkabillyblue",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "squawkabillyyellow",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "squawkabillywhite",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "garganacl",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "armarouge",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "ceruledge",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "bellibolt",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "mabosstiff",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "scovillain",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "scovillainmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "espathra",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "tinkaton",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "palafin",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "palafinhero",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "orthworm",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "glimmora",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "glimmoramega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "houndstone",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "annihilape",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "farigiraf",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "kingambit",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "baxcalibur",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "baxcaliburmega",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "gholdengo",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "sinistcha",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "sinistchamasterpiece",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "archaludon",
+      "checked": 6,
+      "mismatched": []
+    },
+    {
+      "id": "hydrapple",
+      "checked": 6,
+      "mismatched": []
+    }
+  ],
+  "statsCompared": 2142,
+  "mismatches": [],
+  "uncomparedWithCalc": [
+    "Vivillon-Archipelago",
+    "Vivillon-Continental",
+    "Vivillon-Elegant",
+    "Vivillon-Garden",
+    "Vivillon-High Plains",
+    "Vivillon-Icy Snow",
+    "Vivillon-Jungle",
+    "Vivillon-Marine",
+    "Vivillon-Modern",
+    "Vivillon-Monsoon",
+    "Vivillon-Ocean",
+    "Vivillon-Polar",
+    "Vivillon-River",
+    "Vivillon-Sandstorm",
+    "Vivillon-Savanna",
+    "Vivillon-Sun",
+    "Vivillon-Tundra",
+    "Aegislash",
+    "Minior-Meteor",
+    "Cramorant-Gulping",
+    "Cramorant-Gorging",
+    "Alcremie-Caramel-Swirl",
+    "Alcremie-Lemon-Cream",
+    "Alcremie-Matcha-Cream",
+    "Alcremie-Mint-Cream",
+    "Alcremie-Rainbow-Swirl",
+    "Alcremie-Ruby-Cream",
+    "Alcremie-Ruby-Swirl",
+    "Eiscue-Noice"
+  ],
+  "source": {
+    "calculator": "@smogon/calc@0.12.0 Champions generation 0",
+    "nativeShowdownCommit": "1242c1e2d9763ba5b85d33f13aecb89bae19ae3d",
+    "format": "[Gen 9 Champions] VGC 2026 Reg M-C",
+    "officialEligibility": "unconfirmed; official JS list did not expose entries; executor retrieval 403; not certified from national dex",
+    "statistics": "Uploaded v8 includes names and percentages without provenance/date. Numbers withheld; no generated rates.",
+    "statFormula": "HP = base + SP + 75; other = floor((base + SP + 20)*nature). Independent Champions implementations agree; official numerical specification and real-game observations not acquired."
+  }
+}

@@ -1,0 +1,5 @@
+node_modules/
+.npm-cache/
+work/
+__pycache__/
+settings.dat

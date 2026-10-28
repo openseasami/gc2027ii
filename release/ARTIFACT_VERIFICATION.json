@@ -1,0 +1,14 @@
+{
+  "completion": false,
+  "passed": true,
+  "archive": "GC2027II_Viewer_v9_offline.zip",
+  "sha256": "d17ab5d7dd8c3fc465eb9283b7e3515c66658abad36c0a83748451b8e5a8daeb",
+  "manifestFiles": 32,
+  "launcherPassed": true,
+  "browserPassed": true,
+  "limitations": [
+    "Native Windows and file:// direct launch unexecuted; loopback HTTP is the verified method"
+  ],
+  "htmlSha256": "a95840c1580935c7f9d07325343e0e29c1b12b1afe0e0387761e8dee7e5073ab",
+  "browserEvidence": "ARTIFACT_BROWSER_RESULTS.json"
+}

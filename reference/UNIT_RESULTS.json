@@ -1,0 +1,76 @@
+{
+  "completion": false,
+  "passed": true,
+  "statComparisons": 173700,
+  "species": 386,
+  "mega": 82,
+  "checks": [
+    {
+      "id": "all-points-and-natures",
+      "passed": true
+    },
+    {
+      "id": "AP-invalid-and-total-boundary",
+      "passed": true
+    },
+    {
+      "id": "nature-form-and-mega-stone",
+      "passed": true
+    },
+    {
+      "id": "registration-JSON-and-duplicate-safety",
+      "passed": true
+    },
+    {
+      "id": "legacy-migration-keeps-SP",
+      "passed": true
+    },
+    {
+      "id": "manual-ranks-not-Intimidate-history",
+      "passed": true
+    },
+    {
+      "id": "tr-only-speed-reference-not-damage",
+      "passed": true
+    },
+    {
+      "id": "dedup-3-pattern-limit-and-unknown",
+      "passed": true
+    },
+    {
+      "id": "multi-hits-have-independent-16-rolls",
+      "passed": true
+    },
+    {
+      "id": "status-metadata-and-unsupported-no-fake-zero",
+      "passed": true
+    },
+    {
+      "id": "impossible-item-and-ability-pairs-rejected",
+      "passed": true
+    },
+    {
+      "id": "critical-blocked-not-labelled-applied",
+      "passed": true
+    },
+    {
+      "id": "duplicate-item-and-double-mega",
+      "passed": true
+    },
+    {
+      "id": "conditional-special-stat-profiles",
+      "passed": true
+    },
+    {
+      "id": "known-own-reactive-ability-reference",
+      "passed": true
+    },
+    {
+      "id": "plus-minus-only-compatible-active-partner",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Independent community implementations match; official formula publication and real-game values not acquired"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "completion": false,
+  "applicationCorrections": [
+    {
+      "id": "ability-clone-default",
+      "cause": "An empty ability string was restored to the species default when the calculation engine cloned a Pokémon",
+      "fix": "Use internal No Ability for disabled full-HP/bench conditions",
+      "verification": "multiscale-active/false, global/fairy/*/false, unit dedup and independent numeric tests"
+    },
+    {
+      "id": "legacy-default-team-migration",
+      "cause": "v8 could save SP without saving its unchanged default two species",
+      "fix": "Recognize legacy SP keys and use the exact v8 defaults only when the team key is absent",
+      "verification": "Browser sameOriginV8Migration and JSON download/import preserve SP"
+    },
+    {
+      "id": "known-flashfire-reference",
+      "cause": "Reactive-ability conditions were expanded for unknown opponents but missing for registered own actors",
+      "fix": "Add explicitly labeled known-own active-condition reference",
+      "verification": "known-own-reactive-ability-reference, reactive/flashfire/false and true"
+    },
+    {
+      "id": "special-stat-scenarios",
+      "cause": "Representative profiles initially followed Physical/Special category only",
+      "fix": "Body Press uses Defense, Psyshock family uses target Defense, Foul Play includes unknown target Attack",
+      "verification": "conditional-special-stat-profiles and independent special/* cases"
+    },
+    {
+      "id": "bundle-replacement",
+      "cause": "String replacement interpreted dollar sequences inside the minified bundle",
+      "fix": "Use a replacement callback and compile the embedded script during build",
+      "verification": "All final builds and browser operation"
+    },
+    {
+      "id": "speed-side-argument",
+      "cause": "getFinalSpeed requires the side argument",
+      "fix": "Pass the active field attackerSide",
+      "verification": "72 independent speed cases and browser details"
+    },
+    {
+      "id": "status-move-metadata",
+      "cause": "Some calc raw move records omit Status category",
+      "fix": "Use native Champions category fallback and never display a fake zero-damage attack",
+      "verification": "status-metadata-and-unsupported-no-fake-zero, browser"
+    },
+    {
+      "id": "plus-minus-active-partner",
+      "cause": "A generic activated-ability reference could permit Plus or Minus without a compatible adjacent partner",
+      "fix": "Require a compatible active partner, resolve registered partners from the actual board, and exclude bench sources",
+      "verification": "plus-minus-only-compatible-active-partner and adjacent/plusminus/false/true native comparisons"
+    }
+  ],
+  "oracleOrHarnessCorrections": [
+    {
+      "id": "initial-oracle",
+      "retained": "NUMERIC_ATTEMPT1.json",
+      "cause": "Wrong native snow ID, spread flag before Expanding Force mutation, missing move Try hook and reversed test side",
+      "fix": "Use snowscape, set spread after ModifyMove, execute Try/TryHit and consistent sides",
+      "calculatorMismatch": false
+    },
+    {
+      "id": "steelroller-oracle",
+      "retained": "NUMERIC_ATTEMPT2.json",
+      "cause": "Steel Roller failure uses the move Try hook",
+      "fix": "Execute the native move Try event before damage",
+      "calculatorMismatch": false
+    },
+    {
+      "id": "browser-harness",
+      "cause": "Test attempted a folded export button and an incorrect drumbeat move ID",
+      "fix": "Open the actual registration details and use drumbeating",
+      "calculatorMismatch": false
+    }
+  ],
+  "finalStatus": "Final executed tests pass; external confirmation limitations remain separately documented"
+}

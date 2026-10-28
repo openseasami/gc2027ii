@@ -1,0 +1,42 @@
+{
+  "completion": false,
+  "passed": true,
+  "cases": [
+    {
+      "move": "tripleaxel",
+      "source": "ninetalesalola",
+      "ability": "Snow Cloak",
+      "item": "",
+      "status": "passed",
+      "hitCounts": 3
+    },
+    {
+      "move": "tripleaxel",
+      "source": "ninetalesalola",
+      "ability": "Snow Cloak",
+      "item": "Wide Lens",
+      "status": "passed",
+      "hitCounts": 3
+    },
+    {
+      "move": "populationbomb",
+      "source": "mausholdfour",
+      "ability": "Technician",
+      "item": "",
+      "status": "passed",
+      "hitCounts": 10
+    },
+    {
+      "move": "populationbomb",
+      "source": "mausholdfour",
+      "ability": "Technician",
+      "item": "Wide Lens",
+      "status": "passed",
+      "hitCounts": 10
+    }
+  ],
+  "comparisons": 416,
+  "limitations": [
+    "Per-hit independent damage arrays and hit-count totals only. Accuracy/early miss probabilities, reactive contact damage and faint stopping are not certified."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "gc2027ii-viewer",
+  "version": "9.0.0",
+  "description": "Champions conditional doubles damage information viewer",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "node build.cjs",
+    "data": "node source/prepare-data.cjs",
+    "test": "node tests/unit.cjs && node tests/numeric.cjs && node tests/speed.cjs && node tests/multihit.cjs",
+    "test:browser": "python3 tests/browser.py",
+    "report": "python3 source/generate-reports.py",
+    "package": "python3 source/package-release.py"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "dependencies": {
+    "@smogon/calc": "0.12.0",
+    "esbuild": "0.28.2"
+  },
+  "devDependencies": {
+    "@pkmn/sim": "0.10.11"
+  },
+  "private": true
+}

@@ -1,0 +1,4133 @@
+[
+  {
+    "name": "ゴリランダー",
+    "english": "Rillaboom",
+    "rank": 1,
+    "code": "0812-000",
+    "moves": {
+      "グラススライダー": 96.7,
+      "ねこだまし": 92.1,
+      "ウッドハンマー": 75.6,
+      "10まんばりき": 52.6,
+      "とんぼがえり": 43.8,
+      "まもる": 13.1,
+      "はたきおとす": 9.1,
+      "ドラムアタック": 4.9,
+      "ドレインパンチ": 2.1,
+      "ばかぢから": 1.7
+    },
+    "abilities": {
+      "グラスメイカー": 99.6,
+      "しんりょく": 0.4
+    },
+    "items": {
+      "Miracle Seed": 58.2,
+      "Sitrus Berry": 9.7,
+      "Life Orb": 9.4,
+      "Grassy Seed": 5.0,
+      "Eject Button": 4.7
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 1,
+    "verifiedTournamentRank": 1,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "オオニューラ",
+    "english": "Sneasler",
+    "rank": 2,
+    "code": "0903-000",
+    "moves": {
+      "インファイト": 98.3,
+      "フェイタルクロー": 91.8,
+      "まもる": 64.6,
+      "ねこだまし": 52.2,
+      "いわなだれ": 28.1,
+      "コーチング": 14.6,
+      "じごくづき": 12.9,
+      "アクロバット": 5.5,
+      "がんせきふうじ": 5.1,
+      "フェイント": 4.4
+    },
+    "abilities": {
+      "かるわざ": 89.1,
+      "どくしゅ": 10.4,
+      "プレッシャー": 0.4
+    },
+    "items": {
+      "White Herb": 32.8,
+      "Psychic Seed": 25.8,
+      "Grassy Seed": 23.4,
+      "Focus Sash": 11.6,
+      "Normal Gem": 2.0
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 2,
+    "verifiedTournamentRank": 2,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ガオガエン",
+    "english": "Incineroar",
+    "rank": 3,
+    "code": "0727-000",
+    "moves": {
+      "ねこだまし": 96.6,
+      "すてゼリフ": 90.7,
+      "フレアドライブ": 87.7,
+      "DDラリアット": 40.3,
+      "じごくづき": 37.8,
+      "まもる": 15.6,
+      "バークアウト": 6.0,
+      "てだすけ": 4.9,
+      "ちょうはつ": 4.1,
+      "インファイト": 4.1
+    },
+    "abilities": {
+      "いかく": 99.1,
+      "もうか": 0.9
+    },
+    "items": {
+      "Sitrus Berry": 64.2,
+      "Passho Berry": 7.8,
+      "Chople Berry": 7.1,
+      "Rocky Helmet": 6.3,
+      "Leftovers": 4.0
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 3,
+    "verifiedTournamentRank": 3,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ボーマンダ",
+    "english": "Salamence",
+    "rank": 4,
+    "code": "0373-000",
+    "moves": {
+      "まもる": 86.4,
+      "ハイパーボイス": 85.0,
+      "りゅうせいぐん": 63.1,
+      "おいかぜ": 50.7,
+      "かえんほうしゃ": 31.8,
+      "すてみタックル": 19.9,
+      "ねっぷう": 11.6,
+      "りゅうのはどう": 9.3,
+      "りゅうのまい": 5.4,
+      "じしん": 5.4
+    },
+    "abilities": {
+      "いかく": 97.8,
+      "じしんかじょう": 2.2
+    },
+    "items": {
+      "Salamencite": 96.3,
+      "Choice Scarf": 0.5,
+      "Life Orb": 0.5,
+      "Haban Berry": 0.5,
+      "Focus Sash": 0.3
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 4,
+    "verifiedTournamentRank": 4,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ガブリアス",
+    "english": "Garchomp",
+    "rank": 5,
+    "code": "0445-000",
+    "moves": {
+      "まもる": 64.2,
+      "じしん": 55.5,
+      "いわなだれ": 45.0,
+      "ドラゴンクロー": 44.0,
+      "パワージェム": 25.8,
+      "りゅうせいぐん": 22.9,
+      "かえんほうしゃ": 22.4,
+      "じだんだ": 20.4,
+      "だいちのちから": 17.5,
+      "りゅうのはどう": 13.5
+    },
+    "abilities": {
+      "さめはだ": 94.6,
+      "すながくれ": 5.4
+    },
+    "items": {
+      "Garchompite Z": 35.4,
+      "Life Orb": 25.2,
+      "Choice Scarf": 10.7,
+      "Rocky Helmet": 5.2,
+      "Sitrus Berry": 4.5
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 5,
+    "verifiedTournamentRank": 5,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ドドゲザン",
+    "english": "Kingambit",
+    "rank": 6,
+    "code": "0983-000",
+    "moves": {
+      "ドゲザン": 96.2,
+      "ふいうち": 96.1,
+      "アイアンヘッド": 78.6,
+      "まもる": 56.4,
+      "けたぐり": 42.6,
+      "つるぎのまい": 18.7,
+      "かわらわり": 3.4,
+      "ダメおし": 1.7,
+      "メタルバースト": 0.8,
+      "ハサミギロチン": 0.6
+    },
+    "abilities": {
+      "まけんき": 90.3,
+      "そうだいしょう": 9.3,
+      "プレッシャー": 0.4
+    },
+    "items": {
+      "Chople Berry": 37.8,
+      "Black Glasses": 19.1,
+      "Focus Sash": 18.3,
+      "Life Orb": 15.7,
+      "Occa Berry": 3.0
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 6,
+    "verifiedTournamentRank": 6,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "イエッサン♀",
+    "english": "Indeedee [Female]",
+    "rank": 7,
+    "code": "0876-001",
+    "moves": {
+      "このゆびとまれ": 95.2,
+      "てだすけ": 79.1,
+      "トリックルーム": 75.7,
+      "サイコキネシス": 67.8,
+      "まもる": 21.5,
+      "だいちのはどう": 15.1,
+      "ふういん": 6.6,
+      "マジカルフレイム": 6.2,
+      "マジカルシャイン": 4.9,
+      "いやしのはどう": 4.9
+    },
+    "abilities": {
+      "サイコメイカー": 99.4,
+      "シンクロ": 0.5,
+      "マイペース": 0.2
+    },
+    "items": {
+      "Rocky Helmet": 28.5,
+      "Colbur Berry": 25.5,
+      "Psychic Seed": 20.7,
+      "Sitrus Berry": 11.3,
+      "Terrain Extender": 4.4
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 7,
+    "verifiedTournamentRank": 7,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ブリジュラス",
+    "english": "Archaludon",
+    "rank": 8,
+    "code": "1018-000",
+    "moves": {
+      "エレクトロビーム": 92.0,
+      "まもる": 82.3,
+      "ラスターカノン": 76.1,
+      "りゅうのはどう": 69.5,
+      "りゅうせいぐん": 20.5,
+      "はどうだん": 19.9,
+      "バークアウト": 14.4,
+      "10まんボルト": 6.2,
+      "ステルスロック": 3.2,
+      "あくのはどう": 2.7
+    },
+    "abilities": {
+      "じきゅうりょく": 94.3,
+      "がんじょう": 3.9,
+      "すじがねいり": 1.8
+    },
+    "items": {
+      "Leftovers": 79.8,
+      "Sitrus Berry": 5.3,
+      "Choice Scarf": 1.9,
+      "Chople Berry": 1.7,
+      "White Herb": 1.5
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 8,
+    "verifiedTournamentRank": 8,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "イダイトウ",
+    "english": "Basculegion",
+    "rank": 9,
+    "code": "0902-000",
+    "moves": {
+      "おはかまいり": 99.6,
+      "ウェーブタックル": 90.7,
+      "アクアジェット": 87.7,
+      "まもる": 48.6,
+      "クイックターン": 45.6,
+      "アクアブレイク": 6.9,
+      "サイコファング": 4.7,
+      "こおりのキバ": 3.2,
+      "もろはのずつき": 2.4,
+      "ゴーストダイブ": 1.5
+    },
+    "abilities": {
+      "てきおうりょく": 91.4,
+      "すいすい": 7.7,
+      "かたやぶり": 0.9
+    },
+    "items": {
+      "Choice Scarf": 43.6,
+      "Life Orb": 26.3,
+      "Mystic Water": 12.4,
+      "Focus Sash": 11.0,
+      "Sitrus Berry": 2.1
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 9,
+    "verifiedTournamentRank": 9,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "サーフゴー",
+    "english": "Gholdengo",
+    "rank": 10,
+    "code": "1000-000",
+    "moves": {
+      "ゴールドラッシュ": 99.1,
+      "シャドーボール": 97.1,
+      "まもる": 85.5,
+      "わるだくみ": 80.1,
+      "パワージェム": 10.3,
+      "10まんボルト": 8.8,
+      "トリック": 3.5,
+      "じこさいせい": 3.3,
+      "マジカルシャイン": 2.9,
+      "きあいだま": 2.1
+    },
+    "abilities": {
+      "おうごんのからだ": 100.0
+    },
+    "items": {
+      "Life Orb": 74.5,
+      "Choice Scarf": 5.9,
+      "Air Balloon": 3.1,
+      "Leftovers": 3.0,
+      "Focus Sash": 2.9
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 10,
+    "verifiedTournamentRank": 10,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "リザードン",
+    "english": "Charizard",
+    "rank": 11,
+    "code": "0006-000",
+    "moves": {
+      "ねっぷう": 83.2,
+      "まもる": 79.0,
+      "ウェザーボール": 61.0,
+      "ソーラービーム": 58.8,
+      "げんしのちから": 19.7,
+      "ぼうふう": 12.9,
+      "エアスラッシュ": 11.9,
+      "かえんほうしゃ": 8.4,
+      "りゅうのはどう": 7.7,
+      "フレアドライブ": 6.6
+    },
+    "abilities": {
+      "もうか": 77.1,
+      "サンパワー": 22.9
+    },
+    "items": {
+      "Charizardite Y": 88.8,
+      "Charizardite X": 6.5,
+      "Lum Berry": 1.3,
+      "Choice Scarf": 0.5,
+      "Quick Claw": 0.3
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 11,
+    "verifiedTournamentRank": 11,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "グソクムシャ",
+    "english": "Golisopod",
+    "rank": 12,
+    "code": "0768-000",
+    "moves": {
+      "きゅうけつ": 89.9,
+      "アイアンヘッド": 79.1,
+      "まもる": 59.8,
+      "つるぎのまい": 38.3,
+      "ふいうち": 33.0,
+      "であいがしら": 24.3,
+      "アクアブレイク": 20.8,
+      "ドリルライナー": 16.3,
+      "インファイト": 8.0,
+      "アクアジェット": 7.8
+    },
+    "abilities": {
+      "ききかいひ": 100.0
+    },
+    "items": {
+      "Golisopite": 97.0,
+      "Life Orb": 0.5,
+      "Sitrus Berry": 0.3,
+      "Quick Claw": 0.3,
+      "Leftovers": 0.2
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 12,
+    "verifiedTournamentRank": 12,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ライチュウ",
+    "english": "Raichu",
+    "rank": 13,
+    "code": "0026-000",
+    "moves": {
+      "でんじほう": 80.3,
+      "きあいだま": 79.8,
+      "まもる": 79.2,
+      "ねこだまし": 71.7,
+      "アンコール": 19.8,
+      "ボルトチェンジ": 10.7,
+      "Volt Tackle": 8.7,
+      "ライジングボルト": 7.2,
+      "Grass Knot": 4.7,
+      "ドレインパンチ": 4.6
+    },
+    "abilities": {
+      "ひらいしん": 96.3,
+      "Static": 3.7
+    },
+    "items": {
+      "Raichunite Y": 81.1,
+      "Raichunite X": 15.3,
+      "Focus Sash": 1.6,
+      "Sitrus Berry": 0.3,
+      "Magnet": 0.3
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 13,
+    "verifiedTournamentRank": 13,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ペリッパー",
+    "english": "Pelipper",
+    "rank": 14,
+    "code": "0279-000",
+    "moves": {
+      "ぼうふう": 96.4,
+      "ウェザーボール": 79.6,
+      "おいかぜ": 76.0,
+      "ワイドガード": 59.2,
+      "まもる": 32.0,
+      "れいとうビーム": 12.7,
+      "だくりゅう": 10.4,
+      "とんぼがえり": 8.4,
+      "なみのり": 3.9,
+      "てだすけ": 3.7
+    },
+    "abilities": {
+      "あめふらし": 99.7,
+      "Keen Eye": 0.1,
+      "あめうけざら": 0.1
+    },
+    "items": {
+      "Focus Sash": 48.4,
+      "Sitrus Berry": 24.5,
+      "Damp Rock": 13.2,
+      "Life Orb": 2.6,
+      "Choice Scarf": 2.6
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 14,
+    "verifiedTournamentRank": 14,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ミロカロス",
+    "english": "Milotic",
+    "rank": 15,
+    "code": "0350-000",
+    "moves": {
+      "まもる": 64.4,
+      "ねっとう": 64.3,
+      "れいとうビーム": 58.2,
+      "こごえるかぜ": 39.3,
+      "だくりゅう": 35.4,
+      "とぐろをまく": 31.3,
+      "じこさいせい": 30.7,
+      "さいみんじゅつ": 30.4,
+      "いのちのしずく": 12.3,
+      "くろいきり": 4.6
+    },
+    "abilities": {
+      "かちき": 97.3,
+      "Marvel Scale": 1.6,
+      "メロメロボディ": 1.1
+    },
+    "items": {
+      "Leftovers": 58.9,
+      "Sitrus Berry": 22.9,
+      "Psychic Seed": 7.4,
+      "Grassy Seed": 2.2,
+      "Mystic Water": 1.1
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 15,
+    "verifiedTournamentRank": 15,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "リキキリン",
+    "english": "Farigiraf",
+    "rank": 16,
+    "code": "0981-000",
+    "moves": {
+      "トリックルーム": 94.6,
+      "サイコキネシス": 56.3,
+      "てだすけ": 52.5,
+      "まもる": 48.1,
+      "10まんボルト": 38.5,
+      "ツインビーム": 16.4,
+      "ワイドフォース": 16.1,
+      "ハイパーボイス": 15.9,
+      "Imprison": 9.7,
+      "Ally Switch": 7.8
+    },
+    "abilities": {
+      "テイルアーマー": 98.2,
+      "そうしょく": 1.2,
+      "Cud Chew": 0.6
+    },
+    "items": {
+      "Sitrus Berry": 61.8,
+      "Colbur Berry": 16.0,
+      "Grassy Seed": 5.0,
+      "Leftovers": 3.7,
+      "Mental Herb": 2.9
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 16,
+    "verifiedTournamentRank": 16,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ニンフィア",
+    "english": "Sylveon",
+    "rank": 17,
+    "code": "0700-000",
+    "moves": {
+      "ハイパーボイス": 98.1,
+      "はかいこうせん": 67.6,
+      "でんこうせっか": 67.2,
+      "みきり": 57.4,
+      "まもる": 29.5,
+      "あくび": 16.2,
+      "マジカルフレイム": 12.2,
+      "シャドーボール": 11.0,
+      "ムーンフォース": 9.9,
+      "めいそう": 8.2
+    },
+    "abilities": {
+      "フェアリースキン": 98.8,
+      "メロメロボディ": 1.2
+    },
+    "items": {
+      "Fairy Feather": 79.5,
+      "Life Orb": 4.7,
+      "Leftovers": 4.2,
+      "Sitrus Berry": 3.9,
+      "Quick Claw": 2.2
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 17,
+    "verifiedTournamentRank": 17,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ムクホーク",
+    "english": "Staraptor",
+    "rank": 18,
+    "code": "0398-000",
+    "moves": {
+      "インファイト": 97.6,
+      "ブレイブバード": 84.8,
+      "まもる": 75.8,
+      "おいかぜ": 42.9,
+      "はねやすめ": 42.8,
+      "ダブルウイング": 13.0,
+      "とんぼがえり": 12.2,
+      "いのちがけ": 11.0,
+      "Blaze Kick": 7.2,
+      "でんこうせっか": 2.1
+    },
+    "abilities": {
+      "いかく": 96.2,
+      "Reckless": 3.8
+    },
+    "items": {
+      "Staraptite": 87.9,
+      "Choice Scarf": 10.3,
+      "Focus Sash": 0.3,
+      "Quick Claw": 0.2,
+      "Sharp Beak": 0.2
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 18,
+    "verifiedTournamentRank": 18,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "バンギラス",
+    "english": "Tyranitar",
+    "rank": 19,
+    "code": "0248-000",
+    "moves": {
+      "いわなだれ": 90.4,
+      "はたきおとす": 89.5,
+      "まもる": 81.6,
+      "けたぐり": 53.1,
+      "りゅうのまい": 16.2,
+      "れいとうパンチ": 13.8,
+      "Stone Edge": 7.4,
+      "じしん": 7.3,
+      "Fire Punch": 6.3,
+      "かみくだく": 5.0
+    },
+    "abilities": {
+      "すなおこし": 99.0,
+      "きんちょうかん": 1.0
+    },
+    "items": {
+      "Tyranitarite": 73.1,
+      "Choice Scarf": 5.0,
+      "Chople Berry": 4.9,
+      "Focus Sash": 2.9,
+      "Leftovers": 2.2
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 19,
+    "verifiedTournamentRank": 19,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "エルフーン",
+    "english": "Whimsicott",
+    "rank": 20,
+    "code": "0547-000",
+    "moves": {
+      "おいかぜ": 93.5,
+      "ムーンフォース": 85.6,
+      "アンコール": 59.4,
+      "まもる": 47.1,
+      "あまえる": 16.6,
+      "にほんばれ": 14.4,
+      "ギガドレイン": 9.4,
+      "ちょうはつ": 7.6,
+      "てだすけ": 7.4,
+      "マジカルシャイン": 6.6
+    },
+    "abilities": {
+      "いたずらごころ": 97.0,
+      "ようりょくそ": 2.1,
+      "すりぬけ": 1.0
+    },
+    "items": {
+      "Focus Sash": 72.2,
+      "Coba Berry": 4.4,
+      "Occa Berry": 2.8,
+      "Fairy Feather": 2.8,
+      "Mental Herb": 2.6
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 20,
+    "verifiedTournamentRank": 20,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ウインディ(ヒスイ)",
+    "english": "Arcanine [Hisuian Form]",
+    "rank": 21,
+    "code": "0059-001",
+    "moves": {
+      "フレアドライブ": 99.4,
+      "もろはのずつき": 94.0,
+      "まもる": 90.9,
+      "しんそく": 85.1,
+      "いわなだれ": 13.9,
+      "Wild Charge": 5.1,
+      "インファイト": 3.4,
+      "サイコファング": 1.0,
+      "バークアウト": 0.7,
+      "かみくだく": 0.6
+    },
+    "abilities": {
+      "いしあたま": 96.4,
+      "いかく": 3.2,
+      "もらいび": 0.4
+    },
+    "items": {
+      "Focus Sash": 89.4,
+      "Choice Scarf": 3.4,
+      "Life Orb": 2.2,
+      "Sitrus Berry": 1.0,
+      "Charcoal": 0.4
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 21,
+    "verifiedTournamentRank": 21,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "サーナイト",
+    "english": "Gardevoir",
+    "rank": 22,
+    "code": "0282-000",
+    "moves": {
+      "ハイパーボイス": 89.7,
+      "まもる": 86.9,
+      "ワイドフォース": 85.8,
+      "トリックルーム": 26.0,
+      "マジカルフレイム": 22.5,
+      "めいそう": 13.7,
+      "ムーンフォース": 12.4,
+      "サイコキネシス": 11.7,
+      "10まんボルト": 9.0,
+      "はどうだん": 8.8
+    },
+    "abilities": {
+      "トレース": 73.3,
+      "シンクロ": 14.1,
+      "テレパシー": 12.7
+    },
+    "items": {
+      "Gardevoirite": 93.9,
+      "Choice Scarf": 1.3,
+      "Focus Sash": 0.9,
+      "Sitrus Berry": 0.5,
+      "Lum Berry": 0.4
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 22,
+    "verifiedTournamentRank": 22,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "メタグロス",
+    "english": "Metagross",
+    "rank": 23,
+    "code": "0376-000",
+    "moves": {
+      "サイコファング": 86.5,
+      "まもる": 70.8,
+      "アイアンローラー": 40.2,
+      "アイアンヘッド": 29.6,
+      "ボディプレス": 28.7,
+      "れいとうパンチ": 25.7,
+      "バレットパンチ": 24.5,
+      "じだんだ": 21.2,
+      "コメットパンチ": 17.2,
+      "じしん": 10.7
+    },
+    "abilities": {
+      "クリアボディ": 97.8,
+      "Light Metal": 2.2
+    },
+    "items": {
+      "Metagrossite": 86.8,
+      "Life Orb": 2.3,
+      "Leftovers": 1.3,
+      "Sitrus Berry": 0.9,
+      "Normal Gem": 0.9
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 23,
+    "verifiedTournamentRank": 23,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ヤバソチャ",
+    "english": "Sinistcha",
+    "rank": 24,
+    "code": "1013-000",
+    "moves": {
+      "シャカシャカほう": 97.6,
+      "いかりのこな": 87.5,
+      "トリックルーム": 54.3,
+      "まもる": 51.1,
+      "いのちのしずく": 43.3,
+      "シャドーボール": 25.8,
+      "ちからをすいとる": 18.2,
+      "ねっとう": 4.2,
+      "めいそう": 2.5,
+      "ギガドレイン": 1.6
+    },
+    "abilities": {
+      "おもてなし": 96.4,
+      "Heatproof": 3.6
+    },
+    "items": {
+      "Sitrus Berry": 29.4,
+      "Leftovers": 13.8,
+      "Colbur Berry": 13.5,
+      "Kasib Berry": 8.8,
+      "Focus Sash": 5.5
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 24,
+    "verifiedTournamentRank": 24,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "グレンアルマ",
+    "english": "Armarouge",
+    "rank": 25,
+    "code": "0936-000",
+    "moves": {
+      "ワイドフォース": 90.8,
+      "アーマーキャノン": 82.9,
+      "まもる": 58.6,
+      "ワイドガード": 46.3,
+      "トリックルーム": 35.4,
+      "はどうだん": 22.4,
+      "ねっぷう": 20.4,
+      "サイコキネシス": 7.4,
+      "エナジーボール": 6.8,
+      "Destiny Bond": 3.9
+    },
+    "abilities": {
+      "もらいび": 78.2,
+      "くだけるよろい": 21.8
+    },
+    "items": {
+      "Life Orb": 43.7,
+      "Focus Sash": 29.9,
+      "Twisted Spoon": 4.7,
+      "Psychic Seed": 4.1,
+      "Sitrus Berry": 2.7
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 25,
+    "verifiedTournamentRank": 25,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ラグラージ",
+    "english": "Swampert",
+    "rank": 26,
+    "code": "0260-000",
+    "moves": {
+      "ウェーブタックル": 77.8,
+      "れいとうパンチ": 74.2,
+      "まもる": 73.5,
+      "じしん": 70.6,
+      "10まんばりき": 26.9,
+      "クイックターン": 10.8,
+      "アクアブレイク": 9.9,
+      "いわなだれ": 6.4,
+      "たきのぼり": 4.5,
+      "ワイドガード": 3.5
+    },
+    "abilities": {
+      "げきりゅう": 68.6,
+      "しめりけ": 31.4
+    },
+    "items": {
+      "Swampertite": 87.7,
+      "Leftovers": 3.3,
+      "Sitrus Berry": 2.3,
+      "Life Orb": 0.9,
+      "Rindo Berry": 0.9
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 26,
+    "verifiedTournamentRank": 26,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ドリュウズ",
+    "english": "Excadrill",
+    "rank": 27,
+    "code": "0530-000",
+    "moves": {
+      "アイアンヘッド": 97.4,
+      "まもる": 92.1,
+      "いわなだれ": 86.3,
+      "10まんばりき": 82.4,
+      "じしん": 24.3,
+      "つるぎのまい": 2.8,
+      "ドリルライナー": 2.2,
+      "つのドリル": 1.8,
+      "じだんだ": 1.4,
+      "かわらわり": 1.2
+    },
+    "abilities": {
+      "すなかき": 93.5,
+      "かたやぶり": 4.4,
+      "すなのちから": 2.0
+    },
+    "items": {
+      "Focus Sash": 83.2,
+      "Life Orb": 8.0,
+      "Excadrite": 1.8,
+      "Choice Scarf": 1.8,
+      "Soft Sand": 1.2
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 27,
+    "verifiedTournamentRank": 27,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "イエッサン♂",
+    "english": "Indeedee",
+    "rank": 28,
+    "code": "0876-000",
+    "moves": {
+      "ワイドフォース": 99.0,
+      "マジカルフレイム": 63.6,
+      "トリック": 57.0,
+      "まもる": 47.0,
+      "トリックルーム": 29.9,
+      "マジカルシャイン": 21.7,
+      "ふういん": 19.7,
+      "ハイパーボイス": 11.9,
+      "てだすけ": 9.6,
+      "アンコール": 7.3
+    },
+    "abilities": {
+      "サイコメイカー": 99.7,
+      "せいしんりょく": 0.2,
+      "シンクロ": 0.1
+    },
+    "items": {
+      "Choice Scarf": 65.8,
+      "Focus Sash": 15.2,
+      "Terrain Extender": 5.1,
+      "Psychic Seed": 4.1,
+      "Colbur Berry": 2.4
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 28,
+    "verifiedTournamentRank": 28,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "フラエッテ(えいえんのはな)",
+    "english": "Floette",
+    "rank": 29,
+    "code": "0670-005",
+    "moves": {
+      "まもる": 96.1,
+      "マジカルシャイン": 95.0,
+      "ムーンフォース": 69.3,
+      "めいそう": 68.8,
+      "はめつのひかり": 31.9,
+      "ドレインキッス": 27.0,
+      "サイコキネシス": 4.3,
+      "ギガドレイン": 1.9,
+      "こうごうせい": 1.1,
+      "かふんだんご": 0.9
+    },
+    "abilities": {
+      "フラワーベール": 99.3,
+      "Symbiosis": 0.7
+    },
+    "items": {
+      "Floettite": 98.9,
+      "Choice Scarf": 0.8,
+      "Fairy Feather": 0.1,
+      "Grassy Seed": 0.0,
+      "Life Orb": 0.0
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 29,
+    "verifiedTournamentRank": 29,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ニョロトノ",
+    "english": "Politoed",
+    "rank": 30,
+    "code": "0186-000",
+    "moves": {
+      "まもる": 90.1,
+      "ウェザーボール": 86.2,
+      "れいとうビーム": 50.6,
+      "だくりゅう": 46.2,
+      "ほろびのうた": 43.6,
+      "アンコール": 26.9,
+      "てだすけ": 9.4,
+      "こごえるかぜ": 8.4,
+      "さいみんじゅつ": 8.2,
+      "じこあんじ": 7.0
+    },
+    "abilities": {
+      "あめふらし": 99.5,
+      "ちょすい": 0.4,
+      "しめりけ": 0.1
+    },
+    "items": {
+      "Sitrus Berry": 49.0,
+      "Mystic Water": 21.8,
+      "Life Orb": 8.7,
+      "Damp Rock": 4.3,
+      "Leftovers": 4.0
+    },
+    "source": "tournament",
+    "url": "https://www.pokemon-zone.com/champions/championships/ic178714271270xvovwl/",
+    "selectionRank": 30,
+    "verifiedTournamentRank": 30,
+    "rankedSeasonRank": null
+  },
+  {
+    "name": "ウルガモス",
+    "english": "Volcarona",
+    "rank": null,
+    "code": "0637-000",
+    "moves": {
+      "まもる": 55.4,
+      "いかりのこな": 53.0,
+      "ちょうのまい": 48.2,
+      "むしのていこう": 45.2,
+      "おいかぜ": 42.3,
+      "ねっぷう": 37.8,
+      "オーバーヒート": 32.3,
+      "ギガドレイン": 24.5,
+      "むしのさざめき": 22.7,
+      "ほのおのまい": 20.2
+    },
+    "abilities": {
+      "ほのおのからだ": 98.7,
+      "Swarm": 1.3
+    },
+    "items": {
+      "Rocky Helmet": 36.6,
+      "Grassy Seed": 30.9,
+      "Sitrus Berry": 11.1,
+      "Leftovers": 7.1,
+      "Focus Sash": 3.4
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=2",
+    "selectionRank": 31,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 24
+  },
+  {
+    "name": "コータス",
+    "english": "Torkoal",
+    "rank": null,
+    "code": "0324-000",
+    "moves": {
+      "ふんか": 92.7,
+      "まもる": 86.6,
+      "ウェザーボール": 60.6,
+      "だいちのちから": 45.6,
+      "ねっぷう": 38.1,
+      "ソーラービーム": 25.3,
+      "てだすけ": 18.7,
+      "あくび": 4.9,
+      "げんしのちから": 3.9,
+      "かえんほうしゃ": 3.1
+    },
+    "abilities": {
+      "ひでり": 99.5,
+      "シェルアーマー": 0.2,
+      "White Smoke": 0.2
+    },
+    "items": {
+      "Charcoal": 81.4,
+      "Sitrus Berry": 4.0,
+      "Life Orb": 3.2,
+      "Leftovers": 2.6,
+      "Quick Claw": 2.0
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=2",
+    "selectionRank": 32,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 28
+  },
+  {
+    "name": "オーロンゲ",
+    "english": "Grimmsnarl",
+    "rank": null,
+    "code": "0861-000",
+    "moves": {
+      "ひかりのかべ": 92.9,
+      "リフレクター": 90.7,
+      "すてゼリフ": 87.9,
+      "ソウルクラッシュ": 76.7,
+      "ねこだまし": 15.9,
+      "イカサマ": 7.3,
+      "ふいうち": 4.9,
+      "じごくづき": 3.5,
+      "Scary Face": 3.3,
+      "ちょうはつ": 2.8
+    },
+    "abilities": {
+      "いたずらごころ": 99.2,
+      "おみとおし": 0.5,
+      "わるいてぐせ": 0.4
+    },
+    "items": {
+      "Light Clay": 88.4,
+      "Sitrus Berry": 2.6,
+      "Roseli Berry": 1.3,
+      "Leftovers": 1.2,
+      "Black Glasses": 0.7
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=2",
+    "selectionRank": 33,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 32
+  },
+  {
+    "name": "ルカリオ",
+    "english": "Lucario",
+    "rank": null,
+    "code": "0448-000",
+    "moves": {
+      "はどうだん": 91.4,
+      "ラスターカノン": 79.5,
+      "みきり": 48.7,
+      "まもる": 37.0,
+      "あくのはどう": 25.8,
+      "めいそう": 24.3,
+      "わるだくみ": 20.5,
+      "てっていこうせん": 13.4,
+      "だいちのはどう": 8.5,
+      "しんくうは": 7.7
+    },
+    "abilities": {
+      "せいしんりょく": 88.5,
+      "ふくつのこころ": 7.4,
+      "せいぎのこころ": 4.1
+    },
+    "items": {
+      "Lucarionite Z": 91.8,
+      "Lucarionite": 4.0,
+      "Focus Sash": 1.2,
+      "Choice Scarf": 1.0,
+      "Life Orb": 0.7
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=2",
+    "selectionRank": 34,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 34
+  },
+  {
+    "name": "ユキメノコ",
+    "english": "Froslass",
+    "rank": null,
+    "code": "0478-000",
+    "moves": {
+      "ふぶき": 98.8,
+      "まもる": 90.8,
+      "シャドーボール": 84.3,
+      "オーロラベール": 76.1,
+      "あまごい": 11.6,
+      "10まんボルト": 7.8,
+      "Destiny Bond": 5.3,
+      "ちょうはつ": 4.6,
+      "わるだくみ": 3.9,
+      "おにび": 1.9
+    },
+    "abilities": {
+      "のろわれボディ": 75.1,
+      "ゆきがくれ": 24.9
+    },
+    "items": {
+      "Froslassite": 98.7,
+      "Focus Sash": 0.5,
+      "Choice Scarf": 0.2,
+      "Bright Powder": 0.1,
+      "Never-Melt Ice": 0.1
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=2",
+    "selectionRank": 35,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 35
+  },
+  {
+    "name": "ゲンガー",
+    "english": "Gengar",
+    "rank": null,
+    "code": "0094-000",
+    "moves": {
+      "シャドーボール": 94.9,
+      "まもる": 89.1,
+      "ヘドロばくだん": 72.2,
+      "ほろびのうた": 65.4,
+      "かなしばり": 15.5,
+      "こごえるかぜ": 9.6,
+      "ヘドロウェーブ": 8.1,
+      "Destiny Bond": 6.9,
+      "きあいだま": 5.9,
+      "みがわり": 5.5
+    },
+    "abilities": {
+      "のろわれボディ": 100.0
+    },
+    "items": {
+      "Gengarite": 86.9,
+      "Focus Sash": 8.9,
+      "Life Orb": 0.9,
+      "Choice Scarf": 0.8,
+      "Quick Claw": 0.2
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=2",
+    "selectionRank": 36,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 36
+  },
+  {
+    "name": "カイリュー",
+    "english": "Dragonite",
+    "rank": null,
+    "code": "0149-000",
+    "moves": {
+      "まもる": 63.6,
+      "りゅうのはどう": 49.8,
+      "ねっぷう": 41.5,
+      "おいかぜ": 35.0,
+      "しんそく": 32.6,
+      "ぼうふう": 19.7,
+      "りゅうせいぐん": 17.6,
+      "10まんボルト": 12.4,
+      "ドラゴンクロー": 12.0,
+      "れいとうビーム": 10.9
+    },
+    "abilities": {
+      "マルチスケイル": 64.9,
+      "せいしんりょく": 35.1
+    },
+    "items": {
+      "Dragoninite": 67.0,
+      "Life Orb": 12.8,
+      "Leftovers": 2.9,
+      "Sitrus Berry": 2.5,
+      "White Herb": 1.9
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=2",
+    "selectionRank": 37,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 37
+  },
+  {
+    "name": "キュウコン(アローラのすがた)",
+    "english": "Ninetales [Alolan Form]",
+    "rank": null,
+    "code": "0038-001",
+    "moves": {
+      "ふぶき": 93.2,
+      "オーロラベール": 77.5,
+      "まもる": 62.4,
+      "フリーズドライ": 46.8,
+      "ムーンフォース": 46.0,
+      "アンコール": 20.0,
+      "マジカルシャイン": 13.4,
+      "こごえるかぜ": 12.0,
+      "かなしばり": 2.6,
+      "じんつうりき": 2.3
+    },
+    "abilities": {
+      "ゆきふらし": 98.9,
+      "ゆきがくれ": 1.1
+    },
+    "items": {
+      "Light Clay": 43.2,
+      "Focus Sash": 19.6,
+      "Never-Melt Ice": 14.5,
+      "Choice Scarf": 10.1,
+      "Life Orb": 2.4
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=2",
+    "selectionRank": 38,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 38
+  },
+  {
+    "name": "フシギバナ",
+    "english": "Venusaur",
+    "rank": null,
+    "code": "0003-000",
+    "moves": {
+      "ヘドロばくだん": 90.6,
+      "まもる": 78.0,
+      "ねむりごな": 65.1,
+      "だいちのちから": 55.8,
+      "リーフストーム": 34.5,
+      "ギガドレイン": 32.6,
+      "ソーラービーム": 10.2,
+      "エナジーボール": 9.4,
+      "ウェザーボール": 5.2,
+      "やどりぎのタネ": 4.3
+    },
+    "abilities": {
+      "ようりょくそ": 96.8,
+      "しんりょく": 3.2
+    },
+    "items": {
+      "Focus Sash": 36.9,
+      "Life Orb": 17.2,
+      "Venusaurite": 16.9,
+      "Wide Lens": 13.3,
+      "Leftovers": 3.5
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=2",
+    "selectionRank": 39,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 39
+  },
+  {
+    "name": "セグレイブ",
+    "english": "Baxcalibur",
+    "rank": null,
+    "code": "0998-000",
+    "moves": {
+      "きょけんとつげき": 93.5,
+      "まもる": 82.2,
+      "こおりのつぶて": 77.3,
+      "つららおとし": 40.9,
+      "10まんばりき": 29.2,
+      "つるぎのまい": 17.8,
+      "りゅうのまい": 16.0,
+      "じしん": 8.9,
+      "Icicle Spear": 7.6,
+      "アイアンヘッド": 6.2
+    },
+    "abilities": {
+      "ねつこうかん": 95.6,
+      "Ice Body": 4.4
+    },
+    "items": {
+      "Baxcalibrite": 74.4,
+      "Life Orb": 11.1,
+      "Focus Sash": 2.7,
+      "Choice Scarf": 2.5,
+      "Never-Melt Ice": 1.8
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=2",
+    "selectionRank": 40,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 40
+  },
+  {
+    "name": "アシレーヌ",
+    "english": "Primarina",
+    "rank": null,
+    "code": "0730-000",
+    "moves": {
+      "ハイパーボイス": 92.9,
+      "まもる": 87.7,
+      "ムーンフォース": 85.1,
+      "めいそう": 34.8,
+      "れいとうビーム": 19.7,
+      "マジカルシャイン": 15.6,
+      "アクアジェット": 12.6,
+      "エナジーボール": 6.5,
+      "こごえるかぜ": 5.4,
+      "Sparkling Aria": 5.3
+    },
+    "abilities": {
+      "うるおいボイス": 94.7,
+      "げきりゅう": 5.3
+    },
+    "items": {
+      "Leftovers": 28.0,
+      "Life Orb": 27.4,
+      "Mystic Water": 15.7,
+      "Sitrus Berry": 10.8,
+      "Grassy Seed": 6.5
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 41,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 41
+  },
+  {
+    "name": "ヤミラミ",
+    "english": "Sableye",
+    "rank": null,
+    "code": "0302-000",
+    "moves": {
+      "ひかりのかべ": 57.8,
+      "あまごい": 51.1,
+      "アンコール": 48.6,
+      "リフレクター": 46.9,
+      "おにび": 35.5,
+      "イカサマ": 27.4,
+      "かなしばり": 23.7,
+      "ねこだまし": 20.7,
+      "さきおくり": 20.6,
+      "にほんばれ": 11.1
+    },
+    "abilities": {
+      "いたずらごころ": 99.7,
+      "Keen Eye": 0.2,
+      "Stall": 0.1
+    },
+    "items": {
+      "Light Clay": 38.8,
+      "Roseli Berry": 22.6,
+      "Sitrus Berry": 9.5,
+      "Focus Sash": 6.5,
+      "Leftovers": 4.3
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 42,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 42
+  },
+  {
+    "name": "プテラ",
+    "english": "Aerodactyl",
+    "rank": null,
+    "code": "0142-000",
+    "moves": {
+      "いわなだれ": 97.6,
+      "おいかぜ": 85.7,
+      "ダブルウイング": 73.6,
+      "ワイドガード": 46.8,
+      "まもる": 37.5,
+      "こおりのキバ": 16.8,
+      "ちょうはつ": 8.3,
+      "じしん": 4.6,
+      "アイアンヘッド": 3.3,
+      "サイコファング": 3.0
+    },
+    "abilities": {
+      "きんちょうかん": 91.4,
+      "プレッシャー": 4.8,
+      "いしあたま": 3.8
+    },
+    "items": {
+      "Focus Sash": 46.3,
+      "Aerodactylite": 35.4,
+      "King’s Rock": 3.5,
+      "Wide Lens": 3.1,
+      "Life Orb": 2.2
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 43,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 43
+  },
+  {
+    "name": "キラフロル",
+    "english": "Glimmora",
+    "rank": null,
+    "code": "0970-000",
+    "moves": {
+      "パワージェム": 95.7,
+      "ニードルガード": 91.6,
+      "だいちのちから": 90.7,
+      "ヘドロばくだん": 80.8,
+      "ヘドロウェーブ": 12.2,
+      "Mortal Spin": 7.4,
+      "Stealth Rock": 3.6,
+      "エナジーボール": 3.5,
+      "どくどく": 2.4,
+      "マジカルシャイン": 2.3
+    },
+    "abilities": {
+      "どくげしょう": 96.7,
+      "Corrosion": 3.3
+    },
+    "items": {
+      "Glimmoranite": 48.6,
+      "Focus Sash": 37.8,
+      "Life Orb": 3.7,
+      "Choice Scarf": 2.1,
+      "Air Balloon": 1.6
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 44,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 44
+  },
+  {
+    "name": "アーマーガア",
+    "english": "Corviknight",
+    "rank": null,
+    "code": "0823-000",
+    "moves": {
+      "ブレイブバード": 79.3,
+      "はねやすめ": 79.0,
+      "ビルドアップ": 65.1,
+      "つけあがる": 52.3,
+      "ボディプレス": 28.9,
+      "アイアンヘッド": 27.0,
+      "おいかぜ": 26.0,
+      "てっぺき": 16.1,
+      "まもる": 11.3,
+      "ちょうはつ": 3.9
+    },
+    "abilities": {
+      "ミラーアーマー": 97.5,
+      "プレッシャー": 1.4,
+      "きんちょうかん": 1.2
+    },
+    "items": {
+      "Psychic Seed": 50.6,
+      "Leftovers": 26.7,
+      "Rocky Helmet": 7.2,
+      "Sitrus Berry": 6.2,
+      "Occa Berry": 2.8
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 45,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 45
+  },
+  {
+    "name": "マフォクシー",
+    "english": "Delphox",
+    "rank": null,
+    "code": "0655-000",
+    "moves": {
+      "ねっぷう": 90.3,
+      "まもる": 88.2,
+      "サイコキネシス": 55.7,
+      "わるだくみ": 48.0,
+      "ワイドフォース": 30.1,
+      "マジカルシャイン": 11.9,
+      "サイコショック": 11.2,
+      "アンコール": 7.7,
+      "かえんほうしゃ": 7.0,
+      "シャドーボール": 5.8
+    },
+    "abilities": {
+      "もうか": 82.1,
+      "マジシャン": 17.9
+    },
+    "items": {
+      "Delphoxite": 84.9,
+      "Life Orb": 5.6,
+      "Psychic Seed": 2.1,
+      "Focus Sash": 1.9,
+      "Choice Scarf": 1.0
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 46,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 46
+  },
+  {
+    "name": "コノヨザル",
+    "english": "Annihilape",
+    "rank": null,
+    "code": "0979-000",
+    "moves": {
+      "ふんどのこぶし": 62.9,
+      "ドレインパンチ": 51.3,
+      "まもる": 49.5,
+      "インファイト": 44.7,
+      "れいとうパンチ": 40.5,
+      "ビルドアップ": 30.1,
+      "いわなだれ": 19.6,
+      "ゴーストダイブ": 19.1,
+      "シャドークロー": 18.3,
+      "とんぼがえり": 12.1
+    },
+    "abilities": {
+      "まけんき": 97.8,
+      "せいしんりょく": 1.6,
+      "Vital Spirit": 0.6
+    },
+    "items": {
+      "Choice Scarf": 34.4,
+      "Leftovers": 21.6,
+      "Sitrus Berry": 13.1,
+      "Focus Sash": 7.3,
+      "Life Orb": 5.6
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 47,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 47
+  },
+  {
+    "name": "カメックス",
+    "english": "Blastoise",
+    "rank": null,
+    "code": "0009-000",
+    "moves": {
+      "しおふき": 85.1,
+      "まもる": 60.9,
+      "あくのはどう": 60.4,
+      "からをやぶる": 55.2,
+      "はどうだん": 42.4,
+      "だいちのはどう": 22.9,
+      "ねこだまし": 21.1,
+      "れいとうビーム": 16.8,
+      "みずのはどう": 8.2,
+      "りゅうのはどう": 6.4
+    },
+    "abilities": {
+      "あめうけざら": 65.4,
+      "げきりゅう": 34.6
+    },
+    "items": {
+      "Blastoisinite": 90.2,
+      "White Herb": 2.2,
+      "Mystic Water": 1.6,
+      "Leftovers": 1.2,
+      "Choice Scarf": 1.1
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 48,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 48
+  },
+  {
+    "name": "パーモット",
+    "english": "Pawmot",
+    "rank": null,
+    "code": "0923-000",
+    "moves": {
+      "でんこうそうげき": 92.3,
+      "インファイト": 84.8,
+      "さいきのいのり": 76.7,
+      "ねこだまし": 48.3,
+      "れいとうパンチ": 23.0,
+      "まもる": 21.3,
+      "コーチング": 19.2,
+      "マッハパンチ": 9.9,
+      "かみなりパンチ": 4.4,
+      "Fire Punch": 3.7
+    },
+    "abilities": {
+      "てつのこぶし": 86.6,
+      "ちくでん": 11.3,
+      "しぜんかいふく": 2.0
+    },
+    "items": {
+      "Focus Sash": 75.7,
+      "Leppa Berry": 6.3,
+      "Life Orb": 5.7,
+      "Sitrus Berry": 1.5,
+      "White Herb": 1.3
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 49,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 49
+  },
+  {
+    "name": "ドラパルト",
+    "english": "Dragapult",
+    "rank": null,
+    "code": "0887-000",
+    "moves": {
+      "まもる": 60.8,
+      "シャドーボール": 53.8,
+      "りゅうせいぐん": 53.3,
+      "おにび": 50.0,
+      "ドラゴンアロー": 32.4,
+      "ゴーストダイブ": 31.8,
+      "サイコファング": 14.2,
+      "ドラゴンエール": 12.9,
+      "とんぼがえり": 12.9,
+      "かえんほうしゃ": 11.1
+    },
+    "abilities": {
+      "すりぬけ": 48.2,
+      "クリアボディ": 38.1,
+      "のろわれボディ": 13.7
+    },
+    "items": {
+      "Life Orb": 54.1,
+      "Focus Sash": 21.5,
+      "Dragon Fang": 2.8,
+      "Expert Belt": 2.2,
+      "Light Clay": 2.0
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 50,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 50
+  },
+  {
+    "name": "ブリムオン",
+    "english": "Hatterene",
+    "rank": null,
+    "code": "0858-000",
+    "moves": {
+      "マジカルシャイン": 92.7,
+      "トリックルーム": 88.1,
+      "ワイドフォース": 86.3,
+      "まもる": 68.0,
+      "マジカルフレイム": 20.9,
+      "サイコキネシス": 11.0,
+      "Magic Powder": 7.0,
+      "ドレインキッス": 3.5,
+      "ギガドレイン": 3.3,
+      "あくのはどう": 3.1
+    },
+    "abilities": {
+      "マジックミラー": 94.9,
+      "Healer": 4.0,
+      "Anticipation": 1.1
+    },
+    "items": {
+      "Life Orb": 61.3,
+      "Focus Sash": 13.7,
+      "Psychic Seed": 4.4,
+      "Sitrus Berry": 4.2,
+      "Twisted Spoon": 3.4
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 51,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 51
+  },
+  {
+    "name": "イッカネズミ(４ひきかぞく)",
+    "english": "Maushold [Family of Four]",
+    "rank": null,
+    "code": "0925-001",
+    "moves": {
+      "このゆびとまれ": 83.2,
+      "まもる": 70.9,
+      "ネズミざん": 59.4,
+      "いかりのまえば": 29.6,
+      "ちょうはつ": 23.7,
+      "アンコール": 21.4,
+      "フェイント": 20.9,
+      "てだすけ": 17.5,
+      "ふくろだたき": 16.0,
+      "Bite": 9.6
+    },
+    "abilities": {
+      "フレンドガード": 56.5,
+      "テクニシャン": 42.4,
+      "Cheek Pouch": 1.2
+    },
+    "items": {
+      "Wide Lens": 40.7,
+      "Chople Berry": 23.1,
+      "Focus Sash": 14.3,
+      "Sitrus Berry": 6.5,
+      "King’s Rock": 3.4
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 52,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 52
+  },
+  {
+    "name": "ジャラランガ",
+    "english": "Kommo-o",
+    "rank": null,
+    "code": "0784-000",
+    "moves": {
+      "スケイルノイズ": 94.5,
+      "まもる": 89.2,
+      "はどうだん": 86.5,
+      "ソウルビート": 63.9,
+      "かえんほうしゃ": 23.6,
+      "しんくうは": 11.9,
+      "ラスターカノン": 5.4,
+      "ドレインパンチ": 3.8,
+      "ボディプレス": 2.0,
+      "てっぺき": 1.7
+    },
+    "abilities": {
+      "ぼうおん": 91.0,
+      "Bulletproof": 5.0,
+      "Overcoat": 4.0
+    },
+    "items": {
+      "Leftovers": 50.2,
+      "Life Orb": 28.2,
+      "Sitrus Berry": 6.5,
+      "Dragon Fang": 3.4,
+      "Haban Berry": 1.3
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 53,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 53
+  },
+  {
+    "name": "アブソル",
+    "english": "Absol",
+    "rank": null,
+    "code": "0359-000",
+    "moves": {
+      "つじぎり": 89.5,
+      "シャドークロー": 68.7,
+      "みきり": 51.9,
+      "インファイト": 51.2,
+      "まもる": 32.9,
+      "サイコカッター": 24.7,
+      "ふいうち": 12.9,
+      "シザークロス": 9.6,
+      "いわなだれ": 8.8,
+      "きあいだめ": 8.0
+    },
+    "abilities": {
+      "せいぎのこころ": 56.7,
+      "きょううん": 32.5,
+      "プレッシャー": 10.8
+    },
+    "items": {
+      "Absolite Z": 97.3,
+      "Scope Lens": 0.8,
+      "Absolite": 0.4,
+      "Focus Sash": 0.2,
+      "Life Orb": 0.1
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 54,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 54
+  },
+  {
+    "name": "ファイアロー",
+    "english": "Talonflame",
+    "rank": null,
+    "code": "0663-000",
+    "moves": {
+      "おいかぜ": 95.7,
+      "フレアドライブ": 68.9,
+      "ブレイブバード": 50.9,
+      "まもる": 48.8,
+      "ダブルウイング": 26.3,
+      "ファストガード": 23.1,
+      "ちょうはつ": 13.7,
+      "アクロバット": 11.3,
+      "おにび": 8.4,
+      "Upper Hand": 6.8
+    },
+    "abilities": {
+      "はやてのつばさ": 96.6,
+      "ほのおのからだ": 3.4
+    },
+    "items": {
+      "Sharp Beak": 30.7,
+      "Focus Sash": 27.9,
+      "Life Orb": 9.0,
+      "Charcoal": 5.3,
+      "Expert Belt": 2.5
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 55,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 55
+  },
+  {
+    "name": "ソウブレイズ",
+    "english": "Ceruledge",
+    "rank": null,
+    "code": "0937-000",
+    "moves": {
+      "むねんのつるぎ": 99.6,
+      "まもる": 73.0,
+      "かげうち": 72.3,
+      "つるぎのまい": 37.8,
+      "ビルドアップ": 35.4,
+      "ポルターガイスト": 23.8,
+      "インファイト": 16.0,
+      "ゴーストダイブ": 7.1,
+      "シャドークロー": 4.8,
+      "Ally Switch": 3.8
+    },
+    "abilities": {
+      "もらいび": 88.3,
+      "くだけるよろい": 11.7
+    },
+    "items": {
+      "Grassy Seed": 24.0,
+      "Focus Sash": 23.2,
+      "Colbur Berry": 18.9,
+      "Life Orb": 9.0,
+      "Charcoal": 4.0
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 56,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 56
+  },
+  {
+    "name": "バクーダ",
+    "english": "Camerupt",
+    "rank": null,
+    "code": "0323-000",
+    "moves": {
+      "だいちのちから": 97.6,
+      "まもる": 90.4,
+      "ねっぷう": 73.4,
+      "げんしのちから": 67.7,
+      "ふんか": 43.1,
+      "かえんほうしゃ": 7.2,
+      "オーバーヒート": 6.1,
+      "ラスターカノン": 3.3,
+      "いわなだれ": 1.6,
+      "ソーラービーム": 1.6
+    },
+    "abilities": {
+      "ハードロック": 91.1,
+      "Anger Point": 4.5,
+      "Magma Armor": 4.4
+    },
+    "items": {
+      "Cameruptite": 97.6,
+      "Life Orb": 0.5,
+      "Charcoal": 0.4,
+      "Focus Sash": 0.2,
+      "Quick Claw": 0.2
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 57,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 57
+  },
+  {
+    "name": "サザンドラ",
+    "english": "Hydreigon",
+    "rank": null,
+    "code": "0635-000",
+    "moves": {
+      "あくのはどう": 87.5,
+      "りゅうせいぐん": 77.1,
+      "だいちのちから": 42.2,
+      "バークアウト": 37.4,
+      "まもる": 35.5,
+      "かえんほうしゃ": 24.1,
+      "おいかぜ": 21.1,
+      "ねっぷう": 19.1,
+      "りゅうのはどう": 15.6,
+      "とんぼがえり": 10.4
+    },
+    "abilities": {
+      "ふゆう": 100.0
+    },
+    "items": {
+      "Choice Scarf": 44.6,
+      "Focus Sash": 16.7,
+      "Life Orb": 16.4,
+      "Chople Berry": 4.0,
+      "Roseli Berry": 2.9
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 58,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 58
+  },
+  {
+    "name": "バシャーモ",
+    "english": "Blaziken",
+    "rank": null,
+    "code": "0257-000",
+    "moves": {
+      "インファイト": 67.6,
+      "フレアドライブ": 64.6,
+      "みきり": 62.5,
+      "いわなだれ": 46.4,
+      "まもる": 33.1,
+      "はどうだん": 20.3,
+      "ねっぷう": 19.5,
+      "コーチング": 14.3,
+      "Blaze Kick": 7.8,
+      "かみなりパンチ": 7.7
+    },
+    "abilities": {
+      "かそく": 97.7,
+      "もうか": 2.3
+    },
+    "items": {
+      "Blazikenite": 53.4,
+      "Focus Sash": 23.6,
+      "Life Orb": 9.6,
+      "Expert Belt": 1.8,
+      "White Herb": 1.7
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 59,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 59
+  },
+  {
+    "name": "バクフーン(ヒスイのすがた)",
+    "english": "Typhlosion [Hisuian Form]",
+    "rank": null,
+    "code": "0157-001",
+    "moves": {
+      "ふんか": 93.6,
+      "シャドーボール": 78.9,
+      "ねっぷう": 52.8,
+      "まもる": 29.7,
+      "ひゃっきやこう": 21.9,
+      "オーバーヒート": 18.7,
+      "じんつうりき": 15.7,
+      "きあいだま": 14.7,
+      "ソーラービーム": 12.9,
+      "かえんほうしゃ": 12.7
+    },
+    "abilities": {
+      "おみとおし": 67.9,
+      "もうか": 32.1
+    },
+    "items": {
+      "Choice Scarf": 69.5,
+      "Charcoal": 11.8,
+      "Focus Sash": 6.4,
+      "Life Orb": 6.0,
+      "Wise Glasses": 0.9
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=3",
+    "selectionRank": 60,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 60
+  },
+  {
+    "name": "クチート",
+    "english": "Mawile",
+    "rank": null,
+    "code": "0303-000",
+    "moves": {
+      "じゃれつく": 96.1,
+      "ふいうち": 77.7,
+      "まもる": 76.9,
+      "アイアンヘッド": 71.6,
+      "いわなだれ": 32.7,
+      "つるぎのまい": 14.4,
+      "はたきおとす": 7.4,
+      "Fire Fang": 6.2,
+      "かわらわり": 5.2,
+      "かみなりパンチ": 2.6
+    },
+    "abilities": {
+      "いかく": 57.3,
+      "かいりきバサミ": 40.4,
+      "Sheer Force": 2.3
+    },
+    "items": {
+      "Mawilite": 98.3,
+      "Life Orb": 0.3,
+      "Sitrus Berry": 0.1,
+      "Fairy Feather": 0.1,
+      "Leftovers": 0.1
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 61,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 61
+  },
+  {
+    "name": "インテレオン",
+    "english": "Inteleon",
+    "rank": null,
+    "code": "0818-000",
+    "moves": {
+      "ねらいうち": 95.7,
+      "れいとうビーム": 77.5,
+      "まもる": 76.2,
+      "きあいだめ": 39.9,
+      "あくのはどう": 24.0,
+      "しんくうは": 12.8,
+      "エアカッター": 12.6,
+      "だくりゅう": 8.5,
+      "こごえるかぜ": 6.2,
+      "みずびたし": 5.9
+    },
+    "abilities": {
+      "スナイパー": 96.0,
+      "げきりゅう": 4.0
+    },
+    "items": {
+      "Scope Lens": 63.9,
+      "Focus Sash": 15.1,
+      "Mystic Water": 6.9,
+      "Life Orb": 6.0,
+      "Choice Scarf": 1.6
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 62,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 62
+  },
+  {
+    "name": "エルレイド",
+    "english": "Gallade",
+    "rank": null,
+    "code": "0475-000",
+    "moves": {
+      "せいなるつるぎ": 90.0,
+      "サイコカッター": 78.8,
+      "リーフブレード": 38.9,
+      "ワイドガード": 35.5,
+      "まもる": 34.2,
+      "トリックルーム": 25.9,
+      "つじぎり": 20.7,
+      "かげうち": 8.3,
+      "ドレインパンチ": 7.6,
+      "いわなだれ": 6.8
+    },
+    "abilities": {
+      "きれあじ": 88.6,
+      "せいぎのこころ": 9.1,
+      "ふくつのこころ": 2.3
+    },
+    "items": {
+      "Galladite": 18.8,
+      "Focus Sash": 18.7,
+      "Life Orb": 11.8,
+      "Choice Scarf": 9.2,
+      "Expert Belt": 6.5
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 63,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 63
+  },
+  {
+    "name": "ゾロアーク(ヒスイのすがた)",
+    "english": "Zoroark [Hisuian Form]",
+    "rank": null,
+    "code": "0571-001",
+    "moves": {
+      "うらみつらみ": 52.5,
+      "ハイパーボイス": 45.4,
+      "こごえるかぜ": 40.5,
+      "かえんほうしゃ": 35.6,
+      "シャドーボール": 34.5,
+      "まもる": 24.3,
+      "ちょうはつ": 22.5,
+      "サイコキネシス": 16.9,
+      "おにび": 14.2,
+      "バークアウト": 12.9
+    },
+    "abilities": {
+      "イリュージョン": 100.0
+    },
+    "items": {
+      "Focus Sash": 39.4,
+      "Choice Scarf": 19.6,
+      "Life Orb": 19.4,
+      "Silk Scarf": 3.0,
+      "Expert Belt": 2.1
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 64,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 64
+  },
+  {
+    "name": "マスカーニャ",
+    "english": "Meowscarada",
+    "rank": null,
+    "code": "0908-000",
+    "moves": {
+      "トリックフラワー": 94.6,
+      "トリプルアクセル": 77.5,
+      "はたきおとす": 57.6,
+      "とんぼがえり": 37.3,
+      "まもる": 23.5,
+      "じゃれつく": 15.8,
+      "ふいうち": 15.2,
+      "かわらわり": 10.9,
+      "じごくづき": 10.8,
+      "かみなりパンチ": 9.9
+    },
+    "abilities": {
+      "へんげんじざい": 90.1,
+      "しんりょく": 9.9
+    },
+    "items": {
+      "Choice Scarf": 29.3,
+      "Focus Sash": 22.9,
+      "Life Orb": 20.6,
+      "Expert Belt": 7.3,
+      "Wide Lens": 3.9
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 65,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 65
+  },
+  {
+    "name": "ビビヨン",
+    "english": "Vivillon [Fancy Pattern]",
+    "rank": null,
+    "code": "0666-018",
+    "moves": {
+      "ねむりごな": 97.9,
+      "ぼうふう": 81.5,
+      "まもる": 65.9,
+      "いかりのこな": 65.4,
+      "おいかぜ": 32.2,
+      "かふんだんご": 21.4,
+      "むしのさざめき": 6.0,
+      "あまごい": 5.3,
+      "むしのていこう": 4.0,
+      "ちょうのまい": 3.3
+    },
+    "abilities": {
+      "ふくがん": 96.1,
+      "フレンドガード": 2.9,
+      "Shield Dust": 1.0
+    },
+    "items": {
+      "Focus Sash": 77.5,
+      "Choice Scarf": 17.5,
+      "Wide Lens": 0.8,
+      "Bright Powder": 0.7,
+      "Leftovers": 0.7
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 66,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 66
+  },
+  {
+    "name": "ネギガナイト",
+    "english": "Sirfetch'd",
+    "rank": null,
+    "code": "0865-000",
+    "moves": {
+      "スターアサルト": 86.6,
+      "みきり": 58.1,
+      "インファイト": 51.0,
+      "リーフブレード": 45.6,
+      "つじぎり": 26.4,
+      "であいがしら": 24.2,
+      "フェイント": 22.0,
+      "まもる": 17.9,
+      "ブレイブバード": 12.4,
+      "どくづき": 8.3
+    },
+    "abilities": {
+      "きもったま": 97.2,
+      "ふくつのこころ": 2.8
+    },
+    "items": {
+      "Leek": 82.5,
+      "Life Orb": 3.9,
+      "Focus Sash": 3.9,
+      "Choice Scarf": 2.8,
+      "Black Belt": 1.6
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 67,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 67
+  },
+  {
+    "name": "クエスパトラ",
+    "english": "Espathra",
+    "rank": null,
+    "code": "0956-000",
+    "moves": {
+      "まもる": 95.2,
+      "めいそう": 87.6,
+      "ルミナコリジョン": 87.5,
+      "バトンタッチ": 87.4,
+      "ワイドフォース": 9.0,
+      "マジカルシャイン": 6.3,
+      "Stored Power": 5.7,
+      "さいみんじゅつ": 3.2,
+      "はねやすめ": 1.7,
+      "あまごい": 1.7
+    },
+    "abilities": {
+      "かそく": 98.8,
+      "Opportunist": 1.1,
+      "おみとおし": 0.1
+    },
+    "items": {
+      "Electric Seed": 48.5,
+      "Grassy Seed": 14.5,
+      "Focus Sash": 9.6,
+      "Sitrus Berry": 6.0,
+      "Psychic Seed": 5.1
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 68,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 68
+  },
+  {
+    "name": "アマージョ",
+    "english": "Tsareena",
+    "rank": null,
+    "code": "0763-000",
+    "moves": {
+      "トリプルアクセル": 90.2,
+      "まもる": 61.8,
+      "パワーウィップ": 58.8,
+      "とびひざげり": 41.9,
+      "トロピカルキック": 37.1,
+      "けたぐり": 27.5,
+      "とんぼがえり": 15.6,
+      "ちょうはつ": 15.4,
+      "はたきおとす": 13.7,
+      "しねんのずつき": 7.2
+    },
+    "abilities": {
+      "じょおうのいげん": 99.1,
+      "Sweet Veil": 0.6,
+      "リーフガード": 0.3
+    },
+    "items": {
+      "Wide Lens": 47.8,
+      "Focus Sash": 12.2,
+      "Choice Scarf": 11.6,
+      "Sitrus Berry": 6.6,
+      "Life Orb": 4.4
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 69,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 69
+  },
+  {
+    "name": "ロトム(ウォッシュロトム)",
+    "english": "Wash Rotom",
+    "rank": null,
+    "code": "0479-002",
+    "moves": {
+      "ハイドロポンプ": 95.2,
+      "おにび": 65.8,
+      "10まんボルト": 63.2,
+      "まもる": 46.8,
+      "ボルトチェンジ": 37.5,
+      "エレキネット": 18.8,
+      "ほうでん": 12.1,
+      "ひかりのかべ": 11.1,
+      "トリック": 9.6,
+      "Thunder": 5.7
+    },
+    "abilities": {
+      "ふゆう": 100.0
+    },
+    "items": {
+      "Sitrus Berry": 29.7,
+      "Leftovers": 26.8,
+      "Choice Scarf": 17.6,
+      "Wide Lens": 6.1,
+      "Magnet": 3.8
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 70,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 70
+  },
+  {
+    "name": "フーディン",
+    "english": "Alakazam",
+    "rank": null,
+    "code": "0065-000",
+    "moves": {
+      "ワイドフォース": 89.1,
+      "まもる": 72.4,
+      "きあいだま": 43.6,
+      "シャドーボール": 40.8,
+      "マジカルシャイン": 39.2,
+      "スピードスワップ": 20.9,
+      "サイコキネシス": 15.5,
+      "わるだくみ": 13.8,
+      "エナジーボール": 11.0,
+      "アンコール": 9.8
+    },
+    "abilities": {
+      "せいしんりょく": 57.6,
+      "マジックガード": 35.6,
+      "シンクロ": 6.8
+    },
+    "items": {
+      "Alakazite": 70.6,
+      "Focus Sash": 13.0,
+      "Life Orb": 7.0,
+      "Psychic Seed": 2.4,
+      "Twisted Spoon": 1.6
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 71,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 71
+  },
+  {
+    "name": "バサギリ",
+    "english": "Kleavor",
+    "rank": null,
+    "code": "0900-000",
+    "moves": {
+      "がんせきアックス": 97.8,
+      "シザークロス": 90.1,
+      "まもる": 45.9,
+      "つじぎり": 36.5,
+      "インファイト": 35.2,
+      "おいかぜ": 25.0,
+      "とんぼがえり": 19.6,
+      "フェイント": 11.4,
+      "Aerial Ace": 9.7,
+      "いわなだれ": 7.8
+    },
+    "abilities": {
+      "きれあじ": 97.7,
+      "Sheer Force": 1.9,
+      "Swarm": 0.4
+    },
+    "items": {
+      "Focus Sash": 39.1,
+      "Choice Scarf": 32.1,
+      "Life Orb": 9.3,
+      "White Herb": 2.7,
+      "Expert Belt": 2.7
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 72,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 72
+  },
+  {
+    "name": "イダイトウ♀",
+    "english": "Basculegion [Female]",
+    "rank": null,
+    "code": "0902-001",
+    "moves": {
+      "まもる": 76.9,
+      "シャドーボール": 76.5,
+      "だくりゅう": 74.7,
+      "れいとうビーム": 65.0,
+      "おはかまいり": 23.1,
+      "アクアジェット": 21.6,
+      "ウェーブタックル": 17.3,
+      "クイックターン": 11.7,
+      "ハイドロポンプ": 6.9,
+      "なみのり": 6.9
+    },
+    "abilities": {
+      "すいすい": 57.4,
+      "てきおうりょく": 42.1,
+      "かたやぶり": 0.5
+    },
+    "items": {
+      "Focus Sash": 35.1,
+      "Life Orb": 30.0,
+      "Choice Scarf": 21.0,
+      "Mystic Water": 5.8,
+      "Sitrus Berry": 1.1
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 73,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 73
+  },
+  {
+    "name": "ミミッキュ",
+    "english": "Mimikyu",
+    "rank": null,
+    "code": "0778-000",
+    "moves": {
+      "じゃれつく": 85.1,
+      "かげうち": 59.1,
+      "トリックルーム": 48.1,
+      "つるぎのまい": 32.9,
+      "シャドークロー": 27.1,
+      "ゴーストダイブ": 19.4,
+      "まもる": 19.0,
+      "ドレインパンチ": 16.6,
+      "ウッドハンマー": 15.1,
+      "おにび": 12.6
+    },
+    "abilities": {
+      "ばけのかわ": 100.0
+    },
+    "items": {
+      "Life Orb": 38.5,
+      "Mental Herb": 9.3,
+      "Sitrus Berry": 8.5,
+      "Leftovers": 6.9,
+      "Spell Tag": 4.0
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 74,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 74
+  },
+  {
+    "name": "エンペルト",
+    "english": "Empoleon",
+    "rank": null,
+    "code": "0395-000",
+    "moves": {
+      "ラスターカノン": 85.1,
+      "まもる": 76.8,
+      "れいとうビーム": 68.4,
+      "ハイドロポンプ": 54.2,
+      "なみのり": 27.1,
+      "しんくうは": 13.0,
+      "こごえるかぜ": 11.9,
+      "Hydro Cannon": 7.0,
+      "あくび": 6.8,
+      "はねやすめ": 5.8
+    },
+    "abilities": {
+      "かちき": 97.8,
+      "げきりゅう": 2.2
+    },
+    "items": {
+      "Leftovers": 22.5,
+      "Chople Berry": 18.2,
+      "Sitrus Berry": 12.5,
+      "Life Orb": 11.5,
+      "Mystic Water": 4.2
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 75,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 75
+  },
+  {
+    "name": "マニューラ",
+    "english": "Weavile",
+    "rank": null,
+    "code": "0461-000",
+    "moves": {
+      "ねこだまし": 79.9,
+      "はたきおとす": 75.6,
+      "アイススピナー": 44.9,
+      "トリプルアクセル": 44.9,
+      "まもる": 30.4,
+      "けたぐり": 18.3,
+      "じごくづき": 16.1,
+      "こおりのつぶて": 15.4,
+      "ちょうはつ": 10.2,
+      "かわらわり": 8.8
+    },
+    "abilities": {
+      "わるいてぐせ": 58.8,
+      "プレッシャー": 41.2
+    },
+    "items": {
+      "Focus Sash": 64.5,
+      "Life Orb": 9.3,
+      "Wide Lens": 6.2,
+      "Expert Belt": 2.5,
+      "King’s Rock": 2.2
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 76,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 76
+  },
+  {
+    "name": "オトスパス",
+    "english": "Grapploct",
+    "rank": null,
+    "code": "0853-000",
+    "moves": {
+      "やまあらし": 94.8,
+      "みきり": 62.4,
+      "マッハパンチ": 53.8,
+      "たこがため": 29.4,
+      "フェイント": 22.3,
+      "しっぺがえし": 20.2,
+      "れいとうパンチ": 19.9,
+      "みずびたし": 18.1,
+      "まもる": 16.7,
+      "ふいうち": 13.4
+    },
+    "abilities": {
+      "テクニシャン": 97.4,
+      "じゅうなん": 2.6
+    },
+    "items": {
+      "Black Belt": 30.1,
+      "Life Orb": 24.4,
+      "Focus Sash": 13.8,
+      "Sitrus Berry": 9.3,
+      "Psychic Seed": 4.3
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 77,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 77
+  },
+  {
+    "name": "カラマネロ",
+    "english": "Malamar",
+    "rank": null,
+    "code": "0687-000",
+    "moves": {
+      "ばかぢから": 87.7,
+      "まもる": 52.8,
+      "はたきおとす": 51.7,
+      "トリックルーム": 39.2,
+      "スキルスワップ": 32.9,
+      "サイコカッター": 23.9,
+      "じごくづき": 17.6,
+      "ひっくりかえす": 11.3,
+      "つじぎり": 9.2,
+      "じこあんじ": 7.9
+    },
+    "abilities": {
+      "あまのじゃく": 98.7,
+      "すりぬけ": 0.8,
+      "Suction Cups": 0.5
+    },
+    "items": {
+      "Malamarite": 46.9,
+      "Sitrus Berry": 9.4,
+      "Choice Scarf": 8.6,
+      "Leftovers": 8.3,
+      "Roseli Berry": 7.6
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 78,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 78
+  },
+  {
+    "name": "シャンデラ",
+    "english": "Chandelure",
+    "rank": null,
+    "code": "0609-000",
+    "moves": {
+      "シャドーボール": 89.4,
+      "ねっぷう": 79.0,
+      "まもる": 61.5,
+      "エナジーボール": 34.2,
+      "トリックルーム": 34.0,
+      "かえんほうしゃ": 18.2,
+      "めいそう": 11.0,
+      "オーバーヒート": 9.3,
+      "サイコキネシス": 8.1,
+      "ちいさくなる": 8.0
+    },
+    "abilities": {
+      "もらいび": 78.3,
+      "すりぬけ": 15.1,
+      "ほのおのからだ": 6.6
+    },
+    "items": {
+      "Chandelurite": 38.7,
+      "Focus Sash": 25.5,
+      "Choice Scarf": 10.2,
+      "Life Orb": 5.3,
+      "Sitrus Berry": 2.9
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 79,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 79
+  },
+  {
+    "name": "ハッサム",
+    "english": "Scizor",
+    "rank": null,
+    "code": "0212-000",
+    "moves": {
+      "バレットパンチ": 96.8,
+      "むしくい": 72.2,
+      "まもる": 67.4,
+      "つるぎのまい": 43.7,
+      "インファイト": 26.5,
+      "ダブルウイング": 22.5,
+      "はたきおとす": 10.1,
+      "とんぼがえり": 9.1,
+      "おいかぜ": 6.1,
+      "アイアンヘッド": 4.8
+    },
+    "abilities": {
+      "テクニシャン": 97.4,
+      "Swarm": 1.8,
+      "Light Metal": 0.8
+    },
+    "items": {
+      "Scizorite": 33.4,
+      "Life Orb": 32.7,
+      "Metal Coat": 7.6,
+      "Focus Sash": 5.6,
+      "Expert Belt": 4.6
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=4",
+    "selectionRank": 80,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 80
+  },
+  {
+    "name": "スコヴィラン",
+    "english": "Scovillain",
+    "rank": null,
+    "code": "0952-000",
+    "moves": {
+      "いかりのこな": 87.5,
+      "まもる": 86.1,
+      "ギガドレイン": 63.8,
+      "オーバーヒート": 47.5,
+      "やどりぎのタネ": 38.7,
+      "かえんほうしゃ": 38.6,
+      "Burning Jealousy": 5.1,
+      "リーフストーム": 4.2,
+      "エナジーボール": 3.4,
+      "Spicy Extract": 3.2
+    },
+    "abilities": {
+      "ムラっけ": 79.0,
+      "ようりょくそ": 14.1,
+      "Insomnia": 6.9
+    },
+    "items": {
+      "Scovillainite": 91.2,
+      "Focus Sash": 1.7,
+      "Leftovers": 1.5,
+      "Sitrus Berry": 0.8,
+      "Life Orb": 0.7
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 81,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 81
+  },
+  {
+    "name": "バチンウニ",
+    "english": "Pincurchin",
+    "rank": null,
+    "code": "0871-000",
+    "moves": {
+      "ライジングボルト": 87.0,
+      "まもる": 67.5,
+      "ふいうち": 52.0,
+      "ねっとう": 38.6,
+      "つぼをつく": 14.8,
+      "エレキネット": 12.8,
+      "じこさいせい": 11.7,
+      "ほうでん": 11.7,
+      "だくりゅう": 9.9,
+      "ハイドロポンプ": 9.6
+    },
+    "abilities": {
+      "エレキメイカー": 97.6,
+      "ひらいしん": 2.4
+    },
+    "items": {
+      "Magnet": 28.4,
+      "Electric Seed": 22.0,
+      "Life Orb": 9.5,
+      "Terrain Extender": 8.7,
+      "Sitrus Berry": 5.5
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 82,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 82
+  },
+  {
+    "name": "ギルガルド",
+    "english": "Aegislash",
+    "rank": null,
+    "code": "0681-000",
+    "moves": {
+      "キングシールド": 80.8,
+      "アイアンヘッド": 62.0,
+      "ポルターガイスト": 59.4,
+      "ワイドガード": 48.8,
+      "かげうち": 38.3,
+      "せいなるつるぎ": 37.6,
+      "シャドーボール": 16.6,
+      "インファイト": 15.3,
+      "ラスターカノン": 13.3,
+      "つるぎのまい": 7.8
+    },
+    "abilities": {
+      "バトルスイッチ": 100.0
+    },
+    "items": {
+      "Focus Sash": 25.7,
+      "Leftovers": 21.2,
+      "Life Orb": 15.4,
+      "Spell Tag": 10.4,
+      "Sitrus Berry": 6.3
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 83,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 83
+  },
+  {
+    "name": "ピクシー",
+    "english": "Clefable",
+    "rank": null,
+    "code": "0036-000",
+    "moves": {
+      "このゆびとまれ": 79.3,
+      "ムーンフォース": 57.0,
+      "まもる": 38.8,
+      "いのちのしずく": 29.2,
+      "てだすけ": 24.1,
+      "マジカルシャイン": 20.9,
+      "コスモパワー": 15.5,
+      "つきのひかり": 13.6,
+      "スキルスワップ": 13.2,
+      "Stored Power": 9.5
+    },
+    "abilities": {
+      "てんねん": 54.9,
+      "マジックガード": 39.2,
+      "メロメロボディ": 6.0
+    },
+    "items": {
+      "Sitrus Berry": 27.1,
+      "Leftovers": 24.7,
+      "Clefablite": 20.0,
+      "Rocky Helmet": 9.2,
+      "Life Orb": 3.6
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 84,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 84
+  },
+  {
+    "name": "ガルーラ",
+    "english": "Kangaskhan",
+    "rank": null,
+    "code": "0115-000",
+    "moves": {
+      "ねこだまし": 93.7,
+      "とっておき": 43.6,
+      "すてみタックル": 41.4,
+      "ふいうち": 22.5,
+      "れいとうパンチ": 21.5,
+      "ドレインパンチ": 20.2,
+      "アームハンマー": 16.0,
+      "まもる": 9.9,
+      "かみくだく": 7.5,
+      "けたぐり": 7.1
+    },
+    "abilities": {
+      "きもったま": 92.7,
+      "せいしんりょく": 7.0,
+      "Early Bird": 0.4
+    },
+    "items": {
+      "Kangaskhanite": 43.6,
+      "Silk Scarf": 35.6,
+      "Life Orb": 8.7,
+      "Chople Berry": 2.2,
+      "Sitrus Berry": 1.5
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 85,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 85
+  },
+  {
+    "name": "ドヒドイデ",
+    "english": "Toxapex",
+    "rank": null,
+    "code": "0748-000",
+    "moves": {
+      "どくどく": 90.1,
+      "トーチカ": 88.1,
+      "まとわりつく": 83.5,
+      "ワイドガード": 57.9,
+      "じこさいせい": 38.5,
+      "たくわえる": 5.9,
+      "くろいきり": 4.5,
+      "Venoshock": 3.3,
+      "アクアブレイク": 3.1,
+      "だくりゅう": 2.9
+    },
+    "abilities": {
+      "さいせいりょく": 89.0,
+      "ひとでなし": 8.7,
+      "じゅうなん": 2.4
+    },
+    "items": {
+      "Leftovers": 76.3,
+      "Rocky Helmet": 7.1,
+      "Binding Band": 5.4,
+      "Sitrus Berry": 5.4,
+      "Bright Powder": 0.8
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 86,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 86
+  },
+  {
+    "name": "エースバーン",
+    "english": "Cinderace",
+    "rank": null,
+    "code": "0815-000",
+    "moves": {
+      "かえんボール": 96.0,
+      "とびひざげり": 56.6,
+      "ふいうち": 42.0,
+      "とんぼがえり": 36.5,
+      "まもる": 32.9,
+      "ダストシュート": 30.6,
+      "アイアンヘッド": 26.1,
+      "しねんのずつき": 9.5,
+      "けたぐり": 7.1,
+      "Smack Down": 6.3
+    },
+    "abilities": {
+      "リベロ": 91.7,
+      "もうか": 8.3
+    },
+    "items": {
+      "Life Orb": 25.4,
+      "Wide Lens": 16.2,
+      "Focus Sash": 16.2,
+      "Choice Scarf": 11.1,
+      "Expert Belt": 7.9
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 87,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 87
+  },
+  {
+    "name": "ヌメルゴン(ヒスイのすがた)",
+    "english": "Goodra [Hisuian Form]",
+    "rank": null,
+    "code": "0706-001",
+    "moves": {
+      "ラスターカノン": 48.6,
+      "たてこもる": 44.0,
+      "まもる": 43.5,
+      "ボディプレス": 42.3,
+      "かえんほうしゃ": 29.8,
+      "いのちのしずく": 25.7,
+      "りゅうのはどう": 25.5,
+      "りゅうせいぐん": 19.0,
+      "10まんボルト": 18.7,
+      "れいとうビーム": 17.1
+    },
+    "abilities": {
+      "シェルアーマー": 52.4,
+      "ぬめぬめ": 26.2,
+      "そうしょく": 21.4
+    },
+    "items": {
+      "Leftovers": 54.8,
+      "Sitrus Berry": 9.7,
+      "Rocky Helmet": 5.3,
+      "Chople Berry": 3.8,
+      "Life Orb": 3.5
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 88,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 88
+  },
+  {
+    "name": "ストリンダー",
+    "english": "Toxtricity",
+    "rank": null,
+    "code": "0849-000",
+    "moves": {
+      "オーバードライブ": 96.4,
+      "ヘドロばくだん": 72.6,
+      "まもる": 62.8,
+      "ばくおんぱ": 54.6,
+      "バークアウト": 24.1,
+      "サイコノイズ": 15.1,
+      "ヘドロウェーブ": 13.6,
+      "ボルトチェンジ": 13.1,
+      "ライジングボルト": 5.3,
+      "Shift Gear": 5.2
+    },
+    "abilities": {
+      "パンクロック": 94.4,
+      "Plus": 3.2,
+      "テクニシャン": 2.4
+    },
+    "items": {
+      "Life Orb": 33.4,
+      "Choice Scarf": 20.6,
+      "Focus Sash": 12.4,
+      "Magnet": 9.2,
+      "Air Balloon": 8.2
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 89,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 89
+  },
+  {
+    "name": "メガニウム",
+    "english": "Meganium",
+    "rank": null,
+    "code": "0154-000",
+    "moves": {
+      "ソーラービーム": 95.2,
+      "ウェザーボール": 94.1,
+      "マジカルシャイン": 88.2,
+      "まもる": 79.5,
+      "だいちのちから": 15.1,
+      "こうごうせい": 14.4,
+      "ギガドレイン": 2.9,
+      "かふんだんご": 1.8,
+      "げんしのちから": 1.7,
+      "リーフストーム": 1.3
+    },
+    "abilities": {
+      "リーフガード": 50.4,
+      "しんりょく": 49.6
+    },
+    "items": {
+      "Meganiumite": 98.7,
+      "Leftovers": 0.1,
+      "Muscle Band": 0.1,
+      "Miracle Seed": 0.1,
+      "Occa Berry": 0.1
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 90,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 90
+  },
+  {
+    "name": "ゲッコウガ",
+    "english": "Greninja",
+    "rank": null,
+    "code": "0658-000",
+    "moves": {
+      "あくのはどう": 75.5,
+      "れいとうビーム": 66.4,
+      "まもる": 42.9,
+      "みずしゅりけん": 31.1,
+      "ハイドロポンプ": 24.3,
+      "ヘドロウェーブ": 23.8,
+      "じんつうりき": 19.9,
+      "ふぶき": 16.4,
+      "なみのり": 15.1,
+      "Grass Knot": 8.4
+    },
+    "abilities": {
+      "へんげんじざい": 91.6,
+      "げきりゅう": 8.4
+    },
+    "items": {
+      "Greninjite": 51.1,
+      "Focus Sash": 14.6,
+      "Life Orb": 11.5,
+      "Choice Scarf": 6.5,
+      "Expert Belt": 5.0
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 91,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 91
+  },
+  {
+    "name": "ヤレユータン",
+    "english": "Oranguru",
+    "rank": null,
+    "code": "0765-000",
+    "moves": {
+      "さいはい": 94.6,
+      "トリックルーム": 89.9,
+      "まもる": 47.1,
+      "サイコキネシス": 38.5,
+      "アンコール": 19.8,
+      "ワイドフォース": 18.1,
+      "イカサマ": 9.8,
+      "あくび": 9.0,
+      "ちょうはつ": 5.5,
+      "ひかりのかべ": 5.5
+    },
+    "abilities": {
+      "せいしんりょく": 62.7,
+      "テレパシー": 33.7,
+      "Symbiosis": 3.6
+    },
+    "items": {
+      "Sitrus Berry": 24.2,
+      "Mental Herb": 23.4,
+      "Colbur Berry": 20.2,
+      "Leftovers": 10.2,
+      "Focus Sash": 5.6
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 92,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 92
+  },
+  {
+    "name": "ギャラドス",
+    "english": "Gyarados",
+    "rank": null,
+    "code": "0130-000",
+    "moves": {
+      "たきのぼり": 90.9,
+      "まもる": 54.8,
+      "りゅうのまい": 49.1,
+      "かみくだく": 44.3,
+      "こおりのキバ": 34.9,
+      "じしん": 22.2,
+      "パワーウィップ": 21.0,
+      "やけっぱち": 10.4,
+      "ちょうはつ": 7.7,
+      "Stone Edge": 7.3
+    },
+    "abilities": {
+      "いかく": 91.0,
+      "じしんかじょう": 9.0
+    },
+    "items": {
+      "Gyaradosite": 50.3,
+      "Sitrus Berry": 10.9,
+      "Leftovers": 6.7,
+      "Rocky Helmet": 5.5,
+      "Life Orb": 5.1
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 93,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 93
+  },
+  {
+    "name": "カビゴン",
+    "english": "Snorlax",
+    "rank": null,
+    "code": "0143-000",
+    "moves": {
+      "まもる": 57.7,
+      "じわれ": 33.2,
+      "たくわえる": 23.9,
+      "はらだいこ": 23.7,
+      "のしかかり": 19.5,
+      "じしん": 17.2,
+      "いわなだれ": 16.9,
+      "あくび": 15.2,
+      "ボディプレス": 14.9,
+      "じばく": 14.5
+    },
+    "abilities": {
+      "あついしぼう": 89.0,
+      "Immunity": 6.1,
+      "Gluttony": 4.9
+    },
+    "items": {
+      "Leftovers": 44.3,
+      "Sitrus Berry": 24.8,
+      "Normal Gem": 5.7,
+      "Chople Berry": 5.1,
+      "Life Orb": 4.3
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 94,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 94
+  },
+  {
+    "name": "ニャオニクス(メス)",
+    "english": "Meowstic [Female]",
+    "rank": null,
+    "code": "0678-001",
+    "moves": {
+      "ワイドフォース": 97.0,
+      "まもる": 93.3,
+      "10まんボルト": 75.7,
+      "ねこだまし": 66.3,
+      "みわくのボイス": 19.9,
+      "あくのはどう": 12.9,
+      "わるだくみ": 8.1,
+      "シャドーボール": 7.1,
+      "サイコキネシス": 3.2,
+      "エナジーボール": 2.8
+    },
+    "abilities": {
+      "かちき": 98.1,
+      "すりぬけ": 1.3,
+      "Keen Eye": 0.6
+    },
+    "items": {
+      "Meowsticite": 96.4,
+      "Focus Sash": 0.9,
+      "Twisted Spoon": 0.4,
+      "Sitrus Berry": 0.3,
+      "Choice Scarf": 0.2
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 95,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 95
+  },
+  {
+    "name": "ハリーマン",
+    "english": "Overqwil",
+    "rank": null,
+    "code": "0904-000",
+    "moves": {
+      "じごくづき": 59.1,
+      "ちいさくなる": 58.0,
+      "たくわえる": 44.3,
+      "どくばりセンボン": 41.9,
+      "まもる": 40.5,
+      "つるぎのまい": 28.2,
+      "どくづき": 17.3,
+      "かみくだく": 14.9,
+      "アクアブレイク": 13.3,
+      "どくどく": 9.4
+    },
+    "abilities": {
+      "いかく": 55.5,
+      "すいすい": 28.3,
+      "どくのトゲ": 16.3
+    },
+    "items": {
+      "Leftovers": 50.7,
+      "Life Orb": 16.2,
+      "Sitrus Berry": 6.0,
+      "Bright Powder": 5.5,
+      "Expert Belt": 2.5
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 96,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 96
+  },
+  {
+    "name": "ダイケンキ(ヒスイのすがた)",
+    "english": "Samurott [Hisuian Form]",
+    "rank": null,
+    "code": "0503-001",
+    "moves": {
+      "せいなるつるぎ": 85.0,
+      "ひけん・ちえなみ": 59.8,
+      "アクアカッター": 55.7,
+      "つじぎり": 36.7,
+      "まもる": 33.9,
+      "ふいうち": 32.0,
+      "シェルブレード": 31.9,
+      "クイックターン": 14.3,
+      "みきり": 12.5,
+      "アクアジェット": 7.9
+    },
+    "abilities": {
+      "きれあじ": 98.7,
+      "げきりゅう": 1.3
+    },
+    "items": {
+      "Life Orb": 22.8,
+      "Choice Scarf": 22.7,
+      "Focus Sash": 16.0,
+      "Black Glasses": 7.7,
+      "Scope Lens": 7.6
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 97,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 97
+  },
+  {
+    "name": "マンムー",
+    "english": "Mamoswine",
+    "rank": null,
+    "code": "0473-000",
+    "moves": {
+      "こおりのつぶて": 80.3,
+      "まもる": 69.7,
+      "10まんばりき": 66.2,
+      "つららおとし": 63.4,
+      "じしん": 40.2,
+      "いわなだれ": 28.6,
+      "Icicle Spear": 9.3,
+      "はたきおとす": 7.5,
+      "ばかぢから": 3.6,
+      "アイアンヘッド": 3.3
+    },
+    "abilities": {
+      "どんかん": 71.5,
+      "あついしぼう": 25.6,
+      "ゆきがくれ": 2.9
+    },
+    "items": {
+      "Focus Sash": 40.7,
+      "Life Orb": 24.1,
+      "Choice Scarf": 12.3,
+      "Never-Melt Ice": 3.1,
+      "Sitrus Berry": 2.4
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 98,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 98
+  },
+  {
+    "name": "ハラバリー",
+    "english": "Bellibolt",
+    "rank": null,
+    "code": "0939-000",
+    "moves": {
+      "パラボラチャージ": 96.1,
+      "みずびたし": 78.1,
+      "まもる": 65.7,
+      "10まんボルト": 33.1,
+      "なまける": 19.8,
+      "どくどく": 16.7,
+      "だくりゅう": 13.9,
+      "ボルトチェンジ": 11.7,
+      "Acid Spray": 8.7,
+      "ウェザーボール": 6.7
+    },
+    "abilities": {
+      "でんきにかえる": 97.9,
+      "Static": 1.7,
+      "しめりけ": 0.4
+    },
+    "items": {
+      "Leftovers": 30.4,
+      "Magnet": 18.8,
+      "Sitrus Berry": 15.9,
+      "Big Root": 5.3,
+      "Life Orb": 3.6
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 99,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 99
+  },
+  {
+    "name": "チルタリス",
+    "english": "Altaria",
+    "rank": null,
+    "code": "0334-000",
+    "moves": {
+      "まもる": 80.4,
+      "おいかぜ": 67.9,
+      "おにび": 54.8,
+      "れいとうビーム": 49.8,
+      "ハイパーボイス": 31.0,
+      "はねやすめ": 16.0,
+      "りゅうのはどう": 10.3,
+      "りゅうせいぐん": 9.3,
+      "かえんほうしゃ": 9.2,
+      "Cotton Guard": 8.4
+    },
+    "abilities": {
+      "ノーてんき": 96.0,
+      "しぜんかいふく": 4.0
+    },
+    "items": {
+      "Haban Berry": 45.2,
+      "Altarianite": 35.8,
+      "Leftovers": 4.9,
+      "Sitrus Berry": 4.5,
+      "Yache Berry": 1.7
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=5",
+    "selectionRank": 100,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 100
+  },
+  {
+    "name": "ジュカイン",
+    "english": "Sceptile",
+    "rank": null,
+    "code": "0254-000",
+    "moves": {
+      "りゅうのはどう": 86.0,
+      "だいちのちから": 80.8,
+      "みきり": 44.1,
+      "エナジーボール": 41.8,
+      "まもる": 31.9,
+      "リーフストーム": 31.3,
+      "ギガドレイン": 22.7,
+      "Shed Tail": 9.8,
+      "きあいだま": 8.2,
+      "しんくうは": 4.9
+    },
+    "abilities": {
+      "しんりょく": 66.2,
+      "かるわざ": 33.8
+    },
+    "items": {
+      "Sceptilite": 80.7,
+      "White Herb": 3.0,
+      "Electric Seed": 2.4,
+      "Focus Sash": 2.3,
+      "Psychic Seed": 2.3
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 101,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 101
+  },
+  {
+    "name": "ロトム(ヒートロトム)",
+    "english": "Heat Rotom",
+    "rank": null,
+    "code": "0479-001",
+    "moves": {
+      "オーバーヒート": 97.3,
+      "ボルトチェンジ": 55.9,
+      "10まんボルト": 48.5,
+      "おにび": 43.3,
+      "まもる": 30.4,
+      "ほうでん": 30.3,
+      "エレキネット": 28.7,
+      "トリック": 20.7,
+      "シャドーボール": 6.6,
+      "Thunder": 6.1
+    },
+    "abilities": {
+      "ふゆう": 100.0
+    },
+    "items": {
+      "Choice Scarf": 41.8,
+      "Sitrus Berry": 23.7,
+      "Leftovers": 7.6,
+      "White Herb": 5.9,
+      "Life Orb": 3.4
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 102,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 102
+  },
+  {
+    "name": "ズルズキン",
+    "english": "Scrafty",
+    "rank": null,
+    "code": "0560-000",
+    "moves": {
+      "はたきおとす": 82.6,
+      "ねこだまし": 71.4,
+      "ドレインパンチ": 66.8,
+      "インファイト": 30.4,
+      "まもる": 29.3,
+      "みきり": 23.7,
+      "れいとうパンチ": 13.0,
+      "じごくづき": 10.6,
+      "つるぎのまい": 9.6,
+      "いわなだれ": 8.6
+    },
+    "abilities": {
+      "いかく": 94.7,
+      "じしんかじょう": 4.7,
+      "Shed Skin": 0.6
+    },
+    "items": {
+      "Scraftinite": 73.2,
+      "Focus Sash": 5.3,
+      "Leftovers": 4.1,
+      "Sitrus Berry": 3.8,
+      "Roseli Berry": 2.5
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 103,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 103
+  },
+  {
+    "name": "ミミロップ",
+    "english": "Lopunny",
+    "rank": null,
+    "code": "0428-000",
+    "moves": {
+      "ねこだまし": 89.3,
+      "インファイト": 85.7,
+      "トリプルアクセル": 67.2,
+      "かみなりパンチ": 33.7,
+      "まもる": 27.8,
+      "アンコール": 17.0,
+      "とんぼがえり": 13.2,
+      "れいとうパンチ": 9.1,
+      "After You": 8.2,
+      "とびひざげり": 6.3
+    },
+    "abilities": {
+      "じゅうなん": 67.6,
+      "メロメロボディ": 28.5,
+      "Klutz": 3.9
+    },
+    "items": {
+      "Lopunnite": 95.5,
+      "Focus Sash": 0.8,
+      "Chople Berry": 0.5,
+      "Red Card": 0.4,
+      "Sitrus Berry": 0.3
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 104,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 104
+  },
+  {
+    "name": "カエンジシ",
+    "english": "Pyroar",
+    "rank": null,
+    "code": "0668-000",
+    "moves": {
+      "ねっぷう": 96.7,
+      "まもる": 96.0,
+      "オーバーヒート": 65.4,
+      "ねっさのだいち": 29.8,
+      "ソーラービーム": 27.7,
+      "ハイパーボイス": 24.0,
+      "かえんほうしゃ": 14.9,
+      "あくのはどう": 9.4,
+      "バークアウト": 8.9,
+      "にほんばれ": 7.5
+    },
+    "abilities": {
+      "きんちょうかん": 84.0,
+      "じしんかじょう": 8.6,
+      "とうそうしん": 7.5
+    },
+    "items": {
+      "Pyroarite": 96.7,
+      "Charcoal": 1.2,
+      "Life Orb": 0.4,
+      "Focus Sash": 0.4,
+      "Choice Scarf": 0.3
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 105,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 105
+  },
+  {
+    "name": "オニシズクモ",
+    "english": "Araquanid",
+    "rank": null,
+    "code": "0752-000",
+    "moves": {
+      "アクアブレイク": 89.3,
+      "ワイドガード": 85.7,
+      "きゅうけつ": 62.5,
+      "まもる": 49.5,
+      "ミラーコート": 12.4,
+      "なかまづくり": 10.8,
+      "あまごい": 9.3,
+      "Sticky Web": 8.5,
+      "みずびたし": 7.7,
+      "Lunge": 7.3
+    },
+    "abilities": {
+      "すいほう": 97.5,
+      "Water Absorb": 2.5
+    },
+    "items": {
+      "Mystic Water": 37.3,
+      "Sitrus Berry": 18.2,
+      "Leftovers": 17.2,
+      "Life Orb": 7.3,
+      "Quick Claw": 2.0
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 106,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 106
+  },
+  {
+    "name": "ジジーロン",
+    "english": "Drampa",
+    "rank": null,
+    "code": "0780-000",
+    "moves": {
+      "まもる": 67.3,
+      "ハイパーボイス": 65.4,
+      "だいちのちから": 46.4,
+      "りゅうのはどう": 40.6,
+      "かえんほうしゃ": 35.2,
+      "りゅうせいぐん": 30.7,
+      "10まんボルト": 29.0,
+      "ねっぷう": 22.2,
+      "れいとうビーム": 11.2,
+      "エナジーボール": 9.1
+    },
+    "abilities": {
+      "ノーてんき": 75.3,
+      "ぎゃくじょう": 21.4,
+      "そうしょく": 3.3
+    },
+    "items": {
+      "Drampanite": 50.6,
+      "Life Orb": 12.1,
+      "Sitrus Berry": 8.5,
+      "Expert Belt": 6.7,
+      "Quick Claw": 3.4
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 107,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 107
+  },
+  {
+    "name": "ストリンダー(ローなすがた)",
+    "english": "Toxtricity [Low Key Form]",
+    "rank": null,
+    "code": "0849-001",
+    "moves": {
+      "オーバードライブ": 95.2,
+      "ヘドロばくだん": 69.8,
+      "まもる": 60.8,
+      "ばくおんぱ": 53.1,
+      "バークアウト": 24.8,
+      "サイコノイズ": 16.7,
+      "ヘドロウェーブ": 14.7,
+      "ボルトチェンジ": 13.0,
+      "ハイパーボイス": 5.7,
+      "エレキネット": 4.5
+    },
+    "abilities": {
+      "パンクロック": 92.0,
+      "Minus": 5.0,
+      "テクニシャン": 3.0
+    },
+    "items": {
+      "Life Orb": 29.9,
+      "Choice Scarf": 19.8,
+      "Focus Sash": 13.7,
+      "Magnet": 8.2,
+      "Air Balloon": 7.8
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 108,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 108
+  },
+  {
+    "name": "デカヌチャン",
+    "english": "Tinkaton",
+    "rank": null,
+    "code": "0959-000",
+    "moves": {
+      "デカハンマー": 97.9,
+      "ねこだまし": 81.3,
+      "じゃれつく": 64.0,
+      "まもる": 50.7,
+      "アンコール": 24.6,
+      "はたきおとす": 12.3,
+      "フェイント": 9.8,
+      "Ice Hammer": 9.2,
+      "ウッドハンマー": 7.5,
+      "てだすけ": 6.8
+    },
+    "abilities": {
+      "かたやぶり": 67.6,
+      "マイペース": 28.4,
+      "わるいてぐせ": 4.1
+    },
+    "items": {
+      "Sitrus Berry": 13.0,
+      "Occa Berry": 11.5,
+      "Life Orb": 9.8,
+      "Metal Coat": 9.4,
+      "Leftovers": 8.2
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 109,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 109
+  },
+  {
+    "name": "グライオン",
+    "english": "Gliscor",
+    "rank": null,
+    "code": "0472-000",
+    "moves": {
+      "10まんばりき": 65.1,
+      "まもる": 60.6,
+      "おいかぜ": 58.4,
+      "ダブルウイング": 34.4,
+      "アクロバット": 32.3,
+      "じしん": 30.2,
+      "いわなだれ": 22.2,
+      "つるぎのまい": 9.1,
+      "こおりのキバ": 8.4,
+      "はたきおとす": 7.3
+    },
+    "abilities": {
+      "かいりきバサミ": 77.7,
+      "ポイズンヒール": 11.7,
+      "すながくれ": 10.6
+    },
+    "items": {
+      "Psychic Seed": 17.1,
+      "Life Orb": 10.8,
+      "Sitrus Berry": 9.5,
+      "Leftovers": 9.2,
+      "Focus Sash": 7.3
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 110,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 110
+  },
+  {
+    "name": "クレッフィ",
+    "english": "Klefki",
+    "rank": null,
+    "code": "0707-000",
+    "moves": {
+      "ひかりのかべ": 63.3,
+      "リフレクター": 58.3,
+      "マジカルシャイン": 43.0,
+      "あまごい": 41.7,
+      "トリックルーム": 26.1,
+      "でんじは": 21.7,
+      "ドレインキッス": 20.2,
+      "じこあんじ": 16.8,
+      "めいそう": 15.4,
+      "にほんばれ": 10.1
+    },
+    "abilities": {
+      "いたずらごころ": 99.1,
+      "マジシャン": 0.9
+    },
+    "items": {
+      "Light Clay": 47.4,
+      "Sitrus Berry": 15.7,
+      "Leftovers": 6.4,
+      "Mental Herb": 4.1,
+      "Occa Berry": 3.7
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 111,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 111
+  },
+  {
+    "name": "ルガルガン(たそがれのすがた)",
+    "english": "Lycanroc [Dusk Form]",
+    "rank": null,
+    "code": "0745-002",
+    "moves": {
+      "アクセルロック": 93.2,
+      "いわなだれ": 80.0,
+      "まもる": 78.4,
+      "インファイト": 75.6,
+      "サイコファング": 14.2,
+      "ドリルライナー": 8.9,
+      "アイアンヘッド": 5.8,
+      "ふいうち": 4.9,
+      "じゃれつく": 4.1,
+      "じごくづき": 3.9
+    },
+    "abilities": {
+      "かたいツメ": 100.0
+    },
+    "items": {
+      "Focus Sash": 77.2,
+      "Life Orb": 8.3,
+      "Hard Stone": 3.8,
+      "Expert Belt": 2.4,
+      "Choice Scarf": 1.6
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 112,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 112
+  },
+  {
+    "name": "キュウコン",
+    "english": "Ninetales",
+    "rank": null,
+    "code": "0038-000",
+    "moves": {
+      "ねっぷう": 74.8,
+      "ソーラービーム": 59.0,
+      "まもる": 57.2,
+      "ウェザーボール": 24.0,
+      "ねっさのだいち": 15.1,
+      "バークアウト": 14.3,
+      "アンコール": 14.2,
+      "オーバーヒート": 14.1,
+      "おにび": 13.9,
+      "てだすけ": 13.7
+    },
+    "abilities": {
+      "ひでり": 98.7,
+      "もらいび": 1.3
+    },
+    "items": {
+      "Charcoal": 20.3,
+      "Choice Scarf": 16.2,
+      "Focus Sash": 15.0,
+      "Heat Rock": 10.0,
+      "Life Orb": 8.9
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 113,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 113
+  },
+  {
+    "name": "スターミー",
+    "english": "Starmie",
+    "rank": null,
+    "code": "0121-000",
+    "moves": {
+      "アクアブレイク": 58.1,
+      "まもる": 54.2,
+      "アイススピナー": 52.1,
+      "アクアジェット": 33.6,
+      "サイコカッター": 25.3,
+      "ワイドフォース": 23.3,
+      "れいとうビーム": 21.6,
+      "しねんのずつき": 16.3,
+      "ねっとう": 15.4,
+      "クイックターン": 11.3
+    },
+    "abilities": {
+      "しぜんかいふく": 63.8,
+      "はっこう": 22.4,
+      "アナライズ": 13.8
+    },
+    "items": {
+      "Starminite": 78.5,
+      "Life Orb": 4.4,
+      "Focus Sash": 4.1,
+      "Expert Belt": 2.3,
+      "Choice Scarf": 2.0
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 114,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 114
+  },
+  {
+    "name": "バイバニラ",
+    "english": "Vanilluxe",
+    "rank": null,
+    "code": "0584-000",
+    "moves": {
+      "ふぶき": 93.6,
+      "フリーズドライ": 85.8,
+      "まもる": 48.9,
+      "オーロラベール": 44.2,
+      "こおりのつぶて": 29.6,
+      "こごえるかぜ": 24.1,
+      "ぜったいれいど": 18.0,
+      "ラスターカノン": 10.5,
+      "ウェザーボール": 7.7,
+      "Ally Switch": 7.5
+    },
+    "abilities": {
+      "ゆきふらし": 98.1,
+      "くだけるよろい": 1.0,
+      "Ice Body": 0.9
+    },
+    "items": {
+      "Choice Scarf": 33.2,
+      "Never-Melt Ice": 32.7,
+      "Light Clay": 10.9,
+      "Focus Sash": 8.9,
+      "Sitrus Berry": 2.4
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 115,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 115
+  },
+  {
+    "name": "ニャオニクス",
+    "english": "Meowstic",
+    "rank": null,
+    "code": "0678-000",
+    "moves": {
+      "ねこだまし": 41.1,
+      "ワイドフォース": 40.9,
+      "ひかりのかべ": 29.6,
+      "リフレクター": 23.8,
+      "にほんばれ": 21.3,
+      "あまごい": 20.6,
+      "サイコフィールド": 19.3,
+      "まもる": 17.6,
+      "スキルスワップ": 17.6,
+      "トリックルーム": 17.1
+    },
+    "abilities": {
+      "いたずらごころ": 94.6,
+      "すりぬけ": 4.0,
+      "Keen Eye": 1.4
+    },
+    "items": {
+      "Meowsticite": 19.1,
+      "Light Clay": 17.8,
+      "Sitrus Berry": 10.9,
+      "Focus Sash": 10.8,
+      "Colbur Berry": 9.8
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 116,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 116
+  },
+  {
+    "name": "サンダース",
+    "english": "Jolteon",
+    "rank": null,
+    "code": "0135-000",
+    "moves": {
+      "10まんボルト": 40.0,
+      "シャドーボール": 38.8,
+      "まもる": 36.6,
+      "ライジングボルト": 33.9,
+      "みきり": 33.8,
+      "ほうでん": 30.2,
+      "ボルトチェンジ": 28.3,
+      "みわくのボイス": 25.4,
+      "エレキネット": 21.1,
+      "ウェザーボール": 20.8
+    },
+    "abilities": {
+      "ちくでん": 89.7,
+      "はやあし": 10.3
+    },
+    "items": {
+      "Life Orb": 27.2,
+      "Focus Sash": 22.4,
+      "Magnet": 21.8,
+      "Air Balloon": 4.5,
+      "Choice Scarf": 4.2
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 117,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 117
+  },
+  {
+    "name": "ヤドキング(ガラルのすがた)",
+    "english": "Slowking [Galarian Form]",
+    "rank": null,
+    "code": "0199-001",
+    "moves": {
+      "トリックルーム": 74.0,
+      "ヘドロばくだん": 56.1,
+      "さむいギャグ": 32.6,
+      "サイコキネシス": 31.1,
+      "ワイドフォース": 30.8,
+      "まもる": 24.6,
+      "かえんほうしゃ": 20.5,
+      "いやしのはどう": 11.7,
+      "れいとうビーム": 10.7,
+      "ヘドロウェーブ": 9.9
+    },
+    "abilities": {
+      "さいせいりょく": 80.2,
+      "きみょうなくすり": 15.7,
+      "マイペース": 4.1
+    },
+    "items": {
+      "Sitrus Berry": 31.1,
+      "Leftovers": 18.1,
+      "Colbur Berry": 12.5,
+      "Life Orb": 7.1,
+      "Mental Herb": 3.7
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 118,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 118
+  },
+  {
+    "name": "ブラッキー",
+    "english": "Umbreon",
+    "rank": null,
+    "code": "0197-000",
+    "moves": {
+      "イカサマ": 74.8,
+      "つきのひかり": 44.2,
+      "どくどく": 43.8,
+      "バークアウト": 42.2,
+      "まもる": 35.5,
+      "あくび": 23.8,
+      "みきり": 19.2,
+      "ねがいごと": 19.1,
+      "ちょうはつ": 11.4,
+      "てだすけ": 10.6
+    },
+    "abilities": {
+      "せいしんりょく": 79.3,
+      "シンクロ": 20.7
+    },
+    "items": {
+      "Leftovers": 59.2,
+      "Sitrus Berry": 14.2,
+      "Rocky Helmet": 7.5,
+      "Chople Berry": 4.0,
+      "Psychic Seed": 1.8
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 119,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 119
+  },
+  {
+    "name": "ブロスター",
+    "english": "Clawitzer",
+    "rank": null,
+    "code": "0693-000",
+    "moves": {
+      "みずのはどう": 89.9,
+      "はどうだん": 87.0,
+      "あくのはどう": 67.9,
+      "まもる": 42.6,
+      "だいちのはどう": 30.9,
+      "りゅうのはどう": 29.1,
+      "れいとうビーム": 28.3,
+      "いやしのはどう": 7.4,
+      "ヘドロばくだん": 5.1,
+      "だくりゅう": 2.2
+    },
+    "abilities": {
+      "メガランチャー": 100.0
+    },
+    "items": {
+      "Life Orb": 51.8,
+      "Expert Belt": 18.3,
+      "Wise Glasses": 4.8,
+      "Quick Claw": 3.5,
+      "Mystic Water": 3.5
+    },
+    "source": "ranked-season6",
+    "url": "https://www.pokemon-zone.com/champions/ranked-seasons/ssn6_rd178713989559pruusy/?page=6",
+    "selectionRank": 120,
+    "verifiedTournamentRank": null,
+    "rankedSeasonRank": 120
+  }
+]

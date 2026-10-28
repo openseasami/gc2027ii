@@ -1,0 +1,74 @@
+{
+  "completion": false,
+  "decision": "技術検証済み・完成判定保留",
+  "dateJST": "2026-10-28",
+  "blockingConfirmation": [
+    "Official full M-C roster unavailable",
+    "Official numeric formula and real-game comprehensive values not acquired"
+  ],
+  "data": {
+    "candidateForms": 386,
+    "mega": 82,
+    "statDataCompared": 2142,
+    "statDataMismatches": 0,
+    "uncomparedAliases": 29
+  },
+  "unit": {
+    "groups": 16,
+    "statFormulaComparisons": 173700,
+    "passed": true
+  },
+  "numeric": {
+    "passedCases": 1434,
+    "unverifiedCases": 7,
+    "failedCases": 0,
+    "independentRolls": 22944,
+    "distinctMoves": 79
+  },
+  "multi": {
+    "passed": true,
+    "cases": 4,
+    "independentPerHitRolls": 416
+  },
+  "speed": {
+    "passed": true,
+    "cases": 72,
+    "unverified": 0
+  },
+  "browser": {
+    "passed": true,
+    "profiles": [
+      {
+        "brand": "Chromium",
+        "version": "154.0.8037.57",
+        "layouts": 4,
+        "updateMs": [
+          24.5,
+          24.0,
+          23.5,
+          35.3,
+          27.8,
+          26.8,
+          30.8
+        ]
+      },
+      {
+        "brand": "Microsoft Edge Linux",
+        "version": "142.0.3595.94",
+        "layouts": 4,
+        "updateMs": [
+          22.5,
+          23.3,
+          21.1,
+          21.8,
+          29.3,
+          24.0,
+          33.1
+        ]
+      }
+    ],
+    "nativeWindows": false,
+    "externalOffline": true
+  },
+  "htmlSha256": "a95840c1580935c7f9d07325343e0e29c1b12b1afe0e0387761e8dee7e5073ab"
+}

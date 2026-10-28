@@ -1,0 +1,646 @@
+{
+  "completion": false,
+  "passed": true,
+  "cases": [
+    {
+      "id": "qwilfish",
+      "ability": "Swift Swim",
+      "weather": "none",
+      "fast": false,
+      "actual": 94,
+      "expected": 94,
+      "passed": true
+    },
+    {
+      "id": "qwilfish",
+      "ability": "Swift Swim",
+      "weather": "none",
+      "fast": true,
+      "actual": 150,
+      "expected": 150,
+      "passed": true
+    },
+    {
+      "id": "qwilfish",
+      "ability": "Swift Swim",
+      "weather": "sun",
+      "fast": false,
+      "actual": 94,
+      "expected": 94,
+      "passed": true
+    },
+    {
+      "id": "qwilfish",
+      "ability": "Swift Swim",
+      "weather": "sun",
+      "fast": true,
+      "actual": 150,
+      "expected": 150,
+      "passed": true
+    },
+    {
+      "id": "qwilfish",
+      "ability": "Swift Swim",
+      "weather": "rain",
+      "fast": false,
+      "actual": 188,
+      "expected": 188,
+      "passed": true
+    },
+    {
+      "id": "qwilfish",
+      "ability": "Swift Swim",
+      "weather": "rain",
+      "fast": true,
+      "actual": 300,
+      "expected": 300,
+      "passed": true
+    },
+    {
+      "id": "qwilfish",
+      "ability": "Swift Swim",
+      "weather": "sand",
+      "fast": false,
+      "actual": 94,
+      "expected": 94,
+      "passed": true
+    },
+    {
+      "id": "qwilfish",
+      "ability": "Swift Swim",
+      "weather": "sand",
+      "fast": true,
+      "actual": 150,
+      "expected": 150,
+      "passed": true
+    },
+    {
+      "id": "qwilfish",
+      "ability": "Swift Swim",
+      "weather": "snow",
+      "fast": false,
+      "actual": 94,
+      "expected": 94,
+      "passed": true
+    },
+    {
+      "id": "qwilfish",
+      "ability": "Swift Swim",
+      "weather": "snow",
+      "fast": true,
+      "actual": 150,
+      "expected": 150,
+      "passed": true
+    },
+    {
+      "id": "venusaur",
+      "ability": "Chlorophyll",
+      "weather": "none",
+      "fast": false,
+      "actual": 90,
+      "expected": 90,
+      "passed": true
+    },
+    {
+      "id": "venusaur",
+      "ability": "Chlorophyll",
+      "weather": "none",
+      "fast": true,
+      "actual": 145,
+      "expected": 145,
+      "passed": true
+    },
+    {
+      "id": "venusaur",
+      "ability": "Chlorophyll",
+      "weather": "sun",
+      "fast": false,
+      "actual": 180,
+      "expected": 180,
+      "passed": true
+    },
+    {
+      "id": "venusaur",
+      "ability": "Chlorophyll",
+      "weather": "sun",
+      "fast": true,
+      "actual": 290,
+      "expected": 290,
+      "passed": true
+    },
+    {
+      "id": "venusaur",
+      "ability": "Chlorophyll",
+      "weather": "rain",
+      "fast": false,
+      "actual": 90,
+      "expected": 90,
+      "passed": true
+    },
+    {
+      "id": "venusaur",
+      "ability": "Chlorophyll",
+      "weather": "rain",
+      "fast": true,
+      "actual": 145,
+      "expected": 145,
+      "passed": true
+    },
+    {
+      "id": "venusaur",
+      "ability": "Chlorophyll",
+      "weather": "sand",
+      "fast": false,
+      "actual": 90,
+      "expected": 90,
+      "passed": true
+    },
+    {
+      "id": "venusaur",
+      "ability": "Chlorophyll",
+      "weather": "sand",
+      "fast": true,
+      "actual": 145,
+      "expected": 145,
+      "passed": true
+    },
+    {
+      "id": "venusaur",
+      "ability": "Chlorophyll",
+      "weather": "snow",
+      "fast": false,
+      "actual": 90,
+      "expected": 90,
+      "passed": true
+    },
+    {
+      "id": "venusaur",
+      "ability": "Chlorophyll",
+      "weather": "snow",
+      "fast": true,
+      "actual": 145,
+      "expected": 145,
+      "passed": true
+    },
+    {
+      "id": "excadrill",
+      "ability": "Sand Rush",
+      "weather": "none",
+      "fast": false,
+      "actual": 97,
+      "expected": 97,
+      "passed": true
+    },
+    {
+      "id": "excadrill",
+      "ability": "Sand Rush",
+      "weather": "none",
+      "fast": true,
+      "actual": 154,
+      "expected": 154,
+      "passed": true
+    },
+    {
+      "id": "excadrill",
+      "ability": "Sand Rush",
+      "weather": "sun",
+      "fast": false,
+      "actual": 97,
+      "expected": 97,
+      "passed": true
+    },
+    {
+      "id": "excadrill",
+      "ability": "Sand Rush",
+      "weather": "sun",
+      "fast": true,
+      "actual": 154,
+      "expected": 154,
+      "passed": true
+    },
+    {
+      "id": "excadrill",
+      "ability": "Sand Rush",
+      "weather": "rain",
+      "fast": false,
+      "actual": 97,
+      "expected": 97,
+      "passed": true
+    },
+    {
+      "id": "excadrill",
+      "ability": "Sand Rush",
+      "weather": "rain",
+      "fast": true,
+      "actual": 154,
+      "expected": 154,
+      "passed": true
+    },
+    {
+      "id": "excadrill",
+      "ability": "Sand Rush",
+      "weather": "sand",
+      "fast": false,
+      "actual": 194,
+      "expected": 194,
+      "passed": true
+    },
+    {
+      "id": "excadrill",
+      "ability": "Sand Rush",
+      "weather": "sand",
+      "fast": true,
+      "actual": 308,
+      "expected": 308,
+      "passed": true
+    },
+    {
+      "id": "excadrill",
+      "ability": "Sand Rush",
+      "weather": "snow",
+      "fast": false,
+      "actual": 97,
+      "expected": 97,
+      "passed": true
+    },
+    {
+      "id": "excadrill",
+      "ability": "Sand Rush",
+      "weather": "snow",
+      "fast": true,
+      "actual": 154,
+      "expected": 154,
+      "passed": true
+    },
+    {
+      "id": "beartic",
+      "ability": "Slush Rush",
+      "weather": "none",
+      "fast": false,
+      "actual": 63,
+      "expected": 63,
+      "passed": true
+    },
+    {
+      "id": "beartic",
+      "ability": "Slush Rush",
+      "weather": "none",
+      "fast": true,
+      "actual": 112,
+      "expected": 112,
+      "passed": true
+    },
+    {
+      "id": "beartic",
+      "ability": "Slush Rush",
+      "weather": "sun",
+      "fast": false,
+      "actual": 63,
+      "expected": 63,
+      "passed": true
+    },
+    {
+      "id": "beartic",
+      "ability": "Slush Rush",
+      "weather": "sun",
+      "fast": true,
+      "actual": 112,
+      "expected": 112,
+      "passed": true
+    },
+    {
+      "id": "beartic",
+      "ability": "Slush Rush",
+      "weather": "rain",
+      "fast": false,
+      "actual": 63,
+      "expected": 63,
+      "passed": true
+    },
+    {
+      "id": "beartic",
+      "ability": "Slush Rush",
+      "weather": "rain",
+      "fast": true,
+      "actual": 112,
+      "expected": 112,
+      "passed": true
+    },
+    {
+      "id": "beartic",
+      "ability": "Slush Rush",
+      "weather": "sand",
+      "fast": false,
+      "actual": 63,
+      "expected": 63,
+      "passed": true
+    },
+    {
+      "id": "beartic",
+      "ability": "Slush Rush",
+      "weather": "sand",
+      "fast": true,
+      "actual": 112,
+      "expected": 112,
+      "passed": true
+    },
+    {
+      "id": "beartic",
+      "ability": "Slush Rush",
+      "weather": "snow",
+      "fast": false,
+      "actual": 126,
+      "expected": 126,
+      "passed": true
+    },
+    {
+      "id": "beartic",
+      "ability": "Slush Rush",
+      "weather": "snow",
+      "fast": true,
+      "actual": 224,
+      "expected": 224,
+      "passed": true
+    },
+    {
+      "id": "jolteon",
+      "ability": "Quick Feet",
+      "weather": "none",
+      "fast": false,
+      "actual": 202,
+      "expected": 202,
+      "passed": true
+    },
+    {
+      "id": "jolteon",
+      "ability": "Quick Feet",
+      "weather": "none",
+      "fast": true,
+      "actual": 300,
+      "expected": 300,
+      "passed": true
+    },
+    {
+      "id": "jolteon",
+      "ability": "Quick Feet",
+      "weather": "sun",
+      "fast": false,
+      "actual": 202,
+      "expected": 202,
+      "passed": true
+    },
+    {
+      "id": "jolteon",
+      "ability": "Quick Feet",
+      "weather": "sun",
+      "fast": true,
+      "actual": 300,
+      "expected": 300,
+      "passed": true
+    },
+    {
+      "id": "jolteon",
+      "ability": "Quick Feet",
+      "weather": "rain",
+      "fast": false,
+      "actual": 202,
+      "expected": 202,
+      "passed": true
+    },
+    {
+      "id": "jolteon",
+      "ability": "Quick Feet",
+      "weather": "rain",
+      "fast": true,
+      "actual": 300,
+      "expected": 300,
+      "passed": true
+    },
+    {
+      "id": "jolteon",
+      "ability": "Quick Feet",
+      "weather": "sand",
+      "fast": false,
+      "actual": 202,
+      "expected": 202,
+      "passed": true
+    },
+    {
+      "id": "jolteon",
+      "ability": "Quick Feet",
+      "weather": "sand",
+      "fast": true,
+      "actual": 300,
+      "expected": 300,
+      "passed": true
+    },
+    {
+      "id": "jolteon",
+      "ability": "Quick Feet",
+      "weather": "snow",
+      "fast": false,
+      "actual": 202,
+      "expected": 202,
+      "passed": true
+    },
+    {
+      "id": "jolteon",
+      "ability": "Quick Feet",
+      "weather": "snow",
+      "fast": true,
+      "actual": 300,
+      "expected": 300,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "ability": "Surge Surfer",
+      "weather": "none",
+      "fast": false,
+      "actual": 234,
+      "expected": 234,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "ability": "Surge Surfer",
+      "weather": "none",
+      "fast": true,
+      "actual": 356,
+      "expected": 356,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "ability": "Surge Surfer",
+      "weather": "sun",
+      "fast": false,
+      "actual": 234,
+      "expected": 234,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "ability": "Surge Surfer",
+      "weather": "sun",
+      "fast": true,
+      "actual": 356,
+      "expected": 356,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "ability": "Surge Surfer",
+      "weather": "rain",
+      "fast": false,
+      "actual": 234,
+      "expected": 234,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "ability": "Surge Surfer",
+      "weather": "rain",
+      "fast": true,
+      "actual": 356,
+      "expected": 356,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "ability": "Surge Surfer",
+      "weather": "sand",
+      "fast": false,
+      "actual": 234,
+      "expected": 234,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "ability": "Surge Surfer",
+      "weather": "sand",
+      "fast": true,
+      "actual": 356,
+      "expected": 356,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "ability": "Surge Surfer",
+      "weather": "snow",
+      "fast": false,
+      "actual": 234,
+      "expected": 234,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "ability": "Surge Surfer",
+      "weather": "snow",
+      "fast": true,
+      "actual": 356,
+      "expected": 356,
+      "passed": true
+    },
+    {
+      "id": "rillaboom",
+      "nature": "Serious",
+      "item": "Choice Scarf",
+      "actual": 205,
+      "expected": 205,
+      "passed": true
+    },
+    {
+      "id": "rillaboom",
+      "nature": "Timid",
+      "item": "Choice Scarf",
+      "actual": 225,
+      "expected": 225,
+      "passed": true
+    },
+    {
+      "id": "rillaboom",
+      "nature": "Brave",
+      "item": "Choice Scarf",
+      "actual": 184,
+      "expected": 184,
+      "passed": true
+    },
+    {
+      "id": "floettemega",
+      "nature": "Serious",
+      "item": "Floettite",
+      "actual": 154,
+      "expected": 154,
+      "passed": true
+    },
+    {
+      "id": "floettemega",
+      "nature": "Timid",
+      "item": "Floettite",
+      "actual": 169,
+      "expected": 169,
+      "passed": true
+    },
+    {
+      "id": "floettemega",
+      "nature": "Brave",
+      "item": "Floettite",
+      "actual": 138,
+      "expected": 138,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "nature": "Serious",
+      "item": "Choice Scarf",
+      "actual": 243,
+      "expected": 243,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "nature": "Timid",
+      "item": "Choice Scarf",
+      "actual": 267,
+      "expected": 267,
+      "passed": true
+    },
+    {
+      "id": "raichualola",
+      "nature": "Brave",
+      "item": "Choice Scarf",
+      "actual": 217,
+      "expected": 217,
+      "passed": true
+    },
+    {
+      "id": "garchompmegaz",
+      "nature": "Serious",
+      "item": "Garchompite Z",
+      "actual": 203,
+      "expected": 203,
+      "passed": true
+    },
+    {
+      "id": "garchompmegaz",
+      "nature": "Timid",
+      "item": "Garchompite Z",
+      "actual": 223,
+      "expected": 223,
+      "passed": true
+    },
+    {
+      "id": "garchompmegaz",
+      "nature": "Brave",
+      "item": "Garchompite Z",
+      "actual": 182,
+      "expected": 182,
+      "passed": true
+    }
+  ],
+  "unverified": [],
+  "limitations": [
+    "Speed stage is assumed zero; no paralysis, Tailwind, action priority or full action-order simulation. TR reverses the displayed reference comparison only."
+  ]
+}

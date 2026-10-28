@@ -1,0 +1,116 @@
+{
+  "completion": false,
+  "officialEligibility": {
+    "unconfirmed": 386,
+    "confirmed": 0,
+    "reason": "Official JavaScript roster body unavailable; direct retrieval 403"
+  },
+  "officialNumericFormula": "unconfirmed; only community implementation agreement",
+  "uncomparedSpeciesAliases": [
+    "Vivillon-Archipelago",
+    "Vivillon-Continental",
+    "Vivillon-Elegant",
+    "Vivillon-Garden",
+    "Vivillon-High Plains",
+    "Vivillon-Icy Snow",
+    "Vivillon-Jungle",
+    "Vivillon-Marine",
+    "Vivillon-Modern",
+    "Vivillon-Monsoon",
+    "Vivillon-Ocean",
+    "Vivillon-Polar",
+    "Vivillon-River",
+    "Vivillon-Sandstorm",
+    "Vivillon-Savanna",
+    "Vivillon-Sun",
+    "Vivillon-Tundra",
+    "Aegislash",
+    "Minior-Meteor",
+    "Cramorant-Gulping",
+    "Cramorant-Gorging",
+    "Alcremie-Caramel-Swirl",
+    "Alcremie-Lemon-Cream",
+    "Alcremie-Matcha-Cream",
+    "Alcremie-Mint-Cream",
+    "Alcremie-Rainbow-Swirl",
+    "Alcremie-Ruby-Cream",
+    "Alcremie-Ruby-Swirl",
+    "Eiscue-Noice"
+  ],
+  "cosmeticEnglishLabels": 24,
+  "numericUnverified": [
+    {
+      "id": "ability/Huge Power/avalanche",
+      "status": "unverified",
+      "reason": "HP・行動・被弾等の条件を追跡しないため未計算"
+    },
+    {
+      "id": "ability/Technician/assurance",
+      "status": "unverified",
+      "reason": "HP・行動・被弾等の条件を追跡しないため未計算"
+    },
+    {
+      "id": "ability/Guts/assurance",
+      "status": "unverified",
+      "reason": "HP・行動・被弾等の条件を追跡しないため未計算"
+    },
+    {
+      "id": "ability/Sheer Force/assurance",
+      "status": "unverified",
+      "reason": "HP・行動・被弾等の条件を追跡しないため未計算"
+    },
+    {
+      "id": "ability/Tinted Lens",
+      "status": "unverified",
+      "reason": "No eligible owner in available model"
+    },
+    {
+      "id": "defense/Ice Scales",
+      "status": "unverified",
+      "reason": "No eligible owner in available model"
+    },
+    {
+      "id": "defense/Storm Drain",
+      "status": "unverified",
+      "reason": "No eligible owner in available model"
+    }
+  ],
+  "unsupportedMoves": {
+    "flail": "HP依存威力を確定しないため未計算",
+    "reversal": "HP依存威力を確定しないため未計算",
+    "snore": "眠り状態を入力しないため未計算",
+    "meteorbeam": "技中の能力変化のタイミング未検証",
+    "electroshot": "技中の能力変化のタイミング未検証",
+    "lastrespects": "ひんし数を入力しないため未計算",
+    "ragefist": "被弾回数を追跡しないため未計算",
+    "storedpower": "素早さ等の全能力ランクを入力しないため未計算",
+    "powertrip": "全能力ランクを入力しないため未計算",
+    "fling": "持ち物消費・投げつける個別仕様は未検証",
+    "naturalgift": "持ち物消費条件は未検証",
+    "trumpcard": "残りPPを入力しないため未計算",
+    "spitup": "蓄える回数を入力しないため未計算",
+    "beatup": "参加個体の状態を入力しないため未計算",
+    "counter": "前の被ダメージを追跡しないため未計算",
+    "mirrorcoat": "前の被ダメージを追跡しないため未計算",
+    "metalburst": "前の被ダメージを追跡しないため未計算",
+    "comeuppance": "前の被ダメージを追跡しないため未計算"
+  },
+  "conditionalMoves": [
+    "brine",
+    "assurance",
+    "payback",
+    "revenge",
+    "avalanche",
+    "lashout",
+    "retaliate"
+  ],
+  "statistics": "No source/date; uploaded v8 percentages withheld",
+  "windowsNative": false,
+  "fileProtocol": "Managed policy blocked; no bypass",
+  "limitations": [
+    "Representative hypotheses are not all opponent spreads/items/ability combinations",
+    "Full accuracy/reaction/KO stopping of multi-hit moves unverified",
+    "Intact Disguise and physical Ice Face unimplemented",
+    "History, AI, prediction, residuals and full battles are out of scope"
+  ]
+}

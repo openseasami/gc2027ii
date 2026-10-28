@@ -1,0 +1,265 @@
+{
+  "completion": false,
+  "passed": true,
+  "artifact": {
+    "htmlSha256": "a95840c1580935c7f9d07325343e0e29c1b12b1afe0e0387761e8dee7e5073ab"
+  },
+  "nativeWindows": false,
+  "fileProtocol": "Not executed: managed Chromium blocked file navigation; no policy bypass attempted",
+  "offlineMode": "External internet blocked; local HTTP server available. No service worker or online CDN needed.",
+  "profiles": [
+    {
+      "brand": "Chromium",
+      "version": "154.0.8037.57",
+      "passed": true,
+      "layouts": [
+        {
+          "viewport": [
+            1440,
+            1080
+          ],
+          "horizontal": false,
+          "opp": [
+            {
+              "x": 725,
+              "y": 355,
+              "w": 285
+            },
+            {
+              "x": 1018,
+              "y": 355,
+              "w": 285
+            }
+          ],
+          "damageTop": 622,
+          "brokenImages": 0,
+          "pairs": 8
+        },
+        {
+          "viewport": [
+            1366,
+            768
+          ],
+          "horizontal": false,
+          "opp": [
+            {
+              "x": 688,
+              "y": 355,
+              "w": 285
+            },
+            {
+              "x": 981,
+              "y": 355,
+              "w": 285
+            }
+          ],
+          "damageTop": 622,
+          "brokenImages": 0,
+          "pairs": 8
+        },
+        {
+          "viewport": [
+            1280,
+            720
+          ],
+          "horizontal": false,
+          "opp": [
+            {
+              "x": 645,
+              "y": 355,
+              "w": 285
+            },
+            {
+              "x": 938,
+              "y": 355,
+              "w": 285
+            }
+          ],
+          "damageTop": 622,
+          "brokenImages": 0,
+          "pairs": 8
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "horizontal": false,
+          "opp": [
+            {
+              "x": 12,
+              "y": 841,
+              "w": 179
+            },
+            {
+              "x": 199,
+              "y": 841,
+              "w": 179
+            }
+          ],
+          "damageTop": 1152,
+          "brokenImages": 0,
+          "pairs": 8
+        }
+      ],
+      "operations": [
+        "weather",
+        "terrain",
+        "TR",
+        "own rank",
+        "opponent rank",
+        "own burn",
+        "opponent burn"
+      ],
+      "updateMs": [
+        24.5,
+        24.0,
+        23.5,
+        35.3,
+        27.8,
+        26.8,
+        30.8
+      ],
+      "legacyDownload": true,
+      "sameOriginV8Migration": true,
+      "benchComparisons": 32,
+      "sixManualRegistrations": true,
+      "megaBeforeAfter": true,
+      "manualWeatherRetained": true,
+      "independentBurns": true,
+      "jsonRoundTrip": true,
+      "invalidImportAtomic": true,
+      "reload": true,
+      "bench": true,
+      "externalRequests": [],
+      "pageErrors": [],
+      "offlineInternetBlocked": true
+    },
+    {
+      "brand": "Microsoft Edge Linux",
+      "version": "142.0.3595.94",
+      "passed": true,
+      "layouts": [
+        {
+          "viewport": [
+            1440,
+            1080
+          ],
+          "horizontal": false,
+          "opp": [
+            {
+              "x": 725,
+              "y": 355,
+              "w": 285
+            },
+            {
+              "x": 1018,
+              "y": 355,
+              "w": 285
+            }
+          ],
+          "damageTop": 622,
+          "brokenImages": 0,
+          "pairs": 8
+        },
+        {
+          "viewport": [
+            1366,
+            768
+          ],
+          "horizontal": false,
+          "opp": [
+            {
+              "x": 688,
+              "y": 355,
+              "w": 285
+            },
+            {
+              "x": 981,
+              "y": 355,
+              "w": 285
+            }
+          ],
+          "damageTop": 622,
+          "brokenImages": 0,
+          "pairs": 8
+        },
+        {
+          "viewport": [
+            1280,
+            720
+          ],
+          "horizontal": false,
+          "opp": [
+            {
+              "x": 645,
+              "y": 355,
+              "w": 285
+            },
+            {
+              "x": 938,
+              "y": 355,
+              "w": 285
+            }
+          ],
+          "damageTop": 622,
+          "brokenImages": 0,
+          "pairs": 8
+        },
+        {
+          "viewport": [
+            390,
+            844
+          ],
+          "horizontal": false,
+          "opp": [
+            {
+              "x": 12,
+              "y": 841,
+              "w": 179
+            },
+            {
+              "x": 199,
+              "y": 841,
+              "w": 179
+            }
+          ],
+          "damageTop": 1152,
+          "brokenImages": 0,
+          "pairs": 8
+        }
+      ],
+      "operations": [
+        "weather",
+        "terrain",
+        "TR",
+        "own rank",
+        "opponent rank",
+        "own burn",
+        "opponent burn"
+      ],
+      "updateMs": [
+        22.5,
+        23.3,
+        21.1,
+        21.8,
+        29.3,
+        24.0,
+        33.1
+      ],
+      "benchComparisons": 32,
+      "sixManualRegistrations": true,
+      "megaBeforeAfter": true,
+      "manualWeatherRetained": true,
+      "independentBurns": true,
+      "jsonRoundTrip": true,
+      "invalidImportAtomic": true,
+      "reload": true,
+      "bench": true,
+      "externalRequests": [],
+      "pageErrors": [],
+      "offlineInternetBlocked": true
+    }
+  ],
+  "stateInjection": false
+}
