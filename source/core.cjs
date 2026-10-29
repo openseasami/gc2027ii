@@ -12,6 +12,7 @@ const SEEDS=new Set(['Electric Seed','Psychic Seed','Grassy Seed','Misty Seed'])
 const EXCLUDED_MOVES={flail:'HP依存威力を確定しないため未計算',reversal:'HP依存威力を確定しないため未計算',snore:'眠り状態を入力しないため未計算',meteorbeam:'技中の能力変化のタイミング未検証',electroshot:'技中の能力変化のタイミング未検証',lastrespects:'ひんし数を入力しないため未計算',ragefist:'被弾回数を追跡しないため未計算',storedpower:'素早さ等の全能力ランクを入力しないため未計算',powertrip:'全能力ランクを入力しないため未計算',fling:'持ち物消費・投げつける個別仕様は未検証',naturalgift:'持ち物消費条件は未検証',trumpcard:'残りPPを入力しないため未計算',spitup:'蓄える回数を入力しないため未計算',beatup:'参加個体の状態を入力しないため未計算',counter:'前の被ダメージを追跡しないため未計算',mirrorcoat:'前の被ダメージを追跡しないため未計算',metalburst:'前の被ダメージを追跡しないため未計算',comeuppance:'前の被ダメージを追跡しないため未計算'};
 const abilityJP=n=>DATA.abilities.find(a=>a.name===n)?.jp||n||'なし';
 const itemJP=n=>DATA.items.find(i=>i.name===n)?.jp||n||'なし';
+const damageMoves=ids=>[...new Set(ids)].filter(id=>DATA.moves[id]&&['Physical','Special'].includes(DATA.moves[id].category));
 function species(id){if(!Object.hasOwn(BY_ID,id))throw Error('未登録のポケモン・形態です');return BY_ID[id];}
 function family(id){const s=species(id);return DATA.species.filter(x=>x.id===s.baseId||x.baseId===s.baseId);}
 function blankProfile(id=''){
@@ -76,7 +77,7 @@ function activeField(ctx,source,target){
  const has=ab=>list.some(a=>a.ability===ab);
  const allies=(actor,ab)=>list.some(a=>a.side===actor.side&&a.key!==actor.key&&a.ability===ab);
  const weather=has('Cloud Nine')||has('Air Lock')?undefined:WEATHER[ctx.weather||'none'];
- return new C.Field({gameType:'Doubles',weather,terrain:TERRAIN[ctx.terrain||'none'],isFairyAura:has('Fairy Aura'),isDarkAura:has('Dark Aura'),isAuraBreak:has('Aura Break'),attackerSide:{isBattery:allies(source,'Battery'),isPowerSpot:allies(source,'Power Spot'),isSteelySpirit:allies(source,'Steely Spirit'),isFlowerGift:allies(source,'Flower Gift')},defenderSide:{isFriendGuard:allies(target,'Friend Guard'),isFlowerGift:allies(target,'Flower Gift')}});
+ return new C.Field({gameType:'Doubles',weather,terrain:TERRAIN[ctx.terrain||'none'],isFairyAura:has('Fairy Aura'),isDarkAura:has('Dark Aura'),isAuraBreak:has('Aura Break'),attackerSide:{isHelpingHand:source.active!==false&&source.helpingHand===true,isBattery:allies(source,'Battery'),isPowerSpot:allies(source,'Power Spot'),isSteelySpirit:allies(source,'Steely Spirit'),isFlowerGift:allies(source,'Flower Gift')},defenderSide:{isFriendGuard:allies(target,'Friend Guard'),isFlowerGift:allies(target,'Flower Gift')}});
 }
 function compute(source,target,moveId,ctx={},opts={}){
  const m=DATA.moves[moveId];if(!m)return {unsupported:'技データ未確認'};
@@ -93,7 +94,7 @@ function compute(source,target,moveId,ctx={},opts={}){
  const r=C.calculate(G,a,b,move,f);const hitRolls=typeof r.damage==='number'?[Array(16).fill(r.damage)]:typeof r.damage[0]==='number'?[r.damage]:r.damage;
  const range=r.range(),hp=b.maxHP();
  const hpAssumption=['waterspout','eruption','dragonenergy'].includes(moveId)?(source.lowHpCondition?'攻撃側HP1/3以下の例':'攻撃側HP満タンの例'):['crushgrip','wringout','hardpress'].includes(moveId)?'防御側HP満タンの例':null;
- return {hpAssumption,rolls:hitRolls.length===1?hitRolls[0]:null,hitRolls,range,hp,percent:range.map(x=>100*x/hp),hits:hitRolls.length,attackStats:{...a.rawStats},defenseStats:{...b.rawStats},notes:[...(multi?['各打撃は独立した16乱数。表示は全命中時・途中終了と反応ダメージは別条件']:[]),...(SEEDS.has(source.item)||SEEDS.has(target.item)?['シードは自動でランクを上げず、入力ランクを優先']:[])],crit:!!r.rawDesc.isCritical,critRequested:!!opts.crit,condition:'命中時・最大HP比',actualType:r.move.type,actualPower:r.rawDesc.moveBP||r.move.bp,verifiedScope:'Champions community engine; real game not certified'};
+ return {hpAssumption,helpingHand:f.attackerSide.isHelpingHand,helpingHandApplied:!!r.rawDesc.isHelpingHand,rolls:hitRolls.length===1?hitRolls[0]:null,hitRolls,range,hp,percent:range.map(x=>100*x/hp),hits:hitRolls.length,attackStats:{...a.rawStats},defenseStats:{...b.rawStats},notes:[...(multi?['各打撃は独立した16乱数。表示は全命中時・途中終了と反応ダメージは別条件']:[]),...(SEEDS.has(source.item)||SEEDS.has(target.item)?['シードは自動でランクを上げず、入力ランクを優先']:[])],crit:!!r.rawDesc.isCritical,critRequested:!!opts.crit,condition:'命中時・最大HP比',actualType:r.move.type,actualPower:r.rawDesc.moveBP||r.move.bp,verifiedScope:'Champions community engine; real game not certified'};
 }
 function scenarios(source,target,moveId,ctx={}){
  const unknown=source.side==='opp'?source:target,rec=species(unknown.id),isAttack=unknown===source;
@@ -176,4 +177,4 @@ function migrateV8(names,points){
 function exportTeam(team){return {format:'GC2027II-viewer-team',version:9,team:validateTeam(team)};}
 function importTeam(payload){if(payload?.format==='GC2027II-viewer-team'&&payload.version===8){if(!payload.team||!Array.isArray(payload.team))throw Error('v8の登録配列がありません');return migrateV8(payload.team,payload.points||{});}
  if(!payload||payload.format!=='GC2027II-viewer-team'||payload.version!==9)throw Error('ビューアv9形式のJSONではありません');return validateTeam(payload.team);}
-module.exports={DATA,BY_ID,STATS,HISTORY,FULL_HP,LOW_HP,SEEDS,EXCLUDED_MOVES,G,C,species,family,blankProfile,validateProfile,validateTeam,actorFromProfile,unknownActor,compute,scenarios,statValues,speedRange,migrateV8,exportTeam,importTeam,abilityJP,itemJP,activeField};
+module.exports={DATA,BY_ID,STATS,HISTORY,FULL_HP,LOW_HP,SEEDS,EXCLUDED_MOVES,G,C,species,family,blankProfile,validateProfile,validateTeam,actorFromProfile,unknownActor,compute,scenarios,statValues,speedRange,migrateV8,exportTeam,importTeam,abilityJP,itemJP,activeField,damageMoves};

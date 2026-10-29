@@ -8,6 +8,7 @@ from threading import Thread
 from http.server import SimpleHTTPRequestHandler,ThreadingHTTPServer
 from playwright.sync_api import sync_playwright
 import json,os,re,time,hashlib
+from helping_hand_browser import exercise_helping_hand
 ROOT=Path(__file__).resolve().parent.parent
 ART=Path(os.environ.get('VIEWER_ARTIFACT_ROOT',ROOT/'release')).resolve()
 class Quiet(SimpleHTTPRequestHandler):
@@ -92,6 +93,7 @@ try:
     page.locator(f'[data-picker="bench"][data-index="{i}"]').click();page.locator('#pickerSearch').fill(name);page.locator(f'#pickerGrid [data-pick="{id}"]').click()
    assert page.locator('#benchCalc .calc').count()==32
    result['benchComparisons']=32
+   exercise_helping_hand(page,result,ROOT)
    assert not re.search('確定KO|確定1発|推奨行動',page.locator('#calc').inner_text())
    if page.locator('#teamSettings').get_attribute('open') is None:page.locator('#teamSettings > summary').click()
    with page.expect_download() as download:page.locator('#exportJson').click()

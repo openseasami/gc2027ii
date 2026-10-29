@@ -1,13 +1,13 @@
 {
   "completion": false,
   "scopeCompletion": true,
-  "decision": "今回のM-C比較照合・回帰検証は合格（非公式資料基準）",
+  "decision": "てだすけ・バー表示・変化技除外と既存回帰の検証は合格",
   "dateJST": "2026-10-29",
   "blockingConfirmation": [],
   "acceptance": {
     "completion": false,
     "dateJST": "2026-10-29",
-    "scope": "Non-official-source M-C roster restriction and existing viewer regression",
+    "scope": "Helping Hand recipients, damage-range bars, Status-move filtering and existing viewer regressions",
     "excludedFromAcceptance": [
       "Official page body retrieval and official certification",
       "Real-game numerical comparison"
@@ -16,7 +16,12 @@
       "Per-form non-official roster evidence with family-vs-form matching distinguished",
       "No source-less battle-only form admitted solely by engine validation",
       "Existing valid stats, calculation engine, UI layout and JSON version preserved",
-      "Regression, independent Champions engine, browser and actual ZIP tests pass"
+      "Regression, independent Champions engine, browser and actual ZIP tests pass",
+      "Four independent active-attacker Helping Hand conditions shared across target comparisons",
+      "Existing Champions BP-modifier path exactly once; independent numerical rounding comparison",
+      "Active attacker to bench shares the flag; benched attackers never borrow it",
+      "Status moves hidden in all damage tables and retained in candidate data",
+      "Damage numbers and capped range bars update together"
     ],
     "fullBattleSpecificationCompletion": false
   },
@@ -30,6 +35,50 @@
     "appearanceConsolidated": 26,
     "excludedNoEvidence": 4,
     "unresolved": 0
+  },
+  "helpingHand": {
+    "passed": true,
+    "cases": 248,
+    "independentRolls": 8640,
+    "checks": [
+      {
+        "id": "OFF-ON-OFF-restoration",
+        "passed": true
+      },
+      {
+        "id": "physical-and-special",
+        "passed": true
+      },
+      {
+        "id": "BP-rounding-not-final-damage",
+        "passed": true
+      },
+      {
+        "id": "one-modifier-per-attack",
+        "passed": true
+      },
+      {
+        "id": "critical-weather-terrain-rank-item-ability-combinations",
+        "passed": true
+      },
+      {
+        "id": "each-hit-independent",
+        "passed": true
+      },
+      {
+        "id": "fixed-damage-not-boosted",
+        "passed": true
+      },
+      {
+        "id": "recipient-not-defender-or-bench",
+        "passed": true
+      },
+      {
+        "id": "status-excluded-but-retained-in-data",
+        "passed": true
+      }
+    ],
+    "roundingWitnesses": 12
   },
   "data": {
     "candidateForms": 356,
@@ -68,32 +117,84 @@
         "version": "154.0.8037.57",
         "layouts": 4,
         "updateMs": [
-          20.5,
+          29.0,
+          23.3,
+          22.7,
+          27.8,
+          26.8,
           23.7,
-          18.6,
-          22.2,
-          22.4,
-          23.6,
-          27.1
-        ]
+          28.2
+        ],
+        "helpingHand": {
+          "passed": true,
+          "controls": 4,
+          "offOnOff": true,
+          "separateSides": true,
+          "sameAttackerBothTargets": true,
+          "activeToBench": true,
+          "benchAttackerUnaffected": true,
+          "weatherTerrainMegaRankBurnWhileOn": true,
+          "damageBarsBefore": {
+            "count": 344,
+            "immune": 9,
+            "over100": 34
+          },
+          "damageBarsAfter": {
+            "count": 344,
+            "immune": 9,
+            "over100": 62
+          },
+          "statusAttacksHidden": true,
+          "statusCandidatesKept": true,
+          "registeredHelpingHandHidden": true,
+          "recipientChangeResets": true,
+          "conditionReset": true,
+          "teamJsonUnchanged": true
+        }
       },
       {
         "brand": "Microsoft Edge Linux",
         "version": "142.0.3595.94",
         "layouts": 4,
         "updateMs": [
-          31.1,
-          31.1,
+          24.4,
           25.6,
-          19.6,
-          24.8,
-          21.3,
-          26.0
-        ]
+          23.6,
+          24.1,
+          31.4,
+          25.6,
+          26.7
+        ],
+        "helpingHand": {
+          "passed": true,
+          "controls": 4,
+          "offOnOff": true,
+          "separateSides": true,
+          "sameAttackerBothTargets": true,
+          "activeToBench": true,
+          "benchAttackerUnaffected": true,
+          "weatherTerrainMegaRankBurnWhileOn": true,
+          "damageBarsBefore": {
+            "count": 344,
+            "immune": 9,
+            "over100": 34
+          },
+          "damageBarsAfter": {
+            "count": 344,
+            "immune": 9,
+            "over100": 62
+          },
+          "statusAttacksHidden": true,
+          "statusCandidatesKept": true,
+          "registeredHelpingHandHidden": true,
+          "recipientChangeResets": true,
+          "conditionReset": true,
+          "teamJsonUnchanged": true
+        }
       }
     ],
     "nativeWindows": false,
     "externalOffline": true
   },
-  "htmlSha256": "75873b4088e897e457269207ce887171e7eef007f8a74831d913e87b9aa338a4"
+  "htmlSha256": "9d68ad43d97429963a7ac50c4a7c76d6fe697fe0ca0af61fbe8fa0c8c61f5527"
 }

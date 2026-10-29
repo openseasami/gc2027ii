@@ -1,0 +1,4747 @@
+{
+  "completion": false,
+  "passed": true,
+  "oracle": "Pokémon Showdown Champions mod 1242c1e2d9763ba5b85d33f13aecb89bae19ae3d; Helping Hand volatile once per recipient",
+  "comparisons": 8640,
+  "cases": [
+    {
+      "id": "matrix/garchomp/dragonclaw/none/none",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/none/electric",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/none/grassy",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/none/psychic",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/none/misty",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        36,
+        43
+      ],
+      "on": [
+        54,
+        64
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sun/none",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sun/electric",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sun/grassy",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sun/psychic",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sun/misty",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        36,
+        43
+      ],
+      "on": [
+        54,
+        64
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/rain/none",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/rain/electric",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/rain/grassy",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/rain/psychic",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/rain/misty",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        36,
+        43
+      ],
+      "on": [
+        54,
+        64
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sand/none",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sand/electric",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sand/grassy",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sand/psychic",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sand/misty",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        36,
+        43
+      ],
+      "on": [
+        54,
+        64
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/snow/none",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/snow/electric",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/snow/grassy",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/snow/psychic",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        72,
+        85
+      ],
+      "on": [
+        106,
+        126
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/snow/misty",
+      "move": "dragonclaw",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        36,
+        43
+      ],
+      "on": [
+        54,
+        64
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/none/none",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/none/electric",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/none/grassy",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/none/psychic",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/none/misty",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/sun/none",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/sun/electric",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/sun/grassy",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/sun/psychic",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/sun/misty",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/rain/none",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/rain/electric",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/rain/grassy",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/rain/psychic",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/rain/misty",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/sand/none",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/sand/electric",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/sand/grassy",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/sand/psychic",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/sand/misty",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/snow/none",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/snow/electric",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/snow/grassy",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/snow/psychic",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/garchomp/rockslide/snow/misty",
+      "move": "rockslide",
+      "source": "garchomp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        79
+      ],
+      "on": [
+        99,
+        117
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/none/none",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/none/electric",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/none/grassy",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/none/psychic",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/none/misty",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/sun/none",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        28,
+        34
+      ],
+      "on": [
+        42,
+        51
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/sun/electric",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        28,
+        34
+      ],
+      "on": [
+        42,
+        51
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/sun/grassy",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        28,
+        34
+      ],
+      "on": [
+        42,
+        51
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/sun/psychic",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        28,
+        34
+      ],
+      "on": [
+        42,
+        51
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/sun/misty",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        28,
+        34
+      ],
+      "on": [
+        42,
+        51
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/rain/none",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        87,
+        103
+      ],
+      "on": [
+        129,
+        153
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/rain/electric",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        87,
+        103
+      ],
+      "on": [
+        129,
+        153
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/rain/grassy",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        87,
+        103
+      ],
+      "on": [
+        129,
+        153
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/rain/psychic",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        87,
+        103
+      ],
+      "on": [
+        129,
+        153
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/rain/misty",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        87,
+        103
+      ],
+      "on": [
+        129,
+        153
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/sand/none",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/sand/electric",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/sand/grassy",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/sand/psychic",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/sand/misty",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/snow/none",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/snow/electric",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/snow/grassy",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/snow/psychic",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/primarina/hypervoice/snow/misty",
+      "move": "hypervoice",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        58,
+        69
+      ],
+      "on": [
+        85,
+        102
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/none/none",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/none/electric",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/none/grassy",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/none/psychic",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/none/misty",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/sun/none",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/sun/electric",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/sun/grassy",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/sun/psychic",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/sun/misty",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/rain/none",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/rain/electric",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/rain/grassy",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/rain/psychic",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/rain/misty",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/sand/none",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/sand/electric",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/sand/grassy",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/sand/psychic",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/sand/misty",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/snow/none",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/snow/electric",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/snow/grassy",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/snow/psychic",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/gardevoirmega/hypervoice/snow/misty",
+      "move": "hypervoice",
+      "source": "gardevoirmega",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        84,
+        99
+      ],
+      "on": [
+        126,
+        148
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/none/none",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/none/electric",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/none/grassy",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/none/psychic",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/none/misty",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/sun/none",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        43,
+        52
+      ],
+      "on": [
+        66,
+        78
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/sun/electric",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        43,
+        52
+      ],
+      "on": [
+        66,
+        78
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/sun/grassy",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        43,
+        52
+      ],
+      "on": [
+        66,
+        78
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/sun/psychic",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        43,
+        52
+      ],
+      "on": [
+        66,
+        78
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/sun/misty",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        43,
+        52
+      ],
+      "on": [
+        66,
+        78
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/rain/none",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        135,
+        159
+      ],
+      "on": [
+        199,
+        235
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/rain/electric",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        135,
+        159
+      ],
+      "on": [
+        199,
+        235
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/rain/grassy",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        135,
+        159
+      ],
+      "on": [
+        199,
+        235
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/rain/psychic",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        135,
+        159
+      ],
+      "on": [
+        199,
+        235
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/rain/misty",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        135,
+        159
+      ],
+      "on": [
+        199,
+        235
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/sand/none",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/sand/electric",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/sand/grassy",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/sand/psychic",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/sand/misty",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/snow/none",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/snow/electric",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/snow/grassy",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/snow/psychic",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/azumarill/aquatail/snow/misty",
+      "move": "aquatail",
+      "source": "azumarill",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        90,
+        106
+      ],
+      "on": [
+        133,
+        157
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/none/none",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/none/electric",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/none/grassy",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/none/psychic",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        0,
+        0
+      ],
+      "on": [
+        0,
+        0
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/none/misty",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/sun/none",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/sun/electric",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/sun/grassy",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/sun/psychic",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        0,
+        0
+      ],
+      "on": [
+        0,
+        0
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/sun/misty",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/rain/none",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/rain/electric",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/rain/grassy",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/rain/psychic",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        0,
+        0
+      ],
+      "on": [
+        0,
+        0
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/rain/misty",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/sand/none",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/sand/electric",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/sand/grassy",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/sand/psychic",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        0,
+        0
+      ],
+      "on": [
+        0,
+        0
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/sand/misty",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/snow/none",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/snow/electric",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/snow/grassy",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/snow/psychic",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        0,
+        0
+      ],
+      "on": [
+        0,
+        0
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/scizor/bulletpunch/snow/misty",
+      "move": "bulletpunch",
+      "source": "scizor",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        54,
+        64
+      ],
+      "on": [
+        79,
+        94
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/none/none",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/none/electric",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/none/grassy",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/none/psychic",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/none/misty",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/sun/none",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        207,
+        244
+      ],
+      "on": [
+        309,
+        364
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/sun/electric",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        207,
+        244
+      ],
+      "on": [
+        309,
+        364
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/sun/grassy",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        207,
+        244
+      ],
+      "on": [
+        309,
+        364
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/sun/psychic",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        207,
+        244
+      ],
+      "on": [
+        309,
+        364
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/sun/misty",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        207,
+        244
+      ],
+      "on": [
+        309,
+        364
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/rain/none",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        81
+      ],
+      "on": [
+        102,
+        121
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/rain/electric",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        81
+      ],
+      "on": [
+        102,
+        121
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/rain/grassy",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        81
+      ],
+      "on": [
+        102,
+        121
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/rain/psychic",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        81
+      ],
+      "on": [
+        102,
+        121
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/rain/misty",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        67,
+        81
+      ],
+      "on": [
+        102,
+        121
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/sand/none",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/sand/electric",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/sand/grassy",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/sand/psychic",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/sand/misty",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/snow/none",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/snow/electric",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/snow/grassy",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/snow/psychic",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/charizardmegax/flareblitz/snow/misty",
+      "move": "flareblitz",
+      "source": "charizardmegax",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        138,
+        163
+      ],
+      "on": [
+        205,
+        243
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/none/none",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/none/electric",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/none/grassy",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/none/psychic",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/none/misty",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/sun/none",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/sun/electric",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/sun/grassy",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/sun/psychic",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/sun/misty",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/rain/none",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/rain/electric",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/rain/grassy",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/rain/psychic",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/rain/misty",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/sand/none",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/sand/electric",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/sand/grassy",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/sand/psychic",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/sand/misty",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/snow/none",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/snow/electric",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/snow/grassy",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/snow/psychic",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "matrix/tauros/bodyslam/snow/misty",
+      "move": "bodyslam",
+      "source": "tauros",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        82,
+        97
+      ],
+      "on": [
+        123,
+        145
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/35/false/",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        5,
+        6
+      ],
+      "on": [
+        8,
+        10
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/35/false/Life Orb",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        7,
+        8
+      ],
+      "on": [
+        10,
+        13
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/35/true/",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        12,
+        15
+      ],
+      "on": [
+        18,
+        21
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "rounding/35/true/Life Orb",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        16,
+        19
+      ],
+      "on": [
+        23,
+        28
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "rounding/55/false/",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        8,
+        10
+      ],
+      "on": [
+        12,
+        15
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/55/false/Life Orb",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        11,
+        14
+      ],
+      "on": [
+        16,
+        19
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/55/true/",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        19,
+        22
+      ],
+      "on": [
+        28,
+        33
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "rounding/55/true/Life Orb",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        25,
+        29
+      ],
+      "on": [
+        37,
+        44
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "rounding/65/false/",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        10,
+        12
+      ],
+      "on": [
+        15,
+        18
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/65/false/Life Orb",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        14,
+        16
+      ],
+      "on": [
+        19,
+        23
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/65/true/",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        22,
+        27
+      ],
+      "on": [
+        33,
+        39
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "rounding/65/true/Life Orb",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        29,
+        35
+      ],
+      "on": [
+        43,
+        51
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "rounding/75/false/",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        11,
+        13
+      ],
+      "on": [
+        16,
+        20
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/75/false/Life Orb",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        15,
+        18
+      ],
+      "on": [
+        21,
+        26
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/75/true/",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        25,
+        30
+      ],
+      "on": [
+        38,
+        45
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "rounding/75/true/Life Orb",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        33,
+        39
+      ],
+      "on": [
+        49,
+        58
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "rounding/95/false/",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        14,
+        17
+      ],
+      "on": [
+        21,
+        25
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/95/false/Life Orb",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        19,
+        22
+      ],
+      "on": [
+        28,
+        33
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/95/true/",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        32,
+        38
+      ],
+      "on": [
+        48,
+        57
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "rounding/95/true/Life Orb",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        42,
+        50
+      ],
+      "on": [
+        63,
+        74
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "rounding/105/false/",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        16,
+        19
+      ],
+      "on": [
+        23,
+        28
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/105/false/Life Orb",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        21,
+        25
+      ],
+      "on": [
+        31,
+        36
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "rounding/105/true/",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        35,
+        42
+      ],
+      "on": [
+        53,
+        63
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "rounding/105/true/Life Orb",
+      "move": "flamethrower",
+      "source": "charizard",
+      "target": "dragonite",
+      "category": "Special",
+      "off": [
+        46,
+        55
+      ],
+      "on": [
+        69,
+        82
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "burn-guts-facade/false/-6",
+      "move": "facade",
+      "source": "conkeldurr",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        13,
+        16
+      ],
+      "on": [
+        19,
+        23
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "burn-guts-facade/false/-2",
+      "move": "facade",
+      "source": "conkeldurr",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        25,
+        30
+      ],
+      "on": [
+        38,
+        45
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "burn-guts-facade/false/0",
+      "move": "facade",
+      "source": "conkeldurr",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        50,
+        59
+      ],
+      "on": [
+        74,
+        88
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "burn-guts-facade/false/2",
+      "move": "facade",
+      "source": "conkeldurr",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        99,
+        117
+      ],
+      "on": [
+        148,
+        175
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "burn-guts-facade/false/6",
+      "move": "facade",
+      "source": "conkeldurr",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        198,
+        233
+      ],
+      "on": [
+        296,
+        349
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "burn-guts-facade/true/-6",
+      "move": "facade",
+      "source": "conkeldurr",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        38,
+        45
+      ],
+      "on": [
+        56,
+        67
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "burn-guts-facade/true/-2",
+      "move": "facade",
+      "source": "conkeldurr",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        74,
+        88
+      ],
+      "on": [
+        112,
+        132
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "burn-guts-facade/true/0",
+      "move": "facade",
+      "source": "conkeldurr",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        148,
+        175
+      ],
+      "on": [
+        222,
+        262
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "burn-guts-facade/true/2",
+      "move": "facade",
+      "source": "conkeldurr",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        296,
+        349
+      ],
+      "on": [
+        444,
+        523
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "burn-guts-facade/true/6",
+      "move": "facade",
+      "source": "conkeldurr",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        592,
+        697
+      ],
+      "on": [
+        888,
+        1045
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "moldbreaker-levitate/Mold Breaker",
+      "move": "earthquake",
+      "source": "excadrill",
+      "target": "rotomwash",
+      "category": "Physical",
+      "off": [
+        102,
+        122
+      ],
+      "on": [
+        152,
+        182
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "moldbreaker-levitate/Sand Rush",
+      "move": "earthquake",
+      "source": "excadrill",
+      "target": "rotomwash",
+      "category": "Physical",
+      "off": [
+        0,
+        0
+      ],
+      "on": [
+        0,
+        0
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "opponent-active-support/Friend Guard",
+      "move": "moonblast",
+      "source": "primarina",
+      "target": "garchomp",
+      "category": "Special",
+      "off": [
+        152,
+        180
+      ],
+      "on": [
+        222,
+        264
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "opponent-active-support/Fairy Aura",
+      "move": "moonblast",
+      "source": "primarina",
+      "target": "garchomp",
+      "category": "Special",
+      "off": [
+        200,
+        236
+      ],
+      "on": [
+        300,
+        354
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "multiscale/false",
+      "move": "woodhammer",
+      "source": "rillaboom",
+      "target": "dragonite",
+      "category": "Physical",
+      "off": [
+        10,
+        12
+      ],
+      "on": [
+        15,
+        18
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "multiscale/true",
+      "move": "woodhammer",
+      "source": "rillaboom",
+      "target": "dragonite",
+      "category": "Physical",
+      "off": [
+        5,
+        6
+      ],
+      "on": [
+        7,
+        9
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "active-berry-moldbreaker-lifeorb/false",
+      "move": "rockslide",
+      "source": "excadrill",
+      "target": "dragonite",
+      "category": "Physical",
+      "off": [
+        73,
+        87
+      ],
+      "on": [
+        110,
+        130
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "active-berry-moldbreaker-lifeorb/true",
+      "move": "rockslide",
+      "source": "excadrill",
+      "target": "dragonite",
+      "category": "Physical",
+      "off": [
+        110,
+        130
+      ],
+      "on": [
+        165,
+        195
+      ],
+      "active": true,
+      "crit": true
+    },
+    {
+      "id": "multihit/populationbomb/",
+      "move": "populationbomb",
+      "source": "mausholdfour",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        130,
+        160
+      ],
+      "on": [
+        190,
+        240
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "multihit/tripleaxel/",
+      "move": "tripleaxel",
+      "source": "weavile",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        113,
+        136
+      ],
+      "on": [
+        169,
+        201
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "multihit/populationbomb/Wide Lens",
+      "move": "populationbomb",
+      "source": "mausholdfour",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        130,
+        160
+      ],
+      "on": [
+        190,
+        240
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "multihit/tripleaxel/Wide Lens",
+      "move": "tripleaxel",
+      "source": "weavile",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        113,
+        136
+      ],
+      "on": [
+        169,
+        201
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "fixed-damage",
+      "move": "seismictoss",
+      "source": "machamp",
+      "target": "snorlax",
+      "category": "Physical",
+      "off": [
+        50,
+        50
+      ],
+      "on": [
+        50,
+        50
+      ],
+      "active": true,
+      "crit": false
+    },
+    {
+      "id": "bench-source-never-borrows-helper",
+      "move": "moonblast",
+      "source": "primarina",
+      "target": "snorlax",
+      "category": "Special",
+      "off": [
+        60,
+        72
+      ],
+      "on": [
+        60,
+        72
+      ],
+      "active": false,
+      "crit": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "OFF-ON-OFF-restoration",
+      "passed": true
+    },
+    {
+      "id": "physical-and-special",
+      "passed": true
+    },
+    {
+      "id": "BP-rounding-not-final-damage",
+      "passed": true
+    },
+    {
+      "id": "one-modifier-per-attack",
+      "passed": true
+    },
+    {
+      "id": "critical-weather-terrain-rank-item-ability-combinations",
+      "passed": true
+    },
+    {
+      "id": "each-hit-independent",
+      "passed": true
+    },
+    {
+      "id": "fixed-damage-not-boosted",
+      "passed": true
+    },
+    {
+      "id": "recipient-not-defender-or-bench",
+      "passed": true
+    },
+    {
+      "id": "status-excluded-but-retained-in-data",
+      "passed": true
+    }
+  ],
+  "roundingExamples": [
+    {
+      "id": "matrix/garchomp/dragonclaw/none/none",
+      "off": [
+        72,
+        73,
+        73,
+        75,
+        75,
+        76,
+        76,
+        78,
+        79,
+        79,
+        81,
+        81,
+        82,
+        82,
+        84,
+        85
+      ],
+      "on": [
+        106,
+        108,
+        109,
+        109,
+        111,
+        112,
+        114,
+        115,
+        117,
+        117,
+        118,
+        120,
+        121,
+        123,
+        124,
+        126
+      ],
+      "meaning": "BP modifier is not a final damage multiplication"
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/none/electric",
+      "off": [
+        72,
+        73,
+        73,
+        75,
+        75,
+        76,
+        76,
+        78,
+        79,
+        79,
+        81,
+        81,
+        82,
+        82,
+        84,
+        85
+      ],
+      "on": [
+        106,
+        108,
+        109,
+        109,
+        111,
+        112,
+        114,
+        115,
+        117,
+        117,
+        118,
+        120,
+        121,
+        123,
+        124,
+        126
+      ],
+      "meaning": "BP modifier is not a final damage multiplication"
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/none/grassy",
+      "off": [
+        72,
+        73,
+        73,
+        75,
+        75,
+        76,
+        76,
+        78,
+        79,
+        79,
+        81,
+        81,
+        82,
+        82,
+        84,
+        85
+      ],
+      "on": [
+        106,
+        108,
+        109,
+        109,
+        111,
+        112,
+        114,
+        115,
+        117,
+        117,
+        118,
+        120,
+        121,
+        123,
+        124,
+        126
+      ],
+      "meaning": "BP modifier is not a final damage multiplication"
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/none/psychic",
+      "off": [
+        72,
+        73,
+        73,
+        75,
+        75,
+        76,
+        76,
+        78,
+        79,
+        79,
+        81,
+        81,
+        82,
+        82,
+        84,
+        85
+      ],
+      "on": [
+        106,
+        108,
+        109,
+        109,
+        111,
+        112,
+        114,
+        115,
+        117,
+        117,
+        118,
+        120,
+        121,
+        123,
+        124,
+        126
+      ],
+      "meaning": "BP modifier is not a final damage multiplication"
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/none/misty",
+      "off": [
+        36,
+        36,
+        37,
+        37,
+        37,
+        39,
+        39,
+        39,
+        39,
+        40,
+        40,
+        40,
+        42,
+        42,
+        42,
+        43
+      ],
+      "on": [
+        54,
+        54,
+        55,
+        55,
+        57,
+        57,
+        58,
+        58,
+        58,
+        60,
+        60,
+        61,
+        61,
+        63,
+        63,
+        64
+      ],
+      "meaning": "BP modifier is not a final damage multiplication"
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sun/none",
+      "off": [
+        72,
+        73,
+        73,
+        75,
+        75,
+        76,
+        76,
+        78,
+        79,
+        79,
+        81,
+        81,
+        82,
+        82,
+        84,
+        85
+      ],
+      "on": [
+        106,
+        108,
+        109,
+        109,
+        111,
+        112,
+        114,
+        115,
+        117,
+        117,
+        118,
+        120,
+        121,
+        123,
+        124,
+        126
+      ],
+      "meaning": "BP modifier is not a final damage multiplication"
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sun/electric",
+      "off": [
+        72,
+        73,
+        73,
+        75,
+        75,
+        76,
+        76,
+        78,
+        79,
+        79,
+        81,
+        81,
+        82,
+        82,
+        84,
+        85
+      ],
+      "on": [
+        106,
+        108,
+        109,
+        109,
+        111,
+        112,
+        114,
+        115,
+        117,
+        117,
+        118,
+        120,
+        121,
+        123,
+        124,
+        126
+      ],
+      "meaning": "BP modifier is not a final damage multiplication"
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sun/grassy",
+      "off": [
+        72,
+        73,
+        73,
+        75,
+        75,
+        76,
+        76,
+        78,
+        79,
+        79,
+        81,
+        81,
+        82,
+        82,
+        84,
+        85
+      ],
+      "on": [
+        106,
+        108,
+        109,
+        109,
+        111,
+        112,
+        114,
+        115,
+        117,
+        117,
+        118,
+        120,
+        121,
+        123,
+        124,
+        126
+      ],
+      "meaning": "BP modifier is not a final damage multiplication"
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sun/psychic",
+      "off": [
+        72,
+        73,
+        73,
+        75,
+        75,
+        76,
+        76,
+        78,
+        79,
+        79,
+        81,
+        81,
+        82,
+        82,
+        84,
+        85
+      ],
+      "on": [
+        106,
+        108,
+        109,
+        109,
+        111,
+        112,
+        114,
+        115,
+        117,
+        117,
+        118,
+        120,
+        121,
+        123,
+        124,
+        126
+      ],
+      "meaning": "BP modifier is not a final damage multiplication"
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/sun/misty",
+      "off": [
+        36,
+        36,
+        37,
+        37,
+        37,
+        39,
+        39,
+        39,
+        39,
+        40,
+        40,
+        40,
+        42,
+        42,
+        42,
+        43
+      ],
+      "on": [
+        54,
+        54,
+        55,
+        55,
+        57,
+        57,
+        58,
+        58,
+        58,
+        60,
+        60,
+        61,
+        61,
+        63,
+        63,
+        64
+      ],
+      "meaning": "BP modifier is not a final damage multiplication"
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/rain/none",
+      "off": [
+        72,
+        73,
+        73,
+        75,
+        75,
+        76,
+        76,
+        78,
+        79,
+        79,
+        81,
+        81,
+        82,
+        82,
+        84,
+        85
+      ],
+      "on": [
+        106,
+        108,
+        109,
+        109,
+        111,
+        112,
+        114,
+        115,
+        117,
+        117,
+        118,
+        120,
+        121,
+        123,
+        124,
+        126
+      ],
+      "meaning": "BP modifier is not a final damage multiplication"
+    },
+    {
+      "id": "matrix/garchomp/dragonclaw/rain/electric",
+      "off": [
+        72,
+        73,
+        73,
+        75,
+        75,
+        76,
+        76,
+        78,
+        79,
+        79,
+        81,
+        81,
+        82,
+        82,
+        84,
+        85
+      ],
+      "on": [
+        106,
+        108,
+        109,
+        109,
+        111,
+        112,
+        114,
+        115,
+        117,
+        117,
+        118,
+        120,
+        121,
+        123,
+        124,
+        126
+      ],
+      "meaning": "BP modifier is not a final damage multiplication"
+    }
+  ],
+  "limitations": [
+    "Independent damage hypotheses only; no Helping Hand user, move selection, action order or simultaneous-turn feasibility is inferred."
+  ]
+}

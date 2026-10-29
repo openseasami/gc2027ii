@@ -1,6 +1,6 @@
 # 開発チェックポイント
 
-対象は添付v8を基準にした独立ビューアです。旧リポジトリ `openseasami/gc2027ii` の対戦支援システムは再開せず、main・公開サイトを変更していません。ローカル専用ブランチは `viewer-v9-development`。ユーザーGitHubへの書込み・公開は行っていません。
+対象は添付v8を基準にした独立ビューアです。旧リポジトリ `openseasami/gc2027ii` の対戦支援システムは再開せず、main・公開サイトを変更していません。ローカル専用ブランチは `viewer-v9-development`。GitHubのviewer-v9-developmentに保存しています。main・codex-development・既存公開サイトへの書込みは行いません。
 
 ## 保存内容
 
@@ -38,3 +38,7 @@ python3 tests/artifact.py
 名称登録を効果実装完了としません。登録済み6体・SP移行・全8対面・場と控えの特性源・メガストーンの整合性を維持します。calcの空文字特性はclone時に初期特性に戻るため、無効化時は内部用 `No Ability` を使います。シードや登場時特性で入力済みランクを二重に変更してはいけません。
 
 AI・完全試合・履歴・ターン・HP追跡は今回の対象外です。これらを追加完成条件や次の開発段階として扱いません。
+
+## てだすけ・バー対応
+
+source/core.cjsは攻撃者ごとのisHelpingHandを既存エンジンへ一度だけ渡します。source/app.cjsは4受け手の一時状態・2対面共有・控え分離・変化技除外・範囲バーを実装。tests/helping-hand.cjsの独立比較とtests/helping_hand_browser.pyの実DOM検証を通常の全試験へ組み込みました。JSONバージョンと登録データ、M-C対象は不変です。前版ZIPはrelease/archive/v9-MC-before-helping-handに保持しています。

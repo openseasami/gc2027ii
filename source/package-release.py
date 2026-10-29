@@ -15,7 +15,7 @@ stage.mkdir()
 report=json.loads((ROOT/'reference/VERIFICATION_REPORT.json').read_text())
 assert report['completion'] is False
 assert report['scopeCompletion'] is True
-for name in ['ROSTER_RESULTS','UNIT_RESULTS','NUMERIC_RESULTS','MULTIHIT_RESULTS','SPEED_RESULTS','BROWSER_RESULTS']:
+for name in ['ROSTER_RESULTS','UNIT_RESULTS','HELPING_HAND_RESULTS','NUMERIC_RESULTS','MULTIHIT_RESULTS','SPEED_RESULTS','BROWSER_RESULTS']:
     assert json.loads((ROOT/f'reference/{name}.json').read_text())['passed'],name
 html=release/'GC2027II_Viewer_v9.html'
 assert hashlib.sha256(html.read_bytes()).hexdigest()==report['htmlSha256']
@@ -26,13 +26,13 @@ shutil.copytree(ROOT/'docs',stage/'docs')
 shutil.copytree(ROOT/'vendor',stage/'licenses')
 shutil.copytree(ROOT/'migration',stage/'migration')
 (stage/'reports').mkdir()
-names=['ROSTER_RESULTS','MC_ROSTER_AUDIT','ACCEPTANCE_SCOPE','UNIT_RESULTS','NUMERIC_RESULTS','MULTIHIT_RESULTS','SPEED_RESULTS','BROWSER_RESULTS','DATA_AUDIT','IMAGE_AUDIT','EDGE_PROVENANCE','ABILITY_COVERAGE','UNCONFIRMED','VERIFICATION_REPORT','INCIDENTS','NUMERIC_ATTEMPT1','NUMERIC_ATTEMPT2']
+names=['ROSTER_RESULTS','MC_ROSTER_AUDIT','ACCEPTANCE_SCOPE','UNIT_RESULTS','HELPING_HAND_RESULTS','NUMERIC_RESULTS','MULTIHIT_RESULTS','SPEED_RESULTS','BROWSER_RESULTS','DATA_AUDIT','IMAGE_AUDIT','EDGE_PROVENANCE','ABILITY_COVERAGE','UNCONFIRMED','VERIFICATION_REPORT','INCIDENTS','NUMERIC_ATTEMPT1','NUMERIC_ATTEMPT2']
 for name in names:
     shutil.copyfile(ROOT/f'reference/{name}.json',stage/f'reports/{name}.json')
 shutil.copytree(ROOT/'reference/mc-roster',stage/'reports/mc-roster')
 shutil.copyfile(ROOT/'reference/MC_ROSTER.csv',stage/'reports/MC_ROSTER.csv')
 (stage/'reports/screenshots').mkdir()
-for name in ['viewer-Chromium.png','viewer-Microsoft-Edge-Linux.png']:
+for name in ['viewer-Chromium.png','viewer-Microsoft-Edge-Linux.png','helping-hand-Chromium.png','helping-hand-Microsoft-Edge-Linux.png']:
     shutil.copyfile(ROOT/f'work/{name}',stage/f'reports/screenshots/{name}')
 files=sorted(p for p in stage.rglob('*') if p.is_file())
 manifest=''.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.relative_to(stage).as_posix()+'\n' for p in files)

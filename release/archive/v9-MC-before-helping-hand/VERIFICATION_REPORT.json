@@ -1,0 +1,99 @@
+{
+  "completion": false,
+  "scopeCompletion": true,
+  "decision": "今回のM-C比較照合・回帰検証は合格（非公式資料基準）",
+  "dateJST": "2026-10-29",
+  "blockingConfirmation": [],
+  "acceptance": {
+    "completion": false,
+    "dateJST": "2026-10-29",
+    "scope": "Non-official-source M-C roster restriction and existing viewer regression",
+    "excludedFromAcceptance": [
+      "Official page body retrieval and official certification",
+      "Real-game numerical comparison"
+    ],
+    "required": [
+      "Per-form non-official roster evidence with family-vs-form matching distinguished",
+      "No source-less battle-only form admitted solely by engine validation",
+      "Existing valid stats, calculation engine, UI layout and JSON version preserved",
+      "Regression, independent Champions engine, browser and actual ZIP tests pass"
+    ],
+    "fullBattleSpecificationCompletion": false
+  },
+  "roster": {
+    "previous": 386,
+    "included": 356,
+    "species": 231,
+    "mega": 82,
+    "battleReferences": 7,
+    "entryForms": 267,
+    "appearanceConsolidated": 26,
+    "excludedNoEvidence": 4,
+    "unresolved": 0
+  },
+  "data": {
+    "candidateForms": 356,
+    "mega": 82,
+    "statDataCompared": 2130,
+    "statDataMismatches": 0,
+    "uncomparedAliases": 1
+  },
+  "unit": {
+    "groups": 16,
+    "statFormulaComparisons": 160200,
+    "passed": true
+  },
+  "numeric": {
+    "passedCases": 1434,
+    "unverifiedCases": 7,
+    "failedCases": 0,
+    "independentRolls": 22944,
+    "distinctMoves": 79
+  },
+  "multi": {
+    "passed": true,
+    "cases": 4,
+    "independentPerHitRolls": 416
+  },
+  "speed": {
+    "passed": true,
+    "cases": 72,
+    "unverified": 0
+  },
+  "browser": {
+    "passed": true,
+    "profiles": [
+      {
+        "brand": "Chromium",
+        "version": "154.0.8037.57",
+        "layouts": 4,
+        "updateMs": [
+          20.5,
+          23.7,
+          18.6,
+          22.2,
+          22.4,
+          23.6,
+          27.1
+        ]
+      },
+      {
+        "brand": "Microsoft Edge Linux",
+        "version": "142.0.3595.94",
+        "layouts": 4,
+        "updateMs": [
+          31.1,
+          31.1,
+          25.6,
+          19.6,
+          24.8,
+          21.3,
+          26.0
+        ]
+      }
+    ],
+    "nativeWindows": false,
+    "externalOffline": true
+  },
+  "htmlSha256": "75873b4088e897e457269207ce887171e7eef007f8a74831d913e87b9aa338a4"
+}

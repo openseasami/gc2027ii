@@ -2,7 +2,7 @@
   "completion": false,
   "passed": true,
   "artifact": {
-    "htmlSha256": "75873b4088e897e457269207ce887171e7eef007f8a74831d913e87b9aa338a4"
+    "htmlSha256": "9d68ad43d97429963a7ac50c4a7c76d6fe697fe0ca0af61fbe8fa0c8c61f5527"
   },
   "nativeWindows": false,
   "fileProtocol": "Not executed: managed Chromium blocked file navigation; no policy bypass attempted",
@@ -112,17 +112,43 @@
         "opponent burn"
       ],
       "updateMs": [
-        20.5,
+        29.0,
+        23.3,
+        22.7,
+        27.8,
+        26.8,
         23.7,
-        18.6,
-        22.2,
-        22.4,
-        23.6,
-        27.1
+        28.2
       ],
       "legacyDownload": true,
       "sameOriginV8Migration": true,
       "benchComparisons": 32,
+      "helpingHand": {
+        "passed": true,
+        "controls": 4,
+        "offOnOff": true,
+        "separateSides": true,
+        "sameAttackerBothTargets": true,
+        "activeToBench": true,
+        "benchAttackerUnaffected": true,
+        "weatherTerrainMegaRankBurnWhileOn": true,
+        "damageBarsBefore": {
+          "count": 344,
+          "immune": 9,
+          "over100": 34
+        },
+        "damageBarsAfter": {
+          "count": 344,
+          "immune": 9,
+          "over100": 62
+        },
+        "statusAttacksHidden": true,
+        "statusCandidatesKept": true,
+        "registeredHelpingHandHidden": true,
+        "recipientChangeResets": true,
+        "conditionReset": true,
+        "teamJsonUnchanged": true
+      },
       "mcPickerRestricted": true,
       "appearanceJsonMigration": true,
       "outOfScopeOriginalBackup": true,
@@ -243,15 +269,41 @@
         "opponent burn"
       ],
       "updateMs": [
-        31.1,
-        31.1,
+        24.4,
         25.6,
-        19.6,
-        24.8,
-        21.3,
-        26.0
+        23.6,
+        24.1,
+        31.4,
+        25.6,
+        26.7
       ],
       "benchComparisons": 32,
+      "helpingHand": {
+        "passed": true,
+        "controls": 4,
+        "offOnOff": true,
+        "separateSides": true,
+        "sameAttackerBothTargets": true,
+        "activeToBench": true,
+        "benchAttackerUnaffected": true,
+        "weatherTerrainMegaRankBurnWhileOn": true,
+        "damageBarsBefore": {
+          "count": 344,
+          "immune": 9,
+          "over100": 34
+        },
+        "damageBarsAfter": {
+          "count": 344,
+          "immune": 9,
+          "over100": 62
+        },
+        "statusAttacksHidden": true,
+        "statusCandidatesKept": true,
+        "registeredHelpingHandHidden": true,
+        "recipientChangeResets": true,
+        "conditionReset": true,
+        "teamJsonUnchanged": true
+      },
       "mcPickerRestricted": true,
       "appearanceJsonMigration": true,
       "outOfScopeOriginalBackup": true,

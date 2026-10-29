@@ -2,13 +2,13 @@
   "completion": false,
   "passed": true,
   "archive": "GC2027II_Viewer_v9_offline.zip",
-  "sha256": "16d0327e572a7298a6469c03aadf149d1d3e8774f6d3bd24af1a1757998be08b",
-  "manifestFiles": 44,
+  "sha256": "44ceeaf6cef256e1a8a6809bbe4d162b4c7c143220a871df36adf9f8a6a6b105",
+  "manifestFiles": 48,
   "launcherPassed": true,
   "browserPassed": true,
   "limitations": [
     "Native Windows and file:// direct launch unexecuted; loopback HTTP is the verified method"
   ],
-  "htmlSha256": "75873b4088e897e457269207ce887171e7eef007f8a74831d913e87b9aa338a4",
+  "htmlSha256": "9d68ad43d97429963a7ac50c4a7c76d6fe697fe0ca0af61fbe8fa0c8c61f5527",
   "browserEvidence": "ARTIFACT_BROWSER_RESULTS.json"
 }

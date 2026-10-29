@@ -18,6 +18,7 @@ function native(source,target,moveId,ctx={},opts={}){
    if(K.LOW_HP.has(x.ability)&&x.lowHpCondition)p.hp=Math.max(1,Math.floor(p.maxhp/3));
    if(x.ability==='Flash Fire'&&x.abilityOn)p.addVolatile('flashfire');
    if(x.ability==='Electromorphosis'&&x.abilityOn)p.addVolatile('charge');
+   if(x.helpingHand===true&&x.active!==false)p.addVolatile('helpinghand',p);
   }
   const initial=map.map(([p,x])=>({p,x,boosts:{atk:x.boosts[0],def:x.boosts[1],spa:x.boosts[2],spd:x.boosts[3],spe:0,accuracy:0,evasion:0},hp:p.hp,item:p.item}));
   const rolls=[];

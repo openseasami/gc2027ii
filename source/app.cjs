@@ -16,7 +16,8 @@ try{
  }
 }catch(e){loadFailed=true;loadNotice='保存データを読み込めませんでした。対象外の旧形態を含む可能性があります。元の保存は上書きしていません。JSON出力で元データを保管できます。';}
 if(!team){team=K.validateTeam([K.blankProfile('rillaboom'),K.blankProfile('sneasler')]);if(!loadFailed)loadNotice='初期サンプル2体です。実際のパーティ・配分を登録してください。';}
-const state={own:[0,1],opp:['incineroar','primarina'],ownForms:{},ranks:{own:[[0,0,0,0],[0,0,0,0]],opp:[[0,0,0,0],[0,0,0,0]]},burn:{own:[false,false],opp:[false,false]},weather:'none',terrain:'none',tr:false,enemyBench:['','','','']};
+const state={own:[0,1],opp:['incineroar','primarina'],ownForms:{},ranks:{own:[[0,0,0,0],[0,0,0,0]],opp:[[0,0,0,0],[0,0,0,0]]},burn:{own:[false,false],opp:[false,false]},helpingHand:{own:[false,false],opp:[false,false]},weather:'none',terrain:'none',tr:false,enemyBench:['','','','']};
+function resetHelpingHand(){state.helpingHand={own:[false,false],opp:[false,false]};}
 let revision=0,cache=new Map(),pendingImport=null,pickerTarget=null,renderCount=0;
 function message(txt,error=false){$('notice').textContent=txt;$('notice').classList.toggle('error',error);}
 function spriteHTML(id,cls='avatar'){
@@ -37,7 +38,7 @@ function actors(){
  const all=[];for(const side of ['own','opp'])for(let i=0;i<2;i++){
   let a;if(side==='own'){const n=state.own[i];if(n===null||!team[n]?.species)continue;let p=team[n],form=state.ownForms[n]||p.form;a=K.actorFromProfile(p,form);a.profile=n;}
   else{if(!state.opp[i])continue;a=K.unknownActor(state.opp[i]);}
-  all.push({...a,side,key:side+i,slot:i,active:true,boosts:state.ranks[side][i].slice(),burn:state.burn[side][i]});
+  all.push({...a,side,key:side+i,slot:i,active:true,helpingHand:state.helpingHand[side][i],boosts:state.ranks[side][i].slice(),burn:state.burn[side][i]});
  }return all;
 }
 function context(){return {weather:state.weather,terrain:state.terrain,tr:state.tr,actives:actors()};}
@@ -61,24 +62,30 @@ function renderTeam(){
  }).join('');
 }
 function shortLabel(label){if(label.startsWith('基準：'))return '基準 '+label.slice(3).split('・')[0]+'／0P';if(label.includes('HP1/3'))return label.split('有効')[0]+' HP≤1/3';if(label.includes('HP満タン'))return label.split('有効')[0]+' 満タン';return label.replace(/／.*$/,'').replace('攻撃側 ','').replace('・性格補正＋','＋').replace('・耐久32＋',' 耐久32＋').replace('所持','');}
-function patternHTML(r,baseType){if(r.unsupported)return '<div class="condition unsupported">未計算：'+esc(r.unsupported)+'</div>';return '<div class="condition"><span title="'+esc(r.label)+'">'+esc(shortLabel(r.label))+(r.hpAssumption?' <small>'+esc(r.hpAssumption)+'</small>':'')+(r.actualType&&r.actualType!==baseType?' <small>'+esc(D.types[r.actualType]||r.actualType)+'</small>':'')+'</span><strong style="background:'+heat(r.percent[1])+'">'+r.percent.map(n=>n.toFixed(1)).join('–')+'%</strong></div>';}
+function damageBar(r){const [min,max]=r.percent,cap=v=>Math.max(0,Math.min(100,v));return '<div class="damage-bar" role="img" aria-label="命中時 '+min.toFixed(1)+'～'+max.toFixed(1)+'%、最大HP100%を基準" title="実ダメージ '+r.range.join('～')+' / 最大HP '+r.hp+'" data-min="'+min+'" data-max="'+max+'"><span class="damage-bar-max" style="width:'+cap(max)+'%"></span><span class="damage-bar-min" style="width:'+cap(min)+'%;background:'+heat(max+45)+'"></span></div>';}
+function patternHTML(r,baseType){if(r.unsupported)return '<div class="condition unsupported">未計算：'+esc(r.unsupported)+'</div>';return '<div class="condition"><span title="'+esc(r.label)+'">'+esc(shortLabel(r.label))+(r.hpAssumption?' <small>'+esc(r.hpAssumption)+'</small>':'')+(r.actualType&&r.actualType!==baseType?' <small>'+esc(D.types[r.actualType]||r.actualType)+'</small>':'')+'</span><strong style="background:'+heat(r.percent[1])+'">'+r.percent.map(n=>n.toFixed(1)).join('–')+'%</strong>'+damageBar(r)+'</div>';}
 function heat(v){const x=Math.min(v,160)/160;return 'rgb('+[54,74,90].map((n,i)=>Math.round(n+([154,18,27][i]-n)*x)).join(',')+')';}
 function rowData(a,b,move,ctx){const key=JSON.stringify([revision,a,b,move,ctx]);if(!cache.has(key))cache.set(key,K.scenarios(a,b,move,ctx));return cache.get(key);}
 function damageCard(a,b,moves,ctx){
+ moves=K.damageMoves(moves);
  const sa=K.species(a.id),sb=K.species(b.id),baseClasses=(a.side==='own'?'ally':'enemy');
- return '<div class="calc" data-pair="'+esc(a.key+'-'+b.key)+'"><div class="combathead">'+spriteHTML(a.id)+ '<span class="'+baseClasses+'-name">'+esc(sa.jp)+'</span><span>→</span>'+spriteHTML(b.id)+'<span class="'+(b.side==='own'?'ally':'enemy')+'-name">'+esc(sb.jp)+'</span></div>'+(!moves.length?'<p>攻撃技未登録</p>':moves.map(id=>{
+ const boosted=a.active!==false&&a.helpingHand===true;
+ return '<div class="calc" data-pair="'+esc(a.key+'-'+b.key)+'" data-attacker-active="'+(a.active!==false)+'" data-helping-hand="'+boosted+'"><div class="combathead">'+spriteHTML(a.id)+ '<span class="'+baseClasses+'-name">'+esc(sa.jp)+'</span><span>→</span>'+spriteHTML(b.id)+'<span class="'+(b.side==='own'?'ally':'enemy')+'-name">'+esc(sb.jp)+'</span></div>'+(boosted?'<div class="helping-hand-badge">てだすけ補正中</div>':'')+(!moves.length?'<p>攻撃技未登録（変化技は計算欄に表示しません）</p>':moves.map(id=>{
  const m=D.moves[id];if(!m)return '';
  const result=rowData(a,b,id,ctx);return '<div class="damage-move-block"><button class="move" data-detail-move="'+id+'" style="background:'+TYPE_COLORS[D.types[m.type]]+'">'+esc(m.jp)+' <small>基本 '+esc(m.category==='Physical'?'物理':m.category==='Special'?'特殊':'変化')+' '+m.power+'</small></button>'+result.display.map(r=>patternHTML(r,m.type)).join('')+'<details class="condition-details"><summary>全条件・急所参考・16乱数</summary><div class="hint">'+esc(result.assumptions)+'</div>'+result.all.map(r=>patternHTML(r)+(r.unsupported?'':'<div class="rolls">'+r.hitRolls.map((rolls,h)=>'打撃'+(h+1)+': '+rolls.join(', ')).join('<br>')+'<br>実ダメージ '+r.range.join('–')+' / 最大HP '+r.hp+(r.equivalent.length?'<br>同値条件：'+esc(r.equivalent.join('／')):'')+'</div>')).join('')+criticalHTML(a,b,id,ctx)+'</details></div>';
  }).join(''))+'</div>';
 }
-function criticalHTML(a,b,id,ctx){try{const r=K.compute(a,b,id,ctx,{crit:true});if(r.unsupported)return '';return '<div class="critical"><b>'+(r.crit?'急所成立の参考（基準配分・特性条件）':'基準の特性等により急所補正なし')+'</b><br>'+r.percent.map(x=>x.toFixed(1)).join('–')+'%<br><span class="rolls">'+r.hitRolls.map(x=>x.join(', ')).join(' / ')+'</span></div>';}catch(e){return '<div class="unsupported">急所計算未確認</div>';}}
+function criticalHTML(a,b,id,ctx){try{const r=K.compute(a,b,id,ctx,{crit:true});if(r.unsupported)return '';return '<div class="critical"><b>'+(r.crit?'急所成立の参考（基準配分・特性条件）':'基準の特性等により急所補正なし')+'</b><br>'+r.percent.map(x=>x.toFixed(1)).join('–')+'%'+damageBar(r)+'<span class="rolls">'+r.hitRolls.map(x=>x.join(', ')).join(' / ')+'</span></div>';}catch(e){return '<div class="unsupported">急所計算未確認</div>';}}
 function renderDamage(){const all=actors(),ctx=context();let html='';for(const side of ['own','opp']){
- let cards=[];for(let i=0;i<2;i++)for(let j=0;j<2;j++){
+ let groups=[];for(let i=0;i<2;i++){let cards=[];for(let j=0;j<2;j++){
   const a=all.find(x=>x.key===side+i),b=all.find(x=>x.key===(side==='own'?'opp':'own')+j);if(all.length!==4||!a||!b){cards.push('<div class="calc">双方2体ずつを登録・選択すると、対象2体条件で計算します。</div>');continue;}
   const moves=side==='own'?team[a.profile].moves.filter(Boolean):K.species(a.id).major.filter(m=>D.moves[m]?.category!=='Status').slice(0,4);
   cards.push(damageCard(a,b,moves,ctx));
  }
- html+='<section class="damage-section '+(side==='own'?'ally-attacks':'enemy-attacks')+'"><h2>'+(side==='own'?'B. 味方が与えるダメージ':'C. 相手から受けるダメージ')+'</h2><div class="damage">'+cards.join('')+'</div></section>';
+ const a=all.find(x=>x.key===side+i),on=state.helpingHand[side][i],label=(side==='own'?'味方':'相手')+['A','B'][i];
+ groups.push('<section class="attacker-group" data-attacker="'+side+i+'"><div class="attacker-heading"><h3 class="'+(side==='own'?'ally':'enemy')+'-name">'+esc(label+(a?' '+K.species(a.id).jp:''))+'</h3><button type="button" class="helping-hand-toggle" data-help-side="'+side+'" data-help-slot="'+i+'" aria-label="'+label+'のてだすけ" aria-pressed="'+on+'" '+(!a?'disabled':'')+'>てだすけ '+(on?'ON':'OFF')+'</button></div><div class="matchup-grid">'+cards.join('')+'</div></section>');
+ }
+ html+='<section class="damage-section '+(side==='own'?'ally-attacks':'enemy-attacks')+'"><h2>'+(side==='own'?'B. 味方が与えるダメージ':'C. 相手が与えるダメージ（味方の被ダメージ）')+'</h2><p class="helping-hand-note">各ONは独立した参考条件です。同一ターンで両方が攻撃できることを意味しません。</p><div class="damage">'+groups.join('')+'</div></section>';
  }$('calc').innerHTML=html;
 }
 function renderDetails(){
@@ -89,7 +96,7 @@ function renderDetails(){
  const own=all.filter(a=>a.side==='own'),opp=all.filter(a=>a.side==='opp');
  $('speedSummary').innerHTML=own.flatMap(a=>opp.map(b=>{const ar=K.speedRange(a,ctx),br=K.speedRange(b,ctx);let rel=ar[0]>br[1]?'味方が速い仮定':ar[1]<br[0]?'相手が速い仮定':'区間が重複・前後未確定';if(state.tr)rel=ar[0]>br[1]?'TR下では相手が先の仮定':ar[1]<br[0]?'TR下では味方が先の仮定':'TR下でも前後未確定';return '<span>'+esc(K.species(a.id).jp+' '+ar.join('–')+' / '+K.species(b.id).jp+' '+br.join('–')+'：'+rel)+'</span>';})).join('');
 }
-function benchActor(side,i){if(side==='own'){const p=team[i];if(!p?.species)return null;return {...K.actorFromProfile(p,state.ownForms[i]||p.form),key:'ownBench'+i,side:'own',profile:i,active:false};}const id=state.enemyBench[i];if(!id)return null;return {...K.unknownActor(id),key:'oppBench'+i,side:'opp',active:false};}
+function benchActor(side,i){if(side==='own'){const p=team[i];if(!p?.species)return null;return {...K.actorFromProfile(p,state.ownForms[i]||p.form),key:'ownBench'+i,side:'own',profile:i,active:false,helpingHand:false};}const id=state.enemyBench[i];if(!id)return null;return {...K.unknownActor(id),key:'oppBench'+i,side:'opp',active:false,helpingHand:false};}
 function renderBench(){
  $('opponentBenchFields').innerHTML=state.enemyBench.map((n,i)=>'<div><b>相手控え'+(i+1)+'</b>'+pickerButton('bench',i,n,'相手控え'+(i+1)+'を選択')+'</div>').join('');
  const active=actors(),ctx=context(),own=team.map((p,i)=>p.species&&!state.own.includes(i)?benchActor('own',i):null).filter(Boolean),opp=state.enemyBench.map((id,i)=>id&&!state.opp.includes(id)?benchActor('opp',i):null).filter(Boolean);
@@ -105,10 +112,10 @@ function render(includeTeam=false){
 function openPicker(kind,index){pickerTarget={kind,index};$('pickerSearch').value='';drawPicker();$('pokemonPickerDialog').showModal();$('pickerSearch').focus();}
 function drawPicker(){if(!pickerTarget)return;const q=$('pickerSearch').value.trim().toLowerCase();const all=D.species.filter(s=>(s.jp+' '+s.name).toLowerCase().includes(q));$('pickerCount').textContent=all.length+'形態（非公式資料でM-C比較照合）';$('pickerGrid').innerHTML='<button class="picker-choice" data-pick="">未選択</button>'+all.map(s=>'<button class="picker-choice" data-pick="'+s.id+'">'+spriteHTML(s.id)+'<span>'+esc(s.jp)+(s.catalogKind==='battle-reference'?'<small>戦闘中の参照形態</small>':'')+'</span></button>').join('');}
 function selectPokemon(kind,index,id){
- if(kind==='team'){const next=structuredClone(team);next[index]=K.blankProfile(id);try{save(next);delete state.ownForms[index];render(true);}catch(e){message(e.message,true);}return;}
+ if(kind==='team'){const next=structuredClone(team);next[index]=K.blankProfile(id);try{save(next);delete state.ownForms[index];state.own.forEach((p,slot)=>{if(p===index)state.helpingHand.own[slot]=false;});render(true);}catch(e){message(e.message,true);}return;}
  if(kind==='opp'){
   if(id&&K.species(id).isMega&&state.opp[1-index]&&K.species(state.opp[1-index]).isMega&&K.species(state.opp[1-index]).num!==K.species(id).num){message('同じ側の同時メガは1体までです',true);return;}
-  if(id&&state.opp[1-index]&&K.species(state.opp[1-index]).num===K.species(id).num)state.opp[1-index]=state.opp[index];state.opp[index]=id;state.ranks.opp[index]=[0,0,0,0];state.burn.opp[index]=false;state.enemyBench=state.enemyBench.map(b=>b&&state.opp.filter(Boolean).some(x=>K.species(x).num===K.species(b).num)?'':b);
+  if(id&&state.opp[1-index]&&K.species(state.opp[1-index]).num===K.species(id).num){state.opp[1-index]=state.opp[index];state.helpingHand.opp[1-index]=false;}state.opp[index]=id;state.helpingHand.opp[index]=false;state.ranks.opp[index]=[0,0,0,0];state.burn.opp[index]=false;state.enemyBench=state.enemyBench.map(b=>b&&state.opp.filter(Boolean).some(x=>K.species(x).num===K.species(b).num)?'':b);
  }else{if(id&&[...state.opp,...state.enemyBench.filter((_,j)=>j!==index)].filter(Boolean).some(x=>K.species(x).num===K.species(id).num)){message('相手の場・控えに同じ種族が選択済みです',true);return;}state.enemyBench[index]=id;}
  revision++;render();
 }
@@ -123,7 +130,7 @@ function edit(e){const el=e.target,i=Number(el.dataset.index);
    if(el.dataset.edit==='form')renderTeam();
    if($('total'+i))$('total'+i).textContent='合計 '+team[i].points.reduce((a,b)=>a+b,0)+' / 66';if($('stats'+i))$('stats'+i).textContent=statText(team[i]);render();return;
   }
-  if(el.dataset.own!==undefined){const slot=Number(el.dataset.own),old=state.own[slot],v=Number(el.value);if(state.own[1-slot]===v)state.own[1-slot]=old;state.own[slot]=v;state.ranks.own[slot]=[0,0,0,0];state.burn.own[slot]=false;}
+  if(el.dataset.own!==undefined){const slot=Number(el.dataset.own),old=state.own[slot],v=Number(el.value);if(state.own[1-slot]===v){state.own[1-slot]=old;state.helpingHand.own[1-slot]=false;}state.own[slot]=v;state.helpingHand.own[slot]=false;state.ranks.own[slot]=[0,0,0,0];state.burn.own[slot]=false;}
   else if(el.dataset.formSide){const side=el.dataset.formSide,other=actors().find(a=>a.key===side+(1-i));if(K.species(el.value).isMega&&other&&K.species(other.id).isMega)throw Error('同じ側の同時メガは1体までです');if(side==='own')state.ownForms[state.own[i]]=el.value;else state.opp[i]=el.value;}
   else if(el.dataset.burnSide)state.burn[el.dataset.burnSide][i]=el.checked;
   else if(['weather','terrain'].includes(el.id))state[el.id]=el.value;
@@ -134,14 +141,14 @@ function edit(e){const el=e.target,i=Number(el.dataset.index);
 }
 $('pickerGrid').addEventListener('click',e=>{const b=e.target.closest('[data-pick]');if(!b||!pickerTarget)return;const {kind,index}=pickerTarget;$('pokemonPickerDialog').close();selectPokemon(kind,index,b.dataset.pick);});
 $('pickerSearch').addEventListener('input',drawPicker);$('pickerSearch').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();const b=$('pickerGrid').querySelector('button[data-pick]:not([data-pick=""])');if(b)b.click();}});$('pickerClose').onclick=()=>$('pokemonPickerDialog').close();
-document.addEventListener('click',e=>{const p=e.target.closest('[data-picker]');if(p){openPicker(p.dataset.picker,Number(p.dataset.index));return;}const b=e.target.closest('[data-rank]');if(b){const side=b.dataset.side,i=Number(b.dataset.index),j=Number(b.dataset.stat);state.ranks[side][i][j]=Math.max(-6,Math.min(6,state.ranks[side][i][j]+Number(b.dataset.rank)));revision++;render();return;}const m=e.target.closest('[data-detail-move]');if(m){const md=D.moves[m.dataset.detailMove];$('detailTitle').textContent=md.jp;$('detailDesc').textContent='タイプ：'+D.types[md.type]+'\n分類：'+md.category+'\n基本威力：'+md.power+'\n命中：'+(md.accuracy===true?'必中':md.accuracy+'%')+'\n優先度：'+md.priority+'\n対象：'+md.target+'\n\n命中時ダメージです。追加効果・命中確率・行動推奨を計算しません。';$('moveDialog').showModal();}});
+document.addEventListener('click',e=>{const p=e.target.closest('[data-picker]');if(p){openPicker(p.dataset.picker,Number(p.dataset.index));return;}const h=e.target.closest('[data-help-side]');if(h){const side=h.dataset.helpSide,i=Number(h.dataset.helpSlot);state.helpingHand[side][i]=!state.helpingHand[side][i];revision++;render();return;}const b=e.target.closest('[data-rank]');if(b){const side=b.dataset.side,i=Number(b.dataset.index),j=Number(b.dataset.stat);state.ranks[side][i][j]=Math.max(-6,Math.min(6,state.ranks[side][i][j]+Number(b.dataset.rank)));revision++;render();return;}const m=e.target.closest('[data-detail-move]');if(m){const md=D.moves[m.dataset.detailMove];$('detailTitle').textContent=md.jp;$('detailDesc').textContent='タイプ：'+D.types[md.type]+'\n分類：'+md.category+'\n基本威力：'+md.power+'\n命中：'+(md.accuracy===true?'必中':md.accuracy+'%')+'\n優先度：'+md.priority+'\n対象：'+md.target+'\n\n命中時ダメージです。追加効果・命中確率・行動推奨を計算しません。';$('moveDialog').showModal();}});
 document.addEventListener('change',edit);$('closeDialog').onclick=()=>$('moveDialog').close();
 $('benchSettings').addEventListener('toggle',()=>{if($('benchSettings').open)renderBench();});
 $('exportJson').onclick=()=>{const original=loadFailed&&originalSaved,payload=original||JSON.stringify(K.exportTeam(team),null,2),a=document.createElement('a'),url=URL.createObjectURL(new Blob([payload],{type:'application/json'}));a.href=url;a.download=original?'GC2027II_Viewer_v9_original_unread.json':'GC2027II_Viewer_v9_team.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),0);};
 $('importJson').onclick=()=>$('importFile').click();$('importFile').onchange=async()=>{try{const file=$('importFile').files[0];if(!file)return;if(file.size>2*1024*1024)throw Error('JSONは2MB以下にしてください');pendingImport=K.importTeam(JSON.parse(await file.text()));$('importPreview').textContent=pendingImport.map((p,i)=>(i+1)+': '+(p.species?K.species(p.form).jp:'未登録')).join('\n');$('importDialog').showModal();}catch(e){pendingImport=null;message('読込を中止しました：'+e.message,true);}finally{$('importFile').value='';}};
-$('confirmImport').onclick=()=>{if(!pendingImport)return;try{save(pendingImport);pendingImport=null;state.ownForms={};state.own=[0,1];$('importDialog').close();render(true);message('JSONを復元しました。読込前の登録は「直前の登録に戻す」で復元できます。');}catch(e){message(e.message,true);}};
+$('confirmImport').onclick=()=>{if(!pendingImport)return;try{save(pendingImport);pendingImport=null;state.ownForms={};state.own=[0,1];resetHelpingHand();$('importDialog').close();render(true);message('JSONを復元しました。読込前の登録は「直前の登録に戻す」で復元できます。');}catch(e){message(e.message,true);}};
 $('cancelImport').onclick=()=>{pendingImport=null;$('importDialog').close();};
-$('restorePrevious').onclick=()=>{try{const previous=localStorage.getItem(BACKUP);if(!previous)throw Error('直前の保存がありません');const valid=K.importTeam(JSON.parse(previous));save(valid);state.ownForms={};render(true);message('直前の登録に戻しました。');}catch(e){message(e.message,true);}};
-$('resetConditions').onclick=()=>{state.ranks={own:[[0,0,0,0],[0,0,0,0]],opp:[[0,0,0,0],[0,0,0,0]]};state.burn={own:[false,false],opp:[false,false]};state.weather='none';state.terrain='none';state.tr=false;for(const id of ['weather','terrain'])$(id).value='none';$('tr').checked=false;revision++;render();};
+$('restorePrevious').onclick=()=>{try{const previous=localStorage.getItem(BACKUP);if(!previous)throw Error('直前の保存がありません');const valid=K.importTeam(JSON.parse(previous));save(valid);state.ownForms={};resetHelpingHand();render(true);message('直前の登録に戻しました。');}catch(e){message(e.message,true);}};
+$('resetConditions').onclick=()=>{state.ranks={own:[[0,0,0,0],[0,0,0,0]],opp:[[0,0,0,0],[0,0,0,0]]};state.burn={own:[false,false],opp:[false,false]};resetHelpingHand();state.weather='none';state.terrain='none';state.tr=false;for(const id of ['weather','terrain'])$(id).value='none';$('tr').checked=false;revision++;render();};
 message(loadNotice,loadFailed);render(true);
 window.ViewerCore=K;window.ViewerApp={getState:()=>structuredClone({team,state,revision,renderCount}),exportTeam:()=>K.exportTeam(team)};

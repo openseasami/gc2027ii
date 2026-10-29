@@ -23,6 +23,7 @@ browser = read('reference/BROWSER_RESULTS.json')
 roster = read('reference/MC_ROSTER_AUDIT.json')
 roster_test = read('reference/ROSTER_RESULTS.json')
 acceptance = read('reference/ACCEPTANCE_SCOPE.json')
+hh = read('reference/HELPING_HAND_RESULTS.json')
 count = len(d['species'])
 passed = [x for x in numeric['cases'] if x['status'] == 'passed']
 unverified = [x for x in numeric['cases'] if x['status'] == 'unverified']
@@ -89,13 +90,14 @@ core = (ROOT / 'source/core.cjs').read_text()
 excluded = dict(re.findall(r"(\w+):'([^']+)'",core.split('const EXCLUDED_MOVES={')[1].split('};')[0]))
 write('reference/UNCONFIRMED.json',dict(completion=False,acceptance=acceptance,officialEligibility='Not certified; official body retrieval excluded from acceptance by user',officialNumericFormula='Not a gate; real-game comparison excluded by user',rosterExcluded=[r for r in roster['entries'] if r['decision'].startswith('excluded')],appearanceConsolidated=roster['aliases'],uncomparedSpeciesAliases=data['uncomparedWithCalc'],cosmeticEnglishLabels=data['cosmeticLabelsInEnglish'],numericUnverified=unverified,unsupportedMoves=excluded,conditionalMoves=['brine','assurance','payback','revenge','avalanche','lashout','retaliate'],statistics='No source/date; uploaded v8 percentages withheld',windowsNative=False,fileProtocol='Managed policy blocked; no bypass',limitations=['Representative hypotheses are not all opponent spreads/items/ability combinations','Full accuracy/reaction/KO stopping of multi-hit moves unverified','Intact Disguise unimplemented','History, AI, prediction, residuals and full battles are out of scope']))
 
-report = dict(completion=False,scopeCompletion=True,decision='今回のM-C比較照合・回帰検証は合格（非公式資料基準）',dateJST='2026-10-29',blockingConfirmation=[],acceptance=acceptance,roster=roster['counts'],data=dict(candidateForms=count,mega=roster['counts']['mega'],statDataCompared=data['statsCompared'],statDataMismatches=len(data['mismatches']),uncomparedAliases=len(data['uncomparedWithCalc'])),unit=dict(groups=len(unit['checks']),statFormulaComparisons=unit['statComparisons'],passed=unit['passed']),numeric=dict(passedCases=len(passed),unverifiedCases=len(unverified),failedCases=len(numeric['failures']),independentRolls=numeric['comparisons'],distinctMoves=len(set(c['move'] for c in passed))),multi=dict(passed=multi['passed'],cases=len(multi['cases']),independentPerHitRolls=multi['comparisons']),speed=dict(passed=speed['passed'],cases=len(speed['cases']),unverified=len(speed['unverified'])),browser=dict(passed=browser['passed'],profiles=[dict(brand=p['brand'],version=p['version'],layouts=len(p['layouts']),updateMs=p['updateMs']) for p in browser['profiles']],nativeWindows=False,externalOffline=True),htmlSha256=hashlib.sha256((ROOT/'release/GC2027II_Viewer_v9.html').read_bytes()).hexdigest())
+report = dict(completion=False,scopeCompletion=True,decision='てだすけ・バー表示・変化技除外と既存回帰の検証は合格',dateJST='2026-10-29',blockingConfirmation=[],acceptance=acceptance,roster=roster['counts'],helpingHand=dict(passed=hh['passed'],cases=len(hh['cases']),independentRolls=hh['comparisons'],checks=hh['checks'],roundingWitnesses=len(hh['roundingExamples'])),data=dict(candidateForms=count,mega=roster['counts']['mega'],statDataCompared=data['statsCompared'],statDataMismatches=len(data['mismatches']),uncomparedAliases=len(data['uncomparedWithCalc'])),unit=dict(groups=len(unit['checks']),statFormulaComparisons=unit['statComparisons'],passed=unit['passed']),numeric=dict(passedCases=len(passed),unverifiedCases=len(unverified),failedCases=len(numeric['failures']),independentRolls=numeric['comparisons'],distinctMoves=len(set(c['move'] for c in passed))),multi=dict(passed=multi['passed'],cases=len(multi['cases']),independentPerHitRolls=multi['comparisons']),speed=dict(passed=speed['passed'],cases=len(speed['cases']),unverified=len(speed['unverified'])),browser=dict(passed=browser['passed'],profiles=[dict(brand=p['brand'],version=p['version'],layouts=len(p['layouts']),updateMs=p['updateMs'],helpingHand=p['helpingHand']) for p in browser['profiles']],nativeWindows=False,externalOffline=True),htmlSha256=hashlib.sha256((ROOT/'release/GC2027II_Viewer_v9.html').read_bytes()).hexdigest())
+assert hh['passed'] and all(p.get('helpingHand',{}).get('passed') for p in browser['profiles'])
 assert roster_test['passed'] and unit['passed'] and numeric['passed'] and multi['passed'] and speed['passed'] and browser['passed']
 write('reference/VERIFICATION_REPORT.json',report)
 browser_text='\n'.join(f"- {p['brand']} {p['version']}：{len(p['layouts'])}画面幅、条件変更後の描画処理 {min(p['updateMs']):.1f}～{max(p['updateMs']):.1f} ms（自動計測）。" for p in browser['profiles'])
 md('docs/VERIFICATION_REPORT.md',f'''# 検証結果（2026-10-29 JST）
 
-**今回依頼されたM-C対象の比較照合・回帰検証は合格。** ユーザーの指示で実機計算・公式本文取得を判定条件から除外しました。非公式資料基準です。全仕様の `completion: false` は維持し、今回範囲の `scopeCompletion: true` と区別します。
+**今回のてだすけ・ダメージバー・変化技除外と既存回帰の検証は合格。** ユーザーの指示で実機計算・公式本文取得を判定条件から除外しました。非公式資料基準です。全仕様の `completion: false` は維持し、今回範囲の `scopeCompletion: true` と区別します。
 
 | 試験 | 実行結果 |
 |---|---|
@@ -108,11 +110,18 @@ md('docs/VERIFICATION_REPORT.md',f'''# 検証結果（2026-10-29 JST）
 | 除外した未検証ケース | {len(unverified)}件。成功件数に含めない |
 | 連続技 | {len(multi['cases'])}ケース・{multi['comparisons']}各ヒット乱数一致。1～最大ヒットの合算も一致 |
 | 素早さ | {len(speed['cases'])}独立ケース一致 |
+| てだすけ | {len(hh['cases'])}ケース・{hh['comparisons']:,}独立乱数一致。OFF→ON→OFF、補正順序・端数・連続技・発動する半減実等を含む |
 | 実ブラウザ | Chromium・実Edge Linux、各4画面幅、両方成功 |
 
 ダメージ比較対象はPokémon Showdownの**Champions専用mod**、コミット `1242c1e2d9763ba5b85d33f13aecb89bae19ae3d` です。表示エンジンは `@smogon/calc@0.12.0` の世代0。通常第9世代をChampionsと同一視していません。数値比較は{len(set(c['move'] for c in passed))}種類の技を含みますが、全526技や全組合せの完了は主張しません。
 
 天候5×フィールド5、16種族の複数技、配分・性格・ランク・火傷、急所、主要攻撃・防御特性、半減実、いのちのたま等、オーラ双方・控え不発・隣接フレンドガード・かたやぶり・手動場優先を比較。ボディプレス、イカサマ、サイコショック、必中急所の例、やけっぱち等の75/150、発動済みもらいびも含みます。すべての技と習得・使用許可の組合せを認証する試験ではありません。
+
+## てだすけ・バー・変化技の表示
+
+攻撃者4体を独立に切り替え、各2対面と場の攻撃者から控えへの計算を共有します。控えの攻撃者へ流用しません。各ONは独立した仮定であり同一ターンでの成立を断定しません。
+
+バーは対象最大HP100%基準で最小・最大を描き、100%超は数値を保って端で止めます。両ブラウザで各344の主表示バーを照合し、0ダメージ・100%超・OFFへの復帰も確認しました。変化技は計算欄から除外し、登録・下部の候補一覧には残しています。詳しくはHELPING_HAND.md。
 
 ## M-C対象の確認
 

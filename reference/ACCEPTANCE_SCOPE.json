@@ -1,7 +1,7 @@
 {
   "completion": false,
   "dateJST": "2026-10-29",
-  "scope": "Non-official-source M-C roster restriction and existing viewer regression",
+  "scope": "Helping Hand recipients, damage-range bars, Status-move filtering and existing viewer regressions",
   "excludedFromAcceptance": [
     "Official page body retrieval and official certification",
     "Real-game numerical comparison"
@@ -10,7 +10,12 @@
     "Per-form non-official roster evidence with family-vs-form matching distinguished",
     "No source-less battle-only form admitted solely by engine validation",
     "Existing valid stats, calculation engine, UI layout and JSON version preserved",
-    "Regression, independent Champions engine, browser and actual ZIP tests pass"
+    "Regression, independent Champions engine, browser and actual ZIP tests pass",
+    "Four independent active-attacker Helping Hand conditions shared across target comparisons",
+    "Existing Champions BP-modifier path exactly once; independent numerical rounding comparison",
+    "Active attacker to bench shares the flag; benched attackers never borrow it",
+    "Status moves hidden in all damage tables and retained in candidate data",
+    "Damage numbers and capped range bars update together"
   ],
   "fullBattleSpecificationCompletion": false
 }
