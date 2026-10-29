@@ -1,0 +1,2168 @@
+[
+  {
+    "num": 3,
+    "name": "Venusaur",
+    "id": "venusaur",
+    "line": 400
+  },
+  {
+    "num": 3,
+    "name": "Mega Venusaur",
+    "id": "venusaurmega",
+    "line": 403
+  },
+  {
+    "num": 6,
+    "name": "Charizard",
+    "id": "charizard",
+    "line": 406
+  },
+  {
+    "num": 6,
+    "name": "Mega Charizard X",
+    "id": "charizardmegax",
+    "line": 409
+  },
+  {
+    "num": 6,
+    "name": "Mega Charizard Y",
+    "id": "charizardmegay",
+    "line": 412
+  },
+  {
+    "num": 9,
+    "name": "Blastoise",
+    "id": "blastoise",
+    "line": 415
+  },
+  {
+    "num": 9,
+    "name": "Mega Blastoise",
+    "id": "blastoisemega",
+    "line": 418
+  },
+  {
+    "num": 15,
+    "name": "Beedrill",
+    "id": "beedrill",
+    "line": 421
+  },
+  {
+    "num": 15,
+    "name": "Mega Beedrill",
+    "id": "beedrillmega",
+    "line": 424
+  },
+  {
+    "num": 18,
+    "name": "Pidgeot",
+    "id": "pidgeot",
+    "line": 427
+  },
+  {
+    "num": 18,
+    "name": "Mega Pidgeot",
+    "id": "pidgeotmega",
+    "line": 430
+  },
+  {
+    "num": 24,
+    "name": "Arbok",
+    "id": "arbok",
+    "line": 433
+  },
+  {
+    "num": 25,
+    "name": "Pikachu",
+    "id": "pikachu",
+    "line": 436
+  },
+  {
+    "num": 26,
+    "name": "Raichu",
+    "id": "raichu",
+    "line": 439
+  },
+  {
+    "num": 26,
+    "name": "Mega Raichu X",
+    "id": "raichumegax",
+    "line": 442
+  },
+  {
+    "num": 26,
+    "name": "Mega Raichu Y",
+    "id": "raichumegay",
+    "line": 445
+  },
+  {
+    "num": 26,
+    "name": "Raichu",
+    "id": "raichu",
+    "line": 448
+  },
+  {
+    "num": 36,
+    "name": "Clefable",
+    "id": "clefable",
+    "line": 451
+  },
+  {
+    "num": 36,
+    "name": "Mega Clefable",
+    "id": "clefablemega",
+    "line": 454
+  },
+  {
+    "num": 38,
+    "name": "Ninetales",
+    "id": "ninetales",
+    "line": 457
+  },
+  {
+    "num": 38,
+    "name": "Ninetales",
+    "id": "ninetales",
+    "line": 460
+  },
+  {
+    "num": 40,
+    "name": "Wigglytuff",
+    "id": "wigglytuff",
+    "line": 463
+  },
+  {
+    "num": 45,
+    "name": "Vileplume",
+    "id": "vileplume",
+    "line": 466
+  },
+  {
+    "num": 53,
+    "name": "Persian",
+    "id": "persian",
+    "line": 469
+  },
+  {
+    "num": 53,
+    "name": "Persian",
+    "id": "persian",
+    "line": 472
+  },
+  {
+    "num": 59,
+    "name": "Arcanine",
+    "id": "arcanine",
+    "line": 475
+  },
+  {
+    "num": 59,
+    "name": "Arcanine",
+    "id": "arcanine",
+    "line": 478
+  },
+  {
+    "num": 65,
+    "name": "Alakazam",
+    "id": "alakazam",
+    "line": 481
+  },
+  {
+    "num": 65,
+    "name": "Mega Alakazam",
+    "id": "alakazammega",
+    "line": 484
+  },
+  {
+    "num": 68,
+    "name": "Machamp",
+    "id": "machamp",
+    "line": 487
+  },
+  {
+    "num": 71,
+    "name": "Victreebel",
+    "id": "victreebel",
+    "line": 490
+  },
+  {
+    "num": 71,
+    "name": "Mega Victreebel",
+    "id": "victreebelmega",
+    "line": 493
+  },
+  {
+    "num": 80,
+    "name": "Slowbro",
+    "id": "slowbro",
+    "line": 496
+  },
+  {
+    "num": 80,
+    "name": "Mega Slowbro",
+    "id": "slowbromega",
+    "line": 499
+  },
+  {
+    "num": 80,
+    "name": "Slowbro",
+    "id": "slowbro",
+    "line": 502
+  },
+  {
+    "num": 83,
+    "name": "Farfetch'd",
+    "id": "farfetchd",
+    "line": 505
+  },
+  {
+    "num": 94,
+    "name": "Gengar",
+    "id": "gengar",
+    "line": 508
+  },
+  {
+    "num": 94,
+    "name": "Mega Gengar",
+    "id": "gengarmega",
+    "line": 511
+  },
+  {
+    "num": 115,
+    "name": "Kangaskhan",
+    "id": "kangaskhan",
+    "line": 514
+  },
+  {
+    "num": 115,
+    "name": "Mega Kangaskhan",
+    "id": "kangaskhanmega",
+    "line": 517
+  },
+  {
+    "num": 121,
+    "name": "Starmie",
+    "id": "starmie",
+    "line": 520
+  },
+  {
+    "num": 121,
+    "name": "Mega Starmie",
+    "id": "starmiemega",
+    "line": 523
+  },
+  {
+    "num": 122,
+    "name": "Mr. Mime",
+    "id": "mrmime",
+    "line": 526
+  },
+  {
+    "num": 127,
+    "name": "Pinsir",
+    "id": "pinsir",
+    "line": 529
+  },
+  {
+    "num": 127,
+    "name": "Mega Pinsir",
+    "id": "pinsirmega",
+    "line": 532
+  },
+  {
+    "num": 128,
+    "name": "Tauros",
+    "id": "tauros",
+    "line": 535
+  },
+  {
+    "num": 128,
+    "name": "Tauros",
+    "id": "tauros",
+    "line": 538
+  },
+  {
+    "num": 130,
+    "name": "Gyarados",
+    "id": "gyarados",
+    "line": 541
+  },
+  {
+    "num": 130,
+    "name": "Mega Gyarados",
+    "id": "gyaradosmega",
+    "line": 544
+  },
+  {
+    "num": 132,
+    "name": "Ditto",
+    "id": "ditto",
+    "line": 547
+  },
+  {
+    "num": 134,
+    "name": "Vaporeon",
+    "id": "vaporeon",
+    "line": 550
+  },
+  {
+    "num": 135,
+    "name": "Jolteon",
+    "id": "jolteon",
+    "line": 553
+  },
+  {
+    "num": 136,
+    "name": "Flareon",
+    "id": "flareon",
+    "line": 556
+  },
+  {
+    "num": 142,
+    "name": "Aerodactyl",
+    "id": "aerodactyl",
+    "line": 559
+  },
+  {
+    "num": 142,
+    "name": "Mega Aerodactyl",
+    "id": "aerodactylmega",
+    "line": 562
+  },
+  {
+    "num": 143,
+    "name": "Snorlax",
+    "id": "snorlax",
+    "line": 565
+  },
+  {
+    "num": 149,
+    "name": "Dragonite",
+    "id": "dragonite",
+    "line": 568
+  },
+  {
+    "num": 149,
+    "name": "Mega Dragonite",
+    "id": "dragonitemega",
+    "line": 571
+  },
+  {
+    "num": 154,
+    "name": "Meganium",
+    "id": "meganium",
+    "line": 574
+  },
+  {
+    "num": 154,
+    "name": "Mega Meganium",
+    "id": "meganiummega",
+    "line": 577
+  },
+  {
+    "num": 157,
+    "name": "Typhlosion",
+    "id": "typhlosion",
+    "line": 580
+  },
+  {
+    "num": 157,
+    "name": "Typhlosion",
+    "id": "typhlosion",
+    "line": 583
+  },
+  {
+    "num": 160,
+    "name": "Feraligatr",
+    "id": "feraligatr",
+    "line": 586
+  },
+  {
+    "num": 160,
+    "name": "Mega Feraligatr",
+    "id": "feraligatrmega",
+    "line": 589
+  },
+  {
+    "num": 168,
+    "name": "Ariados",
+    "id": "ariados",
+    "line": 592
+  },
+  {
+    "num": 181,
+    "name": "Ampharos",
+    "id": "ampharos",
+    "line": 595
+  },
+  {
+    "num": 181,
+    "name": "Mega Ampharos",
+    "id": "ampharosmega",
+    "line": 598
+  },
+  {
+    "num": 184,
+    "name": "Azumarill",
+    "id": "azumarill",
+    "line": 601
+  },
+  {
+    "num": 186,
+    "name": "Politoed",
+    "id": "politoed",
+    "line": 604
+  },
+  {
+    "num": 196,
+    "name": "Espeon",
+    "id": "espeon",
+    "line": 607
+  },
+  {
+    "num": 197,
+    "name": "Umbreon",
+    "id": "umbreon",
+    "line": 610
+  },
+  {
+    "num": 199,
+    "name": "Slowking",
+    "id": "slowking",
+    "line": 613
+  },
+  {
+    "num": 199,
+    "name": "Slowking",
+    "id": "slowking",
+    "line": 616
+  },
+  {
+    "num": 205,
+    "name": "Forretress",
+    "id": "forretress",
+    "line": 619
+  },
+  {
+    "num": 208,
+    "name": "Steelix",
+    "id": "steelix",
+    "line": 622
+  },
+  {
+    "num": 208,
+    "name": "Mega Steelix",
+    "id": "steelixmega",
+    "line": 625
+  },
+  {
+    "num": 211,
+    "name": "Qwilfish",
+    "id": "qwilfish",
+    "line": 628
+  },
+  {
+    "num": 212,
+    "name": "Scizor",
+    "id": "scizor",
+    "line": 631
+  },
+  {
+    "num": 212,
+    "name": "Mega Scizor",
+    "id": "scizormega",
+    "line": 634
+  },
+  {
+    "num": 214,
+    "name": "Heracross",
+    "id": "heracross",
+    "line": 637
+  },
+  {
+    "num": 214,
+    "name": "Mega Heracross",
+    "id": "heracrossmega",
+    "line": 640
+  },
+  {
+    "num": 227,
+    "name": "Skarmory",
+    "id": "skarmory",
+    "line": 643
+  },
+  {
+    "num": 227,
+    "name": "Mega Skarmory",
+    "id": "skarmorymega",
+    "line": 646
+  },
+  {
+    "num": 229,
+    "name": "Houndoom",
+    "id": "houndoom",
+    "line": 649
+  },
+  {
+    "num": 229,
+    "name": "Mega Houndoom",
+    "id": "houndoommega",
+    "line": 652
+  },
+  {
+    "num": 248,
+    "name": "Tyranitar",
+    "id": "tyranitar",
+    "line": 655
+  },
+  {
+    "num": 248,
+    "name": "Mega Tyranitar",
+    "id": "tyranitarmega",
+    "line": 658
+  },
+  {
+    "num": 254,
+    "name": "Sceptile",
+    "id": "sceptile",
+    "line": 661
+  },
+  {
+    "num": 254,
+    "name": "Mega Sceptile",
+    "id": "sceptilemega",
+    "line": 664
+  },
+  {
+    "num": 257,
+    "name": "Blaziken",
+    "id": "blaziken",
+    "line": 667
+  },
+  {
+    "num": 257,
+    "name": "Mega Blaziken",
+    "id": "blazikenmega",
+    "line": 670
+  },
+  {
+    "num": 260,
+    "name": "Swampert",
+    "id": "swampert",
+    "line": 673
+  },
+  {
+    "num": 260,
+    "name": "Mega Swampert",
+    "id": "swampertmega",
+    "line": 676
+  },
+  {
+    "num": 279,
+    "name": "Pelipper",
+    "id": "pelipper",
+    "line": 679
+  },
+  {
+    "num": 282,
+    "name": "Gardevoir",
+    "id": "gardevoir",
+    "line": 682
+  },
+  {
+    "num": 282,
+    "name": "Mega Gardevoir",
+    "id": "gardevoirmega",
+    "line": 685
+  },
+  {
+    "num": 302,
+    "name": "Sableye",
+    "id": "sableye",
+    "line": 688
+  },
+  {
+    "num": 302,
+    "name": "Mega Sableye",
+    "id": "sableyemega",
+    "line": 691
+  },
+  {
+    "num": 303,
+    "name": "Mawile",
+    "id": "mawile",
+    "line": 694
+  },
+  {
+    "num": 303,
+    "name": "Mega Mawile",
+    "id": "mawilemega",
+    "line": 697
+  },
+  {
+    "num": 306,
+    "name": "Aggron",
+    "id": "aggron",
+    "line": 700
+  },
+  {
+    "num": 306,
+    "name": "Mega Aggron",
+    "id": "aggronmega",
+    "line": 703
+  },
+  {
+    "num": 308,
+    "name": "Medicham",
+    "id": "medicham",
+    "line": 706
+  },
+  {
+    "num": 308,
+    "name": "Mega Medicham",
+    "id": "medichammega",
+    "line": 709
+  },
+  {
+    "num": 310,
+    "name": "Manectric",
+    "id": "manectric",
+    "line": 712
+  },
+  {
+    "num": 310,
+    "name": "Mega Manectric",
+    "id": "manectricmega",
+    "line": 715
+  },
+  {
+    "num": 317,
+    "name": "Swalot",
+    "id": "swalot",
+    "line": 718
+  },
+  {
+    "num": 319,
+    "name": "Sharpedo",
+    "id": "sharpedo",
+    "line": 721
+  },
+  {
+    "num": 319,
+    "name": "Mega Sharpedo",
+    "id": "sharpedomega",
+    "line": 724
+  },
+  {
+    "num": 323,
+    "name": "Camerupt",
+    "id": "camerupt",
+    "line": 727
+  },
+  {
+    "num": 323,
+    "name": "Mega Camerupt",
+    "id": "cameruptmega",
+    "line": 730
+  },
+  {
+    "num": 324,
+    "name": "Torkoal",
+    "id": "torkoal",
+    "line": 733
+  },
+  {
+    "num": 334,
+    "name": "Altaria",
+    "id": "altaria",
+    "line": 736
+  },
+  {
+    "num": 334,
+    "name": "Mega Altaria",
+    "id": "altariamega",
+    "line": 739
+  },
+  {
+    "num": 350,
+    "name": "Milotic",
+    "id": "milotic",
+    "line": 742
+  },
+  {
+    "num": 351,
+    "name": "Castform",
+    "id": "castform",
+    "line": 745
+  },
+  {
+    "num": 354,
+    "name": "Banette",
+    "id": "banette",
+    "line": 748
+  },
+  {
+    "num": 354,
+    "name": "Mega Banette",
+    "id": "banettemega",
+    "line": 751
+  },
+  {
+    "num": 358,
+    "name": "Chimecho",
+    "id": "chimecho",
+    "line": 754
+  },
+  {
+    "num": 358,
+    "name": "Mega Chimecho",
+    "id": "chimechomega",
+    "line": 757
+  },
+  {
+    "num": 359,
+    "name": "Absol",
+    "id": "absol",
+    "line": 760
+  },
+  {
+    "num": 359,
+    "name": "Mega Absol",
+    "id": "absolmega",
+    "line": 763
+  },
+  {
+    "num": 359,
+    "name": "Mega Absol Z",
+    "id": "absolmegaz",
+    "line": 766
+  },
+  {
+    "num": 362,
+    "name": "Glalie",
+    "id": "glalie",
+    "line": 769
+  },
+  {
+    "num": 362,
+    "name": "Mega Glalie",
+    "id": "glaliemega",
+    "line": 772
+  },
+  {
+    "num": 373,
+    "name": "Salamence",
+    "id": "salamence",
+    "line": 775
+  },
+  {
+    "num": 373,
+    "name": "Mega Salamence",
+    "id": "salamencemega",
+    "line": 778
+  },
+  {
+    "num": 376,
+    "name": "Metagross",
+    "id": "metagross",
+    "line": 781
+  },
+  {
+    "num": 376,
+    "name": "Mega Metagross",
+    "id": "metagrossmega",
+    "line": 784
+  },
+  {
+    "num": 389,
+    "name": "Torterra",
+    "id": "torterra",
+    "line": 787
+  },
+  {
+    "num": 392,
+    "name": "Infernape",
+    "id": "infernape",
+    "line": 790
+  },
+  {
+    "num": 395,
+    "name": "Empoleon",
+    "id": "empoleon",
+    "line": 793
+  },
+  {
+    "num": 398,
+    "name": "Staraptor",
+    "id": "staraptor",
+    "line": 796
+  },
+  {
+    "num": 398,
+    "name": "Mega Staraptor",
+    "id": "staraptormega",
+    "line": 799
+  },
+  {
+    "num": 405,
+    "name": "Luxray",
+    "id": "luxray",
+    "line": 802
+  },
+  {
+    "num": 407,
+    "name": "Roserade",
+    "id": "roserade",
+    "line": 805
+  },
+  {
+    "num": 409,
+    "name": "Rampardos",
+    "id": "rampardos",
+    "line": 808
+  },
+  {
+    "num": 411,
+    "name": "Bastiodon",
+    "id": "bastiodon",
+    "line": 811
+  },
+  {
+    "num": 428,
+    "name": "Lopunny",
+    "id": "lopunny",
+    "line": 814
+  },
+  {
+    "num": 428,
+    "name": "Mega Lopunny",
+    "id": "lopunnymega",
+    "line": 817
+  },
+  {
+    "num": 442,
+    "name": "Spiritomb",
+    "id": "spiritomb",
+    "line": 820
+  },
+  {
+    "num": 445,
+    "name": "Garchomp",
+    "id": "garchomp",
+    "line": 823
+  },
+  {
+    "num": 445,
+    "name": "Mega Garchomp",
+    "id": "garchompmega",
+    "line": 826
+  },
+  {
+    "num": 445,
+    "name": "Mega Garchomp Z",
+    "id": "garchompmegaz",
+    "line": 829
+  },
+  {
+    "num": 448,
+    "name": "Lucario",
+    "id": "lucario",
+    "line": 832
+  },
+  {
+    "num": 448,
+    "name": "Mega Lucario",
+    "id": "lucariomega",
+    "line": 835
+  },
+  {
+    "num": 448,
+    "name": "Mega Lucario Z",
+    "id": "lucariomegaz",
+    "line": 838
+  },
+  {
+    "num": 450,
+    "name": "Hippowdon",
+    "id": "hippowdon",
+    "line": 841
+  },
+  {
+    "num": 454,
+    "name": "Toxicroak",
+    "id": "toxicroak",
+    "line": 844
+  },
+  {
+    "num": 460,
+    "name": "Abomasnow",
+    "id": "abomasnow",
+    "line": 847
+  },
+  {
+    "num": 460,
+    "name": "Mega Abomasnow",
+    "id": "abomasnowmega",
+    "line": 850
+  },
+  {
+    "num": 461,
+    "name": "Weavile",
+    "id": "weavile",
+    "line": 853
+  },
+  {
+    "num": 464,
+    "name": "Rhyperior",
+    "id": "rhyperior",
+    "line": 856
+  },
+  {
+    "num": 470,
+    "name": "Leafeon",
+    "id": "leafeon",
+    "line": 859
+  },
+  {
+    "num": 471,
+    "name": "Glaceon",
+    "id": "glaceon",
+    "line": 862
+  },
+  {
+    "num": 472,
+    "name": "Gliscor",
+    "id": "gliscor",
+    "line": 865
+  },
+  {
+    "num": 473,
+    "name": "Mamoswine",
+    "id": "mamoswine",
+    "line": 868
+  },
+  {
+    "num": 475,
+    "name": "Gallade",
+    "id": "gallade",
+    "line": 871
+  },
+  {
+    "num": 475,
+    "name": "Mega Gallade",
+    "id": "gallademega",
+    "line": 874
+  },
+  {
+    "num": 478,
+    "name": "Froslass",
+    "id": "froslass",
+    "line": 877
+  },
+  {
+    "num": 478,
+    "name": "Mega Froslass",
+    "id": "froslassmega",
+    "line": 880
+  },
+  {
+    "num": 479,
+    "name": "Rotom",
+    "id": "rotom",
+    "line": 883
+  },
+  {
+    "num": 497,
+    "name": "Serperior",
+    "id": "serperior",
+    "line": 886
+  },
+  {
+    "num": 500,
+    "name": "Emboar",
+    "id": "emboar",
+    "line": 889
+  },
+  {
+    "num": 500,
+    "name": "Mega Emboar",
+    "id": "emboarmega",
+    "line": 892
+  },
+  {
+    "num": 503,
+    "name": "Samurott",
+    "id": "samurott",
+    "line": 895
+  },
+  {
+    "num": 503,
+    "name": "Samurott",
+    "id": "samurott",
+    "line": 898
+  },
+  {
+    "num": 505,
+    "name": "Watchog",
+    "id": "watchog",
+    "line": 901
+  },
+  {
+    "num": 510,
+    "name": "Liepard",
+    "id": "liepard",
+    "line": 904
+  },
+  {
+    "num": 512,
+    "name": "Simisage",
+    "id": "simisage",
+    "line": 907
+  },
+  {
+    "num": 514,
+    "name": "Simisear",
+    "id": "simisear",
+    "line": 910
+  },
+  {
+    "num": 516,
+    "name": "Simipour",
+    "id": "simipour",
+    "line": 913
+  },
+  {
+    "num": 518,
+    "name": "Musharna",
+    "id": "musharna",
+    "line": 916
+  },
+  {
+    "num": 530,
+    "name": "Excadrill",
+    "id": "excadrill",
+    "line": 919
+  },
+  {
+    "num": 530,
+    "name": "Mega Excadrill",
+    "id": "excadrillmega",
+    "line": 922
+  },
+  {
+    "num": 531,
+    "name": "Audino",
+    "id": "audino",
+    "line": 925
+  },
+  {
+    "num": 531,
+    "name": "Mega Audino",
+    "id": "audinomega",
+    "line": 928
+  },
+  {
+    "num": 534,
+    "name": "Conkeldurr",
+    "id": "conkeldurr",
+    "line": 931
+  },
+  {
+    "num": 545,
+    "name": "Scolipede",
+    "id": "scolipede",
+    "line": 934
+  },
+  {
+    "num": 545,
+    "name": "Mega Scolipede",
+    "id": "scolipedemega",
+    "line": 937
+  },
+  {
+    "num": 547,
+    "name": "Whimsicott",
+    "id": "whimsicott",
+    "line": 940
+  },
+  {
+    "num": 553,
+    "name": "Krookodile",
+    "id": "krookodile",
+    "line": 943
+  },
+  {
+    "num": 560,
+    "name": "Scrafty",
+    "id": "scrafty",
+    "line": 946
+  },
+  {
+    "num": 560,
+    "name": "Mega Scrafty",
+    "id": "scraftymega",
+    "line": 949
+  },
+  {
+    "num": 563,
+    "name": "Cofagrigus",
+    "id": "cofagrigus",
+    "line": 952
+  },
+  {
+    "num": 569,
+    "name": "Garbodor",
+    "id": "garbodor",
+    "line": 955
+  },
+  {
+    "num": 571,
+    "name": "Zoroark",
+    "id": "zoroark",
+    "line": 958
+  },
+  {
+    "num": 571,
+    "name": "Zoroark",
+    "id": "zoroark",
+    "line": 961
+  },
+  {
+    "num": 579,
+    "name": "Reuniclus",
+    "id": "reuniclus",
+    "line": 964
+  },
+  {
+    "num": 584,
+    "name": "Vanilluxe",
+    "id": "vanilluxe",
+    "line": 967
+  },
+  {
+    "num": 587,
+    "name": "Emolga",
+    "id": "emolga",
+    "line": 970
+  },
+  {
+    "num": 604,
+    "name": "Eelektross",
+    "id": "eelektross",
+    "line": 973
+  },
+  {
+    "num": 604,
+    "name": "Mega Eelektross",
+    "id": "eelektrossmega",
+    "line": 976
+  },
+  {
+    "num": 609,
+    "name": "Chandelure",
+    "id": "chandelure",
+    "line": 979
+  },
+  {
+    "num": 609,
+    "name": "Mega Chandelure",
+    "id": "chandeluremega",
+    "line": 982
+  },
+  {
+    "num": 614,
+    "name": "Beartic",
+    "id": "beartic",
+    "line": 985
+  },
+  {
+    "num": 618,
+    "name": "Stunfisk",
+    "id": "stunfisk",
+    "line": 988
+  },
+  {
+    "num": 618,
+    "name": "Stunfisk",
+    "id": "stunfisk",
+    "line": 991
+  },
+  {
+    "num": 623,
+    "name": "Golurk",
+    "id": "golurk",
+    "line": 994
+  },
+  {
+    "num": 623,
+    "name": "Mega Golurk",
+    "id": "golurkmega",
+    "line": 997
+  },
+  {
+    "num": 635,
+    "name": "Hydreigon",
+    "id": "hydreigon",
+    "line": 1000
+  },
+  {
+    "num": 637,
+    "name": "Volcarona",
+    "id": "volcarona",
+    "line": 1003
+  },
+  {
+    "num": 652,
+    "name": "Chesnaught",
+    "id": "chesnaught",
+    "line": 1006
+  },
+  {
+    "num": 652,
+    "name": "Mega Chesnaught",
+    "id": "chesnaughtmega",
+    "line": 1009
+  },
+  {
+    "num": 655,
+    "name": "Delphox",
+    "id": "delphox",
+    "line": 1012
+  },
+  {
+    "num": 655,
+    "name": "Mega Delphox",
+    "id": "delphoxmega",
+    "line": 1015
+  },
+  {
+    "num": 658,
+    "name": "Greninja",
+    "id": "greninja",
+    "line": 1018
+  },
+  {
+    "num": 658,
+    "name": "Mega Greninja",
+    "id": "greninjamega",
+    "line": 1021
+  },
+  {
+    "num": 660,
+    "name": "Diggersby",
+    "id": "diggersby",
+    "line": 1024
+  },
+  {
+    "num": 663,
+    "name": "Talonflame",
+    "id": "talonflame",
+    "line": 1027
+  },
+  {
+    "num": 666,
+    "name": "Vivillon",
+    "id": "vivillon",
+    "line": 1030
+  },
+  {
+    "num": 668,
+    "name": "Pyroar",
+    "id": "pyroar",
+    "line": 1033
+  },
+  {
+    "num": 668,
+    "name": "Mega Pyroar",
+    "id": "pyroarmega",
+    "line": 1036
+  },
+  {
+    "num": 670,
+    "name": "Floette",
+    "id": null,
+    "line": 1039
+  },
+  {
+    "num": 670,
+    "name": "Mega Floette",
+    "id": "floettemega",
+    "line": 1042
+  },
+  {
+    "num": 671,
+    "name": "Florges",
+    "id": "florges",
+    "line": 1045
+  },
+  {
+    "num": 673,
+    "name": "Gogoat",
+    "id": "gogoat",
+    "line": 1048
+  },
+  {
+    "num": 675,
+    "name": "Pangoro",
+    "id": "pangoro",
+    "line": 1051
+  },
+  {
+    "num": 676,
+    "name": "Furfrou",
+    "id": "furfrou",
+    "line": 1054
+  },
+  {
+    "num": 678,
+    "name": "Meowstic",
+    "id": "meowstic",
+    "line": 1057
+  },
+  {
+    "num": 678,
+    "name": "Mega Meowstic",
+    "id": null,
+    "line": 1060
+  },
+  {
+    "num": 681,
+    "name": "Aegislash",
+    "id": "aegislash",
+    "line": 1063
+  },
+  {
+    "num": 683,
+    "name": "Aromatisse",
+    "id": "aromatisse",
+    "line": 1066
+  },
+  {
+    "num": 685,
+    "name": "Slurpuff",
+    "id": "slurpuff",
+    "line": 1069
+  },
+  {
+    "num": 687,
+    "name": "Malamar",
+    "id": "malamar",
+    "line": 1072
+  },
+  {
+    "num": 687,
+    "name": "Mega Malamar",
+    "id": "malamarmega",
+    "line": 1075
+  },
+  {
+    "num": 689,
+    "name": "Barbaracle",
+    "id": "barbaracle",
+    "line": 1078
+  },
+  {
+    "num": 689,
+    "name": "Mega Barbaracle",
+    "id": "barbaraclemega",
+    "line": 1081
+  },
+  {
+    "num": 691,
+    "name": "Dragalge",
+    "id": "dragalge",
+    "line": 1084
+  },
+  {
+    "num": 691,
+    "name": "Mega Dragalge",
+    "id": "dragalgemega",
+    "line": 1087
+  },
+  {
+    "num": 693,
+    "name": "Clawitzer",
+    "id": "clawitzer",
+    "line": 1090
+  },
+  {
+    "num": 695,
+    "name": "Heliolisk",
+    "id": "heliolisk",
+    "line": 1093
+  },
+  {
+    "num": 697,
+    "name": "Tyrantrum",
+    "id": "tyrantrum",
+    "line": 1096
+  },
+  {
+    "num": 699,
+    "name": "Aurorus",
+    "id": "aurorus",
+    "line": 1099
+  },
+  {
+    "num": 700,
+    "name": "Sylveon",
+    "id": "sylveon",
+    "line": 1102
+  },
+  {
+    "num": 701,
+    "name": "Hawlucha",
+    "id": "hawlucha",
+    "line": 1105
+  },
+  {
+    "num": 701,
+    "name": "Mega Hawlucha",
+    "id": "hawluchamega",
+    "line": 1108
+  },
+  {
+    "num": 702,
+    "name": "Dedenne",
+    "id": "dedenne",
+    "line": 1111
+  },
+  {
+    "num": 706,
+    "name": "Goodra",
+    "id": "goodra",
+    "line": 1114
+  },
+  {
+    "num": 706,
+    "name": "Goodra",
+    "id": "goodra",
+    "line": 1117
+  },
+  {
+    "num": 707,
+    "name": "Klefki",
+    "id": "klefki",
+    "line": 1120
+  },
+  {
+    "num": 709,
+    "name": "Trevenant",
+    "id": "trevenant",
+    "line": 1123
+  },
+  {
+    "num": 711,
+    "name": "Gourgeist",
+    "id": "gourgeist",
+    "line": 1126
+  },
+  {
+    "num": 713,
+    "name": "Avalugg",
+    "id": "avalugg",
+    "line": 1129
+  },
+  {
+    "num": 713,
+    "name": "Avalugg",
+    "id": "avalugg",
+    "line": 1132
+  },
+  {
+    "num": 715,
+    "name": "Noivern",
+    "id": "noivern",
+    "line": 1135
+  },
+  {
+    "num": 724,
+    "name": "Decidueye",
+    "id": "decidueye",
+    "line": 1138
+  },
+  {
+    "num": 724,
+    "name": "Decidueye",
+    "id": "decidueye",
+    "line": 1141
+  },
+  {
+    "num": 727,
+    "name": "Incineroar",
+    "id": "incineroar",
+    "line": 1144
+  },
+  {
+    "num": 730,
+    "name": "Primarina",
+    "id": "primarina",
+    "line": 1147
+  },
+  {
+    "num": 733,
+    "name": "Toucannon",
+    "id": "toucannon",
+    "line": 1150
+  },
+  {
+    "num": 740,
+    "name": "Crabominable",
+    "id": "crabominable",
+    "line": 1153
+  },
+  {
+    "num": 740,
+    "name": "Mega Crabominable",
+    "id": "crabominablemega",
+    "line": 1156
+  },
+  {
+    "num": 745,
+    "name": "Lycanroc",
+    "id": "lycanroc",
+    "line": 1159
+  },
+  {
+    "num": 748,
+    "name": "Toxapex",
+    "id": "toxapex",
+    "line": 1162
+  },
+  {
+    "num": 750,
+    "name": "Mudsdale",
+    "id": "mudsdale",
+    "line": 1165
+  },
+  {
+    "num": 752,
+    "name": "Araquanid",
+    "id": "araquanid",
+    "line": 1168
+  },
+  {
+    "num": 758,
+    "name": "Salazzle",
+    "id": "salazzle",
+    "line": 1171
+  },
+  {
+    "num": 763,
+    "name": "Tsareena",
+    "id": "tsareena",
+    "line": 1174
+  },
+  {
+    "num": 765,
+    "name": "Oranguru",
+    "id": "oranguru",
+    "line": 1177
+  },
+  {
+    "num": 766,
+    "name": "Passimian",
+    "id": "passimian",
+    "line": 1180
+  },
+  {
+    "num": 768,
+    "name": "Golisopod",
+    "id": "golisopod",
+    "line": 1183
+  },
+  {
+    "num": 768,
+    "name": "Mega Golisopod",
+    "id": "golisopodmega",
+    "line": 1186
+  },
+  {
+    "num": 778,
+    "name": "Mimikyu",
+    "id": "mimikyu",
+    "line": 1189
+  },
+  {
+    "num": 780,
+    "name": "Drampa",
+    "id": "drampa",
+    "line": 1192
+  },
+  {
+    "num": 780,
+    "name": "Mega Drampa",
+    "id": "drampamega",
+    "line": 1195
+  },
+  {
+    "num": 784,
+    "name": "Kommo-o",
+    "id": "kommoo",
+    "line": 1198
+  },
+  {
+    "num": 812,
+    "name": "Rillaboom",
+    "id": "rillaboom",
+    "line": 1201
+  },
+  {
+    "num": 815,
+    "name": "Cinderace",
+    "id": "cinderace",
+    "line": 1204
+  },
+  {
+    "num": 818,
+    "name": "Inteleon",
+    "id": "inteleon",
+    "line": 1207
+  },
+  {
+    "num": 823,
+    "name": "Corviknight",
+    "id": "corviknight",
+    "line": 1210
+  },
+  {
+    "num": 828,
+    "name": "Thievul",
+    "id": "thievul",
+    "line": 1213
+  },
+  {
+    "num": 841,
+    "name": "Flapple",
+    "id": "flapple",
+    "line": 1216
+  },
+  {
+    "num": 842,
+    "name": "Appletun",
+    "id": "appletun",
+    "line": 1219
+  },
+  {
+    "num": 844,
+    "name": "Sandaconda",
+    "id": "sandaconda",
+    "line": 1222
+  },
+  {
+    "num": 849,
+    "name": "Toxtricity",
+    "id": "toxtricity",
+    "line": 1225
+  },
+  {
+    "num": 853,
+    "name": "Grapploct",
+    "id": "grapploct",
+    "line": 1228
+  },
+  {
+    "num": 855,
+    "name": "Polteageist",
+    "id": "polteageist",
+    "line": 1231
+  },
+  {
+    "num": 858,
+    "name": "Hatterene",
+    "id": "hatterene",
+    "line": 1234
+  },
+  {
+    "num": 861,
+    "name": "Grimmsnarl",
+    "id": "grimmsnarl",
+    "line": 1237
+  },
+  {
+    "num": 863,
+    "name": "Perrserker",
+    "id": "perrserker",
+    "line": 1240
+  },
+  {
+    "num": 865,
+    "name": "Sirfetch'd",
+    "id": "sirfetchd",
+    "line": 1243
+  },
+  {
+    "num": 866,
+    "name": "Mr. Rime",
+    "id": "mrrime",
+    "line": 1246
+  },
+  {
+    "num": 867,
+    "name": "Runerigus",
+    "id": "runerigus",
+    "line": 1249
+  },
+  {
+    "num": 869,
+    "name": "Alcremie",
+    "id": "alcremie",
+    "line": 1252
+  },
+  {
+    "num": 870,
+    "name": "Falinks",
+    "id": "falinks",
+    "line": 1255
+  },
+  {
+    "num": 870,
+    "name": "Mega Falinks",
+    "id": "falinksmega",
+    "line": 1258
+  },
+  {
+    "num": 871,
+    "name": "Pincurchin",
+    "id": "pincurchin",
+    "line": 1261
+  },
+  {
+    "num": 876,
+    "name": "Indeedee",
+    "id": "indeedee",
+    "line": 1264
+  },
+  {
+    "num": 877,
+    "name": "Morpeko",
+    "id": "morpeko",
+    "line": 1267
+  },
+  {
+    "num": 887,
+    "name": "Dragapult",
+    "id": "dragapult",
+    "line": 1270
+  },
+  {
+    "num": 899,
+    "name": "Wyrdeer",
+    "id": "wyrdeer",
+    "line": 1273
+  },
+  {
+    "num": 900,
+    "name": "Kleavor",
+    "id": "kleavor",
+    "line": 1276
+  },
+  {
+    "num": 902,
+    "name": "Basculegion",
+    "id": "basculegion",
+    "line": 1279
+  },
+  {
+    "num": 903,
+    "name": "Sneasler",
+    "id": "sneasler",
+    "line": 1282
+  },
+  {
+    "num": 904,
+    "name": "Overqwil",
+    "id": "overqwil",
+    "line": 1285
+  },
+  {
+    "num": 908,
+    "name": "Meowscarada",
+    "id": "meowscarada",
+    "line": 1288
+  },
+  {
+    "num": 911,
+    "name": "Skeledirge",
+    "id": "skeledirge",
+    "line": 1291
+  },
+  {
+    "num": 914,
+    "name": "Quaquaval",
+    "id": "quaquaval",
+    "line": 1294
+  },
+  {
+    "num": 923,
+    "name": "Pawmot",
+    "id": "pawmot",
+    "line": 1297
+  },
+  {
+    "num": 925,
+    "name": "Maushold",
+    "id": "maushold",
+    "line": 1300
+  },
+  {
+    "num": 930,
+    "name": "Arboliva",
+    "id": "arboliva",
+    "line": 1303
+  },
+  {
+    "num": 931,
+    "name": "Squawkabilly",
+    "id": "squawkabilly",
+    "line": 1306
+  },
+  {
+    "num": 934,
+    "name": "Garganacl",
+    "id": "garganacl",
+    "line": 1309
+  },
+  {
+    "num": 936,
+    "name": "Armarouge",
+    "id": "armarouge",
+    "line": 1312
+  },
+  {
+    "num": 937,
+    "name": "Ceruledge",
+    "id": "ceruledge",
+    "line": 1315
+  },
+  {
+    "num": 939,
+    "name": "Bellibolt",
+    "id": "bellibolt",
+    "line": 1318
+  },
+  {
+    "num": 943,
+    "name": "Mabosstiff",
+    "id": "mabosstiff",
+    "line": 1321
+  },
+  {
+    "num": 952,
+    "name": "Scovillain",
+    "id": "scovillain",
+    "line": 1324
+  },
+  {
+    "num": 952,
+    "name": "Mega Scovillain",
+    "id": "scovillainmega",
+    "line": 1327
+  },
+  {
+    "num": 956,
+    "name": "Espathra",
+    "id": "espathra",
+    "line": 1330
+  },
+  {
+    "num": 959,
+    "name": "Tinkaton",
+    "id": "tinkaton",
+    "line": 1333
+  },
+  {
+    "num": 964,
+    "name": "Palafin",
+    "id": "palafin",
+    "line": 1336
+  },
+  {
+    "num": 968,
+    "name": "Orthworm",
+    "id": "orthworm",
+    "line": 1339
+  },
+  {
+    "num": 970,
+    "name": "Glimmora",
+    "id": "glimmora",
+    "line": 1342
+  },
+  {
+    "num": 970,
+    "name": "Mega Glimmora",
+    "id": "glimmoramega",
+    "line": 1345
+  },
+  {
+    "num": 972,
+    "name": "Houndstone",
+    "id": "houndstone",
+    "line": 1348
+  },
+  {
+    "num": 979,
+    "name": "Annihilape",
+    "id": "annihilape",
+    "line": 1351
+  },
+  {
+    "num": 981,
+    "name": "Farigiraf",
+    "id": "farigiraf",
+    "line": 1354
+  },
+  {
+    "num": 983,
+    "name": "Kingambit",
+    "id": "kingambit",
+    "line": 1357
+  },
+  {
+    "num": 998,
+    "name": "Baxcalibur",
+    "id": "baxcalibur",
+    "line": 1360
+  },
+  {
+    "num": 998,
+    "name": "Mega Baxcalibur",
+    "id": "baxcaliburmega",
+    "line": 1363
+  },
+  {
+    "num": 1000,
+    "name": "Gholdengo",
+    "id": "gholdengo",
+    "line": 1366
+  },
+  {
+    "num": 1013,
+    "name": "Sinistcha",
+    "id": "sinistcha",
+    "line": 1369
+  },
+  {
+    "num": 1018,
+    "name": "Archaludon",
+    "id": "archaludon",
+    "line": 1372
+  },
+  {
+    "num": 1019,
+    "name": "Hydrapple",
+    "id": "hydrapple",
+    "line": 1375
+  },
+  {
+    "num": 40,
+    "name": "Wigglytuff",
+    "id": "wigglytuff",
+    "line": 431,
+    "delta": true
+  },
+  {
+    "num": 53,
+    "name": "Persian",
+    "id": "persian",
+    "line": 434,
+    "delta": true
+  },
+  {
+    "num": 53,
+    "name": "Persian",
+    "id": "persian",
+    "line": 437,
+    "delta": true
+  },
+  {
+    "num": 83,
+    "name": "Farfetch'd",
+    "id": "farfetchd",
+    "line": 440,
+    "delta": true
+  },
+  {
+    "num": 122,
+    "name": "Mr. Mime",
+    "id": "mrmime",
+    "line": 443,
+    "delta": true
+  },
+  {
+    "num": 317,
+    "name": "Swalot",
+    "id": "swalot",
+    "line": 446,
+    "delta": true
+  },
+  {
+    "num": 359,
+    "name": "Mega Absol Z",
+    "id": "absolmegaz",
+    "line": 449,
+    "delta": true
+  },
+  {
+    "num": 373,
+    "name": "Salamence",
+    "id": "salamence",
+    "line": 452,
+    "delta": true
+  },
+  {
+    "num": 373,
+    "name": "Mega Salamence",
+    "id": "salamencemega",
+    "line": 455,
+    "delta": true
+  },
+  {
+    "num": 445,
+    "name": "Mega Garchomp Z",
+    "id": "garchompmegaz",
+    "line": 458,
+    "delta": true
+  },
+  {
+    "num": 448,
+    "name": "Mega Lucario Z",
+    "id": "lucariomegaz",
+    "line": 461,
+    "delta": true
+  },
+  {
+    "num": 673,
+    "name": "Gogoat",
+    "id": "gogoat",
+    "line": 464,
+    "delta": true
+  },
+  {
+    "num": 768,
+    "name": "Golisopod",
+    "id": "golisopod",
+    "line": 467,
+    "delta": true
+  },
+  {
+    "num": 768,
+    "name": "Mega Golisopod",
+    "id": "golisopodmega",
+    "line": 470,
+    "delta": true
+  },
+  {
+    "num": 812,
+    "name": "Rillaboom",
+    "id": "rillaboom",
+    "line": 473,
+    "delta": true
+  },
+  {
+    "num": 815,
+    "name": "Cinderace",
+    "id": "cinderace",
+    "line": 476,
+    "delta": true
+  },
+  {
+    "num": 818,
+    "name": "Inteleon",
+    "id": "inteleon",
+    "line": 479,
+    "delta": true
+  },
+  {
+    "num": 828,
+    "name": "Thievul",
+    "id": "thievul",
+    "line": 482,
+    "delta": true
+  },
+  {
+    "num": 849,
+    "name": "Toxtricity",
+    "id": "toxtricity",
+    "line": 485,
+    "delta": true
+  },
+  {
+    "num": 853,
+    "name": "Grapploct",
+    "id": "grapploct",
+    "line": 490,
+    "delta": true
+  },
+  {
+    "num": 863,
+    "name": "Perrserker",
+    "id": "perrserker",
+    "line": 493,
+    "delta": true
+  },
+  {
+    "num": 865,
+    "name": "Sirfetch'd",
+    "id": "sirfetchd",
+    "line": 496,
+    "delta": true
+  },
+  {
+    "num": 871,
+    "name": "Pincurchin",
+    "id": "pincurchin",
+    "line": 499,
+    "delta": true
+  },
+  {
+    "num": 876,
+    "name": "Indeedee",
+    "id": "indeedee",
+    "line": 502,
+    "delta": true
+  },
+  {
+    "num": 923,
+    "name": "Pawmot",
+    "id": "pawmot",
+    "line": 507,
+    "delta": true
+  },
+  {
+    "num": 930,
+    "name": "Arboliva",
+    "id": "arboliva",
+    "line": 510,
+    "delta": true
+  },
+  {
+    "num": 931,
+    "name": "Squawkabilly",
+    "id": "squawkabilly",
+    "line": 513,
+    "delta": true
+  },
+  {
+    "num": 943,
+    "name": "Mabosstiff",
+    "id": "mabosstiff",
+    "line": 516,
+    "delta": true
+  },
+  {
+    "num": 998,
+    "name": "Baxcalibur",
+    "id": "baxcalibur",
+    "line": 519,
+    "delta": true
+  },
+  {
+    "num": 998,
+    "name": "Mega Baxcalibur",
+    "id": "baxcaliburmega",
+    "line": 522,
+    "delta": true
+  }
+]

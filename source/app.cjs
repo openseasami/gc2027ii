@@ -3,10 +3,10 @@ const K=require('./core.cjs'),D=K.DATA,IMAGES=require('./images.json');
 const $=id=>document.getElementById(id),esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const TYPE_COLORS={'ノーマル':'#82909a','ほのお':'#d55840','みず':'#397bc7','でんき':'#bc980d','くさ':'#39965b','こおり':'#408f9b','かくとう':'#ae483a','どく':'#924ca4','じめん':'#b17d35','ひこう':'#667fc8','エスパー':'#a64780','むし':'#78933a','いわ':'#887b58','ゴースト':'#66538e','ドラゴン':'#5855a9','あく':'#55505d','はがね':'#547f89','フェアリー':'#bb6ba7'};
 const KEY='gc2027ii-viewer-v9-team',BACKUP=KEY+'-previous';
-let team,loadNotice='',loadFailed=false;
+let team,loadNotice='',loadFailed=false,originalSaved=null;
 try{
- const saved=localStorage.getItem(KEY);
- if(saved)team=K.importTeam(JSON.parse(saved));
+ const saved=localStorage.getItem(KEY);originalSaved=saved;
+ if(saved){const payload=JSON.parse(saved);team=K.importTeam(payload);if(JSON.stringify(payload.team)!==JSON.stringify(team))loadNotice='旧保存の外見違いを計算上同じ代表形態へ統合しました。元の保存は変更していません。';}
  else{
   let names=JSON.parse(localStorage.getItem('gc2027ii-viewer-own-team-v5')||'null');
   const sp=localStorage.getItem('gc2027ii-viewer-own-sp-v8'),oldEv=localStorage.getItem('gc2027ii-viewer-own-ev-v6');
@@ -14,7 +14,7 @@ try{
   const points=JSON.parse(sp||oldEv||'{}');if(!sp&&oldEv)for(const name of Object.keys(points))if(Array.isArray(points[name]))points[name]=points[name].map(v=>Math.min(32,Math.max(0,Math.floor((Number(v)+4)/8))));
   if(names){team=K.migrateV8(names,points);loadNotice='v8の種族・能力ポイントを読み込みました。未保存の技・特性・持ち物・性格は初期値です。登録画面で確認してください。';}
  }
-}catch(e){loadFailed=true;loadNotice='保存データを読み込めませんでした。元のデータは上書きしていません。JSONがあれば登録画面から読み込めます。';}
+}catch(e){loadFailed=true;loadNotice='保存データを読み込めませんでした。対象外の旧形態を含む可能性があります。元の保存は上書きしていません。JSON出力で元データを保管できます。';}
 if(!team){team=K.validateTeam([K.blankProfile('rillaboom'),K.blankProfile('sneasler')]);if(!loadFailed)loadNotice='初期サンプル2体です。実際のパーティ・配分を登録してください。';}
 const state={own:[0,1],opp:['incineroar','primarina'],ownForms:{},ranks:{own:[[0,0,0,0],[0,0,0,0]],opp:[[0,0,0,0],[0,0,0,0]]},burn:{own:[false,false],opp:[false,false]},weather:'none',terrain:'none',tr:false,enemyBench:['','','','']};
 let revision=0,cache=new Map(),pendingImport=null,pickerTarget=null,renderCount=0;
@@ -28,7 +28,7 @@ function save(newTeam){
  const valid=K.validateTeam(newTeam),payload=JSON.stringify(K.exportTeam(valid));
  try{const old=localStorage.getItem(KEY);if(old)localStorage.setItem(BACKUP,old);localStorage.setItem(KEY,payload);$('saveStatus').textContent='保存済み';}
  catch(e){$('saveStatus').textContent='保存失敗：JSON出力で保管してください';message('ブラウザに保存できません。変更は画面に残っています。JSON出力で保管してください。',true);}
- team=valid;revision++;cache.clear();return true;
+ team=valid;loadFailed=false;originalSaved=null;revision++;cache.clear();return true;
 }
 function normalizedOwn(){const valid=team.map((p,i)=>p.species?i:null).filter(i=>i!==null);if(!valid.includes(state.own[0]))state.own[0]=valid[0]??null;if(!valid.includes(state.own[1])||state.own[1]===state.own[0])state.own[1]=valid.find(i=>i!==state.own[0])??null;
  let hasMega=false;for(const idx of state.own){if(idx===null)continue;const p=team[idx],f=K.species(state.ownForms[idx]||p.form);if(f.isMega&&(p.item!==f.requiredItem||hasMega)){state.ownForms[idx]=p.species;}else if(f.isMega)hasMega=true;}
@@ -103,7 +103,7 @@ function render(includeTeam=false){
  renderDamage();renderDetails();if($('benchSettings').open)renderBench();$('updateStatus').textContent='条件反映済み';$('updateStatus').dataset.revision=String(revision);$('updateStatus').dataset.ms=(performance.now()-started).toFixed(1);
 }
 function openPicker(kind,index){pickerTarget={kind,index};$('pickerSearch').value='';drawPicker();$('pokemonPickerDialog').showModal();$('pickerSearch').focus();}
-function drawPicker(){if(!pickerTarget)return;const q=$('pickerSearch').value.trim().toLowerCase();const all=D.species.filter(s=>(s.jp+' '+s.name).toLowerCase().includes(q));$('pickerCount').textContent=all.length+'形態（モデル候補、公式全件未確認）';$('pickerGrid').innerHTML='<button class="picker-choice" data-pick="">未選択</button>'+all.map(s=>'<button class="picker-choice" data-pick="'+s.id+'">'+spriteHTML(s.id)+'<span>'+esc(s.jp)+'</span></button>').join('');}
+function drawPicker(){if(!pickerTarget)return;const q=$('pickerSearch').value.trim().toLowerCase();const all=D.species.filter(s=>(s.jp+' '+s.name).toLowerCase().includes(q));$('pickerCount').textContent=all.length+'形態（非公式資料でM-C比較照合）';$('pickerGrid').innerHTML='<button class="picker-choice" data-pick="">未選択</button>'+all.map(s=>'<button class="picker-choice" data-pick="'+s.id+'">'+spriteHTML(s.id)+'<span>'+esc(s.jp)+(s.catalogKind==='battle-reference'?'<small>戦闘中の参照形態</small>':'')+'</span></button>').join('');}
 function selectPokemon(kind,index,id){
  if(kind==='team'){const next=structuredClone(team);next[index]=K.blankProfile(id);try{save(next);delete state.ownForms[index];render(true);}catch(e){message(e.message,true);}return;}
  if(kind==='opp'){
@@ -137,7 +137,7 @@ $('pickerSearch').addEventListener('input',drawPicker);$('pickerSearch').addEven
 document.addEventListener('click',e=>{const p=e.target.closest('[data-picker]');if(p){openPicker(p.dataset.picker,Number(p.dataset.index));return;}const b=e.target.closest('[data-rank]');if(b){const side=b.dataset.side,i=Number(b.dataset.index),j=Number(b.dataset.stat);state.ranks[side][i][j]=Math.max(-6,Math.min(6,state.ranks[side][i][j]+Number(b.dataset.rank)));revision++;render();return;}const m=e.target.closest('[data-detail-move]');if(m){const md=D.moves[m.dataset.detailMove];$('detailTitle').textContent=md.jp;$('detailDesc').textContent='タイプ：'+D.types[md.type]+'\n分類：'+md.category+'\n基本威力：'+md.power+'\n命中：'+(md.accuracy===true?'必中':md.accuracy+'%')+'\n優先度：'+md.priority+'\n対象：'+md.target+'\n\n命中時ダメージです。追加効果・命中確率・行動推奨を計算しません。';$('moveDialog').showModal();}});
 document.addEventListener('change',edit);$('closeDialog').onclick=()=>$('moveDialog').close();
 $('benchSettings').addEventListener('toggle',()=>{if($('benchSettings').open)renderBench();});
-$('exportJson').onclick=()=>{const payload=JSON.stringify(K.exportTeam(team),null,2),a=document.createElement('a'),url=URL.createObjectURL(new Blob([payload],{type:'application/json'}));a.href=url;a.download='GC2027II_Viewer_v9_team.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),0);};
+$('exportJson').onclick=()=>{const original=loadFailed&&originalSaved,payload=original||JSON.stringify(K.exportTeam(team),null,2),a=document.createElement('a'),url=URL.createObjectURL(new Blob([payload],{type:'application/json'}));a.href=url;a.download=original?'GC2027II_Viewer_v9_original_unread.json':'GC2027II_Viewer_v9_team.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),0);};
 $('importJson').onclick=()=>$('importFile').click();$('importFile').onchange=async()=>{try{const file=$('importFile').files[0];if(!file)return;if(file.size>2*1024*1024)throw Error('JSONは2MB以下にしてください');pendingImport=K.importTeam(JSON.parse(await file.text()));$('importPreview').textContent=pendingImport.map((p,i)=>(i+1)+': '+(p.species?K.species(p.form).jp:'未登録')).join('\n');$('importDialog').showModal();}catch(e){pendingImport=null;message('読込を中止しました：'+e.message,true);}finally{$('importFile').value='';}};
 $('confirmImport').onclick=()=>{if(!pendingImport)return;try{save(pendingImport);pendingImport=null;state.ownForms={};state.own=[0,1];$('importDialog').close();render(true);message('JSONを復元しました。読込前の登録は「直前の登録に戻す」で復元できます。');}catch(e){message(e.message,true);}};
 $('cancelImport').onclick=()=>{pendingImport=null;$('importDialog').close();};

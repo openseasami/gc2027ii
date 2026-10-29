@@ -14,7 +14,8 @@ if stage.exists():
 stage.mkdir()
 report=json.loads((ROOT/'reference/VERIFICATION_REPORT.json').read_text())
 assert report['completion'] is False
-for name in ['UNIT_RESULTS','NUMERIC_RESULTS','MULTIHIT_RESULTS','SPEED_RESULTS','BROWSER_RESULTS']:
+assert report['scopeCompletion'] is True
+for name in ['ROSTER_RESULTS','UNIT_RESULTS','NUMERIC_RESULTS','MULTIHIT_RESULTS','SPEED_RESULTS','BROWSER_RESULTS']:
     assert json.loads((ROOT/f'reference/{name}.json').read_text())['passed'],name
 html=release/'GC2027II_Viewer_v9.html'
 assert hashlib.sha256(html.read_bytes()).hexdigest()==report['htmlSha256']
@@ -25,9 +26,11 @@ shutil.copytree(ROOT/'docs',stage/'docs')
 shutil.copytree(ROOT/'vendor',stage/'licenses')
 shutil.copytree(ROOT/'migration',stage/'migration')
 (stage/'reports').mkdir()
-names=['UNIT_RESULTS','NUMERIC_RESULTS','MULTIHIT_RESULTS','SPEED_RESULTS','BROWSER_RESULTS','DATA_AUDIT','IMAGE_AUDIT','EDGE_PROVENANCE','ABILITY_COVERAGE','UNCONFIRMED','VERIFICATION_REPORT','INCIDENTS','NUMERIC_ATTEMPT1','NUMERIC_ATTEMPT2']
+names=['ROSTER_RESULTS','MC_ROSTER_AUDIT','ACCEPTANCE_SCOPE','UNIT_RESULTS','NUMERIC_RESULTS','MULTIHIT_RESULTS','SPEED_RESULTS','BROWSER_RESULTS','DATA_AUDIT','IMAGE_AUDIT','EDGE_PROVENANCE','ABILITY_COVERAGE','UNCONFIRMED','VERIFICATION_REPORT','INCIDENTS','NUMERIC_ATTEMPT1','NUMERIC_ATTEMPT2']
 for name in names:
     shutil.copyfile(ROOT/f'reference/{name}.json',stage/f'reports/{name}.json')
+shutil.copytree(ROOT/'reference/mc-roster',stage/'reports/mc-roster')
+shutil.copyfile(ROOT/'reference/MC_ROSTER.csv',stage/'reports/MC_ROSTER.csv')
 (stage/'reports/screenshots').mkdir()
 for name in ['viewer-Chromium.png','viewer-Microsoft-Edge-Linux.png']:
     shutil.copyfile(ROOT/f'work/{name}',stage/f'reports/screenshots/{name}')
@@ -38,7 +41,7 @@ archive=release/'GC2027II_Viewer_v9_offline.zip'
 with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
     for p in sorted(stage.rglob('*')):
         if p.is_file():
-            info=zipfile.ZipInfo(p.relative_to(stage).as_posix(),date_time=(2026,10,28,0,0,0))
+            info=zipfile.ZipInfo(p.relative_to(stage).as_posix(),date_time=(2026,10,29,0,0,0))
             info.compress_type=zipfile.ZIP_DEFLATED
             info.external_attr=0o100644<<16
             z.writestr(info,p.read_bytes(),compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)

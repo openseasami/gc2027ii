@@ -1,0 +1,16 @@
+{
+  "completion": false,
+  "dateJST": "2026-10-29",
+  "scope": "Non-official-source M-C roster restriction and existing viewer regression",
+  "excludedFromAcceptance": [
+    "Official page body retrieval and official certification",
+    "Real-game numerical comparison"
+  ],
+  "required": [
+    "Per-form non-official roster evidence with family-vs-form matching distinguished",
+    "No source-less battle-only form admitted solely by engine validation",
+    "Existing valid stats, calculation engine, UI layout and JSON version preserved",
+    "Regression, independent Champions engine, browser and actual ZIP tests pass"
+  ],
+  "fullBattleSpecificationCompletion": false
+}

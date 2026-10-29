@@ -33,7 +33,7 @@ python3 tests/artifact.py
 
 ## 残件・再開時の注意
 
-`docs/UNCONFIRMED.md` と `reference/UNCONFIRMED.json` を読み、実行済み `*_RESULTS.json` と混同しないでください。公式M-Cの全対象一覧と公式数式・実機観測が取得できていないため完成判定は保留です。これらの一次根拠が取得できた場合に照合して記録します。未取得資料を推測で確認済みに変更しません。
+`docs/UNCONFIRMED.md` と `reference/UNCONFIRMED.json` を読み、実行済み `*_RESULTS.json` と混同しないでください。2026-10-29のユーザー指示で公式本文取得と実機計算照合を判定条件から除外しました。非公式資料の事実データを npm run audit:roster → npm run data で再現し、356形態に限定します。旧ZIPはrelease/archive/v9-20261028に保持。未取得資料を確認済みとは扱いません。
 
 名称登録を効果実装完了としません。登録済み6体・SP移行・全8対面・場と控えの特性源・メガストーンの整合性を維持します。calcの空文字特性はclone時に初期特性に戻るため、無効化時は内部用 `No Ability` を使います。シードや登場時特性で入力済みランクを二重に変更してはいけません。
 

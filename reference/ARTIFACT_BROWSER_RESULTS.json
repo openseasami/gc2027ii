@@ -2,7 +2,7 @@
   "completion": false,
   "passed": true,
   "artifact": {
-    "htmlSha256": "a95840c1580935c7f9d07325343e0e29c1b12b1afe0e0387761e8dee7e5073ab"
+    "htmlSha256": "75873b4088e897e457269207ce887171e7eef007f8a74831d913e87b9aa338a4"
   },
   "nativeWindows": false,
   "fileProtocol": "Not executed: managed Chromium blocked file navigation; no policy bypass attempted",
@@ -88,16 +88,16 @@
           "opp": [
             {
               "x": 12,
-              "y": 841,
+              "y": 869,
               "w": 179
             },
             {
               "x": 199,
-              "y": 841,
+              "y": 869,
               "w": 179
             }
           ],
-          "damageTop": 1152,
+          "damageTop": 1180,
           "brokenImages": 0,
           "pairs": 8
         }
@@ -112,17 +112,21 @@
         "opponent burn"
       ],
       "updateMs": [
-        24.7,
+        18.8,
+        18.9,
+        21.8,
         23.7,
-        20.2,
-        32.8,
-        23.6,
-        26.0,
-        24.9
+        23.1,
+        26.1,
+        21.4
       ],
       "legacyDownload": true,
       "sameOriginV8Migration": true,
       "benchComparisons": 32,
+      "mcPickerRestricted": true,
+      "appearanceJsonMigration": true,
+      "outOfScopeOriginalBackup": true,
+      "storageMigrationFixture": true,
       "sixManualRegistrations": true,
       "megaBeforeAfter": true,
       "manualWeatherRetained": true,
@@ -215,16 +219,16 @@
           "opp": [
             {
               "x": 12,
-              "y": 841,
+              "y": 869,
               "w": 179
             },
             {
               "x": 199,
-              "y": 841,
+              "y": 869,
               "w": 179
             }
           ],
-          "damageTop": 1152,
+          "damageTop": 1180,
           "brokenImages": 0,
           "pairs": 8
         }
@@ -239,15 +243,19 @@
         "opponent burn"
       ],
       "updateMs": [
-        27.2,
-        29.1,
-        22.0,
-        29.0,
-        29.8,
-        31.6,
-        26.7
+        23.9,
+        29.9,
+        22.9,
+        20.5,
+        23.9,
+        25.5,
+        30.8
       ],
       "benchComparisons": 32,
+      "mcPickerRestricted": true,
+      "appearanceJsonMigration": true,
+      "outOfScopeOriginalBackup": true,
+      "storageMigrationFixture": true,
       "sixManualRegistrations": true,
       "megaBeforeAfter": true,
       "manualWeatherRetained": true,

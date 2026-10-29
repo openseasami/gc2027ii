@@ -108,6 +108,26 @@ try:
    with page.expect_file_chooser() as chooser:page.locator('#importJson').click()
    chooser.value.set_files(dict(name='invalid.json',mimeType='application/json',buffer=json.dumps(invalid).encode()));page.wait_for_function("document.querySelector('#notice').textContent.includes('読込を中止')");assert page.evaluate('ViewerApp.exportTeam()')==saved
    page.reload(wait_until='domcontentloaded');assert page.evaluate('ViewerApp.exportTeam()')==saved
+   # New M-C picker boundaries and real-file migration of old appearance registrations.
+   page.locator('[data-picker="opp"][data-index="0"]').click();page.locator('#pickerSearch').fill('メテノ');assert page.locator('#pickerGrid [data-pick="miniormeteor"]').count()==0
+   page.locator('#pickerSearch').fill('ビビヨン');assert page.locator('#pickerGrid [data-pick="vivillon"]').count()==1;assert page.locator('#pickerGrid [data-pick="vivillonarchipelago"]').count()==0;page.locator('#pickerClose').click()
+   oldcore=json.loads((ROOT/'reference/mc-roster/baseline-core.json').read_text())
+   appearance=json.loads(payload);old=oldcore['vivillonarchipelago'];appearance['team'][5]=dict(species='vivillonarchipelago',form='vivillonarchipelago',moves=old['moves'][:4],ability=old['abilities'][0],item='',nature='Modest',points=[32,0,0,32,0,2])
+   if page.locator('#teamSettings').get_attribute('open') is None:page.locator('#teamSettings > summary').click()
+   with page.expect_file_chooser() as chooser:page.locator('#importJson').click()
+   chooser.value.set_files(dict(name='old-v9-appearance.json',mimeType='application/json',buffer=json.dumps(appearance).encode()));page.locator('#confirmImport').click();normalized=page.evaluate('ViewerApp.exportTeam()');expected={**appearance['team'][5],'species':'vivillon','form':'vivillon'};assert normalized['team'][5]==expected
+   with page.expect_file_chooser() as chooser:page.locator('#importJson').click()
+   chooser.value.set_files(dict(name='team.json',mimeType='application/json',buffer=payload));page.locator('#confirmImport').click();assert page.evaluate('ViewerApp.exportTeam()')==saved
+   # Stored legacy fixture tests the load-failure backup path; no battle state is injected.
+   excluded=json.loads(payload);old=oldcore['miniormeteor'];excluded['team'][0]=dict(species='miniormeteor',form='miniormeteor',moves=old['moves'][:4],ability=old['abilities'][0],item='',nature='Serious',points=[0,0,0,0,0,0]);raw=json.dumps(excluded,ensure_ascii=False)
+   page.evaluate("raw=>localStorage.setItem('gc2027ii-viewer-v9-team',raw)",raw);page.reload(wait_until='domcontentloaded');assert '対象外' in page.locator('#notice').inner_text()
+   page.locator('#teamSettings > summary').click()
+   with page.expect_download() as original:page.locator('#exportJson').click()
+   assert Path(original.value.path()).read_text()==raw
+   assert page.evaluate("localStorage.getItem('gc2027ii-viewer-v9-team')")==raw
+   with page.expect_file_chooser() as chooser:page.locator('#importJson').click()
+   chooser.value.set_files(dict(name='team.json',mimeType='application/json',buffer=payload));page.locator('#confirmImport').click();page.reload(wait_until='domcontentloaded');assert page.evaluate('ViewerApp.exportTeam()')==saved
+   result.update(mcPickerRestricted=True,appearanceJsonMigration=True,outOfScopeOriginalBackup=True,storageMigrationFixture=True)
    assert not errors,errors;assert not external,external
    result.update(passed=True,sixManualRegistrations=True,megaBeforeAfter=True,manualWeatherRetained=True,independentBurns=True,jsonRoundTrip=True,invalidImportAtomic=True,reload=True,bench=True,externalRequests=external,pageErrors=errors,offlineInternetBlocked=True)
    context.close();browser.close()

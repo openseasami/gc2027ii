@@ -1,0 +1,50 @@
+[
+  {
+    "id": "floetteeternal",
+    "publisher": "serebii",
+    "url": "https://www.serebii.net/pokedex-champions/floette/",
+    "fact": "Champions page has an Eternal Floette stats and moves section; ordinary flower forms are not used as the M-C entry"
+  },
+  {
+    "id": "meowsticmmega",
+    "publisher": "serebii",
+    "url": "https://www.serebii.net/pokedex-champions/meowstic/",
+    "fact": "Champions page has Mega Meowstic; sex-specific roster entries supplied by Japanese wiki"
+  },
+  {
+    "id": "meowsticfmega",
+    "publisher": "rotomlabs",
+    "url": "https://rotomlabs.net/dex/champions/meowstic/mega-female",
+    "fact": "Explicit Champions Mega Female entry, Psychic/Trace, same six stats as existing data"
+  },
+  {
+    "id": "polteageistantique",
+    "publisher": "serebii",
+    "url": "https://www.serebii.net/pokedex-champions/polteageist/",
+    "fact": "Champions page lists Phony and Antique forms"
+  },
+  {
+    "id": "mausholdfour",
+    "publisher": "serebii",
+    "url": "https://www.serebii.net/pokedex-champions/maushold/",
+    "fact": "Champions page lists Family of Three and Family of Four"
+  },
+  {
+    "id": "sinistchamasterpiece",
+    "publisher": "serebii",
+    "url": "https://www.serebii.net/pokedex-champions/sinistcha/",
+    "fact": "Champions page lists Unremarkable and Masterpiece forms"
+  },
+  {
+    "id": "mimikyubusted",
+    "publisher": "serebii",
+    "url": "https://www.serebii.net/pokedex-champions/mimikyu/",
+    "fact": "Busted form is a transformation of eligible Mimikyu, not a separate team entry"
+  },
+  {
+    "id": "morpekohangry",
+    "publisher": "serebii",
+    "url": "https://www.serebii.net/pokedex-champions/morpeko/",
+    "fact": "Hangry form is a transformation of eligible Morpeko, not a separate team entry"
+  }
+]

@@ -1,0 +1,3862 @@
+[
+  {
+    "id": "venusaur",
+    "name": "Venusaur",
+    "jp": "フシギバナ",
+    "num": 3,
+    "baseId": "venusaur",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "venusaurmega",
+    "name": "Venusaur-Mega",
+    "jp": "メガフシギバナ",
+    "num": 3,
+    "baseId": "venusaur",
+    "isMega": true,
+    "battleOnly": "Venusaur",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "charizard",
+    "name": "Charizard",
+    "jp": "リザードン",
+    "num": 6,
+    "baseId": "charizard",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "charizardmegax",
+    "name": "Charizard-Mega-X",
+    "jp": "メガリザードンX",
+    "num": 6,
+    "baseId": "charizard",
+    "isMega": true,
+    "battleOnly": "Charizard",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "charizardmegay",
+    "name": "Charizard-Mega-Y",
+    "jp": "メガリザードンY",
+    "num": 6,
+    "baseId": "charizard",
+    "isMega": true,
+    "battleOnly": "Charizard",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "blastoise",
+    "name": "Blastoise",
+    "jp": "カメックス",
+    "num": 9,
+    "baseId": "blastoise",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "blastoisemega",
+    "name": "Blastoise-Mega",
+    "jp": "メガカメックス",
+    "num": 9,
+    "baseId": "blastoise",
+    "isMega": true,
+    "battleOnly": "Blastoise",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "beedrill",
+    "name": "Beedrill",
+    "jp": "スピアー",
+    "num": 15,
+    "baseId": "beedrill",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "beedrillmega",
+    "name": "Beedrill-Mega",
+    "jp": "メガスピアー",
+    "num": 15,
+    "baseId": "beedrill",
+    "isMega": true,
+    "battleOnly": "Beedrill",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "pidgeot",
+    "name": "Pidgeot",
+    "jp": "ピジョット",
+    "num": 18,
+    "baseId": "pidgeot",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "pidgeotmega",
+    "name": "Pidgeot-Mega",
+    "jp": "メガピジョット",
+    "num": 18,
+    "baseId": "pidgeot",
+    "isMega": true,
+    "battleOnly": "Pidgeot",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "arbok",
+    "name": "Arbok",
+    "jp": "アーボック",
+    "num": 24,
+    "baseId": "arbok",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "pikachu",
+    "name": "Pikachu",
+    "jp": "ピカチュウ",
+    "num": 25,
+    "baseId": "pikachu",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "raichu",
+    "name": "Raichu",
+    "jp": "ライチュウ",
+    "num": 26,
+    "baseId": "raichu",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "raichualola",
+    "name": "Raichu-Alola",
+    "jp": "ライチュウ(アローラのすがた)",
+    "num": 26,
+    "baseId": "raichualola",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "raichumegax",
+    "name": "Raichu-Mega-X",
+    "jp": "メガライチュウX",
+    "num": 26,
+    "baseId": "raichu",
+    "isMega": true,
+    "battleOnly": "Raichu",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "raichumegay",
+    "name": "Raichu-Mega-Y",
+    "jp": "メガライチュウY",
+    "num": 26,
+    "baseId": "raichu",
+    "isMega": true,
+    "battleOnly": "Raichu",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "clefable",
+    "name": "Clefable",
+    "jp": "ピクシー",
+    "num": 36,
+    "baseId": "clefable",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "clefablemega",
+    "name": "Clefable-Mega",
+    "jp": "メガピクシー",
+    "num": 36,
+    "baseId": "clefable",
+    "isMega": true,
+    "battleOnly": "Clefable",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "ninetales",
+    "name": "Ninetales",
+    "jp": "キュウコン",
+    "num": 38,
+    "baseId": "ninetales",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "ninetalesalola",
+    "name": "Ninetales-Alola",
+    "jp": "キュウコン(アローラのすがた)",
+    "num": 38,
+    "baseId": "ninetalesalola",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "wigglytuff",
+    "name": "Wigglytuff",
+    "jp": "プクリン",
+    "num": 40,
+    "baseId": "wigglytuff",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "vileplume",
+    "name": "Vileplume",
+    "jp": "ラフレシア",
+    "num": 45,
+    "baseId": "vileplume",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "persian",
+    "name": "Persian",
+    "jp": "ペルシアン",
+    "num": 53,
+    "baseId": "persian",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "persianalola",
+    "name": "Persian-Alola",
+    "jp": "ペルシアン(アローラのすがた)",
+    "num": 53,
+    "baseId": "persianalola",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "arcanine",
+    "name": "Arcanine",
+    "jp": "ウインディ",
+    "num": 59,
+    "baseId": "arcanine",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "arcaninehisui",
+    "name": "Arcanine-Hisui",
+    "jp": "ウインディ(ヒスイ)",
+    "num": 59,
+    "baseId": "arcaninehisui",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "alakazam",
+    "name": "Alakazam",
+    "jp": "フーディン",
+    "num": 65,
+    "baseId": "alakazam",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "alakazammega",
+    "name": "Alakazam-Mega",
+    "jp": "メガフーディン",
+    "num": 65,
+    "baseId": "alakazam",
+    "isMega": true,
+    "battleOnly": "Alakazam",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "machamp",
+    "name": "Machamp",
+    "jp": "カイリキー",
+    "num": 68,
+    "baseId": "machamp",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "victreebel",
+    "name": "Victreebel",
+    "jp": "ウツボット",
+    "num": 71,
+    "baseId": "victreebel",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "victreebelmega",
+    "name": "Victreebel-Mega",
+    "jp": "メガウツボット",
+    "num": 71,
+    "baseId": "victreebel",
+    "isMega": true,
+    "battleOnly": "Victreebel",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "slowbro",
+    "name": "Slowbro",
+    "jp": "ヤドラン",
+    "num": 80,
+    "baseId": "slowbro",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "slowbrogalar",
+    "name": "Slowbro-Galar",
+    "jp": "ヤドラン(ガラルのすがた)",
+    "num": 80,
+    "baseId": "slowbrogalar",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "slowbromega",
+    "name": "Slowbro-Mega",
+    "jp": "メガヤドラン",
+    "num": 80,
+    "baseId": "slowbro",
+    "isMega": true,
+    "battleOnly": "Slowbro",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "farfetchd",
+    "name": "Farfetch’d",
+    "jp": "カモネギ",
+    "num": 83,
+    "baseId": "farfetchd",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gengar",
+    "name": "Gengar",
+    "jp": "ゲンガー",
+    "num": 94,
+    "baseId": "gengar",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gengarmega",
+    "name": "Gengar-Mega",
+    "jp": "メガゲンガー",
+    "num": 94,
+    "baseId": "gengar",
+    "isMega": true,
+    "battleOnly": "Gengar",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "kangaskhan",
+    "name": "Kangaskhan",
+    "jp": "ガルーラ",
+    "num": 115,
+    "baseId": "kangaskhan",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "kangaskhanmega",
+    "name": "Kangaskhan-Mega",
+    "jp": "メガガルーラ",
+    "num": 115,
+    "baseId": "kangaskhan",
+    "isMega": true,
+    "battleOnly": "Kangaskhan",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "starmie",
+    "name": "Starmie",
+    "jp": "スターミー",
+    "num": 121,
+    "baseId": "starmie",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "starmiemega",
+    "name": "Starmie-Mega",
+    "jp": "メガスターミー",
+    "num": 121,
+    "baseId": "starmie",
+    "isMega": true,
+    "battleOnly": "Starmie",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "mrmime",
+    "name": "Mr. Mime",
+    "jp": "バリヤード",
+    "num": 122,
+    "baseId": "mrmime",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "pinsir",
+    "name": "Pinsir",
+    "jp": "カイロス",
+    "num": 127,
+    "baseId": "pinsir",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "pinsirmega",
+    "name": "Pinsir-Mega",
+    "jp": "メガカイロス",
+    "num": 127,
+    "baseId": "pinsir",
+    "isMega": true,
+    "battleOnly": "Pinsir",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "tauros",
+    "name": "Tauros",
+    "jp": "ケンタロス",
+    "num": 128,
+    "baseId": "tauros",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "taurospaldeaaqua",
+    "name": "Tauros-Paldea-Aqua",
+    "jp": "ケンタロス(パルデア・ウォーター)",
+    "num": 128,
+    "baseId": "taurospaldeaaqua",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "taurospaldeacombat",
+    "name": "Tauros-Paldea-Combat",
+    "jp": "ケンタロス(パルデア・コンバット)",
+    "num": 128,
+    "baseId": "taurospaldeacombat",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "taurospaldeablaze",
+    "name": "Tauros-Paldea-Blaze",
+    "jp": "ケンタロス(パルデア・ブレイズ)",
+    "num": 128,
+    "baseId": "taurospaldeablaze",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gyarados",
+    "name": "Gyarados",
+    "jp": "ギャラドス",
+    "num": 130,
+    "baseId": "gyarados",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gyaradosmega",
+    "name": "Gyarados-Mega",
+    "jp": "メガギャラドス",
+    "num": 130,
+    "baseId": "gyarados",
+    "isMega": true,
+    "battleOnly": "Gyarados",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "ditto",
+    "name": "Ditto",
+    "jp": "メタモン",
+    "num": 132,
+    "baseId": "ditto",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "vaporeon",
+    "name": "Vaporeon",
+    "jp": "シャワーズ",
+    "num": 134,
+    "baseId": "vaporeon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "jolteon",
+    "name": "Jolteon",
+    "jp": "サンダース",
+    "num": 135,
+    "baseId": "jolteon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "flareon",
+    "name": "Flareon",
+    "jp": "ブースター",
+    "num": 136,
+    "baseId": "flareon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "aerodactyl",
+    "name": "Aerodactyl",
+    "jp": "プテラ",
+    "num": 142,
+    "baseId": "aerodactyl",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "aerodactylmega",
+    "name": "Aerodactyl-Mega",
+    "jp": "メガプテラ",
+    "num": 142,
+    "baseId": "aerodactyl",
+    "isMega": true,
+    "battleOnly": "Aerodactyl",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "snorlax",
+    "name": "Snorlax",
+    "jp": "カビゴン",
+    "num": 143,
+    "baseId": "snorlax",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "dragonite",
+    "name": "Dragonite",
+    "jp": "カイリュー",
+    "num": 149,
+    "baseId": "dragonite",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "dragonitemega",
+    "name": "Dragonite-Mega",
+    "jp": "メガカイリュー",
+    "num": 149,
+    "baseId": "dragonite",
+    "isMega": true,
+    "battleOnly": "Dragonite",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "meganium",
+    "name": "Meganium",
+    "jp": "メガニウム",
+    "num": 154,
+    "baseId": "meganium",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "meganiummega",
+    "name": "Meganium-Mega",
+    "jp": "メガメガニウム",
+    "num": 154,
+    "baseId": "meganium",
+    "isMega": true,
+    "battleOnly": "Meganium",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "typhlosion",
+    "name": "Typhlosion",
+    "jp": "バクフーン",
+    "num": 157,
+    "baseId": "typhlosion",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "typhlosionhisui",
+    "name": "Typhlosion-Hisui",
+    "jp": "バクフーン(ヒスイのすがた)",
+    "num": 157,
+    "baseId": "typhlosionhisui",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "feraligatr",
+    "name": "Feraligatr",
+    "jp": "オーダイル",
+    "num": 160,
+    "baseId": "feraligatr",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "feraligatrmega",
+    "name": "Feraligatr-Mega",
+    "jp": "メガオーダイル",
+    "num": 160,
+    "baseId": "feraligatr",
+    "isMega": true,
+    "battleOnly": "Feraligatr",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "ariados",
+    "name": "Ariados",
+    "jp": "アリアドス",
+    "num": 168,
+    "baseId": "ariados",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "ampharos",
+    "name": "Ampharos",
+    "jp": "デンリュウ",
+    "num": 181,
+    "baseId": "ampharos",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "ampharosmega",
+    "name": "Ampharos-Mega",
+    "jp": "メガデンリュウ",
+    "num": 181,
+    "baseId": "ampharos",
+    "isMega": true,
+    "battleOnly": "Ampharos",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "azumarill",
+    "name": "Azumarill",
+    "jp": "マリルリ",
+    "num": 184,
+    "baseId": "azumarill",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "politoed",
+    "name": "Politoed",
+    "jp": "ニョロトノ",
+    "num": 186,
+    "baseId": "politoed",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "espeon",
+    "name": "Espeon",
+    "jp": "エーフィ",
+    "num": 196,
+    "baseId": "espeon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "umbreon",
+    "name": "Umbreon",
+    "jp": "ブラッキー",
+    "num": 197,
+    "baseId": "umbreon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "slowking",
+    "name": "Slowking",
+    "jp": "ヤドキング",
+    "num": 199,
+    "baseId": "slowking",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "slowkinggalar",
+    "name": "Slowking-Galar",
+    "jp": "ヤドキング(ガラルのすがた)",
+    "num": 199,
+    "baseId": "slowkinggalar",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "forretress",
+    "name": "Forretress",
+    "jp": "フォレトス",
+    "num": 205,
+    "baseId": "forretress",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "steelix",
+    "name": "Steelix",
+    "jp": "ハガネール",
+    "num": 208,
+    "baseId": "steelix",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "steelixmega",
+    "name": "Steelix-Mega",
+    "jp": "メガハガネール",
+    "num": 208,
+    "baseId": "steelix",
+    "isMega": true,
+    "battleOnly": "Steelix",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "qwilfish",
+    "name": "Qwilfish",
+    "jp": "ハリーセン",
+    "num": 211,
+    "baseId": "qwilfish",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "scizor",
+    "name": "Scizor",
+    "jp": "ハッサム",
+    "num": 212,
+    "baseId": "scizor",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "scizormega",
+    "name": "Scizor-Mega",
+    "jp": "メガハッサム",
+    "num": 212,
+    "baseId": "scizor",
+    "isMega": true,
+    "battleOnly": "Scizor",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "heracross",
+    "name": "Heracross",
+    "jp": "ヘラクロス",
+    "num": 214,
+    "baseId": "heracross",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "heracrossmega",
+    "name": "Heracross-Mega",
+    "jp": "メガヘラクロス",
+    "num": 214,
+    "baseId": "heracross",
+    "isMega": true,
+    "battleOnly": "Heracross",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "skarmory",
+    "name": "Skarmory",
+    "jp": "エアームド",
+    "num": 227,
+    "baseId": "skarmory",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "skarmorymega",
+    "name": "Skarmory-Mega",
+    "jp": "メガエアームド",
+    "num": 227,
+    "baseId": "skarmory",
+    "isMega": true,
+    "battleOnly": "Skarmory",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "houndoom",
+    "name": "Houndoom",
+    "jp": "ヘルガー",
+    "num": 229,
+    "baseId": "houndoom",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "houndoommega",
+    "name": "Houndoom-Mega",
+    "jp": "メガヘルガー",
+    "num": 229,
+    "baseId": "houndoom",
+    "isMega": true,
+    "battleOnly": "Houndoom",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "tyranitar",
+    "name": "Tyranitar",
+    "jp": "バンギラス",
+    "num": 248,
+    "baseId": "tyranitar",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "tyranitarmega",
+    "name": "Tyranitar-Mega",
+    "jp": "メガバンギラス",
+    "num": 248,
+    "baseId": "tyranitar",
+    "isMega": true,
+    "battleOnly": "Tyranitar",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "sceptile",
+    "name": "Sceptile",
+    "jp": "ジュカイン",
+    "num": 254,
+    "baseId": "sceptile",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "sceptilemega",
+    "name": "Sceptile-Mega",
+    "jp": "メガジュカイン",
+    "num": 254,
+    "baseId": "sceptile",
+    "isMega": true,
+    "battleOnly": "Sceptile",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "blaziken",
+    "name": "Blaziken",
+    "jp": "バシャーモ",
+    "num": 257,
+    "baseId": "blaziken",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "blazikenmega",
+    "name": "Blaziken-Mega",
+    "jp": "メガバシャーモ",
+    "num": 257,
+    "baseId": "blaziken",
+    "isMega": true,
+    "battleOnly": "Blaziken",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "swampert",
+    "name": "Swampert",
+    "jp": "ラグラージ",
+    "num": 260,
+    "baseId": "swampert",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "swampertmega",
+    "name": "Swampert-Mega",
+    "jp": "メガラグラージ",
+    "num": 260,
+    "baseId": "swampert",
+    "isMega": true,
+    "battleOnly": "Swampert",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "pelipper",
+    "name": "Pelipper",
+    "jp": "ペリッパー",
+    "num": 279,
+    "baseId": "pelipper",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gardevoir",
+    "name": "Gardevoir",
+    "jp": "サーナイト",
+    "num": 282,
+    "baseId": "gardevoir",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gardevoirmega",
+    "name": "Gardevoir-Mega",
+    "jp": "メガサーナイト",
+    "num": 282,
+    "baseId": "gardevoir",
+    "isMega": true,
+    "battleOnly": "Gardevoir",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "sableye",
+    "name": "Sableye",
+    "jp": "ヤミラミ",
+    "num": 302,
+    "baseId": "sableye",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "sableyemega",
+    "name": "Sableye-Mega",
+    "jp": "メガヤミラミ",
+    "num": 302,
+    "baseId": "sableye",
+    "isMega": true,
+    "battleOnly": "Sableye",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "mawile",
+    "name": "Mawile",
+    "jp": "クチート",
+    "num": 303,
+    "baseId": "mawile",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "mawilemega",
+    "name": "Mawile-Mega",
+    "jp": "メガクチート",
+    "num": 303,
+    "baseId": "mawile",
+    "isMega": true,
+    "battleOnly": "Mawile",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "aggron",
+    "name": "Aggron",
+    "jp": "ボスゴドラ",
+    "num": 306,
+    "baseId": "aggron",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "aggronmega",
+    "name": "Aggron-Mega",
+    "jp": "メガボスゴドラ",
+    "num": 306,
+    "baseId": "aggron",
+    "isMega": true,
+    "battleOnly": "Aggron",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "medicham",
+    "name": "Medicham",
+    "jp": "チャーレム",
+    "num": 308,
+    "baseId": "medicham",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "medichammega",
+    "name": "Medicham-Mega",
+    "jp": "メガチャーレム",
+    "num": 308,
+    "baseId": "medicham",
+    "isMega": true,
+    "battleOnly": "Medicham",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "manectric",
+    "name": "Manectric",
+    "jp": "ライボルト",
+    "num": 310,
+    "baseId": "manectric",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "manectricmega",
+    "name": "Manectric-Mega",
+    "jp": "メガライボルト",
+    "num": 310,
+    "baseId": "manectric",
+    "isMega": true,
+    "battleOnly": "Manectric",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "swalot",
+    "name": "Swalot",
+    "jp": "マルノーム",
+    "num": 317,
+    "baseId": "swalot",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "sharpedo",
+    "name": "Sharpedo",
+    "jp": "サメハダー",
+    "num": 319,
+    "baseId": "sharpedo",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "sharpedomega",
+    "name": "Sharpedo-Mega",
+    "jp": "メガサメハダー",
+    "num": 319,
+    "baseId": "sharpedo",
+    "isMega": true,
+    "battleOnly": "Sharpedo",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "camerupt",
+    "name": "Camerupt",
+    "jp": "バクーダ",
+    "num": 323,
+    "baseId": "camerupt",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "cameruptmega",
+    "name": "Camerupt-Mega",
+    "jp": "メガバクーダ",
+    "num": 323,
+    "baseId": "camerupt",
+    "isMega": true,
+    "battleOnly": "Camerupt",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "torkoal",
+    "name": "Torkoal",
+    "jp": "コータス",
+    "num": 324,
+    "baseId": "torkoal",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "altaria",
+    "name": "Altaria",
+    "jp": "チルタリス",
+    "num": 334,
+    "baseId": "altaria",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "altariamega",
+    "name": "Altaria-Mega",
+    "jp": "メガチルタリス",
+    "num": 334,
+    "baseId": "altaria",
+    "isMega": true,
+    "battleOnly": "Altaria",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "milotic",
+    "name": "Milotic",
+    "jp": "ミロカロス",
+    "num": 350,
+    "baseId": "milotic",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "castform",
+    "name": "Castform",
+    "jp": "ポワルン",
+    "num": 351,
+    "baseId": "castform",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "castformrainy",
+    "name": "Castform-Rainy",
+    "jp": "ポワルン(あまみずのすがた)",
+    "num": 351,
+    "baseId": "castform",
+    "isMega": false,
+    "battleOnly": "Castform",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "castformsunny",
+    "name": "Castform-Sunny",
+    "jp": "ポワルン(たいようのすがた)",
+    "num": 351,
+    "baseId": "castform",
+    "isMega": false,
+    "battleOnly": "Castform",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "castformsnowy",
+    "name": "Castform-Snowy",
+    "jp": "ポワルン(ゆきぐものすがた)",
+    "num": 351,
+    "baseId": "castform",
+    "isMega": false,
+    "battleOnly": "Castform",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "banette",
+    "name": "Banette",
+    "jp": "ジュペッタ",
+    "num": 354,
+    "baseId": "banette",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "banettemega",
+    "name": "Banette-Mega",
+    "jp": "メガジュペッタ",
+    "num": 354,
+    "baseId": "banette",
+    "isMega": true,
+    "battleOnly": "Banette",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "chimecho",
+    "name": "Chimecho",
+    "jp": "チリーン",
+    "num": 358,
+    "baseId": "chimecho",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "chimechomega",
+    "name": "Chimecho-Mega",
+    "jp": "メガチリーン",
+    "num": 358,
+    "baseId": "chimecho",
+    "isMega": true,
+    "battleOnly": "Chimecho",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "absol",
+    "name": "Absol",
+    "jp": "アブソル",
+    "num": 359,
+    "baseId": "absol",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "absolmega",
+    "name": "Absol-Mega",
+    "jp": "メガアブソル",
+    "num": 359,
+    "baseId": "absol",
+    "isMega": true,
+    "battleOnly": "Absol",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "absolmegaz",
+    "name": "Absol-Mega-Z",
+    "jp": "メガアブソルZ",
+    "num": 359,
+    "baseId": "absol",
+    "isMega": true,
+    "battleOnly": "Absol",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "glalie",
+    "name": "Glalie",
+    "jp": "オニゴーリ",
+    "num": 362,
+    "baseId": "glalie",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "glaliemega",
+    "name": "Glalie-Mega",
+    "jp": "メガオニゴーリ",
+    "num": 362,
+    "baseId": "glalie",
+    "isMega": true,
+    "battleOnly": "Glalie",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "salamence",
+    "name": "Salamence",
+    "jp": "ボーマンダ",
+    "num": 373,
+    "baseId": "salamence",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "salamencemega",
+    "name": "Salamence-Mega",
+    "jp": "メガボーマンダ",
+    "num": 373,
+    "baseId": "salamence",
+    "isMega": true,
+    "battleOnly": "Salamence",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "metagross",
+    "name": "Metagross",
+    "jp": "メタグロス",
+    "num": 376,
+    "baseId": "metagross",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "metagrossmega",
+    "name": "Metagross-Mega",
+    "jp": "メガメタグロス",
+    "num": 376,
+    "baseId": "metagross",
+    "isMega": true,
+    "battleOnly": "Metagross",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "torterra",
+    "name": "Torterra",
+    "jp": "ドダイトス",
+    "num": 389,
+    "baseId": "torterra",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "infernape",
+    "name": "Infernape",
+    "jp": "ゴウカザル",
+    "num": 392,
+    "baseId": "infernape",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "empoleon",
+    "name": "Empoleon",
+    "jp": "エンペルト",
+    "num": 395,
+    "baseId": "empoleon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "staraptor",
+    "name": "Staraptor",
+    "jp": "ムクホーク",
+    "num": 398,
+    "baseId": "staraptor",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "staraptormega",
+    "name": "Staraptor-Mega",
+    "jp": "メガムクホーク",
+    "num": 398,
+    "baseId": "staraptor",
+    "isMega": true,
+    "battleOnly": "Staraptor",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "luxray",
+    "name": "Luxray",
+    "jp": "レントラー",
+    "num": 405,
+    "baseId": "luxray",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "roserade",
+    "name": "Roserade",
+    "jp": "ロズレイド",
+    "num": 407,
+    "baseId": "roserade",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "rampardos",
+    "name": "Rampardos",
+    "jp": "ラムパルド",
+    "num": 409,
+    "baseId": "rampardos",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "bastiodon",
+    "name": "Bastiodon",
+    "jp": "トリデプス",
+    "num": 411,
+    "baseId": "bastiodon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "lopunny",
+    "name": "Lopunny",
+    "jp": "ミミロップ",
+    "num": 428,
+    "baseId": "lopunny",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "lopunnymega",
+    "name": "Lopunny-Mega",
+    "jp": "メガミミロップ",
+    "num": 428,
+    "baseId": "lopunny",
+    "isMega": true,
+    "battleOnly": "Lopunny",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "spiritomb",
+    "name": "Spiritomb",
+    "jp": "ミカルゲ",
+    "num": 442,
+    "baseId": "spiritomb",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "garchomp",
+    "name": "Garchomp",
+    "jp": "ガブリアス",
+    "num": 445,
+    "baseId": "garchomp",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "garchompmega",
+    "name": "Garchomp-Mega",
+    "jp": "メガガブリアス",
+    "num": 445,
+    "baseId": "garchomp",
+    "isMega": true,
+    "battleOnly": "Garchomp",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "garchompmegaz",
+    "name": "Garchomp-Mega-Z",
+    "jp": "メガガブリアスZ",
+    "num": 445,
+    "baseId": "garchomp",
+    "isMega": true,
+    "battleOnly": "Garchomp",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "lucario",
+    "name": "Lucario",
+    "jp": "ルカリオ",
+    "num": 448,
+    "baseId": "lucario",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "lucariomega",
+    "name": "Lucario-Mega",
+    "jp": "メガルカリオ",
+    "num": 448,
+    "baseId": "lucario",
+    "isMega": true,
+    "battleOnly": "Lucario",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "lucariomegaz",
+    "name": "Lucario-Mega-Z",
+    "jp": "メガルカリオZ",
+    "num": 448,
+    "baseId": "lucario",
+    "isMega": true,
+    "battleOnly": "Lucario",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "hippowdon",
+    "name": "Hippowdon",
+    "jp": "カバルドン",
+    "num": 450,
+    "baseId": "hippowdon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "toxicroak",
+    "name": "Toxicroak",
+    "jp": "ドクロッグ",
+    "num": 454,
+    "baseId": "toxicroak",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "abomasnow",
+    "name": "Abomasnow",
+    "jp": "ユキノオー",
+    "num": 460,
+    "baseId": "abomasnow",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "abomasnowmega",
+    "name": "Abomasnow-Mega",
+    "jp": "メガユキノオー",
+    "num": 460,
+    "baseId": "abomasnow",
+    "isMega": true,
+    "battleOnly": "Abomasnow",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "weavile",
+    "name": "Weavile",
+    "jp": "マニューラ",
+    "num": 461,
+    "baseId": "weavile",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "rhyperior",
+    "name": "Rhyperior",
+    "jp": "ドサイドン",
+    "num": 464,
+    "baseId": "rhyperior",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "leafeon",
+    "name": "Leafeon",
+    "jp": "リーフィア",
+    "num": 470,
+    "baseId": "leafeon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "glaceon",
+    "name": "Glaceon",
+    "jp": "グレイシア",
+    "num": 471,
+    "baseId": "glaceon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gliscor",
+    "name": "Gliscor",
+    "jp": "グライオン",
+    "num": 472,
+    "baseId": "gliscor",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "mamoswine",
+    "name": "Mamoswine",
+    "jp": "マンムー",
+    "num": 473,
+    "baseId": "mamoswine",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gallade",
+    "name": "Gallade",
+    "jp": "エルレイド",
+    "num": 475,
+    "baseId": "gallade",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gallademega",
+    "name": "Gallade-Mega",
+    "jp": "メガエルレイド",
+    "num": 475,
+    "baseId": "gallade",
+    "isMega": true,
+    "battleOnly": "Gallade",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "froslass",
+    "name": "Froslass",
+    "jp": "ユキメノコ",
+    "num": 478,
+    "baseId": "froslass",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "froslassmega",
+    "name": "Froslass-Mega",
+    "jp": "メガユキメノコ",
+    "num": 478,
+    "baseId": "froslass",
+    "isMega": true,
+    "battleOnly": "Froslass",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "rotom",
+    "name": "Rotom",
+    "jp": "ロトム",
+    "num": 479,
+    "baseId": "rotom",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "rotomwash",
+    "name": "Rotom-Wash",
+    "jp": "ロトム(ウォッシュロトム)",
+    "num": 479,
+    "baseId": "rotom",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "rotommow",
+    "name": "Rotom-Mow",
+    "jp": "ロトム(カットロトム)",
+    "num": 479,
+    "baseId": "rotom",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "rotomfan",
+    "name": "Rotom-Fan",
+    "jp": "ロトム(スピンロトム)",
+    "num": 479,
+    "baseId": "rotom",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "rotomheat",
+    "name": "Rotom-Heat",
+    "jp": "ロトム(ヒートロトム)",
+    "num": 479,
+    "baseId": "rotom",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "rotomfrost",
+    "name": "Rotom-Frost",
+    "jp": "ロトム(フロストロトム)",
+    "num": 479,
+    "baseId": "rotom",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "serperior",
+    "name": "Serperior",
+    "jp": "ジャローダ",
+    "num": 497,
+    "baseId": "serperior",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "emboar",
+    "name": "Emboar",
+    "jp": "エンブオー",
+    "num": 500,
+    "baseId": "emboar",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "emboarmega",
+    "name": "Emboar-Mega",
+    "jp": "メガエンブオー",
+    "num": 500,
+    "baseId": "emboar",
+    "isMega": true,
+    "battleOnly": "Emboar",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "samurott",
+    "name": "Samurott",
+    "jp": "ダイケンキ",
+    "num": 503,
+    "baseId": "samurott",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "samurotthisui",
+    "name": "Samurott-Hisui",
+    "jp": "ダイケンキ(ヒスイのすがた)",
+    "num": 503,
+    "baseId": "samurotthisui",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "watchog",
+    "name": "Watchog",
+    "jp": "ミルホッグ",
+    "num": 505,
+    "baseId": "watchog",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "liepard",
+    "name": "Liepard",
+    "jp": "レパルダス",
+    "num": 510,
+    "baseId": "liepard",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "simisage",
+    "name": "Simisage",
+    "jp": "ヤナッキー",
+    "num": 512,
+    "baseId": "simisage",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "simisear",
+    "name": "Simisear",
+    "jp": "バオッキー",
+    "num": 514,
+    "baseId": "simisear",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "simipour",
+    "name": "Simipour",
+    "jp": "ヒヤッキー",
+    "num": 516,
+    "baseId": "simipour",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "musharna",
+    "name": "Musharna",
+    "jp": "ムシャーナ",
+    "num": 518,
+    "baseId": "musharna",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "excadrill",
+    "name": "Excadrill",
+    "jp": "ドリュウズ",
+    "num": 530,
+    "baseId": "excadrill",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "excadrillmega",
+    "name": "Excadrill-Mega",
+    "jp": "メガドリュウズ",
+    "num": 530,
+    "baseId": "excadrill",
+    "isMega": true,
+    "battleOnly": "Excadrill",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "audino",
+    "name": "Audino",
+    "jp": "タブンネ",
+    "num": 531,
+    "baseId": "audino",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "audinomega",
+    "name": "Audino-Mega",
+    "jp": "メガタブンネ",
+    "num": 531,
+    "baseId": "audino",
+    "isMega": true,
+    "battleOnly": "Audino",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "conkeldurr",
+    "name": "Conkeldurr",
+    "jp": "ローブシン",
+    "num": 534,
+    "baseId": "conkeldurr",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "scolipede",
+    "name": "Scolipede",
+    "jp": "ペンドラー",
+    "num": 545,
+    "baseId": "scolipede",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "scolipedemega",
+    "name": "Scolipede-Mega",
+    "jp": "メガペンドラー",
+    "num": 545,
+    "baseId": "scolipede",
+    "isMega": true,
+    "battleOnly": "Scolipede",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "whimsicott",
+    "name": "Whimsicott",
+    "jp": "エルフーン",
+    "num": 547,
+    "baseId": "whimsicott",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "krookodile",
+    "name": "Krookodile",
+    "jp": "ワルビアル",
+    "num": 553,
+    "baseId": "krookodile",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "scrafty",
+    "name": "Scrafty",
+    "jp": "ズルズキン",
+    "num": 560,
+    "baseId": "scrafty",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "scraftymega",
+    "name": "Scrafty-Mega",
+    "jp": "メガズルズキン",
+    "num": 560,
+    "baseId": "scrafty",
+    "isMega": true,
+    "battleOnly": "Scrafty",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "cofagrigus",
+    "name": "Cofagrigus",
+    "jp": "デスカーン",
+    "num": 563,
+    "baseId": "cofagrigus",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "garbodor",
+    "name": "Garbodor",
+    "jp": "ダストダス",
+    "num": 569,
+    "baseId": "garbodor",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "zoroark",
+    "name": "Zoroark",
+    "jp": "ゾロアーク",
+    "num": 571,
+    "baseId": "zoroark",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "zoroarkhisui",
+    "name": "Zoroark-Hisui",
+    "jp": "ゾロアーク(ヒスイのすがた)",
+    "num": 571,
+    "baseId": "zoroarkhisui",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "reuniclus",
+    "name": "Reuniclus",
+    "jp": "ランクルス",
+    "num": 579,
+    "baseId": "reuniclus",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "vanilluxe",
+    "name": "Vanilluxe",
+    "jp": "バイバニラ",
+    "num": 584,
+    "baseId": "vanilluxe",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "emolga",
+    "name": "Emolga",
+    "jp": "エモンガ",
+    "num": 587,
+    "baseId": "emolga",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "eelektross",
+    "name": "Eelektross",
+    "jp": "シビルドン",
+    "num": 604,
+    "baseId": "eelektross",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "eelektrossmega",
+    "name": "Eelektross-Mega",
+    "jp": "メガシビルドン",
+    "num": 604,
+    "baseId": "eelektross",
+    "isMega": true,
+    "battleOnly": "Eelektross",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "chandelure",
+    "name": "Chandelure",
+    "jp": "シャンデラ",
+    "num": 609,
+    "baseId": "chandelure",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "chandeluremega",
+    "name": "Chandelure-Mega",
+    "jp": "メガシャンデラ",
+    "num": 609,
+    "baseId": "chandelure",
+    "isMega": true,
+    "battleOnly": "Chandelure",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "beartic",
+    "name": "Beartic",
+    "jp": "ツンベアー",
+    "num": 614,
+    "baseId": "beartic",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "stunfisk",
+    "name": "Stunfisk",
+    "jp": "マッギョ",
+    "num": 618,
+    "baseId": "stunfisk",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "stunfiskgalar",
+    "name": "Stunfisk-Galar",
+    "jp": "マッギョ(ガラルのすがた)",
+    "num": 618,
+    "baseId": "stunfiskgalar",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "golurk",
+    "name": "Golurk",
+    "jp": "ゴルーグ",
+    "num": 623,
+    "baseId": "golurk",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "golurkmega",
+    "name": "Golurk-Mega",
+    "jp": "メガゴルーグ",
+    "num": 623,
+    "baseId": "golurk",
+    "isMega": true,
+    "battleOnly": "Golurk",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "hydreigon",
+    "name": "Hydreigon",
+    "jp": "サザンドラ",
+    "num": 635,
+    "baseId": "hydreigon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "volcarona",
+    "name": "Volcarona",
+    "jp": "ウルガモス",
+    "num": 637,
+    "baseId": "volcarona",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "chesnaught",
+    "name": "Chesnaught",
+    "jp": "ブリガロン",
+    "num": 652,
+    "baseId": "chesnaught",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "chesnaughtmega",
+    "name": "Chesnaught-Mega",
+    "jp": "メガブリガロン",
+    "num": 652,
+    "baseId": "chesnaught",
+    "isMega": true,
+    "battleOnly": "Chesnaught",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "delphox",
+    "name": "Delphox",
+    "jp": "マフォクシー",
+    "num": 655,
+    "baseId": "delphox",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "delphoxmega",
+    "name": "Delphox-Mega",
+    "jp": "メガマフォクシー",
+    "num": 655,
+    "baseId": "delphox",
+    "isMega": true,
+    "battleOnly": "Delphox",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "greninja",
+    "name": "Greninja",
+    "jp": "ゲッコウガ",
+    "num": 658,
+    "baseId": "greninja",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "greninjamega",
+    "name": "Greninja-Mega",
+    "jp": "メガゲッコウガ",
+    "num": 658,
+    "baseId": "greninja",
+    "isMega": true,
+    "battleOnly": "Greninja",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "diggersby",
+    "name": "Diggersby",
+    "jp": "ホルード",
+    "num": 660,
+    "baseId": "diggersby",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "talonflame",
+    "name": "Talonflame",
+    "jp": "ファイアロー",
+    "num": 663,
+    "baseId": "talonflame",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "vivillon",
+    "name": "Vivillon",
+    "jp": "ビビヨン",
+    "num": 666,
+    "baseId": "vivillon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "vivillonarchipelago",
+    "name": "Vivillon-Archipelago",
+    "jp": "ビビヨン [Archipelago]",
+    "num": 666,
+    "baseId": "vivillonarchipelago",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivilloncontinental",
+    "name": "Vivillon-Continental",
+    "jp": "ビビヨン [Continental]",
+    "num": 666,
+    "baseId": "vivilloncontinental",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonelegant",
+    "name": "Vivillon-Elegant",
+    "jp": "ビビヨン [Elegant]",
+    "num": 666,
+    "baseId": "vivillonelegant",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillongarden",
+    "name": "Vivillon-Garden",
+    "jp": "ビビヨン [Garden]",
+    "num": 666,
+    "baseId": "vivillongarden",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonhighplains",
+    "name": "Vivillon-High Plains",
+    "jp": "ビビヨン [High Plains]",
+    "num": 666,
+    "baseId": "vivillonhighplains",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonicysnow",
+    "name": "Vivillon-Icy Snow",
+    "jp": "ビビヨン [Icy Snow]",
+    "num": 666,
+    "baseId": "vivillonicysnow",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonjungle",
+    "name": "Vivillon-Jungle",
+    "jp": "ビビヨン [Jungle]",
+    "num": 666,
+    "baseId": "vivillonjungle",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonmarine",
+    "name": "Vivillon-Marine",
+    "jp": "ビビヨン [Marine]",
+    "num": 666,
+    "baseId": "vivillonmarine",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonmodern",
+    "name": "Vivillon-Modern",
+    "jp": "ビビヨン [Modern]",
+    "num": 666,
+    "baseId": "vivillonmodern",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonmonsoon",
+    "name": "Vivillon-Monsoon",
+    "jp": "ビビヨン [Monsoon]",
+    "num": 666,
+    "baseId": "vivillonmonsoon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonocean",
+    "name": "Vivillon-Ocean",
+    "jp": "ビビヨン [Ocean]",
+    "num": 666,
+    "baseId": "vivillonocean",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonpolar",
+    "name": "Vivillon-Polar",
+    "jp": "ビビヨン [Polar]",
+    "num": 666,
+    "baseId": "vivillonpolar",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonriver",
+    "name": "Vivillon-River",
+    "jp": "ビビヨン [River]",
+    "num": 666,
+    "baseId": "vivillonriver",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonsandstorm",
+    "name": "Vivillon-Sandstorm",
+    "jp": "ビビヨン [Sandstorm]",
+    "num": 666,
+    "baseId": "vivillonsandstorm",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonsavanna",
+    "name": "Vivillon-Savanna",
+    "jp": "ビビヨン [Savanna]",
+    "num": 666,
+    "baseId": "vivillonsavanna",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonsun",
+    "name": "Vivillon-Sun",
+    "jp": "ビビヨン [Sun]",
+    "num": 666,
+    "baseId": "vivillonsun",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillontundra",
+    "name": "Vivillon-Tundra",
+    "jp": "ビビヨン [Tundra]",
+    "num": 666,
+    "baseId": "vivillontundra",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "vivillonfancy",
+    "name": "Vivillon-Fancy",
+    "jp": "ビビヨン(ファンシーなもよう)",
+    "num": 666,
+    "baseId": "vivillonfancy",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "vivillonpokeball",
+    "name": "Vivillon-Pokeball",
+    "jp": "ビビヨン(ボールのもよう)",
+    "num": 666,
+    "baseId": "vivillonpokeball",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "pyroar",
+    "name": "Pyroar",
+    "jp": "カエンジシ",
+    "num": 668,
+    "baseId": "pyroar",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "pyroarmega",
+    "name": "Pyroar-Mega",
+    "jp": "メガカエンジシ",
+    "num": 668,
+    "baseId": "pyroar",
+    "isMega": true,
+    "battleOnly": "Pyroar",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "floetteeternal",
+    "name": "Floette-Eternal",
+    "jp": "フラエッテ(えいえんのはな)",
+    "num": 670,
+    "baseId": "floetteeternal",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "floettemega",
+    "name": "Floette-Mega",
+    "jp": "メガフラエッテ",
+    "num": 670,
+    "baseId": "floetteeternal",
+    "isMega": true,
+    "battleOnly": "Floette-Eternal",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "florges",
+    "name": "Florges",
+    "jp": "フラージェス",
+    "num": 671,
+    "baseId": "florges",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gogoat",
+    "name": "Gogoat",
+    "jp": "ゴーゴート",
+    "num": 673,
+    "baseId": "gogoat",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "pangoro",
+    "name": "Pangoro",
+    "jp": "ゴロンダ",
+    "num": 675,
+    "baseId": "pangoro",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "furfrou",
+    "name": "Furfrou",
+    "jp": "トリミアン",
+    "num": 676,
+    "baseId": "furfrou",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "meowstic",
+    "name": "Meowstic",
+    "jp": "ニャオニクス",
+    "num": 678,
+    "baseId": "meowstic",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "meowsticf",
+    "name": "Meowstic-F",
+    "jp": "ニャオニクス(メス)",
+    "num": 678,
+    "baseId": "meowsticf",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "meowsticmmega",
+    "name": "Meowstic-M-Mega",
+    "jp": "メガニャオニクス(オス)",
+    "num": 678,
+    "baseId": "meowstic",
+    "isMega": true,
+    "battleOnly": "Meowstic",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "meowsticfmega",
+    "name": "Meowstic-F-Mega",
+    "jp": "メガニャオニクス(メス)",
+    "num": 678,
+    "baseId": "meowsticf",
+    "isMega": true,
+    "battleOnly": "Meowstic-F",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "aegislash",
+    "name": "Aegislash",
+    "jp": "ギルガルド",
+    "num": 681,
+    "baseId": "aegislash",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "aegislashblade",
+    "name": "Aegislash-Blade",
+    "jp": "ギルガルド(ブレードフォルム)",
+    "num": 681,
+    "baseId": "aegislash",
+    "isMega": false,
+    "battleOnly": "Aegislash",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "aromatisse",
+    "name": "Aromatisse",
+    "jp": "フレフワン",
+    "num": 683,
+    "baseId": "aromatisse",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "slurpuff",
+    "name": "Slurpuff",
+    "jp": "ペロリーム",
+    "num": 685,
+    "baseId": "slurpuff",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "malamar",
+    "name": "Malamar",
+    "jp": "カラマネロ",
+    "num": 687,
+    "baseId": "malamar",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "malamarmega",
+    "name": "Malamar-Mega",
+    "jp": "メガカラマネロ",
+    "num": 687,
+    "baseId": "malamar",
+    "isMega": true,
+    "battleOnly": "Malamar",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "barbaracle",
+    "name": "Barbaracle",
+    "jp": "ガメノデス",
+    "num": 689,
+    "baseId": "barbaracle",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "barbaraclemega",
+    "name": "Barbaracle-Mega",
+    "jp": "メガガメノデス",
+    "num": 689,
+    "baseId": "barbaracle",
+    "isMega": true,
+    "battleOnly": "Barbaracle",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "dragalge",
+    "name": "Dragalge",
+    "jp": "ドラミドロ",
+    "num": 691,
+    "baseId": "dragalge",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "dragalgemega",
+    "name": "Dragalge-Mega",
+    "jp": "メガドラミドロ",
+    "num": 691,
+    "baseId": "dragalge",
+    "isMega": true,
+    "battleOnly": "Dragalge",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "clawitzer",
+    "name": "Clawitzer",
+    "jp": "ブロスター",
+    "num": 693,
+    "baseId": "clawitzer",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "heliolisk",
+    "name": "Heliolisk",
+    "jp": "エレザード",
+    "num": 695,
+    "baseId": "heliolisk",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "tyrantrum",
+    "name": "Tyrantrum",
+    "jp": "ガチゴラス",
+    "num": 697,
+    "baseId": "tyrantrum",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "aurorus",
+    "name": "Aurorus",
+    "jp": "アマルルガ",
+    "num": 699,
+    "baseId": "aurorus",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "sylveon",
+    "name": "Sylveon",
+    "jp": "ニンフィア",
+    "num": 700,
+    "baseId": "sylveon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "hawlucha",
+    "name": "Hawlucha",
+    "jp": "ルチャブル",
+    "num": 701,
+    "baseId": "hawlucha",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "hawluchamega",
+    "name": "Hawlucha-Mega",
+    "jp": "メガルチャブル",
+    "num": 701,
+    "baseId": "hawlucha",
+    "isMega": true,
+    "battleOnly": "Hawlucha",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "dedenne",
+    "name": "Dedenne",
+    "jp": "デデンネ",
+    "num": 702,
+    "baseId": "dedenne",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "goodra",
+    "name": "Goodra",
+    "jp": "ヌメルゴン",
+    "num": 706,
+    "baseId": "goodra",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "goodrahisui",
+    "name": "Goodra-Hisui",
+    "jp": "ヌメルゴン(ヒスイのすがた)",
+    "num": 706,
+    "baseId": "goodrahisui",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "klefki",
+    "name": "Klefki",
+    "jp": "クレッフィ",
+    "num": 707,
+    "baseId": "klefki",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "trevenant",
+    "name": "Trevenant",
+    "jp": "オーロット",
+    "num": 709,
+    "baseId": "trevenant",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gourgeist",
+    "name": "Gourgeist",
+    "jp": "パンプジン",
+    "num": 711,
+    "baseId": "gourgeist",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gourgeistlarge",
+    "name": "Gourgeist-Large",
+    "jp": "パンプジン(おおきいサイズ)",
+    "num": 711,
+    "baseId": "gourgeistlarge",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gourgeistsmall",
+    "name": "Gourgeist-Small",
+    "jp": "パンプジン(ちいさいサイズ)",
+    "num": 711,
+    "baseId": "gourgeistsmall",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gourgeistsuper",
+    "name": "Gourgeist-Super",
+    "jp": "パンプジン(とくだいサイズ)",
+    "num": 711,
+    "baseId": "gourgeistsuper",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "avalugg",
+    "name": "Avalugg",
+    "jp": "クレベース",
+    "num": 713,
+    "baseId": "avalugg",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "avalugghisui",
+    "name": "Avalugg-Hisui",
+    "jp": "クレベース(ヒスイのすがた)",
+    "num": 713,
+    "baseId": "avalugghisui",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "noivern",
+    "name": "Noivern",
+    "jp": "オンバーン",
+    "num": 715,
+    "baseId": "noivern",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "decidueye",
+    "name": "Decidueye",
+    "jp": "ジュナイパー",
+    "num": 724,
+    "baseId": "decidueye",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "decidueyehisui",
+    "name": "Decidueye-Hisui",
+    "jp": "ジュナイパー(ヒスイのすがた)",
+    "num": 724,
+    "baseId": "decidueyehisui",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "incineroar",
+    "name": "Incineroar",
+    "jp": "ガオガエン",
+    "num": 727,
+    "baseId": "incineroar",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "primarina",
+    "name": "Primarina",
+    "jp": "アシレーヌ",
+    "num": 730,
+    "baseId": "primarina",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "toucannon",
+    "name": "Toucannon",
+    "jp": "ドデカバシ",
+    "num": 733,
+    "baseId": "toucannon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "crabominable",
+    "name": "Crabominable",
+    "jp": "ケケンカニ",
+    "num": 740,
+    "baseId": "crabominable",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "crabominablemega",
+    "name": "Crabominable-Mega",
+    "jp": "メガケケンカニ",
+    "num": 740,
+    "baseId": "crabominable",
+    "isMega": true,
+    "battleOnly": "Crabominable",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "lycanroc",
+    "name": "Lycanroc",
+    "jp": "ルガルガン",
+    "num": 745,
+    "baseId": "lycanroc",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "lycanrocdusk",
+    "name": "Lycanroc-Dusk",
+    "jp": "ルガルガン(たそがれのすがた)",
+    "num": 745,
+    "baseId": "lycanrocdusk",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "lycanrocmidnight",
+    "name": "Lycanroc-Midnight",
+    "jp": "ルガルガン(まよなかのすがた)",
+    "num": 745,
+    "baseId": "lycanrocmidnight",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "toxapex",
+    "name": "Toxapex",
+    "jp": "ドヒドイデ",
+    "num": 748,
+    "baseId": "toxapex",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "mudsdale",
+    "name": "Mudsdale",
+    "jp": "バンバドロ",
+    "num": 750,
+    "baseId": "mudsdale",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "araquanid",
+    "name": "Araquanid",
+    "jp": "オニシズクモ",
+    "num": 752,
+    "baseId": "araquanid",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "salazzle",
+    "name": "Salazzle",
+    "jp": "エンニュート",
+    "num": 758,
+    "baseId": "salazzle",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "tsareena",
+    "name": "Tsareena",
+    "jp": "アマージョ",
+    "num": 763,
+    "baseId": "tsareena",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "oranguru",
+    "name": "Oranguru",
+    "jp": "ヤレユータン",
+    "num": 765,
+    "baseId": "oranguru",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "passimian",
+    "name": "Passimian",
+    "jp": "ナゲツケサル",
+    "num": 766,
+    "baseId": "passimian",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "golisopod",
+    "name": "Golisopod",
+    "jp": "グソクムシャ",
+    "num": 768,
+    "baseId": "golisopod",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "golisopodmega",
+    "name": "Golisopod-Mega",
+    "jp": "メガグソクムシャ",
+    "num": 768,
+    "baseId": "golisopod",
+    "isMega": true,
+    "battleOnly": "Golisopod",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "miniormeteor",
+    "name": "Minior-Meteor",
+    "jp": "メテノ(りゅうせいのすがた)",
+    "num": 774,
+    "baseId": "minior",
+    "isMega": false,
+    "battleOnly": "Minior",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "mimikyu",
+    "name": "Mimikyu",
+    "jp": "ミミッキュ",
+    "num": 778,
+    "baseId": "mimikyu",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "mimikyubusted",
+    "name": "Mimikyu-Busted",
+    "jp": "ミミッキュ(ばれたすがた)",
+    "num": 778,
+    "baseId": "mimikyu",
+    "isMega": false,
+    "battleOnly": "Mimikyu",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "drampa",
+    "name": "Drampa",
+    "jp": "ジジーロン",
+    "num": 780,
+    "baseId": "drampa",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "drampamega",
+    "name": "Drampa-Mega",
+    "jp": "メガジジーロン",
+    "num": 780,
+    "baseId": "drampa",
+    "isMega": true,
+    "battleOnly": "Drampa",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "kommoo",
+    "name": "Kommo-o",
+    "jp": "ジャラランガ",
+    "num": 784,
+    "baseId": "kommoo",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "rillaboom",
+    "name": "Rillaboom",
+    "jp": "ゴリランダー",
+    "num": 812,
+    "baseId": "rillaboom",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "cinderace",
+    "name": "Cinderace",
+    "jp": "エースバーン",
+    "num": 815,
+    "baseId": "cinderace",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "inteleon",
+    "name": "Inteleon",
+    "jp": "インテレオン",
+    "num": 818,
+    "baseId": "inteleon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "corviknight",
+    "name": "Corviknight",
+    "jp": "アーマーガア",
+    "num": 823,
+    "baseId": "corviknight",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "thievul",
+    "name": "Thievul",
+    "jp": "フォクスライ",
+    "num": 828,
+    "baseId": "thievul",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "flapple",
+    "name": "Flapple",
+    "jp": "アップリュー",
+    "num": 841,
+    "baseId": "flapple",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "appletun",
+    "name": "Appletun",
+    "jp": "タルップル",
+    "num": 842,
+    "baseId": "appletun",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "sandaconda",
+    "name": "Sandaconda",
+    "jp": "サダイジャ",
+    "num": 844,
+    "baseId": "sandaconda",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "cramorantgulping",
+    "name": "Cramorant-Gulping",
+    "jp": "ウッウ(うのみのすがた)",
+    "num": 845,
+    "baseId": "cramorant",
+    "isMega": false,
+    "battleOnly": "Cramorant",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "cramorantgorging",
+    "name": "Cramorant-Gorging",
+    "jp": "ウッウ(まるのみのすがた)",
+    "num": 845,
+    "baseId": "cramorant",
+    "isMega": false,
+    "battleOnly": "Cramorant",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "toxtricity",
+    "name": "Toxtricity",
+    "jp": "ストリンダー",
+    "num": 849,
+    "baseId": "toxtricity",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "toxtricitylowkey",
+    "name": "Toxtricity-Low-Key",
+    "jp": "ストリンダー(ローなすがた)",
+    "num": 849,
+    "baseId": "toxtricitylowkey",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "grapploct",
+    "name": "Grapploct",
+    "jp": "オトスパス",
+    "num": 853,
+    "baseId": "grapploct",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "polteageist",
+    "name": "Polteageist",
+    "jp": "ポットデス",
+    "num": 855,
+    "baseId": "polteageist",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "polteageistantique",
+    "name": "Polteageist-Antique",
+    "jp": "ポットデス(しんさくフォルム)",
+    "num": 855,
+    "baseId": "polteageistantique",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "hatterene",
+    "name": "Hatterene",
+    "jp": "ブリムオン",
+    "num": 858,
+    "baseId": "hatterene",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "grimmsnarl",
+    "name": "Grimmsnarl",
+    "jp": "オーロンゲ",
+    "num": 861,
+    "baseId": "grimmsnarl",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "perrserker",
+    "name": "Perrserker",
+    "jp": "ニャイキング",
+    "num": 863,
+    "baseId": "perrserker",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "sirfetchd",
+    "name": "Sirfetch’d",
+    "jp": "ネギガナイト",
+    "num": 865,
+    "baseId": "sirfetchd",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "mrrime",
+    "name": "Mr. Rime",
+    "jp": "バリコオル",
+    "num": 866,
+    "baseId": "mrrime",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "runerigus",
+    "name": "Runerigus",
+    "jp": "デスバーン",
+    "num": 867,
+    "baseId": "runerigus",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "alcremie",
+    "name": "Alcremie",
+    "jp": "マホイップ",
+    "num": 869,
+    "baseId": "alcremie",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "alcremiecaramelswirl",
+    "name": "Alcremie-Caramel-Swirl",
+    "jp": "マホイップ [Caramel-Swirl]",
+    "num": 869,
+    "baseId": "alcremiecaramelswirl",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "alcremielemoncream",
+    "name": "Alcremie-Lemon-Cream",
+    "jp": "マホイップ [Lemon-Cream]",
+    "num": 869,
+    "baseId": "alcremielemoncream",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "alcremiematchacream",
+    "name": "Alcremie-Matcha-Cream",
+    "jp": "マホイップ [Matcha-Cream]",
+    "num": 869,
+    "baseId": "alcremiematchacream",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "alcremiemintcream",
+    "name": "Alcremie-Mint-Cream",
+    "jp": "マホイップ [Mint-Cream]",
+    "num": 869,
+    "baseId": "alcremiemintcream",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "alcremierainbowswirl",
+    "name": "Alcremie-Rainbow-Swirl",
+    "jp": "マホイップ [Rainbow-Swirl]",
+    "num": 869,
+    "baseId": "alcremierainbowswirl",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "alcremierubycream",
+    "name": "Alcremie-Ruby-Cream",
+    "jp": "マホイップ [Ruby-Cream]",
+    "num": 869,
+    "baseId": "alcremierubycream",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "alcremierubyswirl",
+    "name": "Alcremie-Ruby-Swirl",
+    "jp": "マホイップ [Ruby-Swirl]",
+    "num": 869,
+    "baseId": "alcremierubyswirl",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": true
+  },
+  {
+    "id": "falinks",
+    "name": "Falinks",
+    "jp": "タイレーツ",
+    "num": 870,
+    "baseId": "falinks",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "falinksmega",
+    "name": "Falinks-Mega",
+    "jp": "メガタイレーツ",
+    "num": 870,
+    "baseId": "falinks",
+    "isMega": true,
+    "battleOnly": "Falinks",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "pincurchin",
+    "name": "Pincurchin",
+    "jp": "バチンウニ",
+    "num": 871,
+    "baseId": "pincurchin",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "eiscuenoice",
+    "name": "Eiscue-Noice",
+    "jp": "コオリッポ(ナイスフェイス)",
+    "num": 875,
+    "baseId": "eiscue",
+    "isMega": false,
+    "battleOnly": "Eiscue",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "indeedeef",
+    "name": "Indeedee-F",
+    "jp": "イエッサン♀",
+    "num": 876,
+    "baseId": "indeedeef",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "indeedee",
+    "name": "Indeedee",
+    "jp": "イエッサン♂",
+    "num": 876,
+    "baseId": "indeedee",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "morpeko",
+    "name": "Morpeko",
+    "jp": "モルペコ",
+    "num": 877,
+    "baseId": "morpeko",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "morpekohangry",
+    "name": "Morpeko-Hangry",
+    "jp": "モルペコ(はらぺこもよう)",
+    "num": 877,
+    "baseId": "morpeko",
+    "isMega": false,
+    "battleOnly": "Morpeko",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "dragapult",
+    "name": "Dragapult",
+    "jp": "ドラパルト",
+    "num": 887,
+    "baseId": "dragapult",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "wyrdeer",
+    "name": "Wyrdeer",
+    "jp": "アヤシシ",
+    "num": 899,
+    "baseId": "wyrdeer",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "kleavor",
+    "name": "Kleavor",
+    "jp": "バサギリ",
+    "num": 900,
+    "baseId": "kleavor",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "basculegion",
+    "name": "Basculegion",
+    "jp": "イダイトウ",
+    "num": 902,
+    "baseId": "basculegion",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "basculegionf",
+    "name": "Basculegion-F",
+    "jp": "イダイトウ♀",
+    "num": 902,
+    "baseId": "basculegionf",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "sneasler",
+    "name": "Sneasler",
+    "jp": "オオニューラ",
+    "num": 903,
+    "baseId": "sneasler",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "overqwil",
+    "name": "Overqwil",
+    "jp": "ハリーマン",
+    "num": 904,
+    "baseId": "overqwil",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "meowscarada",
+    "name": "Meowscarada",
+    "jp": "マスカーニャ",
+    "num": 908,
+    "baseId": "meowscarada",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "skeledirge",
+    "name": "Skeledirge",
+    "jp": "ラウドボーン",
+    "num": 911,
+    "baseId": "skeledirge",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "quaquaval",
+    "name": "Quaquaval",
+    "jp": "ウェーニバル",
+    "num": 914,
+    "baseId": "quaquaval",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "pawmot",
+    "name": "Pawmot",
+    "jp": "パーモット",
+    "num": 923,
+    "baseId": "pawmot",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "maushold",
+    "name": "Maushold",
+    "jp": "イッカネズミ",
+    "num": 925,
+    "baseId": "maushold",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "mausholdfour",
+    "name": "Maushold-Four",
+    "jp": "イッカネズミ(４ひきかぞく)",
+    "num": 925,
+    "baseId": "mausholdfour",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "arboliva",
+    "name": "Arboliva",
+    "jp": "オリーヴァ",
+    "num": 930,
+    "baseId": "arboliva",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "squawkabilly",
+    "name": "Squawkabilly",
+    "jp": "イキリンコ",
+    "num": 931,
+    "baseId": "squawkabilly",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "squawkabillyblue",
+    "name": "Squawkabilly-Blue",
+    "jp": "イキリンコ(あおいはね)",
+    "num": 931,
+    "baseId": "squawkabillyblue",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "squawkabillyyellow",
+    "name": "Squawkabilly-Yellow",
+    "jp": "イキリンコ(きいろいはね)",
+    "num": 931,
+    "baseId": "squawkabillyyellow",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "squawkabillywhite",
+    "name": "Squawkabilly-White",
+    "jp": "イキリンコ(しろいはね)",
+    "num": 931,
+    "baseId": "squawkabillywhite",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "garganacl",
+    "name": "Garganacl",
+    "jp": "キョジオーン",
+    "num": 934,
+    "baseId": "garganacl",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "armarouge",
+    "name": "Armarouge",
+    "jp": "グレンアルマ",
+    "num": 936,
+    "baseId": "armarouge",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "ceruledge",
+    "name": "Ceruledge",
+    "jp": "ソウブレイズ",
+    "num": 937,
+    "baseId": "ceruledge",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "bellibolt",
+    "name": "Bellibolt",
+    "jp": "ハラバリー",
+    "num": 939,
+    "baseId": "bellibolt",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "mabosstiff",
+    "name": "Mabosstiff",
+    "jp": "マフィティフ",
+    "num": 943,
+    "baseId": "mabosstiff",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "scovillain",
+    "name": "Scovillain",
+    "jp": "スコヴィラン",
+    "num": 952,
+    "baseId": "scovillain",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "scovillainmega",
+    "name": "Scovillain-Mega",
+    "jp": "メガスコヴィラン",
+    "num": 952,
+    "baseId": "scovillain",
+    "isMega": true,
+    "battleOnly": "Scovillain",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "espathra",
+    "name": "Espathra",
+    "jp": "クエスパトラ",
+    "num": 956,
+    "baseId": "espathra",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "tinkaton",
+    "name": "Tinkaton",
+    "jp": "デカヌチャン",
+    "num": 959,
+    "baseId": "tinkaton",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "palafin",
+    "name": "Palafin",
+    "jp": "イルカマン",
+    "num": 964,
+    "baseId": "palafin",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "palafinhero",
+    "name": "Palafin-Hero",
+    "jp": "イルカマン(マイティフォルム)",
+    "num": 964,
+    "baseId": "palafin",
+    "isMega": false,
+    "battleOnly": "Palafin",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "orthworm",
+    "name": "Orthworm",
+    "jp": "ミミズズ",
+    "num": 968,
+    "baseId": "orthworm",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "glimmora",
+    "name": "Glimmora",
+    "jp": "キラフロル",
+    "num": 970,
+    "baseId": "glimmora",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "glimmoramega",
+    "name": "Glimmora-Mega",
+    "jp": "メガキラフロル",
+    "num": 970,
+    "baseId": "glimmora",
+    "isMega": true,
+    "battleOnly": "Glimmora",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "houndstone",
+    "name": "Houndstone",
+    "jp": "ハカドッグ",
+    "num": 972,
+    "baseId": "houndstone",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "annihilape",
+    "name": "Annihilape",
+    "jp": "コノヨザル",
+    "num": 979,
+    "baseId": "annihilape",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "farigiraf",
+    "name": "Farigiraf",
+    "jp": "リキキリン",
+    "num": 981,
+    "baseId": "farigiraf",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "kingambit",
+    "name": "Kingambit",
+    "jp": "ドドゲザン",
+    "num": 983,
+    "baseId": "kingambit",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "baxcalibur",
+    "name": "Baxcalibur",
+    "jp": "セグレイブ",
+    "num": 998,
+    "baseId": "baxcalibur",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "baxcaliburmega",
+    "name": "Baxcalibur-Mega",
+    "jp": "メガセグレイブ",
+    "num": 998,
+    "baseId": "baxcalibur",
+    "isMega": true,
+    "battleOnly": "Baxcalibur",
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "gholdengo",
+    "name": "Gholdengo",
+    "jp": "サーフゴー",
+    "num": 1000,
+    "baseId": "gholdengo",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "sinistcha",
+    "name": "Sinistcha",
+    "jp": "ヤバソチャ",
+    "num": 1013,
+    "baseId": "sinistcha",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "sinistchamasterpiece",
+    "name": "Sinistcha-Masterpiece",
+    "jp": "ヤバソチャ(ケッサクのすがた)",
+    "num": 1013,
+    "baseId": "sinistchamasterpiece",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "archaludon",
+    "name": "Archaludon",
+    "jp": "ブリジュラス",
+    "num": 1018,
+    "baseId": "archaludon",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  },
+  {
+    "id": "hydrapple",
+    "name": "Hydrapple",
+    "jp": "カミツオロチ",
+    "num": 1019,
+    "baseId": "hydrapple",
+    "isMega": false,
+    "battleOnly": false,
+    "cosmeticIdentity": false
+  }
+]

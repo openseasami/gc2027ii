@@ -1,0 +1,32 @@
+{
+  "completion": false,
+  "passed": true,
+  "checks": [
+    {
+      "id": "runtime-exactly-audited-whitelist",
+      "passed": true
+    },
+    {
+      "id": "retained-calculation-inputs-unchanged",
+      "passed": true
+    },
+    {
+      "id": "no-engine-only-illegal-parent-forms",
+      "passed": true
+    },
+    {
+      "id": "all-explicit-site-roster-entries-kept",
+      "passed": true
+    },
+    {
+      "id": "appearance-json-migration-preserves-every-calculation-input",
+      "passed": true
+    },
+    {
+      "id": "out-of-scope-json-rejected-without-mutation",
+      "passed": true
+    }
+  ],
+  "preservedCoreRecords": 356,
+  "appearanceMigrations": 26
+}

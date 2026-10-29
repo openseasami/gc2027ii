@@ -1,43 +1,105 @@
 {
   "completion": false,
-  "officialEligibility": {
-    "unconfirmed": 386,
-    "confirmed": 0,
-    "reason": "Official JavaScript roster body unavailable; direct retrieval 403"
+  "acceptance": {
+    "completion": false,
+    "dateJST": "2026-10-29",
+    "scope": "Non-official-source M-C roster restriction and existing viewer regression",
+    "excludedFromAcceptance": [
+      "Official page body retrieval and official certification",
+      "Real-game numerical comparison"
+    ],
+    "required": [
+      "Per-form non-official roster evidence with family-vs-form matching distinguished",
+      "No source-less battle-only form admitted solely by engine validation",
+      "Existing valid stats, calculation engine, UI layout and JSON version preserved",
+      "Regression, independent Champions engine, browser and actual ZIP tests pass"
+    ],
+    "fullBattleSpecificationCompletion": false
   },
-  "officialNumericFormula": "unconfirmed; only community implementation agreement",
-  "uncomparedSpeciesAliases": [
-    "Vivillon-Archipelago",
-    "Vivillon-Continental",
-    "Vivillon-Elegant",
-    "Vivillon-Garden",
-    "Vivillon-High Plains",
-    "Vivillon-Icy Snow",
-    "Vivillon-Jungle",
-    "Vivillon-Marine",
-    "Vivillon-Modern",
-    "Vivillon-Monsoon",
-    "Vivillon-Ocean",
-    "Vivillon-Polar",
-    "Vivillon-River",
-    "Vivillon-Sandstorm",
-    "Vivillon-Savanna",
-    "Vivillon-Sun",
-    "Vivillon-Tundra",
-    "Aegislash",
-    "Minior-Meteor",
-    "Cramorant-Gulping",
-    "Cramorant-Gorging",
-    "Alcremie-Caramel-Swirl",
-    "Alcremie-Lemon-Cream",
-    "Alcremie-Matcha-Cream",
-    "Alcremie-Mint-Cream",
-    "Alcremie-Rainbow-Swirl",
-    "Alcremie-Ruby-Cream",
-    "Alcremie-Ruby-Swirl",
-    "Eiscue-Noice"
+  "officialEligibility": "Not certified; official body retrieval excluded from acceptance by user",
+  "officialNumericFormula": "Not a gate; real-game comparison excluded by user",
+  "rosterExcluded": [
+    {
+      "id": "miniormeteor",
+      "jp": "メテノ(りゅうせいのすがた)",
+      "num": 774,
+      "decision": "excluded-no-roster-evidence",
+      "kind": "battle-reference",
+      "exactEvidence": [],
+      "familyEvidence": [],
+      "formSupplement": null,
+      "reason": "Base species absent from the compared M-C/available rosters; engine-only battle form is insufficient",
+      "officialCertified": false
+    },
+    {
+      "id": "cramorantgulping",
+      "jp": "ウッウ(うのみのすがた)",
+      "num": 845,
+      "decision": "excluded-no-roster-evidence",
+      "kind": "battle-reference",
+      "exactEvidence": [],
+      "familyEvidence": [],
+      "formSupplement": null,
+      "reason": "Base species absent from the compared M-C/available rosters; engine-only battle form is insufficient",
+      "officialCertified": false
+    },
+    {
+      "id": "cramorantgorging",
+      "jp": "ウッウ(まるのみのすがた)",
+      "num": 845,
+      "decision": "excluded-no-roster-evidence",
+      "kind": "battle-reference",
+      "exactEvidence": [],
+      "familyEvidence": [],
+      "formSupplement": null,
+      "reason": "Base species absent from the compared M-C/available rosters; engine-only battle form is insufficient",
+      "officialCertified": false
+    },
+    {
+      "id": "eiscuenoice",
+      "jp": "コオリッポ(ナイスフェイス)",
+      "num": 875,
+      "decision": "excluded-no-roster-evidence",
+      "kind": "battle-reference",
+      "exactEvidence": [],
+      "familyEvidence": [],
+      "formSupplement": null,
+      "reason": "Base species absent from the compared M-C/available rosters; engine-only battle form is insufficient",
+      "officialCertified": false
+    }
   ],
-  "cosmeticEnglishLabels": 24,
+  "appearanceConsolidated": {
+    "vivillonarchipelago": "vivillon",
+    "vivilloncontinental": "vivillon",
+    "vivillonelegant": "vivillon",
+    "vivillongarden": "vivillon",
+    "vivillonhighplains": "vivillon",
+    "vivillonicysnow": "vivillon",
+    "vivillonjungle": "vivillon",
+    "vivillonmarine": "vivillon",
+    "vivillonmodern": "vivillon",
+    "vivillonmonsoon": "vivillon",
+    "vivillonocean": "vivillon",
+    "vivillonpolar": "vivillon",
+    "vivillonriver": "vivillon",
+    "vivillonsandstorm": "vivillon",
+    "vivillonsavanna": "vivillon",
+    "vivillonsun": "vivillon",
+    "vivillontundra": "vivillon",
+    "vivillonfancy": "vivillon",
+    "vivillonpokeball": "vivillon",
+    "alcremiecaramelswirl": "alcremie",
+    "alcremielemoncream": "alcremie",
+    "alcremiematchacream": "alcremie",
+    "alcremiemintcream": "alcremie",
+    "alcremierainbowswirl": "alcremie",
+    "alcremierubycream": "alcremie",
+    "alcremierubyswirl": "alcremie"
+  },
+  "uncomparedSpeciesAliases": [
+    "Aegislash"
+  ],
+  "cosmeticEnglishLabels": 0,
   "numericUnverified": [
     {
       "id": "ability/Huge Power/avalanche",
@@ -110,7 +172,7 @@
   "limitations": [
     "Representative hypotheses are not all opponent spreads/items/ability combinations",
     "Full accuracy/reaction/KO stopping of multi-hit moves unverified",
-    "Intact Disguise and physical Ice Face unimplemented",
+    "Intact Disguise unimplemented",
     "History, AI, prediction, residuals and full battles are out of scope"
   ]
 }

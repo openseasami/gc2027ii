@@ -48,6 +48,12 @@
       "cause": "A generic activated-ability reference could permit Plus or Minus without a compatible adjacent partner",
       "fix": "Require a compatible active partner, resolve registered partners from the actual board, and exclude bench sources",
       "verification": "plus-minus-only-compatible-active-partner and adjacent/plusminus/false/true native comparisons"
+    },
+    {
+      "id": "mc-roster-battle-only-leak",
+      "cause": "Engine species validation allowed battle-only forms whose parent was absent from the available M-C roster",
+      "fix": "Apply a dated per-form whitelist from non-official-site comparison, and consolidate identical appearances with safe JSON migration",
+      "verification": "ROSTER_RESULTS.json and browser mcPickerRestricted/appearanceJsonMigration/outOfScopeOriginalBackup"
     }
   ],
   "oracleOrHarnessCorrections": [

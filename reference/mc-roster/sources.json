@@ -1,0 +1,33 @@
+{
+  "dateJST": "2026-10-29",
+  "method": "Search service rendered-page retrieval; direct shell HTTP returned proxy 403 and was not bypassed",
+  "sources": [
+    {
+      "id": "serebii",
+      "url": "https://www.serebii.net/pokemonchampions/pokemon.shtml",
+      "role": "Available roster (current) plus M-C-specific additions",
+      "deltaUrl": "https://www.serebii.net/pokemonchampions/rankedbattle/regulationm-c.shtml",
+      "rows": 356
+    },
+    {
+      "id": "pokewiki",
+      "url": "https://champions.pokewiki.net/レギュレーションM-Cの使用可能ポケモン",
+      "role": "M-C explicit Japanese form roster; published total is not the unit used here",
+      "rows": 347
+    },
+    {
+      "id": "bulbapedia",
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Regulation_Set_M-C",
+      "role": "M-C English species/form and Mega roster",
+      "rows": 344
+    }
+  ],
+  "supplementarySites": [
+    "https://rotomlabs.net/dex/champions/meowstic/mega-female"
+  ],
+  "notUsedForAdoption": [
+    "https://gamewith.ai/pokemon-champions/ja/pokemon",
+    "https://pokemonics-champions.vercel.app/regulations/M-C"
+  ],
+  "factsOnly": true
+}

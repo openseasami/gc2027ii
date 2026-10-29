@@ -1,10 +1,10 @@
 {
   "completion": false,
   "officialCatalogConfirmed": false,
-  "sourceCount": 386,
-  "registered": 386,
+  "sourceCount": 356,
+  "registered": 356,
   "mega": 82,
-  "cosmeticLabelsInEnglish": 24,
+  "cosmeticLabelsInEnglish": 0,
   "omitted": [],
   "checks": [
     {
@@ -1113,16 +1113,6 @@
       "mismatched": []
     },
     {
-      "id": "vivillonfancy",
-      "checked": 6,
-      "mismatched": []
-    },
-    {
-      "id": "vivillonpokeball",
-      "checked": 6,
-      "mismatched": []
-    },
-    {
       "id": "pyroar",
       "checked": 6,
       "mismatched": []
@@ -1793,45 +1783,18 @@
       "mismatched": []
     }
   ],
-  "statsCompared": 2142,
+  "statsCompared": 2130,
   "mismatches": [],
   "uncomparedWithCalc": [
-    "Vivillon-Archipelago",
-    "Vivillon-Continental",
-    "Vivillon-Elegant",
-    "Vivillon-Garden",
-    "Vivillon-High Plains",
-    "Vivillon-Icy Snow",
-    "Vivillon-Jungle",
-    "Vivillon-Marine",
-    "Vivillon-Modern",
-    "Vivillon-Monsoon",
-    "Vivillon-Ocean",
-    "Vivillon-Polar",
-    "Vivillon-River",
-    "Vivillon-Sandstorm",
-    "Vivillon-Savanna",
-    "Vivillon-Sun",
-    "Vivillon-Tundra",
-    "Aegislash",
-    "Minior-Meteor",
-    "Cramorant-Gulping",
-    "Cramorant-Gorging",
-    "Alcremie-Caramel-Swirl",
-    "Alcremie-Lemon-Cream",
-    "Alcremie-Matcha-Cream",
-    "Alcremie-Mint-Cream",
-    "Alcremie-Rainbow-Swirl",
-    "Alcremie-Ruby-Cream",
-    "Alcremie-Ruby-Swirl",
-    "Eiscue-Noice"
+    "Aegislash"
   ],
   "source": {
     "calculator": "@smogon/calc@0.12.0 Champions generation 0",
     "nativeShowdownCommit": "1242c1e2d9763ba5b85d33f13aecb89bae19ae3d",
     "format": "[Gen 9 Champions] VGC 2026 Reg M-C",
-    "officialEligibility": "unconfirmed; official JS list did not expose entries; executor retrieval 403; not certified from national dex",
+    "rosterBasis": "Serebii + Japanese Champions strategy wiki + Bulbapedia, with explicit Champions form supplements; exact-form and family evidence distinguished in audit",
+    "officialEligibility": "Not claimed; official body retrieval excluded by revised user acceptance",
     "statistics": "Uploaded v8 includes names and percentages without provenance/date. Numbers withheld; no generated rates.",
-    "statFormula": "HP = base + SP + 75; other = floor((base + SP + 20)*nature). Independent Champions implementations agree; official numerical specification and real-game observations not acquired."
+    "statFormula": "HP = base + SP + 75; other = floor((base + SP + 20)*nature). Independent Champions models compared. Real-game and official numerical verification excluded from acceptance by user."
   }
 }

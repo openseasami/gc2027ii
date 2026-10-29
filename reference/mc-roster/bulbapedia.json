@@ -1,0 +1,2754 @@
+[
+  {
+    "line": 176,
+    "name": "Venusaur",
+    "form": "",
+    "mega": false,
+    "id": "venusaur",
+    "normalized": "Venusaur"
+  },
+  {
+    "line": 178,
+    "name": "Charizard",
+    "form": "",
+    "mega": false,
+    "id": "charizard",
+    "normalized": "Charizard"
+  },
+  {
+    "line": 180,
+    "name": "Blastoise",
+    "form": "",
+    "mega": false,
+    "id": "blastoise",
+    "normalized": "Blastoise"
+  },
+  {
+    "line": 182,
+    "name": "Beedrill",
+    "form": "",
+    "mega": false,
+    "id": "beedrill",
+    "normalized": "Beedrill"
+  },
+  {
+    "line": 184,
+    "name": "Pidgeot",
+    "form": "",
+    "mega": false,
+    "id": "pidgeot",
+    "normalized": "Pidgeot"
+  },
+  {
+    "line": 186,
+    "name": "Arbok",
+    "form": "",
+    "mega": false,
+    "id": "arbok",
+    "normalized": "Arbok"
+  },
+  {
+    "line": 188,
+    "name": "Pikachu",
+    "form": "",
+    "mega": false,
+    "id": "pikachu",
+    "normalized": "Pikachu"
+  },
+  {
+    "line": 190,
+    "name": "Raichu",
+    "form": "",
+    "mega": false,
+    "id": "raichu",
+    "normalized": "Raichu"
+  },
+  {
+    "line": 192,
+    "name": "Raichu",
+    "form": "(Alolan Form)",
+    "mega": false,
+    "id": "raichualola",
+    "normalized": "Raichu-Alola"
+  },
+  {
+    "line": 195,
+    "name": "Clefable",
+    "form": "",
+    "mega": false,
+    "id": "clefable",
+    "normalized": "Clefable"
+  },
+  {
+    "line": 197,
+    "name": "Wigglytuff",
+    "form": "",
+    "mega": false,
+    "id": "wigglytuff",
+    "normalized": "Wigglytuff"
+  },
+  {
+    "line": 199,
+    "name": "Ninetales",
+    "form": "",
+    "mega": false,
+    "id": "ninetales",
+    "normalized": "Ninetales"
+  },
+  {
+    "line": 201,
+    "name": "Ninetales",
+    "form": "(Alolan Form)",
+    "mega": false,
+    "id": "ninetalesalola",
+    "normalized": "Ninetales-Alola"
+  },
+  {
+    "line": 204,
+    "name": "Vileplume",
+    "form": "",
+    "mega": false,
+    "id": "vileplume",
+    "normalized": "Vileplume"
+  },
+  {
+    "line": 206,
+    "name": "Persian",
+    "form": "",
+    "mega": false,
+    "id": "persian",
+    "normalized": "Persian"
+  },
+  {
+    "line": 208,
+    "name": "Persian",
+    "form": "(Alolan Form)",
+    "mega": false,
+    "id": "persianalola",
+    "normalized": "Persian-Alola"
+  },
+  {
+    "line": 211,
+    "name": "Arcanine",
+    "form": "",
+    "mega": false,
+    "id": "arcanine",
+    "normalized": "Arcanine"
+  },
+  {
+    "line": 213,
+    "name": "Arcanine",
+    "form": "(Hisuian Form)",
+    "mega": false,
+    "id": "arcaninehisui",
+    "normalized": "Arcanine-Hisui"
+  },
+  {
+    "line": 216,
+    "name": "Alakazam",
+    "form": "",
+    "mega": false,
+    "id": "alakazam",
+    "normalized": "Alakazam"
+  },
+  {
+    "line": 218,
+    "name": "Machamp",
+    "form": "",
+    "mega": false,
+    "id": "machamp",
+    "normalized": "Machamp"
+  },
+  {
+    "line": 220,
+    "name": "Victreebel",
+    "form": "",
+    "mega": false,
+    "id": "victreebel",
+    "normalized": "Victreebel"
+  },
+  {
+    "line": 222,
+    "name": "Slowbro",
+    "form": "",
+    "mega": false,
+    "id": "slowbro",
+    "normalized": "Slowbro"
+  },
+  {
+    "line": 224,
+    "name": "Slowbro",
+    "form": "(Galarian Form)",
+    "mega": false,
+    "id": "slowbrogalar",
+    "normalized": "Slowbro-Galar"
+  },
+  {
+    "line": 227,
+    "name": "Farfetch'd",
+    "form": "",
+    "mega": false,
+    "id": "farfetchd",
+    "normalized": "Farfetch'd"
+  },
+  {
+    "line": 229,
+    "name": "Gengar",
+    "form": "",
+    "mega": false,
+    "id": "gengar",
+    "normalized": "Gengar"
+  },
+  {
+    "line": 231,
+    "name": "Kangaskhan",
+    "form": "",
+    "mega": false,
+    "id": "kangaskhan",
+    "normalized": "Kangaskhan"
+  },
+  {
+    "line": 233,
+    "name": "Starmie",
+    "form": "",
+    "mega": false,
+    "id": "starmie",
+    "normalized": "Starmie"
+  },
+  {
+    "line": 235,
+    "name": "Mr. Mime",
+    "form": "",
+    "mega": false,
+    "id": "mrmime",
+    "normalized": "Mr. Mime"
+  },
+  {
+    "line": 236,
+    "name": "Pinsir",
+    "form": "",
+    "mega": false,
+    "id": "pinsir",
+    "normalized": "Pinsir"
+  },
+  {
+    "line": 238,
+    "name": "Tauros",
+    "form": "",
+    "mega": false,
+    "id": "tauros",
+    "normalized": "Tauros"
+  },
+  {
+    "line": 240,
+    "name": "Tauros",
+    "form": "(Paldean Form (Combat Breed))",
+    "mega": false,
+    "id": "taurospaldeacombat",
+    "normalized": "Tauros-Paldea-Combat"
+  },
+  {
+    "line": 244,
+    "name": "Tauros",
+    "form": "(Paldean Form (Blaze Breed))",
+    "mega": false,
+    "id": "taurospaldeablaze",
+    "normalized": "Tauros-Paldea-Blaze"
+  },
+  {
+    "line": 248,
+    "name": "Tauros",
+    "form": "(Paldean Form (Aqua Breed))",
+    "mega": false,
+    "id": "taurospaldeaaqua",
+    "normalized": "Tauros-Paldea-Aqua"
+  },
+  {
+    "line": 252,
+    "name": "Gyarados",
+    "form": "",
+    "mega": false,
+    "id": "gyarados",
+    "normalized": "Gyarados"
+  },
+  {
+    "line": 254,
+    "name": "Ditto",
+    "form": "",
+    "mega": false,
+    "id": "ditto",
+    "normalized": "Ditto"
+  },
+  {
+    "line": 256,
+    "name": "Vaporeon",
+    "form": "",
+    "mega": false,
+    "id": "vaporeon",
+    "normalized": "Vaporeon"
+  },
+  {
+    "line": 258,
+    "name": "Jolteon",
+    "form": "",
+    "mega": false,
+    "id": "jolteon",
+    "normalized": "Jolteon"
+  },
+  {
+    "line": 260,
+    "name": "Flareon",
+    "form": "",
+    "mega": false,
+    "id": "flareon",
+    "normalized": "Flareon"
+  },
+  {
+    "line": 262,
+    "name": "Aerodactyl",
+    "form": "",
+    "mega": false,
+    "id": "aerodactyl",
+    "normalized": "Aerodactyl"
+  },
+  {
+    "line": 264,
+    "name": "Snorlax",
+    "form": "",
+    "mega": false,
+    "id": "snorlax",
+    "normalized": "Snorlax"
+  },
+  {
+    "line": 266,
+    "name": "Dragonite",
+    "form": "",
+    "mega": false,
+    "id": "dragonite",
+    "normalized": "Dragonite"
+  },
+  {
+    "line": 268,
+    "name": "Meganium",
+    "form": "",
+    "mega": false,
+    "id": "meganium",
+    "normalized": "Meganium"
+  },
+  {
+    "line": 270,
+    "name": "Typhlosion",
+    "form": "",
+    "mega": false,
+    "id": "typhlosion",
+    "normalized": "Typhlosion"
+  },
+  {
+    "line": 272,
+    "name": "Typhlosion",
+    "form": "(Hisuian Form)",
+    "mega": false,
+    "id": "typhlosionhisui",
+    "normalized": "Typhlosion-Hisui"
+  },
+  {
+    "line": 275,
+    "name": "Feraligatr",
+    "form": "",
+    "mega": false,
+    "id": "feraligatr",
+    "normalized": "Feraligatr"
+  },
+  {
+    "line": 277,
+    "name": "Ariados",
+    "form": "",
+    "mega": false,
+    "id": "ariados",
+    "normalized": "Ariados"
+  },
+  {
+    "line": 279,
+    "name": "Ampharos",
+    "form": "",
+    "mega": false,
+    "id": "ampharos",
+    "normalized": "Ampharos"
+  },
+  {
+    "line": 281,
+    "name": "Azumarill",
+    "form": "",
+    "mega": false,
+    "id": "azumarill",
+    "normalized": "Azumarill"
+  },
+  {
+    "line": 283,
+    "name": "Politoed",
+    "form": "",
+    "mega": false,
+    "id": "politoed",
+    "normalized": "Politoed"
+  },
+  {
+    "line": 285,
+    "name": "Espeon",
+    "form": "",
+    "mega": false,
+    "id": "espeon",
+    "normalized": "Espeon"
+  },
+  {
+    "line": 287,
+    "name": "Umbreon",
+    "form": "",
+    "mega": false,
+    "id": "umbreon",
+    "normalized": "Umbreon"
+  },
+  {
+    "line": 289,
+    "name": "Slowking",
+    "form": "",
+    "mega": false,
+    "id": "slowking",
+    "normalized": "Slowking"
+  },
+  {
+    "line": 291,
+    "name": "Slowking",
+    "form": "(Galarian Form)",
+    "mega": false,
+    "id": "slowkinggalar",
+    "normalized": "Slowking-Galar"
+  },
+  {
+    "line": 294,
+    "name": "Forretress",
+    "form": "",
+    "mega": false,
+    "id": "forretress",
+    "normalized": "Forretress"
+  },
+  {
+    "line": 295,
+    "name": "Steelix",
+    "form": "",
+    "mega": false,
+    "id": "steelix",
+    "normalized": "Steelix"
+  },
+  {
+    "line": 297,
+    "name": "Qwilfish",
+    "form": "",
+    "mega": false,
+    "id": "qwilfish",
+    "normalized": "Qwilfish"
+  },
+  {
+    "line": 299,
+    "name": "Scizor",
+    "form": "",
+    "mega": false,
+    "id": "scizor",
+    "normalized": "Scizor"
+  },
+  {
+    "line": 301,
+    "name": "Heracross",
+    "form": "",
+    "mega": false,
+    "id": "heracross",
+    "normalized": "Heracross"
+  },
+  {
+    "line": 303,
+    "name": "Skarmory",
+    "form": "",
+    "mega": false,
+    "id": "skarmory",
+    "normalized": "Skarmory"
+  },
+  {
+    "line": 305,
+    "name": "Houndoom",
+    "form": "",
+    "mega": false,
+    "id": "houndoom",
+    "normalized": "Houndoom"
+  },
+  {
+    "line": 307,
+    "name": "Tyranitar",
+    "form": "",
+    "mega": false,
+    "id": "tyranitar",
+    "normalized": "Tyranitar"
+  },
+  {
+    "line": 309,
+    "name": "Sceptile",
+    "form": "",
+    "mega": false,
+    "id": "sceptile",
+    "normalized": "Sceptile"
+  },
+  {
+    "line": 311,
+    "name": "Blaziken",
+    "form": "",
+    "mega": false,
+    "id": "blaziken",
+    "normalized": "Blaziken"
+  },
+  {
+    "line": 313,
+    "name": "Swampert",
+    "form": "",
+    "mega": false,
+    "id": "swampert",
+    "normalized": "Swampert"
+  },
+  {
+    "line": 315,
+    "name": "Pelipper",
+    "form": "",
+    "mega": false,
+    "id": "pelipper",
+    "normalized": "Pelipper"
+  },
+  {
+    "line": 317,
+    "name": "Gardevoir",
+    "form": "",
+    "mega": false,
+    "id": "gardevoir",
+    "normalized": "Gardevoir"
+  },
+  {
+    "line": 319,
+    "name": "Sableye",
+    "form": "",
+    "mega": false,
+    "id": "sableye",
+    "normalized": "Sableye"
+  },
+  {
+    "line": 321,
+    "name": "Mawile",
+    "form": "",
+    "mega": false,
+    "id": "mawile",
+    "normalized": "Mawile"
+  },
+  {
+    "line": 323,
+    "name": "Aggron",
+    "form": "",
+    "mega": false,
+    "id": "aggron",
+    "normalized": "Aggron"
+  },
+  {
+    "line": 325,
+    "name": "Medicham",
+    "form": "",
+    "mega": false,
+    "id": "medicham",
+    "normalized": "Medicham"
+  },
+  {
+    "line": 327,
+    "name": "Manectric",
+    "form": "",
+    "mega": false,
+    "id": "manectric",
+    "normalized": "Manectric"
+  },
+  {
+    "line": 329,
+    "name": "Swalot",
+    "form": "",
+    "mega": false,
+    "id": "swalot",
+    "normalized": "Swalot"
+  },
+  {
+    "line": 331,
+    "name": "Sharpedo",
+    "form": "",
+    "mega": false,
+    "id": "sharpedo",
+    "normalized": "Sharpedo"
+  },
+  {
+    "line": 333,
+    "name": "Camerupt",
+    "form": "",
+    "mega": false,
+    "id": "camerupt",
+    "normalized": "Camerupt"
+  },
+  {
+    "line": 335,
+    "name": "Torkoal",
+    "form": "",
+    "mega": false,
+    "id": "torkoal",
+    "normalized": "Torkoal"
+  },
+  {
+    "line": 337,
+    "name": "Altaria",
+    "form": "",
+    "mega": false,
+    "id": "altaria",
+    "normalized": "Altaria"
+  },
+  {
+    "line": 339,
+    "name": "Milotic",
+    "form": "",
+    "mega": false,
+    "id": "milotic",
+    "normalized": "Milotic"
+  },
+  {
+    "line": 341,
+    "name": "Castform",
+    "form": "",
+    "mega": false,
+    "id": "castform",
+    "normalized": "Castform"
+  },
+  {
+    "line": 343,
+    "name": "Banette",
+    "form": "",
+    "mega": false,
+    "id": "banette",
+    "normalized": "Banette"
+  },
+  {
+    "line": 345,
+    "name": "Chimecho",
+    "form": "",
+    "mega": false,
+    "id": "chimecho",
+    "normalized": "Chimecho"
+  },
+  {
+    "line": 347,
+    "name": "Absol",
+    "form": "",
+    "mega": false,
+    "id": "absol",
+    "normalized": "Absol"
+  },
+  {
+    "line": 349,
+    "name": "Glalie",
+    "form": "",
+    "mega": false,
+    "id": "glalie",
+    "normalized": "Glalie"
+  },
+  {
+    "line": 351,
+    "name": "Salamence",
+    "form": "",
+    "mega": false,
+    "id": "salamence",
+    "normalized": "Salamence"
+  },
+  {
+    "line": 353,
+    "name": "Metagross",
+    "form": "",
+    "mega": false,
+    "id": "metagross",
+    "normalized": "Metagross"
+  },
+  {
+    "line": 355,
+    "name": "Torterra",
+    "form": "",
+    "mega": false,
+    "id": "torterra",
+    "normalized": "Torterra"
+  },
+  {
+    "line": 357,
+    "name": "Infernape",
+    "form": "",
+    "mega": false,
+    "id": "infernape",
+    "normalized": "Infernape"
+  },
+  {
+    "line": 358,
+    "name": "Empoleon",
+    "form": "",
+    "mega": false,
+    "id": "empoleon",
+    "normalized": "Empoleon"
+  },
+  {
+    "line": 360,
+    "name": "Staraptor",
+    "form": "",
+    "mega": false,
+    "id": "staraptor",
+    "normalized": "Staraptor"
+  },
+  {
+    "line": 362,
+    "name": "Luxray",
+    "form": "",
+    "mega": false,
+    "id": "luxray",
+    "normalized": "Luxray"
+  },
+  {
+    "line": 364,
+    "name": "Roserade",
+    "form": "",
+    "mega": false,
+    "id": "roserade",
+    "normalized": "Roserade"
+  },
+  {
+    "line": 366,
+    "name": "Rampardos",
+    "form": "",
+    "mega": false,
+    "id": "rampardos",
+    "normalized": "Rampardos"
+  },
+  {
+    "line": 368,
+    "name": "Bastiodon",
+    "form": "",
+    "mega": false,
+    "id": "bastiodon",
+    "normalized": "Bastiodon"
+  },
+  {
+    "line": 370,
+    "name": "Lopunny",
+    "form": "",
+    "mega": false,
+    "id": "lopunny",
+    "normalized": "Lopunny"
+  },
+  {
+    "line": 372,
+    "name": "Spiritomb",
+    "form": "",
+    "mega": false,
+    "id": "spiritomb",
+    "normalized": "Spiritomb"
+  },
+  {
+    "line": 374,
+    "name": "Garchomp",
+    "form": "",
+    "mega": false,
+    "id": "garchomp",
+    "normalized": "Garchomp"
+  },
+  {
+    "line": 376,
+    "name": "Lucario",
+    "form": "",
+    "mega": false,
+    "id": "lucario",
+    "normalized": "Lucario"
+  },
+  {
+    "line": 378,
+    "name": "Hippowdon",
+    "form": "",
+    "mega": false,
+    "id": "hippowdon",
+    "normalized": "Hippowdon"
+  },
+  {
+    "line": 380,
+    "name": "Toxicroak",
+    "form": "",
+    "mega": false,
+    "id": "toxicroak",
+    "normalized": "Toxicroak"
+  },
+  {
+    "line": 382,
+    "name": "Abomasnow",
+    "form": "",
+    "mega": false,
+    "id": "abomasnow",
+    "normalized": "Abomasnow"
+  },
+  {
+    "line": 384,
+    "name": "Weavile",
+    "form": "",
+    "mega": false,
+    "id": "weavile",
+    "normalized": "Weavile"
+  },
+  {
+    "line": 386,
+    "name": "Rhyperior",
+    "form": "",
+    "mega": false,
+    "id": "rhyperior",
+    "normalized": "Rhyperior"
+  },
+  {
+    "line": 388,
+    "name": "Leafeon",
+    "form": "",
+    "mega": false,
+    "id": "leafeon",
+    "normalized": "Leafeon"
+  },
+  {
+    "line": 390,
+    "name": "Glaceon",
+    "form": "",
+    "mega": false,
+    "id": "glaceon",
+    "normalized": "Glaceon"
+  },
+  {
+    "line": 392,
+    "name": "Gliscor",
+    "form": "",
+    "mega": false,
+    "id": "gliscor",
+    "normalized": "Gliscor"
+  },
+  {
+    "line": 394,
+    "name": "Mamoswine",
+    "form": "",
+    "mega": false,
+    "id": "mamoswine",
+    "normalized": "Mamoswine"
+  },
+  {
+    "line": 396,
+    "name": "Gallade",
+    "form": "",
+    "mega": false,
+    "id": "gallade",
+    "normalized": "Gallade"
+  },
+  {
+    "line": 398,
+    "name": "Froslass",
+    "form": "",
+    "mega": false,
+    "id": "froslass",
+    "normalized": "Froslass"
+  },
+  {
+    "line": 400,
+    "name": "Rotom",
+    "form": "",
+    "mega": false,
+    "id": "rotom",
+    "normalized": "Rotom"
+  },
+  {
+    "line": 402,
+    "name": "Rotom",
+    "form": "(Heat Rotom)",
+    "mega": false,
+    "id": "rotomheat",
+    "normalized": "Rotom-Heat"
+  },
+  {
+    "line": 405,
+    "name": "Rotom",
+    "form": "(Wash Rotom)",
+    "mega": false,
+    "id": "rotomwash",
+    "normalized": "Rotom-Wash"
+  },
+  {
+    "line": 408,
+    "name": "Rotom",
+    "form": "(Frost Rotom)",
+    "mega": false,
+    "id": "rotomfrost",
+    "normalized": "Rotom-Frost"
+  },
+  {
+    "line": 411,
+    "name": "Rotom",
+    "form": "(Fan Rotom)",
+    "mega": false,
+    "id": "rotomfan",
+    "normalized": "Rotom-Fan"
+  },
+  {
+    "line": 414,
+    "name": "Rotom",
+    "form": "(Mow Rotom)",
+    "mega": false,
+    "id": "rotommow",
+    "normalized": "Rotom-Mow"
+  },
+  {
+    "line": 417,
+    "name": "Serperior",
+    "form": "",
+    "mega": false,
+    "id": "serperior",
+    "normalized": "Serperior"
+  },
+  {
+    "line": 419,
+    "name": "Emboar",
+    "form": "",
+    "mega": false,
+    "id": "emboar",
+    "normalized": "Emboar"
+  },
+  {
+    "line": 420,
+    "name": "Samurott",
+    "form": "",
+    "mega": false,
+    "id": "samurott",
+    "normalized": "Samurott"
+  },
+  {
+    "line": 422,
+    "name": "Samurott",
+    "form": "(Hisuian Form)",
+    "mega": false,
+    "id": "samurotthisui",
+    "normalized": "Samurott-Hisui"
+  },
+  {
+    "line": 425,
+    "name": "Watchog",
+    "form": "",
+    "mega": false,
+    "id": "watchog",
+    "normalized": "Watchog"
+  },
+  {
+    "line": 427,
+    "name": "Liepard",
+    "form": "",
+    "mega": false,
+    "id": "liepard",
+    "normalized": "Liepard"
+  },
+  {
+    "line": 429,
+    "name": "Simisage",
+    "form": "",
+    "mega": false,
+    "id": "simisage",
+    "normalized": "Simisage"
+  },
+  {
+    "line": 431,
+    "name": "Simisear",
+    "form": "",
+    "mega": false,
+    "id": "simisear",
+    "normalized": "Simisear"
+  },
+  {
+    "line": 433,
+    "name": "Simipour",
+    "form": "",
+    "mega": false,
+    "id": "simipour",
+    "normalized": "Simipour"
+  },
+  {
+    "line": 435,
+    "name": "Musharna",
+    "form": "",
+    "mega": false,
+    "id": "musharna",
+    "normalized": "Musharna"
+  },
+  {
+    "line": 437,
+    "name": "Excadrill",
+    "form": "",
+    "mega": false,
+    "id": "excadrill",
+    "normalized": "Excadrill"
+  },
+  {
+    "line": 439,
+    "name": "Audino",
+    "form": "",
+    "mega": false,
+    "id": "audino",
+    "normalized": "Audino"
+  },
+  {
+    "line": 441,
+    "name": "Conkeldurr",
+    "form": "",
+    "mega": false,
+    "id": "conkeldurr",
+    "normalized": "Conkeldurr"
+  },
+  {
+    "line": 443,
+    "name": "Scolipede",
+    "form": "",
+    "mega": false,
+    "id": "scolipede",
+    "normalized": "Scolipede"
+  },
+  {
+    "line": 445,
+    "name": "Whimsicott",
+    "form": "",
+    "mega": false,
+    "id": "whimsicott",
+    "normalized": "Whimsicott"
+  },
+  {
+    "line": 447,
+    "name": "Krookodile",
+    "form": "",
+    "mega": false,
+    "id": "krookodile",
+    "normalized": "Krookodile"
+  },
+  {
+    "line": 449,
+    "name": "Scrafty",
+    "form": "",
+    "mega": false,
+    "id": "scrafty",
+    "normalized": "Scrafty"
+  },
+  {
+    "line": 451,
+    "name": "Cofagrigus",
+    "form": "",
+    "mega": false,
+    "id": "cofagrigus",
+    "normalized": "Cofagrigus"
+  },
+  {
+    "line": 453,
+    "name": "Garbodor",
+    "form": "",
+    "mega": false,
+    "id": "garbodor",
+    "normalized": "Garbodor"
+  },
+  {
+    "line": 455,
+    "name": "Zoroark",
+    "form": "",
+    "mega": false,
+    "id": "zoroark",
+    "normalized": "Zoroark"
+  },
+  {
+    "line": 457,
+    "name": "Zoroark",
+    "form": "(Hisuian Form)",
+    "mega": false,
+    "id": "zoroarkhisui",
+    "normalized": "Zoroark-Hisui"
+  },
+  {
+    "line": 460,
+    "name": "Reuniclus",
+    "form": "",
+    "mega": false,
+    "id": "reuniclus",
+    "normalized": "Reuniclus"
+  },
+  {
+    "line": 462,
+    "name": "Vanilluxe",
+    "form": "",
+    "mega": false,
+    "id": "vanilluxe",
+    "normalized": "Vanilluxe"
+  },
+  {
+    "line": 464,
+    "name": "Emolga",
+    "form": "",
+    "mega": false,
+    "id": "emolga",
+    "normalized": "Emolga"
+  },
+  {
+    "line": 466,
+    "name": "Eelektross",
+    "form": "",
+    "mega": false,
+    "id": "eelektross",
+    "normalized": "Eelektross"
+  },
+  {
+    "line": 468,
+    "name": "Chandelure",
+    "form": "",
+    "mega": false,
+    "id": "chandelure",
+    "normalized": "Chandelure"
+  },
+  {
+    "line": 470,
+    "name": "Beartic",
+    "form": "",
+    "mega": false,
+    "id": "beartic",
+    "normalized": "Beartic"
+  },
+  {
+    "line": 472,
+    "name": "Stunfisk",
+    "form": "",
+    "mega": false,
+    "id": "stunfisk",
+    "normalized": "Stunfisk"
+  },
+  {
+    "line": 474,
+    "name": "Stunfisk",
+    "form": "(Galarian Form)",
+    "mega": false,
+    "id": "stunfiskgalar",
+    "normalized": "Stunfisk-Galar"
+  },
+  {
+    "line": 477,
+    "name": "Golurk",
+    "form": "",
+    "mega": false,
+    "id": "golurk",
+    "normalized": "Golurk"
+  },
+  {
+    "line": 478,
+    "name": "Hydreigon",
+    "form": "",
+    "mega": false,
+    "id": "hydreigon",
+    "normalized": "Hydreigon"
+  },
+  {
+    "line": 480,
+    "name": "Volcarona",
+    "form": "",
+    "mega": false,
+    "id": "volcarona",
+    "normalized": "Volcarona"
+  },
+  {
+    "line": 482,
+    "name": "Chesnaught",
+    "form": "",
+    "mega": false,
+    "id": "chesnaught",
+    "normalized": "Chesnaught"
+  },
+  {
+    "line": 484,
+    "name": "Delphox",
+    "form": "",
+    "mega": false,
+    "id": "delphox",
+    "normalized": "Delphox"
+  },
+  {
+    "line": 486,
+    "name": "Greninja",
+    "form": "",
+    "mega": false,
+    "id": "greninja",
+    "normalized": "Greninja"
+  },
+  {
+    "line": 488,
+    "name": "Diggersby",
+    "form": "",
+    "mega": false,
+    "id": "diggersby",
+    "normalized": "Diggersby"
+  },
+  {
+    "line": 490,
+    "name": "Talonflame",
+    "form": "",
+    "mega": false,
+    "id": "talonflame",
+    "normalized": "Talonflame"
+  },
+  {
+    "line": 492,
+    "name": "Vivillon",
+    "form": "",
+    "mega": false,
+    "id": "vivillon",
+    "normalized": "Vivillon"
+  },
+  {
+    "line": 494,
+    "name": "Pyroar",
+    "form": "",
+    "mega": false,
+    "id": "pyroar",
+    "normalized": "Pyroar"
+  },
+  {
+    "line": 496,
+    "name": "Floette",
+    "form": "",
+    "mega": false,
+    "id": null,
+    "normalized": "Floette"
+  },
+  {
+    "line": 498,
+    "name": "Florges",
+    "form": "",
+    "mega": false,
+    "id": "florges",
+    "normalized": "Florges"
+  },
+  {
+    "line": 500,
+    "name": "Gogoat",
+    "form": "",
+    "mega": false,
+    "id": "gogoat",
+    "normalized": "Gogoat"
+  },
+  {
+    "line": 502,
+    "name": "Pangoro",
+    "form": "",
+    "mega": false,
+    "id": "pangoro",
+    "normalized": "Pangoro"
+  },
+  {
+    "line": 504,
+    "name": "Furfrou",
+    "form": "",
+    "mega": false,
+    "id": "furfrou",
+    "normalized": "Furfrou"
+  },
+  {
+    "line": 506,
+    "name": "Meowstic",
+    "form": "(Male)",
+    "mega": false,
+    "id": "meowstic",
+    "normalized": "Meowstic"
+  },
+  {
+    "line": 509,
+    "name": "Meowstic",
+    "form": "(Female)",
+    "mega": false,
+    "id": "meowsticf",
+    "normalized": "Meowstic-F"
+  },
+  {
+    "line": 512,
+    "name": "Aegislash",
+    "form": "",
+    "mega": false,
+    "id": "aegislash",
+    "normalized": "Aegislash"
+  },
+  {
+    "line": 514,
+    "name": "Aromatisse",
+    "form": "",
+    "mega": false,
+    "id": "aromatisse",
+    "normalized": "Aromatisse"
+  },
+  {
+    "line": 516,
+    "name": "Slurpuff",
+    "form": "",
+    "mega": false,
+    "id": "slurpuff",
+    "normalized": "Slurpuff"
+  },
+  {
+    "line": 518,
+    "name": "Malamar",
+    "form": "",
+    "mega": false,
+    "id": "malamar",
+    "normalized": "Malamar"
+  },
+  {
+    "line": 520,
+    "name": "Barbaracle",
+    "form": "",
+    "mega": false,
+    "id": "barbaracle",
+    "normalized": "Barbaracle"
+  },
+  {
+    "line": 522,
+    "name": "Dragalge",
+    "form": "",
+    "mega": false,
+    "id": "dragalge",
+    "normalized": "Dragalge"
+  },
+  {
+    "line": 524,
+    "name": "Clawitzer",
+    "form": "",
+    "mega": false,
+    "id": "clawitzer",
+    "normalized": "Clawitzer"
+  },
+  {
+    "line": 526,
+    "name": "Heliolisk",
+    "form": "",
+    "mega": false,
+    "id": "heliolisk",
+    "normalized": "Heliolisk"
+  },
+  {
+    "line": 528,
+    "name": "Tyrantrum",
+    "form": "",
+    "mega": false,
+    "id": "tyrantrum",
+    "normalized": "Tyrantrum"
+  },
+  {
+    "line": 530,
+    "name": "Aurorus",
+    "form": "",
+    "mega": false,
+    "id": "aurorus",
+    "normalized": "Aurorus"
+  },
+  {
+    "line": 532,
+    "name": "Sylveon",
+    "form": "",
+    "mega": false,
+    "id": "sylveon",
+    "normalized": "Sylveon"
+  },
+  {
+    "line": 534,
+    "name": "Hawlucha",
+    "form": "",
+    "mega": false,
+    "id": "hawlucha",
+    "normalized": "Hawlucha"
+  },
+  {
+    "line": 536,
+    "name": "Dedenne",
+    "form": "",
+    "mega": false,
+    "id": "dedenne",
+    "normalized": "Dedenne"
+  },
+  {
+    "line": 538,
+    "name": "Goodra",
+    "form": "",
+    "mega": false,
+    "id": "goodra",
+    "normalized": "Goodra"
+  },
+  {
+    "line": 539,
+    "name": "Goodra",
+    "form": "(Hisuian Form)",
+    "mega": false,
+    "id": "goodrahisui",
+    "normalized": "Goodra-Hisui"
+  },
+  {
+    "line": 542,
+    "name": "Klefki",
+    "form": "",
+    "mega": false,
+    "id": "klefki",
+    "normalized": "Klefki"
+  },
+  {
+    "line": 544,
+    "name": "Trevenant",
+    "form": "",
+    "mega": false,
+    "id": "trevenant",
+    "normalized": "Trevenant"
+  },
+  {
+    "line": 546,
+    "name": "Gourgeist",
+    "form": "(Medium Variety)",
+    "mega": false,
+    "id": "gourgeist",
+    "normalized": "Gourgeist"
+  },
+  {
+    "line": 549,
+    "name": "Gourgeist",
+    "form": "(Small Variety)",
+    "mega": false,
+    "id": "gourgeistsmall",
+    "normalized": "Gourgeist-Small"
+  },
+  {
+    "line": 552,
+    "name": "Gourgeist",
+    "form": "(Large Variety)",
+    "mega": false,
+    "id": "gourgeistlarge",
+    "normalized": "Gourgeist-Large"
+  },
+  {
+    "line": 555,
+    "name": "Gourgeist",
+    "form": "(Jumbo Variety)",
+    "mega": false,
+    "id": "gourgeistsuper",
+    "normalized": "Gourgeist-Super"
+  },
+  {
+    "line": 558,
+    "name": "Avalugg",
+    "form": "",
+    "mega": false,
+    "id": "avalugg",
+    "normalized": "Avalugg"
+  },
+  {
+    "line": 560,
+    "name": "Avalugg",
+    "form": "(Hisuian Form)",
+    "mega": false,
+    "id": "avalugghisui",
+    "normalized": "Avalugg-Hisui"
+  },
+  {
+    "line": 563,
+    "name": "Noivern",
+    "form": "",
+    "mega": false,
+    "id": "noivern",
+    "normalized": "Noivern"
+  },
+  {
+    "line": 565,
+    "name": "Decidueye",
+    "form": "",
+    "mega": false,
+    "id": "decidueye",
+    "normalized": "Decidueye"
+  },
+  {
+    "line": 567,
+    "name": "Decidueye",
+    "form": "(Hisuian Form)",
+    "mega": false,
+    "id": "decidueyehisui",
+    "normalized": "Decidueye-Hisui"
+  },
+  {
+    "line": 570,
+    "name": "Incineroar",
+    "form": "",
+    "mega": false,
+    "id": "incineroar",
+    "normalized": "Incineroar"
+  },
+  {
+    "line": 572,
+    "name": "Primarina",
+    "form": "",
+    "mega": false,
+    "id": "primarina",
+    "normalized": "Primarina"
+  },
+  {
+    "line": 574,
+    "name": "Toucannon",
+    "form": "",
+    "mega": false,
+    "id": "toucannon",
+    "normalized": "Toucannon"
+  },
+  {
+    "line": 576,
+    "name": "Crabominable",
+    "form": "",
+    "mega": false,
+    "id": "crabominable",
+    "normalized": "Crabominable"
+  },
+  {
+    "line": 578,
+    "name": "Lycanroc",
+    "form": "(Midday Form)",
+    "mega": false,
+    "id": "lycanroc",
+    "normalized": "Lycanroc"
+  },
+  {
+    "line": 581,
+    "name": "Lycanroc",
+    "form": "(Midnight Form)",
+    "mega": false,
+    "id": "lycanrocmidnight",
+    "normalized": "Lycanroc-Midnight"
+  },
+  {
+    "line": 584,
+    "name": "Lycanroc",
+    "form": "(Dusk Form)",
+    "mega": false,
+    "id": "lycanrocdusk",
+    "normalized": "Lycanroc-Dusk"
+  },
+  {
+    "line": 587,
+    "name": "Toxapex",
+    "form": "",
+    "mega": false,
+    "id": "toxapex",
+    "normalized": "Toxapex"
+  },
+  {
+    "line": 589,
+    "name": "Mudsdale",
+    "form": "",
+    "mega": false,
+    "id": "mudsdale",
+    "normalized": "Mudsdale"
+  },
+  {
+    "line": 591,
+    "name": "Araquanid",
+    "form": "",
+    "mega": false,
+    "id": "araquanid",
+    "normalized": "Araquanid"
+  },
+  {
+    "line": 592,
+    "name": "Salazzle",
+    "form": "",
+    "mega": false,
+    "id": "salazzle",
+    "normalized": "Salazzle"
+  },
+  {
+    "line": 594,
+    "name": "Tsareena",
+    "form": "",
+    "mega": false,
+    "id": "tsareena",
+    "normalized": "Tsareena"
+  },
+  {
+    "line": 596,
+    "name": "Oranguru",
+    "form": "",
+    "mega": false,
+    "id": "oranguru",
+    "normalized": "Oranguru"
+  },
+  {
+    "line": 598,
+    "name": "Passimian",
+    "form": "",
+    "mega": false,
+    "id": "passimian",
+    "normalized": "Passimian"
+  },
+  {
+    "line": 600,
+    "name": "Golisopod",
+    "form": "",
+    "mega": false,
+    "id": "golisopod",
+    "normalized": "Golisopod"
+  },
+  {
+    "line": 602,
+    "name": "Mimikyu",
+    "form": "",
+    "mega": false,
+    "id": "mimikyu",
+    "normalized": "Mimikyu"
+  },
+  {
+    "line": 604,
+    "name": "Drampa",
+    "form": "",
+    "mega": false,
+    "id": "drampa",
+    "normalized": "Drampa"
+  },
+  {
+    "line": 606,
+    "name": "Kommo-o",
+    "form": "",
+    "mega": false,
+    "id": "kommoo",
+    "normalized": "Kommo-o"
+  },
+  {
+    "line": 608,
+    "name": "Rillaboom",
+    "form": "",
+    "mega": false,
+    "id": "rillaboom",
+    "normalized": "Rillaboom"
+  },
+  {
+    "line": 610,
+    "name": "Cinderace",
+    "form": "",
+    "mega": false,
+    "id": "cinderace",
+    "normalized": "Cinderace"
+  },
+  {
+    "line": 612,
+    "name": "Inteleon",
+    "form": "",
+    "mega": false,
+    "id": "inteleon",
+    "normalized": "Inteleon"
+  },
+  {
+    "line": 614,
+    "name": "Corviknight",
+    "form": "",
+    "mega": false,
+    "id": "corviknight",
+    "normalized": "Corviknight"
+  },
+  {
+    "line": 616,
+    "name": "Thievul",
+    "form": "",
+    "mega": false,
+    "id": "thievul",
+    "normalized": "Thievul"
+  },
+  {
+    "line": 618,
+    "name": "Flapple",
+    "form": "",
+    "mega": false,
+    "id": "flapple",
+    "normalized": "Flapple"
+  },
+  {
+    "line": 620,
+    "name": "Appletun",
+    "form": "",
+    "mega": false,
+    "id": "appletun",
+    "normalized": "Appletun"
+  },
+  {
+    "line": 622,
+    "name": "Sandaconda",
+    "form": "",
+    "mega": false,
+    "id": "sandaconda",
+    "normalized": "Sandaconda"
+  },
+  {
+    "line": 624,
+    "name": "Toxtricity",
+    "form": "(Amped Form)",
+    "mega": false,
+    "id": "toxtricity",
+    "normalized": "Toxtricity"
+  },
+  {
+    "line": 627,
+    "name": "Toxtricity",
+    "form": "(Low Key Form)",
+    "mega": false,
+    "id": "toxtricitylowkey",
+    "normalized": "Toxtricity-Low-Key"
+  },
+  {
+    "line": 630,
+    "name": "Grapploct",
+    "form": "",
+    "mega": false,
+    "id": "grapploct",
+    "normalized": "Grapploct"
+  },
+  {
+    "line": 632,
+    "name": "Polteageist",
+    "form": "",
+    "mega": false,
+    "id": "polteageist",
+    "normalized": "Polteageist"
+  },
+  {
+    "line": 634,
+    "name": "Hatterene",
+    "form": "",
+    "mega": false,
+    "id": "hatterene",
+    "normalized": "Hatterene"
+  },
+  {
+    "line": 636,
+    "name": "Grimmsnarl",
+    "form": "",
+    "mega": false,
+    "id": "grimmsnarl",
+    "normalized": "Grimmsnarl"
+  },
+  {
+    "line": 638,
+    "name": "Perrserker",
+    "form": "",
+    "mega": false,
+    "id": "perrserker",
+    "normalized": "Perrserker"
+  },
+  {
+    "line": 640,
+    "name": "Sirfetch'd",
+    "form": "",
+    "mega": false,
+    "id": "sirfetchd",
+    "normalized": "Sirfetch'd"
+  },
+  {
+    "line": 642,
+    "name": "Mr. Rime",
+    "form": "",
+    "mega": false,
+    "id": "mrrime",
+    "normalized": "Mr. Rime"
+  },
+  {
+    "line": 644,
+    "name": "Runerigus",
+    "form": "",
+    "mega": false,
+    "id": "runerigus",
+    "normalized": "Runerigus"
+  },
+  {
+    "line": 646,
+    "name": "Alcremie",
+    "form": "",
+    "mega": false,
+    "id": "alcremie",
+    "normalized": "Alcremie"
+  },
+  {
+    "line": 648,
+    "name": "Falinks",
+    "form": "",
+    "mega": false,
+    "id": "falinks",
+    "normalized": "Falinks"
+  },
+  {
+    "line": 650,
+    "name": "Pincurchin",
+    "form": "",
+    "mega": false,
+    "id": "pincurchin",
+    "normalized": "Pincurchin"
+  },
+  {
+    "line": 651,
+    "name": "Indeedee",
+    "form": "(Male)",
+    "mega": false,
+    "id": "indeedee",
+    "normalized": "Indeedee"
+  },
+  {
+    "line": 654,
+    "name": "Indeedee",
+    "form": "(Female)",
+    "mega": false,
+    "id": "indeedeef",
+    "normalized": "Indeedee-F"
+  },
+  {
+    "line": 657,
+    "name": "Morpeko",
+    "form": "",
+    "mega": false,
+    "id": "morpeko",
+    "normalized": "Morpeko"
+  },
+  {
+    "line": 659,
+    "name": "Dragapult",
+    "form": "",
+    "mega": false,
+    "id": "dragapult",
+    "normalized": "Dragapult"
+  },
+  {
+    "line": 661,
+    "name": "Wyrdeer",
+    "form": "",
+    "mega": false,
+    "id": "wyrdeer",
+    "normalized": "Wyrdeer"
+  },
+  {
+    "line": 663,
+    "name": "Kleavor",
+    "form": "",
+    "mega": false,
+    "id": "kleavor",
+    "normalized": "Kleavor"
+  },
+  {
+    "line": 665,
+    "name": "Basculegion",
+    "form": "(Male)",
+    "mega": false,
+    "id": "basculegion",
+    "normalized": "Basculegion"
+  },
+  {
+    "line": 668,
+    "name": "Basculegion",
+    "form": "(Female)",
+    "mega": false,
+    "id": "basculegionf",
+    "normalized": "Basculegion-F"
+  },
+  {
+    "line": 671,
+    "name": "Sneasler",
+    "form": "",
+    "mega": false,
+    "id": "sneasler",
+    "normalized": "Sneasler"
+  },
+  {
+    "line": 673,
+    "name": "Overqwil",
+    "form": "",
+    "mega": false,
+    "id": "overqwil",
+    "normalized": "Overqwil"
+  },
+  {
+    "line": 675,
+    "name": "Meowscarada",
+    "form": "",
+    "mega": false,
+    "id": "meowscarada",
+    "normalized": "Meowscarada"
+  },
+  {
+    "line": 677,
+    "name": "Skeledirge",
+    "form": "",
+    "mega": false,
+    "id": "skeledirge",
+    "normalized": "Skeledirge"
+  },
+  {
+    "line": 679,
+    "name": "Quaquaval",
+    "form": "",
+    "mega": false,
+    "id": "quaquaval",
+    "normalized": "Quaquaval"
+  },
+  {
+    "line": 681,
+    "name": "Pawmot",
+    "form": "",
+    "mega": false,
+    "id": "pawmot",
+    "normalized": "Pawmot"
+  },
+  {
+    "line": 683,
+    "name": "Maushold",
+    "form": "",
+    "mega": false,
+    "id": "maushold",
+    "normalized": "Maushold"
+  },
+  {
+    "line": 685,
+    "name": "Arboliva",
+    "form": "",
+    "mega": false,
+    "id": "arboliva",
+    "normalized": "Arboliva"
+  },
+  {
+    "line": 687,
+    "name": "Squawkabilly",
+    "form": "(Green Plumage)",
+    "mega": false,
+    "id": "squawkabilly",
+    "normalized": "Squawkabilly"
+  },
+  {
+    "line": 690,
+    "name": "Squawkabilly",
+    "form": "(Blue Plumage)",
+    "mega": false,
+    "id": "squawkabillyblue",
+    "normalized": "Squawkabilly-Blue"
+  },
+  {
+    "line": 693,
+    "name": "Squawkabilly",
+    "form": "(Yellow Plumage)",
+    "mega": false,
+    "id": "squawkabillyyellow",
+    "normalized": "Squawkabilly-Yellow"
+  },
+  {
+    "line": 696,
+    "name": "Squawkabilly",
+    "form": "(White Plumage)",
+    "mega": false,
+    "id": "squawkabillywhite",
+    "normalized": "Squawkabilly-White"
+  },
+  {
+    "line": 699,
+    "name": "Garganacl",
+    "form": "",
+    "mega": false,
+    "id": "garganacl",
+    "normalized": "Garganacl"
+  },
+  {
+    "line": 701,
+    "name": "Armarouge",
+    "form": "",
+    "mega": false,
+    "id": "armarouge",
+    "normalized": "Armarouge"
+  },
+  {
+    "line": 703,
+    "name": "Ceruledge",
+    "form": "",
+    "mega": false,
+    "id": "ceruledge",
+    "normalized": "Ceruledge"
+  },
+  {
+    "line": 705,
+    "name": "Bellibolt",
+    "form": "",
+    "mega": false,
+    "id": "bellibolt",
+    "normalized": "Bellibolt"
+  },
+  {
+    "line": 706,
+    "name": "Mabosstiff",
+    "form": "",
+    "mega": false,
+    "id": "mabosstiff",
+    "normalized": "Mabosstiff"
+  },
+  {
+    "line": 708,
+    "name": "Scovillain",
+    "form": "",
+    "mega": false,
+    "id": "scovillain",
+    "normalized": "Scovillain"
+  },
+  {
+    "line": 710,
+    "name": "Espathra",
+    "form": "",
+    "mega": false,
+    "id": "espathra",
+    "normalized": "Espathra"
+  },
+  {
+    "line": 712,
+    "name": "Tinkaton",
+    "form": "",
+    "mega": false,
+    "id": "tinkaton",
+    "normalized": "Tinkaton"
+  },
+  {
+    "line": 714,
+    "name": "Palafin",
+    "form": "",
+    "mega": false,
+    "id": "palafin",
+    "normalized": "Palafin"
+  },
+  {
+    "line": 716,
+    "name": "Orthworm",
+    "form": "",
+    "mega": false,
+    "id": "orthworm",
+    "normalized": "Orthworm"
+  },
+  {
+    "line": 718,
+    "name": "Glimmora",
+    "form": "",
+    "mega": false,
+    "id": "glimmora",
+    "normalized": "Glimmora"
+  },
+  {
+    "line": 720,
+    "name": "Houndstone",
+    "form": "",
+    "mega": false,
+    "id": "houndstone",
+    "normalized": "Houndstone"
+  },
+  {
+    "line": 722,
+    "name": "Annihilape",
+    "form": "",
+    "mega": false,
+    "id": "annihilape",
+    "normalized": "Annihilape"
+  },
+  {
+    "line": 724,
+    "name": "Farigiraf",
+    "form": "",
+    "mega": false,
+    "id": "farigiraf",
+    "normalized": "Farigiraf"
+  },
+  {
+    "line": 726,
+    "name": "Baxcalibur",
+    "form": "",
+    "mega": false,
+    "id": "baxcalibur",
+    "normalized": "Baxcalibur"
+  },
+  {
+    "line": 728,
+    "name": "Gholdengo",
+    "form": "",
+    "mega": false,
+    "id": "gholdengo",
+    "normalized": "Gholdengo"
+  },
+  {
+    "line": 730,
+    "name": "Sinistcha",
+    "form": "",
+    "mega": false,
+    "id": "sinistcha",
+    "normalized": "Sinistcha"
+  },
+  {
+    "line": 732,
+    "name": "Archaludon",
+    "form": "",
+    "mega": false,
+    "id": "archaludon",
+    "normalized": "Archaludon"
+  },
+  {
+    "line": 734,
+    "name": "Hydrapple",
+    "form": "",
+    "mega": false,
+    "id": "hydrapple",
+    "normalized": "Hydrapple"
+  },
+  {
+    "line": 739,
+    "name": "Mega Venusaur",
+    "form": "",
+    "mega": true,
+    "id": "venusaurmega",
+    "normalized": "Venusaur-Mega"
+  },
+  {
+    "line": 741,
+    "name": "Mega Charizard X",
+    "form": "",
+    "mega": true,
+    "id": "charizardmegax",
+    "normalized": "Charizard-Mega-X"
+  },
+  {
+    "line": 743,
+    "name": "Mega Charizard Y",
+    "form": "",
+    "mega": true,
+    "id": "charizardmegay",
+    "normalized": "Charizard-Mega-Y"
+  },
+  {
+    "line": 745,
+    "name": "Mega Blastoise",
+    "form": "",
+    "mega": true,
+    "id": "blastoisemega",
+    "normalized": "Blastoise-Mega"
+  },
+  {
+    "line": 747,
+    "name": "Mega Beedrill",
+    "form": "",
+    "mega": true,
+    "id": "beedrillmega",
+    "normalized": "Beedrill-Mega"
+  },
+  {
+    "line": 749,
+    "name": "Mega Pidgeot",
+    "form": "",
+    "mega": true,
+    "id": "pidgeotmega",
+    "normalized": "Pidgeot-Mega"
+  },
+  {
+    "line": 751,
+    "name": "Mega Raichu X",
+    "form": "",
+    "mega": true,
+    "id": "raichumegax",
+    "normalized": "Raichu-Mega-X"
+  },
+  {
+    "line": 753,
+    "name": "Mega Raichu Y",
+    "form": "",
+    "mega": true,
+    "id": "raichumegay",
+    "normalized": "Raichu-Mega-Y"
+  },
+  {
+    "line": 755,
+    "name": "Mega Clefable",
+    "form": "",
+    "mega": true,
+    "id": "clefablemega",
+    "normalized": "Clefable-Mega"
+  },
+  {
+    "line": 757,
+    "name": "Mega Alakazam",
+    "form": "",
+    "mega": true,
+    "id": "alakazammega",
+    "normalized": "Alakazam-Mega"
+  },
+  {
+    "line": 759,
+    "name": "Mega Victreebel",
+    "form": "",
+    "mega": true,
+    "id": "victreebelmega",
+    "normalized": "Victreebel-Mega"
+  },
+  {
+    "line": 761,
+    "name": "Mega Slowbro",
+    "form": "",
+    "mega": true,
+    "id": "slowbromega",
+    "normalized": "Slowbro-Mega"
+  },
+  {
+    "line": 763,
+    "name": "Mega Gengar",
+    "form": "",
+    "mega": true,
+    "id": "gengarmega",
+    "normalized": "Gengar-Mega"
+  },
+  {
+    "line": 765,
+    "name": "Mega Kangaskhan",
+    "form": "",
+    "mega": true,
+    "id": "kangaskhanmega",
+    "normalized": "Kangaskhan-Mega"
+  },
+  {
+    "line": 767,
+    "name": "Mega Starmie",
+    "form": "",
+    "mega": true,
+    "id": "starmiemega",
+    "normalized": "Starmie-Mega"
+  },
+  {
+    "line": 769,
+    "name": "Mega Pinsir",
+    "form": "",
+    "mega": true,
+    "id": "pinsirmega",
+    "normalized": "Pinsir-Mega"
+  },
+  {
+    "line": 771,
+    "name": "Mega Gyarados",
+    "form": "",
+    "mega": true,
+    "id": "gyaradosmega",
+    "normalized": "Gyarados-Mega"
+  },
+  {
+    "line": 773,
+    "name": "Mega Aerodactyl",
+    "form": "",
+    "mega": true,
+    "id": "aerodactylmega",
+    "normalized": "Aerodactyl-Mega"
+  },
+  {
+    "line": 775,
+    "name": "Mega Dragonite",
+    "form": "",
+    "mega": true,
+    "id": "dragonitemega",
+    "normalized": "Dragonite-Mega"
+  },
+  {
+    "line": 777,
+    "name": "Mega Meganium",
+    "form": "",
+    "mega": true,
+    "id": "meganiummega",
+    "normalized": "Meganium-Mega"
+  },
+  {
+    "line": 779,
+    "name": "Mega Feraligatr",
+    "form": "",
+    "mega": true,
+    "id": "feraligatrmega",
+    "normalized": "Feraligatr-Mega"
+  },
+  {
+    "line": 780,
+    "name": "Mega Ampharos",
+    "form": "",
+    "mega": true,
+    "id": "ampharosmega",
+    "normalized": "Ampharos-Mega"
+  },
+  {
+    "line": 782,
+    "name": "Mega Steelix",
+    "form": "",
+    "mega": true,
+    "id": "steelixmega",
+    "normalized": "Steelix-Mega"
+  },
+  {
+    "line": 784,
+    "name": "Mega Scizor",
+    "form": "",
+    "mega": true,
+    "id": "scizormega",
+    "normalized": "Scizor-Mega"
+  },
+  {
+    "line": 786,
+    "name": "Mega Heracross",
+    "form": "",
+    "mega": true,
+    "id": "heracrossmega",
+    "normalized": "Heracross-Mega"
+  },
+  {
+    "line": 788,
+    "name": "Mega Skarmory",
+    "form": "",
+    "mega": true,
+    "id": "skarmorymega",
+    "normalized": "Skarmory-Mega"
+  },
+  {
+    "line": 790,
+    "name": "Mega Houndoom",
+    "form": "",
+    "mega": true,
+    "id": "houndoommega",
+    "normalized": "Houndoom-Mega"
+  },
+  {
+    "line": 792,
+    "name": "Mega Tyranitar",
+    "form": "",
+    "mega": true,
+    "id": "tyranitarmega",
+    "normalized": "Tyranitar-Mega"
+  },
+  {
+    "line": 794,
+    "name": "Mega Sceptile",
+    "form": "",
+    "mega": true,
+    "id": "sceptilemega",
+    "normalized": "Sceptile-Mega"
+  },
+  {
+    "line": 796,
+    "name": "Mega Blaziken",
+    "form": "",
+    "mega": true,
+    "id": "blazikenmega",
+    "normalized": "Blaziken-Mega"
+  },
+  {
+    "line": 798,
+    "name": "Mega Swampert",
+    "form": "",
+    "mega": true,
+    "id": "swampertmega",
+    "normalized": "Swampert-Mega"
+  },
+  {
+    "line": 800,
+    "name": "Mega Gardevoir",
+    "form": "",
+    "mega": true,
+    "id": "gardevoirmega",
+    "normalized": "Gardevoir-Mega"
+  },
+  {
+    "line": 802,
+    "name": "Mega Sableye",
+    "form": "",
+    "mega": true,
+    "id": "sableyemega",
+    "normalized": "Sableye-Mega"
+  },
+  {
+    "line": 804,
+    "name": "Mega Mawile",
+    "form": "",
+    "mega": true,
+    "id": "mawilemega",
+    "normalized": "Mawile-Mega"
+  },
+  {
+    "line": 806,
+    "name": "Mega Aggron",
+    "form": "",
+    "mega": true,
+    "id": "aggronmega",
+    "normalized": "Aggron-Mega"
+  },
+  {
+    "line": 808,
+    "name": "Mega Medicham",
+    "form": "",
+    "mega": true,
+    "id": "medichammega",
+    "normalized": "Medicham-Mega"
+  },
+  {
+    "line": 810,
+    "name": "Mega Manectric",
+    "form": "",
+    "mega": true,
+    "id": "manectricmega",
+    "normalized": "Manectric-Mega"
+  },
+  {
+    "line": 812,
+    "name": "Mega Sharpedo",
+    "form": "",
+    "mega": true,
+    "id": "sharpedomega",
+    "normalized": "Sharpedo-Mega"
+  },
+  {
+    "line": 814,
+    "name": "Mega Camerupt",
+    "form": "",
+    "mega": true,
+    "id": "cameruptmega",
+    "normalized": "Camerupt-Mega"
+  },
+  {
+    "line": 816,
+    "name": "Mega Altaria",
+    "form": "",
+    "mega": true,
+    "id": "altariamega",
+    "normalized": "Altaria-Mega"
+  },
+  {
+    "line": 818,
+    "name": "Mega Banette",
+    "form": "",
+    "mega": true,
+    "id": "banettemega",
+    "normalized": "Banette-Mega"
+  },
+  {
+    "line": 820,
+    "name": "Mega Chimecho",
+    "form": "",
+    "mega": true,
+    "id": "chimechomega",
+    "normalized": "Chimecho-Mega"
+  },
+  {
+    "line": 822,
+    "name": "Mega Absol",
+    "form": "",
+    "mega": true,
+    "id": "absolmega",
+    "normalized": "Absol-Mega"
+  },
+  {
+    "line": 824,
+    "name": "Mega Absol Z",
+    "form": "",
+    "mega": true,
+    "id": "absolmegaz",
+    "normalized": "Absol-Mega-Z"
+  },
+  {
+    "line": 826,
+    "name": "Mega Glalie",
+    "form": "",
+    "mega": true,
+    "id": "glaliemega",
+    "normalized": "Glalie-Mega"
+  },
+  {
+    "line": 828,
+    "name": "Mega Salamence",
+    "form": "",
+    "mega": true,
+    "id": "salamencemega",
+    "normalized": "Salamence-Mega"
+  },
+  {
+    "line": 829,
+    "name": "Mega Metagross",
+    "form": "",
+    "mega": true,
+    "id": "metagrossmega",
+    "normalized": "Metagross-Mega"
+  },
+  {
+    "line": 831,
+    "name": "Mega Staraptor",
+    "form": "",
+    "mega": true,
+    "id": "staraptormega",
+    "normalized": "Staraptor-Mega"
+  },
+  {
+    "line": 833,
+    "name": "Mega Lopunny",
+    "form": "",
+    "mega": true,
+    "id": "lopunnymega",
+    "normalized": "Lopunny-Mega"
+  },
+  {
+    "line": 835,
+    "name": "Mega Garchomp",
+    "form": "",
+    "mega": true,
+    "id": "garchompmega",
+    "normalized": "Garchomp-Mega"
+  },
+  {
+    "line": 837,
+    "name": "Mega Garchomp Z",
+    "form": "",
+    "mega": true,
+    "id": "garchompmegaz",
+    "normalized": "Garchomp-Mega-Z"
+  },
+  {
+    "line": 839,
+    "name": "Mega Lucario",
+    "form": "",
+    "mega": true,
+    "id": "lucariomega",
+    "normalized": "Lucario-Mega"
+  },
+  {
+    "line": 841,
+    "name": "Mega Lucario Z",
+    "form": "",
+    "mega": true,
+    "id": "lucariomegaz",
+    "normalized": "Lucario-Mega-Z"
+  },
+  {
+    "line": 843,
+    "name": "Mega Abomasnow",
+    "form": "",
+    "mega": true,
+    "id": "abomasnowmega",
+    "normalized": "Abomasnow-Mega"
+  },
+  {
+    "line": 845,
+    "name": "Mega Gallade",
+    "form": "",
+    "mega": true,
+    "id": "gallademega",
+    "normalized": "Gallade-Mega"
+  },
+  {
+    "line": 847,
+    "name": "Mega Froslass",
+    "form": "",
+    "mega": true,
+    "id": "froslassmega",
+    "normalized": "Froslass-Mega"
+  },
+  {
+    "line": 849,
+    "name": "Mega Emboar",
+    "form": "",
+    "mega": true,
+    "id": "emboarmega",
+    "normalized": "Emboar-Mega"
+  },
+  {
+    "line": 851,
+    "name": "Mega Excadrill",
+    "form": "",
+    "mega": true,
+    "id": "excadrillmega",
+    "normalized": "Excadrill-Mega"
+  },
+  {
+    "line": 853,
+    "name": "Mega Audino",
+    "form": "",
+    "mega": true,
+    "id": "audinomega",
+    "normalized": "Audino-Mega"
+  },
+  {
+    "line": 855,
+    "name": "Mega Scolipede",
+    "form": "",
+    "mega": true,
+    "id": "scolipedemega",
+    "normalized": "Scolipede-Mega"
+  },
+  {
+    "line": 857,
+    "name": "Mega Scrafty",
+    "form": "",
+    "mega": true,
+    "id": "scraftymega",
+    "normalized": "Scrafty-Mega"
+  },
+  {
+    "line": 859,
+    "name": "Mega Eelektross",
+    "form": "",
+    "mega": true,
+    "id": "eelektrossmega",
+    "normalized": "Eelektross-Mega"
+  },
+  {
+    "line": 861,
+    "name": "Mega Chandelure",
+    "form": "",
+    "mega": true,
+    "id": "chandeluremega",
+    "normalized": "Chandelure-Mega"
+  },
+  {
+    "line": 863,
+    "name": "Mega Golurk",
+    "form": "",
+    "mega": true,
+    "id": "golurkmega",
+    "normalized": "Golurk-Mega"
+  },
+  {
+    "line": 865,
+    "name": "Mega Chesnaught",
+    "form": "",
+    "mega": true,
+    "id": "chesnaughtmega",
+    "normalized": "Chesnaught-Mega"
+  },
+  {
+    "line": 867,
+    "name": "Mega Delphox",
+    "form": "",
+    "mega": true,
+    "id": "delphoxmega",
+    "normalized": "Delphox-Mega"
+  },
+  {
+    "line": 869,
+    "name": "Mega Greninja",
+    "form": "",
+    "mega": true,
+    "id": "greninjamega",
+    "normalized": "Greninja-Mega"
+  },
+  {
+    "line": 871,
+    "name": "Mega Pyroar",
+    "form": "",
+    "mega": true,
+    "id": "pyroarmega",
+    "normalized": "Pyroar-Mega"
+  },
+  {
+    "line": 873,
+    "name": "Mega Floette",
+    "form": "",
+    "mega": true,
+    "id": "floettemega",
+    "normalized": "Floette-Mega"
+  },
+  {
+    "line": 875,
+    "name": "Mega Meowstic",
+    "form": "",
+    "mega": true,
+    "id": null,
+    "normalized": "Meowstic-Mega"
+  },
+  {
+    "line": 876,
+    "name": "Mega Malamar",
+    "form": "",
+    "mega": true,
+    "id": "malamarmega",
+    "normalized": "Malamar-Mega"
+  },
+  {
+    "line": 878,
+    "name": "Mega Barbaracle",
+    "form": "",
+    "mega": true,
+    "id": "barbaraclemega",
+    "normalized": "Barbaracle-Mega"
+  },
+  {
+    "line": 880,
+    "name": "Mega Dragalge",
+    "form": "",
+    "mega": true,
+    "id": "dragalgemega",
+    "normalized": "Dragalge-Mega"
+  },
+  {
+    "line": 882,
+    "name": "Mega Hawlucha",
+    "form": "",
+    "mega": true,
+    "id": "hawluchamega",
+    "normalized": "Hawlucha-Mega"
+  },
+  {
+    "line": 884,
+    "name": "Mega Crabominable",
+    "form": "",
+    "mega": true,
+    "id": "crabominablemega",
+    "normalized": "Crabominable-Mega"
+  },
+  {
+    "line": 886,
+    "name": "Mega Golisopod",
+    "form": "",
+    "mega": true,
+    "id": "golisopodmega",
+    "normalized": "Golisopod-Mega"
+  },
+  {
+    "line": 888,
+    "name": "Mega Drampa",
+    "form": "",
+    "mega": true,
+    "id": "drampamega",
+    "normalized": "Drampa-Mega"
+  },
+  {
+    "line": 890,
+    "name": "Mega Falinks",
+    "form": "",
+    "mega": true,
+    "id": "falinksmega",
+    "normalized": "Falinks-Mega"
+  },
+  {
+    "line": 892,
+    "name": "Mega Scovillain",
+    "form": "",
+    "mega": true,
+    "id": "scovillainmega",
+    "normalized": "Scovillain-Mega"
+  },
+  {
+    "line": 894,
+    "name": "Mega Glimmora",
+    "form": "",
+    "mega": true,
+    "id": "glimmoramega",
+    "normalized": "Glimmora-Mega"
+  },
+  {
+    "line": 896,
+    "name": "Mega Baxcalibur",
+    "form": "",
+    "mega": true,
+    "id": "baxcaliburmega",
+    "normalized": "Baxcalibur-Mega"
+  }
+]

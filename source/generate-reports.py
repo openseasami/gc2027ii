@@ -20,6 +20,10 @@ numeric = read('reference/NUMERIC_RESULTS.json')
 speed = read('reference/SPEED_RESULTS.json')
 multi = read('reference/MULTIHIT_RESULTS.json')
 browser = read('reference/BROWSER_RESULTS.json')
+roster = read('reference/MC_ROSTER_AUDIT.json')
+roster_test = read('reference/ROSTER_RESULTS.json')
+acceptance = read('reference/ACCEPTANCE_SCOPE.json')
+count = len(d['species'])
 passed = [x for x in numeric['cases'] if x['status'] == 'passed']
 unverified = [x for x in numeric['cases'] if x['status'] == 'unverified']
 request = (ROOT / 'source/DEVELOPMENT_REQUEST.txt').read_text()
@@ -70,7 +74,7 @@ write('reference/ABILITY_COVERAGE.json',dict(completion=False,requested=len(rows
 table = '\n'.join('| '+r['jp']+' | '+str(r['ownerCount'])+' | '+r['scope']+' | '+str(len(r['evidence']))+' |' for r in rows)
 md('docs/ABILITIES.md',f'''# 指定特性の実装・検証一覧
 
-名称登録、利用可能なモデル所有者、効果または入力方針の比較検証を区別します。指定{len(rows)}特性のうち{sum(bool(x['evidence']) for x in rows)}特性に直接のテスト証拠があります。証拠がないものを効果実装完了とは判定しません。所有者数は公式許可数ではなく386候補形態内の数です。
+名称登録、利用可能なモデル所有者、効果または入力方針の比較検証を区別します。指定{len(rows)}特性のうち{sum(bool(x['evidence']) for x in rows)}特性に直接のテスト証拠があります。証拠がないものを効果実装完了とは判定しません。所有者数は公式許可数ではなく{count}対象形態内の数です。
 
 | 特性 | 所有形態数 | 対応・確認範囲 | 証拠件数 |
 |---|---:|---|---:|
@@ -83,21 +87,22 @@ md('docs/ABILITIES.md',f'''# 指定特性の実装・検証一覧
 
 core = (ROOT / 'source/core.cjs').read_text()
 excluded = dict(re.findall(r"(\w+):'([^']+)'",core.split('const EXCLUDED_MOVES={')[1].split('};')[0]))
-write('reference/UNCONFIRMED.json',dict(completion=False,officialEligibility=dict(unconfirmed=386,confirmed=0,reason='Official JavaScript roster body unavailable; direct retrieval 403'),officialNumericFormula='unconfirmed; only community implementation agreement',uncomparedSpeciesAliases=data['uncomparedWithCalc'],cosmeticEnglishLabels=data['cosmeticLabelsInEnglish'],numericUnverified=unverified,unsupportedMoves=excluded,conditionalMoves=['brine','assurance','payback','revenge','avalanche','lashout','retaliate'],statistics='No source/date; uploaded v8 percentages withheld',windowsNative=False,fileProtocol='Managed policy blocked; no bypass',limitations=['Representative hypotheses are not all opponent spreads/items/ability combinations','Full accuracy/reaction/KO stopping of multi-hit moves unverified','Intact Disguise and physical Ice Face unimplemented','History, AI, prediction, residuals and full battles are out of scope']))
+write('reference/UNCONFIRMED.json',dict(completion=False,acceptance=acceptance,officialEligibility='Not certified; official body retrieval excluded from acceptance by user',officialNumericFormula='Not a gate; real-game comparison excluded by user',rosterExcluded=[r for r in roster['entries'] if r['decision'].startswith('excluded')],appearanceConsolidated=roster['aliases'],uncomparedSpeciesAliases=data['uncomparedWithCalc'],cosmeticEnglishLabels=data['cosmeticLabelsInEnglish'],numericUnverified=unverified,unsupportedMoves=excluded,conditionalMoves=['brine','assurance','payback','revenge','avalanche','lashout','retaliate'],statistics='No source/date; uploaded v8 percentages withheld',windowsNative=False,fileProtocol='Managed policy blocked; no bypass',limitations=['Representative hypotheses are not all opponent spreads/items/ability combinations','Full accuracy/reaction/KO stopping of multi-hit moves unverified','Intact Disguise unimplemented','History, AI, prediction, residuals and full battles are out of scope']))
 
-report = dict(completion=False,decision='技術検証済み・完成判定保留',dateJST='2026-10-28',blockingConfirmation=['Official full M-C roster unavailable','Official numeric formula and real-game comprehensive values not acquired'],data=dict(candidateForms=386,mega=82,statDataCompared=data['statsCompared'],statDataMismatches=len(data['mismatches']),uncomparedAliases=len(data['uncomparedWithCalc'])),unit=dict(groups=len(unit['checks']),statFormulaComparisons=unit['statComparisons'],passed=unit['passed']),numeric=dict(passedCases=len(passed),unverifiedCases=len(unverified),failedCases=len(numeric['failures']),independentRolls=numeric['comparisons'],distinctMoves=len(set(c['move'] for c in passed))),multi=dict(passed=multi['passed'],cases=len(multi['cases']),independentPerHitRolls=multi['comparisons']),speed=dict(passed=speed['passed'],cases=len(speed['cases']),unverified=len(speed['unverified'])),browser=dict(passed=browser['passed'],profiles=[dict(brand=p['brand'],version=p['version'],layouts=len(p['layouts']),updateMs=p['updateMs']) for p in browser['profiles']],nativeWindows=False,externalOffline=True),htmlSha256=hashlib.sha256((ROOT/'release/GC2027II_Viewer_v9.html').read_bytes()).hexdigest())
-assert unit['passed'] and numeric['passed'] and multi['passed'] and speed['passed'] and browser['passed']
+report = dict(completion=False,scopeCompletion=True,decision='今回のM-C比較照合・回帰検証は合格（非公式資料基準）',dateJST='2026-10-29',blockingConfirmation=[],acceptance=acceptance,roster=roster['counts'],data=dict(candidateForms=count,mega=roster['counts']['mega'],statDataCompared=data['statsCompared'],statDataMismatches=len(data['mismatches']),uncomparedAliases=len(data['uncomparedWithCalc'])),unit=dict(groups=len(unit['checks']),statFormulaComparisons=unit['statComparisons'],passed=unit['passed']),numeric=dict(passedCases=len(passed),unverifiedCases=len(unverified),failedCases=len(numeric['failures']),independentRolls=numeric['comparisons'],distinctMoves=len(set(c['move'] for c in passed))),multi=dict(passed=multi['passed'],cases=len(multi['cases']),independentPerHitRolls=multi['comparisons']),speed=dict(passed=speed['passed'],cases=len(speed['cases']),unverified=len(speed['unverified'])),browser=dict(passed=browser['passed'],profiles=[dict(brand=p['brand'],version=p['version'],layouts=len(p['layouts']),updateMs=p['updateMs']) for p in browser['profiles']],nativeWindows=False,externalOffline=True),htmlSha256=hashlib.sha256((ROOT/'release/GC2027II_Viewer_v9.html').read_bytes()).hexdigest())
+assert roster_test['passed'] and unit['passed'] and numeric['passed'] and multi['passed'] and speed['passed'] and browser['passed']
 write('reference/VERIFICATION_REPORT.json',report)
 browser_text='\n'.join(f"- {p['brand']} {p['version']}：{len(p['layouts'])}画面幅、条件変更後の描画処理 {min(p['updateMs']):.1f}～{max(p['updateMs']):.1f} ms（自動計測）。" for p in browser['profiles'])
-md('docs/VERIFICATION_REPORT.md',f'''# 検証結果（2026-10-28 JST）
+md('docs/VERIFICATION_REPORT.md',f'''# 検証結果（2026-10-29 JST）
 
-**技術検証済み・完成判定保留。`completion: false`。** 公式のM-C全使用可能一覧と数値仕様・実機全条件が未照合です。テスト件数だけで公式適合・完成と判定していません。
+**今回依頼されたM-C対象の比較照合・回帰検証は合格。** ユーザーの指示で実機計算・公式本文取得を判定条件から除外しました。非公式資料基準です。全仕様の `completion: false` は維持し、今回範囲の `scopeCompletion: true` と区別します。
 
 | 試験 | 実行結果 |
 |---|---|
-| 候補データ | 386形態・メガ82。公式全件適合は未確認 |
-| 6種族値の二実装照合 | 357形態×6＝{data['statsCompared']}値、不一致0。別名のない29形態は別枠 |
-| 能力ポイント・性格・端数処理 | 全386形態×25性格×3配分×6能力＝{unit['statComparisons']:,}値、一致 |
+| M-C対象 | {count}形態・{roster['counts']['species']}種族・メガ{roster['counts']['mega']}。非公式資料の比較照合 |
+| 対象絞り込み・データ保護 | {len(roster_test['checks'])}グループ成功。元の計算入力{roster_test['preservedCoreRecords']}件を維持、外見差{roster_test['appearanceMigrations']}件のJSON移行成功 |
+| 6種族値の二実装照合 | {len(data['checks'])}形態×6＝{data['statsCompared']}値、不一致0。別名のない{len(data['uncomparedWithCalc'])}形態は別枠 |
+| 能力ポイント・性格・端数処理 | 全{count}形態×25性格×3配分×6能力＝{unit['statComparisons']:,}値、一致 |
 | 単体・データ保護 | {len(unit['checks'])}グループ成功 |
 | 独立した単発ダメージ | {len(passed):,}ケース・{numeric['comparisons']:,}乱数一致、不一致0 |
 | 除外した未検証ケース | {len(unverified)}件。成功件数に含めない |
@@ -109,13 +114,17 @@ md('docs/VERIFICATION_REPORT.md',f'''# 検証結果（2026-10-28 JST）
 
 天候5×フィールド5、16種族の複数技、配分・性格・ランク・火傷、急所、主要攻撃・防御特性、半減実、いのちのたま等、オーラ双方・控え不発・隣接フレンドガード・かたやぶり・手動場優先を比較。ボディプレス、イカサマ、サイコショック、必中急所の例、やけっぱち等の75/150、発動済みもらいびも含みます。すべての技と習得・使用許可の組合せを認証する試験ではありません。
 
+## M-C対象の確認
+
+詳細は `MC_ROSTER_AUDIT.json` と `docs/MC_ROSTER.md`。386候補から外見差26件を代表に統合し、元種族のM-C根拠がない戦闘形態4件を除外。非公式一覧の形態の粒度と掲載漏れを記録し、単純な総数一致やShowdownの候補判定だけで対象を決めていません。残した356件の種族値・タイプ・特性・重量・習得候補・主要技は元版と一致します。
+
 ## ブラウザ操作
 
 {browser_text}
 
-6体を実際の画像選択・フォーム・項目操作から登録し、技・特性・持ち物・性格・ポイント・保存を確認しました。味方2体選択、メガ前後、相手2体、ランク・各個体の火傷・場・TR、8対面表示、最大3パターンの重複排除、控え32比較、JSON実ダウンロード・読込確認・不正データの非反映・復元・再読込、v8ポイント移行を実行。戦闘状態の注入はしていません。
+6体を実際の画像選択・フォーム・項目操作から登録し、技・特性・持ち物・性格・ポイント・保存を確認しました。味方2体選択、メガ前後、相手2体、ランク・各個体の火傷・場・TR、8対面表示、最大3パターンの重複排除、控え32比較、JSON実ダウンロード・読込確認・不正データの非反映・復元・再読込、v8ポイント移行を実行。M-C選択肢の制限、旧v9外見差JSONの移行、対象外の旧保存原文のダウンロードと非上書きも確認。後者は保存移行用のストレージfixtureを使用します。戦闘状態の注入はしていません。
 
-1440×1080、1366×768、1280×720、390×844で横はみ出しなし、画像欠落0、相手2体横並び。PCの主要計算見出しはy=622に配置。縦スクロールで8対面を閲覧し、すべてを1画面へ縮小はしません。
+1440×1080、1366×768、1280×720、390×844で横はみ出しなし、画像欠落0、相手2体横並び。PCの主要計算見出し位置も試験しました。縦スクロールで8対面を閲覧し、すべてを1画面へ縮小はしません。
 
 外部通信を遮断しローカルHTTPだけを許可した状態で、v9の外部リクエスト0・ページ例外0。Linuxでの実Edgeであり、Windows実機・人間の操作速度・file://直接起動は認証していません。自動処理時間は人間の判断時間ではありません。
 

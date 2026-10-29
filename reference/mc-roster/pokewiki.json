@@ -1,0 +1,2084 @@
+[
+  {
+    "line": 288,
+    "num": 3,
+    "name": "フシギバナ",
+    "id": "venusaur"
+  },
+  {
+    "line": 289,
+    "num": 3,
+    "name": "メガフシギバナ",
+    "id": "venusaurmega"
+  },
+  {
+    "line": 290,
+    "num": 6,
+    "name": "リザードン",
+    "id": "charizard"
+  },
+  {
+    "line": 291,
+    "num": 6,
+    "name": "メガリザードンX",
+    "id": "charizardmegax"
+  },
+  {
+    "line": 292,
+    "num": 6,
+    "name": "メガリザードンY",
+    "id": "charizardmegay"
+  },
+  {
+    "line": 293,
+    "num": 9,
+    "name": "カメックス",
+    "id": "blastoise"
+  },
+  {
+    "line": 294,
+    "num": 9,
+    "name": "メガカメックス",
+    "id": "blastoisemega"
+  },
+  {
+    "line": 295,
+    "num": 15,
+    "name": "スピアー",
+    "id": "beedrill"
+  },
+  {
+    "line": 296,
+    "num": 15,
+    "name": "メガスピアー",
+    "id": "beedrillmega"
+  },
+  {
+    "line": 297,
+    "num": 18,
+    "name": "ピジョット",
+    "id": "pidgeot"
+  },
+  {
+    "line": 298,
+    "num": 18,
+    "name": "メガピジョット",
+    "id": "pidgeotmega"
+  },
+  {
+    "line": 299,
+    "num": 24,
+    "name": "アーボック",
+    "id": "arbok"
+  },
+  {
+    "line": 300,
+    "num": 25,
+    "name": "ピカチュウ",
+    "id": "pikachu"
+  },
+  {
+    "line": 301,
+    "num": 26,
+    "name": "ライチュウ",
+    "id": "raichu"
+  },
+  {
+    "line": 302,
+    "num": 26,
+    "name": "メガライチュウX",
+    "id": "raichumegax"
+  },
+  {
+    "line": 303,
+    "num": 26,
+    "name": "メガライチュウY",
+    "id": "raichumegay"
+  },
+  {
+    "line": 304,
+    "num": 36,
+    "name": "ピクシー",
+    "id": "clefable"
+  },
+  {
+    "line": 305,
+    "num": 36,
+    "name": "メガピクシー",
+    "id": "clefablemega"
+  },
+  {
+    "line": 306,
+    "num": 38,
+    "name": "キュウコン",
+    "id": "ninetales"
+  },
+  {
+    "line": 307,
+    "num": 40,
+    "name": "プクリン",
+    "id": "wigglytuff"
+  },
+  {
+    "line": 308,
+    "num": 45,
+    "name": "ラフレシア",
+    "id": "vileplume"
+  },
+  {
+    "line": 309,
+    "num": 53,
+    "name": "ペルシアン",
+    "id": "persian"
+  },
+  {
+    "line": 310,
+    "num": 59,
+    "name": "ウインディ",
+    "id": "arcanine"
+  },
+  {
+    "line": 311,
+    "num": 65,
+    "name": "フーディン",
+    "id": "alakazam"
+  },
+  {
+    "line": 312,
+    "num": 65,
+    "name": "メガフーディン",
+    "id": "alakazammega"
+  },
+  {
+    "line": 313,
+    "num": 68,
+    "name": "カイリキー",
+    "id": "machamp"
+  },
+  {
+    "line": 314,
+    "num": 71,
+    "name": "ウツボット",
+    "id": "victreebel"
+  },
+  {
+    "line": 315,
+    "num": 71,
+    "name": "メガウツボット",
+    "id": "victreebelmega"
+  },
+  {
+    "line": 316,
+    "num": 80,
+    "name": "ヤドラン",
+    "id": "slowbro"
+  },
+  {
+    "line": 317,
+    "num": 80,
+    "name": "メガヤドラン",
+    "id": "slowbromega"
+  },
+  {
+    "line": 318,
+    "num": 83,
+    "name": "カモネギ",
+    "id": "farfetchd"
+  },
+  {
+    "line": 319,
+    "num": 94,
+    "name": "ゲンガー",
+    "id": "gengar"
+  },
+  {
+    "line": 320,
+    "num": 94,
+    "name": "メガゲンガー",
+    "id": "gengarmega"
+  },
+  {
+    "line": 321,
+    "num": 115,
+    "name": "ガルーラ",
+    "id": "kangaskhan"
+  },
+  {
+    "line": 322,
+    "num": 115,
+    "name": "メガガルーラ",
+    "id": "kangaskhanmega"
+  },
+  {
+    "line": 323,
+    "num": 121,
+    "name": "スターミー",
+    "id": "starmie"
+  },
+  {
+    "line": 324,
+    "num": 121,
+    "name": "メガスターミー",
+    "id": "starmiemega"
+  },
+  {
+    "line": 325,
+    "num": 122,
+    "name": "バリヤード",
+    "id": "mrmime"
+  },
+  {
+    "line": 326,
+    "num": 127,
+    "name": "カイロス",
+    "id": "pinsir"
+  },
+  {
+    "line": 327,
+    "num": 127,
+    "name": "メガカイロス",
+    "id": "pinsirmega"
+  },
+  {
+    "line": 328,
+    "num": 128,
+    "name": "ケンタロス",
+    "id": "tauros"
+  },
+  {
+    "line": 329,
+    "num": 130,
+    "name": "ギャラドス",
+    "id": "gyarados"
+  },
+  {
+    "line": 330,
+    "num": 130,
+    "name": "メガギャラドス",
+    "id": "gyaradosmega"
+  },
+  {
+    "line": 331,
+    "num": 132,
+    "name": "メタモン",
+    "id": "ditto"
+  },
+  {
+    "line": 332,
+    "num": 134,
+    "name": "シャワーズ",
+    "id": "vaporeon"
+  },
+  {
+    "line": 333,
+    "num": 135,
+    "name": "サンダース",
+    "id": "jolteon"
+  },
+  {
+    "line": 334,
+    "num": 136,
+    "name": "ブースター",
+    "id": "flareon"
+  },
+  {
+    "line": 335,
+    "num": 142,
+    "name": "プテラ",
+    "id": "aerodactyl"
+  },
+  {
+    "line": 336,
+    "num": 142,
+    "name": "メガプテラ",
+    "id": "aerodactylmega"
+  },
+  {
+    "line": 337,
+    "num": 143,
+    "name": "カビゴン",
+    "id": "snorlax"
+  },
+  {
+    "line": 338,
+    "num": 149,
+    "name": "カイリュー",
+    "id": "dragonite"
+  },
+  {
+    "line": 339,
+    "num": 149,
+    "name": "メガカイリュー",
+    "id": "dragonitemega"
+  },
+  {
+    "line": 340,
+    "num": 154,
+    "name": "メガニウム",
+    "id": "meganium"
+  },
+  {
+    "line": 341,
+    "num": 154,
+    "name": "メガメガニウム",
+    "id": "meganiummega"
+  },
+  {
+    "line": 342,
+    "num": 157,
+    "name": "バクフーン",
+    "id": "typhlosion"
+  },
+  {
+    "line": 343,
+    "num": 160,
+    "name": "オーダイル",
+    "id": "feraligatr"
+  },
+  {
+    "line": 344,
+    "num": 160,
+    "name": "メガオーダイル",
+    "id": "feraligatrmega"
+  },
+  {
+    "line": 345,
+    "num": 168,
+    "name": "アリアドス",
+    "id": "ariados"
+  },
+  {
+    "line": 346,
+    "num": 181,
+    "name": "デンリュウ",
+    "id": "ampharos"
+  },
+  {
+    "line": 347,
+    "num": 181,
+    "name": "メガデンリュウ",
+    "id": "ampharosmega"
+  },
+  {
+    "line": 348,
+    "num": 184,
+    "name": "マリルリ",
+    "id": "azumarill"
+  },
+  {
+    "line": 349,
+    "num": 186,
+    "name": "ニョロトノ",
+    "id": "politoed"
+  },
+  {
+    "line": 350,
+    "num": 196,
+    "name": "エーフィ",
+    "id": "espeon"
+  },
+  {
+    "line": 351,
+    "num": 197,
+    "name": "ブラッキー",
+    "id": "umbreon"
+  },
+  {
+    "line": 352,
+    "num": 199,
+    "name": "ヤドキング",
+    "id": "slowking"
+  },
+  {
+    "line": 353,
+    "num": 205,
+    "name": "フォレトス",
+    "id": "forretress"
+  },
+  {
+    "line": 354,
+    "num": 208,
+    "name": "ハガネール",
+    "id": "steelix"
+  },
+  {
+    "line": 355,
+    "num": 208,
+    "name": "メガハガネール",
+    "id": "steelixmega"
+  },
+  {
+    "line": 356,
+    "num": 211,
+    "name": "ハリーセン",
+    "id": "qwilfish"
+  },
+  {
+    "line": 357,
+    "num": 212,
+    "name": "ハッサム",
+    "id": "scizor"
+  },
+  {
+    "line": 358,
+    "num": 212,
+    "name": "メガハッサム",
+    "id": "scizormega"
+  },
+  {
+    "line": 359,
+    "num": 214,
+    "name": "ヘラクロス",
+    "id": "heracross"
+  },
+  {
+    "line": 360,
+    "num": 214,
+    "name": "メガヘラクロス",
+    "id": "heracrossmega"
+  },
+  {
+    "line": 361,
+    "num": 227,
+    "name": "エアームド",
+    "id": "skarmory"
+  },
+  {
+    "line": 362,
+    "num": 227,
+    "name": "メガエアームド",
+    "id": "skarmorymega"
+  },
+  {
+    "line": 363,
+    "num": 229,
+    "name": "ヘルガー",
+    "id": "houndoom"
+  },
+  {
+    "line": 364,
+    "num": 229,
+    "name": "メガヘルガー",
+    "id": "houndoommega"
+  },
+  {
+    "line": 365,
+    "num": 248,
+    "name": "バンギラス",
+    "id": "tyranitar"
+  },
+  {
+    "line": 366,
+    "num": 248,
+    "name": "メガバンギラス",
+    "id": "tyranitarmega"
+  },
+  {
+    "line": 367,
+    "num": 254,
+    "name": "ジュカイン",
+    "id": "sceptile"
+  },
+  {
+    "line": 368,
+    "num": 254,
+    "name": "メガジュカイン",
+    "id": "sceptilemega"
+  },
+  {
+    "line": 369,
+    "num": 257,
+    "name": "バシャーモ",
+    "id": "blaziken"
+  },
+  {
+    "line": 370,
+    "num": 257,
+    "name": "メガバシャーモ",
+    "id": "blazikenmega"
+  },
+  {
+    "line": 371,
+    "num": 260,
+    "name": "ラグラージ",
+    "id": "swampert"
+  },
+  {
+    "line": 372,
+    "num": 260,
+    "name": "メガラグラージ",
+    "id": "swampertmega"
+  },
+  {
+    "line": 373,
+    "num": 279,
+    "name": "ペリッパー",
+    "id": "pelipper"
+  },
+  {
+    "line": 374,
+    "num": 282,
+    "name": "サーナイト",
+    "id": "gardevoir"
+  },
+  {
+    "line": 375,
+    "num": 282,
+    "name": "メガサーナイト",
+    "id": "gardevoirmega"
+  },
+  {
+    "line": 376,
+    "num": 302,
+    "name": "ヤミラミ",
+    "id": "sableye"
+  },
+  {
+    "line": 377,
+    "num": 302,
+    "name": "メガヤミラミ",
+    "id": "sableyemega"
+  },
+  {
+    "line": 378,
+    "num": 303,
+    "name": "クチート",
+    "id": "mawile"
+  },
+  {
+    "line": 379,
+    "num": 303,
+    "name": "メガクチート",
+    "id": "mawilemega"
+  },
+  {
+    "line": 380,
+    "num": 306,
+    "name": "ボスゴドラ",
+    "id": "aggron"
+  },
+  {
+    "line": 381,
+    "num": 306,
+    "name": "メガボスゴドラ",
+    "id": "aggronmega"
+  },
+  {
+    "line": 382,
+    "num": 308,
+    "name": "チャーレム",
+    "id": "medicham"
+  },
+  {
+    "line": 383,
+    "num": 308,
+    "name": "メガチャーレム",
+    "id": "medichammega"
+  },
+  {
+    "line": 384,
+    "num": 310,
+    "name": "ライボルト",
+    "id": "manectric"
+  },
+  {
+    "line": 385,
+    "num": 310,
+    "name": "メガライボルト",
+    "id": "manectricmega"
+  },
+  {
+    "line": 386,
+    "num": 317,
+    "name": "マルノーム",
+    "id": "swalot"
+  },
+  {
+    "line": 387,
+    "num": 319,
+    "name": "サメハダー",
+    "id": "sharpedo"
+  },
+  {
+    "line": 388,
+    "num": 319,
+    "name": "メガサメハダー",
+    "id": "sharpedomega"
+  },
+  {
+    "line": 389,
+    "num": 323,
+    "name": "バクーダ",
+    "id": "camerupt"
+  },
+  {
+    "line": 390,
+    "num": 323,
+    "name": "メガバクーダ",
+    "id": "cameruptmega"
+  },
+  {
+    "line": 391,
+    "num": 324,
+    "name": "コータス",
+    "id": "torkoal"
+  },
+  {
+    "line": 392,
+    "num": 334,
+    "name": "チルタリス",
+    "id": "altaria"
+  },
+  {
+    "line": 393,
+    "num": 334,
+    "name": "メガチルタリス",
+    "id": "altariamega"
+  },
+  {
+    "line": 394,
+    "num": 350,
+    "name": "ミロカロス",
+    "id": "milotic"
+  },
+  {
+    "line": 395,
+    "num": 351,
+    "name": "ポワルン",
+    "id": "castform"
+  },
+  {
+    "line": 396,
+    "num": 351,
+    "name": "ポワルン(太陽)",
+    "id": "castformsunny"
+  },
+  {
+    "line": 397,
+    "num": 351,
+    "name": "ポワルン(雨水)",
+    "id": "castformrainy"
+  },
+  {
+    "line": 398,
+    "num": 351,
+    "name": "ポワルン(雪雲)",
+    "id": "castformsnowy"
+  },
+  {
+    "line": 399,
+    "num": 354,
+    "name": "ジュペッタ",
+    "id": "banette"
+  },
+  {
+    "line": 400,
+    "num": 354,
+    "name": "メガジュペッタ",
+    "id": "banettemega"
+  },
+  {
+    "line": 401,
+    "num": 358,
+    "name": "チリーン",
+    "id": "chimecho"
+  },
+  {
+    "line": 402,
+    "num": 358,
+    "name": "メガチリーン",
+    "id": "chimechomega"
+  },
+  {
+    "line": 403,
+    "num": 359,
+    "name": "アブソル",
+    "id": "absol"
+  },
+  {
+    "line": 404,
+    "num": 359,
+    "name": "メガアブソル",
+    "id": "absolmega"
+  },
+  {
+    "line": 405,
+    "num": 359,
+    "name": "メガアブソルZ",
+    "id": "absolmegaz"
+  },
+  {
+    "line": 406,
+    "num": 362,
+    "name": "オニゴーリ",
+    "id": "glalie"
+  },
+  {
+    "line": 407,
+    "num": 362,
+    "name": "メガオニゴーリ",
+    "id": "glaliemega"
+  },
+  {
+    "line": 408,
+    "num": 373,
+    "name": "ボーマンダ",
+    "id": "salamence"
+  },
+  {
+    "line": 409,
+    "num": 373,
+    "name": "メガボーマンダ",
+    "id": "salamencemega"
+  },
+  {
+    "line": 410,
+    "num": 376,
+    "name": "メタグロス",
+    "id": "metagross"
+  },
+  {
+    "line": 411,
+    "num": 376,
+    "name": "メガメタグロス",
+    "id": "metagrossmega"
+  },
+  {
+    "line": 412,
+    "num": 389,
+    "name": "ドダイトス",
+    "id": "torterra"
+  },
+  {
+    "line": 413,
+    "num": 392,
+    "name": "ゴウカザル",
+    "id": "infernape"
+  },
+  {
+    "line": 414,
+    "num": 395,
+    "name": "エンペルト",
+    "id": "empoleon"
+  },
+  {
+    "line": 415,
+    "num": 398,
+    "name": "ムクホーク",
+    "id": "staraptor"
+  },
+  {
+    "line": 416,
+    "num": 398,
+    "name": "メガムクホーク",
+    "id": "staraptormega"
+  },
+  {
+    "line": 417,
+    "num": 405,
+    "name": "レントラー",
+    "id": "luxray"
+  },
+  {
+    "line": 418,
+    "num": 407,
+    "name": "ロズレイド",
+    "id": "roserade"
+  },
+  {
+    "line": 419,
+    "num": 409,
+    "name": "ラムパルド",
+    "id": "rampardos"
+  },
+  {
+    "line": 420,
+    "num": 411,
+    "name": "トリデプス",
+    "id": "bastiodon"
+  },
+  {
+    "line": 421,
+    "num": 428,
+    "name": "ミミロップ",
+    "id": "lopunny"
+  },
+  {
+    "line": 422,
+    "num": 428,
+    "name": "メガミミロップ",
+    "id": "lopunnymega"
+  },
+  {
+    "line": 423,
+    "num": 442,
+    "name": "ミカルゲ",
+    "id": "spiritomb"
+  },
+  {
+    "line": 424,
+    "num": 445,
+    "name": "ガブリアス",
+    "id": "garchomp"
+  },
+  {
+    "line": 425,
+    "num": 445,
+    "name": "メガガブリアス",
+    "id": "garchompmega"
+  },
+  {
+    "line": 426,
+    "num": 445,
+    "name": "メガガブリアスZ",
+    "id": "garchompmegaz"
+  },
+  {
+    "line": 427,
+    "num": 448,
+    "name": "ルカリオ",
+    "id": "lucario"
+  },
+  {
+    "line": 428,
+    "num": 448,
+    "name": "メガルカリオ",
+    "id": "lucariomega"
+  },
+  {
+    "line": 429,
+    "num": 448,
+    "name": "メガルカリオZ",
+    "id": "lucariomegaz"
+  },
+  {
+    "line": 430,
+    "num": 450,
+    "name": "カバルドン",
+    "id": "hippowdon"
+  },
+  {
+    "line": 431,
+    "num": 454,
+    "name": "ドクロッグ",
+    "id": "toxicroak"
+  },
+  {
+    "line": 432,
+    "num": 460,
+    "name": "ユキノオー",
+    "id": "abomasnow"
+  },
+  {
+    "line": 433,
+    "num": 460,
+    "name": "メガユキノオー",
+    "id": "abomasnowmega"
+  },
+  {
+    "line": 434,
+    "num": 461,
+    "name": "マニューラ",
+    "id": "weavile"
+  },
+  {
+    "line": 435,
+    "num": 464,
+    "name": "ドサイドン",
+    "id": "rhyperior"
+  },
+  {
+    "line": 436,
+    "num": 470,
+    "name": "リーフィア",
+    "id": "leafeon"
+  },
+  {
+    "line": 437,
+    "num": 471,
+    "name": "グレイシア",
+    "id": "glaceon"
+  },
+  {
+    "line": 438,
+    "num": 472,
+    "name": "グライオン",
+    "id": "gliscor"
+  },
+  {
+    "line": 439,
+    "num": 473,
+    "name": "マンムー",
+    "id": "mamoswine"
+  },
+  {
+    "line": 440,
+    "num": 475,
+    "name": "エルレイド",
+    "id": "gallade"
+  },
+  {
+    "line": 441,
+    "num": 475,
+    "name": "メガエルレイド",
+    "id": "gallademega"
+  },
+  {
+    "line": 442,
+    "num": 478,
+    "name": "ユキメノコ",
+    "id": "froslass"
+  },
+  {
+    "line": 443,
+    "num": 478,
+    "name": "メガユキメノコ",
+    "id": "froslassmega"
+  },
+  {
+    "line": 444,
+    "num": 479,
+    "name": "ロトム",
+    "id": "rotom"
+  },
+  {
+    "line": 445,
+    "num": 479,
+    "name": "ヒートロトム",
+    "id": "rotomheat"
+  },
+  {
+    "line": 446,
+    "num": 479,
+    "name": "ウォッシュロトム",
+    "id": "rotomwash"
+  },
+  {
+    "line": 447,
+    "num": 479,
+    "name": "フロストロトム",
+    "id": "rotomfrost"
+  },
+  {
+    "line": 448,
+    "num": 479,
+    "name": "スピンロトム",
+    "id": "rotomfan"
+  },
+  {
+    "line": 449,
+    "num": 479,
+    "name": "カットロトム",
+    "id": "rotommow"
+  },
+  {
+    "line": 450,
+    "num": 497,
+    "name": "ジャローダ",
+    "id": "serperior"
+  },
+  {
+    "line": 451,
+    "num": 500,
+    "name": "エンブオー",
+    "id": "emboar"
+  },
+  {
+    "line": 452,
+    "num": 500,
+    "name": "メガエンブオー",
+    "id": "emboarmega"
+  },
+  {
+    "line": 453,
+    "num": 503,
+    "name": "ダイケンキ",
+    "id": "samurott"
+  },
+  {
+    "line": 454,
+    "num": 505,
+    "name": "ミルホッグ",
+    "id": "watchog"
+  },
+  {
+    "line": 455,
+    "num": 510,
+    "name": "レパルダス",
+    "id": "liepard"
+  },
+  {
+    "line": 456,
+    "num": 512,
+    "name": "ヤナッキー",
+    "id": "simisage"
+  },
+  {
+    "line": 457,
+    "num": 514,
+    "name": "バオッキー",
+    "id": "simisear"
+  },
+  {
+    "line": 458,
+    "num": 516,
+    "name": "ヒヤッキー",
+    "id": "simipour"
+  },
+  {
+    "line": 459,
+    "num": 518,
+    "name": "ムシャーナ",
+    "id": "musharna"
+  },
+  {
+    "line": 460,
+    "num": 530,
+    "name": "ドリュウズ",
+    "id": "excadrill"
+  },
+  {
+    "line": 461,
+    "num": 530,
+    "name": "メガドリュウズ",
+    "id": "excadrillmega"
+  },
+  {
+    "line": 462,
+    "num": 531,
+    "name": "タブンネ",
+    "id": "audino"
+  },
+  {
+    "line": 463,
+    "num": 531,
+    "name": "メガタブンネ",
+    "id": "audinomega"
+  },
+  {
+    "line": 464,
+    "num": 534,
+    "name": "ローブシン",
+    "id": "conkeldurr"
+  },
+  {
+    "line": 465,
+    "num": 545,
+    "name": "ペンドラー",
+    "id": "scolipede"
+  },
+  {
+    "line": 466,
+    "num": 545,
+    "name": "メガペンドラー",
+    "id": "scolipedemega"
+  },
+  {
+    "line": 467,
+    "num": 547,
+    "name": "エルフーン",
+    "id": "whimsicott"
+  },
+  {
+    "line": 468,
+    "num": 553,
+    "name": "ワルビアル",
+    "id": "krookodile"
+  },
+  {
+    "line": 469,
+    "num": 560,
+    "name": "ズルズキン",
+    "id": "scrafty"
+  },
+  {
+    "line": 470,
+    "num": 560,
+    "name": "メガズルズキン",
+    "id": "scraftymega"
+  },
+  {
+    "line": 471,
+    "num": 563,
+    "name": "デスカーン",
+    "id": "cofagrigus"
+  },
+  {
+    "line": 472,
+    "num": 569,
+    "name": "ダストダス",
+    "id": "garbodor"
+  },
+  {
+    "line": 473,
+    "num": 571,
+    "name": "ゾロアーク",
+    "id": "zoroark"
+  },
+  {
+    "line": 474,
+    "num": 579,
+    "name": "ランクルス",
+    "id": "reuniclus"
+  },
+  {
+    "line": 475,
+    "num": 584,
+    "name": "バイバニラ",
+    "id": "vanilluxe"
+  },
+  {
+    "line": 476,
+    "num": 587,
+    "name": "エモンガ",
+    "id": "emolga"
+  },
+  {
+    "line": 477,
+    "num": 604,
+    "name": "シビルドン",
+    "id": "eelektross"
+  },
+  {
+    "line": 478,
+    "num": 604,
+    "name": "メガシビルドン",
+    "id": "eelektrossmega"
+  },
+  {
+    "line": 479,
+    "num": 609,
+    "name": "シャンデラ",
+    "id": "chandelure"
+  },
+  {
+    "line": 480,
+    "num": 609,
+    "name": "メガシャンデラ",
+    "id": "chandeluremega"
+  },
+  {
+    "line": 481,
+    "num": 614,
+    "name": "ツンベアー",
+    "id": "beartic"
+  },
+  {
+    "line": 482,
+    "num": 618,
+    "name": "マッギョ",
+    "id": "stunfisk"
+  },
+  {
+    "line": 483,
+    "num": 623,
+    "name": "ゴルーグ",
+    "id": "golurk"
+  },
+  {
+    "line": 484,
+    "num": 623,
+    "name": "メガゴルーグ",
+    "id": "golurkmega"
+  },
+  {
+    "line": 485,
+    "num": 635,
+    "name": "サザンドラ",
+    "id": "hydreigon"
+  },
+  {
+    "line": 486,
+    "num": 637,
+    "name": "ウルガモス",
+    "id": "volcarona"
+  },
+  {
+    "line": 487,
+    "num": 652,
+    "name": "ブリガロン",
+    "id": "chesnaught"
+  },
+  {
+    "line": 488,
+    "num": 652,
+    "name": "メガブリガロン",
+    "id": "chesnaughtmega"
+  },
+  {
+    "line": 489,
+    "num": 655,
+    "name": "マフォクシー",
+    "id": "delphox"
+  },
+  {
+    "line": 490,
+    "num": 655,
+    "name": "メガマフォクシー",
+    "id": "delphoxmega"
+  },
+  {
+    "line": 491,
+    "num": 658,
+    "name": "ゲッコウガ",
+    "id": "greninja"
+  },
+  {
+    "line": 492,
+    "num": 658,
+    "name": "メガゲッコウガ",
+    "id": "greninjamega"
+  },
+  {
+    "line": 493,
+    "num": 660,
+    "name": "ホルード",
+    "id": "diggersby"
+  },
+  {
+    "line": 494,
+    "num": 663,
+    "name": "ファイアロー",
+    "id": "talonflame"
+  },
+  {
+    "line": 495,
+    "num": 666,
+    "name": "ビビヨン",
+    "id": "vivillon"
+  },
+  {
+    "line": 496,
+    "num": 668,
+    "name": "カエンジシ",
+    "id": "pyroar"
+  },
+  {
+    "line": 497,
+    "num": 668,
+    "name": "メガカエンジシ",
+    "id": "pyroarmega"
+  },
+  {
+    "line": 498,
+    "num": 671,
+    "name": "フラージェス",
+    "id": "florges"
+  },
+  {
+    "line": 499,
+    "num": 673,
+    "name": "ゴーゴート",
+    "id": "gogoat"
+  },
+  {
+    "line": 500,
+    "num": 675,
+    "name": "ゴロンダ",
+    "id": "pangoro"
+  },
+  {
+    "line": 501,
+    "num": 676,
+    "name": "トリミアン",
+    "id": "furfrou"
+  },
+  {
+    "line": 502,
+    "num": 678,
+    "name": "ニャオニクス♂",
+    "id": "meowstic"
+  },
+  {
+    "line": 503,
+    "num": 678,
+    "name": "ニャオニクス♀",
+    "id": "meowsticf"
+  },
+  {
+    "line": 504,
+    "num": 678,
+    "name": "メガニャオニクス♂",
+    "id": "meowsticmmega"
+  },
+  {
+    "line": 505,
+    "num": 678,
+    "name": "メガニャオニクス♀",
+    "id": "meowsticfmega"
+  },
+  {
+    "line": 506,
+    "num": 681,
+    "name": "ギルガルド(シールド)",
+    "id": "aegislash"
+  },
+  {
+    "line": 507,
+    "num": 681,
+    "name": "ギルガルド(ブレード)",
+    "id": "aegislashblade"
+  },
+  {
+    "line": 508,
+    "num": 683,
+    "name": "フレフワン",
+    "id": "aromatisse"
+  },
+  {
+    "line": 509,
+    "num": 685,
+    "name": "ペロリーム",
+    "id": "slurpuff"
+  },
+  {
+    "line": 510,
+    "num": 687,
+    "name": "カラマネロ",
+    "id": "malamar"
+  },
+  {
+    "line": 511,
+    "num": 687,
+    "name": "メガカラマネロ",
+    "id": "malamarmega"
+  },
+  {
+    "line": 512,
+    "num": 689,
+    "name": "ガメノデス",
+    "id": "barbaracle"
+  },
+  {
+    "line": 513,
+    "num": 689,
+    "name": "メガガメノデス",
+    "id": "barbaraclemega"
+  },
+  {
+    "line": 514,
+    "num": 691,
+    "name": "ドラミドロ",
+    "id": "dragalge"
+  },
+  {
+    "line": 515,
+    "num": 691,
+    "name": "メガドラミドロ",
+    "id": "dragalgemega"
+  },
+  {
+    "line": 516,
+    "num": 693,
+    "name": "ブロスター",
+    "id": "clawitzer"
+  },
+  {
+    "line": 517,
+    "num": 695,
+    "name": "エレザード",
+    "id": "heliolisk"
+  },
+  {
+    "line": 518,
+    "num": 697,
+    "name": "ガチゴラス",
+    "id": "tyrantrum"
+  },
+  {
+    "line": 519,
+    "num": 699,
+    "name": "アマルルガ",
+    "id": "aurorus"
+  },
+  {
+    "line": 520,
+    "num": 700,
+    "name": "ニンフィア",
+    "id": "sylveon"
+  },
+  {
+    "line": 521,
+    "num": 701,
+    "name": "ルチャブル",
+    "id": "hawlucha"
+  },
+  {
+    "line": 522,
+    "num": 701,
+    "name": "メガルチャブル",
+    "id": "hawluchamega"
+  },
+  {
+    "line": 523,
+    "num": 702,
+    "name": "デデンネ",
+    "id": "dedenne"
+  },
+  {
+    "line": 524,
+    "num": 706,
+    "name": "ヌメルゴン",
+    "id": "goodra"
+  },
+  {
+    "line": 525,
+    "num": 707,
+    "name": "クレッフィ",
+    "id": "klefki"
+  },
+  {
+    "line": 526,
+    "num": 709,
+    "name": "オーロット",
+    "id": "trevenant"
+  },
+  {
+    "line": 527,
+    "num": 711,
+    "name": "パンプジン(中玉)",
+    "id": "gourgeist"
+  },
+  {
+    "line": 528,
+    "num": 711,
+    "name": "パンプジン(小玉)",
+    "id": "gourgeistsmall"
+  },
+  {
+    "line": 529,
+    "num": 711,
+    "name": "パンプジン(大玉)",
+    "id": "gourgeistlarge"
+  },
+  {
+    "line": 530,
+    "num": 711,
+    "name": "パンプジン(ギガ玉)",
+    "id": "gourgeistsuper"
+  },
+  {
+    "line": 531,
+    "num": 713,
+    "name": "クレベース",
+    "id": "avalugg"
+  },
+  {
+    "line": 532,
+    "num": 715,
+    "name": "オンバーン",
+    "id": "noivern"
+  },
+  {
+    "line": 533,
+    "num": 26,
+    "name": "Aライチュウ",
+    "id": "raichualola"
+  },
+  {
+    "line": 534,
+    "num": 38,
+    "name": "Aキュウコン",
+    "id": "ninetalesalola"
+  },
+  {
+    "line": 535,
+    "num": 53,
+    "name": "Aペルシアン",
+    "id": "persianalola"
+  },
+  {
+    "line": 536,
+    "num": 724,
+    "name": "ジュナイパー",
+    "id": "decidueye"
+  },
+  {
+    "line": 537,
+    "num": 727,
+    "name": "ガオガエン",
+    "id": "incineroar"
+  },
+  {
+    "line": 538,
+    "num": 730,
+    "name": "アシレーヌ",
+    "id": "primarina"
+  },
+  {
+    "line": 539,
+    "num": 733,
+    "name": "ドデカバシ",
+    "id": "toucannon"
+  },
+  {
+    "line": 540,
+    "num": 740,
+    "name": "ケケンカニ",
+    "id": "crabominable"
+  },
+  {
+    "line": 541,
+    "num": 740,
+    "name": "メガケケンカニ",
+    "id": "crabominablemega"
+  },
+  {
+    "line": 542,
+    "num": 745,
+    "name": "ルガルガン(真昼)",
+    "id": "lycanroc"
+  },
+  {
+    "line": 543,
+    "num": 745,
+    "name": "ルガルガン(真夜中)",
+    "id": "lycanrocmidnight"
+  },
+  {
+    "line": 544,
+    "num": 745,
+    "name": "ルガルガン(黄昏)",
+    "id": "lycanrocdusk"
+  },
+  {
+    "line": 545,
+    "num": 748,
+    "name": "ドヒドイデ",
+    "id": "toxapex"
+  },
+  {
+    "line": 546,
+    "num": 750,
+    "name": "バンバドロ",
+    "id": "mudsdale"
+  },
+  {
+    "line": 547,
+    "num": 752,
+    "name": "オニシズクモ",
+    "id": "araquanid"
+  },
+  {
+    "line": 548,
+    "num": 758,
+    "name": "エンニュート",
+    "id": "salazzle"
+  },
+  {
+    "line": 549,
+    "num": 763,
+    "name": "アマージョ",
+    "id": "tsareena"
+  },
+  {
+    "line": 550,
+    "num": 765,
+    "name": "ヤレユータン",
+    "id": "oranguru"
+  },
+  {
+    "line": 551,
+    "num": 766,
+    "name": "ナゲツケサル",
+    "id": "passimian"
+  },
+  {
+    "line": 552,
+    "num": 768,
+    "name": "グソクムシャ",
+    "id": "golisopod"
+  },
+  {
+    "line": 553,
+    "num": 768,
+    "name": "メガグソクムシャ",
+    "id": "golisopodmega"
+  },
+  {
+    "line": 554,
+    "num": 778,
+    "name": "ミミッキュ",
+    "id": "mimikyu"
+  },
+  {
+    "line": 555,
+    "num": 780,
+    "name": "ジジーロン",
+    "id": "drampa"
+  },
+  {
+    "line": 556,
+    "num": 780,
+    "name": "メガジジーロン",
+    "id": "drampamega"
+  },
+  {
+    "line": 557,
+    "num": 784,
+    "name": "ジャラランガ",
+    "id": "kommoo"
+  },
+  {
+    "line": 558,
+    "num": 80,
+    "name": "Gヤドラン",
+    "id": "slowbrogalar"
+  },
+  {
+    "line": 559,
+    "num": 199,
+    "name": "Gヤドキング",
+    "id": "slowkinggalar"
+  },
+  {
+    "line": 560,
+    "num": 618,
+    "name": "Gマッギョ",
+    "id": "stunfiskgalar"
+  },
+  {
+    "line": 561,
+    "num": 812,
+    "name": "ゴリランダー",
+    "id": "rillaboom"
+  },
+  {
+    "line": 562,
+    "num": 815,
+    "name": "エースバーン",
+    "id": "cinderace"
+  },
+  {
+    "line": 563,
+    "num": 818,
+    "name": "インテレオン",
+    "id": "inteleon"
+  },
+  {
+    "line": 564,
+    "num": 823,
+    "name": "アーマーガア",
+    "id": "corviknight"
+  },
+  {
+    "line": 565,
+    "num": 828,
+    "name": "フォクスライ",
+    "id": "thievul"
+  },
+  {
+    "line": 566,
+    "num": 841,
+    "name": "アップリュー",
+    "id": "flapple"
+  },
+  {
+    "line": 567,
+    "num": 842,
+    "name": "タルップル",
+    "id": "appletun"
+  },
+  {
+    "line": 568,
+    "num": 844,
+    "name": "サダイジャ",
+    "id": "sandaconda"
+  },
+  {
+    "line": 569,
+    "num": 849,
+    "name": "ストリンダー",
+    "id": "toxtricity"
+  },
+  {
+    "line": 570,
+    "num": 853,
+    "name": "オトスパス",
+    "id": "grapploct"
+  },
+  {
+    "line": 571,
+    "num": 855,
+    "name": "ポットデス",
+    "id": "polteageist"
+  },
+  {
+    "line": 572,
+    "num": 858,
+    "name": "ブリムオン",
+    "id": "hatterene"
+  },
+  {
+    "line": 573,
+    "num": 861,
+    "name": "オーロンゲ",
+    "id": "grimmsnarl"
+  },
+  {
+    "line": 574,
+    "num": 863,
+    "name": "ニャイキング",
+    "id": "perrserker"
+  },
+  {
+    "line": 575,
+    "num": 865,
+    "name": "ネギガナイト",
+    "id": "sirfetchd"
+  },
+  {
+    "line": 576,
+    "num": 866,
+    "name": "バリコオル",
+    "id": "mrrime"
+  },
+  {
+    "line": 577,
+    "num": 867,
+    "name": "デスバーン",
+    "id": "runerigus"
+  },
+  {
+    "line": 578,
+    "num": 869,
+    "name": "マホイップ",
+    "id": "alcremie"
+  },
+  {
+    "line": 579,
+    "num": 870,
+    "name": "タイレーツ",
+    "id": "falinks"
+  },
+  {
+    "line": 580,
+    "num": 870,
+    "name": "メガタイレーツ",
+    "id": "falinksmega"
+  },
+  {
+    "line": 581,
+    "num": 871,
+    "name": "バチンウニ",
+    "id": "pincurchin"
+  },
+  {
+    "line": 582,
+    "num": 876,
+    "name": "イエッサン♂",
+    "id": "indeedee"
+  },
+  {
+    "line": 583,
+    "num": 876,
+    "name": "イエッサン♀",
+    "id": "indeedeef"
+  },
+  {
+    "line": 584,
+    "num": 877,
+    "name": "モルペコ",
+    "id": "morpeko"
+  },
+  {
+    "line": 585,
+    "num": 887,
+    "name": "ドラパルト",
+    "id": "dragapult"
+  },
+  {
+    "line": 586,
+    "num": 59,
+    "name": "Hウインディ",
+    "id": "arcaninehisui"
+  },
+  {
+    "line": 587,
+    "num": 157,
+    "name": "Hバクフーン",
+    "id": "typhlosionhisui"
+  },
+  {
+    "line": 588,
+    "num": 503,
+    "name": "Hダイケンキ",
+    "id": "samurotthisui"
+  },
+  {
+    "line": 589,
+    "num": 571,
+    "name": "Hゾロアーク",
+    "id": "zoroarkhisui"
+  },
+  {
+    "line": 590,
+    "num": 706,
+    "name": "Hヌメルゴン",
+    "id": "goodrahisui"
+  },
+  {
+    "line": 591,
+    "num": 713,
+    "name": "Hクレベース",
+    "id": "avalugghisui"
+  },
+  {
+    "line": 592,
+    "num": 724,
+    "name": "Hジュナイパー",
+    "id": "decidueyehisui"
+  },
+  {
+    "line": 593,
+    "num": 899,
+    "name": "アヤシシ",
+    "id": "wyrdeer"
+  },
+  {
+    "line": 594,
+    "num": 900,
+    "name": "バサギリ",
+    "id": "kleavor"
+  },
+  {
+    "line": 595,
+    "num": 902,
+    "name": "イダイトウ♂",
+    "id": "basculegion"
+  },
+  {
+    "line": 596,
+    "num": 902,
+    "name": "イダイトウ♀",
+    "id": "basculegionf"
+  },
+  {
+    "line": 597,
+    "num": 903,
+    "name": "オオニューラ",
+    "id": "sneasler"
+  },
+  {
+    "line": 598,
+    "num": 904,
+    "name": "ハリーマン",
+    "id": "overqwil"
+  },
+  {
+    "line": 599,
+    "num": 128,
+    "name": "Pケンタロス(単)",
+    "id": "taurospaldeacombat"
+  },
+  {
+    "line": 600,
+    "num": 128,
+    "name": "Pケンタロス(炎)",
+    "id": "taurospaldeablaze"
+  },
+  {
+    "line": 601,
+    "num": 128,
+    "name": "Pケンタロス(水)",
+    "id": "taurospaldeaaqua"
+  },
+  {
+    "line": 602,
+    "num": 908,
+    "name": "マスカーニャ",
+    "id": "meowscarada"
+  },
+  {
+    "line": 603,
+    "num": 911,
+    "name": "ラウドボーン",
+    "id": "skeledirge"
+  },
+  {
+    "line": 604,
+    "num": 914,
+    "name": "ウェーニバル",
+    "id": "quaquaval"
+  },
+  {
+    "line": 605,
+    "num": 923,
+    "name": "パーモット",
+    "id": "pawmot"
+  },
+  {
+    "line": 606,
+    "num": 925,
+    "name": "イッカネズミ",
+    "id": "maushold"
+  },
+  {
+    "line": 607,
+    "num": 930,
+    "name": "オリーヴァ",
+    "id": "arboliva"
+  },
+  {
+    "line": 608,
+    "num": 931,
+    "name": "イキリンコ",
+    "id": "squawkabilly"
+  },
+  {
+    "line": 609,
+    "num": 934,
+    "name": "キョジオーン",
+    "id": "garganacl"
+  },
+  {
+    "line": 610,
+    "num": 936,
+    "name": "グレンアルマ",
+    "id": "armarouge"
+  },
+  {
+    "line": 611,
+    "num": 937,
+    "name": "ソウブレイズ",
+    "id": "ceruledge"
+  },
+  {
+    "line": 612,
+    "num": 939,
+    "name": "ハラバリー",
+    "id": "bellibolt"
+  },
+  {
+    "line": 613,
+    "num": 943,
+    "name": "マフィティフ",
+    "id": "mabosstiff"
+  },
+  {
+    "line": 614,
+    "num": 952,
+    "name": "スコヴィラン",
+    "id": "scovillain"
+  },
+  {
+    "line": 615,
+    "num": 952,
+    "name": "メガスコヴィラン",
+    "id": "scovillainmega"
+  },
+  {
+    "line": 616,
+    "num": 956,
+    "name": "クエスパトラ",
+    "id": "espathra"
+  },
+  {
+    "line": 617,
+    "num": 959,
+    "name": "デカヌチャン",
+    "id": "tinkaton"
+  },
+  {
+    "line": 618,
+    "num": 964,
+    "name": "イルカマン(ナイーブ)",
+    "id": "palafin"
+  },
+  {
+    "line": 619,
+    "num": 964,
+    "name": "イルカマン(マイティ)",
+    "id": "palafinhero"
+  },
+  {
+    "line": 620,
+    "num": 968,
+    "name": "ミミズズ",
+    "id": "orthworm"
+  },
+  {
+    "line": 621,
+    "num": 970,
+    "name": "キラフロル",
+    "id": "glimmora"
+  },
+  {
+    "line": 622,
+    "num": 970,
+    "name": "メガキラフロル",
+    "id": "glimmoramega"
+  },
+  {
+    "line": 623,
+    "num": 972,
+    "name": "ハカドッグ",
+    "id": "houndstone"
+  },
+  {
+    "line": 624,
+    "num": 979,
+    "name": "コノヨザル",
+    "id": "annihilape"
+  },
+  {
+    "line": 625,
+    "num": 981,
+    "name": "リキキリン",
+    "id": "farigiraf"
+  },
+  {
+    "line": 626,
+    "num": 983,
+    "name": "ドドゲザン",
+    "id": "kingambit"
+  },
+  {
+    "line": 627,
+    "num": 998,
+    "name": "セグレイブ",
+    "id": "baxcalibur"
+  },
+  {
+    "line": 628,
+    "num": 998,
+    "name": "メガセグレイブ",
+    "id": "baxcaliburmega"
+  },
+  {
+    "line": 629,
+    "num": 1000,
+    "name": "サーフゴー",
+    "id": "gholdengo"
+  },
+  {
+    "line": 630,
+    "num": 1013,
+    "name": "ヤバソチャ",
+    "id": "sinistcha"
+  },
+  {
+    "line": 631,
+    "num": 1018,
+    "name": "ブリジュラス",
+    "id": "archaludon"
+  },
+  {
+    "line": 632,
+    "num": 1019,
+    "name": "カミツオロチ",
+    "id": "hydrapple"
+  },
+  {
+    "line": 633,
+    "num": 670,
+    "name": "フラエッテ(永遠の花)",
+    "id": "floetteeternal"
+  },
+  {
+    "line": 634,
+    "num": 670,
+    "name": "メガフラエッテ",
+    "id": "floettemega"
+  }
+]

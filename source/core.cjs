@@ -21,6 +21,8 @@ function blankProfile(id=''){
 }
 function validateProfile(p){
  if(!p||typeof p!=='object'||Array.isArray(p))throw Error('登録データの形式が不正です');
+ // Appearance aliases keep all registered calculation inputs; source objects are not mutated.
+ p={...p,species:DATA.formAliases?.[p.species]||p.species,form:DATA.formAliases?.[p.form]||p.form};
  if(!Array.isArray(p.points)||p.points.length!==6||!p.points.every(x=>Number.isInteger(x)&&x>=0&&x<=32)||p.points.reduce((a,b)=>a+b,0)>66)throw Error('能力ポイントは各0～32、合計66以下です');
  if(!DATA.natures.some(n=>n.name===p.nature))throw Error('性格が不正です');
  if(!Array.isArray(p.moves)||p.moves.length!==4||p.moves.some(m=>typeof m!=='string')||new Set(p.moves.filter(Boolean)).size!==p.moves.filter(Boolean).length)throw Error('技は重複なしの最大4つです');
