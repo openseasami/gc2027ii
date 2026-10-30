@@ -8,11 +8,12 @@
   "scripts": {
     "build": "node build.cjs",
     "data": "node source/prepare-data.cjs",
-    "test": "node tests/roster.cjs && node tests/unit.cjs && node tests/helping-hand.cjs && node tests/numeric.cjs && node tests/speed.cjs && node tests/multihit.cjs",
+    "test": "node tests/roster.cjs && node tests/usage.cjs && node tests/unit.cjs && node tests/helping-hand.cjs && node tests/numeric.cjs && node tests/speed.cjs && node tests/multihit.cjs",
     "test:browser": "python3 tests/browser.py",
     "report": "python3 source/generate-reports.py",
     "package": "python3 source/package-release.py",
-    "audit:roster": "python3 source/audit-mc-roster.py"
+    "audit:roster": "python3 source/audit-mc-roster.py",
+    "data:usage": "node source/prepare-usage.cjs"
   },
   "keywords": [],
   "author": "",

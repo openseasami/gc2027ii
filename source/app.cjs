@@ -1,7 +1,6 @@
 'use strict';
-const K=require('./core.cjs'),D=K.DATA,IMAGES=require('./images.json');
+const K=require('./core.cjs'),D=K.DATA,IMAGES=require('./images.json'),{typeColor}=require('./colors.cjs');
 const $=id=>document.getElementById(id),esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const TYPE_COLORS={'ノーマル':'#82909a','ほのお':'#d55840','みず':'#397bc7','でんき':'#bc980d','くさ':'#39965b','こおり':'#408f9b','かくとう':'#ae483a','どく':'#924ca4','じめん':'#b17d35','ひこう':'#667fc8','エスパー':'#a64780','むし':'#78933a','いわ':'#887b58','ゴースト':'#66538e','ドラゴン':'#5855a9','あく':'#55505d','はがね':'#547f89','フェアリー':'#bb6ba7'};
 const KEY='gc2027ii-viewer-v9-team',BACKUP=KEY+'-previous';
 let team,loadNotice='',loadFailed=false,originalSaved=null;
 try{
@@ -62,24 +61,28 @@ function renderTeam(){
  }).join('');
 }
 function shortLabel(label){if(label.startsWith('基準：'))return '基準 '+label.slice(3).split('・')[0]+'／0P';if(label.includes('HP1/3'))return label.split('有効')[0]+' HP≤1/3';if(label.includes('HP満タン'))return label.split('有効')[0]+' 満タン';return label.replace(/／.*$/,'').replace('攻撃側 ','').replace('・性格補正＋','＋').replace('・耐久32＋',' 耐久32＋').replace('所持','');}
-function damageBar(r){const [min,max]=r.percent,cap=v=>Math.max(0,Math.min(100,v));return '<div class="damage-bar" role="img" aria-label="命中時 '+min.toFixed(1)+'～'+max.toFixed(1)+'%、最大HP100%を基準" title="実ダメージ '+r.range.join('～')+' / 最大HP '+r.hp+'" data-min="'+min+'" data-max="'+max+'"><span class="damage-bar-max" style="width:'+cap(max)+'%"></span><span class="damage-bar-min" style="width:'+cap(min)+'%;background:'+heat(max+45)+'"></span></div>';}
-function patternHTML(r,baseType){if(r.unsupported)return '<div class="condition unsupported">未計算：'+esc(r.unsupported)+'</div>';return '<div class="condition"><span title="'+esc(r.label)+'">'+esc(shortLabel(r.label))+(r.hpAssumption?' <small>'+esc(r.hpAssumption)+'</small>':'')+(r.actualType&&r.actualType!==baseType?' <small>'+esc(D.types[r.actualType]||r.actualType)+'</small>':'')+'</span><strong style="background:'+heat(r.percent[1])+'">'+r.percent.map(n=>n.toFixed(1)).join('–')+'%</strong>'+damageBar(r)+'</div>';}
+function damageBar(r,baseType){const [min,max]=r.percent,cap=v=>Math.max(0,Math.min(100,v)),type=r.actualType||baseType;return '<div class="damage-bar" role="img" aria-label="'+esc(D.types[type]||type)+'タイプ・命中時 '+min.toFixed(1)+'～'+max.toFixed(1)+'%、最大HP100%を基準" title="実ダメージ '+r.range.join('～')+' / 最大HP '+r.hp+'" data-type="'+esc(type)+'" data-min="'+min+'" data-max="'+max+'" style="--damage-type:'+typeColor(type)+'"><span class="damage-bar-max" style="width:'+cap(max)+'%"></span><span class="damage-bar-min" style="width:'+cap(min)+'%"></span></div>';}
+function patternHTML(r,baseType){if(r.unsupported)return '<div class="condition unsupported">未計算：'+esc(r.unsupported)+'</div>';return '<div class="condition"><span title="'+esc(r.label)+'">'+esc(shortLabel(r.label))+(r.hpAssumption?' <small>'+esc(r.hpAssumption)+'</small>':'')+(r.actualType&&r.actualType!==baseType?' <small>'+esc(D.types[r.actualType]||r.actualType)+'</small>':'')+'</span><strong style="background:'+heat(r.percent[1])+'">'+r.percent.map(n=>n.toFixed(1)).join('–')+'%</strong>'+damageBar(r,baseType)+'</div>';}
 function heat(v){const x=Math.min(v,160)/160;return 'rgb('+[54,74,90].map((n,i)=>Math.round(n+([154,18,27][i]-n)*x)).join(',')+')';}
 function rowData(a,b,move,ctx){const key=JSON.stringify([revision,a,b,move,ctx]);if(!cache.has(key))cache.set(key,K.scenarios(a,b,move,ctx));return cache.get(key);}
 function damageCard(a,b,moves,ctx){
- moves=K.damageMoves(moves);
+ const selection=a.side==='opp'?K.opponentMoves(a.id):null;
+ moves=selection?selection.ranked.map(m=>m.id):K.damageMoves(moves);
  const sa=K.species(a.id),sb=K.species(b.id),baseClasses=(a.side==='own'?'ally':'enemy');
  const boosted=a.active!==false&&a.helpingHand===true;
- return '<div class="calc" data-pair="'+esc(a.key+'-'+b.key)+'" data-attacker-active="'+(a.active!==false)+'" data-helping-hand="'+boosted+'"><div class="combathead">'+spriteHTML(a.id)+ '<span class="'+baseClasses+'-name">'+esc(sa.jp)+'</span><span>→</span>'+spriteHTML(b.id)+'<span class="'+(b.side==='own'?'ally':'enemy')+'-name">'+esc(sb.jp)+'</span></div>'+(boosted?'<div class="helping-hand-badge">てだすけ補正中</div>':'')+(!moves.length?'<p>攻撃技未登録（変化技は計算欄に表示しません）</p>':moves.map(id=>{
+ const drawMove=id=>{
  const m=D.moves[id];if(!m)return '';
- const result=rowData(a,b,id,ctx);return '<div class="damage-move-block"><button class="move" data-detail-move="'+id+'" style="background:'+TYPE_COLORS[D.types[m.type]]+'">'+esc(m.jp)+' <small>基本 '+esc(m.category==='Physical'?'物理':m.category==='Special'?'特殊':'変化')+' '+m.power+'</small></button>'+result.display.map(r=>patternHTML(r,m.type)).join('')+'<details class="condition-details"><summary>全条件・急所参考・16乱数</summary><div class="hint">'+esc(result.assumptions)+'</div>'+result.all.map(r=>patternHTML(r)+(r.unsupported?'':'<div class="rolls">'+r.hitRolls.map((rolls,h)=>'打撃'+(h+1)+': '+rolls.join(', ')).join('<br>')+'<br>実ダメージ '+r.range.join('–')+' / 最大HP '+r.hp+(r.equivalent.length?'<br>同値条件：'+esc(r.equivalent.join('／')):'')+'</div>')).join('')+criticalHTML(a,b,id,ctx)+'</details></div>';
- }).join(''))+'</div>';
+ const rank=selection?.ranked.find(r=>r.id===id),result=rowData(a,b,id,ctx);return '<div class="damage-move-block" '+(rank?'data-attack-rank="'+rank.rank+'" data-source-rank="'+rank.sourceRank+'"':'')+'><button class="move" data-detail-move="'+id+'" style="background:'+typeColor(m.type)+'">'+(rank?rank.rank+'. ':'')+esc(m.jp)+' <small>基本 '+esc(m.category==='Physical'?'物理':'特殊')+' '+m.power+(rank?'／採用 '+rank.pct.toFixed(1)+'%':'')+'</small></button>'+result.display.map(r=>patternHTML(r,m.type)).join('')+'<details class="condition-details"><summary>全条件・急所参考・16乱数</summary><div class="hint">'+esc(result.assumptions)+'</div>'+result.all.map(r=>patternHTML(r,m.type)+(r.unsupported?'':'<div class="rolls">'+r.hitRolls.map((rolls,h)=>'打撃'+(h+1)+': '+rolls.join(', ')).join('<br>')+'<br>実ダメージ '+r.range.join('–')+' / 最大HP '+r.hp+(r.equivalent.length?'<br>同値条件：'+esc(r.equivalent.join('／')):'')+'</div>')).join('')+criticalHTML(a,b,id,ctx)+'</details></div>';
+ };
+ const notice=selection?'<p class="usage-note">'+(selection.available?'攻撃技上位5件／PokéKit '+esc(K.USAGE.month)+'・M-Cダブル<br>公開10技から変化技を除外：攻撃技'+moves.length+'件。未掲載分は補完しません。':'この形態の技採用率は未取得です。通常形態・別メガの技で代用しません。')+'</p>':'';
+ const extra=selection?.extra.length?'<details class="additional-attacks" data-move-list="'+esc(a.key+'-'+a.id+'-'+b.key+'-'+b.id)+'"><summary>攻撃技6～10位（掲載'+selection.extra.length+'件）</summary><div class="extra-moves">'+selection.extra.map(m=>drawMove(m.id)).join('')+'</div></details>':'';
+ return '<div class="calc" data-attack-side="'+a.side+'" data-pair="'+esc(a.key+'-'+b.key)+'" data-attacker-active="'+(a.active!==false)+'" data-helping-hand="'+boosted+'"><div class="combathead">'+spriteHTML(a.id)+ '<span class="'+baseClasses+'-name">'+esc(sa.jp)+'</span><span>→</span>'+spriteHTML(b.id)+'<span class="'+(b.side==='own'?'ally':'enemy')+'-name">'+esc(sb.jp)+'</span></div>'+(boosted?'<div class="helping-hand-badge">てだすけ補正中</div>':'')+notice+(!moves.length?(selection?'':'<p>攻撃技未登録（変化技は計算欄に表示しません）</p>'):moves.slice(0,selection?5:4).map(drawMove).join(''))+extra+'</div>';
 }
-function criticalHTML(a,b,id,ctx){try{const r=K.compute(a,b,id,ctx,{crit:true});if(r.unsupported)return '';return '<div class="critical"><b>'+(r.crit?'急所成立の参考（基準配分・特性条件）':'基準の特性等により急所補正なし')+'</b><br>'+r.percent.map(x=>x.toFixed(1)).join('–')+'%'+damageBar(r)+'<span class="rolls">'+r.hitRolls.map(x=>x.join(', ')).join(' / ')+'</span></div>';}catch(e){return '<div class="unsupported">急所計算未確認</div>';}}
+function criticalHTML(a,b,id,ctx){try{const r=K.compute(a,b,id,ctx,{crit:true});if(r.unsupported)return '';return '<div class="critical"><b>'+(r.crit?'急所成立の参考（基準配分・特性条件）':'基準の特性等により急所補正なし')+'</b><br>'+r.percent.map(x=>x.toFixed(1)).join('–')+'%'+damageBar(r,D.moves[id].type)+'<span class="rolls">'+r.hitRolls.map(x=>x.join(', ')).join(' / ')+'</span></div>';}catch(e){return '<div class="unsupported">急所計算未確認</div>';}}
 function renderDamage(){const all=actors(),ctx=context();let html='';for(const side of ['own','opp']){
  let groups=[];for(let i=0;i<2;i++){let cards=[];for(let j=0;j<2;j++){
   const a=all.find(x=>x.key===side+i),b=all.find(x=>x.key===(side==='own'?'opp':'own')+j);if(all.length!==4||!a||!b){cards.push('<div class="calc">双方2体ずつを登録・選択すると、対象2体条件で計算します。</div>');continue;}
-  const moves=side==='own'?team[a.profile].moves.filter(Boolean):K.species(a.id).major.filter(m=>D.moves[m]?.category!=='Status').slice(0,4);
+  const moves=side==='own'?team[a.profile].moves.filter(Boolean):[];
   cards.push(damageCard(a,b,moves,ctx));
  }
  const a=all.find(x=>x.key===side+i),on=state.helpingHand[side][i],label=(side==='own'?'味方':'相手')+['A','B'][i];
@@ -90,8 +93,9 @@ function renderDamage(){const all=actors(),ctx=context();let html='';for(const s
 }
 function renderDetails(){
  const ctx=context(),all=actors();$('detailsGrid').innerHTML=all.map(a=>{
-  const s=K.species(a.id),range=K.speedRange(a,ctx);
-  return '<div class="card '+a.side+'"><div class="head">'+spriteHTML(a.id)+'<b>'+esc(s.jp)+'</b></div><p class="stat">種族値 '+K.STATS.map(k=>k.toUpperCase()+' '+s.stats[k]).join(' / ')+'</p><p>素早さ実数値の候補：'+range.join('–')+'<small>素早さランク0。相手は0～32P・性格±・スカーフ候補を含む条件範囲</small></p><b>v8収録候補／習得候補6技（統計未取得）</b><div class="mini-grid">'+s.major.map(id=>'<button class="move" data-detail-move="'+id+'" style="background:'+TYPE_COLORS[D.types[D.moves[id]?.type]]+'">'+esc(D.moves[id]?.jp||id)+'</button>').join('')+'</div><p>特性候補：'+esc(s.abilities.map(K.abilityJP).join('／'))+'<br><small>採用率：統計未取得。候補を確率とは扱いません。</small></p><p>持ち物採用率：統計未取得</p></div>';
+  const s=K.species(a.id),range=K.speedRange(a,ctx),usage=K.USAGE.records[s.id];
+  const candidates=usage?usage.moves.map(m=>'<button class="move" data-detail-move="'+m.id+'" style="background:'+typeColor(D.moves[m.id]?.type)+'">'+esc(D.moves[m.id]?.jp||m.id)+' '+m.pct.toFixed(1)+'%</button>').join(''):'';
+  return '<div class="card '+a.side+'"><div class="head">'+spriteHTML(a.id)+'<b>'+esc(s.jp)+'</b></div><p class="stat">種族値 '+K.STATS.map(k=>k.toUpperCase()+' '+s.stats[k]).join(' / ')+'</p><p>素早さ実数値の候補：'+range.join('–')+'<small>素早さランク0。相手は0～32P・性格±・スカーフ候補を含む条件範囲</small></p><b>'+(usage?'技採用率（変化技を含む公開10技）':'この形態の技採用率は未取得')+'</b><div class="mini-grid">'+candidates+'</div>'+(usage?'<p class="usage-note">PokéKit '+esc(K.USAGE.month)+'／M-Cダブル。Showdownラダーの参考統計です。</p>':'<p>別形態の採用率で代用しません。</p>')+'<p>特性候補：'+esc(s.abilities.map(K.abilityJP).join('／'))+'<br><small>特性採用率：統計未取得。候補を確率とは扱いません。</small></p><p>持ち物採用率：統計未取得</p></div>';
  }).join('');
  const own=all.filter(a=>a.side==='own'),opp=all.filter(a=>a.side==='opp');
  $('speedSummary').innerHTML=own.flatMap(a=>opp.map(b=>{const ar=K.speedRange(a,ctx),br=K.speedRange(b,ctx);let rel=ar[0]>br[1]?'味方が速い仮定':ar[1]<br[0]?'相手が速い仮定':'区間が重複・前後未確定';if(state.tr)rel=ar[0]>br[1]?'TR下では相手が先の仮定':ar[1]<br[0]?'TR下では味方が先の仮定':'TR下でも前後未確定';return '<span>'+esc(K.species(a.id).jp+' '+ar.join('–')+' / '+K.species(b.id).jp+' '+br.join('–')+'：'+rel)+'</span>';})).join('');
@@ -102,12 +106,12 @@ function renderBench(){
  const active=actors(),ctx=context(),own=team.map((p,i)=>p.species&&!state.own.includes(i)?benchActor('own',i):null).filter(Boolean),opp=state.enemyBench.map((id,i)=>id&&!state.opp.includes(id)?benchActor('opp',i):null).filter(Boolean);
  let html='';for(const [attackers,defenders]of [[own,active.filter(a=>a.side==='opp')],[opp,active.filter(a=>a.side==='own')],[active.filter(a=>a.side==='own'),opp],[active.filter(a=>a.side==='opp'),own]]){
   if(!attackers.length||!defenders.length)continue;
-  html+='<div class="bench-matrix">'+attackers.flatMap(a=>defenders.map(b=>{const moves=a.side==='own'?team[a.profile].moves.filter(Boolean):K.species(a.id).major.filter(m=>D.moves[m]?.category!=='Status').slice(0,4);return damageCard(a,b,moves,ctx);})).join('')+'</div>';
+  html+='<div class="bench-matrix">'+attackers.flatMap(a=>defenders.map(b=>{const moves=a.side==='own'?team[a.profile].moves.filter(Boolean):[];return damageCard(a,b,moves,ctx);})).join('')+'</div>';
  }$('benchCalc').innerHTML=html||'<p>控えを登録すると比較できます。</p>';
 }
 function render(includeTeam=false){
- const started=performance.now();normalizedOwn();renderCount++;cache.clear();summaryTeam();if(includeTeam)renderTeam();$('own').innerHTML=[0,1].map(i=>activeCard('own',i)).join('');$('opp').innerHTML=[0,1].map(i=>activeCard('opp',i)).join('');
- renderDamage();renderDetails();if($('benchSettings').open)renderBench();$('updateStatus').textContent='条件反映済み';$('updateStatus').dataset.revision=String(revision);$('updateStatus').dataset.ms=(performance.now()-started).toFixed(1);
+ const started=performance.now(),openLists=new Set([...document.querySelectorAll('details[data-move-list][open]')].map(e=>e.dataset.moveList));normalizedOwn();renderCount++;cache.clear();summaryTeam();if(includeTeam)renderTeam();$('own').innerHTML=[0,1].map(i=>activeCard('own',i)).join('');$('opp').innerHTML=[0,1].map(i=>activeCard('opp',i)).join('');
+ renderDamage();renderDetails();if($('benchSettings').open)renderBench();for(const list of document.querySelectorAll('details[data-move-list]'))if(openLists.has(list.dataset.moveList))list.open=true;$('updateStatus').textContent='条件反映済み';$('updateStatus').dataset.revision=String(revision);$('updateStatus').dataset.ms=(performance.now()-started).toFixed(1);
 }
 function openPicker(kind,index){pickerTarget={kind,index};$('pickerSearch').value='';drawPicker();$('pokemonPickerDialog').showModal();$('pickerSearch').focus();}
 function drawPicker(){if(!pickerTarget)return;const q=$('pickerSearch').value.trim().toLowerCase();const all=D.species.filter(s=>(s.jp+' '+s.name).toLowerCase().includes(q));$('pickerCount').textContent=all.length+'形態（非公式資料でM-C比較照合）';$('pickerGrid').innerHTML='<button class="picker-choice" data-pick="">未選択</button>'+all.map(s=>'<button class="picker-choice" data-pick="'+s.id+'">'+spriteHTML(s.id)+'<span>'+esc(s.jp)+(s.catalogKind==='battle-reference'?'<small>戦闘中の参照形態</small>':'')+'</span></button>').join('');}

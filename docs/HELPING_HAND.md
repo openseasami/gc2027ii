@@ -33,3 +33,7 @@
 `BROWSER_RESULTS.json`：実Chromiumと実Edge Linuxで4ボタン、両対面、敵味方の独立、控え32対面、各344の主表示バーの数値と幅、0・100%超、変化技登録後の非表示、下部候補の保持、設定の初期化とチームJSON不変を確認。ON中の天候・フィールド・メガ・ランク・火傷の切替も実操作しました。実ZIPを展開した試験は隣接する `ARTIFACT_VERIFICATION.json` に記録します。
 
 実機計算・公式本文取得は、以前のユーザー指示どおり判定条件に戻していません。全戦闘仕様の `completion:false` は維持し、今回の実装・検証範囲の完了と区別します。
+
+## 2026-10-30 表示更新
+
+バーの内部色は技タイプ色、枠は味方攻撃が青・相手攻撃が赤に更新しました。後続のUSAGE_MOVES.mdを参照。バー件数は技一覧変更により変わるため、現在の実行件数はBROWSER_RESULTS.jsonのhelpingHand.damageBarsBefore/Afterを参照します。

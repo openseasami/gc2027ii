@@ -1,0 +1,16 @@
+{
+  "completion": false,
+  "initialTestFailures": [
+    {
+      "test": "Existing browser condition de-duplication assertion",
+      "cause": "inner_text on new folded rows returns empty text; assertion adapted to text_content to validate hidden calculation data too",
+      "runtimeBug": false
+    },
+    {
+      "test": "New palette coverage assertion",
+      "cause": "Some pre-existing unsupported move records have no type; assertion checks neutral fallback for them without changing existing data",
+      "runtimeBug": false
+    }
+  ],
+  "runtimeTestFailures": []
+}

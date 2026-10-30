@@ -1,6 +1,7 @@
 'use strict';
 const C=require('@smogon/calc'), U=require('@smogon/calc/dist/mechanics/util');
 const DATA=require('./data.json'), G=C.Generations.get(0);
+const USAGE=require('./usage.json');
 const BY_ID=Object.fromEntries(DATA.species.map(s=>[s.id,s]));
 const STATS=['hp','atk','def','spa','spd','spe'];
 const WEATHER={none:undefined,sun:'Sun',rain:'Rain',sand:'Sand',snow:'Snow'};
@@ -13,6 +14,12 @@ const EXCLUDED_MOVES={flail:'HP依存威力を確定しないため未計算',re
 const abilityJP=n=>DATA.abilities.find(a=>a.name===n)?.jp||n||'なし';
 const itemJP=n=>DATA.items.find(i=>i.name===n)?.jp||n||'なし';
 const damageMoves=ids=>[...new Set(ids)].filter(id=>DATA.moves[id]&&['Physical','Special'].includes(DATA.moves[id].category));
+function opponentMoves(id){
+ const s=species(id),record=USAGE.records[id];
+ // Stable source order breaks equal percentages; filter before taking the first five.
+ const ranked=(record?.moves||[]).filter(m=>m.pct>0&&s.moves.includes(m.id)&&damageMoves([m.id]).length).map((m,index)=>({...m,index})).sort((a,b)=>b.pct-a.pct||a.index-b.index).slice(0,10).map((m,index)=>({id:m.id,pct:m.pct,sourceRank:m.sourceRank,rank:index+1}));
+ return {available:!!record,ranked,main:ranked.slice(0,5),extra:ranked.slice(5,10)};
+}
 function species(id){if(!Object.hasOwn(BY_ID,id))throw Error('未登録のポケモン・形態です');return BY_ID[id];}
 function family(id){const s=species(id);return DATA.species.filter(x=>x.id===s.baseId||x.baseId===s.baseId);}
 function blankProfile(id=''){
@@ -177,4 +184,4 @@ function migrateV8(names,points){
 function exportTeam(team){return {format:'GC2027II-viewer-team',version:9,team:validateTeam(team)};}
 function importTeam(payload){if(payload?.format==='GC2027II-viewer-team'&&payload.version===8){if(!payload.team||!Array.isArray(payload.team))throw Error('v8の登録配列がありません');return migrateV8(payload.team,payload.points||{});}
  if(!payload||payload.format!=='GC2027II-viewer-team'||payload.version!==9)throw Error('ビューアv9形式のJSONではありません');return validateTeam(payload.team);}
-module.exports={DATA,BY_ID,STATS,HISTORY,FULL_HP,LOW_HP,SEEDS,EXCLUDED_MOVES,G,C,species,family,blankProfile,validateProfile,validateTeam,actorFromProfile,unknownActor,compute,scenarios,statValues,speedRange,migrateV8,exportTeam,importTeam,abilityJP,itemJP,activeField,damageMoves};
+module.exports={DATA,USAGE,BY_ID,STATS,HISTORY,FULL_HP,LOW_HP,SEEDS,EXCLUDED_MOVES,G,C,species,family,blankProfile,validateProfile,validateTeam,actorFromProfile,unknownActor,compute,scenarios,statValues,speedRange,migrateV8,exportTeam,importTeam,abilityJP,itemJP,activeField,damageMoves,opponentMoves};

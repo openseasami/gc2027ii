@@ -2,7 +2,7 @@
   "completion": false,
   "passed": true,
   "artifact": {
-    "htmlSha256": "9d68ad43d97429963a7ac50c4a7c76d6fe697fe0ca0af61fbe8fa0c8c61f5527"
+    "htmlSha256": "06f66e95bbe1cd9047721ce7d3ec28944b3292781d15fd37d8fe67989dd92e89"
   },
   "nativeWindows": false,
   "fileProtocol": "Not executed: managed Chromium blocked file navigation; no policy bypass attempted",
@@ -112,13 +112,13 @@
         "opponent burn"
       ],
       "updateMs": [
-        29.0,
-        23.3,
-        22.7,
-        27.8,
-        26.8,
-        23.7,
-        28.2
+        38.4,
+        43.8,
+        42.4,
+        39.0,
+        35.1,
+        34.7,
+        37.0
       ],
       "legacyDownload": true,
       "sameOriginV8Migration": true,
@@ -133,14 +133,14 @@
         "benchAttackerUnaffected": true,
         "weatherTerrainMegaRankBurnWhileOn": true,
         "damageBarsBefore": {
-          "count": 344,
-          "immune": 9,
-          "over100": 34
+          "count": 348,
+          "immune": 11,
+          "over100": 24
         },
         "damageBarsAfter": {
-          "count": 344,
-          "immune": 9,
-          "over100": 62
+          "count": 348,
+          "immune": 11,
+          "over100": 59
         },
         "statusAttacksHidden": true,
         "statusCandidatesKept": true,
@@ -148,6 +148,233 @@
         "recipientChangeResets": true,
         "conditionReset": true,
         "teamJsonUnchanged": true
+      },
+      "usage": {
+        "passed": true,
+        "formChecks": [
+          {
+            "form": "garchompmegaz",
+            "pair": 0,
+            "main": [
+              "powergem",
+              "earthpower",
+              "dracometeor",
+              "flamethrower",
+              "dragonpulse"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "form": "garchompmegaz",
+            "pair": 1,
+            "main": [
+              "powergem",
+              "earthpower",
+              "dracometeor",
+              "flamethrower",
+              "dragonpulse"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "form": "garchomp",
+            "pair": 0,
+            "main": [
+              "dragonclaw",
+              "rockslide",
+              "stompingtantrum",
+              "earthquake",
+              "rocktomb"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "form": "garchomp",
+            "pair": 1,
+            "main": [
+              "dragonclaw",
+              "rockslide",
+              "stompingtantrum",
+              "earthquake",
+              "rocktomb"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "form": "garchompmega",
+            "pair": 0,
+            "main": [
+              "earthquake",
+              "earthpower",
+              "rockslide",
+              "dragonclaw",
+              "dracometeor"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "form": "garchompmega",
+            "pair": 1,
+            "main": [
+              "earthquake",
+              "earthpower",
+              "rockslide",
+              "dragonclaw",
+              "dracometeor"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "form": "garchompmegaz",
+            "pair": 0,
+            "main": [
+              "powergem",
+              "earthpower",
+              "dracometeor",
+              "flamethrower",
+              "dragonpulse"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "form": "garchompmegaz",
+            "pair": 1,
+            "main": [
+              "powergem",
+              "earthpower",
+              "dracometeor",
+              "flamethrower",
+              "dragonpulse"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        ],
+        "foldedByDefault": true,
+        "extraRecalculatesAndStaysOpen": true,
+        "statusExcluded": true,
+        "benchLists": [
+          {
+            "pair": "oppBench0-own0",
+            "count": 5,
+            "extra": 3
+          },
+          {
+            "pair": "oppBench0-own1",
+            "count": 5,
+            "extra": 3
+          },
+          {
+            "pair": "oppBench1-own0",
+            "count": 5,
+            "extra": 0
+          },
+          {
+            "pair": "oppBench1-own1",
+            "count": 5,
+            "extra": 0
+          },
+          {
+            "pair": "oppBench2-own0",
+            "count": 0,
+            "extra": 0
+          },
+          {
+            "pair": "oppBench2-own1",
+            "count": 0,
+            "extra": 0
+          },
+          {
+            "pair": "oppBench3-own0",
+            "count": 0,
+            "extra": 0
+          },
+          {
+            "pair": "oppBench3-own1",
+            "count": 0,
+            "extra": 0
+          },
+          {
+            "pair": "opp0-ownBench1",
+            "count": 5,
+            "extra": 2
+          },
+          {
+            "pair": "opp0-ownBench2",
+            "count": 5,
+            "extra": 2
+          },
+          {
+            "pair": "opp0-ownBench4",
+            "count": 5,
+            "extra": 2
+          },
+          {
+            "pair": "opp0-ownBench5",
+            "count": 5,
+            "extra": 2
+          },
+          {
+            "pair": "opp1-ownBench1",
+            "count": 5,
+            "extra": 4
+          },
+          {
+            "pair": "opp1-ownBench2",
+            "count": 5,
+            "extra": 4
+          },
+          {
+            "pair": "opp1-ownBench4",
+            "count": 5,
+            "extra": 4
+          },
+          {
+            "pair": "opp1-ownBench5",
+            "count": 5,
+            "extra": 4
+          }
+        ],
+        "explicitMissingForm": "clefablemega",
+        "directionalColors": true,
+        "typeColoredBars": 1209,
+        "liquidVoiceTypeColor": true,
+        "savedTeamUnchanged": true
       },
       "mcPickerRestricted": true,
       "appearanceJsonMigration": true,
@@ -269,13 +496,13 @@
         "opponent burn"
       ],
       "updateMs": [
-        24.4,
-        25.6,
-        23.6,
-        24.1,
-        31.4,
-        25.6,
-        26.7
+        45.7,
+        29.9,
+        35.4,
+        47.2,
+        44.5,
+        55.0,
+        57.4
       ],
       "benchComparisons": 32,
       "helpingHand": {
@@ -288,14 +515,14 @@
         "benchAttackerUnaffected": true,
         "weatherTerrainMegaRankBurnWhileOn": true,
         "damageBarsBefore": {
-          "count": 344,
-          "immune": 9,
-          "over100": 34
+          "count": 348,
+          "immune": 11,
+          "over100": 24
         },
         "damageBarsAfter": {
-          "count": 344,
-          "immune": 9,
-          "over100": 62
+          "count": 348,
+          "immune": 11,
+          "over100": 59
         },
         "statusAttacksHidden": true,
         "statusCandidatesKept": true,
@@ -303,6 +530,233 @@
         "recipientChangeResets": true,
         "conditionReset": true,
         "teamJsonUnchanged": true
+      },
+      "usage": {
+        "passed": true,
+        "formChecks": [
+          {
+            "form": "garchompmegaz",
+            "pair": 0,
+            "main": [
+              "powergem",
+              "earthpower",
+              "dracometeor",
+              "flamethrower",
+              "dragonpulse"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "form": "garchompmegaz",
+            "pair": 1,
+            "main": [
+              "powergem",
+              "earthpower",
+              "dracometeor",
+              "flamethrower",
+              "dragonpulse"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "form": "garchomp",
+            "pair": 0,
+            "main": [
+              "dragonclaw",
+              "rockslide",
+              "stompingtantrum",
+              "earthquake",
+              "rocktomb"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "form": "garchomp",
+            "pair": 1,
+            "main": [
+              "dragonclaw",
+              "rockslide",
+              "stompingtantrum",
+              "earthquake",
+              "rocktomb"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "form": "garchompmega",
+            "pair": 0,
+            "main": [
+              "earthquake",
+              "earthpower",
+              "rockslide",
+              "dragonclaw",
+              "dracometeor"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "form": "garchompmega",
+            "pair": 1,
+            "main": [
+              "earthquake",
+              "earthpower",
+              "rockslide",
+              "dragonclaw",
+              "dracometeor"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "form": "garchompmegaz",
+            "pair": 0,
+            "main": [
+              "powergem",
+              "earthpower",
+              "dracometeor",
+              "flamethrower",
+              "dragonpulse"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "form": "garchompmegaz",
+            "pair": 1,
+            "main": [
+              "powergem",
+              "earthpower",
+              "dracometeor",
+              "flamethrower",
+              "dragonpulse"
+            ],
+            "extraRanks": [
+              6,
+              7,
+              8,
+              9
+            ]
+          }
+        ],
+        "foldedByDefault": true,
+        "extraRecalculatesAndStaysOpen": true,
+        "statusExcluded": true,
+        "benchLists": [
+          {
+            "pair": "oppBench0-own0",
+            "count": 5,
+            "extra": 3
+          },
+          {
+            "pair": "oppBench0-own1",
+            "count": 5,
+            "extra": 3
+          },
+          {
+            "pair": "oppBench1-own0",
+            "count": 5,
+            "extra": 0
+          },
+          {
+            "pair": "oppBench1-own1",
+            "count": 5,
+            "extra": 0
+          },
+          {
+            "pair": "oppBench2-own0",
+            "count": 0,
+            "extra": 0
+          },
+          {
+            "pair": "oppBench2-own1",
+            "count": 0,
+            "extra": 0
+          },
+          {
+            "pair": "oppBench3-own0",
+            "count": 0,
+            "extra": 0
+          },
+          {
+            "pair": "oppBench3-own1",
+            "count": 0,
+            "extra": 0
+          },
+          {
+            "pair": "opp0-ownBench1",
+            "count": 5,
+            "extra": 2
+          },
+          {
+            "pair": "opp0-ownBench2",
+            "count": 5,
+            "extra": 2
+          },
+          {
+            "pair": "opp0-ownBench4",
+            "count": 5,
+            "extra": 2
+          },
+          {
+            "pair": "opp0-ownBench5",
+            "count": 5,
+            "extra": 2
+          },
+          {
+            "pair": "opp1-ownBench1",
+            "count": 5,
+            "extra": 4
+          },
+          {
+            "pair": "opp1-ownBench2",
+            "count": 5,
+            "extra": 4
+          },
+          {
+            "pair": "opp1-ownBench4",
+            "count": 5,
+            "extra": 4
+          },
+          {
+            "pair": "opp1-ownBench5",
+            "count": 5,
+            "extra": 4
+          }
+        ],
+        "explicitMissingForm": "clefablemega",
+        "directionalColors": true,
+        "typeColoredBars": 1209,
+        "liquidVoiceTypeColor": true,
+        "savedTeamUnchanged": true
       },
       "mcPickerRestricted": true,
       "appearanceJsonMigration": true,

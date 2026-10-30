@@ -1,0 +1,10 @@
+{
+  "source": "PokéKit",
+  "url": "https://poke.itlibra.com/opendata/usage-champions.json",
+  "licensePage": "https://poke.itlibra.com/ja/opendata",
+  "retrievedJST": "2026-10-30",
+  "method": "Supported web open tool; merged unique numbered lines 0..27618, verified no holes, parsed full JSON. No direct-network denial bypass or mass scraping.",
+  "rawJsonSha256": "dc7013f20074724d48ccf72b3296c6a79b88c1f2ef008e8cfca128762bade32e",
+  "attribution": "Smogon / Pokémon Showdown（集計元）・PokéKit（整形）",
+  "coverage": "150 exact forms; ten moves including Status; no base/Mega fallback; not official game statistics"
+}

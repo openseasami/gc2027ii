@@ -9,6 +9,7 @@ from http.server import SimpleHTTPRequestHandler,ThreadingHTTPServer
 from playwright.sync_api import sync_playwright
 import json,os,re,time,hashlib
 from helping_hand_browser import exercise_helping_hand
+from usage_browser import exercise_usage
 ROOT=Path(__file__).resolve().parent.parent
 ART=Path(os.environ.get('VIEWER_ARTIFACT_ROOT',ROOT/'release')).resolve()
 class Quiet(SimpleHTTPRequestHandler):
@@ -78,7 +79,7 @@ try:
    assert page.evaluate('ViewerApp.getState().state.ranks.own[0][0]')==1
    for block in page.locator('#calc .damage-move-block').all():
     rows=block.locator(':scope > .condition');assert rows.count()<=3
-    visible=[r.locator('strong').inner_text() for r in rows.all() if r.locator('strong').count()];assert len(visible)==len(set(visible)),visible
+    visible=[r.locator('strong').text_content() for r in rows.all() if r.locator('strong').count()];assert len(visible)==len(set(visible)),visible
    for width,height in [(1440,1080),(1366,768),(1280,720),(390,844)]:
     page.set_viewport_size({'width':width,'height':height});page.evaluate('scrollTo(0,0)')
     layout=page.evaluate('''()=>{const a=[...document.querySelectorAll('#opp .card')].map(e=>{let r=e.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width}}),calc=document.querySelector('#mainDamage').getBoundingClientRect();return {viewport:[innerWidth,innerHeight],horizontal:document.documentElement.scrollWidth>innerWidth+1,opp:a,damageTop:calc.y,brokenImages:[...document.images].filter(i=>!i.complete||i.naturalWidth===0).length,pairs:document.querySelectorAll('#calc .calc').length};}''')
@@ -87,13 +88,14 @@ try:
     if width>1000:assert layout['damageTop']<700,layout
     result['layouts'].append(layout)
    page.set_viewport_size({'width':1440,'height':1080});page.screenshot(path=str(ROOT/'work'/('viewer-'+brand.replace(' ','-')+'.png')),full_page=True)
-   page.locator('#pokemonDetails > summary').click();assert '統計未取得' in page.locator('#detailsGrid').inner_text();assert not re.search(r'\d+(?:\.\d+)?%',page.locator('#detailsGrid').inner_text())
+   page.locator('#pokemonDetails > summary').click();assert '統計未取得' in page.locator('#detailsGrid').inner_text();assert 'PokéKit' in page.locator('#detailsGrid').inner_text() and re.search(r'\d+(?:\.\d+)?%',page.locator('#detailsGrid').inner_text())
    page.locator('#benchSettings > summary').click()
    for i,(id,name) in enumerate([('tyranitar','バンギラス'),('pelipper','ペリッパー'),('metagross','メタグロス'),('gardevoir','サーナイト')]):
     page.locator(f'[data-picker="bench"][data-index="{i}"]').click();page.locator('#pickerSearch').fill(name);page.locator(f'#pickerGrid [data-pick="{id}"]').click()
    assert page.locator('#benchCalc .calc').count()==32
    result['benchComparisons']=32
    exercise_helping_hand(page,result,ROOT)
+   exercise_usage(page,result,ROOT)
    assert not re.search('確定KO|確定1発|推奨行動',page.locator('#calc').inner_text())
    if page.locator('#teamSettings').get_attribute('open') is None:page.locator('#teamSettings > summary').click()
    with page.expect_download() as download:page.locator('#exportJson').click()

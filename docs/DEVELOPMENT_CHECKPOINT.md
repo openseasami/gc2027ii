@@ -42,3 +42,7 @@ AI・完全試合・履歴・ターン・HP追跡は今回の対象外です。�
 ## てだすけ・バー対応
 
 source/core.cjsは攻撃者ごとのisHelpingHandを既存エンジンへ一度だけ渡します。source/app.cjsは4受け手の一時状態・2対面共有・控え分離・変化技除外・範囲バーを実装。tests/helping-hand.cjsの独立比較とtests/helping_hand_browser.pyの実DOM検証を通常の全試験へ組み込みました。JSONバージョンと登録データ、M-C対象は不変です。前版ZIPはrelease/archive/v9-MC-before-helping-handに保持しています。
+
+## 形態別採用技・折りたたみ・色（2026-10-30）
+
+source/usage.jsonはreference/usage/pokekit-champions-2026-09.jsonからnpm run data:usageで再生成。完全一致IDのみ、通常/メガ/Z間のフォールバックを禁止。変化技除外後の上位5攻撃技と6～10位の折りたたみをsource/app.cjsで表示。色はsource/colors.cjs共通。全356形態の照合はtests/usage.cjs、実操作はtests/usage_browser.py。公開150形態・変化技込み10技の上限を隠さず、未取得分を捏造しません。統計に含まれる種族値等は計算データへ反映しません。前のてだすけ版ZIPはrelease/archive/v9-before-usage-movesに保持します。

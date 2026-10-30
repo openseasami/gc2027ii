@@ -24,6 +24,7 @@ roster = read('reference/MC_ROSTER_AUDIT.json')
 roster_test = read('reference/ROSTER_RESULTS.json')
 acceptance = read('reference/ACCEPTANCE_SCOPE.json')
 hh = read('reference/HELPING_HAND_RESULTS.json')
+usage = read('reference/USAGE_RESULTS.json')
 count = len(d['species'])
 passed = [x for x in numeric['cases'] if x['status'] == 'passed']
 unverified = [x for x in numeric['cases'] if x['status'] == 'unverified']
@@ -88,16 +89,17 @@ md('docs/ABILITIES.md',f'''# 指定特性の実装・検証一覧
 
 core = (ROOT / 'source/core.cjs').read_text()
 excluded = dict(re.findall(r"(\w+):'([^']+)'",core.split('const EXCLUDED_MOVES={')[1].split('};')[0]))
-write('reference/UNCONFIRMED.json',dict(completion=False,acceptance=acceptance,officialEligibility='Not certified; official body retrieval excluded from acceptance by user',officialNumericFormula='Not a gate; real-game comparison excluded by user',rosterExcluded=[r for r in roster['entries'] if r['decision'].startswith('excluded')],appearanceConsolidated=roster['aliases'],uncomparedSpeciesAliases=data['uncomparedWithCalc'],cosmeticEnglishLabels=data['cosmeticLabelsInEnglish'],numericUnverified=unverified,unsupportedMoves=excluded,conditionalMoves=['brine','assurance','payback','revenge','avalanche','lashout','retaliate'],statistics='No source/date; uploaded v8 percentages withheld',windowsNative=False,fileProtocol='Managed policy blocked; no bypass',limitations=['Representative hypotheses are not all opponent spreads/items/ability combinations','Full accuracy/reaction/KO stopping of multi-hit moves unverified','Intact Disguise unimplemented','History, AI, prediction, residuals and full battles are out of scope']))
+write('reference/UNCONFIRMED.json',dict(completion=False,acceptance=acceptance,officialEligibility='Not certified; official body retrieval excluded from acceptance by user',officialNumericFormula='Not a gate; real-game comparison excluded by user',rosterExcluded=[r for r in roster['entries'] if r['decision'].startswith('excluded')],appearanceConsolidated=roster['aliases'],uncomparedSpeciesAliases=data['uncomparedWithCalc'],cosmeticEnglishLabels=data['cosmeticLabelsInEnglish'],numericUnverified=unverified,unsupportedMoves=excluded,conditionalMoves=['brine','assurance','payback','revenge','avalanche','lashout','retaliate'],statistics=dict(source='https://poke.itlibra.com/opendata/usage-champions.json',month='2026-09',forms=150,missingForms=206,sourceMoveLimit=10,reason='Published ten moves include Status; no invented entries. Old v8 percentages remain withheld.'),windowsNative=False,fileProtocol='Managed policy blocked; no bypass',limitations=['Representative hypotheses are not all opponent spreads/items/ability combinations','Full accuracy/reaction/KO stopping of multi-hit moves unverified','Intact Disguise unimplemented','History, AI, prediction, residuals and full battles are out of scope']))
 
-report = dict(completion=False,scopeCompletion=True,decision='てだすけ・バー表示・変化技除外と既存回帰の検証は合格',dateJST='2026-10-29',blockingConfirmation=[],acceptance=acceptance,roster=roster['counts'],helpingHand=dict(passed=hh['passed'],cases=len(hh['cases']),independentRolls=hh['comparisons'],checks=hh['checks'],roundingWitnesses=len(hh['roundingExamples'])),data=dict(candidateForms=count,mega=roster['counts']['mega'],statDataCompared=data['statsCompared'],statDataMismatches=len(data['mismatches']),uncomparedAliases=len(data['uncomparedWithCalc'])),unit=dict(groups=len(unit['checks']),statFormulaComparisons=unit['statComparisons'],passed=unit['passed']),numeric=dict(passedCases=len(passed),unverifiedCases=len(unverified),failedCases=len(numeric['failures']),independentRolls=numeric['comparisons'],distinctMoves=len(set(c['move'] for c in passed))),multi=dict(passed=multi['passed'],cases=len(multi['cases']),independentPerHitRolls=multi['comparisons']),speed=dict(passed=speed['passed'],cases=len(speed['cases']),unverified=len(speed['unverified'])),browser=dict(passed=browser['passed'],profiles=[dict(brand=p['brand'],version=p['version'],layouts=len(p['layouts']),updateMs=p['updateMs'],helpingHand=p['helpingHand']) for p in browser['profiles']],nativeWindows=False,externalOffline=True),htmlSha256=hashlib.sha256((ROOT/'release/GC2027II_Viewer_v9.html').read_bytes()).hexdigest())
+report = dict(completion=False,scopeCompletion=True,decision='形態別採用技・上位5件と6～10位折りたたみ・タイプ色と攻撃方向の縁取り、および既存回帰は合格（公開データの不足は明示）',dateJST='2026-10-30',usage=usage,blockingConfirmation=[],acceptance=acceptance,roster=roster['counts'],helpingHand=dict(passed=hh['passed'],cases=len(hh['cases']),independentRolls=hh['comparisons'],checks=hh['checks'],roundingWitnesses=len(hh['roundingExamples'])),data=dict(candidateForms=count,mega=roster['counts']['mega'],statDataCompared=data['statsCompared'],statDataMismatches=len(data['mismatches']),uncomparedAliases=len(data['uncomparedWithCalc'])),unit=dict(groups=len(unit['checks']),statFormulaComparisons=unit['statComparisons'],passed=unit['passed']),numeric=dict(passedCases=len(passed),unverifiedCases=len(unverified),failedCases=len(numeric['failures']),independentRolls=numeric['comparisons'],distinctMoves=len(set(c['move'] for c in passed))),multi=dict(passed=multi['passed'],cases=len(multi['cases']),independentPerHitRolls=multi['comparisons']),speed=dict(passed=speed['passed'],cases=len(speed['cases']),unverified=len(speed['unverified'])),browser=dict(passed=browser['passed'],profiles=[dict(brand=p['brand'],version=p['version'],layouts=len(p['layouts']),updateMs=p['updateMs'],helpingHand=p['helpingHand'],usage=p['usage']) for p in browser['profiles']],nativeWindows=False,externalOffline=True),htmlSha256=hashlib.sha256((ROOT/'release/GC2027II_Viewer_v9.html').read_bytes()).hexdigest())
+assert usage['passed'] and all(p.get('usage',{}).get('passed') for p in browser['profiles'])
 assert hh['passed'] and all(p.get('helpingHand',{}).get('passed') for p in browser['profiles'])
 assert roster_test['passed'] and unit['passed'] and numeric['passed'] and multi['passed'] and speed['passed'] and browser['passed']
 write('reference/VERIFICATION_REPORT.json',report)
 browser_text='\n'.join(f"- {p['brand']} {p['version']}：{len(p['layouts'])}画面幅、条件変更後の描画処理 {min(p['updateMs']):.1f}～{max(p['updateMs']):.1f} ms（自動計測）。" for p in browser['profiles'])
-md('docs/VERIFICATION_REPORT.md',f'''# 検証結果（2026-10-29 JST）
+md('docs/VERIFICATION_REPORT.md',f'''# 検証結果（2026-10-30 JST）
 
-**今回のてだすけ・ダメージバー・変化技除外と既存回帰の検証は合格。** ユーザーの指示で実機計算・公式本文取得を判定条件から除外しました。非公式資料基準です。全仕様の `completion: false` は維持し、今回範囲の `scopeCompletion: true` と区別します。
+**形態別採用技・上位5件と6～10位の折りたたみ・タイプ色と攻撃方向の縁取り、および既存回帰は合格。公開データの不足は明示し、全形態に攻撃技10件が揃ったとは判定しません。** ユーザーの指示で実機計算・公式本文取得を判定条件から除外しました。非公式資料基準です。全仕様の `completion: false` は維持し、今回範囲の `scopeCompletion: true` と区別します。
 
 | 試験 | 実行結果 |
 |---|---|
@@ -111,6 +113,7 @@ md('docs/VERIFICATION_REPORT.md',f'''# 検証結果（2026-10-29 JST）
 | 連続技 | {len(multi['cases'])}ケース・{multi['comparisons']}各ヒット乱数一致。1～最大ヒットの合算も一致 |
 | 素早さ | {len(speed['cases'])}独立ケース一致 |
 | てだすけ | {len(hh['cases'])}ケース・{hh['comparisons']:,}独立乱数一致。OFF→ON→OFF、補正順序・端数・連続技・発動する半減実等を含む |
+| 形態別の技採用率 | {usage['formsChecked']}形態の参照ルールを全件検証。150形態に統計あり、206形態は未取得。攻撃技5件以上128形態、折りたたみあり105形態 |
 | 実ブラウザ | Chromium・実Edge Linux、各4画面幅、両方成功 |
 
 ダメージ比較対象はPokémon Showdownの**Champions専用mod**、コミット `1242c1e2d9763ba5b85d33f13aecb89bae19ae3d` です。表示エンジンは `@smogon/calc@0.12.0` の世代0。通常第9世代をChampionsと同一視していません。数値比較は{len(set(c['move'] for c in passed))}種類の技を含みますが、全526技や全組合せの完了は主張しません。
@@ -121,7 +124,11 @@ md('docs/VERIFICATION_REPORT.md',f'''# 検証結果（2026-10-29 JST）
 
 攻撃者4体を独立に切り替え、各2対面と場の攻撃者から控えへの計算を共有します。控えの攻撃者へ流用しません。各ONは独立した仮定であり同一ターンでの成立を断定しません。
 
-バーは対象最大HP100%基準で最小・最大を描き、100%超は数値を保って端で止めます。両ブラウザで各344の主表示バーを照合し、0ダメージ・100%超・OFFへの復帰も確認しました。変化技は計算欄から除外し、登録・下部の候補一覧には残しています。詳しくはHELPING_HAND.md。
+バーは対象最大HP100%基準で最小・最大を描き、100%超は数値を保って端で止めます。両ブラウザで主表示バーを照合し、0ダメージ・100%超・OFFへの復帰も確認しました。変化技は計算欄から除外し、登録・下部の候補一覧には残しています。詳しくはHELPING_HAND.md。
+
+## 形態別の採用技と配色
+
+PokéKitの2026年9月M-Cダブルの公開オープンデータを単独の参照元としました。元データは変化技込みの上位10技に限られるため、攻撃技が10件に満たない点を明示します。未掲載の206形態は通常・別メガから補完しません。メガガブリアスZの主表示5技はすべて特殊技、じしんは攻撃技7位の折りたたみです。全件の順位照合に加え、実ブラウザで通常/メガ/Z切替、6位以下の計算・再計算、控え、青/赤の実CSS枠線、タイプ色、うるおいボイスによる水タイプ色を検証しました。保存JSONは不変です。詳しくはUSAGE_MOVES.md。
 
 ## M-C対象の確認
 

@@ -1,0 +1,991 @@
+{
+  "completion": false,
+  "passed": true,
+  "source": "https://poke.itlibra.com/opendata/usage-champions.json",
+  "month": "2026-09",
+  "formsChecked": 356,
+  "missingForms": [
+    "charizard",
+    "blastoise",
+    "beedrill",
+    "beedrillmega",
+    "pidgeot",
+    "pidgeotmega",
+    "arbok",
+    "pikachu",
+    "raichualola",
+    "clefablemega",
+    "wigglytuff",
+    "persian",
+    "persianalola",
+    "alakazam",
+    "machamp",
+    "victreebel",
+    "victreebelmega",
+    "slowbro",
+    "slowbrogalar",
+    "farfetchd",
+    "starmie",
+    "mrmime",
+    "pinsir",
+    "pinsirmega",
+    "tauros",
+    "taurospaldeaaqua",
+    "taurospaldeacombat",
+    "taurospaldeablaze",
+    "gyarados",
+    "ditto",
+    "vaporeon",
+    "jolteon",
+    "flareon",
+    "meganium",
+    "typhlosion",
+    "feraligatr",
+    "feraligatrmega",
+    "ariados",
+    "ampharos",
+    "azumarill",
+    "espeon",
+    "umbreon",
+    "slowking",
+    "forretress",
+    "steelix",
+    "steelixmega",
+    "qwilfish",
+    "heracross",
+    "heracrossmega",
+    "skarmory",
+    "houndoom",
+    "houndoommega",
+    "sceptile",
+    "gardevoir",
+    "sableyemega",
+    "mawile",
+    "aggron",
+    "aggronmega",
+    "medicham",
+    "medichammega",
+    "manectric",
+    "swalot",
+    "sharpedo",
+    "sharpedomega",
+    "camerupt",
+    "altariamega",
+    "castform",
+    "castformrainy",
+    "castformsunny",
+    "castformsnowy",
+    "banette",
+    "banettemega",
+    "chimecho",
+    "chimechomega",
+    "absol",
+    "absolmega",
+    "glalie",
+    "glaliemega",
+    "metagross",
+    "torterra",
+    "infernape",
+    "luxray",
+    "roserade",
+    "rampardos",
+    "bastiodon",
+    "lopunny",
+    "lucario",
+    "lucariomega",
+    "toxicroak",
+    "abomasnow",
+    "rhyperior",
+    "leafeon",
+    "glaceon",
+    "gliscor",
+    "gallademega",
+    "froslass",
+    "rotom",
+    "rotommow",
+    "rotomfan",
+    "rotomfrost",
+    "serperior",
+    "emboar",
+    "emboarmega",
+    "samurott",
+    "watchog",
+    "simisage",
+    "simisear",
+    "simipour",
+    "musharna",
+    "excadrillmega",
+    "audinomega",
+    "conkeldurr",
+    "scolipede",
+    "scolipedemega",
+    "krookodile",
+    "scrafty",
+    "cofagrigus",
+    "garbodor",
+    "zoroark",
+    "reuniclus",
+    "emolga",
+    "eelektross",
+    "eelektrossmega",
+    "beartic",
+    "stunfisk",
+    "stunfiskgalar",
+    "golurk",
+    "golurkmega",
+    "chesnaught",
+    "chesnaughtmega",
+    "greninja",
+    "greninjamega",
+    "diggersby",
+    "pyroar",
+    "floetteeternal",
+    "florges",
+    "gogoat",
+    "pangoro",
+    "furfrou",
+    "meowstic",
+    "meowsticf",
+    "meowsticmmega",
+    "aegislashblade",
+    "aromatisse",
+    "slurpuff",
+    "malamar",
+    "malamarmega",
+    "barbaracle",
+    "barbaraclemega",
+    "dragalge",
+    "clawitzer",
+    "heliolisk",
+    "tyrantrum",
+    "aurorus",
+    "hawlucha",
+    "hawluchamega",
+    "dedenne",
+    "goodra",
+    "trevenant",
+    "gourgeist",
+    "gourgeistlarge",
+    "gourgeistsmall",
+    "gourgeistsuper",
+    "avalugg",
+    "avalugghisui",
+    "noivern",
+    "decidueye",
+    "decidueyehisui",
+    "toucannon",
+    "crabominable",
+    "lycanrocmidnight",
+    "salazzle",
+    "passimian",
+    "golisopod",
+    "mimikyubusted",
+    "drampa",
+    "thievul",
+    "flapple",
+    "appletun",
+    "sandaconda",
+    "toxtricitylowkey",
+    "polteageist",
+    "polteageistantique",
+    "mrrime",
+    "runerigus",
+    "alcremie",
+    "falinks",
+    "falinksmega",
+    "morpeko",
+    "morpekohangry",
+    "wyrdeer",
+    "skeledirge",
+    "quaquaval",
+    "mausholdfour",
+    "arboliva",
+    "squawkabillyblue",
+    "squawkabillyyellow",
+    "squawkabillywhite",
+    "garganacl",
+    "mabosstiff",
+    "scovillain",
+    "palafinhero",
+    "orthworm",
+    "houndstone",
+    "sinistchamasterpiece",
+    "hydrapple"
+  ],
+  "withFiveAttacks": 128,
+  "withExtraAttacks": 105,
+  "publishedShortfalls": [
+    {
+      "id": "venusaur",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "venusaurmega",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "charizardmegax",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "charizardmegay",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "blastoisemega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "raichu",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "raichumegax",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "raichumegay",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "clefable",
+      "attacks": 3,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "ninetales",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "ninetalesalola",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "vileplume",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "arcanine",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "arcaninehisui",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "alakazammega",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "slowbromega",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "gengar",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "gengarmega",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "kangaskhan",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "kangaskhanmega",
+      "attacks": 9,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "starmiemega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "gyaradosmega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "aerodactyl",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "aerodactylmega",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "snorlax",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "dragonite",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "dragonitemega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "meganiummega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "typhlosionhisui",
+      "attacks": 9,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "ampharosmega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "politoed",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "slowkinggalar",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "scizor",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "scizormega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "skarmorymega",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "tyranitar",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "tyranitarmega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "sceptilemega",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "blaziken",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "blazikenmega",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "swampert",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "swampertmega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "pelipper",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "gardevoirmega",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "sableye",
+      "attacks": 2,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "mawilemega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "manectricmega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "cameruptmega",
+      "attacks": 9,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "torkoal",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "altaria",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "milotic",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "absolmegaz",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "salamence",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "salamencemega",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "metagrossmega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "empoleon",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "staraptor",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "staraptormega",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "lopunnymega",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "spiritomb",
+      "attacks": 3,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "garchomp",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "garchompmega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "garchompmegaz",
+      "attacks": 9,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "lucariomegaz",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "hippowdon",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "abomasnowmega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "weavile",
+      "attacks": 9,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "mamoswine",
+      "attacks": 9,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "gallade",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "froslassmega",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "rotomwash",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "rotomheat",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "samurotthisui",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "liepard",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "excadrill",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "audino",
+      "attacks": 1,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "whimsicott",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "scraftymega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "zoroarkhisui",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "vanilluxe",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "chandelure",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "chandeluremega",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "hydreigon",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "volcarona",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "delphox",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "delphoxmega",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "talonflame",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "vivillon",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "pyroarmega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "floettemega",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "meowsticfmega",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "aegislash",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "dragalgemega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "sylveon",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "goodrahisui",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "klefki",
+      "attacks": 2,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "incineroar",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "primarina",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "crabominablemega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "lycanroc",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "lycanrocdusk",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "toxapex",
+      "attacks": 2,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "mudsdale",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "araquanid",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "tsareena",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "oranguru",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "golisopodmega",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "mimikyu",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "drampamega",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "kommoo",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "rillaboom",
+      "attacks": 9,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "cinderace",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "inteleon",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "corviknight",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "toxtricity",
+      "attacks": 9,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "grapploct",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "hatterene",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "grimmsnarl",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "perrserker",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "sirfetchd",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "pincurchin",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "indeedeef",
+      "attacks": 3,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "indeedee",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "dragapult",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "kleavor",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "basculegion",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "basculegionf",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "sneasler",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "overqwil",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "meowscarada",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "pawmot",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "maushold",
+      "attacks": 4,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "squawkabilly",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "armarouge",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "ceruledge",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "bellibolt",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "scovillainmega",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "espathra",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "tinkaton",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "palafin",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "glimmora",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "glimmoramega",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "annihilape",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "farigiraf",
+      "attacks": 5,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "kingambit",
+      "attacks": 6,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "baxcalibur",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "baxcaliburmega",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "gholdengo",
+      "attacks": 7,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "sinistcha",
+      "attacks": 3,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    },
+    {
+      "id": "archaludon",
+      "attacks": 8,
+      "reason": "Source publishes ten moves including Status. No guesses beyond published entries."
+    }
+  ],
+  "checks": [
+    {
+      "id": "published-doubles-MC-snapshot-only",
+      "passed": true
+    },
+    {
+      "id": "every-form-exact-ID-ranking-and-no-invented-moves",
+      "passed": true
+    },
+    {
+      "id": "normal-Mega-and-Mega-Z-have-independent-moves",
+      "passed": true
+    },
+    {
+      "id": "status-statistics-kept-but-not-used-for-damage",
+      "passed": true
+    },
+    {
+      "id": "move-bar-color-palette-covers-every-type",
+      "passed": true
+    }
+  ]
+}

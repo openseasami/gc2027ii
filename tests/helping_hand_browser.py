@@ -10,7 +10,7 @@ def exercise_helping_hand(page, result, root):
         button(side,slot).click()
         assert int(page.locator('#updateStatus').get_attribute('data-revision'))>before
     def check_bars():
-        bars=page.locator('#calc .damage-move-block > .condition > .damage-bar, #benchCalc .damage-move-block > .condition > .damage-bar').evaluate_all('''els=>els.map(e=>({min:+e.dataset.min,max:+e.dataset.max,minWidth:parseFloat(e.querySelector('.damage-bar-min').style.width),maxWidth:parseFloat(e.querySelector('.damage-bar-max').style.width),track:e.clientWidth,minPixels:e.querySelector('.damage-bar-min').getBoundingClientRect().width,maxPixels:e.querySelector('.damage-bar-max').getBoundingClientRect().width,text:e.parentElement.querySelector('strong').textContent}))''')
+        bars=page.locator('#calc .damage-move-block > .condition > .damage-bar:visible, #benchCalc .damage-move-block > .condition > .damage-bar:visible').evaluate_all('''els=>els.map(e=>({min:+e.dataset.min,max:+e.dataset.max,minWidth:parseFloat(e.querySelector('.damage-bar-min').style.width),maxWidth:parseFloat(e.querySelector('.damage-bar-max').style.width),track:e.clientWidth,minPixels:e.querySelector('.damage-bar-min').getBoundingClientRect().width,maxPixels:e.querySelector('.damage-bar-max').getBoundingClientRect().width,text:e.parentElement.querySelector('strong').textContent}))''')
         assert bars
         for b in bars:
             assert 0<=b['min']<=b['max'],b

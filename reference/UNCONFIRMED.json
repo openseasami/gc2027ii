@@ -2,8 +2,8 @@
   "completion": false,
   "acceptance": {
     "completion": false,
-    "dateJST": "2026-10-29",
-    "scope": "Helping Hand recipients, damage-range bars, Status-move filtering and existing viewer regressions",
+    "dateJST": "2026-10-30",
+    "scope": "Exact-form single-source attack usage, top five and folded ranks six to ten within published coverage; type-colored bars and directional outlines; viewer regressions",
     "excludedFromAcceptance": [
       "Official page body retrieval and official certification",
       "Real-game numerical comparison"
@@ -17,7 +17,11 @@
       "Existing Champions BP-modifier path exactly once; independent numerical rounding comparison",
       "Active attacker to bench shares the flag; benched attackers never borrow it",
       "Status moves hidden in all damage tables and retained in candidate data",
-      "Damage numbers and capped range bars update together"
+      "Damage numbers and capped range bars update together",
+      "PokéKit open-data snapshot and date attributed; exact form ID only, no base/Mega fallback",
+      "Top five published attacks visible, attacks six to ten folded by default; unavailable entries explicit",
+      "Blue ally-attack and red opponent-attack outlines, damage fills follow calculated move type",
+      "No claim that truncated top-ten source provides ten attacks or every form"
     ],
     "fullBattleSpecificationCompletion": false
   },
@@ -171,7 +175,14 @@
     "lashout",
     "retaliate"
   ],
-  "statistics": "No source/date; uploaded v8 percentages withheld",
+  "statistics": {
+    "source": "https://poke.itlibra.com/opendata/usage-champions.json",
+    "month": "2026-09",
+    "forms": 150,
+    "missingForms": 206,
+    "sourceMoveLimit": 10,
+    "reason": "Published ten moves include Status; no invented entries. Old v8 percentages remain withheld."
+  },
   "windowsNative": false,
   "fileProtocol": "Managed policy blocked; no bypass",
   "limitations": [

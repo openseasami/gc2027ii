@@ -26,3 +26,7 @@
 ## 過去の確認記録
 
 初版v9で公式一覧本文を取得できなかった事実は旧ZIPとGit履歴に保持。現在の非公式資料基準の採否を公式認定へ読み替えません。大会中の外部ツール使用可否の認定も行いません。
+
+## 2026-10-30 技採用率
+
+PokéKit公開オープンデータ https://poke.itlibra.com/opendata/usage-champions.json を単独の技統計ソースとして採用。説明・再配布条件は https://poke.itlibra.com/ja/opendata 。Smogon / Pokémon Showdown（集計元）・PokéKit（整形）を明記。2026年9月・Champions VGC reg.MCダブル・基準1760・1,631,943戦。統計をゲーム内公式ランキングと同一視しません。150形態、各10技（変化技込み）の上限と206形態の未取得を明示。詳細はUSAGE_MOVES.md。
